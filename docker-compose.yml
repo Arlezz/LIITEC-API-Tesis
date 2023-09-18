@@ -1,0 +1,40 @@
+version: "3.8"
+services:
+  node:
+    image: node:latest
+    restart: always
+    user: "node"
+    working_dir: /home/node/app
+    environment:
+      - NODE_ENV=production
+    volumes:
+      - ./server/:/home/node/app:rw
+    ports:
+      - 8081:8081
+    command: bash -c "npm install && npm run dev"
+
+  mongo:
+    image: mongo:latest
+    restart: always
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=root
+      - MONGO_INITDB_ROOT_PASSWORD=root
+    volumes:
+      - mongo:/data/db:rw
+    ports:
+      - 27017:27017
+  
+  mongo-express:
+    image: mongo-express:latest
+    restart: always
+    environment:
+      - ME_CONFIG_MONGODB_ADMINUSERNAME=root
+      - ME_CONFIG_MONGODB_ADMINPASSWORD=root
+      - ME_CONFIG_MONGODB_URL=mongodb://root:root@mongo:27017/
+    ports:
+      - 8082:8081
+  
+volumes:
+  mongo: 
+    driver: local
+    
