@@ -1,48 +1,27 @@
 const express = require('express');
 const app = express();
+const morgan = require('morgan');
 const port = 8081;
-const API = require('./auth/apiAuth');
 
-// Get initial data for users and countries
-const { users, Countries } = require('./initialData');
+//const API = require('./auth/apiAuth');
+
+//settings
+app.set('json spaces', 2);
 
 //handle json body request
 app.use(express.json());
 
+//middleware for logging
+app.use(morgan('dev'));
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
-app.get('/', (req, res) => {
-  //home page
-  res.status(200).send({ data: { message: 'Intenta acceder a la siguiente XDD /api/country.' } });
-});
 
-app.post('/api/register', (req, res) => {
-  //create a new with "user:Username"
-  let username = req.body.username;
-  let user = API.createUser(username, req);
-  res.status(201).send({ data: user });
-});
+//routes
+app.use('/api/channels',require('./routes/channels'));
 
-app.get('/api/country', API.authenticateKey, (req, res) => {
-  //get list of all Countries   
-  let today = new Date().toISOString().split('T')[0];
-  console.log(today);
-  res.status(200).send({
-    data: Countries,
-  });
-});
 
-app.post('/api/country', API.authenticateKey, (req, res) => {
-  //add a new country
-  let country = {
-    _id: Date.now(),
-    name: req.body.country,
-  };
-  Countries.push(country);
-  res.status(201).send({
-    data: country,
-  });
-});
-
+//starting the server
 app.listen(port, function (err) {
   if (err) {
     console.error('Failure to launch server');
