@@ -22,7 +22,7 @@ services:
       - MONGO_INITDB_ROOT_USERNAME=root
       - MONGO_INITDB_ROOT_PASSWORD=password
     volumes:
-      - mongo-data:/home/data/db:rw
+      - ./mongo/data:/home/data/db:rw
     ports:
       - 27017:27017
   
@@ -39,6 +39,7 @@ services:
   mosquitto:
     image: iegomez/mosquitto-go-auth:2.1.0-mosquitto_1.6.14
     restart: always
+    command: /usr/sbin/mosquitto -c /etc/mosquitto/config/mosquitto.conf -v
     ports:
       - 1883:1883
       - 9001:9001
