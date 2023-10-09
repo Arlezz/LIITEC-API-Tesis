@@ -1,9 +1,6 @@
 const express = require('express');
 const app = express();
 const morgan = require('morgan');
-const port = 8081;
-
-//const API = require('./auth/apiAuth');
 
 //settings
 app.set('json spaces', 2);
@@ -16,16 +13,24 @@ app.use(morgan('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-
 //routes
 app.use('/api/channels',require('./routes/channels'));
 
+var createError = require('http-errors');
 
-//starting the server
-app.listen(port, function (err) {
-  if (err) {
-    console.error('Failure to launch server');
-    return;
-  }
-  console.log(`Listening on port ${port}`);
+app.use(function (req, res, next) {
+  next(createError(404));
 });
+
+app.use(function (err, req, res, next) {
+  res.locals.message = err.message;
+  res.locals.error = req.app.get('env') === 'development' ? err : {};
+
+  console.log(err.message)
+
+  res.status(err.status || 500);
+  res.json(`error '${err.status || 500}' `);
+});
+
+
+module.exports = app;

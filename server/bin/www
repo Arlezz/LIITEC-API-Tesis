@@ -1,0 +1,27 @@
+#!/usr/bin/env node
+
+var app = require('../app');
+var http = require('http');
+var dotenv = require('dotenv');
+var mongoose = require('mongoose');
+
+dotenv.config({path: '.env'});
+console.log(process.env.MONGODB_URI);
+mongoose.connect(process.env.MONGODB_URI, {
+    useNewUrlParser: true, 
+}).then(() => {
+    console.log('Connected to MongoDB');
+}).catch((err) => {
+    console.error('Error connecting to MongoDB\n');
+    console.error(err);
+});
+
+var httpServer = http.createServer(app);
+
+httpServer.listen(process.env.SERVER_PORT, function (err) {
+    if (err) {
+        console.error('Failure to launch server');
+        return;
+    }
+    console.log(`Listening on port ${process.env.SERVER_PORT}`);
+});
