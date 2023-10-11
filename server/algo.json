@@ -1,0 +1,191 @@
+//Canal 1
+{
+    "nombre":"Canal 1",
+    "descripcion":"Mediciones de temperatura y humedad",
+    "owner":"5f8f4e",
+    "project":"Cansat",
+    "ubication":{
+        "latitude":"-34.603722",
+        "longitude":"-58.381592"
+    },
+    "devices":[
+        "9b9c3b",
+        "6e2b7c",
+        "7f8f4e",
+        "8f8f4e"
+    ]
+}
+-
+
+//Device 1 - Owner 5f8f4e
+{
+    "deviceId":"9b9c3b",
+    "channel":"5f8f4e",
+    "model":"DHT22",
+    "createdOn":"2020-10-20T18:00:00.000Z",
+}
+
+//Device 2 - Owner 5f8f4e
+{
+    "deviceId":"6e2b7c",
+    "channelAsociated":"5f8f4e",
+    "model":"DHT22",
+    "createdOn":"2020-10-20T18:00:00.000Z",
+}
+
+//Device 3 - Owner 5f8f4e
+{
+    "deviceId":"7f8f4e",
+    "channelAsociated":"5f8f4e",
+    "model":"BMP280",
+    "createdOn":"2020-10-20T18:00:00.000Z",
+}
+
+//Device 4 - Owner 5f8f4e
+{
+    "deviceId":"8f8f4e",
+    "channelAsociated":"5f8f4e",
+    "model":"BMP280",
+    "createdOn":"2020-10-20T18:00:00.000Z",
+}
+
+//DHT22 Device 1 - Owner 5f8f4e
+{
+    "deviceID":"9b9c3b",
+    "value": [
+        {
+            "name": "temperature",
+            "data": 25,
+        },
+        {
+            "name": "humidity",
+            "data": 50,
+        }
+    ],
+    "createdOn":"2020-10-20T18:00:00.000Z"
+}
+//DHT22 Device 2 - Owner 5f8f4e
+{
+    "deviceID":"6e2b7c",
+    "value": [
+        {
+            "name": "temperature",
+            "data": 22,
+        },
+        {
+            "name": "humidity",
+            "data": 52,
+        }
+    ],
+    "createdOn":"2020-10-20T18:00:00.000Z"
+}
+
+
+//BMP280 Device 1 - Owner 5f8f4e
+{
+    "deviceID":"7f8f4e",
+    "value": [
+        {
+            "name": "temperature",
+            "data": 25,
+        },
+        {
+            "name": "pressure",
+            "data": 50,
+        },
+        {
+            "name": "altitude",
+            "data": 89,
+        }
+    ],
+    "createdOn":"2020-10-20T18:00:00.000Z",
+}
+
+//BMP280 Device 1 - Owner 5f8f4e
+{
+    "deviceID":"8f8f4e",
+    "value": [
+        {
+            "name": "temperature",
+            "data": 26,
+        },
+        {
+            "name": "pressure",
+            "data": 56,
+        },
+        {
+            "name": "altitude",
+            "data": 90,
+        }
+    ],
+    "createdOn":"2020-10-20T18:00:00.000Z",
+}
+
+
+//SensorData
+{
+    "deviceID":"9b9c3b",
+    "value": [
+        {
+            "name": "temperature",
+            "data": 25,
+        },
+        {
+            "name": "humidity",
+            "data": 50,
+        }
+    ],
+    "createdOn":"2020-10-20T18:00:00.000Z"
+}
+{
+    "deviceID":"6e2b7c",
+    "value": [
+        {
+            "name": "temperature",
+            "data": 22,
+        },
+        {
+            "name": "humidity",
+            "data": 52,
+        }
+    ],
+    "createdOn":"2020-10-20T18:00:00.000Z"
+}
+
+//SensorData
+{
+    "deviceID":"7f8f4e",
+    "value": [
+        {
+            "name": "temperature",
+            "data": 25,
+        },
+        {
+            "name": "pressure",
+            "data": 50,
+        },
+        {
+            "name": "altitude",
+            "data": 89,
+        }
+    ],
+    "createdOn":"2020-10-20T18:00:00.000Z",
+}
+{
+    "deviceID":"8f8f4e",
+    "value": [
+        {
+            "name": "temperature",
+            "data": 26,
+        },
+        {
+            "name": "pressure",
+            "data": 56,
+        },
+        {
+            "name": "altitude",
+            "data": 90,
+        }
+    ],
+    "createdOn":"2020-10-20T18:00:00.000Z",
+}

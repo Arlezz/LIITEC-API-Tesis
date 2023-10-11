@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const { Schema } = mongoose;
 
-const dataTemperatureSchema = new Schema(
+const deviceSchema = new Schema(
     {
         channelAsociated: {
             type: String,
@@ -11,22 +11,25 @@ const dataTemperatureSchema = new Schema(
         name: {
             type: String,
         },
-        value: {
-            type: Number,
-            required: true,
-        },
-        timestamp: {
+        value: [
+            {
+                data: {
+                    type: Number,
+                },
+                createdOn: {
+                    type: Date,
+                    default: Date.now,
+                }
+            }
+        ],
+        createdOn: {
             type: Date,
             default: Date.now,
-        },
-        granularity: {
-            type: Number,
-            required: true,
-        },
+        }
     },
     {
         timeseries:{
-            timeField: 'timestamp',
+            timeField: 'createdOn',
             metaField: 'value',
             granularity: 'seconds'
         }
@@ -34,4 +37,4 @@ const dataTemperatureSchema = new Schema(
 );
 
     
-module.exports = mongoose.model('device', dataTemperatureSchema);
+module.exports = mongoose.model('device', deviceSchema);

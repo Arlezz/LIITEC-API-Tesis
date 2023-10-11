@@ -14,6 +14,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 //routes
+app.use('/',require('./routes/index'));
 app.use('/api/channels',require('./routes/channels'));
 
 var createError = require('http-errors');

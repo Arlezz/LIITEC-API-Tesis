@@ -34,7 +34,9 @@ const channelSchema = new Schema(
             },
         },
         sensors:[
-            
+            {
+                type:String
+            }
         ]
     }
 );
