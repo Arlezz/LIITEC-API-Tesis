@@ -2,29 +2,32 @@ const mongoose = require('mongoose');
 
 const { Schema } = mongoose;
 
-const deviceSchema = new Schema(
+const sensorDataSchema = new Schema(
     {
-        channelAsociated: {
+        channelID: {
             type: String,
-            required: true,
+            required: true
         },
-        name: {
+        deviceID: {
             type: String,
+            required: true
         },
         value: [
             {
+                name: {
+                    type: String,
+                    required: true
+                },
                 data: {
                     type: Number,
-                },
-                createdOn: {
-                    type: Date,
-                    default: Date.now,
+                    required: true,
                 }
             }
         ],
         createdOn: {
             type: Date,
             default: Date.now,
+            required: true
         }
     },
     {
@@ -37,4 +40,4 @@ const deviceSchema = new Schema(
 );
 
     
-module.exports = mongoose.model('device', deviceSchema);
+module.exports = mongoose.model('sensorData', sensorDataSchema);

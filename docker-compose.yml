@@ -12,21 +12,8 @@ services:
     ports:
       - 8081:8081
     command: bash -c "npm install && npm run dev"
-    #depends_on:
-    #  - mongo
-
-  #mongo:
-  #  image: mongo:6.0
-  #  restart: always
-  #  environment:
-  #    - MONGO_INITDB_ROOT_USERNAME=root
-  #    - MONGO_INITDB_ROOT_PASSWORD=password
-  #  volumes:
-  #    - ./mongo/data:/data/db:rw
-  #  ports:
-  #    - 27017:27017
-  #  networks:
-  #    - node-webapp-network
+    networks:
+      - mosquitto
   
 
   mosquitto:
@@ -40,8 +27,11 @@ services:
       - ./mosquitto/config:/etc/mosquitto/config:rw
       - ./mosquitto/data:/etc/mosquitto/data:rw
       - ./mosquitto/log:/etc/mosquitto/log:rw
+    networks:
+      - mosquitto
 
-  
-#volumes:
-#  mongo-data: 
-#    driver: local
+
+networks:
+    mosquitto:
+        name: mosquitto
+        driver: bridge

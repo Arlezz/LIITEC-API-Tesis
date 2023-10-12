@@ -21,10 +21,6 @@ const channelSchema = new Schema(
             type: String,
             required: true
         },
-        topic: {
-            type: String,
-            required: true
-        },
         ubication: {
             latitude: {
                 type: String,
@@ -33,9 +29,30 @@ const channelSchema = new Schema(
                 type: String,
             },
         },
-        sensors:[
+        createdOn: {
+            type: Date,
+            default: Date.now,
+            required: true
+        },
+        devices:[
             {
-                type:String
+                deviceId:{
+                    type: String,
+                    required: true
+                },
+                model:{
+                    type: String,
+                    required: true
+                },
+                unity:{
+                    type: String,
+                    required: true
+                },
+                createdOn: {
+                    type: Date,
+                    default: Date.now,
+                    required: true
+                },
             }
         ]
     }

@@ -2,11 +2,8 @@ const {Router} = require('express');
 const router = Router();
 const mongoose = require('mongoose');
 const Channel = require('../models/channelModel');
-const Device = require('../models/deviceModel');
 
 
-
-//make a function to get all the channels from the mongo database and return it as a json, accessible only by the administrator
 router.get('/', (req,res) => {
     res.send("<h1>Welcome to LIITEC API</h1><br></br><h2>Try to create new channe '/api/createChannel'</h2>");
 });
@@ -14,21 +11,18 @@ router.get('/', (req,res) => {
 router.get('/createChannel', async (req, res) => {
     try {
         const newChannel = new Channel({
-            name:"Channel 1",
-            description:"Channel 1 description",
-            owner:"admin",
-            project:"Project 1",
-            topic:"topic1",
-            ubication:{
-                latitude:"0",
-                longitude:"0"
-            },
-            sensors:[]
+            name:req.params.name,
+            description: req.params.description,
+            owner: req.params.owner,
+            project:req.params.project,
+            topic: req.params.topic,
+            ubications: req.params.ubications,
+            sensors: req.params.sensors,
         });
-        
-        await newChannel.save(); // Guarda el nuevo canal en la base de datos
 
+        await newChannel.save();
         res.json({ "message": "Channel created" });
+
     } catch (error) {
         console.error(error);
         res.status(500).json({ "error": "Error creating channel" });
@@ -36,30 +30,28 @@ router.get('/createChannel', async (req, res) => {
 });
 
 router.get('/createDevice', async (req, res) => {
+    const channelId = req.params.channelID;
     try {
-        const newDevice = new Device({
-            channelAsociated:"Channel 1",
-            name:"Temperature",
-            value:[
-                {
-                    data: 0,
+        Channel.findById(channelId, function (err, channel) {
+            if(err){
+                console.error('Error al encontrar el device:', err);
+            }else{
+                channel.devices.push({
+                    deviceId: req.params.deviceId,
+                    model: req.params.model,
+                    unity: req.params.unity,
                     createdOn: Date.now()
-                },
-                {
-                    data: 1,
-                    createdOn: Date.now()
-                },
-                {
-                    data: 2,
-                    createdOn: Date.now()
-                }
-            ],
-            createdOn: Date.now()          
+                });
+                channel.save((saveErr, saveChannel) => {
+                    if(saveErr){
+                        console.error('Error al guardar el device:', saveErr);
+                    }else{
+                        console.log('Device guardado:', saveChannel);
+                    }
+                });
+            }
         });
-        
-        await newDevice.save(); // Guarda el nuevo canal en la base de datos
-
-        res.json({ "message": "Device created" });
+        res.json({ "message": "Device guardado" });
     } catch (error) {
         console.error(error);
         res.status(500).json({ "error": "Error creating device" });

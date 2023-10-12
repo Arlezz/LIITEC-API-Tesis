@@ -16,6 +16,7 @@ app.use(express.urlencoded({ extended: true }));
 //routes
 app.use('/',require('./routes/index'));
 app.use('/api/channels',require('./routes/channels'));
+app.use('/api/broker',require('./routes/brokerMQTT'));
 
 var createError = require('http-errors');
 
