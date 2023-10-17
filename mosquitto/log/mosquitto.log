@@ -12853,3 +12853,7 @@
 1697574602: Saving in-memory database to /mosquitto/data//mosquitto.db.
 1697574602: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
 1697574602: Error: No such file or directory.
+1697574674: mosquitto version 2.0.15 terminating
+1697574674: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1697574674: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1697574674: Error: No such file or directory.
