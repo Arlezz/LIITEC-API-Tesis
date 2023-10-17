@@ -45,8 +45,7 @@ const channelSchema = new Schema(
                     required: true
                 },
                 unity:{
-                    type: String,
-                    required: true
+                    
                 },
                 createdOn: {
                     type: Date,

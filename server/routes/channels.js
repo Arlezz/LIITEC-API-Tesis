@@ -8,16 +8,26 @@ router.get('/', (req,res) => {
     res.send("<h1>Welcome to LIITEC API</h1><br></br><h2>Try to create new channe '/api/createChannel'</h2>");
 });
 
-router.get('/createChannel', async (req, res) => {
+router.get('/getAll', async (req, res) => {
+    try {
+      const result = await Channel.find({});
+      res.json(result);
+    } catch (error) {
+      console.error(error);
+      res.status(500).json({ "error": "no channels found" });
+    }
+});
+
+router.post('/createChannel', async (req, res) => {
     try {
         const newChannel = new Channel({
-            name:req.params.name,
-            description: req.params.description,
-            owner: req.params.owner,
-            project:req.params.project,
-            topic: req.params.topic,
-            ubications: req.params.ubications,
-            sensors: req.params.sensors,
+            name:req.body.name,
+            description: req.body.description,
+            owner: req.body.owner,
+            project:req.body.project,
+            ubications: req.body.ubications,
+            createdOn: Date.now(),
+            sensors: req.body.sensors,
         });
 
         await newChannel.save();
@@ -29,28 +39,28 @@ router.get('/createChannel', async (req, res) => {
     }
 });
 
-router.get('/createDevice', async (req, res) => {
-    const channelId = req.params.channelID;
+
+
+router.put('/createDevice', async (req, res) => {
+    const channelId = req.body.channelId;
+    console.log(channelId);
+
     try {
-        Channel.findById(channelId, function (err, channel) {
-            if(err){
-                console.error('Error al encontrar el device:', err);
-            }else{
-                channel.devices.push({
-                    deviceId: req.params.deviceId,
-                    model: req.params.model,
-                    unity: req.params.unity,
-                    createdOn: Date.now()
-                });
-                channel.save((saveErr, saveChannel) => {
-                    if(saveErr){
-                        console.error('Error al guardar el device:', saveErr);
-                    }else{
-                        console.log('Device guardado:', saveChannel);
-                    }
-                });
-            }
+        const channel = await Channel.findById(channelId);
+
+        if (!channel) {
+            return res.status(404).json({ "error": "Channel not found" });
+        }
+
+        channel.devices.push({
+            deviceId: req.body.deviceId,
+            model: req.body.model,
+            unity: req.body.unity,
+            createdOn: Date.now()
         });
+
+        const saveChannel = await channel.save();
+        console.log('Device guardado:', saveChannel);
         res.json({ "message": "Device guardado" });
     } catch (error) {
         console.error(error);
