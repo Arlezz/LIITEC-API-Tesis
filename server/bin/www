@@ -4,6 +4,7 @@ var app = require('../app');
 var http = require('http');
 var dotenv = require('dotenv');
 var mongoose = require('mongoose');
+var mqttHandler = require('../controller/mqttHandler');
 
 dotenv.config({path: '.env'});
 console.log(process.env.MONGODB_URI);
@@ -15,6 +16,10 @@ mongoose.connect(process.env.MONGODB_URI, {
     console.error('Error connecting to MongoDB\n');
     console.error(err);
 });
+
+mqttHandler = new mqttHandler();
+mqttHandler.connect();
+
 
 var httpServer = http.createServer(app);
 

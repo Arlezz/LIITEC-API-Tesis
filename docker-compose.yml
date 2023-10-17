@@ -13,6 +13,8 @@ services:
       - 8081:8081
     command: bash -c "npm install && npm run dev"
     networks:
+      - mosquitto_ntw
+    depends_on:
       - mosquitto
   
 
@@ -28,10 +30,9 @@ services:
       - ./mosquitto/data:/etc/mosquitto/data:rw
       - ./mosquitto/log:/etc/mosquitto/log:rw
     networks:
-      - mosquitto
+      - mosquitto_ntw
 
 
 networks:
-    mosquitto:
-        name: mosquitto
+    mosquitto_ntw:
         driver: bridge

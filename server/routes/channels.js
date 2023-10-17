@@ -18,6 +18,7 @@ router.get('/getAll', async (req, res) => {
     }
 });
 
+
 router.post('/createChannel', async (req, res) => {
     try {
         const newChannel = new Channel({

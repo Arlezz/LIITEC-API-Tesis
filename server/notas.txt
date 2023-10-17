@@ -1,0 +1,4 @@
+* Crear una coleccion de usuarios y contraseñas para la accecibilidad del broker
+* Modificar la clase MqttHandler para que se acceda usando solamente mqtt y no http como interfaz
+* Empezar a crear las rutas de la API
+* 
