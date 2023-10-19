@@ -15832,3 +15832,88 @@
 1697686415: Received PINGREQ from postman-mqtt-client-1697685763896
 1697686415: Sending PINGRESP to postman-mqtt-client-1697685763896
 1697686475: Received PINGREQ from postman-mqtt-client-1697685763896
+1697687529: mosquitto version 2.0.15 starting
+1697687529: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1697687529: Opening ipv4 listen socket on port 1883.
+1697687529: Opening ipv6 listen socket on port 1883.
+1697687529: Opening ipv4 listen socket on port 9001.
+1697687529: Opening ipv6 listen socket on port 9001.
+1697687529: mosquitto version 2.0.15 running
+1697687608: New connection from 172.20.0.1:46310 on port 1883.
+1697687608: New client connected from 172.20.0.1:46310 as postman-mqtt-client-1697687608338 (p5, c1, k60, u'liitec30@userena.cl').
+1697687608: No will message specified.
+1697687608: Sending CONNACK to postman-mqtt-client-1697687608338 (0, 0)
+1697687615: Client postman-mqtt-client-1697687608338 closed its connection.
+1697687626: New connection from 172.20.0.2:49638 on port 1883.
+1697687626: New client connected from 172.20.0.2:49638 as mqttjs_895dfcfc (p2, c1, k60).
+1697687626: No will message specified.
+1697687626: Sending CONNACK to mqttjs_895dfcfc (0, 0)
+1697687626: Received SUBSCRIBE from mqttjs_895dfcfc
+1697687626: 	canal/ch-5fa9ab8b-8f43-441f-9737-02294a296464 (QoS 0)
+1697687626: mqttjs_895dfcfc 0 canal/ch-5fa9ab8b-8f43-441f-9737-02294a296464
+1697687626: Sending SUBACK to mqttjs_895dfcfc
+1697687631: New connection from 172.20.0.1:50888 on port 1883.
+1697687631: New client connected from 172.20.0.1:50888 as postman-mqtt-client-1697687608338 (p5, c1, k60, u'liitec30@userena.cl').
+1697687631: No will message specified.
+1697687631: Sending CONNACK to postman-mqtt-client-1697687608338 (0, 0)
+1697687656: Received SUBSCRIBE from postman-mqtt-client-1697687608338
+1697687656: 	ch-5fa9ab8b-8f43-441f-9737-02294a296464 (QoS 0)
+1697687656: postman-mqtt-client-1697687608338 0 ch-5fa9ab8b-8f43-441f-9737-02294a296464
+1697687656: Sending SUBACK to postman-mqtt-client-1697687608338
+1697687686: Received PINGREQ from mqttjs_895dfcfc
+1697687686: Sending PINGRESP to mqttjs_895dfcfc
+1697687688: Received PUBLISH from postman-mqtt-client-1697687608338 (d0, q0, r0, m0, 'ch-5fa9ab8b-8f43-441f-9737-02294a296464', ... (9 bytes))
+1697687688: Sending PUBLISH to postman-mqtt-client-1697687608338 (d0, q0, r0, m0, 'ch-5fa9ab8b-8f43-441f-9737-02294a296464', ... (9 bytes))
+1697687746: Received PINGREQ from mqttjs_895dfcfc
+1697687746: Sending PINGRESP to mqttjs_895dfcfc
+1697687748: Received PINGREQ from postman-mqtt-client-1697687608338
+1697687748: Sending PINGRESP to postman-mqtt-client-1697687608338
+1697687752: Received PUBLISH from postman-mqtt-client-1697687608338 (d0, q0, r0, m0, 'ch-5fa9ab8b-8f43-441f-9737-02294a296464', ... (27 bytes))
+1697687752: Sending PUBLISH to postman-mqtt-client-1697687608338 (d0, q0, r0, m0, 'ch-5fa9ab8b-8f43-441f-9737-02294a296464', ... (27 bytes))
+1697687754: Received PUBLISH from postman-mqtt-client-1697687608338 (d0, q0, r0, m0, 'ch-5fa9ab8b-8f43-441f-9737-02294a296464', ... (27 bytes))
+1697687754: Sending PUBLISH to postman-mqtt-client-1697687608338 (d0, q0, r0, m0, 'ch-5fa9ab8b-8f43-441f-9737-02294a296464', ... (27 bytes))
+1697687806: Received PINGREQ from mqttjs_895dfcfc
+1697687806: Sending PINGRESP to mqttjs_895dfcfc
+1697687814: Received PINGREQ from postman-mqtt-client-1697687608338
+1697687814: Sending PINGRESP to postman-mqtt-client-1697687608338
+1697687866: Received PINGREQ from mqttjs_895dfcfc
+1697687866: Sending PINGRESP to mqttjs_895dfcfc
+1697687874: Received PINGREQ from postman-mqtt-client-1697687608338
+1697687874: Sending PINGRESP to postman-mqtt-client-1697687608338
+1697687884: Received PUBLISH from postman-mqtt-client-1697687608338 (d0, q0, r0, m0, 'ch-5fa9ab8b-8f43-441f-9737-02294a296464', ... (27 bytes))
+1697687884: Sending PUBLISH to postman-mqtt-client-1697687608338 (d0, q0, r0, m0, 'ch-5fa9ab8b-8f43-441f-9737-02294a296464', ... (27 bytes))
+1697687884: Received PUBLISH from postman-mqtt-client-1697687608338 (d0, q0, r0, m0, 'ch-5fa9ab8b-8f43-441f-9737-02294a296464', ... (27 bytes))
+1697687884: Sending PUBLISH to postman-mqtt-client-1697687608338 (d0, q0, r0, m0, 'ch-5fa9ab8b-8f43-441f-9737-02294a296464', ... (27 bytes))
+1697687885: Received PUBLISH from postman-mqtt-client-1697687608338 (d0, q0, r0, m0, 'ch-5fa9ab8b-8f43-441f-9737-02294a296464', ... (27 bytes))
+1697687885: Sending PUBLISH to postman-mqtt-client-1697687608338 (d0, q0, r0, m0, 'ch-5fa9ab8b-8f43-441f-9737-02294a296464', ... (27 bytes))
+1697687926: Received PINGREQ from mqttjs_895dfcfc
+1697687926: Sending PINGRESP to mqttjs_895dfcfc
+1697687945: Received PINGREQ from postman-mqtt-client-1697687608338
+1697687945: Sending PINGRESP to postman-mqtt-client-1697687608338
+1697687953: Client mqttjs_895dfcfc closed its connection.
+1697688005: Received PINGREQ from postman-mqtt-client-1697687608338
+1697688005: Sending PINGRESP to postman-mqtt-client-1697687608338
+1697688027: Client postman-mqtt-client-1697687608338 closed its connection.
+1697688028: New connection from 172.20.0.1:38592 on port 1883.
+1697688028: New client connected from 172.20.0.1:38592 as postman-mqtt-client-1697687608338 (p5, c1, k60, u'liitec30@userena.cl').
+1697688028: No will message specified.
+1697688028: Sending CONNACK to postman-mqtt-client-1697687608338 (0, 0)
+1697688029: Received SUBSCRIBE from postman-mqtt-client-1697687608338
+1697688029: 	ch-5fa9ab8b-8f43-441f-9737-02294a296464 (QoS 0)
+1697688029: postman-mqtt-client-1697687608338 0 ch-5fa9ab8b-8f43-441f-9737-02294a296464
+1697688029: Sending SUBACK to postman-mqtt-client-1697687608338
+1697688040: Received PUBLISH from postman-mqtt-client-1697687608338 (d0, q0, r0, m0, 'ch-5fa9ab8b-8f43-441f-9737-02294a296464', ... (27 bytes))
+1697688040: Sending PUBLISH to postman-mqtt-client-1697687608338 (d0, q0, r0, m0, 'ch-5fa9ab8b-8f43-441f-9737-02294a296464', ... (27 bytes))
+1697688100: Received PINGREQ from postman-mqtt-client-1697687608338
+1697688100: Sending PINGRESP to postman-mqtt-client-1697687608338
+1697688118: Client postman-mqtt-client-1697687608338 closed its connection.
+1697688119: New connection from 172.20.0.1:57094 on port 1883.
+1697688119: New client connected from 172.20.0.1:57094 as postman-mqtt-client-1697687608338 (p5, c1, k60, u'liitec30@userena.cl').
+1697688119: No will message specified.
+1697688119: Sending CONNACK to postman-mqtt-client-1697687608338 (0, 0)
+1697688119: Received SUBSCRIBE from postman-mqtt-client-1697687608338
+1697688119: 	ch-5fa9ab8b-8f43-441f-9737-02294a296464 (QoS 0)
+1697688119: postman-mqtt-client-1697687608338 0 ch-5fa9ab8b-8f43-441f-9737-02294a296464
+1697688119: Sending SUBACK to postman-mqtt-client-1697687608338
+1697688179: Received PINGREQ from postman-mqtt-client-1697687608338
+1697688179: Sending PINGRESP to postman-mqtt-client-1697687608338
