@@ -8,15 +8,17 @@ app.set('json spaces', 2);
 //handle json body request
 app.use(express.json());
 
-//middleware for logging
+//middleware
 app.use(morgan('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 //routes
 app.use('/',require('./routes/index'));
+app.use('/api/user',require('./routes/user'));
 app.use('/api/channels',require('./routes/channels'));
 app.use('/api/broker',require('./routes/brokerMQTT'));
+app.use('/api/auth',require('./routes/auth'));
 
 var createError = require('http-errors');
 

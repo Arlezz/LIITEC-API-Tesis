@@ -17,8 +17,8 @@ mongoose.connect(process.env.MONGODB_URI, {
     console.error(err);
 });
 
-mqttHandler = new mqttHandler();
-mqttHandler.connect();
+//mqttHandler = new mqttHandler();
+//mqttHandler.connect();
 
 
 var httpServer = http.createServer(app);

@@ -1,5 +1,6 @@
-const users = require('../initialData').users; // import initial data
-const MAX = 10; // max API calls per day
+const User = require('../models/userModel');
+
+//const MAX = 10; // max API calls per day
 
 
 const genAPIKey = () => {
@@ -9,22 +10,44 @@ const genAPIKey = () => {
       .join('');
 };
 
-const createUser = (_username, req) => {
-    let today = new Date().toISOString().split('T')[0];
-    let user = {
-      _id: Date.now(),
-      api_key: genAPIKey(),
-      username: _username,
-      usage: [{ date: today, count: 0 }],
-    };
-  
-    console.log('add user');
-    users.push(user);
-    console.log(users);
-    return user;
-};
 
-const authenticateKey = (req, res, next) => {
+const requireAPIKeyOfType = (minPermissionLevel) => {
+    return async (req, res, next) => {
+        try {
+        const apiKey = req.header('Authorization');
+        const user = await User.findOne({ 'apiKey.key': apiKey });
+
+        if (!user) {
+            return res.status(401).json({ "error": "Acceso no autorizado" });
+        }
+
+        // Determina el nivel de permiso del usuario y verifica si cumple con el mínimo requerido.
+        const userPermissionLevel = user.apiKey.type;
+
+        if (userPermissionLevel === 'superUser') {
+            // Los super usuarios tienen acceso a todo, así que permite el acceso.
+            next();
+        } else if (userPermissionLevel === 'advancedUser' && minPermissionLevel !== 'superUser') {
+            // Usuarios avanzados pueden acceder a rutas que requieren permisos desde 'advancedUser' hacia arriba.
+            next();
+        } else if (userPermissionLevel === 'readUser' && minPermissionLevel === 'readUser') {
+            // Usuarios de solo lectura solo pueden acceder a rutas que requieren permisos de solo lectura.
+            next();
+        } else {
+            // El usuario no tiene permisos suficientes.
+            return res.status(403).json({ "error": "Acceso prohibido" });
+        }
+        } catch (error) {
+        console.error(error);
+        res.status(500).json({ "error": "Error de autenticación" });
+        }
+    };
+};
+  
+
+
+
+/*const authenticateKey = (req, res, next) => {
     let api_key = req.header("x-api-key"); //Add API key to headers
     let account = users.find((user) => user.api_key == api_key);
     // find() returns an object or undefined
@@ -59,7 +82,10 @@ const authenticateKey = (req, res, next) => {
         //Reject request if API key doesn't match
         res.status(403).send({ error: { code: 403, message: "You not allowed." } });
     }
-};
+};*/
 
 
-module.exports = { createUser, authenticateKey };
+  
+
+
+module.exports = { genAPIKey, requireAPIKeyOfType };

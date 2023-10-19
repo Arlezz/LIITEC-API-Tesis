@@ -1,14 +1,18 @@
 const {Router} = require('express');
 const router = Router();
-const mongoose = require('mongoose');
 const Channel = require('../models/channelModel');
+const { v4: uuidv4 } = require('uuid');
 
+//Middleware
+const authorization = require('../auth/apiAuth');     
 
+//All users actions
 router.get('/', (req,res) => {
     res.send("<h1>Welcome to LIITEC API</h1><br></br><h2>Try to create new channe '/api/createChannel'</h2>");
 });
 
-router.get('/getAll', async (req, res) => {
+//Admin actions
+router.get('/getAll',authorization.requireAPIKeyOfType('superUser'), async (req, res) => {
     try {
       const result = await Channel.find({});
       res.json(result);
@@ -18,21 +22,28 @@ router.get('/getAll', async (req, res) => {
     }
 });
 
-
-router.post('/createChannel', async (req, res) => {
+//Advanced user actions
+router.post('/createChannel',authorization.requireAPIKeyOfType('advancedUser'), async (req, res) => {
     try {
+
+        const channelIdentificator = "ch-"+uuidv4(); //uuidv4() genera un id unico para cada canal
+        const channelOwner = req.body.owner;
+
         const newChannel = new Channel({
+            channelId: channelIdentificator,
             name:req.body.name,
             description: req.body.description,
-            owner: req.body.owner,
+            owner: channelOwner,
             project:req.body.project,
             ubications: req.body.ubications,
             createdOn: Date.now(),
-            sensors: req.body.sensors,
+            devices: req.body.sensors,
         });
 
+        res.redirect(`/api/user/addChannel?channelId=${channelIdentificator}&channelOwner=${channelOwner}`);
+
         await newChannel.save();
-        res.json({ "message": "Channel created" });
+
 
     } catch (error) {
         console.error(error);
@@ -41,8 +52,8 @@ router.post('/createChannel', async (req, res) => {
 });
 
 
-
-router.put('/createDevice', async (req, res) => {
+//Advanced user actions
+router.put('/createDevice',authorization.requireAPIKeyOfType('advancedUser'), async (req, res) => {
     const channelId = req.body.channelId;
     console.log(channelId);
 

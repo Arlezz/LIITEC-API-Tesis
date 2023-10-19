@@ -12857,3 +12857,2978 @@
 1697574674: Saving in-memory database to /mosquitto/data//mosquitto.db.
 1697574674: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
 1697574674: Error: No such file or directory.
+1697660475: mosquitto version 2.0.15 starting
+1697660475: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1697660475: Opening ipv4 listen socket on port 1883.
+1697660475: Opening ipv6 listen socket on port 1883.
+1697660475: Opening ipv4 listen socket on port 9001.
+1697660475: Opening ipv6 listen socket on port 9001.
+1697660475: mosquitto version 2.0.15 running
+1697660511: New connection from 172.18.0.3:45310 on port 1883.
+1697660511: New client connected from 172.18.0.3:45310 as mqttjs_73a8414e (p2, c1, k60).
+1697660511: No will message specified.
+1697660511: Sending CONNACK to mqttjs_73a8414e (0, 0)
+1697660511: Received SUBSCRIBE from mqttjs_73a8414e
+1697660511: 	{device} (QoS 0)
+1697660511: mqttjs_73a8414e 0 {device}
+1697660511: Sending SUBACK to mqttjs_73a8414e
+1697660555: Client mqttjs_73a8414e closed its connection.
+1697660577: New connection from 172.18.0.3:49750 on port 1883.
+1697660577: New client connected from 172.18.0.3:49750 as mqttjs_5baccdb8 (p2, c1, k60).
+1697660577: No will message specified.
+1697660577: Sending CONNACK to mqttjs_5baccdb8 (0, 0)
+1697660577: Received SUBSCRIBE from mqttjs_5baccdb8
+1697660577: 	{device} (QoS 0)
+1697660577: mqttjs_5baccdb8 0 {device}
+1697660577: Sending SUBACK to mqttjs_5baccdb8
+1697660637: Received PINGREQ from mqttjs_5baccdb8
+1697660637: Sending PINGRESP to mqttjs_5baccdb8
+1697660697: Received PINGREQ from mqttjs_5baccdb8
+1697660697: Sending PINGRESP to mqttjs_5baccdb8
+1697660757: Received PINGREQ from mqttjs_5baccdb8
+1697660757: Sending PINGRESP to mqttjs_5baccdb8
+1697660757: Client mqttjs_5baccdb8 closed its connection.
+1697660780: New connection from 172.18.0.3:39908 on port 1883.
+1697660780: New client connected from 172.18.0.3:39908 as mqttjs_8ecbeaea (p2, c1, k60).
+1697660780: No will message specified.
+1697660780: Sending CONNACK to mqttjs_8ecbeaea (0, 0)
+1697660780: Received SUBSCRIBE from mqttjs_8ecbeaea
+1697660780: 	{device} (QoS 0)
+1697660780: mqttjs_8ecbeaea 0 {device}
+1697660780: Sending SUBACK to mqttjs_8ecbeaea
+1697660803: Client mqttjs_8ecbeaea closed its connection.
+1697660824: New connection from 172.18.0.3:56906 on port 1883.
+1697660824: New client connected from 172.18.0.3:56906 as mqttjs_e71c59bf (p2, c1, k60).
+1697660824: No will message specified.
+1697660824: Sending CONNACK to mqttjs_e71c59bf (0, 0)
+1697660824: Received SUBSCRIBE from mqttjs_e71c59bf
+1697660824: 	{device} (QoS 0)
+1697660824: mqttjs_e71c59bf 0 {device}
+1697660824: Sending SUBACK to mqttjs_e71c59bf
+1697660884: Received PINGREQ from mqttjs_e71c59bf
+1697660884: Sending PINGRESP to mqttjs_e71c59bf
+1697660944: Received PINGREQ from mqttjs_e71c59bf
+1697660944: Sending PINGRESP to mqttjs_e71c59bf
+1697661004: Received PINGREQ from mqttjs_e71c59bf
+1697661004: Sending PINGRESP to mqttjs_e71c59bf
+1697661064: Received PINGREQ from mqttjs_e71c59bf
+1697661064: Sending PINGRESP to mqttjs_e71c59bf
+1697661124: Received PINGREQ from mqttjs_e71c59bf
+1697661124: Sending PINGRESP to mqttjs_e71c59bf
+1697661184: Received PINGREQ from mqttjs_e71c59bf
+1697661184: Sending PINGRESP to mqttjs_e71c59bf
+1697661244: Received PINGREQ from mqttjs_e71c59bf
+1697661244: Sending PINGRESP to mqttjs_e71c59bf
+1697661304: Received PINGREQ from mqttjs_e71c59bf
+1697661304: Sending PINGRESP to mqttjs_e71c59bf
+1697661364: Received PINGREQ from mqttjs_e71c59bf
+1697661364: Sending PINGRESP to mqttjs_e71c59bf
+1697661424: Received PINGREQ from mqttjs_e71c59bf
+1697661424: Sending PINGRESP to mqttjs_e71c59bf
+1697661484: Received PINGREQ from mqttjs_e71c59bf
+1697661484: Sending PINGRESP to mqttjs_e71c59bf
+1697661544: Received PINGREQ from mqttjs_e71c59bf
+1697661544: Sending PINGRESP to mqttjs_e71c59bf
+1697661604: Received PINGREQ from mqttjs_e71c59bf
+1697661604: Sending PINGRESP to mqttjs_e71c59bf
+1697661664: Received PINGREQ from mqttjs_e71c59bf
+1697661664: Sending PINGRESP to mqttjs_e71c59bf
+1697661724: Received PINGREQ from mqttjs_e71c59bf
+1697661724: Sending PINGRESP to mqttjs_e71c59bf
+1697661784: Received PINGREQ from mqttjs_e71c59bf
+1697661784: Sending PINGRESP to mqttjs_e71c59bf
+1697661790: Client mqttjs_e71c59bf closed its connection.
+1697661811: New connection from 172.18.0.3:44490 on port 1883.
+1697661811: New client connected from 172.18.0.3:44490 as mqttjs_cbb5b3d9 (p2, c1, k60).
+1697661811: No will message specified.
+1697661811: Sending CONNACK to mqttjs_cbb5b3d9 (0, 0)
+1697661811: Received SUBSCRIBE from mqttjs_cbb5b3d9
+1697661811: 	{device} (QoS 0)
+1697661811: mqttjs_cbb5b3d9 0 {device}
+1697661811: Sending SUBACK to mqttjs_cbb5b3d9
+1697661845: Client mqttjs_cbb5b3d9 closed its connection.
+1697661865: New connection from 172.18.0.3:52018 on port 1883.
+1697661865: New client connected from 172.18.0.3:52018 as mqttjs_31e13534 (p2, c1, k60).
+1697661865: No will message specified.
+1697661865: Sending CONNACK to mqttjs_31e13534 (0, 0)
+1697661865: Received SUBSCRIBE from mqttjs_31e13534
+1697661865: 	{device} (QoS 0)
+1697661865: mqttjs_31e13534 0 {device}
+1697661865: Sending SUBACK to mqttjs_31e13534
+1697661910: Client mqttjs_31e13534 closed its connection.
+1697662276: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1697662276: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1697662276: Error: No such file or directory.
+1697664077: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1697664077: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1697664077: Error: No such file or directory.
+1697665666: New connection from 172.18.0.3:35398 on port 1883.
+1697665666: New client connected from 172.18.0.3:35398 as mqttjs_0c136caa (p2, c1, k60).
+1697665666: No will message specified.
+1697665666: Sending CONNACK to mqttjs_0c136caa (0, 0)
+1697665666: Received SUBSCRIBE from mqttjs_0c136caa
+1697665666: 	{device} (QoS 0)
+1697665666: mqttjs_0c136caa 0 {device}
+1697665666: Sending SUBACK to mqttjs_0c136caa
+1697665726: Received PINGREQ from mqttjs_0c136caa
+1697665726: Sending PINGRESP to mqttjs_0c136caa
+1697665786: Received PINGREQ from mqttjs_0c136caa
+1697665786: Sending PINGRESP to mqttjs_0c136caa
+1697665846: Received PINGREQ from mqttjs_0c136caa
+1697665846: Sending PINGRESP to mqttjs_0c136caa
+1697665862: Client mqttjs_0c136caa closed its connection.
+1697665862: mosquitto version 2.0.15 terminating
+1697665862: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1697665862: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1697665862: Error: No such file or directory.
+1697665866: mosquitto version 2.0.15 starting
+1697665866: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1697665866: Opening ipv4 listen socket on port 1883.
+1697665866: Opening ipv6 listen socket on port 1883.
+1697665866: Opening ipv4 listen socket on port 9001.
+1697665866: Opening ipv6 listen socket on port 9001.
+1697665866: mosquitto version 2.0.15 running
+1697665903: New connection from 172.19.0.3:43524 on port 1883.
+1697665903: New client connected from 172.19.0.3:43524 as mqttjs_1a5ac6f3 (p2, c1, k60).
+1697665903: No will message specified.
+1697665903: Sending CONNACK to mqttjs_1a5ac6f3 (0, 0)
+1697665903: Received SUBSCRIBE from mqttjs_1a5ac6f3
+1697665903: 	{device} (QoS 0)
+1697665903: mqttjs_1a5ac6f3 0 {device}
+1697665903: Sending SUBACK to mqttjs_1a5ac6f3
+1697665963: Received PINGREQ from mqttjs_1a5ac6f3
+1697665963: Sending PINGRESP to mqttjs_1a5ac6f3
+1697666023: Received PINGREQ from mqttjs_1a5ac6f3
+1697666023: Sending PINGRESP to mqttjs_1a5ac6f3
+1697666083: Received PINGREQ from mqttjs_1a5ac6f3
+1697666083: Sending PINGRESP to mqttjs_1a5ac6f3
+1697666143: Received PINGREQ from mqttjs_1a5ac6f3
+1697666143: Sending PINGRESP to mqttjs_1a5ac6f3
+1697666179: Client mqttjs_1a5ac6f3 closed its connection.
+1697666202: New connection from 172.19.0.3:60662 on port 1883.
+1697666202: New client connected from 172.19.0.3:60662 as mqttjs_70c1001f (p2, c1, k60).
+1697666202: No will message specified.
+1697666202: Sending CONNACK to mqttjs_70c1001f (0, 0)
+1697666202: Received SUBSCRIBE from mqttjs_70c1001f
+1697666202: 	{device} (QoS 0)
+1697666202: mqttjs_70c1001f 0 {device}
+1697666202: Sending SUBACK to mqttjs_70c1001f
+1697666262: Received PINGREQ from mqttjs_70c1001f
+1697666262: Sending PINGRESP to mqttjs_70c1001f
+1697666322: Received PINGREQ from mqttjs_70c1001f
+1697666322: Sending PINGRESP to mqttjs_70c1001f
+1697666372: Client mqttjs_70c1001f closed its connection.
+1697666406: New connection from 172.19.0.3:57064 on port 1883.
+1697666406: New client connected from 172.19.0.3:57064 as mqttjs_5b2a0109 (p2, c1, k60).
+1697666406: No will message specified.
+1697666406: Sending CONNACK to mqttjs_5b2a0109 (0, 0)
+1697666406: Received SUBSCRIBE from mqttjs_5b2a0109
+1697666406: 	{device} (QoS 0)
+1697666406: mqttjs_5b2a0109 0 {device}
+1697666406: Sending SUBACK to mqttjs_5b2a0109
+1697666466: Received PINGREQ from mqttjs_5b2a0109
+1697666466: Sending PINGRESP to mqttjs_5b2a0109
+1697666526: Received PINGREQ from mqttjs_5b2a0109
+1697666526: Sending PINGRESP to mqttjs_5b2a0109
+1697666586: Received PINGREQ from mqttjs_5b2a0109
+1697666586: Sending PINGRESP to mqttjs_5b2a0109
+1697666625: Client mqttjs_5b2a0109 closed its connection.
+1697666648: New connection from 172.19.0.3:59348 on port 1883.
+1697666648: New client connected from 172.19.0.3:59348 as mqttjs_fe564266 (p2, c1, k60).
+1697666648: No will message specified.
+1697666648: Sending CONNACK to mqttjs_fe564266 (0, 0)
+1697666648: Received SUBSCRIBE from mqttjs_fe564266
+1697666648: 	{device} (QoS 0)
+1697666648: mqttjs_fe564266 0 {device}
+1697666648: Sending SUBACK to mqttjs_fe564266
+1697666708: Received PINGREQ from mqttjs_fe564266
+1697666708: Sending PINGRESP to mqttjs_fe564266
+1697666768: Received PINGREQ from mqttjs_fe564266
+1697666768: Sending PINGRESP to mqttjs_fe564266
+1697666828: Received PINGREQ from mqttjs_fe564266
+1697666828: Sending PINGRESP to mqttjs_fe564266
+1697666888: Received PINGREQ from mqttjs_fe564266
+1697666888: Sending PINGRESP to mqttjs_fe564266
+1697666948: Received PINGREQ from mqttjs_fe564266
+1697666948: Sending PINGRESP to mqttjs_fe564266
+1697667008: Received PINGREQ from mqttjs_fe564266
+1697667008: Sending PINGRESP to mqttjs_fe564266
+1697667068: Received PINGREQ from mqttjs_fe564266
+1697667068: Sending PINGRESP to mqttjs_fe564266
+1697667128: Received PINGREQ from mqttjs_fe564266
+1697667128: Sending PINGRESP to mqttjs_fe564266
+1697667188: Received PINGREQ from mqttjs_fe564266
+1697667188: Sending PINGRESP to mqttjs_fe564266
+1697667248: Received PINGREQ from mqttjs_fe564266
+1697667248: Sending PINGRESP to mqttjs_fe564266
+1697667250: Client mqttjs_fe564266 closed its connection.
+1697667274: New connection from 172.19.0.3:55838 on port 1883.
+1697667274: New client connected from 172.19.0.3:55838 as mqttjs_39e65cfc (p2, c1, k60).
+1697667274: No will message specified.
+1697667274: Sending CONNACK to mqttjs_39e65cfc (0, 0)
+1697667274: Received SUBSCRIBE from mqttjs_39e65cfc
+1697667274: 	{device} (QoS 0)
+1697667274: mqttjs_39e65cfc 0 {device}
+1697667274: Sending SUBACK to mqttjs_39e65cfc
+1697667334: Received PINGREQ from mqttjs_39e65cfc
+1697667334: Sending PINGRESP to mqttjs_39e65cfc
+1697667394: Received PINGREQ from mqttjs_39e65cfc
+1697667394: Sending PINGRESP to mqttjs_39e65cfc
+1697667454: Received PINGREQ from mqttjs_39e65cfc
+1697667454: Sending PINGRESP to mqttjs_39e65cfc
+1697667514: Received PINGREQ from mqttjs_39e65cfc
+1697667514: Sending PINGRESP to mqttjs_39e65cfc
+1697667574: Received PINGREQ from mqttjs_39e65cfc
+1697667574: Sending PINGRESP to mqttjs_39e65cfc
+1697667634: Received PINGREQ from mqttjs_39e65cfc
+1697667634: Sending PINGRESP to mqttjs_39e65cfc
+1697667667: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1697667667: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1697667667: Error: No such file or directory.
+1697667694: Received PINGREQ from mqttjs_39e65cfc
+1697667694: Sending PINGRESP to mqttjs_39e65cfc
+1697667695: Client mqttjs_39e65cfc closed its connection.
+1697667724: New connection from 172.19.0.3:38416 on port 1883.
+1697667724: New client connected from 172.19.0.3:38416 as mqttjs_87694324 (p2, c1, k60).
+1697667724: No will message specified.
+1697667724: Sending CONNACK to mqttjs_87694324 (0, 0)
+1697667724: Received SUBSCRIBE from mqttjs_87694324
+1697667724: 	{device} (QoS 0)
+1697667724: mqttjs_87694324 0 {device}
+1697667724: Sending SUBACK to mqttjs_87694324
+1697667784: Received PINGREQ from mqttjs_87694324
+1697667784: Sending PINGRESP to mqttjs_87694324
+1697667844: Received PINGREQ from mqttjs_87694324
+1697667844: Sending PINGRESP to mqttjs_87694324
+1697667904: Received PINGREQ from mqttjs_87694324
+1697667904: Sending PINGRESP to mqttjs_87694324
+1697667964: Received PINGREQ from mqttjs_87694324
+1697667964: Sending PINGRESP to mqttjs_87694324
+1697668024: Received PINGREQ from mqttjs_87694324
+1697668024: Sending PINGRESP to mqttjs_87694324
+1697668084: Received PINGREQ from mqttjs_87694324
+1697668084: Sending PINGRESP to mqttjs_87694324
+1697668144: Received PINGREQ from mqttjs_87694324
+1697668144: Sending PINGRESP to mqttjs_87694324
+1697668204: Received PINGREQ from mqttjs_87694324
+1697668204: Sending PINGRESP to mqttjs_87694324
+1697668264: Received PINGREQ from mqttjs_87694324
+1697668264: Sending PINGRESP to mqttjs_87694324
+1697668324: Received PINGREQ from mqttjs_87694324
+1697668324: Sending PINGRESP to mqttjs_87694324
+1697668384: Received PINGREQ from mqttjs_87694324
+1697668384: Sending PINGRESP to mqttjs_87694324
+1697668444: Received PINGREQ from mqttjs_87694324
+1697668444: Sending PINGRESP to mqttjs_87694324
+1697668504: Received PINGREQ from mqttjs_87694324
+1697668504: Sending PINGRESP to mqttjs_87694324
+1697668564: Received PINGREQ from mqttjs_87694324
+1697668564: Sending PINGRESP to mqttjs_87694324
+1697668624: Received PINGREQ from mqttjs_87694324
+1697668624: Sending PINGRESP to mqttjs_87694324
+1697668684: Received PINGREQ from mqttjs_87694324
+1697668684: Sending PINGRESP to mqttjs_87694324
+1697668744: Received PINGREQ from mqttjs_87694324
+1697668744: Sending PINGRESP to mqttjs_87694324
+1697668798: Client mqttjs_87694324 closed its connection.
+1697668845: New connection from 172.19.0.3:43424 on port 1883.
+1697668845: New client connected from 172.19.0.3:43424 as mqttjs_e3c06dcf (p2, c1, k60).
+1697668845: No will message specified.
+1697668845: Sending CONNACK to mqttjs_e3c06dcf (0, 0)
+1697668845: Received SUBSCRIBE from mqttjs_e3c06dcf
+1697668845: 	{device} (QoS 0)
+1697668845: mqttjs_e3c06dcf 0 {device}
+1697668845: Sending SUBACK to mqttjs_e3c06dcf
+1697668868: Client mqttjs_e3c06dcf closed its connection.
+1697668893: New connection from 172.19.0.3:37030 on port 1883.
+1697668893: New client connected from 172.19.0.3:37030 as mqttjs_6394572b (p2, c1, k60).
+1697668893: No will message specified.
+1697668893: Sending CONNACK to mqttjs_6394572b (0, 0)
+1697668894: Received SUBSCRIBE from mqttjs_6394572b
+1697668894: 	{device} (QoS 0)
+1697668894: mqttjs_6394572b 0 {device}
+1697668894: Sending SUBACK to mqttjs_6394572b
+1697668953: Received PINGREQ from mqttjs_6394572b
+1697668953: Sending PINGRESP to mqttjs_6394572b
+1697669014: Received PINGREQ from mqttjs_6394572b
+1697669014: Sending PINGRESP to mqttjs_6394572b
+1697669074: Received PINGREQ from mqttjs_6394572b
+1697669074: Sending PINGRESP to mqttjs_6394572b
+1697669134: Received PINGREQ from mqttjs_6394572b
+1697669134: Sending PINGRESP to mqttjs_6394572b
+1697669194: Received PINGREQ from mqttjs_6394572b
+1697669194: Sending PINGRESP to mqttjs_6394572b
+1697669254: Received PINGREQ from mqttjs_6394572b
+1697669254: Sending PINGRESP to mqttjs_6394572b
+1697669314: Received PINGREQ from mqttjs_6394572b
+1697669314: Sending PINGRESP to mqttjs_6394572b
+1697669374: Received PINGREQ from mqttjs_6394572b
+1697669374: Sending PINGRESP to mqttjs_6394572b
+1697669434: Received PINGREQ from mqttjs_6394572b
+1697669434: Sending PINGRESP to mqttjs_6394572b
+1697669436: Client mqttjs_6394572b closed its connection.
+1697669468: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1697669468: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1697669468: Error: No such file or directory.
+1697669485: New connection from 172.19.0.3:41652 on port 1883.
+1697669485: New client connected from 172.19.0.3:41652 as mqttjs_ab8275f9 (p2, c1, k60).
+1697669485: No will message specified.
+1697669485: Sending CONNACK to mqttjs_ab8275f9 (0, 0)
+1697669485: Received SUBSCRIBE from mqttjs_ab8275f9
+1697669485: 	{device} (QoS 0)
+1697669485: mqttjs_ab8275f9 0 {device}
+1697669485: Sending SUBACK to mqttjs_ab8275f9
+1697669545: Received PINGREQ from mqttjs_ab8275f9
+1697669545: Sending PINGRESP to mqttjs_ab8275f9
+1697669605: Received PINGREQ from mqttjs_ab8275f9
+1697669605: Sending PINGRESP to mqttjs_ab8275f9
+1697669665: Received PINGREQ from mqttjs_ab8275f9
+1697669665: Sending PINGRESP to mqttjs_ab8275f9
+1697669725: Received PINGREQ from mqttjs_ab8275f9
+1697669725: Sending PINGRESP to mqttjs_ab8275f9
+1697669785: Received PINGREQ from mqttjs_ab8275f9
+1697669785: Sending PINGRESP to mqttjs_ab8275f9
+1697669792: Client mqttjs_ab8275f9 closed its connection.
+1697669816: New connection from 172.19.0.3:50340 on port 1883.
+1697669816: New client connected from 172.19.0.3:50340 as mqttjs_87e3eb18 (p2, c1, k60).
+1697669816: No will message specified.
+1697669816: Sending CONNACK to mqttjs_87e3eb18 (0, 0)
+1697669816: Received SUBSCRIBE from mqttjs_87e3eb18
+1697669816: 	{device} (QoS 0)
+1697669816: mqttjs_87e3eb18 0 {device}
+1697669816: Sending SUBACK to mqttjs_87e3eb18
+1697669876: Received PINGREQ from mqttjs_87e3eb18
+1697669876: Sending PINGRESP to mqttjs_87e3eb18
+1697669899: Client mqttjs_87e3eb18 closed its connection.
+1697669985: New connection from 172.19.0.3:40504 on port 1883.
+1697669985: New client connected from 172.19.0.3:40504 as mqttjs_4a52315c (p2, c1, k60).
+1697669985: No will message specified.
+1697669985: Sending CONNACK to mqttjs_4a52315c (0, 0)
+1697669985: Received SUBSCRIBE from mqttjs_4a52315c
+1697669985: 	{device} (QoS 0)
+1697669985: mqttjs_4a52315c 0 {device}
+1697669985: Sending SUBACK to mqttjs_4a52315c
+1697670045: Received PINGREQ from mqttjs_4a52315c
+1697670045: Sending PINGRESP to mqttjs_4a52315c
+1697670102: Client mqttjs_4a52315c closed its connection.
+1697670183: New connection from 172.19.0.3:46840 on port 1883.
+1697670183: New client connected from 172.19.0.3:46840 as mqttjs_6eb9e0b5 (p2, c1, k60).
+1697670183: No will message specified.
+1697670183: Sending CONNACK to mqttjs_6eb9e0b5 (0, 0)
+1697670183: Received SUBSCRIBE from mqttjs_6eb9e0b5
+1697670183: 	{device} (QoS 0)
+1697670183: mqttjs_6eb9e0b5 0 {device}
+1697670183: Sending SUBACK to mqttjs_6eb9e0b5
+1697670243: Received PINGREQ from mqttjs_6eb9e0b5
+1697670243: Sending PINGRESP to mqttjs_6eb9e0b5
+1697670281: Client mqttjs_6eb9e0b5 closed its connection.
+1697670306: New connection from 172.19.0.3:33828 on port 1883.
+1697670306: New client connected from 172.19.0.3:33828 as mqttjs_aa1b328b (p2, c1, k60).
+1697670306: No will message specified.
+1697670306: Sending CONNACK to mqttjs_aa1b328b (0, 0)
+1697670306: Received SUBSCRIBE from mqttjs_aa1b328b
+1697670306: 	{device} (QoS 0)
+1697670306: mqttjs_aa1b328b 0 {device}
+1697670306: Sending SUBACK to mqttjs_aa1b328b
+1697670318: Client mqttjs_aa1b328b closed its connection.
+1697670362: New connection from 172.19.0.3:42068 on port 1883.
+1697670362: New client connected from 172.19.0.3:42068 as mqttjs_9ed21c1c (p2, c1, k60).
+1697670362: No will message specified.
+1697670362: Sending CONNACK to mqttjs_9ed21c1c (0, 0)
+1697670362: Received SUBSCRIBE from mqttjs_9ed21c1c
+1697670362: 	{device} (QoS 0)
+1697670362: mqttjs_9ed21c1c 0 {device}
+1697670362: Sending SUBACK to mqttjs_9ed21c1c
+1697670422: Received PINGREQ from mqttjs_9ed21c1c
+1697670422: Sending PINGRESP to mqttjs_9ed21c1c
+1697670482: Received PINGREQ from mqttjs_9ed21c1c
+1697670482: Sending PINGRESP to mqttjs_9ed21c1c
+1697670488: Client mqttjs_9ed21c1c closed its connection.
+1697670574: New connection from 172.19.0.3:52708 on port 1883.
+1697670574: New client connected from 172.19.0.3:52708 as mqttjs_a94d457a (p2, c1, k60).
+1697670574: No will message specified.
+1697670574: Sending CONNACK to mqttjs_a94d457a (0, 0)
+1697670574: Received SUBSCRIBE from mqttjs_a94d457a
+1697670574: 	{device} (QoS 0)
+1697670574: mqttjs_a94d457a 0 {device}
+1697670574: Sending SUBACK to mqttjs_a94d457a
+1697670634: Received PINGREQ from mqttjs_a94d457a
+1697670634: Sending PINGRESP to mqttjs_a94d457a
+1697670659: Client mqttjs_a94d457a closed its connection.
+1697670684: New connection from 172.19.0.3:51322 on port 1883.
+1697670684: New client connected from 172.19.0.3:51322 as mqttjs_41af4fd4 (p2, c1, k60).
+1697670684: No will message specified.
+1697670684: Sending CONNACK to mqttjs_41af4fd4 (0, 0)
+1697670684: Received SUBSCRIBE from mqttjs_41af4fd4
+1697670684: 	{device} (QoS 0)
+1697670684: mqttjs_41af4fd4 0 {device}
+1697670684: Sending SUBACK to mqttjs_41af4fd4
+1697670737: Client mqttjs_41af4fd4 closed its connection.
+1697670764: New connection from 172.19.0.3:42308 on port 1883.
+1697670764: New client connected from 172.19.0.3:42308 as mqttjs_b268d69d (p2, c1, k60).
+1697670764: No will message specified.
+1697670764: Sending CONNACK to mqttjs_b268d69d (0, 0)
+1697670764: Received SUBSCRIBE from mqttjs_b268d69d
+1697670764: 	{device} (QoS 0)
+1697670764: mqttjs_b268d69d 0 {device}
+1697670764: Sending SUBACK to mqttjs_b268d69d
+1697670824: Received PINGREQ from mqttjs_b268d69d
+1697670824: Sending PINGRESP to mqttjs_b268d69d
+1697670884: Received PINGREQ from mqttjs_b268d69d
+1697670884: Sending PINGRESP to mqttjs_b268d69d
+1697670944: Received PINGREQ from mqttjs_b268d69d
+1697670944: Sending PINGRESP to mqttjs_b268d69d
+1697671004: Received PINGREQ from mqttjs_b268d69d
+1697671004: Sending PINGRESP to mqttjs_b268d69d
+1697671064: Received PINGREQ from mqttjs_b268d69d
+1697671064: Sending PINGRESP to mqttjs_b268d69d
+1697671124: Received PINGREQ from mqttjs_b268d69d
+1697671124: Sending PINGRESP to mqttjs_b268d69d
+1697671184: Received PINGREQ from mqttjs_b268d69d
+1697671184: Sending PINGRESP to mqttjs_b268d69d
+1697671244: Received PINGREQ from mqttjs_b268d69d
+1697671244: Sending PINGRESP to mqttjs_b268d69d
+1697671269: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1697671269: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1697671269: Error: No such file or directory.
+1697671304: Received PINGREQ from mqttjs_b268d69d
+1697671304: Sending PINGRESP to mqttjs_b268d69d
+1697671364: Received PINGREQ from mqttjs_b268d69d
+1697671364: Sending PINGRESP to mqttjs_b268d69d
+1697671424: Received PINGREQ from mqttjs_b268d69d
+1697671424: Sending PINGRESP to mqttjs_b268d69d
+1697671484: Received PINGREQ from mqttjs_b268d69d
+1697671484: Sending PINGRESP to mqttjs_b268d69d
+1697671523: Client mqttjs_b268d69d closed its connection.
+1697671547: New connection from 172.19.0.3:45974 on port 1883.
+1697671547: New client connected from 172.19.0.3:45974 as mqttjs_14160a4c (p2, c1, k60).
+1697671547: No will message specified.
+1697671547: Sending CONNACK to mqttjs_14160a4c (0, 0)
+1697671547: Received SUBSCRIBE from mqttjs_14160a4c
+1697671547: 	{device} (QoS 0)
+1697671547: mqttjs_14160a4c 0 {device}
+1697671547: Sending SUBACK to mqttjs_14160a4c
+1697671607: Received PINGREQ from mqttjs_14160a4c
+1697671607: Sending PINGRESP to mqttjs_14160a4c
+1697671667: Received PINGREQ from mqttjs_14160a4c
+1697671667: Sending PINGRESP to mqttjs_14160a4c
+1697671727: Received PINGREQ from mqttjs_14160a4c
+1697671727: Sending PINGRESP to mqttjs_14160a4c
+1697671787: Received PINGREQ from mqttjs_14160a4c
+1697671787: Sending PINGRESP to mqttjs_14160a4c
+1697671847: Received PINGREQ from mqttjs_14160a4c
+1697671847: Sending PINGRESP to mqttjs_14160a4c
+1697671907: Received PINGREQ from mqttjs_14160a4c
+1697671907: Sending PINGRESP to mqttjs_14160a4c
+1697671967: Received PINGREQ from mqttjs_14160a4c
+1697671967: Sending PINGRESP to mqttjs_14160a4c
+1697672027: Received PINGREQ from mqttjs_14160a4c
+1697672027: Sending PINGRESP to mqttjs_14160a4c
+1697672087: Received PINGREQ from mqttjs_14160a4c
+1697672087: Sending PINGRESP to mqttjs_14160a4c
+1697672147: Received PINGREQ from mqttjs_14160a4c
+1697672147: Sending PINGRESP to mqttjs_14160a4c
+1697672207: Received PINGREQ from mqttjs_14160a4c
+1697672207: Sending PINGRESP to mqttjs_14160a4c
+1697672257: Client mqttjs_14160a4c closed its connection.
+1697673468: mosquitto version 2.0.15 starting
+1697673468: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1697673468: Opening ipv4 listen socket on port 1883.
+1697673468: Opening ipv6 listen socket on port 1883.
+1697673468: Opening ipv4 listen socket on port 9001.
+1697673468: Opening ipv6 listen socket on port 9001.
+1697673468: mosquitto version 2.0.15 running
+1697673504: New connection from 172.19.0.2:54414 on port 1883.
+1697673504: New client connected from 172.19.0.2:54414 as mqttjs_3363917c (p2, c1, k60).
+1697673504: No will message specified.
+1697673504: Sending CONNACK to mqttjs_3363917c (0, 0)
+1697673504: Received SUBSCRIBE from mqttjs_3363917c
+1697673504: 	{device} (QoS 0)
+1697673504: mqttjs_3363917c 0 {device}
+1697673504: Sending SUBACK to mqttjs_3363917c
+1697673564: Received PINGREQ from mqttjs_3363917c
+1697673564: Sending PINGRESP to mqttjs_3363917c
+1697673594: Client mqttjs_3363917c closed its connection.
+1697673615: New connection from 172.19.0.2:38408 on port 1883.
+1697673615: New client connected from 172.19.0.2:38408 as mqttjs_09e41c32 (p2, c1, k60).
+1697673615: No will message specified.
+1697673615: Sending CONNACK to mqttjs_09e41c32 (0, 0)
+1697673615: Received SUBSCRIBE from mqttjs_09e41c32
+1697673615: 	{device} (QoS 0)
+1697673615: mqttjs_09e41c32 0 {device}
+1697673615: Sending SUBACK to mqttjs_09e41c32
+1697673675: Received PINGREQ from mqttjs_09e41c32
+1697673675: Sending PINGRESP to mqttjs_09e41c32
+1697673735: Received PINGREQ from mqttjs_09e41c32
+1697673735: Sending PINGRESP to mqttjs_09e41c32
+1697673795: Received PINGREQ from mqttjs_09e41c32
+1697673795: Sending PINGRESP to mqttjs_09e41c32
+1697673855: Received PINGREQ from mqttjs_09e41c32
+1697673855: Sending PINGRESP to mqttjs_09e41c32
+1697673915: Received PINGREQ from mqttjs_09e41c32
+1697673915: Sending PINGRESP to mqttjs_09e41c32
+1697673975: Received PINGREQ from mqttjs_09e41c32
+1697673975: Sending PINGRESP to mqttjs_09e41c32
+1697674035: Received PINGREQ from mqttjs_09e41c32
+1697674035: Sending PINGRESP to mqttjs_09e41c32
+1697674095: Received PINGREQ from mqttjs_09e41c32
+1697674095: Sending PINGRESP to mqttjs_09e41c32
+1697674155: Received PINGREQ from mqttjs_09e41c32
+1697674155: Sending PINGRESP to mqttjs_09e41c32
+1697674215: Received PINGREQ from mqttjs_09e41c32
+1697674215: Sending PINGRESP to mqttjs_09e41c32
+1697674275: Received PINGREQ from mqttjs_09e41c32
+1697674275: Sending PINGRESP to mqttjs_09e41c32
+1697674335: Received PINGREQ from mqttjs_09e41c32
+1697674335: Sending PINGRESP to mqttjs_09e41c32
+1697674395: Received PINGREQ from mqttjs_09e41c32
+1697674395: Sending PINGRESP to mqttjs_09e41c32
+1697674441: Client mqttjs_09e41c32 closed its connection.
+1697674473: New connection from 172.19.0.2:42690 on port 1883.
+1697674473: New client connected from 172.19.0.2:42690 as mqttjs_671178f9 (p2, c1, k60).
+1697674473: No will message specified.
+1697674473: Sending CONNACK to mqttjs_671178f9 (0, 0)
+1697674473: Received SUBSCRIBE from mqttjs_671178f9
+1697674473: 	{device} (QoS 0)
+1697674473: mqttjs_671178f9 0 {device}
+1697674473: Sending SUBACK to mqttjs_671178f9
+1697674490: Client mqttjs_671178f9 closed its connection.
+1697674511: New connection from 172.19.0.2:59382 on port 1883.
+1697674511: New client connected from 172.19.0.2:59382 as mqttjs_1b04260f (p2, c1, k60).
+1697674511: No will message specified.
+1697674511: Sending CONNACK to mqttjs_1b04260f (0, 0)
+1697674512: Received SUBSCRIBE from mqttjs_1b04260f
+1697674512: 	{device} (QoS 0)
+1697674512: mqttjs_1b04260f 0 {device}
+1697674512: Sending SUBACK to mqttjs_1b04260f
+1697674550: Client mqttjs_1b04260f closed its connection.
+1697674572: New connection from 172.19.0.2:52890 on port 1883.
+1697674572: New client connected from 172.19.0.2:52890 as mqttjs_039aa455 (p2, c1, k60).
+1697674572: No will message specified.
+1697674572: Sending CONNACK to mqttjs_039aa455 (0, 0)
+1697674572: Received SUBSCRIBE from mqttjs_039aa455
+1697674572: 	{device} (QoS 0)
+1697674572: mqttjs_039aa455 0 {device}
+1697674572: Sending SUBACK to mqttjs_039aa455
+1697674573: Client mqttjs_039aa455 closed its connection.
+1697674594: New connection from 172.19.0.2:37366 on port 1883.
+1697674594: New client connected from 172.19.0.2:37366 as mqttjs_be205786 (p2, c1, k60).
+1697674594: No will message specified.
+1697674594: Sending CONNACK to mqttjs_be205786 (0, 0)
+1697674594: Received SUBSCRIBE from mqttjs_be205786
+1697674594: 	{device} (QoS 0)
+1697674594: mqttjs_be205786 0 {device}
+1697674594: Sending SUBACK to mqttjs_be205786
+1697674604: Client mqttjs_be205786 closed its connection.
+1697674625: New connection from 172.19.0.2:44536 on port 1883.
+1697674625: New client connected from 172.19.0.2:44536 as mqttjs_255b2eb5 (p2, c1, k60).
+1697674625: No will message specified.
+1697674625: Sending CONNACK to mqttjs_255b2eb5 (0, 0)
+1697674625: Received SUBSCRIBE from mqttjs_255b2eb5
+1697674625: 	{device} (QoS 0)
+1697674625: mqttjs_255b2eb5 0 {device}
+1697674625: Sending SUBACK to mqttjs_255b2eb5
+1697674685: Received PINGREQ from mqttjs_255b2eb5
+1697674685: Sending PINGRESP to mqttjs_255b2eb5
+1697674745: Received PINGREQ from mqttjs_255b2eb5
+1697674745: Sending PINGRESP to mqttjs_255b2eb5
+1697674805: Received PINGREQ from mqttjs_255b2eb5
+1697674805: Sending PINGRESP to mqttjs_255b2eb5
+1697674865: Received PINGREQ from mqttjs_255b2eb5
+1697674865: Sending PINGRESP to mqttjs_255b2eb5
+1697674925: Received PINGREQ from mqttjs_255b2eb5
+1697674925: Sending PINGRESP to mqttjs_255b2eb5
+1697674985: Received PINGREQ from mqttjs_255b2eb5
+1697674985: Sending PINGRESP to mqttjs_255b2eb5
+1697675045: Received PINGREQ from mqttjs_255b2eb5
+1697675045: Sending PINGRESP to mqttjs_255b2eb5
+1697675055: New connection from 172.19.0.1:39100 on port 1883.
+1697675055: New client connected from 172.19.0.1:39100 as postman-mqtt-client-1697675055314 (p5, c1, k60).
+1697675055: No will message specified.
+1697675055: Sending CONNACK to postman-mqtt-client-1697675055314 (0, 0)
+1697675085: Received PUBLISH from postman-mqtt-client-1697675055314 (d0, q0, r0, m0, '{device}', ... (6 bytes))
+1697675085: Sending PUBLISH to mqttjs_255b2eb5 (d0, q0, r0, m0, '{device}', ... (6 bytes))
+1697675105: Received PINGREQ from mqttjs_255b2eb5
+1697675105: Sending PINGRESP to mqttjs_255b2eb5
+1697675118: Client mqttjs_255b2eb5 closed its connection.
+1697675142: New connection from 172.19.0.2:57538 on port 1883.
+1697675142: New client connected from 172.19.0.2:57538 as mqttjs_7aaf6ed8 (p2, c1, k60).
+1697675142: No will message specified.
+1697675142: Sending CONNACK to mqttjs_7aaf6ed8 (0, 0)
+1697675142: Received SUBSCRIBE from mqttjs_7aaf6ed8
+1697675142: 	{device} (QoS 0)
+1697675142: mqttjs_7aaf6ed8 0 {device}
+1697675142: Sending SUBACK to mqttjs_7aaf6ed8
+1697675145: Received PINGREQ from postman-mqtt-client-1697675055314
+1697675145: Sending PINGRESP to postman-mqtt-client-1697675055314
+1697675167: Received PUBLISH from postman-mqtt-client-1697675055314 (d0, q0, r0, m0, '{device}', ... (6 bytes))
+1697675167: Sending PUBLISH to mqttjs_7aaf6ed8 (d0, q0, r0, m0, '{device}', ... (6 bytes))
+1697675169: Received PUBLISH from postman-mqtt-client-1697675055314 (d0, q0, r0, m0, '{device}', ... (6 bytes))
+1697675169: Sending PUBLISH to mqttjs_7aaf6ed8 (d0, q0, r0, m0, '{device}', ... (6 bytes))
+1697675202: Received PINGREQ from mqttjs_7aaf6ed8
+1697675202: Sending PINGRESP to mqttjs_7aaf6ed8
+1697675214: Received PUBLISH from postman-mqtt-client-1697675055314 (d0, q0, r0, m0, '{device1}', ... (6 bytes))
+1697675224: Received PUBLISH from postman-mqtt-client-1697675055314 (d0, q0, r0, m0, '{device1}', ... (8 bytes))
+1697675228: Received PUBLISH from postman-mqtt-client-1697675055314 (d0, q0, r0, m0, '{device}', ... (8 bytes))
+1697675228: Sending PUBLISH to mqttjs_7aaf6ed8 (d0, q0, r0, m0, '{device}', ... (8 bytes))
+1697675262: Received PINGREQ from mqttjs_7aaf6ed8
+1697675262: Sending PINGRESP to mqttjs_7aaf6ed8
+1697675269: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1697675269: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1697675269: Error: No such file or directory.
+1697675288: Received PINGREQ from postman-mqtt-client-1697675055314
+1697675288: Sending PINGRESP to postman-mqtt-client-1697675055314
+1697675322: Received PINGREQ from mqttjs_7aaf6ed8
+1697675322: Sending PINGRESP to mqttjs_7aaf6ed8
+1697675348: Received PINGREQ from postman-mqtt-client-1697675055314
+1697675348: Sending PINGRESP to postman-mqtt-client-1697675055314
+1697675382: Received PINGREQ from mqttjs_7aaf6ed8
+1697675382: Sending PINGRESP to mqttjs_7aaf6ed8
+1697675408: Received PINGREQ from postman-mqtt-client-1697675055314
+1697675408: Sending PINGRESP to postman-mqtt-client-1697675055314
+1697675442: Received PINGREQ from mqttjs_7aaf6ed8
+1697675442: Sending PINGRESP to mqttjs_7aaf6ed8
+1697675468: Received PINGREQ from postman-mqtt-client-1697675055314
+1697675468: Sending PINGRESP to postman-mqtt-client-1697675055314
+1697675502: Received PINGREQ from mqttjs_7aaf6ed8
+1697675502: Sending PINGRESP to mqttjs_7aaf6ed8
+1697675516: Client mqttjs_7aaf6ed8 closed its connection.
+1697675528: Received PINGREQ from postman-mqtt-client-1697675055314
+1697675528: Sending PINGRESP to postman-mqtt-client-1697675055314
+1697675588: Received PINGREQ from postman-mqtt-client-1697675055314
+1697675588: Sending PINGRESP to postman-mqtt-client-1697675055314
+1697675648: Received PINGREQ from postman-mqtt-client-1697675055314
+1697675648: Sending PINGRESP to postman-mqtt-client-1697675055314
+1697675708: Received PINGREQ from postman-mqtt-client-1697675055314
+1697675708: Sending PINGRESP to postman-mqtt-client-1697675055314
+1697675768: Received PINGREQ from postman-mqtt-client-1697675055314
+1697675768: Sending PINGRESP to postman-mqtt-client-1697675055314
+1697675828: Received PINGREQ from postman-mqtt-client-1697675055314
+1697675828: Sending PINGRESP to postman-mqtt-client-1697675055314
+1697675888: Received PINGREQ from postman-mqtt-client-1697675055314
+1697675888: Sending PINGRESP to postman-mqtt-client-1697675055314
+1697675948: Received PINGREQ from postman-mqtt-client-1697675055314
+1697675948: Sending PINGRESP to postman-mqtt-client-1697675055314
+1697676008: Received PINGREQ from postman-mqtt-client-1697675055314
+1697676008: Sending PINGRESP to postman-mqtt-client-1697675055314
+1697676068: Received PINGREQ from postman-mqtt-client-1697675055314
+1697676068: Sending PINGRESP to postman-mqtt-client-1697675055314
+1697676128: Received PINGREQ from postman-mqtt-client-1697675055314
+1697676128: Sending PINGRESP to postman-mqtt-client-1697675055314
+1697676188: Received PINGREQ from postman-mqtt-client-1697675055314
+1697676188: Sending PINGRESP to postman-mqtt-client-1697675055314
+1697676248: Received PINGREQ from postman-mqtt-client-1697675055314
+1697676248: Sending PINGRESP to postman-mqtt-client-1697675055314
+1697676308: Received PINGREQ from postman-mqtt-client-1697675055314
+1697676308: Sending PINGRESP to postman-mqtt-client-1697675055314
+1697676368: Received PINGREQ from postman-mqtt-client-1697675055314
+1697676368: Sending PINGRESP to postman-mqtt-client-1697675055314
+1697676428: Received PINGREQ from postman-mqtt-client-1697675055314
+1697676428: Sending PINGRESP to postman-mqtt-client-1697675055314
+1697676488: Received PINGREQ from postman-mqtt-client-1697675055314
+1697676488: Sending PINGRESP to postman-mqtt-client-1697675055314
+1697676548: Received PINGREQ from postman-mqtt-client-1697675055314
+1697676548: Sending PINGRESP to postman-mqtt-client-1697675055314
+1697676608: Received PINGREQ from postman-mqtt-client-1697675055314
+1697676608: Sending PINGRESP to postman-mqtt-client-1697675055314
+1697676668: Received PINGREQ from postman-mqtt-client-1697675055314
+1697676668: Sending PINGRESP to postman-mqtt-client-1697675055314
+1697676728: Received PINGREQ from postman-mqtt-client-1697675055314
+1697676728: Sending PINGRESP to postman-mqtt-client-1697675055314
+1697676788: Received PINGREQ from postman-mqtt-client-1697675055314
+1697676788: Sending PINGRESP to postman-mqtt-client-1697675055314
+1697676848: Received PINGREQ from postman-mqtt-client-1697675055314
+1697676848: Sending PINGRESP to postman-mqtt-client-1697675055314
+1697676908: Received PINGREQ from postman-mqtt-client-1697675055314
+1697676908: Sending PINGRESP to postman-mqtt-client-1697675055314
+1697676968: Received PINGREQ from postman-mqtt-client-1697675055314
+1697676968: Sending PINGRESP to postman-mqtt-client-1697675055314
+1697677028: Received PINGREQ from postman-mqtt-client-1697675055314
+1697677028: Sending PINGRESP to postman-mqtt-client-1697675055314
+1697677070: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1697677070: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1697677070: Error: No such file or directory.
+1697677088: Received PINGREQ from postman-mqtt-client-1697675055314
+1697677088: Sending PINGRESP to postman-mqtt-client-1697675055314
+1697677148: Received PINGREQ from postman-mqtt-client-1697675055314
+1697677148: Sending PINGRESP to postman-mqtt-client-1697675055314
+1697677208: Received PINGREQ from postman-mqtt-client-1697675055314
+1697677208: Sending PINGRESP to postman-mqtt-client-1697675055314
+1697677268: Received PINGREQ from postman-mqtt-client-1697675055314
+1697677268: Sending PINGRESP to postman-mqtt-client-1697675055314
+1697677328: Received PINGREQ from postman-mqtt-client-1697675055314
+1697677328: Sending PINGRESP to postman-mqtt-client-1697675055314
+1697677388: Received PINGREQ from postman-mqtt-client-1697675055314
+1697677388: Sending PINGRESP to postman-mqtt-client-1697675055314
+1697677448: Received PINGREQ from postman-mqtt-client-1697675055314
+1697677448: Sending PINGRESP to postman-mqtt-client-1697675055314
+1697677508: Received PINGREQ from postman-mqtt-client-1697675055314
+1697677508: Sending PINGRESP to postman-mqtt-client-1697675055314
+1697677568: Received PINGREQ from postman-mqtt-client-1697675055314
+1697677568: Sending PINGRESP to postman-mqtt-client-1697675055314
+1697677628: Received PINGREQ from postman-mqtt-client-1697675055314
+1697677628: Sending PINGRESP to postman-mqtt-client-1697675055314
+1697677688: Received PINGREQ from postman-mqtt-client-1697675055314
+1697677688: Sending PINGRESP to postman-mqtt-client-1697675055314
+1697677748: Received PINGREQ from postman-mqtt-client-1697675055314
+1697677748: Sending PINGRESP to postman-mqtt-client-1697675055314
+1697677808: Received PINGREQ from postman-mqtt-client-1697675055314
+1697677808: Sending PINGRESP to postman-mqtt-client-1697675055314
+1697677868: Received PINGREQ from postman-mqtt-client-1697675055314
+1697677868: Sending PINGRESP to postman-mqtt-client-1697675055314
+1697677928: Received PINGREQ from postman-mqtt-client-1697675055314
+1697677928: Sending PINGRESP to postman-mqtt-client-1697675055314
+1697677988: Received PINGREQ from postman-mqtt-client-1697675055314
+1697677988: Sending PINGRESP to postman-mqtt-client-1697675055314
+1697678048: Received PINGREQ from postman-mqtt-client-1697675055314
+1697678048: Sending PINGRESP to postman-mqtt-client-1697675055314
+1697678108: Received PINGREQ from postman-mqtt-client-1697675055314
+1697678108: Sending PINGRESP to postman-mqtt-client-1697675055314
+1697678168: Received PINGREQ from postman-mqtt-client-1697675055314
+1697678168: Sending PINGRESP to postman-mqtt-client-1697675055314
+1697678228: Received PINGREQ from postman-mqtt-client-1697675055314
+1697678228: Sending PINGRESP to postman-mqtt-client-1697675055314
+1697678288: Received PINGREQ from postman-mqtt-client-1697675055314
+1697678288: Sending PINGRESP to postman-mqtt-client-1697675055314
+1697678348: Received PINGREQ from postman-mqtt-client-1697675055314
+1697678348: Sending PINGRESP to postman-mqtt-client-1697675055314
+1697678408: Received PINGREQ from postman-mqtt-client-1697675055314
+1697678408: Sending PINGRESP to postman-mqtt-client-1697675055314
+1697678468: Received PINGREQ from postman-mqtt-client-1697675055314
+1697678468: Sending PINGRESP to postman-mqtt-client-1697675055314
+1697678528: Received PINGREQ from postman-mqtt-client-1697675055314
+1697678528: Sending PINGRESP to postman-mqtt-client-1697675055314
+1697678588: Received PINGREQ from postman-mqtt-client-1697675055314
+1697678588: Sending PINGRESP to postman-mqtt-client-1697675055314
+1697678648: Received PINGREQ from postman-mqtt-client-1697675055314
+1697678648: Sending PINGRESP to postman-mqtt-client-1697675055314
+1697678708: Received PINGREQ from postman-mqtt-client-1697675055314
+1697678708: Sending PINGRESP to postman-mqtt-client-1697675055314
+1697678768: Received PINGREQ from postman-mqtt-client-1697675055314
+1697678768: Sending PINGRESP to postman-mqtt-client-1697675055314
+1697678828: Received PINGREQ from postman-mqtt-client-1697675055314
+1697678828: Sending PINGRESP to postman-mqtt-client-1697675055314
+1697678871: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1697678871: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1697678871: Error: No such file or directory.
+1697678888: Received PINGREQ from postman-mqtt-client-1697675055314
+1697678888: Sending PINGRESP to postman-mqtt-client-1697675055314
+1697678948: Received PINGREQ from postman-mqtt-client-1697675055314
+1697678948: Sending PINGRESP to postman-mqtt-client-1697675055314
+1697679008: Received PINGREQ from postman-mqtt-client-1697675055314
+1697679008: Sending PINGRESP to postman-mqtt-client-1697675055314
+1697679068: Received PINGREQ from postman-mqtt-client-1697675055314
+1697679068: Sending PINGRESP to postman-mqtt-client-1697675055314
+1697679128: Received PINGREQ from postman-mqtt-client-1697675055314
+1697679128: Sending PINGRESP to postman-mqtt-client-1697675055314
+1697679188: Received PINGREQ from postman-mqtt-client-1697675055314
+1697679188: Sending PINGRESP to postman-mqtt-client-1697675055314
+1697679248: Received PINGREQ from postman-mqtt-client-1697675055314
+1697679248: Sending PINGRESP to postman-mqtt-client-1697675055314
+1697679308: Received PINGREQ from postman-mqtt-client-1697675055314
+1697679308: Sending PINGRESP to postman-mqtt-client-1697675055314
+1697679369: Received PINGREQ from postman-mqtt-client-1697675055314
+1697679369: Sending PINGRESP to postman-mqtt-client-1697675055314
+1697679429: Received PINGREQ from postman-mqtt-client-1697675055314
+1697679429: Sending PINGRESP to postman-mqtt-client-1697675055314
+1697679489: Received PINGREQ from postman-mqtt-client-1697675055314
+1697679489: Sending PINGRESP to postman-mqtt-client-1697675055314
+1697679549: Received PINGREQ from postman-mqtt-client-1697675055314
+1697679549: Sending PINGRESP to postman-mqtt-client-1697675055314
+1697679609: Received PINGREQ from postman-mqtt-client-1697675055314
+1697679609: Sending PINGRESP to postman-mqtt-client-1697675055314
+1697679669: Received PINGREQ from postman-mqtt-client-1697675055314
+1697679669: Sending PINGRESP to postman-mqtt-client-1697675055314
+1697679729: Received PINGREQ from postman-mqtt-client-1697675055314
+1697679729: Sending PINGRESP to postman-mqtt-client-1697675055314
+1697679789: Received PINGREQ from postman-mqtt-client-1697675055314
+1697679789: Sending PINGRESP to postman-mqtt-client-1697675055314
+1697679849: Received PINGREQ from postman-mqtt-client-1697675055314
+1697679849: Sending PINGRESP to postman-mqtt-client-1697675055314
+1697679909: Received PINGREQ from postman-mqtt-client-1697675055314
+1697679909: Sending PINGRESP to postman-mqtt-client-1697675055314
+1697679969: Received PINGREQ from postman-mqtt-client-1697675055314
+1697679969: Sending PINGRESP to postman-mqtt-client-1697675055314
+1697680029: Received PINGREQ from postman-mqtt-client-1697675055314
+1697680029: Sending PINGRESP to postman-mqtt-client-1697675055314
+1697680089: Received PINGREQ from postman-mqtt-client-1697675055314
+1697680089: Sending PINGRESP to postman-mqtt-client-1697675055314
+1697680149: Received PINGREQ from postman-mqtt-client-1697675055314
+1697680149: Sending PINGRESP to postman-mqtt-client-1697675055314
+1697680209: Received PINGREQ from postman-mqtt-client-1697675055314
+1697680209: Sending PINGRESP to postman-mqtt-client-1697675055314
+1697680269: Received PINGREQ from postman-mqtt-client-1697675055314
+1697680269: Sending PINGRESP to postman-mqtt-client-1697675055314
+1697680329: Received PINGREQ from postman-mqtt-client-1697675055314
+1697680329: Sending PINGRESP to postman-mqtt-client-1697675055314
+1697680389: Received PINGREQ from postman-mqtt-client-1697675055314
+1697680389: Sending PINGRESP to postman-mqtt-client-1697675055314
+1697680449: Received PINGREQ from postman-mqtt-client-1697675055314
+1697680449: Sending PINGRESP to postman-mqtt-client-1697675055314
+1697680509: Received PINGREQ from postman-mqtt-client-1697675055314
+1697680509: Sending PINGRESP to postman-mqtt-client-1697675055314
+1697680569: Received PINGREQ from postman-mqtt-client-1697675055314
+1697680569: Sending PINGRESP to postman-mqtt-client-1697675055314
+1697680571: Client postman-mqtt-client-1697675055314 closed its connection.
+1697680672: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1697680672: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1697680672: Error: No such file or directory.
+1697682873: mosquitto version 2.0.15 starting
+1697682873: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1697682873: Opening ipv4 listen socket on port 1883.
+1697682873: Opening ipv6 listen socket on port 1883.
+1697682873: Opening ipv4 listen socket on port 9001.
+1697682873: Opening ipv6 listen socket on port 9001.
+1697682873: mosquitto version 2.0.15 running
+1697682965: mosquitto version 2.0.15 terminating
+1697682965: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1697682965: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1697682965: Error: No such file or directory.
+1697682973: mosquitto version 2.0.15 starting
+1697682973: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1697682973: Opening ipv4 listen socket on port 1883.
+1697682973: Opening ipv6 listen socket on port 1883.
+1697682973: Opening ipv4 listen socket on port 9001.
+1697682973: Opening ipv6 listen socket on port 9001.
+1697682973: mosquitto version 2.0.15 running
+1697683792: mosquitto version 2.0.15 terminating
+1697683792: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1697683792: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1697683792: Error: No such file or directory.
+1697683804: mosquitto version 2.0.15 starting
+1697683804: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1697683804: Opening ipv4 listen socket on port 1883.
+1697683804: Opening ipv6 listen socket on port 1883.
+1697683804: Opening ipv4 listen socket on port 9001.
+1697683804: Opening ipv6 listen socket on port 9001.
+1697683804: mosquitto version 2.0.15 running
+1697683919: mosquitto version 2.0.15 terminating
+1697683919: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1697683919: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1697683919: Error: No such file or directory.
+1697683926: mosquitto version 2.0.15 starting
+1697683926: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1697683926: Opening ipv4 listen socket on port 1883.
+1697683926: Opening ipv6 listen socket on port 1883.
+1697683926: Opening ipv4 listen socket on port 9001.
+1697683926: Opening ipv6 listen socket on port 9001.
+1697683926: mosquitto version 2.0.15 running
+1697684264: New connection from 172.20.0.3:56254 on port 1883.
+1697684264: New client connected from 172.20.0.3:56254 as mqttjs_c62f99e7 (p2, c1, k60).
+1697684264: No will message specified.
+1697684264: Sending CONNACK to mqttjs_c62f99e7 (0, 0)
+1697684264: Client mqttjs_c62f99e7 closed its connection.
+1697684411: New connection from 172.20.0.3:45012 on port 1883.
+1697684411: New client connected from 172.20.0.3:45012 as mqttjs_df6f3bd9 (p2, c1, k60).
+1697684411: No will message specified.
+1697684411: Sending CONNACK to mqttjs_df6f3bd9 (0, 0)
+1697684411: Client mqttjs_df6f3bd9 closed its connection.
+1697684527: New connection from 172.20.0.3:52552 on port 1883.
+1697684527: New client connected from 172.20.0.3:52552 as mqttjs_3dae4894 (p2, c1, k60).
+1697684527: No will message specified.
+1697684527: Sending CONNACK to mqttjs_3dae4894 (0, 0)
+1697684527: Client mqttjs_3dae4894 closed its connection.
+1697684712: New connection from 172.20.0.3:55908 on port 1883.
+1697684712: New client connected from 172.20.0.3:55908 as mqttjs_e6d84f04 (p2, c1, k60).
+1697684712: No will message specified.
+1697684712: Sending CONNACK to mqttjs_e6d84f04 (0, 0)
+1697684712: Client mqttjs_e6d84f04 closed its connection.
+1697684857: New connection from 172.20.0.3:57868 on port 1883.
+1697684857: New client connected from 172.20.0.3:57868 as mqttjs_36091147 (p2, c1, k60).
+1697684857: No will message specified.
+1697684857: Sending CONNACK to mqttjs_36091147 (0, 0)
+1697684917: Received PINGREQ from mqttjs_36091147
+1697684917: Sending PINGRESP to mqttjs_36091147
+1697684977: Received PINGREQ from mqttjs_36091147
+1697684977: Sending PINGRESP to mqttjs_36091147
+1697684997: Client mqttjs_36091147 closed its connection.
+1697685095: New connection from 172.20.0.3:45264 on port 1883.
+1697685095: New client connected from 172.20.0.3:45264 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685095: No will message specified.
+1697685095: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685095: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685095: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685096: New connection from 172.20.0.3:45272 on port 1883.
+1697685096: New client connected from 172.20.0.3:45272 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685096: No will message specified.
+1697685096: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685096: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685096: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685097: New connection from 172.20.0.3:45286 on port 1883.
+1697685097: New client connected from 172.20.0.3:45286 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685097: No will message specified.
+1697685097: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685097: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685097: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685098: New connection from 172.20.0.3:45292 on port 1883.
+1697685098: New client connected from 172.20.0.3:45292 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685098: No will message specified.
+1697685098: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685098: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685098: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685099: New connection from 172.20.0.3:50214 on port 1883.
+1697685099: New client connected from 172.20.0.3:50214 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685099: No will message specified.
+1697685099: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685099: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685099: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685100: New connection from 172.20.0.3:50220 on port 1883.
+1697685100: New client connected from 172.20.0.3:50220 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685100: No will message specified.
+1697685100: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685100: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685100: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685101: New connection from 172.20.0.3:50228 on port 1883.
+1697685101: New client connected from 172.20.0.3:50228 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685101: No will message specified.
+1697685101: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685101: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685101: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685102: New connection from 172.20.0.3:50240 on port 1883.
+1697685102: New client connected from 172.20.0.3:50240 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685102: No will message specified.
+1697685102: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685102: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685102: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685103: New connection from 172.20.0.3:50248 on port 1883.
+1697685103: New client connected from 172.20.0.3:50248 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685103: No will message specified.
+1697685103: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685103: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685103: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685104: New connection from 172.20.0.3:50258 on port 1883.
+1697685104: New client connected from 172.20.0.3:50258 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685104: No will message specified.
+1697685104: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685104: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685104: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685105: New connection from 172.20.0.3:50268 on port 1883.
+1697685105: New client connected from 172.20.0.3:50268 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685105: No will message specified.
+1697685105: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685105: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685105: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685106: New connection from 172.20.0.3:50282 on port 1883.
+1697685106: New client connected from 172.20.0.3:50282 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685106: No will message specified.
+1697685106: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685106: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685106: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685107: New connection from 172.20.0.3:50288 on port 1883.
+1697685107: New client connected from 172.20.0.3:50288 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685107: No will message specified.
+1697685107: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685107: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685107: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685108: New connection from 172.20.0.3:50298 on port 1883.
+1697685108: New client connected from 172.20.0.3:50298 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685108: No will message specified.
+1697685108: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685108: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685108: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685109: New connection from 172.20.0.3:49046 on port 1883.
+1697685109: New client connected from 172.20.0.3:49046 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685109: No will message specified.
+1697685109: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685109: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685109: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685110: New connection from 172.20.0.3:49062 on port 1883.
+1697685110: New client connected from 172.20.0.3:49062 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685110: No will message specified.
+1697685110: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685110: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685110: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685111: New connection from 172.20.0.3:49070 on port 1883.
+1697685111: New client connected from 172.20.0.3:49070 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685111: No will message specified.
+1697685111: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685111: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685111: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685112: New connection from 172.20.0.3:49072 on port 1883.
+1697685112: New client connected from 172.20.0.3:49072 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685112: No will message specified.
+1697685112: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685112: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685112: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685113: New connection from 172.20.0.3:49086 on port 1883.
+1697685113: New client connected from 172.20.0.3:49086 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685113: No will message specified.
+1697685113: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685113: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685113: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685114: New connection from 172.20.0.3:49094 on port 1883.
+1697685114: New client connected from 172.20.0.3:49094 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685114: No will message specified.
+1697685114: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685114: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685114: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685115: New connection from 172.20.0.3:49096 on port 1883.
+1697685115: New client connected from 172.20.0.3:49096 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685115: No will message specified.
+1697685115: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685115: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685115: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685116: New connection from 172.20.0.3:49100 on port 1883.
+1697685116: New client connected from 172.20.0.3:49100 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685116: No will message specified.
+1697685116: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685116: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685116: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685117: New connection from 172.20.0.3:49116 on port 1883.
+1697685117: New client connected from 172.20.0.3:49116 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685117: No will message specified.
+1697685117: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685117: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685117: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685118: New connection from 172.20.0.3:49122 on port 1883.
+1697685118: New client connected from 172.20.0.3:49122 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685118: No will message specified.
+1697685118: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685118: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685118: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685119: New connection from 172.20.0.3:33616 on port 1883.
+1697685119: New client connected from 172.20.0.3:33616 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685119: No will message specified.
+1697685119: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685119: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685119: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685120: New connection from 172.20.0.3:33620 on port 1883.
+1697685120: New client connected from 172.20.0.3:33620 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685120: No will message specified.
+1697685120: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685120: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685120: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685121: New connection from 172.20.0.3:33636 on port 1883.
+1697685121: New client connected from 172.20.0.3:33636 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685121: No will message specified.
+1697685121: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685121: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685121: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685122: New connection from 172.20.0.3:33652 on port 1883.
+1697685122: New client connected from 172.20.0.3:33652 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685122: No will message specified.
+1697685122: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685122: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685122: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685123: New connection from 172.20.0.3:33664 on port 1883.
+1697685123: New client connected from 172.20.0.3:33664 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685123: No will message specified.
+1697685123: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685123: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685123: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685124: New connection from 172.20.0.3:33670 on port 1883.
+1697685124: New client connected from 172.20.0.3:33670 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685124: No will message specified.
+1697685124: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685124: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685124: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685125: New connection from 172.20.0.3:33680 on port 1883.
+1697685125: New client connected from 172.20.0.3:33680 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685125: No will message specified.
+1697685125: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685125: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685125: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685126: New connection from 172.20.0.3:33696 on port 1883.
+1697685126: New client connected from 172.20.0.3:33696 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685126: No will message specified.
+1697685126: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685126: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685126: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685127: New connection from 172.20.0.3:33700 on port 1883.
+1697685127: New client connected from 172.20.0.3:33700 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685127: No will message specified.
+1697685127: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685127: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685127: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685128: New connection from 172.20.0.3:33712 on port 1883.
+1697685128: New client connected from 172.20.0.3:33712 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685128: No will message specified.
+1697685128: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685128: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685128: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685129: New connection from 172.20.0.3:53536 on port 1883.
+1697685129: New client connected from 172.20.0.3:53536 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685129: No will message specified.
+1697685129: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685129: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685129: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685130: New connection from 172.20.0.3:53538 on port 1883.
+1697685130: New client connected from 172.20.0.3:53538 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685130: No will message specified.
+1697685130: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685130: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685130: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685131: New connection from 172.20.0.3:53554 on port 1883.
+1697685131: New client connected from 172.20.0.3:53554 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685131: No will message specified.
+1697685131: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685131: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685131: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685132: New connection from 172.20.0.3:53564 on port 1883.
+1697685132: New client connected from 172.20.0.3:53564 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685132: No will message specified.
+1697685132: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685132: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685132: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685133: New connection from 172.20.0.3:53574 on port 1883.
+1697685133: New client connected from 172.20.0.3:53574 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685133: No will message specified.
+1697685133: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685133: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685133: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685134: New connection from 172.20.0.3:53582 on port 1883.
+1697685134: New client connected from 172.20.0.3:53582 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685134: No will message specified.
+1697685134: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685134: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685134: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685135: New connection from 172.20.0.3:53594 on port 1883.
+1697685135: New client connected from 172.20.0.3:53594 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685135: No will message specified.
+1697685135: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685135: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685135: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685136: New connection from 172.20.0.3:53610 on port 1883.
+1697685136: New client connected from 172.20.0.3:53610 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685136: No will message specified.
+1697685136: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685136: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685136: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685137: New connection from 172.20.0.3:53622 on port 1883.
+1697685137: New client connected from 172.20.0.3:53622 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685137: No will message specified.
+1697685137: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685137: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685137: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685138: New connection from 172.20.0.3:53624 on port 1883.
+1697685138: New client connected from 172.20.0.3:53624 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685138: No will message specified.
+1697685138: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685138: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685138: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685139: New connection from 172.20.0.3:42492 on port 1883.
+1697685139: New client connected from 172.20.0.3:42492 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685139: No will message specified.
+1697685139: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685139: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685139: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685140: New connection from 172.20.0.3:42506 on port 1883.
+1697685140: New client connected from 172.20.0.3:42506 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685140: No will message specified.
+1697685140: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685140: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685140: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685141: New connection from 172.20.0.3:42508 on port 1883.
+1697685141: New client connected from 172.20.0.3:42508 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685141: No will message specified.
+1697685141: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685141: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685141: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685142: New connection from 172.20.0.3:42518 on port 1883.
+1697685142: New client connected from 172.20.0.3:42518 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685142: No will message specified.
+1697685142: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685142: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685142: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685143: New connection from 172.20.0.3:42522 on port 1883.
+1697685143: New client connected from 172.20.0.3:42522 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685143: No will message specified.
+1697685143: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685143: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685143: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685144: New connection from 172.20.0.3:42524 on port 1883.
+1697685144: New client connected from 172.20.0.3:42524 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685144: No will message specified.
+1697685144: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685144: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685144: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685145: New connection from 172.20.0.3:42540 on port 1883.
+1697685145: New client connected from 172.20.0.3:42540 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685145: No will message specified.
+1697685145: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685145: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685145: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685146: New connection from 172.20.0.3:42554 on port 1883.
+1697685146: New client connected from 172.20.0.3:42554 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685146: No will message specified.
+1697685146: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685146: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685146: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685147: New connection from 172.20.0.3:42568 on port 1883.
+1697685147: New client connected from 172.20.0.3:42568 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685147: No will message specified.
+1697685147: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685147: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685147: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685148: New connection from 172.20.0.3:42576 on port 1883.
+1697685148: New client connected from 172.20.0.3:42576 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685148: No will message specified.
+1697685148: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685148: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685148: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685149: New connection from 172.20.0.3:39642 on port 1883.
+1697685149: New client connected from 172.20.0.3:39642 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685149: No will message specified.
+1697685149: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685149: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685149: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685150: New connection from 172.20.0.3:39644 on port 1883.
+1697685150: New client connected from 172.20.0.3:39644 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685150: No will message specified.
+1697685150: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685150: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685150: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685151: New connection from 172.20.0.3:39658 on port 1883.
+1697685151: New client connected from 172.20.0.3:39658 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685151: No will message specified.
+1697685151: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685151: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685151: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685152: New connection from 172.20.0.3:39668 on port 1883.
+1697685152: New client connected from 172.20.0.3:39668 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685152: No will message specified.
+1697685152: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685152: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685152: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685153: New connection from 172.20.0.3:39672 on port 1883.
+1697685153: New client connected from 172.20.0.3:39672 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685153: No will message specified.
+1697685153: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685153: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685153: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685154: New connection from 172.20.0.3:39678 on port 1883.
+1697685154: New client connected from 172.20.0.3:39678 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685154: No will message specified.
+1697685154: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685154: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685154: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685155: New connection from 172.20.0.3:39684 on port 1883.
+1697685155: New client connected from 172.20.0.3:39684 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685155: No will message specified.
+1697685155: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685155: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685155: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685156: New connection from 172.20.0.3:39694 on port 1883.
+1697685156: New client connected from 172.20.0.3:39694 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685156: No will message specified.
+1697685156: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685156: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685156: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685157: New connection from 172.20.0.3:39696 on port 1883.
+1697685157: New client connected from 172.20.0.3:39696 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685157: No will message specified.
+1697685157: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685157: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685157: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685158: New connection from 172.20.0.3:39712 on port 1883.
+1697685158: New client connected from 172.20.0.3:39712 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685158: No will message specified.
+1697685158: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685158: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685158: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685159: New connection from 172.20.0.3:51994 on port 1883.
+1697685159: New client connected from 172.20.0.3:51994 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685159: No will message specified.
+1697685159: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685159: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685159: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685160: New connection from 172.20.0.3:52000 on port 1883.
+1697685160: New client connected from 172.20.0.3:52000 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685160: No will message specified.
+1697685160: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685160: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685160: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685161: New connection from 172.20.0.3:52006 on port 1883.
+1697685161: New client connected from 172.20.0.3:52006 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685161: No will message specified.
+1697685161: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685161: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685161: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685162: New connection from 172.20.0.3:52008 on port 1883.
+1697685162: New client connected from 172.20.0.3:52008 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685162: No will message specified.
+1697685162: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685162: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685162: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685163: New connection from 172.20.0.3:52016 on port 1883.
+1697685163: New client connected from 172.20.0.3:52016 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685163: No will message specified.
+1697685163: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685163: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685163: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685164: New connection from 172.20.0.3:52032 on port 1883.
+1697685164: New client connected from 172.20.0.3:52032 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685164: No will message specified.
+1697685164: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685164: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685164: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685165: New connection from 172.20.0.3:52048 on port 1883.
+1697685165: New client connected from 172.20.0.3:52048 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685165: No will message specified.
+1697685165: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685165: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685165: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685166: New connection from 172.20.0.3:52050 on port 1883.
+1697685166: New client connected from 172.20.0.3:52050 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685166: No will message specified.
+1697685166: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685166: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685166: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685167: New connection from 172.20.0.3:52060 on port 1883.
+1697685167: New client connected from 172.20.0.3:52060 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685167: No will message specified.
+1697685167: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685167: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685167: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685168: New connection from 172.20.0.3:52072 on port 1883.
+1697685168: New client connected from 172.20.0.3:52072 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685168: No will message specified.
+1697685168: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685168: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685168: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685169: New connection from 172.20.0.3:46058 on port 1883.
+1697685169: New client connected from 172.20.0.3:46058 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685169: No will message specified.
+1697685169: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685169: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685169: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685170: New connection from 172.20.0.3:46070 on port 1883.
+1697685170: New client connected from 172.20.0.3:46070 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685170: No will message specified.
+1697685170: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685170: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685170: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685171: New connection from 172.20.0.3:46074 on port 1883.
+1697685171: New client connected from 172.20.0.3:46074 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685171: No will message specified.
+1697685171: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685171: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685171: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685172: New connection from 172.20.0.3:46086 on port 1883.
+1697685172: New client connected from 172.20.0.3:46086 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685172: No will message specified.
+1697685172: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685172: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685172: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685173: New connection from 172.20.0.3:46094 on port 1883.
+1697685173: New client connected from 172.20.0.3:46094 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685173: No will message specified.
+1697685173: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685173: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685173: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685174: New connection from 172.20.0.3:46102 on port 1883.
+1697685174: New client connected from 172.20.0.3:46102 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685174: No will message specified.
+1697685174: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685174: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685174: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685175: New connection from 172.20.0.3:46118 on port 1883.
+1697685175: New client connected from 172.20.0.3:46118 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685175: No will message specified.
+1697685175: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685175: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685175: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685176: New connection from 172.20.0.3:46134 on port 1883.
+1697685176: New client connected from 172.20.0.3:46134 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685176: No will message specified.
+1697685176: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685176: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685176: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685177: New connection from 172.20.0.3:46144 on port 1883.
+1697685177: New client connected from 172.20.0.3:46144 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685177: No will message specified.
+1697685177: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685177: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685177: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685178: New connection from 172.20.0.3:46158 on port 1883.
+1697685178: New client connected from 172.20.0.3:46158 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685178: No will message specified.
+1697685178: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685178: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685178: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685179: New connection from 172.20.0.3:39890 on port 1883.
+1697685179: New client connected from 172.20.0.3:39890 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685179: No will message specified.
+1697685179: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685179: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685179: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685180: New connection from 172.20.0.3:39900 on port 1883.
+1697685180: New client connected from 172.20.0.3:39900 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685180: No will message specified.
+1697685180: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685180: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685180: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685181: New connection from 172.20.0.3:39902 on port 1883.
+1697685181: New client connected from 172.20.0.3:39902 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685181: No will message specified.
+1697685181: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685181: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685181: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685182: New connection from 172.20.0.3:39912 on port 1883.
+1697685182: New client connected from 172.20.0.3:39912 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685182: No will message specified.
+1697685182: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685182: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685182: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685183: New connection from 172.20.0.3:39924 on port 1883.
+1697685183: New client connected from 172.20.0.3:39924 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685183: No will message specified.
+1697685183: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685183: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685183: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685184: New connection from 172.20.0.3:39938 on port 1883.
+1697685184: New client connected from 172.20.0.3:39938 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685184: No will message specified.
+1697685184: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685184: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685184: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685185: New connection from 172.20.0.3:39954 on port 1883.
+1697685185: New client connected from 172.20.0.3:39954 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685185: No will message specified.
+1697685185: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685185: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685185: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685186: New connection from 172.20.0.3:39966 on port 1883.
+1697685186: New client connected from 172.20.0.3:39966 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685186: No will message specified.
+1697685186: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685186: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685186: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685187: New connection from 172.20.0.3:39980 on port 1883.
+1697685187: New client connected from 172.20.0.3:39980 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685187: No will message specified.
+1697685187: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685187: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685187: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685188: New connection from 172.20.0.3:44868 on port 1883.
+1697685188: New client connected from 172.20.0.3:44868 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685188: No will message specified.
+1697685188: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685188: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685188: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685189: New connection from 172.20.0.3:44884 on port 1883.
+1697685189: New client connected from 172.20.0.3:44884 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685189: No will message specified.
+1697685189: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685189: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685189: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685190: New connection from 172.20.0.3:44888 on port 1883.
+1697685190: New client connected from 172.20.0.3:44888 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685190: No will message specified.
+1697685190: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685190: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685190: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685191: New connection from 172.20.0.3:44900 on port 1883.
+1697685191: New client connected from 172.20.0.3:44900 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685191: No will message specified.
+1697685191: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685191: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685191: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685192: New connection from 172.20.0.3:44914 on port 1883.
+1697685192: New client connected from 172.20.0.3:44914 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685192: No will message specified.
+1697685192: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685192: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685192: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685193: New connection from 172.20.0.3:44916 on port 1883.
+1697685193: New client connected from 172.20.0.3:44916 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685193: No will message specified.
+1697685193: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685193: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685193: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685194: New connection from 172.20.0.3:44918 on port 1883.
+1697685194: New client connected from 172.20.0.3:44918 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685194: No will message specified.
+1697685194: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685194: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685194: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685195: New connection from 172.20.0.3:44934 on port 1883.
+1697685195: New client connected from 172.20.0.3:44934 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685195: No will message specified.
+1697685195: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685195: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685195: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685197: New connection from 172.20.0.3:44940 on port 1883.
+1697685197: New client connected from 172.20.0.3:44940 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685197: No will message specified.
+1697685197: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685197: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685197: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685198: New connection from 172.20.0.3:44952 on port 1883.
+1697685198: New client connected from 172.20.0.3:44952 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685198: No will message specified.
+1697685198: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685198: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685198: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685199: New connection from 172.20.0.3:42812 on port 1883.
+1697685199: New client connected from 172.20.0.3:42812 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685199: No will message specified.
+1697685199: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685199: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685199: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685200: New connection from 172.20.0.3:42814 on port 1883.
+1697685200: New client connected from 172.20.0.3:42814 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685200: No will message specified.
+1697685200: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685200: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685200: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685201: New connection from 172.20.0.3:42816 on port 1883.
+1697685201: New client connected from 172.20.0.3:42816 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685201: No will message specified.
+1697685201: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685201: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685201: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685202: New connection from 172.20.0.3:42822 on port 1883.
+1697685202: New client connected from 172.20.0.3:42822 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685202: No will message specified.
+1697685202: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685202: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685202: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685203: New connection from 172.20.0.3:42832 on port 1883.
+1697685203: New client connected from 172.20.0.3:42832 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685203: No will message specified.
+1697685203: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685203: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685203: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685204: New connection from 172.20.0.3:42840 on port 1883.
+1697685204: New client connected from 172.20.0.3:42840 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685204: No will message specified.
+1697685204: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685204: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685204: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685205: New connection from 172.20.0.3:42852 on port 1883.
+1697685205: New client connected from 172.20.0.3:42852 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685205: No will message specified.
+1697685205: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685205: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685205: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685206: New connection from 172.20.0.3:42854 on port 1883.
+1697685206: New client connected from 172.20.0.3:42854 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685206: No will message specified.
+1697685206: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685206: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685206: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685207: New connection from 172.20.0.3:42866 on port 1883.
+1697685207: New client connected from 172.20.0.3:42866 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685207: No will message specified.
+1697685207: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685207: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685207: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685208: New connection from 172.20.0.3:42868 on port 1883.
+1697685208: New client connected from 172.20.0.3:42868 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685208: No will message specified.
+1697685208: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685208: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685208: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685209: New connection from 172.20.0.3:53980 on port 1883.
+1697685209: New client connected from 172.20.0.3:53980 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685209: No will message specified.
+1697685209: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685209: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685209: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685210: New connection from 172.20.0.3:53990 on port 1883.
+1697685210: New client connected from 172.20.0.3:53990 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685210: No will message specified.
+1697685210: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685210: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685210: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685211: New connection from 172.20.0.3:54000 on port 1883.
+1697685211: New client connected from 172.20.0.3:54000 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685211: No will message specified.
+1697685211: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685211: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685211: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685212: New connection from 172.20.0.3:54008 on port 1883.
+1697685212: New client connected from 172.20.0.3:54008 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685212: No will message specified.
+1697685212: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685212: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685212: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685213: New connection from 172.20.0.3:54016 on port 1883.
+1697685213: New client connected from 172.20.0.3:54016 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685213: No will message specified.
+1697685213: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685213: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685213: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685214: New connection from 172.20.0.3:54026 on port 1883.
+1697685214: New client connected from 172.20.0.3:54026 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685214: No will message specified.
+1697685214: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685214: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685214: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685215: New connection from 172.20.0.3:54040 on port 1883.
+1697685215: New client connected from 172.20.0.3:54040 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685215: No will message specified.
+1697685215: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685215: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685215: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685216: New connection from 172.20.0.3:54052 on port 1883.
+1697685216: New client connected from 172.20.0.3:54052 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685216: No will message specified.
+1697685216: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685216: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685216: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685217: New connection from 172.20.0.3:54062 on port 1883.
+1697685217: New client connected from 172.20.0.3:54062 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685217: No will message specified.
+1697685217: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685217: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685217: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685218: New connection from 172.20.0.3:54078 on port 1883.
+1697685218: New client connected from 172.20.0.3:54078 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685218: No will message specified.
+1697685218: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685218: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685218: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685219: New connection from 172.20.0.3:33932 on port 1883.
+1697685219: New client connected from 172.20.0.3:33932 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685219: No will message specified.
+1697685219: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685219: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685219: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685220: New connection from 172.20.0.3:33944 on port 1883.
+1697685220: New client connected from 172.20.0.3:33944 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685220: No will message specified.
+1697685220: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685220: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685220: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685221: New connection from 172.20.0.3:33958 on port 1883.
+1697685221: New client connected from 172.20.0.3:33958 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685221: No will message specified.
+1697685221: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685221: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685221: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685222: New connection from 172.20.0.3:33960 on port 1883.
+1697685222: New client connected from 172.20.0.3:33960 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685222: No will message specified.
+1697685222: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685222: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685222: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685223: New connection from 172.20.0.3:33962 on port 1883.
+1697685223: New client connected from 172.20.0.3:33962 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685223: No will message specified.
+1697685223: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685223: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685223: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685224: New connection from 172.20.0.3:33978 on port 1883.
+1697685224: New client connected from 172.20.0.3:33978 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685224: No will message specified.
+1697685224: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685224: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685224: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685225: New connection from 172.20.0.3:33984 on port 1883.
+1697685225: New client connected from 172.20.0.3:33984 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685225: No will message specified.
+1697685225: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685225: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685225: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685226: New connection from 172.20.0.3:33986 on port 1883.
+1697685226: New client connected from 172.20.0.3:33986 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685226: No will message specified.
+1697685226: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685226: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685226: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685227: New connection from 172.20.0.3:34000 on port 1883.
+1697685227: New client connected from 172.20.0.3:34000 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685227: No will message specified.
+1697685227: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685227: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685227: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685228: New connection from 172.20.0.3:34012 on port 1883.
+1697685228: New client connected from 172.20.0.3:34012 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685228: No will message specified.
+1697685228: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685228: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685228: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685229: New connection from 172.20.0.3:36104 on port 1883.
+1697685229: New client connected from 172.20.0.3:36104 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685229: No will message specified.
+1697685229: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685229: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685229: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685230: New connection from 172.20.0.3:36114 on port 1883.
+1697685230: New client connected from 172.20.0.3:36114 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685230: No will message specified.
+1697685230: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685230: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685230: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685231: New connection from 172.20.0.3:36120 on port 1883.
+1697685231: New client connected from 172.20.0.3:36120 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685231: No will message specified.
+1697685231: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685231: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685231: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685232: New connection from 172.20.0.3:36134 on port 1883.
+1697685232: New client connected from 172.20.0.3:36134 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685232: No will message specified.
+1697685232: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685232: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685232: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685233: New connection from 172.20.0.3:36144 on port 1883.
+1697685233: New client connected from 172.20.0.3:36144 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685233: No will message specified.
+1697685233: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685233: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685233: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685234: New connection from 172.20.0.3:36158 on port 1883.
+1697685234: New client connected from 172.20.0.3:36158 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685234: No will message specified.
+1697685234: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685234: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685234: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685235: New connection from 172.20.0.3:36170 on port 1883.
+1697685235: New client connected from 172.20.0.3:36170 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685235: No will message specified.
+1697685235: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685235: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685235: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685236: New connection from 172.20.0.3:36178 on port 1883.
+1697685236: New client connected from 172.20.0.3:36178 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685236: No will message specified.
+1697685236: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685236: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685236: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685237: New connection from 172.20.0.3:36180 on port 1883.
+1697685237: New client connected from 172.20.0.3:36180 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685237: No will message specified.
+1697685237: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685237: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685237: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685238: New connection from 172.20.0.3:36190 on port 1883.
+1697685238: New client connected from 172.20.0.3:36190 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685238: No will message specified.
+1697685238: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685238: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685238: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685239: New connection from 172.20.0.3:53064 on port 1883.
+1697685239: New client connected from 172.20.0.3:53064 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685239: No will message specified.
+1697685239: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685239: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685239: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685240: New connection from 172.20.0.3:53068 on port 1883.
+1697685240: New client connected from 172.20.0.3:53068 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685240: No will message specified.
+1697685240: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685240: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685240: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685241: New connection from 172.20.0.3:53072 on port 1883.
+1697685241: New client connected from 172.20.0.3:53072 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685241: No will message specified.
+1697685241: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685241: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685241: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685242: New connection from 172.20.0.3:53078 on port 1883.
+1697685242: New client connected from 172.20.0.3:53078 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685242: No will message specified.
+1697685242: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685242: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685242: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685243: New connection from 172.20.0.3:53088 on port 1883.
+1697685243: New client connected from 172.20.0.3:53088 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685243: No will message specified.
+1697685243: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685243: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685243: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685244: New connection from 172.20.0.3:53092 on port 1883.
+1697685244: New client connected from 172.20.0.3:53092 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685244: No will message specified.
+1697685244: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685244: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685244: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685245: New connection from 172.20.0.3:53100 on port 1883.
+1697685245: New client connected from 172.20.0.3:53100 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685245: No will message specified.
+1697685245: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685245: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685245: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685246: New connection from 172.20.0.3:53112 on port 1883.
+1697685246: New client connected from 172.20.0.3:53112 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685246: No will message specified.
+1697685246: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685246: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685246: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685247: New connection from 172.20.0.3:53114 on port 1883.
+1697685247: New client connected from 172.20.0.3:53114 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685247: No will message specified.
+1697685247: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685247: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685247: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685248: New connection from 172.20.0.3:53122 on port 1883.
+1697685248: New client connected from 172.20.0.3:53122 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685248: No will message specified.
+1697685248: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685248: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685248: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685249: New connection from 172.20.0.3:40164 on port 1883.
+1697685249: New client connected from 172.20.0.3:40164 as mqttjs_a5bccb5d (p2, c1, k60).
+1697685249: No will message specified.
+1697685249: Sending CONNACK to mqttjs_a5bccb5d (0, 0)
+1697685249: Received SUBSCRIBE from mqttjs_a5bccb5d
+1697685249: Client mqttjs_a5bccb5d disconnected due to malformed packet.
+1697685291: New connection from 172.20.0.3:42968 on port 1883.
+1697685291: New client connected from 172.20.0.3:42968 as mqttjs_059aa365 (p2, c1, k60).
+1697685291: No will message specified.
+1697685291: Sending CONNACK to mqttjs_059aa365 (0, 0)
+1697685291: Received SUBSCRIBE from mqttjs_059aa365
+1697685291: Client mqttjs_059aa365 disconnected due to malformed packet.
+1697685292: New connection from 172.20.0.3:42972 on port 1883.
+1697685292: New client connected from 172.20.0.3:42972 as mqttjs_059aa365 (p2, c1, k60).
+1697685292: No will message specified.
+1697685292: Sending CONNACK to mqttjs_059aa365 (0, 0)
+1697685292: Received SUBSCRIBE from mqttjs_059aa365
+1697685292: Client mqttjs_059aa365 disconnected due to malformed packet.
+1697685293: New connection from 172.20.0.3:42974 on port 1883.
+1697685293: New client connected from 172.20.0.3:42974 as mqttjs_059aa365 (p2, c1, k60).
+1697685293: No will message specified.
+1697685293: Sending CONNACK to mqttjs_059aa365 (0, 0)
+1697685293: Received SUBSCRIBE from mqttjs_059aa365
+1697685293: Client mqttjs_059aa365 disconnected due to malformed packet.
+1697685294: New connection from 172.20.0.3:42982 on port 1883.
+1697685294: New client connected from 172.20.0.3:42982 as mqttjs_059aa365 (p2, c1, k60).
+1697685294: No will message specified.
+1697685294: Sending CONNACK to mqttjs_059aa365 (0, 0)
+1697685294: Received SUBSCRIBE from mqttjs_059aa365
+1697685294: Client mqttjs_059aa365 disconnected due to malformed packet.
+1697685295: New connection from 172.20.0.3:42990 on port 1883.
+1697685295: New client connected from 172.20.0.3:42990 as mqttjs_059aa365 (p2, c1, k60).
+1697685295: No will message specified.
+1697685295: Sending CONNACK to mqttjs_059aa365 (0, 0)
+1697685295: Received SUBSCRIBE from mqttjs_059aa365
+1697685295: Client mqttjs_059aa365 disconnected due to malformed packet.
+1697685296: New connection from 172.20.0.3:42998 on port 1883.
+1697685296: New client connected from 172.20.0.3:42998 as mqttjs_059aa365 (p2, c1, k60).
+1697685296: No will message specified.
+1697685296: Sending CONNACK to mqttjs_059aa365 (0, 0)
+1697685296: Received SUBSCRIBE from mqttjs_059aa365
+1697685296: Client mqttjs_059aa365 disconnected due to malformed packet.
+1697685297: New connection from 172.20.0.3:43006 on port 1883.
+1697685297: New client connected from 172.20.0.3:43006 as mqttjs_059aa365 (p2, c1, k60).
+1697685297: No will message specified.
+1697685297: Sending CONNACK to mqttjs_059aa365 (0, 0)
+1697685297: Received SUBSCRIBE from mqttjs_059aa365
+1697685297: Client mqttjs_059aa365 disconnected due to malformed packet.
+1697685298: New connection from 172.20.0.3:34380 on port 1883.
+1697685298: New client connected from 172.20.0.3:34380 as mqttjs_059aa365 (p2, c1, k60).
+1697685298: No will message specified.
+1697685298: Sending CONNACK to mqttjs_059aa365 (0, 0)
+1697685298: Received SUBSCRIBE from mqttjs_059aa365
+1697685298: Client mqttjs_059aa365 disconnected due to malformed packet.
+1697685299: New connection from 172.20.0.3:34382 on port 1883.
+1697685299: New client connected from 172.20.0.3:34382 as mqttjs_059aa365 (p2, c1, k60).
+1697685299: No will message specified.
+1697685299: Sending CONNACK to mqttjs_059aa365 (0, 0)
+1697685300: Received SUBSCRIBE from mqttjs_059aa365
+1697685300: Client mqttjs_059aa365 disconnected due to malformed packet.
+1697685301: New connection from 172.20.0.3:34386 on port 1883.
+1697685301: New client connected from 172.20.0.3:34386 as mqttjs_059aa365 (p2, c1, k60).
+1697685301: No will message specified.
+1697685301: Sending CONNACK to mqttjs_059aa365 (0, 0)
+1697685301: Received SUBSCRIBE from mqttjs_059aa365
+1697685301: Client mqttjs_059aa365 disconnected due to malformed packet.
+1697685302: New connection from 172.20.0.3:34392 on port 1883.
+1697685302: New client connected from 172.20.0.3:34392 as mqttjs_059aa365 (p2, c1, k60).
+1697685302: No will message specified.
+1697685302: Sending CONNACK to mqttjs_059aa365 (0, 0)
+1697685302: Received SUBSCRIBE from mqttjs_059aa365
+1697685302: Client mqttjs_059aa365 disconnected due to malformed packet.
+1697685303: New connection from 172.20.0.3:34400 on port 1883.
+1697685303: New client connected from 172.20.0.3:34400 as mqttjs_059aa365 (p2, c1, k60).
+1697685303: No will message specified.
+1697685303: Sending CONNACK to mqttjs_059aa365 (0, 0)
+1697685303: Received SUBSCRIBE from mqttjs_059aa365
+1697685303: Client mqttjs_059aa365 disconnected due to malformed packet.
+1697685304: New connection from 172.20.0.3:34404 on port 1883.
+1697685304: New client connected from 172.20.0.3:34404 as mqttjs_059aa365 (p2, c1, k60).
+1697685304: No will message specified.
+1697685304: Sending CONNACK to mqttjs_059aa365 (0, 0)
+1697685304: Received SUBSCRIBE from mqttjs_059aa365
+1697685304: Client mqttjs_059aa365 disconnected due to malformed packet.
+1697685305: New connection from 172.20.0.3:34420 on port 1883.
+1697685305: New client connected from 172.20.0.3:34420 as mqttjs_059aa365 (p2, c1, k60).
+1697685305: No will message specified.
+1697685305: Sending CONNACK to mqttjs_059aa365 (0, 0)
+1697685305: Received SUBSCRIBE from mqttjs_059aa365
+1697685305: Client mqttjs_059aa365 disconnected due to malformed packet.
+1697685306: New connection from 172.20.0.3:34422 on port 1883.
+1697685306: New client connected from 172.20.0.3:34422 as mqttjs_059aa365 (p2, c1, k60).
+1697685306: No will message specified.
+1697685306: Sending CONNACK to mqttjs_059aa365 (0, 0)
+1697685306: Received SUBSCRIBE from mqttjs_059aa365
+1697685306: Client mqttjs_059aa365 disconnected due to malformed packet.
+1697685307: New connection from 172.20.0.3:34438 on port 1883.
+1697685307: New client connected from 172.20.0.3:34438 as mqttjs_059aa365 (p2, c1, k60).
+1697685307: No will message specified.
+1697685307: Sending CONNACK to mqttjs_059aa365 (0, 0)
+1697685307: Received SUBSCRIBE from mqttjs_059aa365
+1697685307: Client mqttjs_059aa365 disconnected due to malformed packet.
+1697685308: New connection from 172.20.0.3:34444 on port 1883.
+1697685308: New client connected from 172.20.0.3:34444 as mqttjs_059aa365 (p2, c1, k60).
+1697685308: No will message specified.
+1697685308: Sending CONNACK to mqttjs_059aa365 (0, 0)
+1697685308: Received SUBSCRIBE from mqttjs_059aa365
+1697685308: Client mqttjs_059aa365 disconnected due to malformed packet.
+1697685309: New connection from 172.20.0.3:54688 on port 1883.
+1697685309: New client connected from 172.20.0.3:54688 as mqttjs_059aa365 (p2, c1, k60).
+1697685309: No will message specified.
+1697685309: Sending CONNACK to mqttjs_059aa365 (0, 0)
+1697685309: Received SUBSCRIBE from mqttjs_059aa365
+1697685309: Client mqttjs_059aa365 disconnected due to malformed packet.
+1697685310: New connection from 172.20.0.3:54692 on port 1883.
+1697685310: New client connected from 172.20.0.3:54692 as mqttjs_059aa365 (p2, c1, k60).
+1697685310: No will message specified.
+1697685310: Sending CONNACK to mqttjs_059aa365 (0, 0)
+1697685310: Received SUBSCRIBE from mqttjs_059aa365
+1697685310: Client mqttjs_059aa365 disconnected due to malformed packet.
+1697685353: New connection from 172.20.0.3:56768 on port 1883.
+1697685353: New client connected from 172.20.0.3:56768 as mqttjs_e1846f9e (p2, c1, k60).
+1697685353: No will message specified.
+1697685353: Sending CONNACK to mqttjs_e1846f9e (0, 0)
+1697685353: Received SUBSCRIBE from mqttjs_e1846f9e
+1697685353: Client mqttjs_e1846f9e disconnected due to malformed packet.
+1697685354: New connection from 172.20.0.3:56780 on port 1883.
+1697685354: New client connected from 172.20.0.3:56780 as mqttjs_e1846f9e (p2, c1, k60).
+1697685354: No will message specified.
+1697685354: Sending CONNACK to mqttjs_e1846f9e (0, 0)
+1697685354: Received SUBSCRIBE from mqttjs_e1846f9e
+1697685354: Client mqttjs_e1846f9e disconnected due to malformed packet.
+1697685355: New connection from 172.20.0.3:56796 on port 1883.
+1697685355: New client connected from 172.20.0.3:56796 as mqttjs_e1846f9e (p2, c1, k60).
+1697685355: No will message specified.
+1697685355: Sending CONNACK to mqttjs_e1846f9e (0, 0)
+1697685355: Received SUBSCRIBE from mqttjs_e1846f9e
+1697685355: Client mqttjs_e1846f9e disconnected due to malformed packet.
+1697685356: New connection from 172.20.0.3:56812 on port 1883.
+1697685356: New client connected from 172.20.0.3:56812 as mqttjs_e1846f9e (p2, c1, k60).
+1697685356: No will message specified.
+1697685356: Sending CONNACK to mqttjs_e1846f9e (0, 0)
+1697685356: Received SUBSCRIBE from mqttjs_e1846f9e
+1697685356: Client mqttjs_e1846f9e disconnected due to malformed packet.
+1697685357: New connection from 172.20.0.3:56828 on port 1883.
+1697685357: New client connected from 172.20.0.3:56828 as mqttjs_e1846f9e (p2, c1, k60).
+1697685357: No will message specified.
+1697685357: Sending CONNACK to mqttjs_e1846f9e (0, 0)
+1697685357: Received SUBSCRIBE from mqttjs_e1846f9e
+1697685357: Client mqttjs_e1846f9e disconnected due to malformed packet.
+1697685358: New connection from 172.20.0.3:52208 on port 1883.
+1697685358: New client connected from 172.20.0.3:52208 as mqttjs_e1846f9e (p2, c1, k60).
+1697685358: No will message specified.
+1697685358: Sending CONNACK to mqttjs_e1846f9e (0, 0)
+1697685358: Received SUBSCRIBE from mqttjs_e1846f9e
+1697685358: Client mqttjs_e1846f9e disconnected due to malformed packet.
+1697685359: New connection from 172.20.0.3:52212 on port 1883.
+1697685359: New client connected from 172.20.0.3:52212 as mqttjs_e1846f9e (p2, c1, k60).
+1697685359: No will message specified.
+1697685359: Sending CONNACK to mqttjs_e1846f9e (0, 0)
+1697685359: Received SUBSCRIBE from mqttjs_e1846f9e
+1697685359: Client mqttjs_e1846f9e disconnected due to malformed packet.
+1697685360: New connection from 172.20.0.3:52220 on port 1883.
+1697685360: New client connected from 172.20.0.3:52220 as mqttjs_e1846f9e (p2, c1, k60).
+1697685360: No will message specified.
+1697685360: Sending CONNACK to mqttjs_e1846f9e (0, 0)
+1697685360: Received SUBSCRIBE from mqttjs_e1846f9e
+1697685360: Client mqttjs_e1846f9e disconnected due to malformed packet.
+1697685361: New connection from 172.20.0.3:52236 on port 1883.
+1697685361: New client connected from 172.20.0.3:52236 as mqttjs_e1846f9e (p2, c1, k60).
+1697685361: No will message specified.
+1697685361: Sending CONNACK to mqttjs_e1846f9e (0, 0)
+1697685361: Received SUBSCRIBE from mqttjs_e1846f9e
+1697685361: Client mqttjs_e1846f9e disconnected due to malformed packet.
+1697685362: New connection from 172.20.0.3:52238 on port 1883.
+1697685362: New client connected from 172.20.0.3:52238 as mqttjs_e1846f9e (p2, c1, k60).
+1697685362: No will message specified.
+1697685362: Sending CONNACK to mqttjs_e1846f9e (0, 0)
+1697685362: Received SUBSCRIBE from mqttjs_e1846f9e
+1697685362: Client mqttjs_e1846f9e disconnected due to malformed packet.
+1697685364: New connection from 172.20.0.3:52246 on port 1883.
+1697685364: New client connected from 172.20.0.3:52246 as mqttjs_e1846f9e (p2, c1, k60).
+1697685364: No will message specified.
+1697685364: Sending CONNACK to mqttjs_e1846f9e (0, 0)
+1697685364: Received SUBSCRIBE from mqttjs_e1846f9e
+1697685364: Client mqttjs_e1846f9e disconnected due to malformed packet.
+1697685365: New connection from 172.20.0.3:52256 on port 1883.
+1697685365: New client connected from 172.20.0.3:52256 as mqttjs_e1846f9e (p2, c1, k60).
+1697685365: No will message specified.
+1697685365: Sending CONNACK to mqttjs_e1846f9e (0, 0)
+1697685365: Received SUBSCRIBE from mqttjs_e1846f9e
+1697685365: Client mqttjs_e1846f9e disconnected due to malformed packet.
+1697685366: New connection from 172.20.0.3:52270 on port 1883.
+1697685366: New client connected from 172.20.0.3:52270 as mqttjs_e1846f9e (p2, c1, k60).
+1697685366: No will message specified.
+1697685366: Sending CONNACK to mqttjs_e1846f9e (0, 0)
+1697685366: Received SUBSCRIBE from mqttjs_e1846f9e
+1697685366: Client mqttjs_e1846f9e disconnected due to malformed packet.
+1697685367: New connection from 172.20.0.3:52280 on port 1883.
+1697685367: New client connected from 172.20.0.3:52280 as mqttjs_e1846f9e (p2, c1, k60).
+1697685367: No will message specified.
+1697685367: Sending CONNACK to mqttjs_e1846f9e (0, 0)
+1697685367: Received SUBSCRIBE from mqttjs_e1846f9e
+1697685367: Client mqttjs_e1846f9e disconnected due to malformed packet.
+1697685368: New connection from 172.20.0.3:52284 on port 1883.
+1697685368: New client connected from 172.20.0.3:52284 as mqttjs_e1846f9e (p2, c1, k60).
+1697685368: No will message specified.
+1697685368: Sending CONNACK to mqttjs_e1846f9e (0, 0)
+1697685368: Received SUBSCRIBE from mqttjs_e1846f9e
+1697685368: Client mqttjs_e1846f9e disconnected due to malformed packet.
+1697685369: New connection from 172.20.0.3:59570 on port 1883.
+1697685369: New client connected from 172.20.0.3:59570 as mqttjs_e1846f9e (p2, c1, k60).
+1697685369: No will message specified.
+1697685369: Sending CONNACK to mqttjs_e1846f9e (0, 0)
+1697685369: Received SUBSCRIBE from mqttjs_e1846f9e
+1697685369: Client mqttjs_e1846f9e disconnected due to malformed packet.
+1697685370: New connection from 172.20.0.3:59580 on port 1883.
+1697685370: New client connected from 172.20.0.3:59580 as mqttjs_e1846f9e (p2, c1, k60).
+1697685370: No will message specified.
+1697685370: Sending CONNACK to mqttjs_e1846f9e (0, 0)
+1697685370: Received SUBSCRIBE from mqttjs_e1846f9e
+1697685370: Client mqttjs_e1846f9e disconnected due to malformed packet.
+1697685371: New connection from 172.20.0.3:59586 on port 1883.
+1697685371: New client connected from 172.20.0.3:59586 as mqttjs_e1846f9e (p2, c1, k60).
+1697685371: No will message specified.
+1697685371: Sending CONNACK to mqttjs_e1846f9e (0, 0)
+1697685371: Received SUBSCRIBE from mqttjs_e1846f9e
+1697685371: Client mqttjs_e1846f9e disconnected due to malformed packet.
+1697685372: New connection from 172.20.0.3:59598 on port 1883.
+1697685372: New client connected from 172.20.0.3:59598 as mqttjs_e1846f9e (p2, c1, k60).
+1697685372: No will message specified.
+1697685372: Sending CONNACK to mqttjs_e1846f9e (0, 0)
+1697685372: Received SUBSCRIBE from mqttjs_e1846f9e
+1697685372: Client mqttjs_e1846f9e disconnected due to malformed packet.
+1697685373: New connection from 172.20.0.3:59614 on port 1883.
+1697685373: New client connected from 172.20.0.3:59614 as mqttjs_e1846f9e (p2, c1, k60).
+1697685373: No will message specified.
+1697685373: Sending CONNACK to mqttjs_e1846f9e (0, 0)
+1697685373: Received SUBSCRIBE from mqttjs_e1846f9e
+1697685373: Client mqttjs_e1846f9e disconnected due to malformed packet.
+1697685374: New connection from 172.20.0.3:59618 on port 1883.
+1697685374: New client connected from 172.20.0.3:59618 as mqttjs_e1846f9e (p2, c1, k60).
+1697685374: No will message specified.
+1697685374: Sending CONNACK to mqttjs_e1846f9e (0, 0)
+1697685374: Received SUBSCRIBE from mqttjs_e1846f9e
+1697685374: Client mqttjs_e1846f9e disconnected due to malformed packet.
+1697685375: New connection from 172.20.0.3:59626 on port 1883.
+1697685375: New client connected from 172.20.0.3:59626 as mqttjs_e1846f9e (p2, c1, k60).
+1697685375: No will message specified.
+1697685375: Sending CONNACK to mqttjs_e1846f9e (0, 0)
+1697685375: Received SUBSCRIBE from mqttjs_e1846f9e
+1697685375: Client mqttjs_e1846f9e disconnected due to malformed packet.
+1697685376: New connection from 172.20.0.3:59640 on port 1883.
+1697685376: New client connected from 172.20.0.3:59640 as mqttjs_e1846f9e (p2, c1, k60).
+1697685376: No will message specified.
+1697685376: Sending CONNACK to mqttjs_e1846f9e (0, 0)
+1697685376: Received SUBSCRIBE from mqttjs_e1846f9e
+1697685376: Client mqttjs_e1846f9e disconnected due to malformed packet.
+1697685377: New connection from 172.20.0.3:59646 on port 1883.
+1697685377: New client connected from 172.20.0.3:59646 as mqttjs_e1846f9e (p2, c1, k60).
+1697685377: No will message specified.
+1697685377: Sending CONNACK to mqttjs_e1846f9e (0, 0)
+1697685377: Received SUBSCRIBE from mqttjs_e1846f9e
+1697685377: Client mqttjs_e1846f9e disconnected due to malformed packet.
+1697685378: New connection from 172.20.0.3:59654 on port 1883.
+1697685378: New client connected from 172.20.0.3:59654 as mqttjs_e1846f9e (p2, c1, k60).
+1697685378: No will message specified.
+1697685378: Sending CONNACK to mqttjs_e1846f9e (0, 0)
+1697685378: Received SUBSCRIBE from mqttjs_e1846f9e
+1697685378: Client mqttjs_e1846f9e disconnected due to malformed packet.
+1697685379: New connection from 172.20.0.3:56672 on port 1883.
+1697685379: New client connected from 172.20.0.3:56672 as mqttjs_e1846f9e (p2, c1, k60).
+1697685379: No will message specified.
+1697685379: Sending CONNACK to mqttjs_e1846f9e (0, 0)
+1697685379: Received SUBSCRIBE from mqttjs_e1846f9e
+1697685379: Client mqttjs_e1846f9e disconnected due to malformed packet.
+1697685380: New connection from 172.20.0.3:56674 on port 1883.
+1697685380: New client connected from 172.20.0.3:56674 as mqttjs_e1846f9e (p2, c1, k60).
+1697685380: No will message specified.
+1697685380: Sending CONNACK to mqttjs_e1846f9e (0, 0)
+1697685380: Received SUBSCRIBE from mqttjs_e1846f9e
+1697685380: Client mqttjs_e1846f9e disconnected due to malformed packet.
+1697685381: New connection from 172.20.0.3:56678 on port 1883.
+1697685381: New client connected from 172.20.0.3:56678 as mqttjs_e1846f9e (p2, c1, k60).
+1697685381: No will message specified.
+1697685381: Sending CONNACK to mqttjs_e1846f9e (0, 0)
+1697685381: Received SUBSCRIBE from mqttjs_e1846f9e
+1697685381: Client mqttjs_e1846f9e disconnected due to malformed packet.
+1697685382: New connection from 172.20.0.3:56688 on port 1883.
+1697685382: New client connected from 172.20.0.3:56688 as mqttjs_e1846f9e (p2, c1, k60).
+1697685382: No will message specified.
+1697685382: Sending CONNACK to mqttjs_e1846f9e (0, 0)
+1697685382: Received SUBSCRIBE from mqttjs_e1846f9e
+1697685382: Client mqttjs_e1846f9e disconnected due to malformed packet.
+1697685383: New connection from 172.20.0.3:56690 on port 1883.
+1697685383: New client connected from 172.20.0.3:56690 as mqttjs_e1846f9e (p2, c1, k60).
+1697685383: No will message specified.
+1697685383: Sending CONNACK to mqttjs_e1846f9e (0, 0)
+1697685383: Received SUBSCRIBE from mqttjs_e1846f9e
+1697685383: Client mqttjs_e1846f9e disconnected due to malformed packet.
+1697685384: New connection from 172.20.0.3:56704 on port 1883.
+1697685384: New client connected from 172.20.0.3:56704 as mqttjs_e1846f9e (p2, c1, k60).
+1697685384: No will message specified.
+1697685384: Sending CONNACK to mqttjs_e1846f9e (0, 0)
+1697685384: Received SUBSCRIBE from mqttjs_e1846f9e
+1697685384: Client mqttjs_e1846f9e disconnected due to malformed packet.
+1697685385: New connection from 172.20.0.3:56718 on port 1883.
+1697685385: New client connected from 172.20.0.3:56718 as mqttjs_e1846f9e (p2, c1, k60).
+1697685385: No will message specified.
+1697685385: Sending CONNACK to mqttjs_e1846f9e (0, 0)
+1697685385: Received SUBSCRIBE from mqttjs_e1846f9e
+1697685385: Client mqttjs_e1846f9e disconnected due to malformed packet.
+1697685386: New connection from 172.20.0.3:56732 on port 1883.
+1697685386: New client connected from 172.20.0.3:56732 as mqttjs_e1846f9e (p2, c1, k60).
+1697685386: No will message specified.
+1697685386: Sending CONNACK to mqttjs_e1846f9e (0, 0)
+1697685386: Received SUBSCRIBE from mqttjs_e1846f9e
+1697685386: Client mqttjs_e1846f9e disconnected due to malformed packet.
+1697685387: New connection from 172.20.0.3:56734 on port 1883.
+1697685387: New client connected from 172.20.0.3:56734 as mqttjs_e1846f9e (p2, c1, k60).
+1697685387: No will message specified.
+1697685387: Sending CONNACK to mqttjs_e1846f9e (0, 0)
+1697685387: Received SUBSCRIBE from mqttjs_e1846f9e
+1697685387: Client mqttjs_e1846f9e disconnected due to malformed packet.
+1697685388: New connection from 172.20.0.3:56738 on port 1883.
+1697685388: New client connected from 172.20.0.3:56738 as mqttjs_e1846f9e (p2, c1, k60).
+1697685388: No will message specified.
+1697685388: Sending CONNACK to mqttjs_e1846f9e (0, 0)
+1697685388: Received SUBSCRIBE from mqttjs_e1846f9e
+1697685388: Client mqttjs_e1846f9e disconnected due to malformed packet.
+1697685389: New connection from 172.20.0.3:59788 on port 1883.
+1697685389: New client connected from 172.20.0.3:59788 as mqttjs_e1846f9e (p2, c1, k60).
+1697685389: No will message specified.
+1697685389: Sending CONNACK to mqttjs_e1846f9e (0, 0)
+1697685389: Received SUBSCRIBE from mqttjs_e1846f9e
+1697685389: Client mqttjs_e1846f9e disconnected due to malformed packet.
+1697685390: New connection from 172.20.0.3:59794 on port 1883.
+1697685390: New client connected from 172.20.0.3:59794 as mqttjs_e1846f9e (p2, c1, k60).
+1697685390: No will message specified.
+1697685390: Sending CONNACK to mqttjs_e1846f9e (0, 0)
+1697685390: Received SUBSCRIBE from mqttjs_e1846f9e
+1697685390: Client mqttjs_e1846f9e disconnected due to malformed packet.
+1697685391: New connection from 172.20.0.3:59800 on port 1883.
+1697685391: New client connected from 172.20.0.3:59800 as mqttjs_e1846f9e (p2, c1, k60).
+1697685391: No will message specified.
+1697685391: Sending CONNACK to mqttjs_e1846f9e (0, 0)
+1697685391: Received SUBSCRIBE from mqttjs_e1846f9e
+1697685391: Client mqttjs_e1846f9e disconnected due to malformed packet.
+1697685392: New connection from 172.20.0.3:59816 on port 1883.
+1697685392: New client connected from 172.20.0.3:59816 as mqttjs_e1846f9e (p2, c1, k60).
+1697685392: No will message specified.
+1697685392: Sending CONNACK to mqttjs_e1846f9e (0, 0)
+1697685392: Received SUBSCRIBE from mqttjs_e1846f9e
+1697685392: Client mqttjs_e1846f9e disconnected due to malformed packet.
+1697685393: New connection from 172.20.0.3:59820 on port 1883.
+1697685393: New client connected from 172.20.0.3:59820 as mqttjs_e1846f9e (p2, c1, k60).
+1697685393: No will message specified.
+1697685393: Sending CONNACK to mqttjs_e1846f9e (0, 0)
+1697685393: Received SUBSCRIBE from mqttjs_e1846f9e
+1697685393: Client mqttjs_e1846f9e disconnected due to malformed packet.
+1697685394: New connection from 172.20.0.3:59826 on port 1883.
+1697685394: New client connected from 172.20.0.3:59826 as mqttjs_e1846f9e (p2, c1, k60).
+1697685394: No will message specified.
+1697685394: Sending CONNACK to mqttjs_e1846f9e (0, 0)
+1697685394: Received SUBSCRIBE from mqttjs_e1846f9e
+1697685394: Client mqttjs_e1846f9e disconnected due to malformed packet.
+1697685395: New connection from 172.20.0.3:59828 on port 1883.
+1697685395: New client connected from 172.20.0.3:59828 as mqttjs_e1846f9e (p2, c1, k60).
+1697685395: No will message specified.
+1697685395: Sending CONNACK to mqttjs_e1846f9e (0, 0)
+1697685395: Received SUBSCRIBE from mqttjs_e1846f9e
+1697685395: Client mqttjs_e1846f9e disconnected due to malformed packet.
+1697685396: New connection from 172.20.0.3:59832 on port 1883.
+1697685396: New client connected from 172.20.0.3:59832 as mqttjs_e1846f9e (p2, c1, k60).
+1697685396: No will message specified.
+1697685396: Sending CONNACK to mqttjs_e1846f9e (0, 0)
+1697685396: Received SUBSCRIBE from mqttjs_e1846f9e
+1697685396: Client mqttjs_e1846f9e disconnected due to malformed packet.
+1697685397: New connection from 172.20.0.3:59838 on port 1883.
+1697685397: New client connected from 172.20.0.3:59838 as mqttjs_e1846f9e (p2, c1, k60).
+1697685397: No will message specified.
+1697685397: Sending CONNACK to mqttjs_e1846f9e (0, 0)
+1697685397: Received SUBSCRIBE from mqttjs_e1846f9e
+1697685397: Client mqttjs_e1846f9e disconnected due to malformed packet.
+1697685398: New connection from 172.20.0.3:59846 on port 1883.
+1697685398: New client connected from 172.20.0.3:59846 as mqttjs_e1846f9e (p2, c1, k60).
+1697685398: No will message specified.
+1697685398: Sending CONNACK to mqttjs_e1846f9e (0, 0)
+1697685398: Received SUBSCRIBE from mqttjs_e1846f9e
+1697685398: Client mqttjs_e1846f9e disconnected due to malformed packet.
+1697685399: New connection from 172.20.0.3:59700 on port 1883.
+1697685399: New client connected from 172.20.0.3:59700 as mqttjs_e1846f9e (p2, c1, k60).
+1697685399: No will message specified.
+1697685399: Sending CONNACK to mqttjs_e1846f9e (0, 0)
+1697685399: Received SUBSCRIBE from mqttjs_e1846f9e
+1697685399: Client mqttjs_e1846f9e disconnected due to malformed packet.
+1697685400: New connection from 172.20.0.3:59706 on port 1883.
+1697685400: New client connected from 172.20.0.3:59706 as mqttjs_e1846f9e (p2, c1, k60).
+1697685400: No will message specified.
+1697685400: Sending CONNACK to mqttjs_e1846f9e (0, 0)
+1697685400: Received SUBSCRIBE from mqttjs_e1846f9e
+1697685400: Client mqttjs_e1846f9e disconnected due to malformed packet.
+1697685401: New connection from 172.20.0.3:59712 on port 1883.
+1697685401: New client connected from 172.20.0.3:59712 as mqttjs_e1846f9e (p2, c1, k60).
+1697685401: No will message specified.
+1697685401: Sending CONNACK to mqttjs_e1846f9e (0, 0)
+1697685401: Received SUBSCRIBE from mqttjs_e1846f9e
+1697685401: Client mqttjs_e1846f9e disconnected due to malformed packet.
+1697685402: New connection from 172.20.0.3:59714 on port 1883.
+1697685402: New client connected from 172.20.0.3:59714 as mqttjs_e1846f9e (p2, c1, k60).
+1697685402: No will message specified.
+1697685402: Sending CONNACK to mqttjs_e1846f9e (0, 0)
+1697685402: Received SUBSCRIBE from mqttjs_e1846f9e
+1697685402: Client mqttjs_e1846f9e disconnected due to malformed packet.
+1697685403: New connection from 172.20.0.3:59722 on port 1883.
+1697685403: New client connected from 172.20.0.3:59722 as mqttjs_e1846f9e (p2, c1, k60).
+1697685403: No will message specified.
+1697685403: Sending CONNACK to mqttjs_e1846f9e (0, 0)
+1697685403: Received SUBSCRIBE from mqttjs_e1846f9e
+1697685403: Client mqttjs_e1846f9e disconnected due to malformed packet.
+1697685404: New connection from 172.20.0.3:59728 on port 1883.
+1697685404: New client connected from 172.20.0.3:59728 as mqttjs_e1846f9e (p2, c1, k60).
+1697685404: No will message specified.
+1697685404: Sending CONNACK to mqttjs_e1846f9e (0, 0)
+1697685404: Received SUBSCRIBE from mqttjs_e1846f9e
+1697685404: Client mqttjs_e1846f9e disconnected due to malformed packet.
+1697685405: New connection from 172.20.0.3:59732 on port 1883.
+1697685405: New client connected from 172.20.0.3:59732 as mqttjs_e1846f9e (p2, c1, k60).
+1697685405: No will message specified.
+1697685405: Sending CONNACK to mqttjs_e1846f9e (0, 0)
+1697685405: Received SUBSCRIBE from mqttjs_e1846f9e
+1697685405: Client mqttjs_e1846f9e disconnected due to malformed packet.
+1697685406: New connection from 172.20.0.3:59736 on port 1883.
+1697685406: New client connected from 172.20.0.3:59736 as mqttjs_e1846f9e (p2, c1, k60).
+1697685406: No will message specified.
+1697685406: Sending CONNACK to mqttjs_e1846f9e (0, 0)
+1697685406: Received SUBSCRIBE from mqttjs_e1846f9e
+1697685406: Client mqttjs_e1846f9e disconnected due to malformed packet.
+1697685407: New connection from 172.20.0.3:59752 on port 1883.
+1697685407: New client connected from 172.20.0.3:59752 as mqttjs_e1846f9e (p2, c1, k60).
+1697685407: No will message specified.
+1697685407: Sending CONNACK to mqttjs_e1846f9e (0, 0)
+1697685407: Received SUBSCRIBE from mqttjs_e1846f9e
+1697685407: Client mqttjs_e1846f9e disconnected due to malformed packet.
+1697685408: New connection from 172.20.0.3:59760 on port 1883.
+1697685408: New client connected from 172.20.0.3:59760 as mqttjs_e1846f9e (p2, c1, k60).
+1697685408: No will message specified.
+1697685408: Sending CONNACK to mqttjs_e1846f9e (0, 0)
+1697685408: Received SUBSCRIBE from mqttjs_e1846f9e
+1697685408: Client mqttjs_e1846f9e disconnected due to malformed packet.
+1697685409: New connection from 172.20.0.3:56566 on port 1883.
+1697685409: New client connected from 172.20.0.3:56566 as mqttjs_e1846f9e (p2, c1, k60).
+1697685409: No will message specified.
+1697685409: Sending CONNACK to mqttjs_e1846f9e (0, 0)
+1697685409: Received SUBSCRIBE from mqttjs_e1846f9e
+1697685409: Client mqttjs_e1846f9e disconnected due to malformed packet.
+1697685410: New connection from 172.20.0.3:56570 on port 1883.
+1697685410: New client connected from 172.20.0.3:56570 as mqttjs_e1846f9e (p2, c1, k60).
+1697685410: No will message specified.
+1697685410: Sending CONNACK to mqttjs_e1846f9e (0, 0)
+1697685410: Received SUBSCRIBE from mqttjs_e1846f9e
+1697685410: Client mqttjs_e1846f9e disconnected due to malformed packet.
+1697685411: New connection from 172.20.0.3:56586 on port 1883.
+1697685411: New client connected from 172.20.0.3:56586 as mqttjs_e1846f9e (p2, c1, k60).
+1697685411: No will message specified.
+1697685411: Sending CONNACK to mqttjs_e1846f9e (0, 0)
+1697685411: Received SUBSCRIBE from mqttjs_e1846f9e
+1697685411: Client mqttjs_e1846f9e disconnected due to malformed packet.
+1697685412: New connection from 172.20.0.3:56594 on port 1883.
+1697685412: New client connected from 172.20.0.3:56594 as mqttjs_e1846f9e (p2, c1, k60).
+1697685412: No will message specified.
+1697685412: Sending CONNACK to mqttjs_e1846f9e (0, 0)
+1697685412: Received SUBSCRIBE from mqttjs_e1846f9e
+1697685412: Client mqttjs_e1846f9e disconnected due to malformed packet.
+1697685413: New connection from 172.20.0.3:56598 on port 1883.
+1697685413: New client connected from 172.20.0.3:56598 as mqttjs_e1846f9e (p2, c1, k60).
+1697685413: No will message specified.
+1697685413: Sending CONNACK to mqttjs_e1846f9e (0, 0)
+1697685413: Received SUBSCRIBE from mqttjs_e1846f9e
+1697685413: Client mqttjs_e1846f9e disconnected due to malformed packet.
+1697685414: New connection from 172.20.0.3:56606 on port 1883.
+1697685414: New client connected from 172.20.0.3:56606 as mqttjs_e1846f9e (p2, c1, k60).
+1697685414: No will message specified.
+1697685414: Sending CONNACK to mqttjs_e1846f9e (0, 0)
+1697685414: Received SUBSCRIBE from mqttjs_e1846f9e
+1697685414: Client mqttjs_e1846f9e disconnected due to malformed packet.
+1697685415: New connection from 172.20.0.3:56616 on port 1883.
+1697685415: New client connected from 172.20.0.3:56616 as mqttjs_e1846f9e (p2, c1, k60).
+1697685415: No will message specified.
+1697685415: Sending CONNACK to mqttjs_e1846f9e (0, 0)
+1697685415: Received SUBSCRIBE from mqttjs_e1846f9e
+1697685415: Client mqttjs_e1846f9e disconnected due to malformed packet.
+1697685416: New connection from 172.20.0.3:56624 on port 1883.
+1697685416: New client connected from 172.20.0.3:56624 as mqttjs_e1846f9e (p2, c1, k60).
+1697685416: No will message specified.
+1697685416: Sending CONNACK to mqttjs_e1846f9e (0, 0)
+1697685416: Received SUBSCRIBE from mqttjs_e1846f9e
+1697685416: Client mqttjs_e1846f9e disconnected due to malformed packet.
+1697685417: New connection from 172.20.0.3:56638 on port 1883.
+1697685417: New client connected from 172.20.0.3:56638 as mqttjs_e1846f9e (p2, c1, k60).
+1697685417: No will message specified.
+1697685417: Sending CONNACK to mqttjs_e1846f9e (0, 0)
+1697685417: Received SUBSCRIBE from mqttjs_e1846f9e
+1697685417: Client mqttjs_e1846f9e disconnected due to malformed packet.
+1697685418: New connection from 172.20.0.3:56644 on port 1883.
+1697685418: New client connected from 172.20.0.3:56644 as mqttjs_e1846f9e (p2, c1, k60).
+1697685418: No will message specified.
+1697685418: Sending CONNACK to mqttjs_e1846f9e (0, 0)
+1697685418: Received SUBSCRIBE from mqttjs_e1846f9e
+1697685418: Client mqttjs_e1846f9e disconnected due to malformed packet.
+1697685419: New connection from 172.20.0.3:56976 on port 1883.
+1697685419: New client connected from 172.20.0.3:56976 as mqttjs_e1846f9e (p2, c1, k60).
+1697685419: No will message specified.
+1697685419: Sending CONNACK to mqttjs_e1846f9e (0, 0)
+1697685419: Received SUBSCRIBE from mqttjs_e1846f9e
+1697685419: Client mqttjs_e1846f9e disconnected due to malformed packet.
+1697685420: New connection from 172.20.0.3:56978 on port 1883.
+1697685420: New client connected from 172.20.0.3:56978 as mqttjs_e1846f9e (p2, c1, k60).
+1697685420: No will message specified.
+1697685420: Sending CONNACK to mqttjs_e1846f9e (0, 0)
+1697685420: Received SUBSCRIBE from mqttjs_e1846f9e
+1697685420: Client mqttjs_e1846f9e disconnected due to malformed packet.
+1697685421: New connection from 172.20.0.3:56984 on port 1883.
+1697685421: New client connected from 172.20.0.3:56984 as mqttjs_e1846f9e (p2, c1, k60).
+1697685421: No will message specified.
+1697685421: Sending CONNACK to mqttjs_e1846f9e (0, 0)
+1697685421: Received SUBSCRIBE from mqttjs_e1846f9e
+1697685421: Client mqttjs_e1846f9e disconnected due to malformed packet.
+1697685422: New connection from 172.20.0.3:56994 on port 1883.
+1697685422: New client connected from 172.20.0.3:56994 as mqttjs_e1846f9e (p2, c1, k60).
+1697685422: No will message specified.
+1697685422: Sending CONNACK to mqttjs_e1846f9e (0, 0)
+1697685422: Received SUBSCRIBE from mqttjs_e1846f9e
+1697685422: Client mqttjs_e1846f9e disconnected due to malformed packet.
+1697685423: New connection from 172.20.0.3:57010 on port 1883.
+1697685423: New client connected from 172.20.0.3:57010 as mqttjs_e1846f9e (p2, c1, k60).
+1697685423: No will message specified.
+1697685423: Sending CONNACK to mqttjs_e1846f9e (0, 0)
+1697685423: Received SUBSCRIBE from mqttjs_e1846f9e
+1697685423: Client mqttjs_e1846f9e disconnected due to malformed packet.
+1697685424: New connection from 172.20.0.3:57018 on port 1883.
+1697685424: New client connected from 172.20.0.3:57018 as mqttjs_e1846f9e (p2, c1, k60).
+1697685424: No will message specified.
+1697685424: Sending CONNACK to mqttjs_e1846f9e (0, 0)
+1697685424: Received SUBSCRIBE from mqttjs_e1846f9e
+1697685424: Client mqttjs_e1846f9e disconnected due to malformed packet.
+1697685425: New connection from 172.20.0.3:57030 on port 1883.
+1697685425: New client connected from 172.20.0.3:57030 as mqttjs_e1846f9e (p2, c1, k60).
+1697685425: No will message specified.
+1697685425: Sending CONNACK to mqttjs_e1846f9e (0, 0)
+1697685425: Received SUBSCRIBE from mqttjs_e1846f9e
+1697685425: Client mqttjs_e1846f9e disconnected due to malformed packet.
+1697685426: New connection from 172.20.0.3:57038 on port 1883.
+1697685426: New client connected from 172.20.0.3:57038 as mqttjs_e1846f9e (p2, c1, k60).
+1697685426: No will message specified.
+1697685426: Sending CONNACK to mqttjs_e1846f9e (0, 0)
+1697685426: Received SUBSCRIBE from mqttjs_e1846f9e
+1697685426: Client mqttjs_e1846f9e disconnected due to malformed packet.
+1697685427: New connection from 172.20.0.3:57050 on port 1883.
+1697685427: New client connected from 172.20.0.3:57050 as mqttjs_e1846f9e (p2, c1, k60).
+1697685427: No will message specified.
+1697685427: Sending CONNACK to mqttjs_e1846f9e (0, 0)
+1697685427: Received SUBSCRIBE from mqttjs_e1846f9e
+1697685427: Client mqttjs_e1846f9e disconnected due to malformed packet.
+1697685485: New connection from 172.20.0.3:40368 on port 1883.
+1697685485: New client connected from 172.20.0.3:40368 as mqttjs_b943367e (p2, c1, k60).
+1697685485: No will message specified.
+1697685485: Sending CONNACK to mqttjs_b943367e (0, 0)
+1697685485: Received SUBSCRIBE from mqttjs_b943367e
+1697685485: Client mqttjs_b943367e disconnected due to malformed packet.
+1697685486: New connection from 172.20.0.3:40382 on port 1883.
+1697685486: New client connected from 172.20.0.3:40382 as mqttjs_b943367e (p2, c1, k60).
+1697685486: No will message specified.
+1697685486: Sending CONNACK to mqttjs_b943367e (0, 0)
+1697685486: Received SUBSCRIBE from mqttjs_b943367e
+1697685486: Client mqttjs_b943367e disconnected due to malformed packet.
+1697685487: New connection from 172.20.0.3:40392 on port 1883.
+1697685487: New client connected from 172.20.0.3:40392 as mqttjs_b943367e (p2, c1, k60).
+1697685487: No will message specified.
+1697685487: Sending CONNACK to mqttjs_b943367e (0, 0)
+1697685487: Received SUBSCRIBE from mqttjs_b943367e
+1697685487: Client mqttjs_b943367e disconnected due to malformed packet.
+1697685488: New connection from 172.20.0.3:40408 on port 1883.
+1697685488: New client connected from 172.20.0.3:40408 as mqttjs_b943367e (p2, c1, k60).
+1697685488: No will message specified.
+1697685488: Sending CONNACK to mqttjs_b943367e (0, 0)
+1697685488: Received SUBSCRIBE from mqttjs_b943367e
+1697685488: Client mqttjs_b943367e disconnected due to malformed packet.
+1697685489: New connection from 172.20.0.3:39550 on port 1883.
+1697685489: New client connected from 172.20.0.3:39550 as mqttjs_b943367e (p2, c1, k60).
+1697685489: No will message specified.
+1697685489: Sending CONNACK to mqttjs_b943367e (0, 0)
+1697685489: Received SUBSCRIBE from mqttjs_b943367e
+1697685489: Client mqttjs_b943367e disconnected due to malformed packet.
+1697685490: New connection from 172.20.0.3:39558 on port 1883.
+1697685490: New client connected from 172.20.0.3:39558 as mqttjs_b943367e (p2, c1, k60).
+1697685490: No will message specified.
+1697685490: Sending CONNACK to mqttjs_b943367e (0, 0)
+1697685490: Received SUBSCRIBE from mqttjs_b943367e
+1697685490: Client mqttjs_b943367e disconnected due to malformed packet.
+1697685491: New connection from 172.20.0.3:39570 on port 1883.
+1697685491: New client connected from 172.20.0.3:39570 as mqttjs_b943367e (p2, c1, k60).
+1697685491: No will message specified.
+1697685491: Sending CONNACK to mqttjs_b943367e (0, 0)
+1697685491: Received SUBSCRIBE from mqttjs_b943367e
+1697685491: Client mqttjs_b943367e disconnected due to malformed packet.
+1697685492: New connection from 172.20.0.3:39584 on port 1883.
+1697685492: New client connected from 172.20.0.3:39584 as mqttjs_b943367e (p2, c1, k60).
+1697685492: No will message specified.
+1697685492: Sending CONNACK to mqttjs_b943367e (0, 0)
+1697685492: Received SUBSCRIBE from mqttjs_b943367e
+1697685492: Client mqttjs_b943367e disconnected due to malformed packet.
+1697685493: New connection from 172.20.0.3:39588 on port 1883.
+1697685493: New client connected from 172.20.0.3:39588 as mqttjs_b943367e (p2, c1, k60).
+1697685493: No will message specified.
+1697685493: Sending CONNACK to mqttjs_b943367e (0, 0)
+1697685493: Received SUBSCRIBE from mqttjs_b943367e
+1697685493: Client mqttjs_b943367e disconnected due to malformed packet.
+1697685494: New connection from 172.20.0.3:39604 on port 1883.
+1697685494: New client connected from 172.20.0.3:39604 as mqttjs_b943367e (p2, c1, k60).
+1697685494: No will message specified.
+1697685494: Sending CONNACK to mqttjs_b943367e (0, 0)
+1697685494: Received SUBSCRIBE from mqttjs_b943367e
+1697685494: Client mqttjs_b943367e disconnected due to malformed packet.
+1697685495: New connection from 172.20.0.3:39612 on port 1883.
+1697685495: New client connected from 172.20.0.3:39612 as mqttjs_b943367e (p2, c1, k60).
+1697685495: No will message specified.
+1697685495: Sending CONNACK to mqttjs_b943367e (0, 0)
+1697685495: Received SUBSCRIBE from mqttjs_b943367e
+1697685495: Client mqttjs_b943367e disconnected due to malformed packet.
+1697685496: New connection from 172.20.0.3:39620 on port 1883.
+1697685496: New client connected from 172.20.0.3:39620 as mqttjs_b943367e (p2, c1, k60).
+1697685496: No will message specified.
+1697685496: Sending CONNACK to mqttjs_b943367e (0, 0)
+1697685496: Received SUBSCRIBE from mqttjs_b943367e
+1697685496: Client mqttjs_b943367e disconnected due to malformed packet.
+1697685497: New connection from 172.20.0.3:39634 on port 1883.
+1697685497: New client connected from 172.20.0.3:39634 as mqttjs_b943367e (p2, c1, k60).
+1697685497: No will message specified.
+1697685497: Sending CONNACK to mqttjs_b943367e (0, 0)
+1697685497: Received SUBSCRIBE from mqttjs_b943367e
+1697685497: Client mqttjs_b943367e disconnected due to malformed packet.
+1697685498: New connection from 172.20.0.3:39636 on port 1883.
+1697685498: New client connected from 172.20.0.3:39636 as mqttjs_b943367e (p2, c1, k60).
+1697685498: No will message specified.
+1697685498: Sending CONNACK to mqttjs_b943367e (0, 0)
+1697685498: Received SUBSCRIBE from mqttjs_b943367e
+1697685498: Client mqttjs_b943367e disconnected due to malformed packet.
+1697685499: New connection from 172.20.0.3:32946 on port 1883.
+1697685499: New client connected from 172.20.0.3:32946 as mqttjs_b943367e (p2, c1, k60).
+1697685499: No will message specified.
+1697685499: Sending CONNACK to mqttjs_b943367e (0, 0)
+1697685499: Received SUBSCRIBE from mqttjs_b943367e
+1697685499: Client mqttjs_b943367e disconnected due to malformed packet.
+1697685500: New connection from 172.20.0.3:32962 on port 1883.
+1697685500: New client connected from 172.20.0.3:32962 as mqttjs_b943367e (p2, c1, k60).
+1697685500: No will message specified.
+1697685500: Sending CONNACK to mqttjs_b943367e (0, 0)
+1697685500: Received SUBSCRIBE from mqttjs_b943367e
+1697685500: Client mqttjs_b943367e disconnected due to malformed packet.
+1697685501: New connection from 172.20.0.3:32966 on port 1883.
+1697685501: New client connected from 172.20.0.3:32966 as mqttjs_b943367e (p2, c1, k60).
+1697685501: No will message specified.
+1697685501: Sending CONNACK to mqttjs_b943367e (0, 0)
+1697685501: Received SUBSCRIBE from mqttjs_b943367e
+1697685501: Client mqttjs_b943367e disconnected due to malformed packet.
+1697685502: New connection from 172.20.0.3:32976 on port 1883.
+1697685502: New client connected from 172.20.0.3:32976 as mqttjs_b943367e (p2, c1, k60).
+1697685502: No will message specified.
+1697685502: Sending CONNACK to mqttjs_b943367e (0, 0)
+1697685502: Received SUBSCRIBE from mqttjs_b943367e
+1697685502: Client mqttjs_b943367e disconnected due to malformed packet.
+1697685503: New connection from 172.20.0.3:32980 on port 1883.
+1697685503: New client connected from 172.20.0.3:32980 as mqttjs_b943367e (p2, c1, k60).
+1697685503: No will message specified.
+1697685503: Sending CONNACK to mqttjs_b943367e (0, 0)
+1697685503: Received SUBSCRIBE from mqttjs_b943367e
+1697685503: Client mqttjs_b943367e disconnected due to malformed packet.
+1697685504: New connection from 172.20.0.3:32990 on port 1883.
+1697685504: New client connected from 172.20.0.3:32990 as mqttjs_b943367e (p2, c1, k60).
+1697685504: No will message specified.
+1697685504: Sending CONNACK to mqttjs_b943367e (0, 0)
+1697685504: Received SUBSCRIBE from mqttjs_b943367e
+1697685504: Client mqttjs_b943367e disconnected due to malformed packet.
+1697685505: New connection from 172.20.0.3:32994 on port 1883.
+1697685505: New client connected from 172.20.0.3:32994 as mqttjs_b943367e (p2, c1, k60).
+1697685505: No will message specified.
+1697685505: Sending CONNACK to mqttjs_b943367e (0, 0)
+1697685505: Received SUBSCRIBE from mqttjs_b943367e
+1697685505: Client mqttjs_b943367e disconnected due to malformed packet.
+1697685506: New connection from 172.20.0.3:33000 on port 1883.
+1697685506: New client connected from 172.20.0.3:33000 as mqttjs_b943367e (p2, c1, k60).
+1697685506: No will message specified.
+1697685506: Sending CONNACK to mqttjs_b943367e (0, 0)
+1697685506: Received SUBSCRIBE from mqttjs_b943367e
+1697685506: Client mqttjs_b943367e disconnected due to malformed packet.
+1697685507: New connection from 172.20.0.3:33008 on port 1883.
+1697685507: New client connected from 172.20.0.3:33008 as mqttjs_b943367e (p2, c1, k60).
+1697685507: No will message specified.
+1697685507: Sending CONNACK to mqttjs_b943367e (0, 0)
+1697685507: Received SUBSCRIBE from mqttjs_b943367e
+1697685507: Client mqttjs_b943367e disconnected due to malformed packet.
+1697685508: New connection from 172.20.0.3:33020 on port 1883.
+1697685508: New client connected from 172.20.0.3:33020 as mqttjs_b943367e (p2, c1, k60).
+1697685508: No will message specified.
+1697685508: Sending CONNACK to mqttjs_b943367e (0, 0)
+1697685508: Received SUBSCRIBE from mqttjs_b943367e
+1697685508: Client mqttjs_b943367e disconnected due to malformed packet.
+1697685509: New connection from 172.20.0.3:44576 on port 1883.
+1697685509: New client connected from 172.20.0.3:44576 as mqttjs_b943367e (p2, c1, k60).
+1697685509: No will message specified.
+1697685509: Sending CONNACK to mqttjs_b943367e (0, 0)
+1697685509: Received SUBSCRIBE from mqttjs_b943367e
+1697685509: Client mqttjs_b943367e disconnected due to malformed packet.
+1697685510: New connection from 172.20.0.3:44582 on port 1883.
+1697685510: New client connected from 172.20.0.3:44582 as mqttjs_b943367e (p2, c1, k60).
+1697685510: No will message specified.
+1697685510: Sending CONNACK to mqttjs_b943367e (0, 0)
+1697685510: Received SUBSCRIBE from mqttjs_b943367e
+1697685510: Client mqttjs_b943367e disconnected due to malformed packet.
+1697685511: New connection from 172.20.0.3:44586 on port 1883.
+1697685511: New client connected from 172.20.0.3:44586 as mqttjs_b943367e (p2, c1, k60).
+1697685511: No will message specified.
+1697685511: Sending CONNACK to mqttjs_b943367e (0, 0)
+1697685511: Received SUBSCRIBE from mqttjs_b943367e
+1697685511: Client mqttjs_b943367e disconnected due to malformed packet.
+1697685512: New connection from 172.20.0.3:44588 on port 1883.
+1697685512: New client connected from 172.20.0.3:44588 as mqttjs_b943367e (p2, c1, k60).
+1697685512: No will message specified.
+1697685512: Sending CONNACK to mqttjs_b943367e (0, 0)
+1697685512: Received SUBSCRIBE from mqttjs_b943367e
+1697685512: Client mqttjs_b943367e disconnected due to malformed packet.
+1697685513: New connection from 172.20.0.3:44600 on port 1883.
+1697685513: New client connected from 172.20.0.3:44600 as mqttjs_b943367e (p2, c1, k60).
+1697685513: No will message specified.
+1697685513: Sending CONNACK to mqttjs_b943367e (0, 0)
+1697685513: Received SUBSCRIBE from mqttjs_b943367e
+1697685513: Client mqttjs_b943367e disconnected due to malformed packet.
+1697685514: New connection from 172.20.0.3:44616 on port 1883.
+1697685514: New client connected from 172.20.0.3:44616 as mqttjs_b943367e (p2, c1, k60).
+1697685514: No will message specified.
+1697685514: Sending CONNACK to mqttjs_b943367e (0, 0)
+1697685514: Received SUBSCRIBE from mqttjs_b943367e
+1697685514: Client mqttjs_b943367e disconnected due to malformed packet.
+1697685515: New connection from 172.20.0.3:44630 on port 1883.
+1697685515: New client connected from 172.20.0.3:44630 as mqttjs_b943367e (p2, c1, k60).
+1697685515: No will message specified.
+1697685515: Sending CONNACK to mqttjs_b943367e (0, 0)
+1697685515: Received SUBSCRIBE from mqttjs_b943367e
+1697685515: Client mqttjs_b943367e disconnected due to malformed packet.
+1697685516: New connection from 172.20.0.3:44646 on port 1883.
+1697685516: New client connected from 172.20.0.3:44646 as mqttjs_b943367e (p2, c1, k60).
+1697685516: No will message specified.
+1697685516: Sending CONNACK to mqttjs_b943367e (0, 0)
+1697685516: Received SUBSCRIBE from mqttjs_b943367e
+1697685516: Client mqttjs_b943367e disconnected due to malformed packet.
+1697685517: New connection from 172.20.0.3:44662 on port 1883.
+1697685517: New client connected from 172.20.0.3:44662 as mqttjs_b943367e (p2, c1, k60).
+1697685517: No will message specified.
+1697685517: Sending CONNACK to mqttjs_b943367e (0, 0)
+1697685517: Received SUBSCRIBE from mqttjs_b943367e
+1697685517: Client mqttjs_b943367e disconnected due to malformed packet.
+1697685565: New connection from 172.20.0.3:40026 on port 1883.
+1697685565: New client connected from 172.20.0.3:40026 as mqttjs_e31d5633 (p2, c1, k60).
+1697685565: No will message specified.
+1697685565: Sending CONNACK to mqttjs_e31d5633 (0, 0)
+1697685565: Received SUBSCRIBE from mqttjs_e31d5633
+1697685565: Client mqttjs_e31d5633 disconnected due to malformed packet.
+1697685566: New connection from 172.20.0.3:40034 on port 1883.
+1697685566: New client connected from 172.20.0.3:40034 as mqttjs_e31d5633 (p2, c1, k60).
+1697685566: No will message specified.
+1697685566: Sending CONNACK to mqttjs_e31d5633 (0, 0)
+1697685566: Received SUBSCRIBE from mqttjs_e31d5633
+1697685566: Client mqttjs_e31d5633 disconnected due to malformed packet.
+1697685567: New connection from 172.20.0.3:40042 on port 1883.
+1697685567: New client connected from 172.20.0.3:40042 as mqttjs_e31d5633 (p2, c1, k60).
+1697685567: No will message specified.
+1697685567: Sending CONNACK to mqttjs_e31d5633 (0, 0)
+1697685567: Received SUBSCRIBE from mqttjs_e31d5633
+1697685567: Client mqttjs_e31d5633 disconnected due to malformed packet.
+1697685568: New connection from 172.20.0.3:40052 on port 1883.
+1697685568: New client connected from 172.20.0.3:40052 as mqttjs_e31d5633 (p2, c1, k60).
+1697685568: No will message specified.
+1697685568: Sending CONNACK to mqttjs_e31d5633 (0, 0)
+1697685568: Received SUBSCRIBE from mqttjs_e31d5633
+1697685568: Client mqttjs_e31d5633 disconnected due to malformed packet.
+1697685569: New connection from 172.20.0.3:35184 on port 1883.
+1697685569: New client connected from 172.20.0.3:35184 as mqttjs_e31d5633 (p2, c1, k60).
+1697685569: No will message specified.
+1697685569: Sending CONNACK to mqttjs_e31d5633 (0, 0)
+1697685569: Received SUBSCRIBE from mqttjs_e31d5633
+1697685569: Client mqttjs_e31d5633 disconnected due to malformed packet.
+1697685570: New connection from 172.20.0.3:35192 on port 1883.
+1697685570: New client connected from 172.20.0.3:35192 as mqttjs_e31d5633 (p2, c1, k60).
+1697685570: No will message specified.
+1697685570: Sending CONNACK to mqttjs_e31d5633 (0, 0)
+1697685570: Received SUBSCRIBE from mqttjs_e31d5633
+1697685570: Client mqttjs_e31d5633 disconnected due to malformed packet.
+1697685571: New connection from 172.20.0.3:35200 on port 1883.
+1697685571: New client connected from 172.20.0.3:35200 as mqttjs_e31d5633 (p2, c1, k60).
+1697685571: No will message specified.
+1697685571: Sending CONNACK to mqttjs_e31d5633 (0, 0)
+1697685571: Received SUBSCRIBE from mqttjs_e31d5633
+1697685571: Client mqttjs_e31d5633 disconnected due to malformed packet.
+1697685572: New connection from 172.20.0.3:35212 on port 1883.
+1697685572: New client connected from 172.20.0.3:35212 as mqttjs_e31d5633 (p2, c1, k60).
+1697685572: No will message specified.
+1697685572: Sending CONNACK to mqttjs_e31d5633 (0, 0)
+1697685572: Received SUBSCRIBE from mqttjs_e31d5633
+1697685572: Client mqttjs_e31d5633 disconnected due to malformed packet.
+1697685573: New connection from 172.20.0.3:35218 on port 1883.
+1697685573: New client connected from 172.20.0.3:35218 as mqttjs_e31d5633 (p2, c1, k60).
+1697685573: No will message specified.
+1697685573: Sending CONNACK to mqttjs_e31d5633 (0, 0)
+1697685573: Received SUBSCRIBE from mqttjs_e31d5633
+1697685573: Client mqttjs_e31d5633 disconnected due to malformed packet.
+1697685574: New connection from 172.20.0.3:35230 on port 1883.
+1697685574: New client connected from 172.20.0.3:35230 as mqttjs_e31d5633 (p2, c1, k60).
+1697685574: No will message specified.
+1697685574: Sending CONNACK to mqttjs_e31d5633 (0, 0)
+1697685574: Received SUBSCRIBE from mqttjs_e31d5633
+1697685574: Client mqttjs_e31d5633 disconnected due to malformed packet.
+1697685575: New connection from 172.20.0.3:35246 on port 1883.
+1697685575: New client connected from 172.20.0.3:35246 as mqttjs_e31d5633 (p2, c1, k60).
+1697685575: No will message specified.
+1697685575: Sending CONNACK to mqttjs_e31d5633 (0, 0)
+1697685575: Received SUBSCRIBE from mqttjs_e31d5633
+1697685575: Client mqttjs_e31d5633 disconnected due to malformed packet.
+1697685576: New connection from 172.20.0.3:35254 on port 1883.
+1697685576: New client connected from 172.20.0.3:35254 as mqttjs_e31d5633 (p2, c1, k60).
+1697685576: No will message specified.
+1697685576: Sending CONNACK to mqttjs_e31d5633 (0, 0)
+1697685576: Received SUBSCRIBE from mqttjs_e31d5633
+1697685576: Client mqttjs_e31d5633 disconnected due to malformed packet.
+1697685577: New connection from 172.20.0.3:35270 on port 1883.
+1697685577: New client connected from 172.20.0.3:35270 as mqttjs_e31d5633 (p2, c1, k60).
+1697685577: No will message specified.
+1697685577: Sending CONNACK to mqttjs_e31d5633 (0, 0)
+1697685577: Received SUBSCRIBE from mqttjs_e31d5633
+1697685577: Client mqttjs_e31d5633 disconnected due to malformed packet.
+1697685578: New connection from 172.20.0.3:35282 on port 1883.
+1697685578: New client connected from 172.20.0.3:35282 as mqttjs_e31d5633 (p2, c1, k60).
+1697685578: No will message specified.
+1697685578: Sending CONNACK to mqttjs_e31d5633 (0, 0)
+1697685578: Received SUBSCRIBE from mqttjs_e31d5633
+1697685578: Client mqttjs_e31d5633 disconnected due to malformed packet.
+1697685579: New connection from 172.20.0.3:45052 on port 1883.
+1697685579: New client connected from 172.20.0.3:45052 as mqttjs_e31d5633 (p2, c1, k60).
+1697685579: No will message specified.
+1697685579: Sending CONNACK to mqttjs_e31d5633 (0, 0)
+1697685579: Received SUBSCRIBE from mqttjs_e31d5633
+1697685579: Client mqttjs_e31d5633 disconnected due to malformed packet.
+1697685580: New connection from 172.20.0.3:45058 on port 1883.
+1697685580: New client connected from 172.20.0.3:45058 as mqttjs_e31d5633 (p2, c1, k60).
+1697685580: No will message specified.
+1697685580: Sending CONNACK to mqttjs_e31d5633 (0, 0)
+1697685580: Received SUBSCRIBE from mqttjs_e31d5633
+1697685580: Client mqttjs_e31d5633 disconnected due to malformed packet.
+1697685581: New connection from 172.20.0.3:45062 on port 1883.
+1697685581: New client connected from 172.20.0.3:45062 as mqttjs_e31d5633 (p2, c1, k60).
+1697685581: No will message specified.
+1697685581: Sending CONNACK to mqttjs_e31d5633 (0, 0)
+1697685581: Received SUBSCRIBE from mqttjs_e31d5633
+1697685581: Client mqttjs_e31d5633 disconnected due to malformed packet.
+1697685582: New connection from 172.20.0.3:45072 on port 1883.
+1697685582: New client connected from 172.20.0.3:45072 as mqttjs_e31d5633 (p2, c1, k60).
+1697685582: No will message specified.
+1697685582: Sending CONNACK to mqttjs_e31d5633 (0, 0)
+1697685582: Received SUBSCRIBE from mqttjs_e31d5633
+1697685582: Client mqttjs_e31d5633 disconnected due to malformed packet.
+1697685583: New connection from 172.20.0.3:45088 on port 1883.
+1697685583: New client connected from 172.20.0.3:45088 as mqttjs_e31d5633 (p2, c1, k60).
+1697685583: No will message specified.
+1697685583: Sending CONNACK to mqttjs_e31d5633 (0, 0)
+1697685583: Received SUBSCRIBE from mqttjs_e31d5633
+1697685583: Client mqttjs_e31d5633 disconnected due to malformed packet.
+1697685584: New connection from 172.20.0.3:45104 on port 1883.
+1697685584: New client connected from 172.20.0.3:45104 as mqttjs_e31d5633 (p2, c1, k60).
+1697685584: No will message specified.
+1697685584: Sending CONNACK to mqttjs_e31d5633 (0, 0)
+1697685584: Received SUBSCRIBE from mqttjs_e31d5633
+1697685584: Client mqttjs_e31d5633 disconnected due to malformed packet.
+1697685585: New connection from 172.20.0.3:45110 on port 1883.
+1697685585: New client connected from 172.20.0.3:45110 as mqttjs_e31d5633 (p2, c1, k60).
+1697685585: No will message specified.
+1697685585: Sending CONNACK to mqttjs_e31d5633 (0, 0)
+1697685585: Received SUBSCRIBE from mqttjs_e31d5633
+1697685585: Client mqttjs_e31d5633 disconnected due to malformed packet.
+1697685586: New connection from 172.20.0.3:45112 on port 1883.
+1697685586: New client connected from 172.20.0.3:45112 as mqttjs_e31d5633 (p2, c1, k60).
+1697685586: No will message specified.
+1697685586: Sending CONNACK to mqttjs_e31d5633 (0, 0)
+1697685586: Received SUBSCRIBE from mqttjs_e31d5633
+1697685586: Client mqttjs_e31d5633 disconnected due to malformed packet.
+1697685587: New connection from 172.20.0.3:45114 on port 1883.
+1697685587: New client connected from 172.20.0.3:45114 as mqttjs_e31d5633 (p2, c1, k60).
+1697685587: No will message specified.
+1697685587: Sending CONNACK to mqttjs_e31d5633 (0, 0)
+1697685587: Received SUBSCRIBE from mqttjs_e31d5633
+1697685587: Client mqttjs_e31d5633 disconnected due to malformed packet.
+1697685588: New connection from 172.20.0.3:45118 on port 1883.
+1697685588: New client connected from 172.20.0.3:45118 as mqttjs_e31d5633 (p2, c1, k60).
+1697685588: No will message specified.
+1697685588: Sending CONNACK to mqttjs_e31d5633 (0, 0)
+1697685588: Received SUBSCRIBE from mqttjs_e31d5633
+1697685588: Client mqttjs_e31d5633 disconnected due to malformed packet.
+1697685589: New connection from 172.20.0.3:58904 on port 1883.
+1697685589: New client connected from 172.20.0.3:58904 as mqttjs_e31d5633 (p2, c1, k60).
+1697685589: No will message specified.
+1697685589: Sending CONNACK to mqttjs_e31d5633 (0, 0)
+1697685589: Received SUBSCRIBE from mqttjs_e31d5633
+1697685589: Client mqttjs_e31d5633 disconnected due to malformed packet.
+1697685590: New connection from 172.20.0.3:58918 on port 1883.
+1697685590: New client connected from 172.20.0.3:58918 as mqttjs_e31d5633 (p2, c1, k60).
+1697685590: No will message specified.
+1697685590: Sending CONNACK to mqttjs_e31d5633 (0, 0)
+1697685590: Received SUBSCRIBE from mqttjs_e31d5633
+1697685590: Client mqttjs_e31d5633 disconnected due to malformed packet.
+1697685591: New connection from 172.20.0.3:58924 on port 1883.
+1697685591: New client connected from 172.20.0.3:58924 as mqttjs_e31d5633 (p2, c1, k60).
+1697685591: No will message specified.
+1697685591: Sending CONNACK to mqttjs_e31d5633 (0, 0)
+1697685591: Received SUBSCRIBE from mqttjs_e31d5633
+1697685591: Client mqttjs_e31d5633 disconnected due to malformed packet.
+1697685592: New connection from 172.20.0.3:58930 on port 1883.
+1697685592: New client connected from 172.20.0.3:58930 as mqttjs_e31d5633 (p2, c1, k60).
+1697685592: No will message specified.
+1697685592: Sending CONNACK to mqttjs_e31d5633 (0, 0)
+1697685592: Received SUBSCRIBE from mqttjs_e31d5633
+1697685592: Client mqttjs_e31d5633 disconnected due to malformed packet.
+1697685593: New connection from 172.20.0.3:58942 on port 1883.
+1697685593: New client connected from 172.20.0.3:58942 as mqttjs_e31d5633 (p2, c1, k60).
+1697685593: No will message specified.
+1697685593: Sending CONNACK to mqttjs_e31d5633 (0, 0)
+1697685593: Received SUBSCRIBE from mqttjs_e31d5633
+1697685593: Client mqttjs_e31d5633 disconnected due to malformed packet.
+1697685594: New connection from 172.20.0.3:58952 on port 1883.
+1697685594: New client connected from 172.20.0.3:58952 as mqttjs_e31d5633 (p2, c1, k60).
+1697685594: No will message specified.
+1697685594: Sending CONNACK to mqttjs_e31d5633 (0, 0)
+1697685594: Received SUBSCRIBE from mqttjs_e31d5633
+1697685594: Client mqttjs_e31d5633 disconnected due to malformed packet.
+1697685595: New connection from 172.20.0.3:58966 on port 1883.
+1697685595: New client connected from 172.20.0.3:58966 as mqttjs_e31d5633 (p2, c1, k60).
+1697685595: No will message specified.
+1697685595: Sending CONNACK to mqttjs_e31d5633 (0, 0)
+1697685595: Received SUBSCRIBE from mqttjs_e31d5633
+1697685595: Client mqttjs_e31d5633 disconnected due to malformed packet.
+1697685596: New connection from 172.20.0.3:58970 on port 1883.
+1697685596: New client connected from 172.20.0.3:58970 as mqttjs_e31d5633 (p2, c1, k60).
+1697685596: No will message specified.
+1697685596: Sending CONNACK to mqttjs_e31d5633 (0, 0)
+1697685596: Received SUBSCRIBE from mqttjs_e31d5633
+1697685596: Client mqttjs_e31d5633 disconnected due to malformed packet.
+1697685597: New connection from 172.20.0.3:58980 on port 1883.
+1697685597: New client connected from 172.20.0.3:58980 as mqttjs_e31d5633 (p2, c1, k60).
+1697685597: No will message specified.
+1697685597: Sending CONNACK to mqttjs_e31d5633 (0, 0)
+1697685597: Received SUBSCRIBE from mqttjs_e31d5633
+1697685597: Client mqttjs_e31d5633 disconnected due to malformed packet.
+1697685598: New connection from 172.20.0.3:58996 on port 1883.
+1697685598: New client connected from 172.20.0.3:58996 as mqttjs_e31d5633 (p2, c1, k60).
+1697685598: No will message specified.
+1697685598: Sending CONNACK to mqttjs_e31d5633 (0, 0)
+1697685598: Received SUBSCRIBE from mqttjs_e31d5633
+1697685598: Client mqttjs_e31d5633 disconnected due to malformed packet.
+1697685599: New connection from 172.20.0.3:42818 on port 1883.
+1697685599: New client connected from 172.20.0.3:42818 as mqttjs_e31d5633 (p2, c1, k60).
+1697685599: No will message specified.
+1697685599: Sending CONNACK to mqttjs_e31d5633 (0, 0)
+1697685599: Received SUBSCRIBE from mqttjs_e31d5633
+1697685599: Client mqttjs_e31d5633 disconnected due to malformed packet.
+1697685600: New connection from 172.20.0.3:42830 on port 1883.
+1697685600: New client connected from 172.20.0.3:42830 as mqttjs_e31d5633 (p2, c1, k60).
+1697685600: No will message specified.
+1697685600: Sending CONNACK to mqttjs_e31d5633 (0, 0)
+1697685600: Received SUBSCRIBE from mqttjs_e31d5633
+1697685600: Client mqttjs_e31d5633 disconnected due to malformed packet.
+1697685601: New connection from 172.20.0.3:42832 on port 1883.
+1697685601: New client connected from 172.20.0.3:42832 as mqttjs_e31d5633 (p2, c1, k60).
+1697685601: No will message specified.
+1697685601: Sending CONNACK to mqttjs_e31d5633 (0, 0)
+1697685601: Received SUBSCRIBE from mqttjs_e31d5633
+1697685601: Client mqttjs_e31d5633 disconnected due to malformed packet.
+1697685602: New connection from 172.20.0.3:42838 on port 1883.
+1697685602: New client connected from 172.20.0.3:42838 as mqttjs_e31d5633 (p2, c1, k60).
+1697685602: No will message specified.
+1697685602: Sending CONNACK to mqttjs_e31d5633 (0, 0)
+1697685602: Received SUBSCRIBE from mqttjs_e31d5633
+1697685602: Client mqttjs_e31d5633 disconnected due to malformed packet.
+1697685603: New connection from 172.20.0.3:42846 on port 1883.
+1697685603: New client connected from 172.20.0.3:42846 as mqttjs_e31d5633 (p2, c1, k60).
+1697685603: No will message specified.
+1697685603: Sending CONNACK to mqttjs_e31d5633 (0, 0)
+1697685603: Received SUBSCRIBE from mqttjs_e31d5633
+1697685603: Client mqttjs_e31d5633 disconnected due to malformed packet.
+1697685604: New connection from 172.20.0.3:42860 on port 1883.
+1697685604: New client connected from 172.20.0.3:42860 as mqttjs_e31d5633 (p2, c1, k60).
+1697685604: No will message specified.
+1697685604: Sending CONNACK to mqttjs_e31d5633 (0, 0)
+1697685604: Received SUBSCRIBE from mqttjs_e31d5633
+1697685604: Client mqttjs_e31d5633 disconnected due to malformed packet.
+1697685605: New connection from 172.20.0.3:42864 on port 1883.
+1697685605: New client connected from 172.20.0.3:42864 as mqttjs_e31d5633 (p2, c1, k60).
+1697685605: No will message specified.
+1697685605: Sending CONNACK to mqttjs_e31d5633 (0, 0)
+1697685605: Received SUBSCRIBE from mqttjs_e31d5633
+1697685605: Client mqttjs_e31d5633 disconnected due to malformed packet.
+1697685606: New connection from 172.20.0.3:42878 on port 1883.
+1697685606: New client connected from 172.20.0.3:42878 as mqttjs_e31d5633 (p2, c1, k60).
+1697685606: No will message specified.
+1697685606: Sending CONNACK to mqttjs_e31d5633 (0, 0)
+1697685606: Received SUBSCRIBE from mqttjs_e31d5633
+1697685606: Client mqttjs_e31d5633 disconnected due to malformed packet.
+1697685607: New connection from 172.20.0.3:42884 on port 1883.
+1697685607: New client connected from 172.20.0.3:42884 as mqttjs_e31d5633 (p2, c1, k60).
+1697685607: No will message specified.
+1697685607: Sending CONNACK to mqttjs_e31d5633 (0, 0)
+1697685607: Received SUBSCRIBE from mqttjs_e31d5633
+1697685607: Client mqttjs_e31d5633 disconnected due to malformed packet.
+1697685608: New connection from 172.20.0.3:42886 on port 1883.
+1697685608: New client connected from 172.20.0.3:42886 as mqttjs_e31d5633 (p2, c1, k60).
+1697685608: No will message specified.
+1697685608: Sending CONNACK to mqttjs_e31d5633 (0, 0)
+1697685608: Received SUBSCRIBE from mqttjs_e31d5633
+1697685608: Client mqttjs_e31d5633 disconnected due to malformed packet.
+1697685609: New connection from 172.20.0.3:46966 on port 1883.
+1697685609: New client connected from 172.20.0.3:46966 as mqttjs_e31d5633 (p2, c1, k60).
+1697685609: No will message specified.
+1697685609: Sending CONNACK to mqttjs_e31d5633 (0, 0)
+1697685609: Received SUBSCRIBE from mqttjs_e31d5633
+1697685609: Client mqttjs_e31d5633 disconnected due to malformed packet.
+1697685610: New connection from 172.20.0.3:46976 on port 1883.
+1697685610: New client connected from 172.20.0.3:46976 as mqttjs_e31d5633 (p2, c1, k60).
+1697685610: No will message specified.
+1697685610: Sending CONNACK to mqttjs_e31d5633 (0, 0)
+1697685610: Received SUBSCRIBE from mqttjs_e31d5633
+1697685610: Client mqttjs_e31d5633 disconnected due to malformed packet.
+1697685611: New connection from 172.20.0.3:46978 on port 1883.
+1697685611: New client connected from 172.20.0.3:46978 as mqttjs_e31d5633 (p2, c1, k60).
+1697685611: No will message specified.
+1697685611: Sending CONNACK to mqttjs_e31d5633 (0, 0)
+1697685611: Received SUBSCRIBE from mqttjs_e31d5633
+1697685611: Client mqttjs_e31d5633 disconnected due to malformed packet.
+1697685612: New connection from 172.20.0.3:46992 on port 1883.
+1697685612: New client connected from 172.20.0.3:46992 as mqttjs_e31d5633 (p2, c1, k60).
+1697685612: No will message specified.
+1697685612: Sending CONNACK to mqttjs_e31d5633 (0, 0)
+1697685612: Received SUBSCRIBE from mqttjs_e31d5633
+1697685612: Client mqttjs_e31d5633 disconnected due to malformed packet.
+1697685613: New connection from 172.20.0.3:46998 on port 1883.
+1697685613: New client connected from 172.20.0.3:46998 as mqttjs_e31d5633 (p2, c1, k60).
+1697685613: No will message specified.
+1697685613: Sending CONNACK to mqttjs_e31d5633 (0, 0)
+1697685613: Received SUBSCRIBE from mqttjs_e31d5633
+1697685613: Client mqttjs_e31d5633 disconnected due to malformed packet.
+1697685614: New connection from 172.20.0.3:47014 on port 1883.
+1697685614: New client connected from 172.20.0.3:47014 as mqttjs_e31d5633 (p2, c1, k60).
+1697685614: No will message specified.
+1697685614: Sending CONNACK to mqttjs_e31d5633 (0, 0)
+1697685614: Received SUBSCRIBE from mqttjs_e31d5633
+1697685614: Client mqttjs_e31d5633 disconnected due to malformed packet.
+1697685645: New connection from 172.20.0.3:59770 on port 1883.
+1697685645: New client connected from 172.20.0.3:59770 as mqttjs_cc6848c8 (p2, c1, k60).
+1697685645: No will message specified.
+1697685645: Sending CONNACK to mqttjs_cc6848c8 (0, 0)
+1697685645: Received SUBSCRIBE from mqttjs_cc6848c8
+1697685645: 	canal/ch-5fa9ab8b-8f43-441f-9737-02294a296464 (QoS 0)
+1697685645: mqttjs_cc6848c8 0 canal/ch-5fa9ab8b-8f43-441f-9737-02294a296464
+1697685645: Sending SUBACK to mqttjs_cc6848c8
+1697685656: New connection from 172.20.0.3:58656 on port 1883.
+1697685656: New client connected from 172.20.0.3:58656 as mqttjs_16aa5fde (p2, c1, k60).
+1697685656: No will message specified.
+1697685656: Sending CONNACK to mqttjs_16aa5fde (0, 0)
+1697685656: Received SUBSCRIBE from mqttjs_16aa5fde
+1697685656: 	canal/ch-5fa9ab8b-8f43-441f-9737-02294a296464 (QoS 0)
+1697685656: mqttjs_16aa5fde 0 canal/ch-5fa9ab8b-8f43-441f-9737-02294a296464
+1697685656: Sending SUBACK to mqttjs_16aa5fde
+1697685688: Client mqttjs_16aa5fde closed its connection.
+1697685688: Client mqttjs_cc6848c8 closed its connection.
+1697685715: New connection from 172.20.0.3:48982 on port 1883.
+1697685715: New client connected from 172.20.0.3:48982 as mqttjs_b0bf9098 (p2, c1, k60).
+1697685715: No will message specified.
+1697685715: Sending CONNACK to mqttjs_b0bf9098 (0, 0)
+1697685715: Received SUBSCRIBE from mqttjs_b0bf9098
+1697685715: 	canal/ch-5fa9ab8b-8f43-441f-9737-02294a296464 (QoS 0)
+1697685715: mqttjs_b0bf9098 0 canal/ch-5fa9ab8b-8f43-441f-9737-02294a296464
+1697685715: Sending SUBACK to mqttjs_b0bf9098
+1697685726: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1697685726: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1697685726: Error: No such file or directory.
+1697685763: New connection from 172.20.0.1:39690 on port 1883.
+1697685763: New client connected from 172.20.0.1:39690 as postman-mqtt-client-1697685763896 (p5, c1, k60).
+1697685763: No will message specified.
+1697685763: Sending CONNACK to postman-mqtt-client-1697685763896 (0, 0)
+1697685764: Received PUBLISH from postman-mqtt-client-1697685763896 (d0, q0, r0, m0, 'ch-5fa9ab8b-8f43-441f-9737-02294a296464', ... (6 bytes))
+1697685775: Received PINGREQ from mqttjs_b0bf9098
+1697685775: Sending PINGRESP to mqttjs_b0bf9098
+1697685785: Client postman-mqtt-client-1697685763896 closed its connection.
+1697685787: New connection from 172.20.0.1:35348 on port 1883.
+1697685787: New client connected from 172.20.0.1:35348 as postman-mqtt-client-1697685763896 (p5, c1, k60).
+1697685787: No will message specified.
+1697685787: Sending CONNACK to postman-mqtt-client-1697685763896 (0, 0)
+1697685809: Received PUBLISH from postman-mqtt-client-1697685763896 (d0, q0, r0, m0, 'ch-5fa9ab8b-8f43-441f-9737-02294a296464', ... (6 bytes))
+1697685835: Received PINGREQ from mqttjs_b0bf9098
+1697685835: Sending PINGRESP to mqttjs_b0bf9098
+1697685849: Received PUBLISH from postman-mqtt-client-1697685763896 (d0, q0, r0, m0, 'ch-5fa9ab8b-8f43-441f-9737-02294a296464', ... (6 bytes))
+1697685850: Received PUBLISH from postman-mqtt-client-1697685763896 (d0, q0, r0, m0, 'ch-5fa9ab8b-8f43-441f-9737-02294a296464', ... (6 bytes))
+1697685850: Received PUBLISH from postman-mqtt-client-1697685763896 (d0, q0, r0, m0, 'ch-5fa9ab8b-8f43-441f-9737-02294a296464', ... (6 bytes))
+1697685872: Received SUBSCRIBE from postman-mqtt-client-1697685763896
+1697685872: 	ch-5fa9ab8b-8f43-441f-9737-02294a296464 (QoS 0)
+1697685872: postman-mqtt-client-1697685763896 0 ch-5fa9ab8b-8f43-441f-9737-02294a296464
+1697685872: Sending SUBACK to postman-mqtt-client-1697685763896
+1697685895: Received PINGREQ from mqttjs_b0bf9098
+1697685895: Sending PINGRESP to mqttjs_b0bf9098
+1697685912: Received PUBLISH from postman-mqtt-client-1697685763896 (d0, q0, r0, m0, 'ch-5fa9ab8b-8f43-441f-9737-02294a296464', ... (6 bytes))
+1697685912: Sending PUBLISH to postman-mqtt-client-1697685763896 (d0, q0, r0, m0, 'ch-5fa9ab8b-8f43-441f-9737-02294a296464', ... (6 bytes))
+1697685913: Received PUBLISH from postman-mqtt-client-1697685763896 (d0, q0, r0, m0, 'ch-5fa9ab8b-8f43-441f-9737-02294a296464', ... (6 bytes))
+1697685913: Sending PUBLISH to postman-mqtt-client-1697685763896 (d0, q0, r0, m0, 'ch-5fa9ab8b-8f43-441f-9737-02294a296464', ... (6 bytes))
+1697685955: Received PINGREQ from mqttjs_b0bf9098
+1697685955: Sending PINGRESP to mqttjs_b0bf9098
+1697685973: Received PINGREQ from postman-mqtt-client-1697685763896
+1697685973: Sending PINGRESP to postman-mqtt-client-1697685763896
+1697686015: Received PINGREQ from mqttjs_b0bf9098
+1697686015: Sending PINGRESP to mqttjs_b0bf9098
+1697686033: Received PINGREQ from postman-mqtt-client-1697685763896
+1697686033: Sending PINGRESP to postman-mqtt-client-1697685763896
+1697686075: Received PINGREQ from mqttjs_b0bf9098
+1697686075: Sending PINGRESP to mqttjs_b0bf9098
+1697686093: Received PINGREQ from postman-mqtt-client-1697685763896
+1697686093: Sending PINGRESP to postman-mqtt-client-1697685763896
+1697686135: Received PINGREQ from mqttjs_b0bf9098
+1697686135: Sending PINGRESP to mqttjs_b0bf9098
+1697686137: Received PUBLISH from postman-mqtt-client-1697685763896 (d0, q0, r0, m0, 'ch-5fa9ab8b-8f43-441f-9737-02294a296464', ... (6 bytes))
+1697686137: Sending PUBLISH to postman-mqtt-client-1697685763896 (d0, q0, r0, m0, 'ch-5fa9ab8b-8f43-441f-9737-02294a296464', ... (6 bytes))
+1697686195: Received PINGREQ from mqttjs_b0bf9098
+1697686195: Sending PINGRESP to mqttjs_b0bf9098
+1697686197: Received PINGREQ from postman-mqtt-client-1697685763896
+1697686197: Sending PINGRESP to postman-mqtt-client-1697685763896
+1697686239: Client mqttjs_b0bf9098 closed its connection.
+1697686257: Received PINGREQ from postman-mqtt-client-1697685763896
+1697686257: Sending PINGRESP to postman-mqtt-client-1697685763896
+1697686266: Client postman-mqtt-client-1697685763896 closed its connection.
+1697686267: New connection from 172.20.0.1:58636 on port 1883.
+1697686267: New client connected from 172.20.0.1:58636 as postman-mqtt-client-1697685763896 (p5, c1, k60).
+1697686267: No will message specified.
+1697686267: Sending CONNACK to postman-mqtt-client-1697685763896 (0, 0)
+1697686267: Received SUBSCRIBE from postman-mqtt-client-1697685763896
+1697686267: 	ch-5fa9ab8b-8f43-441f-9737-02294a296464 (QoS 0)
+1697686267: postman-mqtt-client-1697685763896 0 ch-5fa9ab8b-8f43-441f-9737-02294a296464
+1697686267: Sending SUBACK to postman-mqtt-client-1697685763896
+1697686311: Client postman-mqtt-client-1697685763896 closed its connection.
+1697686312: New connection from 172.20.0.1:57240 on port 1883.
+1697686312: New client connected from 172.20.0.1:57240 as postman-mqtt-client-1697685763896 (p5, c1, k60, u'liitec30@userena.cl').
+1697686312: No will message specified.
+1697686312: Sending CONNACK to postman-mqtt-client-1697685763896 (0, 0)
+1697686313: Received SUBSCRIBE from postman-mqtt-client-1697685763896
+1697686313: 	ch-5fa9ab8b-8f43-441f-9737-02294a296464 (QoS 0)
+1697686313: postman-mqtt-client-1697685763896 0 ch-5fa9ab8b-8f43-441f-9737-02294a296464
+1697686313: Sending SUBACK to postman-mqtt-client-1697685763896
+1697686347: Received UNSUBSCRIBE from postman-mqtt-client-1697685763896
+1697686347: 	ch-5fa9ab8b-8f43-441f-9737-02294a296464
+1697686347: postman-mqtt-client-1697685763896 ch-5fa9ab8b-8f43-441f-9737-02294a296464
+1697686347: Sending UNSUBACK to postman-mqtt-client-1697685763896
+1697686354: Client postman-mqtt-client-1697685763896 closed its connection.
+1697686355: New connection from 172.20.0.1:57416 on port 1883.
+1697686355: New client connected from 172.20.0.1:57416 as postman-mqtt-client-1697685763896 (p5, c1, k60, u'liitec30@userena.cl').
+1697686355: No will message specified.
+1697686355: Sending CONNACK to postman-mqtt-client-1697685763896 (0, 0)
+1697686415: Received PINGREQ from postman-mqtt-client-1697685763896
+1697686415: Sending PINGRESP to postman-mqtt-client-1697685763896
+1697686475: Received PINGREQ from postman-mqtt-client-1697685763896
