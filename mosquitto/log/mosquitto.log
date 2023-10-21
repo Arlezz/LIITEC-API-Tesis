@@ -15917,3 +15917,11 @@
 1697688119: Sending SUBACK to postman-mqtt-client-1697687608338
 1697688179: Received PINGREQ from postman-mqtt-client-1697687608338
 1697688179: Sending PINGRESP to postman-mqtt-client-1697687608338
+1697688239: Received PINGREQ from postman-mqtt-client-1697687608338
+1697688239: Sending PINGRESP to postman-mqtt-client-1697687608338
+1697688299: Received PINGREQ from postman-mqtt-client-1697687608338
+1697688299: Sending PINGRESP to postman-mqtt-client-1697687608338
+1697688338: mosquitto version 2.0.15 terminating
+1697688338: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1697688338: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1697688338: Error: No such file or directory.
