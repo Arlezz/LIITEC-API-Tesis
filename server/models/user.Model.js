@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+const apiKeySchema = require('./apiKey.Model');
 
 const { Schema } = mongoose;
 
@@ -26,27 +27,10 @@ const userSchema = new Schema(
             required: true
         },
         apiKey:{
-            key:{
-                type: String,
-                required: true,
-                unique: true
-            },
-            type:{
-                type: String,
-                required: true
-            }
-        },
-        channels: [{
-            channelId:{
-                type: String,
-                required: true
-            },
-            createdOn: {
-                type: Date,
-                default: Date.now,
-                required: true
-            }
-        }]
+            type: apiKeySchema.schema,
+            required: true
+            
+        }
     }
 );
     

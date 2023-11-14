@@ -1,0 +1,36 @@
+//get all channels
+###
+GET http://localhost:8081/api/channels HTTP/1.1
+Content-Type: application/json
+Authorization: a11dm8c4ihqkxjzefnuly2j847toka
+
+
+//get channel by channelId
+###
+GET http://localhost:8081/api/channels/ch-3bfce60b-a123-451f-b95a-0a11209d9ff1 HTTP/1.1
+Content-Type: application/json
+Authorization: iwb9xrmopl1c4e6c8xz3b9ephv2cz2
+
+//get my channels
+###
+GET http://localhost:8081/api/users/antony@gmail.com/channels HTTP/1.1
+Content-Type: application/json
+Authorization: iwb9xrmopl1c4e6c8xz3b9ephv2cz2
+
+//create channel
+###
+POST http://localhost:8081/api/channels HTTP/1.1
+Content-Type: application/json
+Authorization: 3kpxgvoapxere1jvr7cm6zs92411iu
+
+{
+    "name": "channel2",
+    "description": "channel1 description",
+    "project":"cansat2024",
+    "ubication":{
+        "latitude": 6.0,
+        "longitude": 5.0
+    },
+    "email":"antony@gmail.com"
+}
+

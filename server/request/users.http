@@ -1,0 +1,21 @@
+
+
+//create user
+###
+POST http://localhost:8081/api/auth/signUp HTTP/1.1
+Content-Type: application/json
+Authorization: 3kpxgvoapxere1jvr7cm6zs92411iu
+
+{
+    "name":"Antony",
+    "lastName":"Rodriguez",
+    "email":"antony@gmail.com",
+    "password":"12345",
+    "type":"advancedUser"
+}
+
+
+###
+PUT http://localhost:8081/api/users/antony@gmail.com/key HTTP/1.1
+Content-Type: application/json
+Authorization: a11dm8c4ihqkxjzefnuly2j847toka

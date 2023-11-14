@@ -15925,3 +15925,125 @@
 1697688338: Saving in-memory database to /mosquitto/data//mosquitto.db.
 1697688338: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
 1697688338: Error: No such file or directory.
+1699907117: mosquitto version 2.0.15 starting
+1699907117: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1699907117: Opening ipv4 listen socket on port 1883.
+1699907117: Opening ipv6 listen socket on port 1883.
+1699907117: Opening ipv4 listen socket on port 9001.
+1699907117: Opening ipv6 listen socket on port 9001.
+1699907117: mosquitto version 2.0.15 running
+1699907290: New connection from 172.18.0.1:36560 on port 1883.
+1699907290: New client connected from 172.18.0.1:36560 as postman-mqtt-client-1699907290843 (p5, c1, k60, u'liitec30@userena.cl').
+1699907290: No will message specified.
+1699907290: Sending CONNACK to postman-mqtt-client-1699907290843 (0, 0)
+1699907291: Received SUBSCRIBE from postman-mqtt-client-1699907290843
+1699907291: 	ch-5fa9ab8b-8f43-441f-9737-02294a296464 (QoS 0)
+1699907291: postman-mqtt-client-1699907290843 0 ch-5fa9ab8b-8f43-441f-9737-02294a296464
+1699907291: Sending SUBACK to postman-mqtt-client-1699907290843
+1699907351: Received PINGREQ from postman-mqtt-client-1699907290843
+1699907351: Sending PINGRESP to postman-mqtt-client-1699907290843
+1699907411: Received PINGREQ from postman-mqtt-client-1699907290843
+1699907411: Sending PINGRESP to postman-mqtt-client-1699907290843
+1699907471: Received PINGREQ from postman-mqtt-client-1699907290843
+1699907471: Sending PINGRESP to postman-mqtt-client-1699907290843
+1699907531: Received PINGREQ from postman-mqtt-client-1699907290843
+1699907531: Sending PINGRESP to postman-mqtt-client-1699907290843
+1699907591: Received PINGREQ from postman-mqtt-client-1699907290843
+1699907591: Sending PINGRESP to postman-mqtt-client-1699907290843
+1699907651: Received PINGREQ from postman-mqtt-client-1699907290843
+1699907651: Sending PINGRESP to postman-mqtt-client-1699907290843
+1699907711: Received PINGREQ from postman-mqtt-client-1699907290843
+1699907711: Sending PINGRESP to postman-mqtt-client-1699907290843
+1699907771: Received PINGREQ from postman-mqtt-client-1699907290843
+1699907771: Sending PINGRESP to postman-mqtt-client-1699907290843
+1699907831: Received PINGREQ from postman-mqtt-client-1699907290843
+1699907831: Sending PINGRESP to postman-mqtt-client-1699907290843
+1699907891: Received PINGREQ from postman-mqtt-client-1699907290843
+1699909002: mosquitto version 2.0.15 starting
+1699909002: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1699909002: Opening ipv4 listen socket on port 1883.
+1699909002: Opening ipv6 listen socket on port 1883.
+1699909002: Opening ipv4 listen socket on port 9001.
+1699909002: Opening ipv6 listen socket on port 9001.
+1699909002: mosquitto version 2.0.15 running
+1699909009: mosquitto version 2.0.15 terminating
+1699909009: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1699909009: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1699909009: Error: No such file or directory.
+1699909124: mosquitto version 2.0.15 starting
+1699909124: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1699909124: Opening ipv4 listen socket on port 1883.
+1699909124: Opening ipv6 listen socket on port 1883.
+1699909124: Opening ipv4 listen socket on port 9001.
+1699909124: Opening ipv6 listen socket on port 9001.
+1699909124: mosquitto version 2.0.15 running
+1699909164: mosquitto version 2.0.15 terminating
+1699909164: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1699909164: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1699909164: Error: No such file or directory.
+1699909186: mosquitto version 2.0.15 starting
+1699909186: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1699909186: Opening ipv4 listen socket on port 1883.
+1699909186: Opening ipv6 listen socket on port 1883.
+1699909186: Opening ipv4 listen socket on port 9001.
+1699909186: Opening ipv6 listen socket on port 9001.
+1699909186: mosquitto version 2.0.15 running
+1699910986: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1699910986: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1699910986: Error: No such file or directory.
+1699912787: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1699912787: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1699912787: Error: No such file or directory.
+1699914588: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1699914588: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1699914588: Error: No such file or directory.
+1699916389: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1699916389: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1699916389: Error: No such file or directory.
+1699918190: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1699918190: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1699918190: Error: No such file or directory.
+1699919970: mosquitto version 2.0.15 terminating
+1699919970: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1699919970: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1699919970: Error: No such file or directory.
+1699921804: mosquitto version 2.0.15 starting
+1699921804: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1699921804: Opening ipv4 listen socket on port 1883.
+1699921804: Opening ipv6 listen socket on port 1883.
+1699921804: Opening ipv4 listen socket on port 9001.
+1699921804: Opening ipv6 listen socket on port 9001.
+1699921804: mosquitto version 2.0.15 running
+1699923605: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1699923605: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1699923605: Error: No such file or directory.
+1699925406: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1699925406: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1699925406: Error: No such file or directory.
+1699927207: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1699927207: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1699927207: Error: No such file or directory.
+1699929008: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1699929008: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1699929008: Error: No such file or directory.
+1699930809: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1699930809: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1699930809: Error: No such file or directory.
+1699932610: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1699932610: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1699932610: Error: No such file or directory.
+1699934411: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1699934411: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1699934411: Error: No such file or directory.
+1699936212: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1699936212: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1699936212: Error: No such file or directory.
+1699938013: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1699938013: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1699938013: Error: No such file or directory.
+1699939814: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1699939814: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1699939814: Error: No such file or directory.
+1699941615: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1699941615: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1699941615: Error: No such file or directory.

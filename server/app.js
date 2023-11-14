@@ -1,24 +1,27 @@
 const express = require('express');
 const app = express();
 const morgan = require('morgan');
+const channelRoutes = require('./routes/channels.routes');
+const userRoutes = require('./routes/user.routes');
+const brokerRoutes = require('./routes/brokerMQTT');
+const authRoutes = require('./routes/auth.routes');
+
 
 //settings
 app.set('json spaces', 2);
 
+//middleware
 //handle json body request
 app.use(express.json());
-
-//middleware
 app.use(morgan('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 //routes
-app.use('/',require('./routes/index'));
-app.use('/api/user',require('./routes/user'));
-app.use('/api/channels',require('./routes/channels'));
-app.use('/api/broker',require('./routes/brokerMQTT'));
-app.use('/api/auth',require('./routes/auth'));
+app.use('/api',userRoutes);
+app.use('/api',channelRoutes);
+app.use('/api',brokerRoutes);
+app.use('/api',authRoutes);
 
 var createError = require('http-errors');
 

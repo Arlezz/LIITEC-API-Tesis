@@ -18,9 +18,10 @@ const channelSchema = new Schema(
             type: String, 
             required: true 
         },
-        owner: { 
-            type: String, 
-            required: true 
+        owner: {
+            type: String,
+            ref: 'userModel', // Reemplaza 'User' con el nombre de tu modelo de usuario
+            required: true
         },
         project: {
             type: String,
@@ -28,37 +29,17 @@ const channelSchema = new Schema(
         },
         ubication: {
             latitude: {
-                type: String,
+                type: Number,
             },
             longitude: {
-                type: String,
-            },
+                type: Number,
+            }
         },
         createdOn: {
             type: Date,
             default: Date.now,
             required: true
-        },
-        devices:[
-            {
-                deviceId:{
-                    type: String,
-                    required: true
-                },
-                model:{
-                    type: String,
-                    required: true
-                },
-                unity:{
-                    
-                },
-                createdOn: {
-                    type: Date,
-                    default: Date.now,
-                    required: true
-                },
-            }
-        ]
+        }
     }
 );
     

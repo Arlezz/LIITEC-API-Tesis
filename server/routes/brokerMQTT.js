@@ -2,7 +2,7 @@ const {Router} = require('express');
 const router = Router();
 const mqttHandler = require('../controller/mqttHandler');
 const sensorData = require('../models/sensorDataModel');
-const User = require('../models/userModel');
+const User = require('../models/user.Model');
 const bcrypt = require('bcryptjs');
 
 
