@@ -1,0 +1,15 @@
+###
+POST http://localhost:8081/api/devices HTTP/1.1
+Content-Type: application/json
+Authorization: r1uh2ra3jc1wnd4e5vds8xaa2gze6f
+
+{
+    "model":"GYML8511",
+    "type":"analógico",
+    "measures":[
+        "UV"
+    ],
+    "unity":[
+        "mW/cm2"
+    ]
+}

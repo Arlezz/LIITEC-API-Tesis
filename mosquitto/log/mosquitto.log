@@ -16065,3 +16065,156 @@
 1699943680: Opening ipv4 listen socket on port 9001.
 1699943680: Opening ipv6 listen socket on port 9001.
 1699943680: mosquitto version 2.0.15 running
+1699945036: mosquitto version 2.0.15 terminating
+1699945036: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1699945036: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1699945036: Error: No such file or directory.
+1700174581: mosquitto version 2.0.15 starting
+1700174581: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700174581: Opening ipv4 listen socket on port 1883.
+1700174581: Opening ipv6 listen socket on port 1883.
+1700174581: Opening ipv4 listen socket on port 9001.
+1700174581: Opening ipv6 listen socket on port 9001.
+1700174581: mosquitto version 2.0.15 running
+1700176382: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1700176382: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1700176382: Error: No such file or directory.
+1700178183: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1700180950: mosquitto version 2.0.15 starting
+1700180950: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700180950: Opening ipv4 listen socket on port 1883.
+1700180950: Opening ipv6 listen socket on port 1883.
+1700180950: Opening ipv4 listen socket on port 9001.
+1700180950: Opening ipv6 listen socket on port 9001.
+1700180950: mosquitto version 2.0.15 running
+1700181701: mosquitto version 2.0.15 terminating
+1700181701: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1700181701: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1700181701: Error: No such file or directory.
+1700181717: mosquitto version 2.0.15 starting
+1700181717: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700181717: Opening ipv4 listen socket on port 1883.
+1700181717: Opening ipv6 listen socket on port 1883.
+1700181717: Opening ipv4 listen socket on port 9001.
+1700181717: Opening ipv6 listen socket on port 9001.
+1700181717: mosquitto version 2.0.15 running
+1700183518: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1700183518: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1700183518: Error: No such file or directory.
+1700184096: mosquitto version 2.0.15 terminating
+1700184096: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1700184096: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1700184096: Error: No such file or directory.
+1700419700: mosquitto version 2.0.15 starting
+1700419700: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700419700: Opening ipv4 listen socket on port 1883.
+1700419700: Opening ipv6 listen socket on port 1883.
+1700419700: Opening ipv4 listen socket on port 9001.
+1700419700: Opening ipv6 listen socket on port 9001.
+1700419700: mosquitto version 2.0.15 running
+1700421500: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1700421500: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1700421500: Error: No such file or directory.
+1700423026: mosquitto version 2.0.15 starting
+1700423026: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700423026: Opening ipv4 listen socket on port 1883.
+1700423026: Opening ipv6 listen socket on port 1883.
+1700423026: Opening ipv4 listen socket on port 9001.
+1700423026: Opening ipv6 listen socket on port 9001.
+1700423026: mosquitto version 2.0.15 running
+1700423222: mosquitto version 2.0.15 terminating
+1700423222: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1700423222: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1700423222: Error: No such file or directory.
+1700423452: mosquitto version 2.0.15 starting
+1700423452: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700423452: Opening ipv4 listen socket on port 1883.
+1700423452: Opening ipv6 listen socket on port 1883.
+1700423452: Opening ipv4 listen socket on port 9001.
+1700423452: Opening ipv6 listen socket on port 9001.
+1700423452: mosquitto version 2.0.15 running
+1700425253: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1700425253: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1700425253: Error: No such file or directory.
+1700427056: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1700427056: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1700427056: Error: No such file or directory.
+1700428857: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1700428857: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1700428857: Error: No such file or directory.
+1700430658: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1700430658: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1700430658: Error: No such file or directory.
+1700432459: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1700432459: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1700432459: Error: No such file or directory.
+1700434260: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1700434260: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1700434260: Error: No such file or directory.
+1700436061: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1700436061: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1700436061: Error: No such file or directory.
+1700437781: mosquitto version 2.0.15 starting
+1700437781: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700437781: Opening ipv4 listen socket on port 1883.
+1700437781: Opening ipv6 listen socket on port 1883.
+1700437781: Opening ipv4 listen socket on port 9001.
+1700437781: Opening ipv6 listen socket on port 9001.
+1700437781: mosquitto version 2.0.15 running
+1700437815: mosquitto version 2.0.15 terminating
+1700437815: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1700437815: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1700437815: Error: No such file or directory.
+1700438500: mosquitto version 2.0.15 starting
+1700438500: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700438500: Opening ipv4 listen socket on port 1883.
+1700438500: Opening ipv6 listen socket on port 1883.
+1700438500: Opening ipv4 listen socket on port 9001.
+1700438500: Opening ipv6 listen socket on port 9001.
+1700438500: mosquitto version 2.0.15 running
+1700440301: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1700440301: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1700440301: Error: No such file or directory.
+1700442102: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1700442102: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1700442102: Error: No such file or directory.
+1700443903: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1700443903: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1700443903: Error: No such file or directory.
+1700445565: mosquitto version 2.0.15 terminating
+1700446970: mosquitto version 2.0.15 starting
+1700446970: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700446970: Opening ipv4 listen socket on port 1883.
+1700446970: Opening ipv6 listen socket on port 1883.
+1700446970: Opening ipv4 listen socket on port 9001.
+1700446970: Opening ipv6 listen socket on port 9001.
+1700446970: mosquitto version 2.0.15 running
+1700447098: mosquitto version 2.0.15 terminating
+1700447098: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1700447098: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1700447098: Error: No such file or directory.
+1700447234: mosquitto version 2.0.15 starting
+1700447234: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700447234: Opening ipv4 listen socket on port 1883.
+1700447234: Opening ipv6 listen socket on port 1883.
+1700447234: Opening ipv4 listen socket on port 9001.
+1700447234: Opening ipv6 listen socket on port 9001.
+1700447234: mosquitto version 2.0.15 running
+1700449034: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1700449034: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1700449034: Error: No such file or directory.
+1700449830: mosquitto version 2.0.15 terminating
+1700449830: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1700449830: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1700449830: Error: No such file or directory.
+1700453240: mosquitto version 2.0.15 starting
+1700453240: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700453240: Opening ipv4 listen socket on port 1883.
+1700453240: Opening ipv6 listen socket on port 1883.
+1700453240: Opening ipv4 listen socket on port 9001.
+1700453240: Opening ipv6 listen socket on port 9001.
+1700453240: mosquitto version 2.0.15 running
+1700454200: mosquitto version 2.0.15 terminating
+1700454200: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1700454200: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1700454200: Error: No such file or directory.

@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+const ObjectId = mongoose.Schema.Types.ObjectId;
 
 const { Schema } = mongoose;
 
@@ -19,8 +20,8 @@ const channelSchema = new Schema(
             required: true 
         },
         owner: {
-            type: String,
-            ref: 'userModel', // Reemplaza 'User' con el nombre de tu modelo de usuario
+            type: ObjectId,
+            ref: 'user', // Reemplaza 'User' con el nombre de tu modelo de usuario
             required: true
         },
         project: {

@@ -3,8 +3,9 @@ const app = express();
 const morgan = require('morgan');
 const channelRoutes = require('./routes/channels.routes');
 const userRoutes = require('./routes/user.routes');
+const deviceRoutes = require('./routes/device.routes');
+
 const brokerRoutes = require('./routes/brokerMQTT');
-const authRoutes = require('./routes/auth.routes');
 
 
 //settings
@@ -21,7 +22,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use('/api',userRoutes);
 app.use('/api',channelRoutes);
 app.use('/api',brokerRoutes);
-app.use('/api',authRoutes);
+app.use('/api',deviceRoutes);
+
 
 var createError = require('http-errors');
 
