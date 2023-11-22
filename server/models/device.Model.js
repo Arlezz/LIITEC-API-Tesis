@@ -1,9 +1,19 @@
 const mongoose = require('mongoose');
 
+
 const { Schema } = mongoose;
 
 const deviceSchema = new Schema(
     {
+        channelId: {
+            type: String,
+            ref: 'channel', 
+            required: true
+        },
+        deviceId: {
+            type: String,
+            required: true
+        },
         type: {
             type: String,
             required: true

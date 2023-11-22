@@ -1,5 +1,4 @@
 const mongoose = require('mongoose');
-const apiKeySchema = require('./apiKey.Model');
 
 const { Schema } = mongoose;
 
@@ -27,9 +26,14 @@ const userSchema = new Schema(
             required: true
         },
         apiKey:{
-            type: apiKeySchema.schema,
-            required: true
-            
+            key: {
+                type: String,
+                required: true
+            },
+            type: {
+                type: String,
+                required: true
+            }  
         }
     }
 );

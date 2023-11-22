@@ -8,6 +8,31 @@ const authorization = require("../auth/apiAuth");
 //Routes
 
 //Create Device
-router.post("/devices",authorization.requireAPIKeyOfType("superUser"), DeviceController.createDevice);
+router.post(
+  "/channels/:channelId/devices",
+  authorization.requireAPIKeyOfType("advancedUser"),
+  DeviceController.createDevice
+);
+
+//Get my devices
+router.get(
+  "/channels/:channelId/devices",
+  authorization.requireAPIKeyOfType("advancedUser"),
+  DeviceController.getMyDevices
+);
+
+//Get a device by id
+router.get(
+  "/channels/:channelId/devices/:deviceId",
+  authorization.requireAPIKeyOfType("advancedUser"),
+  DeviceController.getDeviceById
+);
+
+//Delete a device
+router.delete(
+  "/channels/:channelId/devices/:deviceId",
+  authorization.requireAPIKeyOfType("advancedUser"),
+  DeviceController.deleteDevice
+);
 
 module.exports = router;

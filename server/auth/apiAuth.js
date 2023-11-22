@@ -31,11 +31,11 @@ const requireAPIKeyOfType = (minPermissionLevel) => {
       ) {
         next();
       } else {
-        return res.status(403).json({ error: "Acceso prohibido" });
+        return res.status(403).json({ error: "Access Forbiden" });
       }
     } catch (error) {
       console.error(error);
-      res.status(500).json({ error: "Error de autenticación" });
+      res.status(500).json({ error: "Error validating API key"});
     }
   };
 };

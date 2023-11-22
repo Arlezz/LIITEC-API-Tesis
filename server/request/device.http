@@ -1,15 +1,36 @@
+
+//Crear un canal
 ###
-POST http://localhost:8081/api/devices HTTP/1.1
+POST http://localhost:8081/api/channels/ch-ddd7ee1d-9c01-460c-83bd-1819849008aa/devices HTTP/1.1
 Content-Type: application/json
-Authorization: r1uh2ra3jc1wnd4e5vds8xaa2gze6f
+Authorization: 1jq7lc8yyhhrtg1kwu80s2hto7i4pj
 
 {
-    "model":"GYML8511",
-    "type":"analógico",
+    "model":"DHT22",
+    "type":"digital",
     "measures":[
-        "UV"
+        "Temperatura",
+        "Humedad"
     ],
     "unity":[
-        "mW/cm2"
+        "°C",
+        "%"
     ]
 }
+
+//Obtener todos los dispositivos de un canal
+###
+GET http://localhost:8081/api/channels/ch-3bcfbea1-c8be-4443-8463-b71d4c83bacf/devices HTTP/1.1
+Content-Type: application/json
+Authorization: 1jq7lc8yyhhrtg1kwu80s2hto7i4pj
+
+//Obtener un dispositivo de un canal
+###
+GET http://localhost:8081/api/channels/ch-3bcfbea1-c8be-4443-8463-b71d4c83bacf/devices/dv-8ce9a5c9-bc0a-4bea-84f6-c17a592c6f7d HTTP/1.1
+Content-Type: application/json
+Authorization: 1jq7lc8yyhhrtg1kwu80s2hto7i4pj
+
+###
+DELETE http://localhost:8081/api/channels/ch-3bcfbea1-c8be-4443-8463-b71d4c83bacf/devices/dv-05721a01-1cb6-4875-9fb3-11e12971643f HTTP/1.1
+Content-Type: application/json
+Authorization: 1jq7lc8yyhhrtg1kwu80s2hto7i4pj

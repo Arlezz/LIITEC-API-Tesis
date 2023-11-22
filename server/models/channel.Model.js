@@ -21,7 +21,7 @@ const channelSchema = new Schema(
         },
         owner: {
             type: ObjectId,
-            ref: 'user', // Reemplaza 'User' con el nombre de tu modelo de usuario
+            ref: 'user', 
             required: true
         },
         project: {
