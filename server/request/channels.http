@@ -7,7 +7,7 @@ Authorization: r1uh2ra3jc1wnd4e5vds8xaa2gze6f
 
 //get channel by channelId
 ###
-GET http://localhost:8081/api/channels/ch-9dcdbaca-ee7b-4519-b17a-03b45c457a9e HTTP/1.1
+GET http://localhost:8081/api/channels/ch-578f87bc-ca44-4986-8a09-3e6fed838c8e HTTP/1.1
 Content-Type: application/json
 Authorization: r1uh2ra3jc1wnd4e5vds8xaa2gze6f
 

@@ -18951,3 +18951,29 @@
 1700714962: Saving in-memory database to /mosquitto/data//mosquitto.db.
 1700714962: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
 1700714962: Error: No such file or directory.
+1700717163: mosquitto version 2.0.15 starting
+1700717163: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700717163: Loading plugin: /mosquitto/go-auth.so
+1700717163:  ├── Username/password checking enabled.
+1700717163:  ├── TLS-PSK checking enabled.
+1700717163:  └── Extended authentication not enabled.
+1700717163: Opening ipv4 listen socket on port 1883.
+1700717163: Opening ipv6 listen socket on port 1883.
+1700717163: Opening ipv4 listen socket on port 9001.
+1700717163: Opening ipv6 listen socket on port 9001.
+1700717163: mosquitto version 2.0.15 running
+1700717180: mosquitto version 2.0.15 terminating
+1700717180: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1700717180: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1700717180: Error: No such file or directory.
+1700717213: mosquitto version 2.0.15 starting
+1700717213: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700717213: Loading plugin: /mosquitto/go-auth.so
+1700717213:  ├── Username/password checking enabled.
+1700717213:  ├── TLS-PSK checking enabled.
+1700717213:  └── Extended authentication not enabled.
+1700717213: Opening ipv4 listen socket on port 1883.
+1700717213: Opening ipv6 listen socket on port 1883.
+1700717213: Opening ipv4 listen socket on port 9001.
+1700717213: Opening ipv6 listen socket on port 9001.
+1700717213: mosquitto version 2.0.15 running
