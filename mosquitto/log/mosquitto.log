@@ -16273,3 +16273,2681 @@
 1700628381: Saving in-memory database to /mosquitto/data//mosquitto.db.
 1700628381: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
 1700628381: Error: No such file or directory.
+1700680260: mosquitto version 2.0.15 starting
+1700680260: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700680260: Opening ipv4 listen socket on port 1883.
+1700680260: Opening ipv6 listen socket on port 1883.
+1700680260: Opening ipv4 listen socket on port 9001.
+1700680260: Opening ipv6 listen socket on port 9001.
+1700680260: mosquitto version 2.0.15 running
+1700682061: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1700682061: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1700682061: Error: No such file or directory.
+1700683862: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1700691375: mosquitto version 2.0.15 starting
+1700691375: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700691375: Opening ipv4 listen socket on port 1883.
+1700691375: Opening ipv6 listen socket on port 1883.
+1700691375: Opening ipv4 listen socket on port 9001.
+1700691375: Opening ipv6 listen socket on port 9001.
+1700691375: mosquitto version 2.0.15 running
+1700692145: mosquitto version 2.0.15 starting
+1700692145: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700692145: Opening ipv4 listen socket on port 1883.
+1700692145: Opening ipv6 listen socket on port 1883.
+1700692145: Opening ipv4 listen socket on port 9001.
+1700692145: Opening ipv6 listen socket on port 9001.
+1700692145: mosquitto version 2.0.15 running
+1700692154: mosquitto version 2.0.15 terminating
+1700692154: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1700692154: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1700692154: Error: No such file or directory.
+1700692159: mosquitto version 2.0.15 starting
+1700692159: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700692159: Opening ipv4 listen socket on port 1883.
+1700692159: Opening ipv6 listen socket on port 1883.
+1700692159: Opening ipv4 listen socket on port 9001.
+1700692159: Opening ipv6 listen socket on port 9001.
+1700692159: mosquitto version 2.0.15 running
+1700692298: mosquitto version 2.0.15 terminating
+1700692298: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1700692298: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1700692298: Error: No such file or directory.
+1700692301: mosquitto version 2.0.15 starting
+1700692301: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700692301: Opening ipv4 listen socket on port 1883.
+1700692301: Opening ipv6 listen socket on port 1883.
+1700692301: Opening ipv4 listen socket on port 9001.
+1700692301: Opening ipv6 listen socket on port 9001.
+1700692301: mosquitto version 2.0.15 running
+1700692531: mosquitto version 2.0.15 terminating
+1700692531: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1700692531: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1700692531: Error: No such file or directory.
+1700692535: mosquitto version 2.0.15 starting
+1700692535: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700692535: Opening ipv4 listen socket on port 1883.
+1700692535: Opening ipv6 listen socket on port 1883.
+1700692535: Opening ipv4 listen socket on port 9001.
+1700692535: Opening ipv6 listen socket on port 9001.
+1700692535: mosquitto version 2.0.15 running
+1700693528: mosquitto version 2.0.15 terminating
+1700693528: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1700693528: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1700693528: Error: No such file or directory.
+1700693531: mosquitto version 2.0.15 starting
+1700693531: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700693531: Opening ipv4 listen socket on port 1883.
+1700693531: Opening ipv6 listen socket on port 1883.
+1700693531: Opening ipv4 listen socket on port 9001.
+1700693531: Opening ipv6 listen socket on port 9001.
+1700693531: mosquitto version 2.0.15 running
+1700693581: mosquitto version 2.0.15 terminating
+1700693581: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1700693581: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1700693581: Error: No such file or directory.
+1700693585: mosquitto version 2.0.15 starting
+1700693585: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700693585: Opening ipv4 listen socket on port 1883.
+1700693585: Opening ipv6 listen socket on port 1883.
+1700693585: Opening ipv4 listen socket on port 9001.
+1700693585: Opening ipv6 listen socket on port 9001.
+1700693585: mosquitto version 2.0.15 running
+1700693800: mosquitto version 2.0.15 terminating
+1700693800: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1700693800: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1700693800: Error: No such file or directory.
+1700693810: mosquitto version 2.0.15 starting
+1700693810: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700693810: Opening ipv4 listen socket on port 1883.
+1700693810: Opening ipv6 listen socket on port 1883.
+1700693810: Opening ipv4 listen socket on port 9001.
+1700693810: Opening ipv6 listen socket on port 9001.
+1700693810: mosquitto version 2.0.15 running
+1700694074: mosquitto version 2.0.15 terminating
+1700694074: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1700694074: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1700694074: Error: No such file or directory.
+1700694080: mosquitto version 2.0.15 starting
+1700694080: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700694080: Loading plugin: /etc/mosquitto/conf.d/go-auth.so
+1700694080: Error: Unable to load auth plugin "/etc/mosquitto/conf.d/go-auth.so".
+1700694080: Load error: /etc/mosquitto/conf.d/go-auth.so: invalid ELF header
+1700694081: mosquitto version 2.0.15 starting
+1700694081: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700694081: Loading plugin: /etc/mosquitto/conf.d/go-auth.so
+1700694081: Error: Unable to load auth plugin "/etc/mosquitto/conf.d/go-auth.so".
+1700694081: Load error: /etc/mosquitto/conf.d/go-auth.so: invalid ELF header
+1700694081: mosquitto version 2.0.15 starting
+1700694081: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700694081: Loading plugin: /etc/mosquitto/conf.d/go-auth.so
+1700694081: Error: Unable to load auth plugin "/etc/mosquitto/conf.d/go-auth.so".
+1700694081: Load error: /etc/mosquitto/conf.d/go-auth.so: invalid ELF header
+1700694082: mosquitto version 2.0.15 starting
+1700694082: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700694082: Loading plugin: /etc/mosquitto/conf.d/go-auth.so
+1700694082: Error: Unable to load auth plugin "/etc/mosquitto/conf.d/go-auth.so".
+1700694082: Load error: /etc/mosquitto/conf.d/go-auth.so: invalid ELF header
+1700694084: mosquitto version 2.0.15 starting
+1700694084: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700694084: Loading plugin: /etc/mosquitto/conf.d/go-auth.so
+1700694084: Error: Unable to load auth plugin "/etc/mosquitto/conf.d/go-auth.so".
+1700694084: Load error: /etc/mosquitto/conf.d/go-auth.so: invalid ELF header
+1700694086: mosquitto version 2.0.15 starting
+1700694086: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700694086: Loading plugin: /etc/mosquitto/conf.d/go-auth.so
+1700694086: Error: Unable to load auth plugin "/etc/mosquitto/conf.d/go-auth.so".
+1700694086: Load error: /etc/mosquitto/conf.d/go-auth.so: invalid ELF header
+1700694089: mosquitto version 2.0.15 starting
+1700694089: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700694089: Loading plugin: /etc/mosquitto/conf.d/go-auth.so
+1700694089: Error: Unable to load auth plugin "/etc/mosquitto/conf.d/go-auth.so".
+1700694089: Load error: /etc/mosquitto/conf.d/go-auth.so: invalid ELF header
+1700694096: mosquitto version 2.0.15 starting
+1700694096: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700694096: Loading plugin: /etc/mosquitto/conf.d/go-auth.so
+1700694096: Error: Unable to load auth plugin "/etc/mosquitto/conf.d/go-auth.so".
+1700694096: Load error: /etc/mosquitto/conf.d/go-auth.so: invalid ELF header
+1700694109: mosquitto version 2.0.15 starting
+1700694109: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700694109: Loading plugin: /etc/mosquitto/conf.d/go-auth.so
+1700694109: Error: Unable to load auth plugin "/etc/mosquitto/conf.d/go-auth.so".
+1700694109: Load error: /etc/mosquitto/conf.d/go-auth.so: invalid ELF header
+1700694135: mosquitto version 2.0.15 starting
+1700694135: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700694135: Loading plugin: /etc/mosquitto/conf.d/go-auth.so
+1700694135: Error: Unable to load auth plugin "/etc/mosquitto/conf.d/go-auth.so".
+1700694135: Load error: /etc/mosquitto/conf.d/go-auth.so: invalid ELF header
+1700694157: mosquitto version 2.0.15 starting
+1700694157: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700694157: Loading plugin: /etc/mosquitto/conf.d/go-auth.so
+1700694157: Error: Unable to load auth plugin "/etc/mosquitto/conf.d/go-auth.so".
+1700694157: Load error: /etc/mosquitto/conf.d/go-auth.so: invalid ELF header
+1700694158: mosquitto version 2.0.15 starting
+1700694158: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700694158: Loading plugin: /etc/mosquitto/conf.d/go-auth.so
+1700694158: Error: Unable to load auth plugin "/etc/mosquitto/conf.d/go-auth.so".
+1700694158: Load error: /etc/mosquitto/conf.d/go-auth.so: invalid ELF header
+1700694159: mosquitto version 2.0.15 starting
+1700694159: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700694159: Loading plugin: /etc/mosquitto/conf.d/go-auth.so
+1700694159: Error: Unable to load auth plugin "/etc/mosquitto/conf.d/go-auth.so".
+1700694159: Load error: /etc/mosquitto/conf.d/go-auth.so: invalid ELF header
+1700694160: mosquitto version 2.0.15 starting
+1700694160: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700694160: Loading plugin: /etc/mosquitto/conf.d/go-auth.so
+1700694160: Error: Unable to load auth plugin "/etc/mosquitto/conf.d/go-auth.so".
+1700694160: Load error: /etc/mosquitto/conf.d/go-auth.so: invalid ELF header
+1700694161: mosquitto version 2.0.15 starting
+1700694161: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700694161: Loading plugin: /etc/mosquitto/conf.d/go-auth.so
+1700694161: Error: Unable to load auth plugin "/etc/mosquitto/conf.d/go-auth.so".
+1700694161: Load error: /etc/mosquitto/conf.d/go-auth.so: invalid ELF header
+1700694163: mosquitto version 2.0.15 starting
+1700694163: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700694163: Loading plugin: /etc/mosquitto/conf.d/go-auth.so
+1700694163: Error: Unable to load auth plugin "/etc/mosquitto/conf.d/go-auth.so".
+1700694163: Load error: /etc/mosquitto/conf.d/go-auth.so: invalid ELF header
+1700694167: mosquitto version 2.0.15 starting
+1700694167: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700694167: Loading plugin: /etc/mosquitto/conf.d/go-auth.so
+1700694167: Error: Unable to load auth plugin "/etc/mosquitto/conf.d/go-auth.so".
+1700694167: Load error: /etc/mosquitto/conf.d/go-auth.so: invalid ELF header
+1700694174: mosquitto version 2.0.15 starting
+1700694174: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700694174: Loading plugin: /etc/mosquitto/conf.d/go-auth.so
+1700694174: Error: Unable to load auth plugin "/etc/mosquitto/conf.d/go-auth.so".
+1700694174: Load error: /etc/mosquitto/conf.d/go-auth.so: invalid ELF header
+1700694187: mosquitto version 2.0.15 starting
+1700694187: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700694187: Loading plugin: /etc/mosquitto/conf.d/go-auth.so
+1700694187: Error: Unable to load auth plugin "/etc/mosquitto/conf.d/go-auth.so".
+1700694187: Load error: /etc/mosquitto/conf.d/go-auth.so: invalid ELF header
+1700694210: mosquitto version 2.0.15 starting
+1700694210: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700694210: Loading plugin: /etc/mosquitto/conf.d/go-auth.so
+1700694210: Error: Unable to load auth plugin "/etc/mosquitto/conf.d/go-auth.so".
+1700694210: Load error: /etc/mosquitto/conf.d/go-auth.so: invalid ELF header
+1700694212: mosquitto version 2.0.15 starting
+1700694212: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700694212: Loading plugin: /etc/mosquitto/conf.d/go-auth.so
+1700694212: Error: Unable to load auth plugin "/etc/mosquitto/conf.d/go-auth.so".
+1700694212: Load error: /etc/mosquitto/conf.d/go-auth.so: invalid ELF header
+1700694213: mosquitto version 2.0.15 starting
+1700694213: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700694213: Loading plugin: /etc/mosquitto/conf.d/go-auth.so
+1700694213: Error: Unable to load auth plugin "/etc/mosquitto/conf.d/go-auth.so".
+1700694213: Load error: /etc/mosquitto/conf.d/go-auth.so: invalid ELF header
+1700694214: mosquitto version 2.0.15 starting
+1700694214: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700694214: Loading plugin: /etc/mosquitto/conf.d/go-auth.so
+1700694214: Error: Unable to load auth plugin "/etc/mosquitto/conf.d/go-auth.so".
+1700694214: Load error: /etc/mosquitto/conf.d/go-auth.so: invalid ELF header
+1700694215: mosquitto version 2.0.15 starting
+1700694215: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700694215: Loading plugin: /etc/mosquitto/conf.d/go-auth.so
+1700694215: Error: Unable to load auth plugin "/etc/mosquitto/conf.d/go-auth.so".
+1700694215: Load error: /etc/mosquitto/conf.d/go-auth.so: invalid ELF header
+1700694217: mosquitto version 2.0.15 starting
+1700694217: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700694217: Loading plugin: /etc/mosquitto/conf.d/go-auth.so
+1700694217: Error: Unable to load auth plugin "/etc/mosquitto/conf.d/go-auth.so".
+1700694217: Load error: /etc/mosquitto/conf.d/go-auth.so: invalid ELF header
+1700694221: mosquitto version 2.0.15 starting
+1700694221: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700694221: Loading plugin: /etc/mosquitto/conf.d/go-auth.so
+1700694221: Error: Unable to load auth plugin "/etc/mosquitto/conf.d/go-auth.so".
+1700694221: Load error: /etc/mosquitto/conf.d/go-auth.so: invalid ELF header
+1700694227: mosquitto version 2.0.15 starting
+1700694227: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700694227: Loading plugin: /etc/mosquitto/conf.d/go-auth.so
+1700694227: Error: Unable to load auth plugin "/etc/mosquitto/conf.d/go-auth.so".
+1700694227: Load error: /etc/mosquitto/conf.d/go-auth.so: invalid ELF header
+1700694241: mosquitto version 2.0.15 starting
+1700694241: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700694241: Opening ipv4 listen socket on port 1883.
+1700694241: Opening ipv6 listen socket on port 1883.
+1700694241: Opening ipv4 listen socket on port 9001.
+1700694241: Opening ipv6 listen socket on port 9001.
+1700694241: mosquitto version 2.0.15 running
+1700694256: mosquitto version 2.0.15 terminating
+1700694256: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1700694256: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1700694256: Error: No such file or directory.
+1700694261: mosquitto version 2.0.15 starting
+1700694261: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700694261: Opening ipv4 listen socket on port 1883.
+1700694261: Opening ipv6 listen socket on port 1883.
+1700694261: Opening ipv4 listen socket on port 9001.
+1700694261: Opening ipv6 listen socket on port 9001.
+1700694261: mosquitto version 2.0.15 running
+1700694710: mosquitto version 2.0.15 terminating
+1700694710: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1700694710: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1700694710: Error: No such file or directory.
+1700694717: mosquitto version 2.0.15 starting
+1700694717: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700694717: Loading plugin: /etc/mosquitto/conf.d/go-auth.so
+1700694717: Error: Unable to load auth plugin "/etc/mosquitto/conf.d/go-auth.so".
+1700694717: Load error: /etc/mosquitto/conf.d/go-auth.so: cannot open shared object file: No such file or directory
+1700694718: mosquitto version 2.0.15 starting
+1700694718: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700694718: Loading plugin: /etc/mosquitto/conf.d/go-auth.so
+1700694718: Error: Unable to load auth plugin "/etc/mosquitto/conf.d/go-auth.so".
+1700694718: Load error: /etc/mosquitto/conf.d/go-auth.so: cannot open shared object file: No such file or directory
+1700694719: mosquitto version 2.0.15 starting
+1700694719: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700694719: Loading plugin: /etc/mosquitto/conf.d/go-auth.so
+1700694719: Error: Unable to load auth plugin "/etc/mosquitto/conf.d/go-auth.so".
+1700694719: Load error: /etc/mosquitto/conf.d/go-auth.so: cannot open shared object file: No such file or directory
+1700694720: mosquitto version 2.0.15 starting
+1700694720: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700694720: Loading plugin: /etc/mosquitto/conf.d/go-auth.so
+1700694720: Error: Unable to load auth plugin "/etc/mosquitto/conf.d/go-auth.so".
+1700694720: Load error: /etc/mosquitto/conf.d/go-auth.so: cannot open shared object file: No such file or directory
+1700694721: mosquitto version 2.0.15 starting
+1700694721: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700694721: Loading plugin: /etc/mosquitto/conf.d/go-auth.so
+1700694721: Error: Unable to load auth plugin "/etc/mosquitto/conf.d/go-auth.so".
+1700694721: Load error: /etc/mosquitto/conf.d/go-auth.so: cannot open shared object file: No such file or directory
+1700694723: mosquitto version 2.0.15 starting
+1700694723: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700694723: Loading plugin: /etc/mosquitto/conf.d/go-auth.so
+1700694723: Error: Unable to load auth plugin "/etc/mosquitto/conf.d/go-auth.so".
+1700694723: Load error: /etc/mosquitto/conf.d/go-auth.so: cannot open shared object file: No such file or directory
+1700694726: mosquitto version 2.0.15 starting
+1700694726: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700694726: Loading plugin: /etc/mosquitto/conf.d/go-auth.so
+1700694726: Error: Unable to load auth plugin "/etc/mosquitto/conf.d/go-auth.so".
+1700694726: Load error: /etc/mosquitto/conf.d/go-auth.so: cannot open shared object file: No such file or directory
+1700694733: mosquitto version 2.0.15 starting
+1700694733: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700694733: Loading plugin: /etc/mosquitto/conf.d/go-auth.so
+1700694733: Error: Unable to load auth plugin "/etc/mosquitto/conf.d/go-auth.so".
+1700694733: Load error: /etc/mosquitto/conf.d/go-auth.so: cannot open shared object file: No such file or directory
+1700694747: mosquitto version 2.0.15 starting
+1700694747: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700694747: Loading plugin: /etc/mosquitto/conf.d/go-auth.so
+1700694747: Error: Unable to load auth plugin "/etc/mosquitto/conf.d/go-auth.so".
+1700694747: Load error: /etc/mosquitto/conf.d/go-auth.so: cannot open shared object file: No such file or directory
+1700694773: mosquitto version 2.0.15 starting
+1700694773: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700694773: Loading plugin: /etc/mosquitto/conf.d/go-auth.so
+1700694773: Error: Unable to load auth plugin "/etc/mosquitto/conf.d/go-auth.so".
+1700694773: Load error: /etc/mosquitto/conf.d/go-auth.so: cannot open shared object file: No such file or directory
+1700694824: mosquitto version 2.0.15 starting
+1700694824: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700694824: Loading plugin: /etc/mosquitto/conf.d/go-auth.so
+1700694824: Error: Unable to load auth plugin "/etc/mosquitto/conf.d/go-auth.so".
+1700694824: Load error: /etc/mosquitto/conf.d/go-auth.so: cannot open shared object file: No such file or directory
+1700694885: mosquitto version 2.0.15 starting
+1700694885: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700694885: Loading plugin: /etc/mosquitto/conf.d/go-auth.so
+1700694885: Error: Unable to load auth plugin "/etc/mosquitto/conf.d/go-auth.so".
+1700694885: Load error: /etc/mosquitto/conf.d/go-auth.so: cannot open shared object file: No such file or directory
+1700694907: mosquitto version 2.0.15 starting
+1700694907: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700694907: Opening ipv4 listen socket on port 1883.
+1700694907: Opening ipv6 listen socket on port 1883.
+1700694907: Opening ipv4 listen socket on port 9001.
+1700694907: Opening ipv6 listen socket on port 9001.
+1700694907: mosquitto version 2.0.15 running
+1700695131: mosquitto version 2.0.15 terminating
+1700695131: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1700695131: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1700695131: Error: No such file or directory.
+1700695160: mosquitto version 2.0.15 starting
+1700695160: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700695160: Loading plugin: /mosquitto/go-auth.so
+1700695160:  ├── Username/password checking enabled.
+1700695160:  ├── TLS-PSK checking enabled.
+1700695160:  └── Extended authentication not enabled.
+1700695161: mosquitto version 2.0.15 starting
+1700695161: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700695161: Loading plugin: /mosquitto/go-auth.so
+1700695161:  ├── Username/password checking enabled.
+1700695161:  ├── TLS-PSK checking enabled.
+1700695161:  └── Extended authentication not enabled.
+1700695162: mosquitto version 2.0.15 starting
+1700695162: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700695162: Loading plugin: /mosquitto/go-auth.so
+1700695162:  ├── Username/password checking enabled.
+1700695162:  ├── TLS-PSK checking enabled.
+1700695162:  └── Extended authentication not enabled.
+1700695163: mosquitto version 2.0.15 starting
+1700695163: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700695163: Loading plugin: /mosquitto/go-auth.so
+1700695163:  ├── Username/password checking enabled.
+1700695163:  ├── TLS-PSK checking enabled.
+1700695163:  └── Extended authentication not enabled.
+1700695164: mosquitto version 2.0.15 starting
+1700695164: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700695164: Loading plugin: /mosquitto/go-auth.so
+1700695164:  ├── Username/password checking enabled.
+1700695164:  ├── TLS-PSK checking enabled.
+1700695164:  └── Extended authentication not enabled.
+1700695166: mosquitto version 2.0.15 starting
+1700695166: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700695166: Loading plugin: /mosquitto/go-auth.so
+1700695166:  ├── Username/password checking enabled.
+1700695166:  ├── TLS-PSK checking enabled.
+1700695166:  └── Extended authentication not enabled.
+1700695170: mosquitto version 2.0.15 starting
+1700695170: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700695170: Loading plugin: /mosquitto/go-auth.so
+1700695170:  ├── Username/password checking enabled.
+1700695170:  ├── TLS-PSK checking enabled.
+1700695170:  └── Extended authentication not enabled.
+1700695177: mosquitto version 2.0.15 starting
+1700695177: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700695177: Loading plugin: /mosquitto/go-auth.so
+1700695177:  ├── Username/password checking enabled.
+1700695177:  ├── TLS-PSK checking enabled.
+1700695177:  └── Extended authentication not enabled.
+1700695190: mosquitto version 2.0.15 starting
+1700695190: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700695190: Loading plugin: /mosquitto/go-auth.so
+1700695190:  ├── Username/password checking enabled.
+1700695190:  ├── TLS-PSK checking enabled.
+1700695190:  └── Extended authentication not enabled.
+1700695216: mosquitto version 2.0.15 starting
+1700695216: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700695216: Loading plugin: /mosquitto/go-auth.so
+1700695216:  ├── Username/password checking enabled.
+1700695216:  ├── TLS-PSK checking enabled.
+1700695216:  └── Extended authentication not enabled.
+1700695268: mosquitto version 2.0.15 starting
+1700695268: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700695268: Loading plugin: /mosquitto/go-auth.so
+1700695268:  ├── Username/password checking enabled.
+1700695268:  ├── TLS-PSK checking enabled.
+1700695268:  └── Extended authentication not enabled.
+1700695328: mosquitto version 2.0.15 starting
+1700695328: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700695328: Loading plugin: /mosquitto/go-auth.so
+1700695328:  ├── Username/password checking enabled.
+1700695328:  ├── TLS-PSK checking enabled.
+1700695328:  └── Extended authentication not enabled.
+1700695389: mosquitto version 2.0.15 starting
+1700695389: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700695389: Loading plugin: /mosquitto/go-auth.so
+1700695389:  ├── Username/password checking enabled.
+1700695389:  ├── TLS-PSK checking enabled.
+1700695389:  └── Extended authentication not enabled.
+1700695449: mosquitto version 2.0.15 starting
+1700695449: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700695449: Loading plugin: /mosquitto/go-auth.so
+1700695449:  ├── Username/password checking enabled.
+1700695449:  ├── TLS-PSK checking enabled.
+1700695449:  └── Extended authentication not enabled.
+1700695461: mosquitto version 2.0.15 starting
+1700695461: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700695461: Loading plugin: /mosquitto/go-auth.so
+1700695461:  ├── Username/password checking enabled.
+1700695461:  ├── TLS-PSK checking enabled.
+1700695461:  └── Extended authentication not enabled.
+1700695462: mosquitto version 2.0.15 starting
+1700695462: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700695462: Loading plugin: /mosquitto/go-auth.so
+1700695462:  ├── Username/password checking enabled.
+1700695462:  ├── TLS-PSK checking enabled.
+1700695462:  └── Extended authentication not enabled.
+1700695463: mosquitto version 2.0.15 starting
+1700695463: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700695463: Loading plugin: /mosquitto/go-auth.so
+1700695463:  ├── Username/password checking enabled.
+1700695463:  ├── TLS-PSK checking enabled.
+1700695463:  └── Extended authentication not enabled.
+1700695463: mosquitto version 2.0.15 starting
+1700695463: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700695463: Loading plugin: /mosquitto/go-auth.so
+1700695463:  ├── Username/password checking enabled.
+1700695463:  ├── TLS-PSK checking enabled.
+1700695463:  └── Extended authentication not enabled.
+1700695465: mosquitto version 2.0.15 starting
+1700695465: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700695465: Loading plugin: /mosquitto/go-auth.so
+1700695465:  ├── Username/password checking enabled.
+1700695465:  ├── TLS-PSK checking enabled.
+1700695465:  └── Extended authentication not enabled.
+1700695467: mosquitto version 2.0.15 starting
+1700695467: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700695467: Loading plugin: /mosquitto/go-auth.so
+1700695467:  ├── Username/password checking enabled.
+1700695467:  ├── TLS-PSK checking enabled.
+1700695467:  └── Extended authentication not enabled.
+1700695470: mosquitto version 2.0.15 starting
+1700695470: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700695470: Loading plugin: /mosquitto/go-auth.so
+1700695470:  ├── Username/password checking enabled.
+1700695470:  ├── TLS-PSK checking enabled.
+1700695470:  └── Extended authentication not enabled.
+1700695477: mosquitto version 2.0.15 starting
+1700695477: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700695477: Loading plugin: /mosquitto/go-auth.so
+1700695477:  ├── Username/password checking enabled.
+1700695477:  ├── TLS-PSK checking enabled.
+1700695477:  └── Extended authentication not enabled.
+1700695491: mosquitto version 2.0.15 starting
+1700695491: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700695491: Loading plugin: /mosquitto/go-auth.so
+1700695491:  ├── Username/password checking enabled.
+1700695491:  ├── TLS-PSK checking enabled.
+1700695491:  └── Extended authentication not enabled.
+1700695517: mosquitto version 2.0.15 starting
+1700695517: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700695517: Loading plugin: /mosquitto/go-auth.so
+1700695517:  ├── Username/password checking enabled.
+1700695517:  ├── TLS-PSK checking enabled.
+1700695517:  └── Extended authentication not enabled.
+1700695568: mosquitto version 2.0.15 starting
+1700695568: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700695568: Loading plugin: /mosquitto/go-auth.so
+1700695568:  ├── Username/password checking enabled.
+1700695568:  ├── TLS-PSK checking enabled.
+1700695568:  └── Extended authentication not enabled.
+1700695629: mosquitto version 2.0.15 starting
+1700695629: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700695629: Loading plugin: /mosquitto/go-auth.so
+1700695629:  ├── Username/password checking enabled.
+1700695629:  ├── TLS-PSK checking enabled.
+1700695629:  └── Extended authentication not enabled.
+1700695689: mosquitto version 2.0.15 starting
+1700695689: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700695689: Loading plugin: /mosquitto/go-auth.so
+1700695689:  ├── Username/password checking enabled.
+1700695689:  ├── TLS-PSK checking enabled.
+1700695689:  └── Extended authentication not enabled.
+1700695749: mosquitto version 2.0.15 starting
+1700695749: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700695749: Loading plugin: /mosquitto/go-auth.so
+1700695749:  ├── Username/password checking enabled.
+1700695749:  ├── TLS-PSK checking enabled.
+1700695749:  └── Extended authentication not enabled.
+1700695810: mosquitto version 2.0.15 starting
+1700695810: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700695810: Loading plugin: /mosquitto/go-auth.so
+1700695810:  ├── Username/password checking enabled.
+1700695810:  ├── TLS-PSK checking enabled.
+1700695810:  └── Extended authentication not enabled.
+1700695838: mosquitto version 2.0.15 starting
+1700695838: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700695838: Loading plugin: /mosquitto/go-auth.so
+1700695838:  ├── Username/password checking enabled.
+1700695838:  ├── TLS-PSK checking enabled.
+1700695838:  └── Extended authentication not enabled.
+1700695839: mosquitto version 2.0.15 starting
+1700695839: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700695839: Loading plugin: /mosquitto/go-auth.so
+1700695839:  ├── Username/password checking enabled.
+1700695839:  ├── TLS-PSK checking enabled.
+1700695839:  └── Extended authentication not enabled.
+1700695840: mosquitto version 2.0.15 starting
+1700695840: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700695840: Loading plugin: /mosquitto/go-auth.so
+1700695840:  ├── Username/password checking enabled.
+1700695840:  ├── TLS-PSK checking enabled.
+1700695840:  └── Extended authentication not enabled.
+1700695841: mosquitto version 2.0.15 starting
+1700695841: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700695841: Loading plugin: /mosquitto/go-auth.so
+1700695841:  ├── Username/password checking enabled.
+1700695841:  ├── TLS-PSK checking enabled.
+1700695841:  └── Extended authentication not enabled.
+1700695842: mosquitto version 2.0.15 starting
+1700695842: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700695842: Loading plugin: /mosquitto/go-auth.so
+1700695842:  ├── Username/password checking enabled.
+1700695842:  ├── TLS-PSK checking enabled.
+1700695842:  └── Extended authentication not enabled.
+1700695844: mosquitto version 2.0.15 starting
+1700695844: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700695844: Loading plugin: /mosquitto/go-auth.so
+1700695844:  ├── Username/password checking enabled.
+1700695844:  ├── TLS-PSK checking enabled.
+1700695844:  └── Extended authentication not enabled.
+1700695848: mosquitto version 2.0.15 starting
+1700695848: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700695848: Loading plugin: /mosquitto/go-auth.so
+1700695848:  ├── Username/password checking enabled.
+1700695848:  ├── TLS-PSK checking enabled.
+1700695848:  └── Extended authentication not enabled.
+1700695855: mosquitto version 2.0.15 starting
+1700695855: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700695855: Loading plugin: /mosquitto/go-auth.so
+1700695855:  ├── Username/password checking enabled.
+1700695855:  ├── TLS-PSK checking enabled.
+1700695855:  └── Extended authentication not enabled.
+1700695868: mosquitto version 2.0.15 starting
+1700695868: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700695868: Loading plugin: /mosquitto/go-auth.so
+1700695868:  ├── Username/password checking enabled.
+1700695868:  ├── TLS-PSK checking enabled.
+1700695868:  └── Extended authentication not enabled.
+1700695888: mosquitto version 2.0.15 starting
+1700695888: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700695888: Loading plugin: /mosquitto/go-auth.so
+1700695888:  ├── Username/password checking enabled.
+1700695888:  ├── TLS-PSK checking enabled.
+1700695888:  └── Extended authentication not enabled.
+1700695889: mosquitto version 2.0.15 starting
+1700695889: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700695889: Loading plugin: /mosquitto/go-auth.so
+1700695889:  ├── Username/password checking enabled.
+1700695889:  ├── TLS-PSK checking enabled.
+1700695889:  └── Extended authentication not enabled.
+1700695890: mosquitto version 2.0.15 starting
+1700695890: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700695890: Loading plugin: /mosquitto/go-auth.so
+1700695890:  ├── Username/password checking enabled.
+1700695890:  ├── TLS-PSK checking enabled.
+1700695890:  └── Extended authentication not enabled.
+1700695890: mosquitto version 2.0.15 starting
+1700695890: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700695890: Loading plugin: /mosquitto/go-auth.so
+1700695890:  ├── Username/password checking enabled.
+1700695890:  ├── TLS-PSK checking enabled.
+1700695890:  └── Extended authentication not enabled.
+1700695892: mosquitto version 2.0.15 starting
+1700695892: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700695892: Loading plugin: /mosquitto/go-auth.so
+1700695892:  ├── Username/password checking enabled.
+1700695892:  ├── TLS-PSK checking enabled.
+1700695892:  └── Extended authentication not enabled.
+1700695894: mosquitto version 2.0.15 starting
+1700695894: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700695894: Loading plugin: /mosquitto/go-auth.so
+1700695894:  ├── Username/password checking enabled.
+1700695894:  ├── TLS-PSK checking enabled.
+1700695894:  └── Extended authentication not enabled.
+1700695898: mosquitto version 2.0.15 starting
+1700695898: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700695898: Loading plugin: /mosquitto/go-auth.so
+1700695898:  ├── Username/password checking enabled.
+1700695898:  ├── TLS-PSK checking enabled.
+1700695898:  └── Extended authentication not enabled.
+1700695904: mosquitto version 2.0.15 starting
+1700695904: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700695904: Loading plugin: /mosquitto/go-auth.so
+1700695904:  ├── Username/password checking enabled.
+1700695904:  ├── TLS-PSK checking enabled.
+1700695904:  └── Extended authentication not enabled.
+1700695913: mosquitto version 2.0.15 starting
+1700695913: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700695913: Loading plugin: /mosquitto/go-auth.so
+1700695913:  ├── Username/password checking enabled.
+1700695913:  ├── TLS-PSK checking enabled.
+1700695913:  └── Extended authentication not enabled.
+1700695914: mosquitto version 2.0.15 starting
+1700695914: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700695914: Loading plugin: /mosquitto/go-auth.so
+1700695914:  ├── Username/password checking enabled.
+1700695914:  ├── TLS-PSK checking enabled.
+1700695914:  └── Extended authentication not enabled.
+1700695915: mosquitto version 2.0.15 starting
+1700695915: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700695915: Loading plugin: /mosquitto/go-auth.so
+1700695915:  ├── Username/password checking enabled.
+1700695915:  ├── TLS-PSK checking enabled.
+1700695915:  └── Extended authentication not enabled.
+1700695916: mosquitto version 2.0.15 starting
+1700695916: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700695916: Loading plugin: /mosquitto/go-auth.so
+1700695916:  ├── Username/password checking enabled.
+1700695916:  ├── TLS-PSK checking enabled.
+1700695916:  └── Extended authentication not enabled.
+1700695918: mosquitto version 2.0.15 starting
+1700695918: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700695918: Loading plugin: /mosquitto/go-auth.so
+1700695918:  ├── Username/password checking enabled.
+1700695918:  ├── TLS-PSK checking enabled.
+1700695918:  └── Extended authentication not enabled.
+1700695920: mosquitto version 2.0.15 starting
+1700695920: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700695920: Loading plugin: /mosquitto/go-auth.so
+1700695920:  ├── Username/password checking enabled.
+1700695920:  ├── TLS-PSK checking enabled.
+1700695920:  └── Extended authentication not enabled.
+1700695923: mosquitto version 2.0.15 starting
+1700695923: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700695923: Loading plugin: /mosquitto/go-auth.so
+1700695923:  ├── Username/password checking enabled.
+1700695923:  ├── TLS-PSK checking enabled.
+1700695923:  └── Extended authentication not enabled.
+1700695930: mosquitto version 2.0.15 starting
+1700695930: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700695930: Loading plugin: /mosquitto/go-auth.so
+1700695930:  ├── Username/password checking enabled.
+1700695930:  ├── TLS-PSK checking enabled.
+1700695930:  └── Extended authentication not enabled.
+1700695943: mosquitto version 2.0.15 starting
+1700695943: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700695943: Loading plugin: /mosquitto/go-auth.so
+1700695943:  ├── Username/password checking enabled.
+1700695943:  ├── TLS-PSK checking enabled.
+1700695943:  └── Extended authentication not enabled.
+1700695970: mosquitto version 2.0.15 starting
+1700695970: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700695970: Loading plugin: /mosquitto/go-auth.so
+1700695970:  ├── Username/password checking enabled.
+1700695970:  ├── TLS-PSK checking enabled.
+1700695970:  └── Extended authentication not enabled.
+1700696016: mosquitto version 2.0.15 starting
+1700696016: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700696016: Loading plugin: /mosquitto/go-auth.so
+1700696016:  ├── Username/password checking enabled.
+1700696016:  ├── TLS-PSK checking enabled.
+1700696016:  └── Extended authentication not enabled.
+1700696017: mosquitto version 2.0.15 starting
+1700696017: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700696017: Loading plugin: /mosquitto/go-auth.so
+1700696017:  ├── Username/password checking enabled.
+1700696017:  ├── TLS-PSK checking enabled.
+1700696017:  └── Extended authentication not enabled.
+1700696018: mosquitto version 2.0.15 starting
+1700696018: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700696018: Loading plugin: /mosquitto/go-auth.so
+1700696018:  ├── Username/password checking enabled.
+1700696018:  ├── TLS-PSK checking enabled.
+1700696018:  └── Extended authentication not enabled.
+1700696019: mosquitto version 2.0.15 starting
+1700696019: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700696019: Loading plugin: /mosquitto/go-auth.so
+1700696019:  ├── Username/password checking enabled.
+1700696019:  ├── TLS-PSK checking enabled.
+1700696019:  └── Extended authentication not enabled.
+1700696020: mosquitto version 2.0.15 starting
+1700696020: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700696020: Loading plugin: /mosquitto/go-auth.so
+1700696020:  ├── Username/password checking enabled.
+1700696020:  ├── TLS-PSK checking enabled.
+1700696020:  └── Extended authentication not enabled.
+1700696022: mosquitto version 2.0.15 starting
+1700696022: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700696022: Loading plugin: /mosquitto/go-auth.so
+1700696022:  ├── Username/password checking enabled.
+1700696022:  ├── TLS-PSK checking enabled.
+1700696022:  └── Extended authentication not enabled.
+1700696026: mosquitto version 2.0.15 starting
+1700696026: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700696026: Loading plugin: /mosquitto/go-auth.so
+1700696026:  ├── Username/password checking enabled.
+1700696026:  ├── TLS-PSK checking enabled.
+1700696026:  └── Extended authentication not enabled.
+1700696033: mosquitto version 2.0.15 starting
+1700696033: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700696033: Loading plugin: /mosquitto/go-auth.so
+1700696033:  ├── Username/password checking enabled.
+1700696033:  ├── TLS-PSK checking enabled.
+1700696033:  └── Extended authentication not enabled.
+1700696046: mosquitto version 2.0.15 starting
+1700696046: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700696046: Loading plugin: /mosquitto/go-auth.so
+1700696046:  ├── Username/password checking enabled.
+1700696046:  ├── TLS-PSK checking enabled.
+1700696046:  └── Extended authentication not enabled.
+1700696072: mosquitto version 2.0.15 starting
+1700696072: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700696072: Loading plugin: /mosquitto/go-auth.so
+1700696072:  ├── Username/password checking enabled.
+1700696072:  ├── TLS-PSK checking enabled.
+1700696072:  └── Extended authentication not enabled.
+1700696124: mosquitto version 2.0.15 starting
+1700696124: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700696124: Loading plugin: /mosquitto/go-auth.so
+1700696124:  ├── Username/password checking enabled.
+1700696124:  ├── TLS-PSK checking enabled.
+1700696124:  └── Extended authentication not enabled.
+1700696124: Opening ipv4 listen socket on port 1883.
+1700696124: Opening ipv6 listen socket on port 1883.
+1700696124: Opening ipv4 listen socket on port 9001.
+1700696124: Opening ipv6 listen socket on port 9001.
+1700696124: mosquitto version 2.0.15 running
+1700696133: mosquitto version 2.0.15 terminating
+1700696133: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1700696133: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1700696133: Error: No such file or directory.
+1700696136: mosquitto version 2.0.15 starting
+1700696136: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700696136: Loading plugin: /mosquitto/go-auth.so
+1700696136:  ├── Username/password checking enabled.
+1700696136:  ├── TLS-PSK checking enabled.
+1700696136:  └── Extended authentication not enabled.
+1700696136: Opening ipv4 listen socket on port 1883.
+1700696136: Opening ipv6 listen socket on port 1883.
+1700696136: Opening ipv4 listen socket on port 9001.
+1700696136: Opening ipv6 listen socket on port 9001.
+1700696136: mosquitto version 2.0.15 running
+1700697937: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1700699788: mosquitto version 2.0.15 starting
+1700699788: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700699788: Opening ipv4 listen socket on port 1883.
+1700699788: Opening ipv6 listen socket on port 1883.
+1700699788: Opening ipv4 listen socket on port 9001.
+1700699788: Opening ipv6 listen socket on port 9001.
+1700699788: mosquitto version 2.0.15 running
+1700700153: mosquitto version 2.0.15 terminating
+1700700153: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1700700153: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1700700153: Error: No such file or directory.
+1700700169: mosquitto version 2.0.15 starting
+1700700169: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700700169: Opening ipv4 listen socket on port 1883.
+1700700169: Opening ipv6 listen socket on port 1883.
+1700700169: Opening ipv4 listen socket on port 9001.
+1700700169: Opening ipv6 listen socket on port 9001.
+1700700169: mosquitto version 2.0.15 running
+1700700247: New connection from 172.18.0.1:41766 on port 1883.
+1700700247: New client connected from 172.18.0.1:41766 as mqtt-explorer-aeed4dad (p2, c1, k60).
+1700700247: No will message specified.
+1700700247: Sending CONNACK to mqtt-explorer-aeed4dad (0, 0)
+1700700247: Received SUBSCRIBE from mqtt-explorer-aeed4dad
+1700700247: 	# (QoS 0)
+1700700247: mqtt-explorer-aeed4dad 0 #
+1700700247: Sending SUBACK to mqtt-explorer-aeed4dad
+1700700247: Received SUBSCRIBE from mqtt-explorer-aeed4dad
+1700700247: 	$SYS/# (QoS 0)
+1700700247: mqtt-explorer-aeed4dad 0 $SYS/#
+1700700247: Sending SUBACK to mqtt-explorer-aeed4dad
+1700700247: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r1, m0, '$SYS/broker/version', ... (24 bytes))
+1700700247: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r1, m0, '$SYS/broker/uptime', ... (10 bytes))
+1700700257: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/uptime', ... (10 bytes))
+1700700257: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/clients/total', ... (1 bytes))
+1700700257: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/clients/maximum', ... (1 bytes))
+1700700257: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/clients/active', ... (1 bytes))
+1700700257: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/clients/connected', ... (1 bytes))
+1700700257: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/messages/received/1min', ... (4 bytes))
+1700700257: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/messages/sent/1min', ... (4 bytes))
+1700700257: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/publish/sent/1min', ... (4 bytes))
+1700700257: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/bytes/received/1min', ... (5 bytes))
+1700700257: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/bytes/sent/1min', ... (6 bytes))
+1700700257: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/sockets/1min', ... (4 bytes))
+1700700257: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/connections/1min', ... (4 bytes))
+1700700257: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/messages/received/5min', ... (4 bytes))
+1700700257: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/messages/sent/5min', ... (4 bytes))
+1700700257: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/publish/sent/5min', ... (4 bytes))
+1700700257: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/bytes/received/5min', ... (5 bytes))
+1700700257: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/bytes/sent/5min', ... (5 bytes))
+1700700257: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/sockets/5min', ... (4 bytes))
+1700700257: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/connections/5min', ... (4 bytes))
+1700700257: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/messages/received/15min', ... (4 bytes))
+1700700257: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/messages/sent/15min', ... (4 bytes))
+1700700257: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/publish/sent/15min', ... (4 bytes))
+1700700257: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/bytes/received/15min', ... (4 bytes))
+1700700257: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/bytes/sent/15min', ... (5 bytes))
+1700700257: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/sockets/15min', ... (4 bytes))
+1700700257: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/connections/15min', ... (4 bytes))
+1700700257: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/messages/stored', ... (2 bytes))
+1700700257: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/store/messages/count', ... (2 bytes))
+1700700257: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/store/messages/bytes', ... (3 bytes))
+1700700257: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/subscriptions/count', ... (1 bytes))
+1700700257: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/retained messages/count', ... (2 bytes))
+1700700257: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/heap/current', ... (5 bytes))
+1700700257: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/heap/maximum', ... (5 bytes))
+1700700257: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/messages/received', ... (1 bytes))
+1700700257: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/messages/sent', ... (2 bytes))
+1700700257: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/publish/messages/sent', ... (2 bytes))
+1700700257: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/bytes/received', ... (2 bytes))
+1700700257: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/bytes/sent', ... (4 bytes))
+1700700257: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/publish/bytes/sent', ... (3 bytes))
+1700700259: Received PUBLISH from mqtt-explorer-aeed4dad (d0, q0, r0, m0, 'as', ... (6 bytes))
+1700700259: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, 'as', ... (6 bytes))
+1700700260: Received PUBLISH from mqtt-explorer-aeed4dad (d0, q0, r0, m0, 'as', ... (6 bytes))
+1700700260: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, 'as', ... (6 bytes))
+1700700261: Received PUBLISH from mqtt-explorer-aeed4dad (d0, q0, r0, m0, 'as', ... (6 bytes))
+1700700261: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, 'as', ... (6 bytes))
+1700700268: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/uptime', ... (10 bytes))
+1700700268: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/messages/received/1min', ... (4 bytes))
+1700700268: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/messages/sent/1min', ... (5 bytes))
+1700700268: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/publish/received/1min', ... (4 bytes))
+1700700268: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/publish/sent/1min', ... (5 bytes))
+1700700268: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/bytes/received/1min', ... (5 bytes))
+1700700268: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/bytes/sent/1min', ... (6 bytes))
+1700700268: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/sockets/1min', ... (4 bytes))
+1700700268: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/connections/1min', ... (4 bytes))
+1700700268: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/messages/received/5min', ... (4 bytes))
+1700700268: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/messages/sent/5min', ... (4 bytes))
+1700700268: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/publish/received/5min', ... (4 bytes))
+1700700268: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/publish/sent/5min', ... (4 bytes))
+1700700268: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/bytes/received/5min', ... (5 bytes))
+1700700268: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/bytes/sent/5min', ... (5 bytes))
+1700700268: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/messages/received/15min', ... (4 bytes))
+1700700268: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/messages/sent/15min', ... (4 bytes))
+1700700268: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/publish/received/15min', ... (4 bytes))
+1700700268: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/publish/sent/15min', ... (4 bytes))
+1700700268: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/bytes/received/15min', ... (4 bytes))
+1700700268: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/bytes/sent/15min', ... (5 bytes))
+1700700268: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/messages/stored', ... (2 bytes))
+1700700268: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/store/messages/count', ... (2 bytes))
+1700700268: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/store/messages/bytes', ... (3 bytes))
+1700700268: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/retained messages/count', ... (2 bytes))
+1700700268: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/heap/current', ... (5 bytes))
+1700700268: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/heap/maximum', ... (5 bytes))
+1700700268: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/messages/received', ... (1 bytes))
+1700700268: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/messages/sent', ... (2 bytes))
+1700700268: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/publish/messages/received', ... (1 bytes))
+1700700268: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/publish/messages/sent', ... (2 bytes))
+1700700268: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/bytes/received', ... (2 bytes))
+1700700268: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/bytes/sent', ... (4 bytes))
+1700700268: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/publish/bytes/received', ... (2 bytes))
+1700700268: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/publish/bytes/sent', ... (3 bytes))
+1700700276: Received PUBLISH from mqtt-explorer-aeed4dad (d0, q0, r0, m0, 'as', ... (6 bytes))
+1700700276: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, 'as', ... (6 bytes))
+1700700276: Received PUBLISH from mqtt-explorer-aeed4dad (d0, q0, r0, m0, 'as', ... (6 bytes))
+1700700276: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, 'as', ... (6 bytes))
+1700700276: Received PUBLISH from mqtt-explorer-aeed4dad (d0, q0, r0, m0, 'as', ... (6 bytes))
+1700700276: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, 'as', ... (6 bytes))
+1700700276: Received PUBLISH from mqtt-explorer-aeed4dad (d0, q0, r0, m0, 'as', ... (6 bytes))
+1700700276: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, 'as', ... (6 bytes))
+1700700276: Received PUBLISH from mqtt-explorer-aeed4dad (d0, q0, r0, m0, 'as', ... (6 bytes))
+1700700276: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, 'as', ... (6 bytes))
+1700700277: Received PUBLISH from mqtt-explorer-aeed4dad (d0, q0, r0, m0, 'as', ... (6 bytes))
+1700700277: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, 'as', ... (6 bytes))
+1700700277: Received PUBLISH from mqtt-explorer-aeed4dad (d0, q0, r0, m0, 'as', ... (6 bytes))
+1700700277: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, 'as', ... (6 bytes))
+1700700278: Received DISCONNECT from mqtt-explorer-aeed4dad
+1700700278: Client mqtt-explorer-aeed4dad disconnected.
+1700700280: New connection from 172.18.0.1:59634 on port 1883.
+1700700280: New client connected from 172.18.0.1:59634 as mqtt-explorer-aeed4dad (p2, c1, k60).
+1700700280: No will message specified.
+1700700280: Sending CONNACK to mqtt-explorer-aeed4dad (0, 0)
+1700700280: Received SUBSCRIBE from mqtt-explorer-aeed4dad
+1700700280: 	# (QoS 0)
+1700700280: mqtt-explorer-aeed4dad 0 #
+1700700280: Sending SUBACK to mqtt-explorer-aeed4dad
+1700700280: Received SUBSCRIBE from mqtt-explorer-aeed4dad
+1700700280: 	$SYS/# (QoS 0)
+1700700280: mqtt-explorer-aeed4dad 0 $SYS/#
+1700700280: Sending SUBACK to mqtt-explorer-aeed4dad
+1700700280: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r1, m0, '$SYS/broker/version', ... (24 bytes))
+1700700280: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r1, m0, '$SYS/broker/uptime', ... (11 bytes))
+1700700280: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r1, m0, '$SYS/broker/clients/total', ... (1 bytes))
+1700700280: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r1, m0, '$SYS/broker/clients/active', ... (1 bytes))
+1700700280: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r1, m0, '$SYS/broker/clients/connected', ... (1 bytes))
+1700700280: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r1, m0, '$SYS/broker/clients/maximum', ... (1 bytes))
+1700700280: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r1, m0, '$SYS/broker/load/messages/received/1min', ... (5 bytes))
+1700700280: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r1, m0, '$SYS/broker/load/messages/received/5min', ... (4 bytes))
+1700700280: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r1, m0, '$SYS/broker/load/messages/received/15min', ... (4 bytes))
+1700700280: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r1, m0, '$SYS/broker/load/messages/sent/1min', ... (5 bytes))
+1700700280: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r1, m0, '$SYS/broker/load/messages/sent/5min', ... (4 bytes))
+1700700280: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r1, m0, '$SYS/broker/load/messages/sent/15min', ... (4 bytes))
+1700700280: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r1, m0, '$SYS/broker/load/publish/received/1min', ... (4 bytes))
+1700700280: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r1, m0, '$SYS/broker/load/publish/received/5min', ... (4 bytes))
+1700700280: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r1, m0, '$SYS/broker/load/publish/received/15min', ... (4 bytes))
+1700700280: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r1, m0, '$SYS/broker/load/publish/sent/1min', ... (5 bytes))
+1700700280: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r1, m0, '$SYS/broker/load/publish/sent/5min', ... (4 bytes))
+1700700280: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r1, m0, '$SYS/broker/load/publish/sent/15min', ... (4 bytes))
+1700700280: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r1, m0, '$SYS/broker/load/bytes/received/1min', ... (6 bytes))
+1700700280: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r1, m0, '$SYS/broker/load/bytes/received/5min', ... (5 bytes))
+1700700280: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r1, m0, '$SYS/broker/load/bytes/received/15min', ... (5 bytes))
+1700700280: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r1, m0, '$SYS/broker/load/bytes/sent/1min', ... (6 bytes))
+1700700280: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r1, m0, '$SYS/broker/load/bytes/sent/5min', ... (6 bytes))
+1700700280: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r1, m0, '$SYS/broker/load/bytes/sent/15min', ... (5 bytes))
+1700700280: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r1, m0, '$SYS/broker/load/sockets/1min', ... (4 bytes))
+1700700280: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r1, m0, '$SYS/broker/load/sockets/5min', ... (4 bytes))
+1700700280: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r1, m0, '$SYS/broker/load/sockets/15min', ... (4 bytes))
+1700700280: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r1, m0, '$SYS/broker/load/connections/1min', ... (4 bytes))
+1700700280: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r1, m0, '$SYS/broker/load/connections/5min', ... (4 bytes))
+1700700280: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r1, m0, '$SYS/broker/load/connections/15min', ... (4 bytes))
+1700700280: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r1, m0, '$SYS/broker/messages/stored', ... (2 bytes))
+1700700280: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r1, m0, '$SYS/broker/messages/received', ... (2 bytes))
+1700700280: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r1, m0, '$SYS/broker/messages/sent', ... (2 bytes))
+1700700280: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r1, m0, '$SYS/broker/store/messages/count', ... (2 bytes))
+1700700280: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r1, m0, '$SYS/broker/store/messages/bytes', ... (3 bytes))
+1700700280: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r1, m0, '$SYS/broker/subscriptions/count', ... (1 bytes))
+1700700280: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r1, m0, '$SYS/broker/retained messages/count', ... (2 bytes))
+1700700280: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r1, m0, '$SYS/broker/heap/current', ... (5 bytes))
+1700700280: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r1, m0, '$SYS/broker/heap/maximum', ... (5 bytes))
+1700700280: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r1, m0, '$SYS/broker/publish/messages/received', ... (2 bytes))
+1700700280: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r1, m0, '$SYS/broker/publish/messages/sent', ... (2 bytes))
+1700700280: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r1, m0, '$SYS/broker/publish/bytes/received', ... (2 bytes))
+1700700280: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r1, m0, '$SYS/broker/publish/bytes/sent', ... (3 bytes))
+1700700280: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r1, m0, '$SYS/broker/bytes/received', ... (3 bytes))
+1700700280: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r1, m0, '$SYS/broker/bytes/sent', ... (4 bytes))
+1700700283: Received PUBLISH from mqtt-explorer-aeed4dad (d0, q0, r0, m0, 'as', ... (6 bytes))
+1700700283: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, 'as', ... (6 bytes))
+1700700283: Received PUBLISH from mqtt-explorer-aeed4dad (d0, q0, r0, m0, 'as', ... (6 bytes))
+1700700283: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, 'as', ... (6 bytes))
+1700700283: Received PUBLISH from mqtt-explorer-aeed4dad (d0, q0, r0, m0, 'as', ... (6 bytes))
+1700700283: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, 'as', ... (6 bytes))
+1700700284: Received PUBLISH from mqtt-explorer-aeed4dad (d0, q0, r0, m0, 'as', ... (6 bytes))
+1700700284: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, 'as', ... (6 bytes))
+1700700284: Received PUBLISH from mqtt-explorer-aeed4dad (d0, q0, r0, m0, 'as', ... (6 bytes))
+1700700284: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, 'as', ... (6 bytes))
+1700700284: Received PUBLISH from mqtt-explorer-aeed4dad (d0, q0, r0, m0, 'as', ... (6 bytes))
+1700700284: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, 'as', ... (6 bytes))
+1700700284: Received PUBLISH from mqtt-explorer-aeed4dad (d0, q0, r0, m0, 'as', ... (6 bytes))
+1700700284: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, 'as', ... (6 bytes))
+1700700284: Received PUBLISH from mqtt-explorer-aeed4dad (d0, q0, r0, m0, 'as', ... (6 bytes))
+1700700284: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, 'as', ... (6 bytes))
+1700700284: Received PUBLISH from mqtt-explorer-aeed4dad (d0, q0, r0, m0, 'as', ... (6 bytes))
+1700700284: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, 'as', ... (6 bytes))
+1700700285: Received PUBLISH from mqtt-explorer-aeed4dad (d0, q0, r0, m0, 'as', ... (6 bytes))
+1700700285: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, 'as', ... (6 bytes))
+1700700285: Received PUBLISH from mqtt-explorer-aeed4dad (d0, q0, r0, m0, 'as', ... (6 bytes))
+1700700285: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, 'as', ... (6 bytes))
+1700700287: Received PUBLISH from mqtt-explorer-aeed4dad (d0, q0, r0, m0, 'as', ... (12 bytes))
+1700700287: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, 'as', ... (12 bytes))
+1700700289: Received PUBLISH from mqtt-explorer-aeed4dad (d0, q0, r0, m0, 'as', ... (3 bytes))
+1700700289: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, 'as', ... (3 bytes))
+1700700290: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/uptime', ... (11 bytes))
+1700700290: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/clients/total', ... (1 bytes))
+1700700290: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/clients/active', ... (1 bytes))
+1700700290: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/clients/connected', ... (1 bytes))
+1700700290: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/messages/received/1min', ... (5 bytes))
+1700700290: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/messages/sent/1min', ... (5 bytes))
+1700700290: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/publish/received/1min', ... (5 bytes))
+1700700290: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/publish/sent/1min', ... (5 bytes))
+1700700290: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/bytes/received/1min', ... (6 bytes))
+1700700290: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/bytes/sent/1min', ... (7 bytes))
+1700700290: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/sockets/1min', ... (4 bytes))
+1700700290: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/connections/1min', ... (4 bytes))
+1700700290: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/messages/received/5min', ... (4 bytes))
+1700700290: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/messages/sent/5min', ... (5 bytes))
+1700700290: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/publish/received/5min', ... (4 bytes))
+1700700290: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/publish/sent/5min', ... (5 bytes))
+1700700290: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/bytes/received/5min', ... (5 bytes))
+1700700290: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/bytes/sent/5min', ... (6 bytes))
+1700700290: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/sockets/5min', ... (4 bytes))
+1700700290: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/connections/5min', ... (4 bytes))
+1700700290: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/messages/received/15min', ... (4 bytes))
+1700700290: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/messages/sent/15min', ... (4 bytes))
+1700700290: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/publish/received/15min', ... (4 bytes))
+1700700290: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/publish/sent/15min', ... (4 bytes))
+1700700290: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/bytes/received/15min', ... (5 bytes))
+1700700290: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/bytes/sent/15min', ... (6 bytes))
+1700700290: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/sockets/15min', ... (4 bytes))
+1700700290: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/connections/15min', ... (4 bytes))
+1700700290: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/store/messages/bytes', ... (3 bytes))
+1700700290: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/subscriptions/count', ... (1 bytes))
+1700700290: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/heap/current', ... (5 bytes))
+1700700290: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/heap/maximum', ... (5 bytes))
+1700700290: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/messages/received', ... (2 bytes))
+1700700290: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/messages/sent', ... (3 bytes))
+1700700290: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/publish/messages/received', ... (2 bytes))
+1700700290: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/publish/messages/sent', ... (3 bytes))
+1700700290: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/bytes/received', ... (3 bytes))
+1700700290: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/bytes/sent', ... (4 bytes))
+1700700290: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/publish/bytes/received', ... (3 bytes))
+1700700290: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/publish/bytes/sent', ... (3 bytes))
+1700700301: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/uptime', ... (11 bytes))
+1700700301: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/messages/received/1min', ... (5 bytes))
+1700700301: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/messages/sent/1min', ... (5 bytes))
+1700700301: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/publish/received/1min', ... (5 bytes))
+1700700301: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/publish/sent/1min', ... (5 bytes))
+1700700301: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/bytes/received/1min', ... (6 bytes))
+1700700301: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/bytes/sent/1min', ... (7 bytes))
+1700700301: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/sockets/1min', ... (4 bytes))
+1700700301: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/connections/1min', ... (4 bytes))
+1700700301: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/messages/received/5min', ... (4 bytes))
+1700700301: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/messages/sent/5min', ... (5 bytes))
+1700700301: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/publish/received/5min', ... (4 bytes))
+1700700301: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/publish/sent/5min', ... (5 bytes))
+1700700301: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/bytes/received/5min', ... (5 bytes))
+1700700301: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/bytes/sent/5min', ... (6 bytes))
+1700700301: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/sockets/5min', ... (4 bytes))
+1700700301: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/connections/5min', ... (4 bytes))
+1700700301: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/messages/received/15min', ... (4 bytes))
+1700700301: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/messages/sent/15min', ... (4 bytes))
+1700700301: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/publish/received/15min', ... (4 bytes))
+1700700301: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/publish/sent/15min', ... (4 bytes))
+1700700301: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/bytes/received/15min', ... (5 bytes))
+1700700301: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/bytes/sent/15min', ... (6 bytes))
+1700700301: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/store/messages/bytes', ... (3 bytes))
+1700700301: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/heap/current', ... (5 bytes))
+1700700301: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/messages/sent', ... (3 bytes))
+1700700301: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/publish/messages/sent', ... (3 bytes))
+1700700301: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/bytes/sent', ... (4 bytes))
+1700700301: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/publish/bytes/sent', ... (3 bytes))
+1700700312: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/uptime', ... (11 bytes))
+1700700312: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/messages/received/1min', ... (5 bytes))
+1700700312: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/messages/sent/1min', ... (5 bytes))
+1700700312: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/publish/received/1min', ... (5 bytes))
+1700700312: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/publish/sent/1min', ... (5 bytes))
+1700700312: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/bytes/received/1min', ... (6 bytes))
+1700700312: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/bytes/sent/1min', ... (7 bytes))
+1700700312: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/sockets/1min', ... (4 bytes))
+1700700312: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/connections/1min', ... (4 bytes))
+1700700312: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/messages/received/5min', ... (4 bytes))
+1700700312: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/messages/sent/5min', ... (5 bytes))
+1700700312: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/publish/received/5min', ... (4 bytes))
+1700700312: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/publish/sent/5min', ... (5 bytes))
+1700700312: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/bytes/received/5min', ... (5 bytes))
+1700700312: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/bytes/sent/5min', ... (6 bytes))
+1700700312: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/sockets/5min', ... (4 bytes))
+1700700312: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/connections/5min', ... (4 bytes))
+1700700312: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/messages/received/15min', ... (4 bytes))
+1700700312: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/messages/sent/15min', ... (4 bytes))
+1700700312: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/publish/received/15min', ... (4 bytes))
+1700700312: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/publish/sent/15min', ... (4 bytes))
+1700700312: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/bytes/received/15min', ... (5 bytes))
+1700700312: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/bytes/sent/15min', ... (6 bytes))
+1700700312: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/messages/sent', ... (3 bytes))
+1700700312: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/publish/messages/sent', ... (3 bytes))
+1700700312: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/bytes/sent', ... (4 bytes))
+1700700312: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/publish/bytes/sent', ... (4 bytes))
+1700700323: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/uptime', ... (11 bytes))
+1700700323: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/messages/received/1min', ... (5 bytes))
+1700700323: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/messages/sent/1min', ... (5 bytes))
+1700700323: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/publish/received/1min', ... (5 bytes))
+1700700323: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/publish/sent/1min', ... (5 bytes))
+1700700323: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/bytes/received/1min', ... (6 bytes))
+1700700323: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/bytes/sent/1min', ... (7 bytes))
+1700700323: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/sockets/1min', ... (4 bytes))
+1700700323: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/connections/1min', ... (4 bytes))
+1700700323: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/messages/received/5min', ... (4 bytes))
+1700700323: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/messages/sent/5min', ... (5 bytes))
+1700700323: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/publish/received/5min', ... (4 bytes))
+1700700323: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/publish/sent/5min', ... (5 bytes))
+1700700323: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/bytes/received/5min', ... (5 bytes))
+1700700323: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/bytes/sent/5min', ... (6 bytes))
+1700700323: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/sockets/5min', ... (4 bytes))
+1700700323: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/connections/5min', ... (4 bytes))
+1700700323: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/messages/received/15min', ... (4 bytes))
+1700700323: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/messages/sent/15min', ... (4 bytes))
+1700700323: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/publish/received/15min', ... (4 bytes))
+1700700323: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/publish/sent/15min', ... (4 bytes))
+1700700323: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/bytes/received/15min', ... (5 bytes))
+1700700323: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/bytes/sent/15min', ... (6 bytes))
+1700700323: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/store/messages/bytes', ... (3 bytes))
+1700700323: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/messages/sent', ... (3 bytes))
+1700700323: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/publish/messages/sent', ... (3 bytes))
+1700700323: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/bytes/sent', ... (5 bytes))
+1700700323: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/publish/bytes/sent', ... (4 bytes))
+1700700334: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/uptime', ... (11 bytes))
+1700700334: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/messages/received/1min', ... (5 bytes))
+1700700334: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/messages/sent/1min', ... (5 bytes))
+1700700334: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/publish/received/1min', ... (4 bytes))
+1700700334: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/publish/sent/1min', ... (5 bytes))
+1700700334: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/bytes/received/1min', ... (6 bytes))
+1700700334: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/bytes/sent/1min', ... (7 bytes))
+1700700334: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/sockets/1min', ... (4 bytes))
+1700700334: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/connections/1min', ... (4 bytes))
+1700700334: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/messages/received/5min', ... (4 bytes))
+1700700334: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/messages/sent/5min', ... (5 bytes))
+1700700334: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/publish/received/5min', ... (4 bytes))
+1700700334: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/publish/sent/5min', ... (5 bytes))
+1700700334: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/bytes/received/5min', ... (5 bytes))
+1700700334: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/bytes/sent/5min', ... (6 bytes))
+1700700334: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/sockets/5min', ... (4 bytes))
+1700700334: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/connections/5min', ... (4 bytes))
+1700700334: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/messages/received/15min', ... (4 bytes))
+1700700334: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/messages/sent/15min', ... (4 bytes))
+1700700334: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/publish/received/15min', ... (4 bytes))
+1700700334: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/publish/sent/15min', ... (4 bytes))
+1700700334: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/bytes/received/15min', ... (5 bytes))
+1700700334: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/bytes/sent/15min', ... (6 bytes))
+1700700334: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/messages/sent', ... (3 bytes))
+1700700334: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/publish/messages/sent', ... (3 bytes))
+1700700334: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/bytes/sent', ... (5 bytes))
+1700700334: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/publish/bytes/sent', ... (4 bytes))
+1700700345: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/uptime', ... (11 bytes))
+1700700345: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/messages/received/1min', ... (4 bytes))
+1700700345: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/messages/sent/1min', ... (5 bytes))
+1700700345: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/publish/received/1min', ... (4 bytes))
+1700700345: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/publish/sent/1min', ... (5 bytes))
+1700700345: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/bytes/received/1min', ... (6 bytes))
+1700700345: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/bytes/sent/1min', ... (7 bytes))
+1700700345: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/sockets/1min', ... (4 bytes))
+1700700345: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/connections/1min', ... (4 bytes))
+1700700345: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/messages/received/5min', ... (4 bytes))
+1700700345: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/messages/sent/5min', ... (5 bytes))
+1700700345: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/publish/received/5min', ... (4 bytes))
+1700700345: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/publish/sent/5min', ... (5 bytes))
+1700700345: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/bytes/received/5min', ... (5 bytes))
+1700700345: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/bytes/sent/5min', ... (6 bytes))
+1700700345: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/sockets/5min', ... (4 bytes))
+1700700345: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/connections/5min', ... (4 bytes))
+1700700345: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/messages/received/15min', ... (4 bytes))
+1700700345: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/messages/sent/15min', ... (4 bytes))
+1700700345: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/publish/received/15min', ... (4 bytes))
+1700700345: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/publish/sent/15min', ... (4 bytes))
+1700700345: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/bytes/received/15min', ... (5 bytes))
+1700700345: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/bytes/sent/15min', ... (6 bytes))
+1700700345: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/store/messages/bytes', ... (3 bytes))
+1700700345: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/messages/sent', ... (3 bytes))
+1700700345: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/publish/messages/sent', ... (3 bytes))
+1700700345: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/bytes/sent', ... (5 bytes))
+1700700345: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/publish/bytes/sent', ... (4 bytes))
+1700700349: Received PINGREQ from mqtt-explorer-aeed4dad
+1700700349: Sending PINGRESP to mqtt-explorer-aeed4dad
+1700700356: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/uptime', ... (11 bytes))
+1700700356: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/messages/received/1min', ... (4 bytes))
+1700700356: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/messages/sent/1min', ... (5 bytes))
+1700700356: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/publish/received/1min', ... (4 bytes))
+1700700356: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/publish/sent/1min', ... (5 bytes))
+1700700356: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/bytes/received/1min', ... (6 bytes))
+1700700356: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/bytes/sent/1min', ... (7 bytes))
+1700700356: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/sockets/1min', ... (4 bytes))
+1700700356: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/connections/1min', ... (4 bytes))
+1700700356: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/messages/received/5min', ... (4 bytes))
+1700700356: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/messages/sent/5min', ... (5 bytes))
+1700700356: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/publish/received/5min', ... (4 bytes))
+1700700356: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/publish/sent/5min', ... (5 bytes))
+1700700356: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/bytes/received/5min', ... (5 bytes))
+1700700356: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/bytes/sent/5min', ... (6 bytes))
+1700700356: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/sockets/5min', ... (4 bytes))
+1700700356: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/connections/5min', ... (4 bytes))
+1700700356: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/messages/received/15min', ... (4 bytes))
+1700700356: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/messages/sent/15min', ... (4 bytes))
+1700700356: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/publish/received/15min', ... (4 bytes))
+1700700356: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/publish/sent/15min', ... (4 bytes))
+1700700356: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/bytes/received/15min', ... (5 bytes))
+1700700356: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/bytes/sent/15min', ... (6 bytes))
+1700700356: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/messages/received', ... (2 bytes))
+1700700356: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/messages/sent', ... (3 bytes))
+1700700356: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/publish/messages/sent', ... (3 bytes))
+1700700356: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/bytes/received', ... (3 bytes))
+1700700356: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/bytes/sent', ... (5 bytes))
+1700700356: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/publish/bytes/sent', ... (4 bytes))
+1700700367: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/uptime', ... (11 bytes))
+1700700367: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/messages/received/1min', ... (4 bytes))
+1700700367: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/messages/sent/1min', ... (5 bytes))
+1700700367: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/publish/received/1min', ... (4 bytes))
+1700700367: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/publish/sent/1min', ... (5 bytes))
+1700700367: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/bytes/received/1min', ... (5 bytes))
+1700700367: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/bytes/sent/1min', ... (7 bytes))
+1700700367: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/sockets/1min', ... (4 bytes))
+1700700367: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/connections/1min', ... (4 bytes))
+1700700367: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/messages/received/5min', ... (4 bytes))
+1700700367: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/messages/sent/5min', ... (5 bytes))
+1700700367: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/publish/received/5min', ... (4 bytes))
+1700700367: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/publish/sent/5min', ... (5 bytes))
+1700700367: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/bytes/received/5min', ... (5 bytes))
+1700700367: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/bytes/sent/5min', ... (6 bytes))
+1700700367: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/sockets/5min', ... (4 bytes))
+1700700367: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/connections/5min', ... (4 bytes))
+1700700367: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/messages/received/15min', ... (4 bytes))
+1700700367: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/messages/sent/15min', ... (4 bytes))
+1700700367: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/publish/received/15min', ... (4 bytes))
+1700700367: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/publish/sent/15min', ... (4 bytes))
+1700700367: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/bytes/received/15min', ... (5 bytes))
+1700700367: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/bytes/sent/15min', ... (6 bytes))
+1700700367: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/store/messages/bytes', ... (3 bytes))
+1700700367: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/messages/sent', ... (3 bytes))
+1700700367: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/publish/messages/sent', ... (3 bytes))
+1700700367: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/bytes/sent', ... (5 bytes))
+1700700367: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/publish/bytes/sent', ... (4 bytes))
+1700700378: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/uptime', ... (11 bytes))
+1700700378: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/messages/received/1min', ... (4 bytes))
+1700700378: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/messages/sent/1min', ... (5 bytes))
+1700700378: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/publish/received/1min', ... (4 bytes))
+1700700378: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/publish/sent/1min', ... (5 bytes))
+1700700378: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/bytes/received/1min', ... (5 bytes))
+1700700378: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/bytes/sent/1min', ... (6 bytes))
+1700700378: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/sockets/1min', ... (4 bytes))
+1700700378: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/connections/1min', ... (4 bytes))
+1700700378: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/messages/received/5min', ... (4 bytes))
+1700700378: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/messages/sent/5min', ... (5 bytes))
+1700700378: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/publish/received/5min', ... (4 bytes))
+1700700378: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/publish/sent/5min', ... (5 bytes))
+1700700378: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/bytes/received/5min', ... (5 bytes))
+1700700378: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/bytes/sent/5min', ... (6 bytes))
+1700700378: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/sockets/5min', ... (4 bytes))
+1700700378: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/connections/5min', ... (4 bytes))
+1700700378: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/messages/received/15min', ... (4 bytes))
+1700700378: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/messages/sent/15min', ... (4 bytes))
+1700700378: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/publish/received/15min', ... (4 bytes))
+1700700378: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/publish/sent/15min', ... (4 bytes))
+1700700378: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/bytes/received/15min', ... (5 bytes))
+1700700378: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/bytes/sent/15min', ... (6 bytes))
+1700700378: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/store/messages/bytes', ... (3 bytes))
+1700700378: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/messages/sent', ... (3 bytes))
+1700700378: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/publish/messages/sent', ... (3 bytes))
+1700700378: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/bytes/sent', ... (5 bytes))
+1700700378: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/publish/bytes/sent', ... (4 bytes))
+1700700389: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/uptime', ... (11 bytes))
+1700700389: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/messages/received/1min', ... (4 bytes))
+1700700389: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/messages/sent/1min', ... (5 bytes))
+1700700389: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/publish/received/1min', ... (4 bytes))
+1700700389: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/publish/sent/1min', ... (5 bytes))
+1700700389: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/bytes/received/1min', ... (5 bytes))
+1700700389: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/bytes/sent/1min', ... (6 bytes))
+1700700389: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/sockets/1min', ... (4 bytes))
+1700700389: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/connections/1min', ... (4 bytes))
+1700700389: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/messages/received/5min', ... (4 bytes))
+1700700389: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/messages/sent/5min', ... (5 bytes))
+1700700389: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/publish/received/5min', ... (4 bytes))
+1700700389: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/publish/sent/5min', ... (5 bytes))
+1700700389: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/bytes/received/5min', ... (5 bytes))
+1700700389: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/bytes/sent/5min', ... (6 bytes))
+1700700389: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/messages/received/15min', ... (4 bytes))
+1700700389: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/messages/sent/15min', ... (4 bytes))
+1700700389: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/publish/received/15min', ... (4 bytes))
+1700700389: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/publish/sent/15min', ... (4 bytes))
+1700700389: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/bytes/received/15min', ... (5 bytes))
+1700700389: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/bytes/sent/15min', ... (6 bytes))
+1700700389: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/messages/sent', ... (3 bytes))
+1700700389: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/publish/messages/sent', ... (3 bytes))
+1700700389: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/bytes/sent', ... (5 bytes))
+1700700389: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/publish/bytes/sent', ... (4 bytes))
+1700700400: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/uptime', ... (11 bytes))
+1700700400: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/messages/received/1min', ... (4 bytes))
+1700700400: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/messages/sent/1min', ... (5 bytes))
+1700700400: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/publish/received/1min', ... (4 bytes))
+1700700400: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/publish/sent/1min', ... (5 bytes))
+1700700400: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/bytes/received/1min', ... (5 bytes))
+1700700400: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/bytes/sent/1min', ... (6 bytes))
+1700700400: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/sockets/1min', ... (4 bytes))
+1700700400: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/connections/1min', ... (4 bytes))
+1700700400: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/messages/received/5min', ... (4 bytes))
+1700700400: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/messages/sent/5min', ... (5 bytes))
+1700700400: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/publish/received/5min', ... (4 bytes))
+1700700400: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/publish/sent/5min', ... (5 bytes))
+1700700400: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/bytes/received/5min', ... (5 bytes))
+1700700400: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/bytes/sent/5min', ... (6 bytes))
+1700700400: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/messages/received/15min', ... (4 bytes))
+1700700400: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/messages/sent/15min', ... (4 bytes))
+1700700400: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/publish/received/15min', ... (4 bytes))
+1700700400: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/publish/sent/15min', ... (4 bytes))
+1700700400: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/bytes/received/15min', ... (5 bytes))
+1700700400: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/bytes/sent/15min', ... (6 bytes))
+1700700400: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/messages/sent', ... (3 bytes))
+1700700400: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/publish/messages/sent', ... (3 bytes))
+1700700400: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/bytes/sent', ... (5 bytes))
+1700700400: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/publish/bytes/sent', ... (4 bytes))
+1700700409: Received PINGREQ from mqtt-explorer-aeed4dad
+1700700409: Sending PINGRESP to mqtt-explorer-aeed4dad
+1700700411: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/uptime', ... (11 bytes))
+1700700411: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/messages/received/1min', ... (4 bytes))
+1700700411: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/messages/sent/1min', ... (5 bytes))
+1700700411: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/publish/received/1min', ... (4 bytes))
+1700700411: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/publish/sent/1min', ... (5 bytes))
+1700700411: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/bytes/received/1min', ... (5 bytes))
+1700700411: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/bytes/sent/1min', ... (6 bytes))
+1700700411: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/sockets/1min', ... (4 bytes))
+1700700411: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/connections/1min', ... (4 bytes))
+1700700411: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/messages/received/5min', ... (4 bytes))
+1700700411: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/messages/sent/5min', ... (5 bytes))
+1700700411: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/publish/received/5min', ... (4 bytes))
+1700700411: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/publish/sent/5min', ... (5 bytes))
+1700700411: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/bytes/received/5min', ... (5 bytes))
+1700700411: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/bytes/sent/5min', ... (6 bytes))
+1700700411: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/messages/received/15min', ... (4 bytes))
+1700700411: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/messages/sent/15min', ... (4 bytes))
+1700700411: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/publish/received/15min', ... (4 bytes))
+1700700411: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/publish/sent/15min', ... (4 bytes))
+1700700411: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/bytes/received/15min', ... (5 bytes))
+1700700411: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/bytes/sent/15min', ... (6 bytes))
+1700700411: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/messages/received', ... (2 bytes))
+1700700411: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/messages/sent', ... (3 bytes))
+1700700411: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/publish/messages/sent', ... (3 bytes))
+1700700411: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/bytes/received', ... (3 bytes))
+1700700411: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/bytes/sent', ... (5 bytes))
+1700700411: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/publish/bytes/sent', ... (4 bytes))
+1700700422: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/uptime', ... (11 bytes))
+1700700422: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/messages/received/1min', ... (4 bytes))
+1700700422: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/messages/sent/1min', ... (5 bytes))
+1700700422: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/publish/received/1min', ... (4 bytes))
+1700700422: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/publish/sent/1min', ... (5 bytes))
+1700700422: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/bytes/received/1min', ... (5 bytes))
+1700700422: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/bytes/sent/1min', ... (6 bytes))
+1700700422: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/sockets/1min', ... (4 bytes))
+1700700422: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/connections/1min', ... (4 bytes))
+1700700422: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/messages/received/5min', ... (4 bytes))
+1700700422: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/messages/sent/5min', ... (5 bytes))
+1700700422: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/publish/received/5min', ... (4 bytes))
+1700700422: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/publish/sent/5min', ... (5 bytes))
+1700700422: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/bytes/received/5min', ... (5 bytes))
+1700700422: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/bytes/sent/5min', ... (6 bytes))
+1700700422: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/messages/received/15min', ... (4 bytes))
+1700700422: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/messages/sent/15min', ... (4 bytes))
+1700700422: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/publish/received/15min', ... (4 bytes))
+1700700422: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/publish/sent/15min', ... (4 bytes))
+1700700422: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/bytes/received/15min', ... (5 bytes))
+1700700422: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/load/bytes/sent/15min', ... (6 bytes))
+1700700422: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/messages/sent', ... (3 bytes))
+1700700422: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/publish/messages/sent', ... (3 bytes))
+1700700422: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/bytes/sent', ... (5 bytes))
+1700700422: Sending PUBLISH to mqtt-explorer-aeed4dad (d0, q0, r0, m0, '$SYS/broker/publish/bytes/sent', ... (4 bytes))
+1700700424: mosquitto version 2.0.15 terminating
+1700700424: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1700700424: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1700700424: Error: No such file or directory.
+1700700469: mosquitto version 2.0.15 starting
+1700700469: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700700469: Loading plugin: /mosquitto/go-auth.so
+1700700469:  ├── Username/password checking enabled.
+1700700469:  ├── TLS-PSK checking enabled.
+1700700469:  └── Extended authentication not enabled.
+1700700469: Opening ipv4 listen socket on port 1883.
+1700700469: Opening ipv6 listen socket on port 1883.
+1700700469: Opening ipv4 listen socket on port 9001.
+1700700469: Opening ipv6 listen socket on port 9001.
+1700700469: mosquitto version 2.0.15 running
+1700700470: New connection from 172.19.0.1:38656 on port 1883.
+1700700470: Sending CONNACK to mqtt-explorer-aeed4dad (0, 5)
+1700700470: Client mqtt-explorer-aeed4dad disconnected, not authorised.
+1700700498: New connection from 172.19.0.1:42062 on port 1883.
+1700700498: Sending CONNACK to mqtt-explorer-aeed4dad (0, 5)
+1700700498: Client mqtt-explorer-aeed4dad disconnected, not authorised.
+1700700502: New connection from 172.19.0.1:41446 on port 1883.
+1700700502: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700700533: New connection from 172.19.0.1:48102 on port 1883.
+1700700533: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700700563: New connection from 172.19.0.1:51506 on port 1883.
+1700700563: Sending CONNACK to mqtt-explorer-aeed4dad (0, 5)
+1700700563: Client mqtt-explorer-aeed4dad disconnected, not authorised.
+1700701009: mosquitto version 2.0.15 terminating
+1700701009: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1700701009: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1700701009: Error: No such file or directory.
+1700701037: mosquitto version 2.0.15 starting
+1700701037: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700701037: Loading plugin: /mosquitto/go-auth.so
+1700701037:  ├── Username/password checking enabled.
+1700701037:  ├── TLS-PSK checking enabled.
+1700701037:  └── Extended authentication not enabled.
+1700701037: Opening ipv4 listen socket on port 1883.
+1700701037: Opening ipv6 listen socket on port 1883.
+1700701037: Opening ipv4 listen socket on port 9001.
+1700701037: Opening ipv6 listen socket on port 9001.
+1700701037: mosquitto version 2.0.15 running
+1700701070: New connection from 172.20.0.1:44818 on port 1883.
+1700701070: Sending CONNACK to mqtt-explorer-aeed4dad (0, 5)
+1700701070: Client mqtt-explorer-aeed4dad disconnected, not authorised.
+1700701076: New connection from 172.20.0.1:44824 on port 1883.
+1700701076: Sending CONNACK to mqtt-explorer-aeed4dad (0, 5)
+1700701076: Client mqtt-explorer-aeed4dad disconnected, not authorised.
+1700701081: New connection from 172.20.0.1:37000 on port 1883.
+1700701081: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700701112: New connection from 172.20.0.1:36548 on port 1883.
+1700701112: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700701143: New connection from 172.20.0.1:35784 on port 1883.
+1700701143: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700701174: New connection from 172.20.0.1:46296 on port 1883.
+1700701174: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700701205: New connection from 172.20.0.1:53252 on port 1883.
+1700701232: mosquitto version 2.0.15 starting
+1700701232: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700701232: Loading plugin: /mosquitto/go-auth.so
+1700701232:  ├── Username/password checking enabled.
+1700701232:  ├── TLS-PSK checking enabled.
+1700701232:  └── Extended authentication not enabled.
+1700701232: Opening ipv4 listen socket on port 1883.
+1700701232: Opening ipv6 listen socket on port 1883.
+1700701232: Opening ipv4 listen socket on port 9001.
+1700701232: Opening ipv6 listen socket on port 9001.
+1700701232: mosquitto version 2.0.15 running
+1700701232: New connection from 172.21.0.1:48038 on port 1883.
+1700701232: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700701262: New connection from 172.21.0.1:45108 on port 1883.
+1700701262: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700701292: New connection from 172.21.0.1:51368 on port 1883.
+1700701292: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700701322: New connection from 172.21.0.1:57892 on port 1883.
+1700701322: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700701322: mosquitto version 2.0.15 terminating
+1700701322: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1700701322: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1700701322: Error: No such file or directory.
+1700701375: mosquitto version 2.0.15 starting
+1700701375: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700701375: Loading plugin: /mosquitto/go-auth.so
+1700701375:  ├── Username/password checking enabled.
+1700701375:  ├── TLS-PSK checking enabled.
+1700701375:  └── Extended authentication not enabled.
+1700701377: mosquitto version 2.0.15 starting
+1700701377: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700701377: Loading plugin: /mosquitto/go-auth.so
+1700701377:  ├── Username/password checking enabled.
+1700701377:  ├── TLS-PSK checking enabled.
+1700701377:  └── Extended authentication not enabled.
+1700701378: mosquitto version 2.0.15 starting
+1700701378: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700701378: Loading plugin: /mosquitto/go-auth.so
+1700701378:  ├── Username/password checking enabled.
+1700701378:  ├── TLS-PSK checking enabled.
+1700701378:  └── Extended authentication not enabled.
+1700701379: mosquitto version 2.0.15 starting
+1700701379: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700701379: Loading plugin: /mosquitto/go-auth.so
+1700701379:  ├── Username/password checking enabled.
+1700701379:  ├── TLS-PSK checking enabled.
+1700701379:  └── Extended authentication not enabled.
+1700701380: mosquitto version 2.0.15 starting
+1700701380: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700701380: Loading plugin: /mosquitto/go-auth.so
+1700701380:  ├── Username/password checking enabled.
+1700701380:  ├── TLS-PSK checking enabled.
+1700701380:  └── Extended authentication not enabled.
+1700701382: mosquitto version 2.0.15 starting
+1700701382: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700701382: Loading plugin: /mosquitto/go-auth.so
+1700701382:  ├── Username/password checking enabled.
+1700701382:  ├── TLS-PSK checking enabled.
+1700701382:  └── Extended authentication not enabled.
+1700701386: mosquitto version 2.0.15 starting
+1700701386: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700701386: Loading plugin: /mosquitto/go-auth.so
+1700701386:  ├── Username/password checking enabled.
+1700701386:  ├── TLS-PSK checking enabled.
+1700701386:  └── Extended authentication not enabled.
+1700701393: mosquitto version 2.0.15 starting
+1700701393: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700701393: Loading plugin: /mosquitto/go-auth.so
+1700701393:  ├── Username/password checking enabled.
+1700701393:  ├── TLS-PSK checking enabled.
+1700701393:  └── Extended authentication not enabled.
+1700701406: mosquitto version 2.0.15 starting
+1700701406: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700701406: Loading plugin: /mosquitto/go-auth.so
+1700701406:  ├── Username/password checking enabled.
+1700701406:  ├── TLS-PSK checking enabled.
+1700701406:  └── Extended authentication not enabled.
+1700701507: mosquitto version 2.0.15 starting
+1700701507: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700701507: Loading plugin: /mosquitto/go-auth.so
+1700701507:  ├── Username/password checking enabled.
+1700701507:  ├── TLS-PSK checking enabled.
+1700701507:  └── Extended authentication not enabled.
+1700701507: Opening ipv4 listen socket on port 1883.
+1700701507: Opening ipv6 listen socket on port 1883.
+1700701507: Opening ipv4 listen socket on port 9001.
+1700701507: Opening ipv6 listen socket on port 9001.
+1700701507: mosquitto version 2.0.15 running
+1700701507: New connection from 172.23.0.1:50070 on port 1883.
+1700701507: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700701537: New connection from 172.23.0.1:55204 on port 1883.
+1700701537: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700701567: New connection from 172.23.0.1:41330 on port 1883.
+1700701567: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700701597: New connection from 172.23.0.1:58446 on port 1883.
+1700701597: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700701627: New connection from 172.23.0.1:45990 on port 1883.
+1700701627: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700701627: mosquitto version 2.0.15 terminating
+1700701627: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1700701627: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1700701627: Error: No such file or directory.
+1700701671: mosquitto version 2.0.15 starting
+1700701671: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700701671: Loading plugin: /mosquitto/go-auth.so
+1700701671:  ├── Username/password checking enabled.
+1700701671:  ├── TLS-PSK checking enabled.
+1700701671:  └── Extended authentication not enabled.
+1700701672: mosquitto version 2.0.15 starting
+1700701672: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700701672: Loading plugin: /mosquitto/go-auth.so
+1700701672:  ├── Username/password checking enabled.
+1700701672:  ├── TLS-PSK checking enabled.
+1700701672:  └── Extended authentication not enabled.
+1700701673: mosquitto version 2.0.15 starting
+1700701673: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700701673: Loading plugin: /mosquitto/go-auth.so
+1700701673:  ├── Username/password checking enabled.
+1700701673:  ├── TLS-PSK checking enabled.
+1700701673:  └── Extended authentication not enabled.
+1700701674: mosquitto version 2.0.15 starting
+1700701674: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700701674: Loading plugin: /mosquitto/go-auth.so
+1700701674:  ├── Username/password checking enabled.
+1700701674:  ├── TLS-PSK checking enabled.
+1700701674:  └── Extended authentication not enabled.
+1700701675: mosquitto version 2.0.15 starting
+1700701675: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700701675: Loading plugin: /mosquitto/go-auth.so
+1700701675:  ├── Username/password checking enabled.
+1700701675:  ├── TLS-PSK checking enabled.
+1700701675:  └── Extended authentication not enabled.
+1700701677: mosquitto version 2.0.15 starting
+1700701677: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700701677: Loading plugin: /mosquitto/go-auth.so
+1700701677:  ├── Username/password checking enabled.
+1700701677:  ├── TLS-PSK checking enabled.
+1700701677:  └── Extended authentication not enabled.
+1700701681: mosquitto version 2.0.15 starting
+1700701681: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700701681: Loading plugin: /mosquitto/go-auth.so
+1700701681:  ├── Username/password checking enabled.
+1700701681:  ├── TLS-PSK checking enabled.
+1700701681:  └── Extended authentication not enabled.
+1700701688: mosquitto version 2.0.15 starting
+1700701688: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700701688: Loading plugin: /mosquitto/go-auth.so
+1700701688:  ├── Username/password checking enabled.
+1700701688:  ├── TLS-PSK checking enabled.
+1700701688:  └── Extended authentication not enabled.
+1700701701: mosquitto version 2.0.15 starting
+1700701701: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700701701: Loading plugin: /mosquitto/go-auth.so
+1700701701:  ├── Username/password checking enabled.
+1700701701:  ├── TLS-PSK checking enabled.
+1700701701:  └── Extended authentication not enabled.
+1700701727: mosquitto version 2.0.15 starting
+1700701727: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700701727: Loading plugin: /mosquitto/go-auth.so
+1700701727:  ├── Username/password checking enabled.
+1700701727:  ├── TLS-PSK checking enabled.
+1700701727:  └── Extended authentication not enabled.
+1700701779: mosquitto version 2.0.15 starting
+1700701779: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700701779: Loading plugin: /mosquitto/go-auth.so
+1700701779:  ├── Username/password checking enabled.
+1700701779:  ├── TLS-PSK checking enabled.
+1700701779:  └── Extended authentication not enabled.
+1700701839: mosquitto version 2.0.15 starting
+1700701839: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700701839: Loading plugin: /mosquitto/go-auth.so
+1700701839:  ├── Username/password checking enabled.
+1700701839:  ├── TLS-PSK checking enabled.
+1700701839:  └── Extended authentication not enabled.
+1700701900: mosquitto version 2.0.15 starting
+1700701900: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700701900: Loading plugin: /mosquitto/go-auth.so
+1700701900:  ├── Username/password checking enabled.
+1700701900:  ├── TLS-PSK checking enabled.
+1700701900:  └── Extended authentication not enabled.
+1700701960: mosquitto version 2.0.15 starting
+1700701960: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700701960: Loading plugin: /mosquitto/go-auth.so
+1700701960:  ├── Username/password checking enabled.
+1700701960:  ├── TLS-PSK checking enabled.
+1700701960:  └── Extended authentication not enabled.
+1700702021: mosquitto version 2.0.15 starting
+1700702021: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700702021: Loading plugin: /mosquitto/go-auth.so
+1700702021:  ├── Username/password checking enabled.
+1700702021:  ├── TLS-PSK checking enabled.
+1700702021:  └── Extended authentication not enabled.
+1700702081: mosquitto version 2.0.15 starting
+1700702081: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700702081: Loading plugin: /mosquitto/go-auth.so
+1700702081:  ├── Username/password checking enabled.
+1700702081:  ├── TLS-PSK checking enabled.
+1700702081:  └── Extended authentication not enabled.
+1700702164: mosquitto version 2.0.15 starting
+1700702164: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700702164: Loading plugin: /mosquitto/go-auth.so
+1700702164:  ├── Username/password checking enabled.
+1700702164:  ├── TLS-PSK checking enabled.
+1700702164:  └── Extended authentication not enabled.
+1700702164: Opening ipv4 listen socket on port 1883.
+1700702164: Opening ipv6 listen socket on port 1883.
+1700702164: Opening ipv4 listen socket on port 9001.
+1700702164: Opening ipv6 listen socket on port 9001.
+1700702164: mosquitto version 2.0.15 running
+1700702164: New connection from 172.25.0.1:53702 on port 1883.
+1700702164: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700702195: New connection from 172.25.0.1:50746 on port 1883.
+1700702195: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700702225: New connection from 172.25.0.1:41216 on port 1883.
+1700702225: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700702255: New connection from 172.25.0.1:40214 on port 1883.
+1700702255: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700702285: New connection from 172.25.0.1:53992 on port 1883.
+1700702285: Sending CONNACK to mqtt-explorer-aeed4dad (0, 5)
+1700702285: Client mqtt-explorer-aeed4dad disconnected, not authorised.
+1700702386: New connection from 172.25.0.1:53000 on port 1883.
+1700702386: Sending CONNACK to mqtt-explorer-aeed4dad (0, 5)
+1700702386: Client mqtt-explorer-aeed4dad disconnected, not authorised.
+1700702386: New connection from 172.25.0.1:53014 on port 1883.
+1700702386: Sending CONNACK to mqtt-explorer-aeed4dad (0, 5)
+1700702386: Client mqtt-explorer-aeed4dad disconnected, not authorised.
+1700702387: New connection from 172.25.0.1:53028 on port 1883.
+1700702387: Sending CONNACK to mqtt-explorer-aeed4dad (0, 5)
+1700702387: Client mqtt-explorer-aeed4dad disconnected, not authorised.
+1700702387: New connection from 172.25.0.1:53036 on port 1883.
+1700702387: Sending CONNACK to mqtt-explorer-aeed4dad (0, 5)
+1700702387: Client mqtt-explorer-aeed4dad disconnected, not authorised.
+1700702387: New connection from 172.25.0.1:53052 on port 1883.
+1700702387: Sending CONNACK to mqtt-explorer-aeed4dad (0, 5)
+1700702387: Client mqtt-explorer-aeed4dad disconnected, not authorised.
+1700702444: mosquitto version 2.0.15 terminating
+1700702444: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1700702444: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1700702444: Error: No such file or directory.
+1700702447: mosquitto version 2.0.15 starting
+1700702447: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700702447: Loading plugin: /mosquitto/go-auth.so
+1700702447:  ├── Username/password checking enabled.
+1700702447:  ├── TLS-PSK checking enabled.
+1700702447:  └── Extended authentication not enabled.
+1700702448: mosquitto version 2.0.15 starting
+1700702448: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700702448: Loading plugin: /mosquitto/go-auth.so
+1700702448:  ├── Username/password checking enabled.
+1700702448:  ├── TLS-PSK checking enabled.
+1700702448:  └── Extended authentication not enabled.
+1700702449: mosquitto version 2.0.15 starting
+1700702449: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700702449: Loading plugin: /mosquitto/go-auth.so
+1700702449:  ├── Username/password checking enabled.
+1700702449:  ├── TLS-PSK checking enabled.
+1700702449:  └── Extended authentication not enabled.
+1700702450: mosquitto version 2.0.15 starting
+1700702450: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700702450: Loading plugin: /mosquitto/go-auth.so
+1700702450:  ├── Username/password checking enabled.
+1700702450:  ├── TLS-PSK checking enabled.
+1700702450:  └── Extended authentication not enabled.
+1700702451: mosquitto version 2.0.15 starting
+1700702451: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700702451: Loading plugin: /mosquitto/go-auth.so
+1700702451:  ├── Username/password checking enabled.
+1700702451:  ├── TLS-PSK checking enabled.
+1700702451:  └── Extended authentication not enabled.
+1700702453: mosquitto version 2.0.15 starting
+1700702453: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700702453: Loading plugin: /mosquitto/go-auth.so
+1700702453:  ├── Username/password checking enabled.
+1700702453:  ├── TLS-PSK checking enabled.
+1700702453:  └── Extended authentication not enabled.
+1700702457: mosquitto version 2.0.15 starting
+1700702457: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700702457: Loading plugin: /mosquitto/go-auth.so
+1700702457:  ├── Username/password checking enabled.
+1700702457:  ├── TLS-PSK checking enabled.
+1700702457:  └── Extended authentication not enabled.
+1700702464: mosquitto version 2.0.15 starting
+1700702464: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700702464: Loading plugin: /mosquitto/go-auth.so
+1700702464:  ├── Username/password checking enabled.
+1700702464:  ├── TLS-PSK checking enabled.
+1700702464:  └── Extended authentication not enabled.
+1700702477: mosquitto version 2.0.15 starting
+1700702477: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700702477: Loading plugin: /mosquitto/go-auth.so
+1700702477:  ├── Username/password checking enabled.
+1700702477:  ├── TLS-PSK checking enabled.
+1700702477:  └── Extended authentication not enabled.
+1700702503: mosquitto version 2.0.15 starting
+1700702503: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700702503: Loading plugin: /mosquitto/go-auth.so
+1700702503:  ├── Username/password checking enabled.
+1700702503:  ├── TLS-PSK checking enabled.
+1700702503:  └── Extended authentication not enabled.
+1700702555: mosquitto version 2.0.15 starting
+1700702555: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700702555: Loading plugin: /mosquitto/go-auth.so
+1700702555:  ├── Username/password checking enabled.
+1700702555:  ├── TLS-PSK checking enabled.
+1700702555:  └── Extended authentication not enabled.
+1700702615: mosquitto version 2.0.15 starting
+1700702615: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700702615: Loading plugin: /mosquitto/go-auth.so
+1700702615:  ├── Username/password checking enabled.
+1700702615:  ├── TLS-PSK checking enabled.
+1700702615:  └── Extended authentication not enabled.
+1700702675: mosquitto version 2.0.15 starting
+1700702675: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700702675: Loading plugin: /mosquitto/go-auth.so
+1700702675:  ├── Username/password checking enabled.
+1700702675:  ├── TLS-PSK checking enabled.
+1700702675:  └── Extended authentication not enabled.
+1700702712: mosquitto version 2.0.15 starting
+1700702712: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700702712: Loading plugin: /mosquitto/go-auth.so
+1700702712:  ├── Username/password checking enabled.
+1700702712:  ├── TLS-PSK checking enabled.
+1700702712:  └── Extended authentication not enabled.
+1700702713: mosquitto version 2.0.15 starting
+1700702713: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700702713: Loading plugin: /mosquitto/go-auth.so
+1700702713:  ├── Username/password checking enabled.
+1700702713:  ├── TLS-PSK checking enabled.
+1700702713:  └── Extended authentication not enabled.
+1700702714: mosquitto version 2.0.15 starting
+1700702714: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700702714: Loading plugin: /mosquitto/go-auth.so
+1700702714:  ├── Username/password checking enabled.
+1700702714:  ├── TLS-PSK checking enabled.
+1700702714:  └── Extended authentication not enabled.
+1700702715: mosquitto version 2.0.15 starting
+1700702715: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700702715: Loading plugin: /mosquitto/go-auth.so
+1700702715:  ├── Username/password checking enabled.
+1700702715:  ├── TLS-PSK checking enabled.
+1700702715:  └── Extended authentication not enabled.
+1700702717: mosquitto version 2.0.15 starting
+1700702717: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700702717: Loading plugin: /mosquitto/go-auth.so
+1700702717:  ├── Username/password checking enabled.
+1700702717:  ├── TLS-PSK checking enabled.
+1700702717:  └── Extended authentication not enabled.
+1700702719: mosquitto version 2.0.15 starting
+1700702719: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700702719: Loading plugin: /mosquitto/go-auth.so
+1700702719:  ├── Username/password checking enabled.
+1700702719:  ├── TLS-PSK checking enabled.
+1700702719:  └── Extended authentication not enabled.
+1700702722: mosquitto version 2.0.15 starting
+1700702722: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700702722: Loading plugin: /mosquitto/go-auth.so
+1700702722:  ├── Username/password checking enabled.
+1700702722:  ├── TLS-PSK checking enabled.
+1700702722:  └── Extended authentication not enabled.
+1700702729: mosquitto version 2.0.15 starting
+1700702729: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700702729: Loading plugin: /mosquitto/go-auth.so
+1700702729:  ├── Username/password checking enabled.
+1700702729:  ├── TLS-PSK checking enabled.
+1700702729:  └── Extended authentication not enabled.
+1700702742: mosquitto version 2.0.15 starting
+1700702742: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700702742: Loading plugin: /mosquitto/go-auth.so
+1700702742:  ├── Username/password checking enabled.
+1700702742:  ├── TLS-PSK checking enabled.
+1700702742:  └── Extended authentication not enabled.
+1700702768: mosquitto version 2.0.15 starting
+1700702768: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700702768: Loading plugin: /mosquitto/go-auth.so
+1700702768:  ├── Username/password checking enabled.
+1700702768:  ├── TLS-PSK checking enabled.
+1700702768:  └── Extended authentication not enabled.
+1700702820: mosquitto version 2.0.15 starting
+1700702820: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700702820: Loading plugin: /mosquitto/go-auth.so
+1700702820:  ├── Username/password checking enabled.
+1700702820:  ├── TLS-PSK checking enabled.
+1700702820:  └── Extended authentication not enabled.
+1700702880: mosquitto version 2.0.15 starting
+1700702880: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700702880: Loading plugin: /mosquitto/go-auth.so
+1700702880:  ├── Username/password checking enabled.
+1700702880:  ├── TLS-PSK checking enabled.
+1700702880:  └── Extended authentication not enabled.
+1700702941: mosquitto version 2.0.15 starting
+1700702941: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700702941: Loading plugin: /mosquitto/go-auth.so
+1700702941:  ├── Username/password checking enabled.
+1700702941:  ├── TLS-PSK checking enabled.
+1700702941:  └── Extended authentication not enabled.
+1700702963: mosquitto version 2.0.15 starting
+1700702963: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700702963: Loading plugin: /mosquitto/go-auth.so
+1700702963:  ├── Username/password checking enabled.
+1700702963:  ├── TLS-PSK checking enabled.
+1700702963:  └── Extended authentication not enabled.
+1700702963: Opening ipv4 listen socket on port 1883.
+1700702963: Opening ipv6 listen socket on port 1883.
+1700702963: Opening ipv4 listen socket on port 9001.
+1700702963: Opening ipv6 listen socket on port 9001.
+1700702963: mosquitto version 2.0.15 running
+1700702978: New connection from 172.28.0.1:36444 on port 1883.
+1700702978: Sending CONNACK to mqtt-explorer-aeed4dad (0, 5)
+1700702978: Client mqtt-explorer-aeed4dad disconnected, not authorised.
+1700702983: New connection from 172.28.0.1:56146 on port 1883.
+1700702983: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700703014: New connection from 172.28.0.1:53132 on port 1883.
+1700703014: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700703045: New connection from 172.28.0.1:48354 on port 1883.
+1700703045: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700703076: New connection from 172.28.0.1:39100 on port 1883.
+1700703076: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700703107: New connection from 172.28.0.1:51238 on port 1883.
+1700703107: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700703138: New connection from 172.28.0.1:36382 on port 1883.
+1700703138: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700703169: New connection from 172.28.0.1:46846 on port 1883.
+1700703169: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700703200: New connection from 172.28.0.1:58934 on port 1883.
+1700703200: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700703231: New connection from 172.28.0.1:44268 on port 1883.
+1700703231: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700703262: New connection from 172.28.0.1:49226 on port 1883.
+1700703262: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700703293: New connection from 172.28.0.1:50564 on port 1883.
+1700703293: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700703324: New connection from 172.28.0.1:43406 on port 1883.
+1700703324: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700703355: New connection from 172.28.0.1:59260 on port 1883.
+1700703355: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700703386: New connection from 172.28.0.1:36890 on port 1883.
+1700703386: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700703417: New connection from 172.28.0.1:34966 on port 1883.
+1700703417: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700703448: New connection from 172.28.0.1:56562 on port 1883.
+1700703448: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700703479: New connection from 172.28.0.1:51238 on port 1883.
+1700703479: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700703510: New connection from 172.28.0.1:36026 on port 1883.
+1700703510: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700703541: New connection from 172.28.0.1:33860 on port 1883.
+1700703541: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700703572: New connection from 172.28.0.1:56942 on port 1883.
+1700703572: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700703603: New connection from 172.28.0.1:37076 on port 1883.
+1700703603: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700703634: New connection from 172.28.0.1:38362 on port 1883.
+1700703634: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700703665: New connection from 172.28.0.1:53850 on port 1883.
+1700703665: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700703696: New connection from 172.28.0.1:45116 on port 1883.
+1700703696: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700703728: New connection from 172.28.0.1:55832 on port 1883.
+1700703728: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700703759: New connection from 172.28.0.1:49754 on port 1883.
+1700703759: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700703790: New connection from 172.28.0.1:37212 on port 1883.
+1700703790: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700703821: New connection from 172.28.0.1:34880 on port 1883.
+1700703821: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700703852: New connection from 172.28.0.1:60026 on port 1883.
+1700703852: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700703883: New connection from 172.28.0.1:51646 on port 1883.
+1700703883: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700703914: New connection from 172.28.0.1:43906 on port 1883.
+1700703914: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700703914: mosquitto version 2.0.15 terminating
+1700703914: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1700703914: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1700703914: Error: No such file or directory.
+1700703947: mosquitto version 2.0.15 starting
+1700703947: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700703947: Loading plugin: /mosquitto/go-auth.so
+1700703947:  ├── Username/password checking enabled.
+1700703947:  ├── TLS-PSK checking enabled.
+1700703947:  └── Extended authentication not enabled.
+1700703947: Opening ipv4 listen socket on port 1883.
+1700703947: Opening ipv6 listen socket on port 1883.
+1700703947: Opening ipv4 listen socket on port 9001.
+1700703947: Opening ipv6 listen socket on port 9001.
+1700703947: mosquitto version 2.0.15 running
+1700703948: New connection from 172.29.0.1:39710 on port 1883.
+1700703948: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700703978: New connection from 172.29.0.1:44922 on port 1883.
+1700703978: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700704008: New connection from 172.29.0.1:43900 on port 1883.
+1700704008: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700704038: New connection from 172.29.0.1:59064 on port 1883.
+1700704038: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700704068: New connection from 172.29.0.1:50486 on port 1883.
+1700704068: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700704098: New connection from 172.29.0.1:35734 on port 1883.
+1700704098: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700704128: New connection from 172.29.0.1:33312 on port 1883.
+1700704128: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700704158: New connection from 172.29.0.1:49152 on port 1883.
+1700704158: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700704188: New connection from 172.29.0.1:59108 on port 1883.
+1700704188: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700704218: New connection from 172.29.0.1:53002 on port 1883.
+1700704218: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700704248: New connection from 172.29.0.1:47666 on port 1883.
+1700704248: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700704278: New connection from 172.29.0.1:52334 on port 1883.
+1700704278: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700704308: New connection from 172.29.0.1:52254 on port 1883.
+1700704341: mosquitto version 2.0.15 starting
+1700704341: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700704341: Loading plugin: /mosquitto/go-auth.so
+1700704341:  ├── Username/password checking enabled.
+1700704341:  ├── TLS-PSK checking enabled.
+1700704341:  └── Extended authentication not enabled.
+1700704341: Opening ipv4 listen socket on port 1883.
+1700704341: Opening ipv6 listen socket on port 1883.
+1700704341: Opening ipv4 listen socket on port 9001.
+1700704341: Opening ipv6 listen socket on port 9001.
+1700704341: mosquitto version 2.0.15 running
+1700704341: New connection from 172.30.0.1:59304 on port 1883.
+1700704341: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700704371: New connection from 172.30.0.1:39310 on port 1883.
+1700704371: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700704401: New connection from 172.30.0.1:34434 on port 1883.
+1700704401: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700704431: New connection from 172.30.0.1:36324 on port 1883.
+1700704431: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700704431: mosquitto version 2.0.15 terminating
+1700704431: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1700704431: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1700704431: Error: No such file or directory.
+1700704487: mosquitto version 2.0.15 starting
+1700704487: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700704487: Loading plugin: /mosquitto/go-auth.so
+1700704487:  ├── Username/password checking enabled.
+1700704487:  ├── TLS-PSK checking enabled.
+1700704487:  └── Extended authentication not enabled.
+1700704487: Opening ipv4 listen socket on port 1883.
+1700704487: Opening ipv6 listen socket on port 1883.
+1700704487: Opening ipv4 listen socket on port 9001.
+1700704487: Opening ipv6 listen socket on port 9001.
+1700704487: mosquitto version 2.0.15 running
+1700704487: New connection from 172.31.0.1:55216 on port 1883.
+1700704487: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700704517: New connection from 172.31.0.1:59036 on port 1883.
+1700704517: Sending CONNACK to mqtt-explorer-aeed4dad (0, 5)
+1700704517: Client mqtt-explorer-aeed4dad disconnected, not authorised.
+1700704812: New connection from 172.31.0.1:48024 on port 1883.
+1700704812: Sending CONNACK to mqtt-explorer-aeed4dad (0, 5)
+1700704812: Client mqtt-explorer-aeed4dad disconnected, not authorised.
+1700704915: New connection from 172.31.0.1:48998 on port 1883.
+1700704915: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700704946: New connection from 172.31.0.1:36606 on port 1883.
+1700704946: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700704977: New connection from 172.31.0.1:47558 on port 1883.
+1700704977: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700705008: New connection from 172.31.0.1:38554 on port 1883.
+1700705008: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700705039: New connection from 172.31.0.1:43250 on port 1883.
+1700705039: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700705070: New connection from 172.31.0.1:43984 on port 1883.
+1700705070: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700705101: New connection from 172.31.0.1:55936 on port 1883.
+1700705101: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700705132: New connection from 172.31.0.1:40890 on port 1883.
+1700705132: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700705163: New connection from 172.31.0.1:40820 on port 1883.
+1700705163: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700705195: New connection from 172.31.0.1:58532 on port 1883.
+1700705195: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700705226: New connection from 172.31.0.1:44644 on port 1883.
+1700705226: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700705257: New connection from 172.31.0.1:33362 on port 1883.
+1700705257: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700705288: New connection from 172.31.0.1:36840 on port 1883.
+1700705288: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700705319: New connection from 172.31.0.1:51214 on port 1883.
+1700705319: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700705350: New connection from 172.31.0.1:59588 on port 1883.
+1700705350: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700705381: New connection from 172.31.0.1:57532 on port 1883.
+1700705381: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700705412: New connection from 172.31.0.1:36076 on port 1883.
+1700705412: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700705443: New connection from 172.31.0.1:53392 on port 1883.
+1700705443: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700705474: New connection from 172.31.0.1:39520 on port 1883.
+1700705474: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700705505: New connection from 172.31.0.1:57460 on port 1883.
+1700705505: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700705536: New connection from 172.31.0.1:45782 on port 1883.
+1700705536: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700705567: New connection from 172.31.0.1:54124 on port 1883.
+1700705567: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700705598: New connection from 172.31.0.1:34322 on port 1883.
+1700705598: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700705629: New connection from 172.31.0.1:36200 on port 1883.
+1700705629: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700705660: New connection from 172.31.0.1:47502 on port 1883.
+1700705660: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700705691: New connection from 172.31.0.1:51222 on port 1883.
+1700705691: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700705722: New connection from 172.31.0.1:59702 on port 1883.
+1700705722: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700705753: New connection from 172.31.0.1:42386 on port 1883.
+1700705753: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700705784: New connection from 172.31.0.1:35618 on port 1883.
+1700705784: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700705815: New connection from 172.31.0.1:54360 on port 1883.
+1700705815: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700705846: New connection from 172.31.0.1:51918 on port 1883.
+1700705846: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700705877: New connection from 172.31.0.1:49824 on port 1883.
+1700705877: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700705908: New connection from 172.31.0.1:50448 on port 1883.
+1700705908: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700705939: New connection from 172.31.0.1:45438 on port 1883.
+1700705963: mosquitto version 2.0.15 starting
+1700705963: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700705963: Loading plugin: /mosquitto/go-auth.so
+1700705963:  ├── Username/password checking enabled.
+1700705963:  ├── TLS-PSK checking enabled.
+1700705963:  └── Extended authentication not enabled.
+1700705963: Opening ipv4 listen socket on port 1883.
+1700705963: Opening ipv6 listen socket on port 1883.
+1700705963: Opening ipv4 listen socket on port 9001.
+1700705963: Opening ipv6 listen socket on port 9001.
+1700705963: mosquitto version 2.0.15 running
+1700705964: New connection from 192.168.0.1:41120 on port 1883.
+1700705964: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700705994: New connection from 192.168.0.1:50868 on port 1883.
+1700705994: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700706024: New connection from 192.168.0.1:42202 on port 1883.
+1700706024: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700706054: New connection from 192.168.0.1:49484 on port 1883.
+1700706054: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700706084: New connection from 192.168.0.1:34680 on port 1883.
+1700706084: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700706114: New connection from 192.168.0.1:57608 on port 1883.
+1700706114: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700706144: New connection from 192.168.0.1:59230 on port 1883.
+1700706144: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700706174: New connection from 192.168.0.1:58244 on port 1883.
+1700706174: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700706204: New connection from 192.168.0.1:59478 on port 1883.
+1700706204: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700706234: New connection from 192.168.0.1:45540 on port 1883.
+1700706234: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700706264: New connection from 192.168.0.1:53460 on port 1883.
+1700706264: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700706294: New connection from 192.168.0.1:50258 on port 1883.
+1700706294: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700706324: New connection from 192.168.0.1:59666 on port 1883.
+1700706324: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700706354: New connection from 192.168.0.1:44720 on port 1883.
+1700706354: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700706384: New connection from 192.168.0.1:59892 on port 1883.
+1700706384: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700706414: New connection from 192.168.0.1:35842 on port 1883.
+1700706414: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700706444: New connection from 192.168.0.1:49360 on port 1883.
+1700706444: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700706474: New connection from 192.168.0.1:46580 on port 1883.
+1700706474: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700706504: New connection from 192.168.0.1:35130 on port 1883.
+1700706504: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700706534: New connection from 192.168.0.1:35890 on port 1883.
+1700706534: Sending CONNACK to mqtt-explorer-aeed4dad (0, 5)
+1700706534: Client mqtt-explorer-aeed4dad disconnected, not authorised.
+1700706536: New connection from 192.168.0.1:35906 on port 1883.
+1700706536: Sending CONNACK to mqtt-explorer-aeed4dad (0, 5)
+1700706536: Client mqtt-explorer-aeed4dad disconnected, not authorised.
+1700706537: New connection from 192.168.0.1:35918 on port 1883.
+1700706537: Sending CONNACK to mqtt-explorer-aeed4dad (0, 5)
+1700706537: Client mqtt-explorer-aeed4dad disconnected, not authorised.
+1700706537: New connection from 192.168.0.1:35932 on port 1883.
+1700706537: Sending CONNACK to mqtt-explorer-aeed4dad (0, 5)
+1700706537: Client mqtt-explorer-aeed4dad disconnected, not authorised.
+1700706543: New connection from 192.168.0.1:48590 on port 1883.
+1700706543: Sending CONNACK to mqtt-explorer-aeed4dad (0, 5)
+1700706543: Client mqtt-explorer-aeed4dad disconnected, not authorised.
+1700706543: New connection from 192.168.0.1:48602 on port 1883.
+1700706543: Sending CONNACK to mqtt-explorer-aeed4dad (0, 5)
+1700706543: Client mqtt-explorer-aeed4dad disconnected, not authorised.
+1700706544: New connection from 192.168.0.1:48604 on port 1883.
+1700706544: Sending CONNACK to mqtt-explorer-aeed4dad (0, 5)
+1700706544: Client mqtt-explorer-aeed4dad disconnected, not authorised.
+1700706544: New connection from 192.168.0.1:48612 on port 1883.
+1700706544: Sending CONNACK to mqtt-explorer-aeed4dad (0, 5)
+1700706544: Client mqtt-explorer-aeed4dad disconnected, not authorised.
+1700706638: mosquitto version 2.0.15 terminating
+1700706638: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1700706638: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1700706638: Error: No such file or directory.
+1700706643: mosquitto version 2.0.15 starting
+1700706643: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700706643: Loading plugin: /mosquitto/go-auth.so
+1700706643:  ├── Username/password checking enabled.
+1700706643:  ├── TLS-PSK checking enabled.
+1700706643:  └── Extended authentication not enabled.
+1700706643: Opening ipv4 listen socket on port 1883.
+1700706643: Opening ipv6 listen socket on port 1883.
+1700706643: Opening ipv4 listen socket on port 9001.
+1700706643: Opening ipv6 listen socket on port 9001.
+1700706643: mosquitto version 2.0.15 running
+1700706662: New connection from 192.168.16.1:40026 on port 1883.
+1700706662: Sending CONNACK to mqtt-explorer-aeed4dad (0, 5)
+1700706662: Client mqtt-explorer-aeed4dad disconnected, not authorised.
+1700706666: New connection from 192.168.16.1:40038 on port 1883.
+1700706666: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700706697: New connection from 192.168.16.1:54444 on port 1883.
+1700706697: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700706728: New connection from 192.168.16.1:35518 on port 1883.
+1700706753: mosquitto version 2.0.15 starting
+1700706753: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700706753: Loading plugin: /mosquitto/go-auth.so
+1700706753:  ├── Username/password checking enabled.
+1700706753:  ├── TLS-PSK checking enabled.
+1700706753:  └── Extended authentication not enabled.
+1700706753: Opening ipv4 listen socket on port 1883.
+1700706753: Opening ipv6 listen socket on port 1883.
+1700706753: Opening ipv4 listen socket on port 9001.
+1700706753: Opening ipv6 listen socket on port 9001.
+1700706753: mosquitto version 2.0.15 running
+1700706753: New connection from 192.168.32.1:41362 on port 1883.
+1700706753: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700706783: New connection from 192.168.32.1:34156 on port 1883.
+1700706783: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700706813: New connection from 192.168.32.1:44594 on port 1883.
+1700706813: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700706813: mosquitto version 2.0.15 terminating
+1700706813: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1700706813: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1700706813: Error: No such file or directory.
+1700706868: mosquitto version 2.0.15 starting
+1700706868: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700706868: Loading plugin: /mosquitto/go-auth.so
+1700706868:  ├── Username/password checking enabled.
+1700706868:  ├── TLS-PSK checking enabled.
+1700706868:  └── Extended authentication not enabled.
+1700706868: Opening ipv4 listen socket on port 1883.
+1700706868: Opening ipv6 listen socket on port 1883.
+1700706868: Opening ipv4 listen socket on port 9001.
+1700706868: Opening ipv6 listen socket on port 9001.
+1700706868: mosquitto version 2.0.15 running
+1700706868: New connection from 192.168.48.1:43084 on port 1883.
+1700706868: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700706898: New connection from 192.168.48.1:34210 on port 1883.
+1700706898: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700706929: New connection from 192.168.48.1:48392 on port 1883.
+1700706929: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700706960: New connection from 192.168.48.1:34136 on port 1883.
+1700706960: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700706991: New connection from 192.168.48.1:58604 on port 1883.
+1700706991: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700707022: New connection from 192.168.48.1:39298 on port 1883.
+1700707022: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700707053: New connection from 192.168.48.1:40318 on port 1883.
+1700707087: mosquitto version 2.0.15 starting
+1700707087: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700707087: Loading plugin: /mosquitto/go-auth.so
+1700707087:  ├── Username/password checking enabled.
+1700707087:  ├── TLS-PSK checking enabled.
+1700707087:  └── Extended authentication not enabled.
+1700707087: Opening ipv4 listen socket on port 1883.
+1700707087: Opening ipv6 listen socket on port 1883.
+1700707087: Opening ipv4 listen socket on port 9001.
+1700707087: Opening ipv6 listen socket on port 9001.
+1700707087: mosquitto version 2.0.15 running
+1700707087: New connection from 192.168.80.1:44064 on port 1883.
+1700707087: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700707117: New connection from 192.168.80.1:59344 on port 1883.
+1700707117: New connection from 192.168.80.1:57054 on port 1883.
+1700707117: New connection from 192.168.80.1:57064 on port 1883.
+1700707117: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700707117: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700707117: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700707207: New connection from 192.168.80.1:40726 on port 1883.
+1700707207: New connection from 192.168.80.1:40740 on port 1883.
+1700707207: New connection from 192.168.80.1:40750 on port 1883.
+1700707207: Sending CONNACK to mqtt-explorer-aeed4dad (0, 5)
+1700707207: Client mqtt-explorer-aeed4dad disconnected, not authorised.
+1700707207: Sending CONNACK to mqtt-explorer-aeed4dad (0, 5)
+1700707207: Client mqtt-explorer-aeed4dad disconnected, not authorised.
+1700707207: Sending CONNACK to mqtt-explorer-aeed4dad (0, 5)
+1700707207: Client mqtt-explorer-aeed4dad disconnected, not authorised.
+1700707296: mosquitto version 2.0.15 terminating
+1700707296: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1700707296: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1700707296: Error: No such file or directory.
+1700707300: mosquitto version 2.0.15 starting
+1700707300: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700707300: Loading plugin: /mosquitto/go-auth.so
+1700707300:  ├── Username/password checking enabled.
+1700707300:  ├── TLS-PSK checking enabled.
+1700707300:  └── Extended authentication not enabled.
+1700707301: mosquitto version 2.0.15 starting
+1700707301: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700707301: Loading plugin: /mosquitto/go-auth.so
+1700707301:  ├── Username/password checking enabled.
+1700707301:  ├── TLS-PSK checking enabled.
+1700707301:  └── Extended authentication not enabled.
+1700707302: mosquitto version 2.0.15 starting
+1700707302: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700707302: Loading plugin: /mosquitto/go-auth.so
+1700707302:  ├── Username/password checking enabled.
+1700707302:  ├── TLS-PSK checking enabled.
+1700707302:  └── Extended authentication not enabled.
+1700707303: mosquitto version 2.0.15 starting
+1700707303: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700707303: Loading plugin: /mosquitto/go-auth.so
+1700707303:  ├── Username/password checking enabled.
+1700707303:  ├── TLS-PSK checking enabled.
+1700707303:  └── Extended authentication not enabled.
+1700707304: mosquitto version 2.0.15 starting
+1700707304: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700707304: Loading plugin: /mosquitto/go-auth.so
+1700707304:  ├── Username/password checking enabled.
+1700707304:  ├── TLS-PSK checking enabled.
+1700707304:  └── Extended authentication not enabled.
+1700707306: mosquitto version 2.0.15 starting
+1700707306: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700707306: Loading plugin: /mosquitto/go-auth.so
+1700707306:  ├── Username/password checking enabled.
+1700707306:  ├── TLS-PSK checking enabled.
+1700707306:  └── Extended authentication not enabled.
+1700707310: mosquitto version 2.0.15 starting
+1700707310: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700707310: Loading plugin: /mosquitto/go-auth.so
+1700707310:  ├── Username/password checking enabled.
+1700707310:  ├── TLS-PSK checking enabled.
+1700707310:  └── Extended authentication not enabled.
+1700707317: mosquitto version 2.0.15 starting
+1700707317: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700707317: Loading plugin: /mosquitto/go-auth.so
+1700707317:  ├── Username/password checking enabled.
+1700707317:  ├── TLS-PSK checking enabled.
+1700707317:  └── Extended authentication not enabled.
+1700707330: mosquitto version 2.0.15 starting
+1700707330: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700707330: Loading plugin: /mosquitto/go-auth.so
+1700707330:  ├── Username/password checking enabled.
+1700707330:  ├── TLS-PSK checking enabled.
+1700707330:  └── Extended authentication not enabled.
+1700707356: mosquitto version 2.0.15 starting
+1700707356: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700707356: Loading plugin: /mosquitto/go-auth.so
+1700707356:  ├── Username/password checking enabled.
+1700707356:  ├── TLS-PSK checking enabled.
+1700707356:  └── Extended authentication not enabled.
+1700707449: mosquitto version 2.0.15 starting
+1700707449: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700707449: Loading plugin: /mosquitto/go-auth.so
+1700707449:  ├── Username/password checking enabled.
+1700707449:  ├── TLS-PSK checking enabled.
+1700707449:  └── Extended authentication not enabled.
+1700707450: mosquitto version 2.0.15 starting
+1700707450: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700707450: Loading plugin: /mosquitto/go-auth.so
+1700707450:  ├── Username/password checking enabled.
+1700707450:  ├── TLS-PSK checking enabled.
+1700707450:  └── Extended authentication not enabled.
+1700707451: mosquitto version 2.0.15 starting
+1700707451: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700707451: Loading plugin: /mosquitto/go-auth.so
+1700707451:  ├── Username/password checking enabled.
+1700707451:  ├── TLS-PSK checking enabled.
+1700707451:  └── Extended authentication not enabled.
+1700707452: mosquitto version 2.0.15 starting
+1700707452: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700707452: Loading plugin: /mosquitto/go-auth.so
+1700707452:  ├── Username/password checking enabled.
+1700707452:  ├── TLS-PSK checking enabled.
+1700707452:  └── Extended authentication not enabled.
+1700707453: mosquitto version 2.0.15 starting
+1700707453: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700707453: Loading plugin: /mosquitto/go-auth.so
+1700707453:  ├── Username/password checking enabled.
+1700707453:  ├── TLS-PSK checking enabled.
+1700707453:  └── Extended authentication not enabled.
+1700707455: mosquitto version 2.0.15 starting
+1700707455: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700707455: Loading plugin: /mosquitto/go-auth.so
+1700707455:  ├── Username/password checking enabled.
+1700707455:  ├── TLS-PSK checking enabled.
+1700707455:  └── Extended authentication not enabled.
+1700707459: mosquitto version 2.0.15 starting
+1700707459: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700707459: Loading plugin: /mosquitto/go-auth.so
+1700707459:  ├── Username/password checking enabled.
+1700707459:  ├── TLS-PSK checking enabled.
+1700707459:  └── Extended authentication not enabled.
+1700707465: mosquitto version 2.0.15 starting
+1700707465: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700707465: Loading plugin: /mosquitto/go-auth.so
+1700707465:  ├── Username/password checking enabled.
+1700707465:  ├── TLS-PSK checking enabled.
+1700707465:  └── Extended authentication not enabled.
+1700707479: mosquitto version 2.0.15 starting
+1700707479: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700707479: Loading plugin: /mosquitto/go-auth.so
+1700707479:  ├── Username/password checking enabled.
+1700707479:  ├── TLS-PSK checking enabled.
+1700707479:  └── Extended authentication not enabled.
+1700707505: mosquitto version 2.0.15 starting
+1700707505: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700707505: Loading plugin: /mosquitto/go-auth.so
+1700707505:  ├── Username/password checking enabled.
+1700707505:  ├── TLS-PSK checking enabled.
+1700707505:  └── Extended authentication not enabled.
+1700707556: mosquitto version 2.0.15 starting
+1700707556: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700707556: Loading plugin: /mosquitto/go-auth.so
+1700707556:  ├── Username/password checking enabled.
+1700707556:  ├── TLS-PSK checking enabled.
+1700707556:  └── Extended authentication not enabled.
+1700707574: mosquitto version 2.0.15 starting
+1700707574: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700707574: Loading plugin: /mosquitto/go-auth.so
+1700707574:  ├── Username/password checking enabled.
+1700707574:  ├── TLS-PSK checking enabled.
+1700707574:  └── Extended authentication not enabled.
+1700707575: mosquitto version 2.0.15 starting
+1700707575: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700707575: Loading plugin: /mosquitto/go-auth.so
+1700707575:  ├── Username/password checking enabled.
+1700707575:  ├── TLS-PSK checking enabled.
+1700707575:  └── Extended authentication not enabled.
+1700707576: mosquitto version 2.0.15 starting
+1700707576: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700707576: Loading plugin: /mosquitto/go-auth.so
+1700707576:  ├── Username/password checking enabled.
+1700707576:  ├── TLS-PSK checking enabled.
+1700707576:  └── Extended authentication not enabled.
+1700707577: mosquitto version 2.0.15 starting
+1700707577: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700707577: Loading plugin: /mosquitto/go-auth.so
+1700707577:  ├── Username/password checking enabled.
+1700707577:  ├── TLS-PSK checking enabled.
+1700707577:  └── Extended authentication not enabled.
+1700707578: mosquitto version 2.0.15 starting
+1700707578: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700707578: Loading plugin: /mosquitto/go-auth.so
+1700707578:  ├── Username/password checking enabled.
+1700707578:  ├── TLS-PSK checking enabled.
+1700707578:  └── Extended authentication not enabled.
+1700707580: mosquitto version 2.0.15 starting
+1700707580: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700707580: Loading plugin: /mosquitto/go-auth.so
+1700707580:  ├── Username/password checking enabled.
+1700707580:  ├── TLS-PSK checking enabled.
+1700707580:  └── Extended authentication not enabled.
+1700707584: mosquitto version 2.0.15 starting
+1700707584: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700707584: Loading plugin: /mosquitto/go-auth.so
+1700707584:  ├── Username/password checking enabled.
+1700707584:  ├── TLS-PSK checking enabled.
+1700707584:  └── Extended authentication not enabled.
+1700707591: mosquitto version 2.0.15 starting
+1700707591: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700707591: Loading plugin: /mosquitto/go-auth.so
+1700707591:  ├── Username/password checking enabled.
+1700707591:  ├── TLS-PSK checking enabled.
+1700707591:  └── Extended authentication not enabled.
+1700707604: mosquitto version 2.0.15 starting
+1700707604: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700707604: Loading plugin: /mosquitto/go-auth.so
+1700707604:  ├── Username/password checking enabled.
+1700707604:  ├── TLS-PSK checking enabled.
+1700707604:  └── Extended authentication not enabled.
+1700707604: Opening ipv4 listen socket on port 1883.
+1700707604: Opening ipv6 listen socket on port 1883.
+1700707604: Opening ipv4 listen socket on port 9001.
+1700707604: Opening ipv6 listen socket on port 9001.
+1700707604: mosquitto version 2.0.15 running
+1700707619: mosquitto version 2.0.15 terminating
+1700707619: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1700707619: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1700707619: Error: No such file or directory.
+1700707625: mosquitto version 2.0.15 starting
+1700707625: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700707625: Loading plugin: /mosquitto/go-auth.so
+1700707625:  ├── Username/password checking enabled.
+1700707625:  ├── TLS-PSK checking enabled.
+1700707625:  └── Extended authentication not enabled.
+1700707625: Opening ipv4 listen socket on port 1883.
+1700707625: Opening ipv6 listen socket on port 1883.
+1700707625: Opening ipv4 listen socket on port 9001.
+1700707625: Opening ipv6 listen socket on port 9001.
+1700707625: mosquitto version 2.0.15 running
+1700707633: New connection from 192.168.144.1:41640 on port 1883.
+1700707633: Sending CONNACK to mqtt-explorer-aeed4dad (0, 5)
+1700707633: Client mqtt-explorer-aeed4dad disconnected, not authorised.
+1700707637: New connection from 192.168.144.1:41644 on port 1883.
+1700707637: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700707667: New connection from 192.168.144.1:32956 on port 1883.
+1700707667: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700707697: New connection from 192.168.144.1:39112 on port 1883.
+1700707697: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700707727: New connection from 192.168.144.1:55054 on port 1883.
+1700707727: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700707757: New connection from 192.168.144.1:59470 on port 1883.
+1700707757: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700707787: New connection from 192.168.144.1:49830 on port 1883.
+1700707787: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700707817: New connection from 192.168.144.1:50896 on port 1883.
+1700707817: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700707847: New connection from 192.168.144.1:37796 on port 1883.
+1700707847: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700707877: New connection from 192.168.144.1:48640 on port 1883.
+1700707877: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700707907: New connection from 192.168.144.1:50878 on port 1883.
+1700707907: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700707937: New connection from 192.168.144.1:47884 on port 1883.
+1700707937: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700707967: New connection from 192.168.144.1:38684 on port 1883.
+1700707967: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700707998: New connection from 192.168.144.1:55916 on port 1883.
+1700707998: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700708029: New connection from 192.168.144.1:57422 on port 1883.
+1700708029: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700708060: New connection from 192.168.144.1:50648 on port 1883.
+1700708180: mosquitto version 2.0.15 starting
+1700708180: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700708180: Loading plugin: /mosquitto/go-auth.so
+1700708180:  ├── Username/password checking enabled.
+1700708180:  ├── TLS-PSK checking enabled.
+1700708180:  └── Extended authentication not enabled.
+1700708180: Opening ipv4 listen socket on port 1883.
+1700708180: Opening ipv6 listen socket on port 1883.
+1700708180: Opening ipv4 listen socket on port 9001.
+1700708180: Opening ipv6 listen socket on port 9001.
+1700708180: mosquitto version 2.0.15 running
+1700708181: New connection from 192.168.176.1:51968 on port 1883.
+1700708181: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700708211: New connection from 192.168.176.1:41010 on port 1883.
+1700708211: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700708241: New connection from 192.168.176.1:48174 on port 1883.
+1700708241: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700708271: New connection from 192.168.176.1:60974 on port 1883.
+1700708271: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700708301: New connection from 192.168.176.1:52776 on port 1883.
+1700708301: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700708331: New connection from 192.168.176.1:59266 on port 1883.
+1700708331: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700708361: New connection from 192.168.176.1:52676 on port 1883.
+1700708361: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700708391: New connection from 192.168.176.1:33598 on port 1883.
+1700708464: mosquitto version 2.0.15 starting
+1700708464: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700708464: Loading plugin: /mosquitto/go-auth.so
+1700708464:  ├── Username/password checking enabled.
+1700708464:  ├── TLS-PSK checking enabled.
+1700708464:  └── Extended authentication not enabled.
+1700708464: Opening ipv4 listen socket on port 1883.
+1700708464: Opening ipv6 listen socket on port 1883.
+1700708464: Opening ipv4 listen socket on port 9001.
+1700708464: Opening ipv6 listen socket on port 9001.
+1700708464: mosquitto version 2.0.15 running
+1700708465: New connection from 192.168.192.1:45020 on port 1883.
+1700708465: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700708495: New connection from 192.168.192.1:50252 on port 1883.
+1700708495: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700708525: New connection from 192.168.192.1:60354 on port 1883.
+1700708525: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700708556: New connection from 192.168.192.1:45256 on port 1883.
+1700708556: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700708587: New connection from 192.168.192.1:41930 on port 1883.
+1700708587: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700708618: New connection from 192.168.192.1:33718 on port 1883.
+1700708618: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700708649: New connection from 192.168.192.1:44226 on port 1883.
+1700708649: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700708680: New connection from 192.168.192.1:35744 on port 1883.
+1700708680: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700708711: New connection from 192.168.192.1:47592 on port 1883.
+1700708711: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700708742: New connection from 192.168.192.1:55440 on port 1883.
+1700708742: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700708773: New connection from 192.168.192.1:52490 on port 1883.
+1700708773: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700708804: New connection from 192.168.192.1:51676 on port 1883.
+1700708804: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700708835: New connection from 192.168.192.1:50770 on port 1883.
+1700708835: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700708866: New connection from 192.168.192.1:52522 on port 1883.
+1700708866: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700708897: New connection from 192.168.192.1:47128 on port 1883.
+1700708897: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700708928: New connection from 192.168.192.1:53608 on port 1883.
+1700708928: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700708959: New connection from 192.168.192.1:54460 on port 1883.
+1700708959: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700708990: New connection from 192.168.192.1:32820 on port 1883.
+1700708990: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700709021: New connection from 192.168.192.1:44440 on port 1883.
+1700709021: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700709052: New connection from 192.168.192.1:35688 on port 1883.
+1700709052: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700709083: New connection from 192.168.192.1:54328 on port 1883.
+1700709083: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700709114: New connection from 192.168.192.1:60200 on port 1883.
+1700709114: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700709146: New connection from 192.168.192.1:56880 on port 1883.
+1700709146: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700709177: New connection from 192.168.192.1:34672 on port 1883.
+1700709177: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700710265: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1700710265: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1700710265: Error: No such file or directory.
+1700712066: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1700712066: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1700712066: Error: No such file or directory.
+1700712307: mosquitto version 2.0.15 terminating
+1700712307: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1700712307: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1700712307: Error: No such file or directory.
+1700712340: mosquitto version 2.0.15 starting
+1700712340: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700712340: Loading plugin: /mosquitto/go-auth.so
+1700712340:  ├── Username/password checking enabled.
+1700712340:  ├── TLS-PSK checking enabled.
+1700712340:  └── Extended authentication not enabled.
+1700712340: Opening ipv4 listen socket on port 1883.
+1700712340: Opening ipv6 listen socket on port 1883.
+1700712340: Opening ipv4 listen socket on port 9001.
+1700712340: Opening ipv6 listen socket on port 9001.
+1700712340: mosquitto version 2.0.15 running
+1700712368: New connection from 192.168.208.1:54972 on port 1883.
+1700712368: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700712398: New connection from 192.168.208.1:48056 on port 1883.
+1700712398: Sending CONNACK to mqtt-explorer-aeed4dad (0, 5)
+1700712398: Client mqtt-explorer-aeed4dad disconnected, not authorised.
+1700712462: mosquitto version 2.0.15 terminating
+1700712462: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1700712462: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1700712462: Error: No such file or directory.
+1700712469: mosquitto version 2.0.15 starting
+1700712469: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700712469: Loading plugin: /mosquitto/go-auth.so
+1700712469:  ├── Username/password checking enabled.
+1700712469:  ├── TLS-PSK checking enabled.
+1700712469:  └── Extended authentication not enabled.
+1700712470: mosquitto version 2.0.15 starting
+1700712470: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700712470: Loading plugin: /mosquitto/go-auth.so
+1700712470:  ├── Username/password checking enabled.
+1700712470:  ├── TLS-PSK checking enabled.
+1700712470:  └── Extended authentication not enabled.
+1700712471: mosquitto version 2.0.15 starting
+1700712471: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700712471: Loading plugin: /mosquitto/go-auth.so
+1700712471:  ├── Username/password checking enabled.
+1700712471:  ├── TLS-PSK checking enabled.
+1700712471:  └── Extended authentication not enabled.
+1700712472: mosquitto version 2.0.15 starting
+1700712472: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700712472: Loading plugin: /mosquitto/go-auth.so
+1700712472:  ├── Username/password checking enabled.
+1700712472:  ├── TLS-PSK checking enabled.
+1700712472:  └── Extended authentication not enabled.
+1700712473: mosquitto version 2.0.15 starting
+1700712473: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700712473: Loading plugin: /mosquitto/go-auth.so
+1700712473:  ├── Username/password checking enabled.
+1700712473:  ├── TLS-PSK checking enabled.
+1700712473:  └── Extended authentication not enabled.
+1700712475: mosquitto version 2.0.15 starting
+1700712475: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700712475: Loading plugin: /mosquitto/go-auth.so
+1700712475:  ├── Username/password checking enabled.
+1700712475:  ├── TLS-PSK checking enabled.
+1700712475:  └── Extended authentication not enabled.
+1700712479: mosquitto version 2.0.15 starting
+1700712479: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700712479: Loading plugin: /mosquitto/go-auth.so
+1700712479:  ├── Username/password checking enabled.
+1700712479:  ├── TLS-PSK checking enabled.
+1700712479:  └── Extended authentication not enabled.
+1700712486: mosquitto version 2.0.15 starting
+1700712486: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700712486: Loading plugin: /mosquitto/go-auth.so
+1700712486:  ├── Username/password checking enabled.
+1700712486:  ├── TLS-PSK checking enabled.
+1700712486:  └── Extended authentication not enabled.
+1700712499: mosquitto version 2.0.15 starting
+1700712499: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700712499: Loading plugin: /mosquitto/go-auth.so
+1700712499:  ├── Username/password checking enabled.
+1700712499:  ├── TLS-PSK checking enabled.
+1700712499:  └── Extended authentication not enabled.
+1700712525: mosquitto version 2.0.15 starting
+1700712525: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700712525: Loading plugin: /mosquitto/go-auth.so
+1700712525:  ├── Username/password checking enabled.
+1700712525:  ├── TLS-PSK checking enabled.
+1700712525:  └── Extended authentication not enabled.
+1700712577: mosquitto version 2.0.15 starting
+1700712577: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700712577: Loading plugin: /mosquitto/go-auth.so
+1700712577:  ├── Username/password checking enabled.
+1700712577:  ├── TLS-PSK checking enabled.
+1700712577:  └── Extended authentication not enabled.
+1700712608: mosquitto version 2.0.15 starting
+1700712608: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700712608: Loading plugin: /mosquitto/go-auth.so
+1700712608:  ├── Username/password checking enabled.
+1700712608:  ├── TLS-PSK checking enabled.
+1700712608:  └── Extended authentication not enabled.
+1700712608: Opening ipv4 listen socket on port 1883.
+1700712608: Opening ipv6 listen socket on port 1883.
+1700712608: Opening ipv4 listen socket on port 9001.
+1700712608: Opening ipv6 listen socket on port 9001.
+1700712608: mosquitto version 2.0.15 running
+1700712616: New connection from 192.168.240.1:42136 on port 1883.
+1700712616: Sending CONNACK to mqtt-explorer-aeed4dad (0, 5)
+1700712616: Client mqtt-explorer-aeed4dad disconnected, not authorised.
+1700712617: New connection from 192.168.240.1:42152 on port 1883.
+1700712617: Sending CONNACK to mqtt-explorer-aeed4dad (0, 5)
+1700712617: Client mqtt-explorer-aeed4dad disconnected, not authorised.
+1700712623: New connection from 192.168.240.1:58610 on port 1883.
+1700712623: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700712654: New connection from 192.168.240.1:52374 on port 1883.
+1700712654: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700712863: New connection from 192.168.240.1:41804 on port 1883.
+1700712863: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700712894: New connection from 192.168.240.1:39346 on port 1883.
+1700712894: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700712894: mosquitto version 2.0.15 terminating
+1700712894: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1700712894: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1700712894: Error: No such file or directory.
+1700712930: mosquitto version 2.0.15 starting
+1700712930: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700712930: Loading plugin: /mosquitto/go-auth.so
+1700712930:  ├── Username/password checking enabled.
+1700712930:  ├── TLS-PSK checking enabled.
+1700712930:  └── Extended authentication not enabled.
+1700712930: Opening ipv4 listen socket on port 1883.
+1700712930: Opening ipv6 listen socket on port 1883.
+1700712930: Opening ipv4 listen socket on port 9001.
+1700712930: Opening ipv6 listen socket on port 9001.
+1700712930: mosquitto version 2.0.15 running
+1700712930: New connection from 172.18.0.1:35978 on port 1883.
+1700712930: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700712960: New connection from 172.18.0.1:34384 on port 1883.
+1700712960: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700712999: mosquitto version 2.0.15 terminating
+1700712999: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1700712999: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1700712999: Error: No such file or directory.
+1700713003: mosquitto version 2.0.15 starting
+1700713003: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700713003: Loading plugin: /mosquitto/go-auth.so
+1700713003:  ├── Username/password checking enabled.
+1700713003:  ├── TLS-PSK checking enabled.
+1700713003:  └── Extended authentication not enabled.
+1700713003: Opening ipv4 listen socket on port 1883.
+1700713003: Opening ipv6 listen socket on port 1883.
+1700713003: Opening ipv4 listen socket on port 9001.
+1700713003: Opening ipv6 listen socket on port 9001.
+1700713003: mosquitto version 2.0.15 running
+1700713012: New connection from 172.19.0.1:50190 on port 1883.
+1700713012: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700713043: New connection from 172.19.0.1:59680 on port 1883.
+1700713043: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700713156: mosquitto version 2.0.15 terminating
+1700713156: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1700713156: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1700713156: Error: No such file or directory.
+1700713161: mosquitto version 2.0.15 starting
+1700713161: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1700713161: Loading plugin: /mosquitto/go-auth.so
+1700713161:  ├── Username/password checking enabled.
+1700713161:  ├── TLS-PSK checking enabled.
+1700713161:  └── Extended authentication not enabled.
+1700713161: Opening ipv4 listen socket on port 1883.
+1700713161: Opening ipv6 listen socket on port 1883.
+1700713161: Opening ipv4 listen socket on port 9001.
+1700713161: Opening ipv6 listen socket on port 9001.
+1700713161: mosquitto version 2.0.15 running
+1700713171: New connection from 172.20.0.1:51952 on port 1883.
+1700713171: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700713202: New connection from 172.20.0.1:43278 on port 1883.
+1700713202: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700713421: New connection from 172.20.0.1:57364 on port 1883.
+1700713421: Bad socket read/write on client mqtt-explorer-aeed4dad: Unknown error.
+1700714962: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1700714962: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1700714962: Error: No such file or directory.

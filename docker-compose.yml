@@ -19,7 +19,7 @@ services:
   
 
   mosquitto:
-    image: iegomez/mosquitto-go-auth:2.1.0-mosquitto_1.6.14
+    image: iegomez/mosquitto-go-auth:2.1.0-mosquitto_2.0.15
     restart: always
     command: /usr/sbin/mosquitto -c /etc/mosquitto/config/mosquitto.conf -v
     ports:
@@ -27,10 +27,13 @@ services:
       - 9001:9001
     volumes:
       - ./mosquitto/config:/etc/mosquitto/config:rw
+      - ./mosquitto/conf.d:/etc/mosquitto/conf.d:rw
       - ./mosquitto/data:/etc/mosquitto/data:rw
       - ./mosquitto/log:/etc/mosquitto/log:rw
     networks:
       - mosquitto_ntw
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
 
 
 networks:
