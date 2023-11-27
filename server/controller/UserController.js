@@ -21,12 +21,17 @@ const UserController = {
         return res.status(400).json({ message: "User data is required" });
       }
   
-      const { name, lastName, email, password, type } = req.body;
+      const { username, name, lastName, email, password, type } = req.body;
   
       // Verificar si el correo electrónico ya está en uso de manera asincrónica
       const existingUser = await userSchema.findOne({ email: email });
       if (existingUser) {
         return res.status(400).json({ error: "Email already in use" });
+      }
+
+      const existingUsername = await userSchema.findOne({ username: username });
+      if (existingUsername) {
+        return res.status(400).json({ error: "Username already in use" });
       }
   
       const saltRounds = 10;//MODIFICAR MAS ADELANTE
@@ -36,6 +41,7 @@ const UserController = {
       const hash = await bcrypt.hash(password, salt);
   
       const newUser = new userSchema({
+        username: username,
         name: name,
         lastName: lastName,
         email: email,

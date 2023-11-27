@@ -1,6 +1,6 @@
 const {Router} = require('express');
 const router = Router();
-const mqttHandler = require('../controller/mqttHandler');
+const mqttHandler = require('../controller/MqttController');
 const User = require('../models/user.Model');
 const bcrypt = require('bcryptjs');
 
@@ -71,12 +71,7 @@ router.get('/connect',authorization.requireAPIKeyOfType('advancedUser'), async (
 
 router.post('/sendMessage/:message', async(req,res) => {
     try {
-        /*const newSensorData = new sensorData({
-            channelID:req.params.channelID,
-            deviceID:req.params.deviceID,
-            value: req.params.value,
-            createdOn: Date.now()
-        });*/
+
         
         mqttHandler.sendMessage(req.params.message);
         await newSensorData.save();

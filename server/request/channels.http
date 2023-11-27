@@ -21,17 +21,17 @@ Authorization: 1jq7lc8yyhhrtg1kwu80s2hto7i4pj
 ###
 POST http://localhost:8081/api/channels HTTP/1.1
 Content-Type: application/json
-Authorization: 1jq7lc8yyhhrtg1kwu80s2hto7i4pj
+Authorization: 5e9kuozbeogpp99z6zdxozrny4m3jx
 
 {
-    "name": "channel 2",
-    "description": "Es un canal de prueba",
-    "project":"proyecto 2021",
+    "name": "channel broker",
+    "description": "Es un canal de prueba para el broker",
+    "project":"proyecto 2024",
     "ubication":{
         "latitude": 1.0,
         "longitude": 1.0
     },
-    "owner":"6553189d968addf9f6ac1732"
+    "owner":"655e917d013227739e1b46bd"
 }
 
 //update channel
