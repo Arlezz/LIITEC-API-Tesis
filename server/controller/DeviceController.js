@@ -1,11 +1,12 @@
 const deviceSchema = require("../models/device.Model");
 const channelSchema = require("../models/channel.Model");
+const userSchema = require("../models/user.Model");
 const ObjectId = require("mongoose").Types.ObjectId;
 const { v4: uuidv4 } = require("uuid");
 
 
 const DeviceController = {
-
+    
     createDevice : async (req, res) => {
         try {
 
@@ -36,6 +37,20 @@ const DeviceController = {
                 deviceId: identifier,
                 channelId: channel.channelId,
             });
+
+            const user = await userSchema.findOne({ _id: id1 });
+
+            if (!user) {
+                return res.status(404).json({ error: "User not found" });
+            }
+            
+            user.acls.push({
+                topic: "/devices/" + identifier,
+                acc: 2,
+            });
+
+            await user.save();
+            
 
             await newDevice.save();
             res.json({ message: "Device created successfully" });

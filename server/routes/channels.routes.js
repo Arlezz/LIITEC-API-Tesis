@@ -6,21 +6,21 @@ const ChannelController = require("../controller/ChannelController");
 const authorization = require("../auth/apiAuth");
 
 //Get all channels
-router.get("/channels",authorization.requireAPIKeyOfType("superUser"),ChannelController.getChannels);
+router.get("/channels",authorization.requireAPIKeyOfType(process.env.USER_LEVEL_2),ChannelController.getChannels);
 
 //Get a channel by id
-router.get("/channels/:id",authorization.requireAPIKeyOfType("advancedUser"), ChannelController.getChannelById);
+router.get("/channels/:id",authorization.requireAPIKeyOfType(process.env.USER_LEVEL_1), ChannelController.getChannelById);
 
 //Get my channels
-router.get("/users/:userId/channels", authorization.requireAPIKeyOfType("advancedUser"), ChannelController.getMyChannels);
+router.get("/users/:userId/channels", authorization.requireAPIKeyOfType(process.env.USER_LEVEL_1), ChannelController.getMyChannels);
 
 //Create a channel
-router.post("/channels",authorization.requireAPIKeyOfType("advancedUser"), ChannelController.createChannel);
+router.post("/channels",authorization.requireAPIKeyOfType(process.env.USER_LEVEL_1), ChannelController.createChannel);
 
 //Update a channel
-router.put("/channels/:id",authorization.requireAPIKeyOfType("advancedUser"), ChannelController.updateChannel);
+router.put("/channels/:id",authorization.requireAPIKeyOfType(process.env.USER_LEVEL_1), ChannelController.updateChannel);
 
 //Delete a channel
-router.delete("/channels/:id",authorization.requireAPIKeyOfType("advancedUser"), ChannelController.deleteChannel);
+router.delete("/channels/:id",authorization.requireAPIKeyOfType(process.env.USER_LEVEL_1), ChannelController.deleteChannel);
 
 module.exports = router;

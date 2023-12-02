@@ -5,7 +5,7 @@ const channelRoutes = require('./routes/channels.routes');
 const userRoutes = require('./routes/user.routes');
 const deviceRoutes = require('./routes/device.routes');
 
-const brokerRoutes = require('./routes/brokerMQTT');
+const dataRoutes = require('./routes/data.routes');
 
 
 //settings
@@ -21,7 +21,7 @@ app.use(express.urlencoded({ extended: true }));
 //routes
 app.use('/api',userRoutes);
 app.use('/api',channelRoutes);
-app.use('/api',brokerRoutes);
+app.use('/api',dataRoutes);
 app.use('/api',deviceRoutes);
 
 

@@ -9,14 +9,16 @@ const dataSchema = new Schema(
       ref: "device",
       required: true,
     },
-    measuresIndex: {
-      type: Number,
+
+    measurement: {
+      type: String,
       required: true,
     },
     data: {
       type: Number,
       required: true,
     },
+
     createdOn: {
       type: Date,
       default: Date.now,
@@ -26,7 +28,7 @@ const dataSchema = new Schema(
   {
     timeseries: {
       timeField: "createdOn",
-      metaField: "value",
+      metaField: "data",
       granularity: "seconds",
     },
   }

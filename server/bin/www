@@ -4,7 +4,7 @@ var app = require('../app');
 var http = require('http');
 var dotenv = require('dotenv');
 var mongoose = require('mongoose');
-var mqttHandler = require('../controller/MqttController');
+var mqttHandler = require('../controller/BrokerController');
 
 dotenv.config({path: '.env'});
 
@@ -27,9 +27,9 @@ const mqttClient = new mqttHandler(
 // Suscribirse a todos los tópicos usando el carácter comodín #
 mqttClient.subscribe('#', (err) => {
     if (!err) {
-      console.log('Suscripción exitosa a todos los tópicos');
+      console.log("Subscribed to all topics")
     } else {
-      console.error(`Error al suscribirse a todos los tópicos: ${err}`);
+      console.error("Error subscribing to topics: ", err);
     }
 });
 

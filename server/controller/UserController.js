@@ -5,9 +5,9 @@ const ObjectId = require("mongoose").Types.ObjectId;
 
 
 const UserController = {
-  getAllUsers: async (req, res) => {
+  getUsers: async (req, res) => {
     try {
-      const result = await userSchema.find({});
+      const result = await userSchema.find({}, { password: 0, __v: 0, "acls._id" : 0 });
       res.json(result);
     } catch (error) {
       console.error(error);
@@ -70,7 +70,7 @@ const UserController = {
     try {
       const { id } = req.params;
 
-      const user = await userSchema.findById(id);
+      const user = await userSchema.findById(id, { password: 0, __v: 0, "acls._id" : 0 });
 
       if (!user) {
         return res.status(404).json({ error: "User not found" });
