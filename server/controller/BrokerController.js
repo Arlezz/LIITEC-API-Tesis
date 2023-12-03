@@ -40,9 +40,17 @@ function mqttHandler(host, email, password) {
 
 
   mqttClient.on("message", (topic, message) => {
-    console.log(`Message arrived on topic ${topic}`);
 
     const payload = JSON.parse(message.toString());
+    
+    //validate topic format "/devices/{deviceId}"
+    if (!topic.startsWith("/devices/") || topic.split("/").length !== 3) {
+      console.error("Invalid topic format");
+      return;
+    }
+    console.log(`Message arrived on topic ${topic}`);
+
+
     const deviceId = topic.split("/")[2];
 
     if (!dataBatches[deviceId]) {
