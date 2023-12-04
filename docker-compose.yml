@@ -34,23 +34,6 @@ services:
       - mosquitto_ntw
     extra_hosts:
       - "host.docker.internal:host-gateway"
-  
-  azure-vote-back:
-    image: mcr.microsoft.com/oss/bitnami/redis:6.0.8
-    container_name: azure-vote-back
-    environment:
-      ALLOW_EMPTY_PASSWORD: "yes"
-    ports:
-        - "6379:6379"
-
-  azure-vote-front:
-    build: ./azure-vote
-    image: myregistry.azurecr.io/azure-vote-front
-    container_name: azure-vote-front
-    environment:
-      REDIS: azure-vote-back
-    ports:
-        - "80:80"
 
 
 networks:
