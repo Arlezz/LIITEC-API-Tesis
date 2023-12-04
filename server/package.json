@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon -L ./bin/www"
+    "dev": "nodemon -L ./bin/www",
+    "start": "node ./bin/www"
   },
   "author": "Antony R",
   "license": "ISC",
