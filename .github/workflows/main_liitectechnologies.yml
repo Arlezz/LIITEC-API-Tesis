@@ -20,7 +20,8 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '20.x'
-
+      - name: Cambiar al directorio del servidor
+        run: cd server
       - name: npm install, build, and test
         run: |
           npm install
