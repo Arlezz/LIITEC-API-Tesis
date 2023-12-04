@@ -1,24 +1,30 @@
 //get all datas
 ###
-GET http://localhost:8081/api/data HTTP/1.1
+GET http://localhost:8081/api/data?page=1&page_size=5 HTTP/1.1
 Content-Type: application/json
 Authorization: r1uh2ra3jc1wnd4e5vds8xaa2gze6f
 
 
 //Get data from a device
 ###
-GET http://localhost:8081/api/data/dv-089f98d5-25f4-4150-ab4e-18be2f098da2?order=asc&start=2023-12-03T00:26:29.989Z&end=2023-12-03T00:32 HTTP/1.1
+GET http://localhost:8081/api/data/dv-089f98d5-25f4-4150-ab4e-18be2f098da2?order=asc&start=2023-12-03T00:26:29.989Z&end=2023-12-03T00:32&page=2&page_size=9 HTTP/1.1
 Content-Type: application/json
 Authorization: r1uh2ra3jc1wnd4e5vds8xaa2gze6f
 
 //Get specific variable datas from a device 
 ###
-GET http://localhost:8081/api/data/dv-58c67a2a-d412-430c-9eb8-20545963fd87/?variable=tierra&order=desc HTTP/1.1
+GET http://localhost:8081/api/data/dv-58c67a2a-d412-430c-9eb8-20545963fd87?variable=hielo HTTP/1.1
 Content-Type: application/json
 Authorization: d6aptbtpbfj4r7b3efboywzrff0k8o
 
 //Get specific variable datas from a device with a aggregation operation
 ###
 GET http://localhost:8081/api/data/dv-089f98d5-25f4-4150-ab4e-18be2f098da2/agregate?operation=sum&start=2023-12-03T00:26:29.989Z&end=2023-12-03T00:30&variable=tierra HTTP/1.1
+Content-Type: application/json
+Authorization: r1uh2ra3jc1wnd4e5vds8xaa2gze6f
+
+//Get last data from a device
+###
+GET http://localhost:8081/api/data/dv-089f98d5-25f4-4150-ab4e-18be2f098da2/last/?variable=tierra&variable=hielo&variable=humedad HTTP/1.1
 Content-Type: application/json
 Authorization: r1uh2ra3jc1wnd4e5vds8xaa2gze6f

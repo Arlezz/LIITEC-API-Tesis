@@ -5,11 +5,41 @@ const ObjectId = require("mongoose").Types.ObjectId;
 const ChannelController = {
 
   getChannels: async (req, res) => {
+    //get all channels with pagination
     try {
-      const data = await channelSchema.find({});
-      res.json(data);
+      const { page = 1, page_size = 10 } = req.query;
+
+      const totalChannels = await channelSchema.countDocuments();
+
+      const totalPages = Math.ceil(totalChannels / page_size);
+
+      const projection = { _id: 0, __v: 0 };
+
+      const channels = await channelSchema
+        .find({}, projection)
+        .limit(Number(page_size))
+        .skip((Number(page) - 1) * Number(page_size));
+
+      if (!channels || channels.length === 0) {
+        return res.status(404).json({ error: "Channels not found" });
+      }
+
+      const response = {
+        count: totalChannels,
+        totalPages: totalPages,
+        next:
+          page < totalPages
+            ? `/api/channels?page=${page + 1}&page_size=${page_size}`
+            : null,
+        previous:
+          page > 1 ? `/api/channels?page=${page - 1}&page_size=${page_size}` : null,
+        results: channels,
+      };
+
+      res.json(response);
     } catch (error) {
-      res.status(500).json({ error: error.message || "No Channels Found" });
+      console.error(error);
+      res.status(500).json({ error: "Error getting channels" });
     }
   },
 
@@ -18,7 +48,9 @@ const ChannelController = {
 
       const { id } = req.params;
 
-      const channel = await channelSchema.findOne({ channelId: id });
+      const proyection = { _id: 0, __v: 0 };
+
+      const channel = await channelSchema.findOne({ channelId: id }, proyection);
 
       if (!channel) {
         return res.status(404).json({ error: "Channel not found" });
@@ -37,31 +69,43 @@ const ChannelController = {
     }
   },
 
-  getMyChannels: async (req, res) => {
+  getMyChannels : async (req, res) => {
     try {
       const { userId } = req.params;
-
-      var id1 = new ObjectId(req.user._id);//ARREGLAR, LOS REQ.USER NO NECESITAN SER OBJETOS
-      var id2 = new ObjectId(userId);
-
-
+      const page = parseInt(req.query.page) || 1;
+      const page_size = parseInt(req.query.page_size) || 10; // Ahora se usa page_size en lugar de limit
+  
+      const id1 = req.user._id;
+      const id2 = userId;
+  
       if (!id1.equals(id2)) {
         return res.status(403).json({ error: "Access Forbidden" });
       }
+  
+      const totalChannels = await channelSchema.countDocuments({ owner: id2 });
+  
+      const total_pages = Math.ceil(totalChannels / page_size);
+  
+      const skip = (page - 1) * page_size;
 
-      const channels = await channelSchema.find({ owner: id2 });
-
+      const projection = { _id: 0, __v: 0 };
+  
+      const channels = await channelSchema.find({ owner: id2 },projection).skip(skip).limit(page_size);
+  
       if (!channels || channels.length === 0) {
-        // Si no se encuentran canales para el propietario específico
-        res.status(404).json({
+        return res.status(404).json({
           error: "No channels found for this user",
         });
-      } else {
-        // Devolver la respuesta exitosa con los canales encontrados
-        res.status(200).json(channels);
       }
+  
+      res.status(200).json({
+        count: channels.length,
+        total_pages: total_pages,
+        next: page < total_pages ? `/api/users/${userId}/channels?page=${page + 1}&page_size=${page_size}` : null,
+        previous: page > 1 ? `/api/users/${userId}/channels?page=${page - 1}&page_size=${page_size}` : null,
+        results: channels,
+      });
     } catch (error) {
-      // Manejo de errores
       console.error(error);
       res.status(500).json({ error: "Error Getting Channels" });
     }

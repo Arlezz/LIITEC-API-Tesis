@@ -1,9 +1,17 @@
 
+//Obtener todos los canales
+###
+GET http://localhost:8081/api/devices?page=1&page_size=4 HTTP/1.1
+Content-Type: application/json
+Authorization: r1uh2ra3jc1wnd4e5vds8xaa2gze6f
+
+
+
 //Crear un dispositivo en un canal
 ###
-POST http://localhost:8081/api/channels/ch-c15ba2e9-77e4-41fa-b1e1-4de6c20ab6e5/devices HTTP/1.1
+POST http://localhost:8081/api/channels/ch-32e48add-c489-425e-bd48-fd7ffbd7d8f7/devices HTTP/1.1
 Content-Type: application/json
-Authorization: d6aptbtpbfj4r7b3efboywzrff0k8o
+Authorization: r1uh2ra3jc1wnd4e5vds8xaa2gze6f
 
 {
     "model":"GYML8511",
@@ -18,7 +26,7 @@ Authorization: d6aptbtpbfj4r7b3efboywzrff0k8o
 
 //Obtener todos los dispositivos de un canal
 ###
-GET http://localhost:8081/api/channels/ch-578f87bc-ca44-4986-8a09-3e6fed838c8e/devices HTTP/1.1
+GET http://localhost:8081/api/channels/ch-32e48add-c489-425e-bd48-fd7ffbd7d8f7/devices?page=1&page_size=1 HTTP/1.1
 Content-Type: application/json
 Authorization: r1uh2ra3jc1wnd4e5vds8xaa2gze6f
 

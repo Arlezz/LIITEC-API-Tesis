@@ -6,6 +6,45 @@ const { v4: uuidv4 } = require("uuid");
 
 
 const DeviceController = {
+
+    getDevices : async (req, res) => {
+        try {
+            const page = parseInt(req.query.page) || 1;
+            const page_size = parseInt(req.query.page_size) || 10; // Puedes ajustar el límite según tus necesidades
+
+            // Obtener el total de dispositivos
+            const totalDevices = await deviceSchema.countDocuments({});
+
+            // Calcular el número total de páginas
+            const totalPages = Math.ceil(totalDevices / page_size);
+
+            // Calcular el índice de inicio para la paginación
+            const startIndex = (page - 1) * page_size;
+
+            const projection = { _id: 0, __v: 0 };
+
+            // Obtener los dispositivos paginados
+            const devices = await deviceSchema.find({},projection).skip(startIndex).limit(page_size);
+
+            if (!devices || devices.length === 0) {
+                return res.status(404).json({ error: "Devices not found" });
+            }
+
+            // Construir la respuesta de paginación
+            const response = {
+                count: totalDevices,
+                totalPages: totalPages,
+                next: page < totalPages ? `/api/devices?page=${page + 1}&page_size=${page_size}` : null,
+                previous: page > 1 ? `/api/devices?page=${page - 1}&page_size=${page_size}` : null,
+                results: devices,
+            };
+
+            res.json(response);
+        } catch (error) {
+            console.error(error);
+            res.status(500).json({ error: "Error getting devices" });
+        }
+    },
     
     createDevice : async (req, res) => {
         try {
@@ -62,34 +101,54 @@ const DeviceController = {
 
     getMyDevices : async (req, res) => {
         try {
-
-            const { channelId } = req.params;
-
-            const channel = await channelSchema.findOne({ channelId: channelId });
-
-            if (!channel) {
-                return res.status(404).json({ error: "Channel not found" });
-            }
-
-            var id1 = req.user._id;
-            var id2 = new ObjectId(channel.owner);
-
-            if (!id1.equals(id2)) {
-                return res.status(403).json({ error: "Access Forbidden" });
-            }
-
-            const devices = await deviceSchema.find({ channelId: channelId });
-            
-            if (!devices) {
-                return res.status(404).json({ error: "Devices not found" });
-            }
-
-            res.json(devices);
+          const { channelId } = req.params;
+          const page = parseInt(req.query.page) || 1;
+          const page_size = parseInt(req.query.page_size) || 10; // Puedes ajustar el límite según tus necesidades
+      
+          const channel = await channelSchema.findOne({ channelId });
+      
+          if (!channel) {
+            return res.status(404).json({ error: "Channel not found" });
+          }
+      
+          const id1 = req.user._id;
+          const id2 = new ObjectId(channel.owner);
+      
+          if (!id1.equals(id2)) {
+            return res.status(403).json({ error: "Access Forbidden" });
+          }
+      
+          // Obtener el total de dispositivos
+          const totalDevices = await deviceSchema.countDocuments({ channelId });
+      
+          // Calcular el número total de páginas
+          const totalPages = Math.ceil(totalDevices / page_size);
+      
+          // Calcular el índice de inicio para la paginación
+          const startIndex = (page - 1) * page_size;
+      
+          // Obtener los dispositivos paginados
+          const devices = await deviceSchema.find({ channelId }).skip(startIndex).limit(page_size);
+      
+          if (!devices || devices.length === 0) {
+            return res.status(404).json({ error: "Devices not found" });
+          }
+      
+          // Construir la respuesta de paginación
+          const response = {
+            count: totalDevices,
+            totalPages: totalPages,
+            next: page < totalPages ? `/api/devices/${channelId}?page=${page + 1}&page_size=${page_size}` : null,
+            previous: page > 1 ? `/api/devices/${channelId}?page=${page - 1}&page_size=${page_size}` : null,
+            results: devices,
+          };
+      
+          res.json(response);
         } catch (error) {
-            console.error(error);
-            res.status(500).json({ error: "Error getting devices" });
+          console.error(error);
+          res.status(500).json({ error: "Error getting devices" });
         }
-    },
+      },
 
     getDeviceById : async (req, res) => {  
         try {
@@ -161,6 +220,8 @@ const DeviceController = {
             res.status(500).json({ error: "Error deleting device" });
         }
     },
+
+    
 }
 
 module.exports = DeviceController;
