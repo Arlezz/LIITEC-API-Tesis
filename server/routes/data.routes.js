@@ -3,7 +3,7 @@ const router = Router();
 const DataController = require('../controller/DataController');
 
 //User levels authorization
-const { USER_LEVEL_0, USER_LEVEL_1, USER_LEVEL_2 } = process.env;
+const { USER_LEVEL_2 } = process.env;
 
 //Middleware
 const authorization = require('../auth/apiAuth');
@@ -19,10 +19,6 @@ router.get("/data/:deviceId/agregate", authorization.requireAPIKeyOfType(USER_LE
 
 //Get last data from a device
 router.get("/data/:deviceId/last", authorization.requireAPIKeyOfType(USER_LEVEL_2),DataController.getLastDataFromDevice);
-
-
-
-
 
 
 
