@@ -1,7 +1,7 @@
 const mqtt = require("mqtt");
 const dataSchema = require("../models/data.Model");
 
-const batchInsertSize = 15; // Número de lecturas que se agruparán antes de insertar en la base de datos
+const batchInsertSize = 15; 
 let dataBatches = {};
 
 function mqttHandler(host, email, password) {
@@ -11,18 +11,20 @@ function mqttHandler(host, email, password) {
     username: email,
     password: password,
   };
-
+  
   const mqttClient = mqtt.connect(options);
 
+  //Modulo de conexion a Mosquitto
   mqttClient.on("connect", () => {
     console.log("Connected to Mosquitto");
   });
 
+  //Modulo de errores de conexion a Mosquitto
   mqttClient.on("error", (error) => {
     console.error("Mosquitto connection error:", error);
   });
 
-
+  //Modulo de cierre de conexion a Mosquitto
   mqttClient.on("close", () => {
     console.log("Mosquitto closed connection");
     Object.keys(dataBatches).forEach((deviceId) => {
@@ -32,24 +34,18 @@ function mqttHandler(host, email, password) {
         console.log(`Processing pending data for device ${deviceId}`);
         insertDataBatch(dataBatches[deviceId]);
         dataBatches[deviceId] = [];
-
       }
-      
     });
   });
 
-
   mqttClient.on("message", (topic, message) => {
-
     const payload = JSON.parse(message.toString());
     
-    //validate topic format "/devices/{deviceId}"
     if (!topic.startsWith("/devices/") || topic.split("/").length !== 3) {
       console.error("Invalid topic format");
       return;
     }
     console.log(`Message arrived on topic ${topic}`);
-
 
     const deviceId = topic.split("/")[2];
 
@@ -57,7 +53,6 @@ function mqttHandler(host, email, password) {
       dataBatches[deviceId] = [];
     }
 
-    // Crear una entrada para cada tipo de dato en el mensaje
     Object.entries(payload).forEach(([measurement, data]) => {
       const entry = {
         deviceId: deviceId,
@@ -66,16 +61,11 @@ function mqttHandler(host, email, password) {
         createdOn: Date.now(),
       };
 
-      // Agregar la entrada al lote del usuario actual
       dataBatches[deviceId].push(entry);
     });
 
-    // Verificar si el lote alcanzó el tamaño deseado
     if (dataBatches[deviceId].length >= batchInsertSize) {
-      // Insertar el lote del usuario actual en la base de datos
       insertDataBatch(dataBatches[deviceId]);
-
-      // Reiniciar el lote del usuario actual
       dataBatches[deviceId] = [];
     }
   });

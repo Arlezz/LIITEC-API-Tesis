@@ -8,7 +8,7 @@ const { USER_LEVEL_1, USER_LEVEL_2 } = process.env;
 //Middleware
 const authorization = require("../auth/apiAuth");
 
-//Routes
+//Get all devices
 router.get("/devices", authorization.requireAPIKeyOfType(USER_LEVEL_2), DeviceController.getDevices);
 
 //Create Device 

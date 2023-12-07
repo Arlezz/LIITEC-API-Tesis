@@ -1,0 +1,267 @@
+1701714283: mosquitto version 2.0.15 starting
+1701714283: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1701714283: Loading plugin: /mosquitto/go-auth.so
+1701714283:  ├── Username/password checking enabled.
+1701714283:  ├── TLS-PSK checking enabled.
+1701714283:  └── Extended authentication not enabled.
+1701714283: Opening ipv4 listen socket on port 1883.
+1701714283: Opening ipv6 listen socket on port 1883.
+1701714283: Opening ipv4 listen socket on port 9001.
+1701714283: Opening ipv6 listen socket on port 9001.
+1701714283: mosquitto version 2.0.15 running
+1701714308: New connection from 172.19.0.3:45342 on port 1883.
+1701714308: New client connected from 172.19.0.3:45342 as mqttjs_65f31530 (p2, c1, k60, u'liitec').
+1701714308: No will message specified.
+1701714308: Sending CONNACK to mqttjs_65f31530 (0, 0)
+1701714309: Received SUBSCRIBE from mqttjs_65f31530
+1701714309: 	# (QoS 0)
+1701714309: mqttjs_65f31530 0 #
+1701714309: Sending SUBACK to mqttjs_65f31530
+1701714369: Received PINGREQ from mqttjs_65f31530
+1701714369: Sending PINGRESP to mqttjs_65f31530
+1701714429: Received PINGREQ from mqttjs_65f31530
+1701714429: Sending PINGRESP to mqttjs_65f31530
+1701714489: Received PINGREQ from mqttjs_65f31530
+1701714489: Sending PINGRESP to mqttjs_65f31530
+1701714549: Received PINGREQ from mqttjs_65f31530
+1701714549: Sending PINGRESP to mqttjs_65f31530
+1701714609: Received PINGREQ from mqttjs_65f31530
+1701716518: mosquitto version 2.0.15 starting
+1701716518: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1701716518: Loading plugin: /mosquitto/go-auth.so
+1701716518:  ├── Username/password checking enabled.
+1701716518:  ├── TLS-PSK checking enabled.
+1701716518:  └── Extended authentication not enabled.
+1701716518: Opening ipv4 listen socket on port 1883.
+1701716518: Opening ipv6 listen socket on port 1883.
+1701716518: Opening ipv4 listen socket on port 9001.
+1701716518: Opening ipv6 listen socket on port 9001.
+1701716518: mosquitto version 2.0.15 running
+1701716537: New connection from 172.19.0.2:52698 on port 1883.
+1701716537: New client connected from 172.19.0.2:52698 as mqttjs_a584bb81 (p2, c1, k60, u'liitec').
+1701716537: No will message specified.
+1701716537: Sending CONNACK to mqttjs_a584bb81 (0, 0)
+1701716538: Received SUBSCRIBE from mqttjs_a584bb81
+1701716538: 	# (QoS 0)
+1701716538: mqttjs_a584bb81 0 #
+1701716538: Sending SUBACK to mqttjs_a584bb81
+1701716598: Received PINGREQ from mqttjs_a584bb81
+1701716598: Sending PINGRESP to mqttjs_a584bb81
+1701716658: Received PINGREQ from mqttjs_a584bb81
+1701716658: Sending PINGRESP to mqttjs_a584bb81
+1701716718: Received PINGREQ from mqttjs_a584bb81
+1701716718: Sending PINGRESP to mqttjs_a584bb81
+1701716778: Received PINGREQ from mqttjs_a584bb81
+1701716983: mosquitto version 2.0.15 starting
+1701716983: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1701716983: Loading plugin: /mosquitto/go-auth.so
+1701716983:  ├── Username/password checking enabled.
+1701716983:  ├── TLS-PSK checking enabled.
+1701716983:  └── Extended authentication not enabled.
+1701716983: Opening ipv4 listen socket on port 1883.
+1701716983: Opening ipv6 listen socket on port 1883.
+1701716983: Opening ipv4 listen socket on port 9001.
+1701716983: Opening ipv6 listen socket on port 9001.
+1701716983: mosquitto version 2.0.15 running
+1701717002: mosquitto version 2.0.15 terminating
+1701717002: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1701717002: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1701717002: Error: No such file or directory.
+1701717013: mosquitto version 2.0.15 starting
+1701717013: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1701717013: Loading plugin: /mosquitto/go-auth.so
+1701717013:  ├── Username/password checking enabled.
+1701717013:  ├── TLS-PSK checking enabled.
+1701717013:  └── Extended authentication not enabled.
+1701717013: Opening ipv4 listen socket on port 1883.
+1701717013: Opening ipv6 listen socket on port 1883.
+1701717013: Opening ipv4 listen socket on port 9001.
+1701717013: Opening ipv6 listen socket on port 9001.
+1701717013: mosquitto version 2.0.15 running
+1701717032: New connection from 172.18.0.3:41076 on port 1883.
+1701717032: New client connected from 172.18.0.3:41076 as mqttjs_9f19164b (p2, c1, k60, u'liitec').
+1701717032: No will message specified.
+1701717032: Sending CONNACK to mqttjs_9f19164b (0, 0)
+1701717033: Received SUBSCRIBE from mqttjs_9f19164b
+1701717033: 	# (QoS 0)
+1701717033: mqttjs_9f19164b 0 #
+1701717033: Sending SUBACK to mqttjs_9f19164b
+1701717089: Client mqttjs_9f19164b closed its connection.
+1701717089: mosquitto version 2.0.15 terminating
+1701717089: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1701717089: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1701717089: Error: No such file or directory.
+1701823850: mosquitto version 2.0.15 starting
+1701823850: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1701823850: Loading plugin: /mosquitto/go-auth.so
+1701823850:  ├── Username/password checking enabled.
+1701823850:  ├── TLS-PSK checking enabled.
+1701823850:  └── Extended authentication not enabled.
+1701823850: Opening ipv4 listen socket on port 1883.
+1701823850: Opening ipv6 listen socket on port 1883.
+1701823850: Opening ipv4 listen socket on port 9001.
+1701823850: Opening ipv6 listen socket on port 9001.
+1701823850: mosquitto version 2.0.15 running
+1701823882: New connection from 172.18.0.3:57616 on port 1883.
+1701823882: New client connected from 172.18.0.3:57616 as mqttjs_5dd47582 (p2, c1, k60, u'liitec').
+1701823882: No will message specified.
+1701823882: Sending CONNACK to mqttjs_5dd47582 (0, 0)
+1701823883: Received SUBSCRIBE from mqttjs_5dd47582
+1701823883: 	# (QoS 0)
+1701823883: mqttjs_5dd47582 0 #
+1701823883: Sending SUBACK to mqttjs_5dd47582
+1701823943: Received PINGREQ from mqttjs_5dd47582
+1701824269: mosquitto version 2.0.15 starting
+1701824269: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1701824269: Loading plugin: /mosquitto/go-auth.so
+1701824269:  ├── Username/password checking enabled.
+1701824269:  ├── TLS-PSK checking enabled.
+1701824269:  └── Extended authentication not enabled.
+1701824269: Opening ipv4 listen socket on port 1883.
+1701824269: Opening ipv6 listen socket on port 1883.
+1701824269: Opening ipv4 listen socket on port 9001.
+1701824269: Opening ipv6 listen socket on port 9001.
+1701824269: mosquitto version 2.0.15 running
+1701824290: New connection from 172.18.0.2:34930 on port 1883.
+1701824290: New client connected from 172.18.0.2:34930 as mqttjs_b8e233aa (p2, c1, k60, u'liitec').
+1701824290: No will message specified.
+1701824290: Sending CONNACK to mqttjs_b8e233aa (0, 0)
+1701824290: Received SUBSCRIBE from mqttjs_b8e233aa
+1701824290: 	# (QoS 0)
+1701824290: mqttjs_b8e233aa 0 #
+1701824290: Sending SUBACK to mqttjs_b8e233aa
+1701824350: Received PINGREQ from mqttjs_b8e233aa
+1701824350: Sending PINGRESP to mqttjs_b8e233aa
+1701824390: mosquitto version 2.0.15 terminating
+1701824390: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1701824390: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1701824390: Error: No such file or directory.
+1701824447: mosquitto version 2.0.15 starting
+1701824447: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1701824447: Loading plugin: /mosquitto/go-auth.so
+1701824447:  ├── Username/password checking enabled.
+1701824447:  ├── TLS-PSK checking enabled.
+1701824447:  └── Extended authentication not enabled.
+1701824447: Opening ipv4 listen socket on port 1883.
+1701824447: Opening ipv6 listen socket on port 1883.
+1701824447: Opening ipv4 listen socket on port 9001.
+1701824447: Opening ipv6 listen socket on port 9001.
+1701824447: mosquitto version 2.0.15 running
+1701824492: New connection from 172.18.0.3:43806 on port 1883.
+1701824492: New client connected from 172.18.0.3:43806 as mqttjs_4313391e (p2, c1, k60, u'liitec').
+1701824492: No will message specified.
+1701824492: Sending CONNACK to mqttjs_4313391e (0, 0)
+1701824493: Received SUBSCRIBE from mqttjs_4313391e
+1701824493: 	# (QoS 0)
+1701824493: mqttjs_4313391e 0 #
+1701824493: Sending SUBACK to mqttjs_4313391e
+1701824553: Received PINGREQ from mqttjs_4313391e
+1701824553: Sending PINGRESP to mqttjs_4313391e
+1701824559: Client mqttjs_4313391e closed its connection.
+1701824559: mosquitto version 2.0.15 terminating
+1701824559: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1701824559: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1701824559: Error: No such file or directory.
+1701824566: mosquitto version 2.0.15 starting
+1701824566: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1701824566: Loading plugin: /mosquitto/go-auth.so
+1701824566:  ├── Username/password checking enabled.
+1701824566:  ├── TLS-PSK checking enabled.
+1701824566:  └── Extended authentication not enabled.
+1701824566: Opening ipv4 listen socket on port 1883.
+1701824566: Opening ipv6 listen socket on port 1883.
+1701824566: Opening ipv4 listen socket on port 9001.
+1701824566: Opening ipv6 listen socket on port 9001.
+1701824566: mosquitto version 2.0.15 running
+1701824590: New connection from 172.18.0.3:33446 on port 1883.
+1701824590: New client connected from 172.18.0.3:33446 as mqttjs_54943d2f (p2, c1, k60, u'liitec').
+1701824590: No will message specified.
+1701824590: Sending CONNACK to mqttjs_54943d2f (0, 0)
+1701824590: Received SUBSCRIBE from mqttjs_54943d2f
+1701824590: 	# (QoS 0)
+1701824590: mqttjs_54943d2f 0 #
+1701824590: Sending SUBACK to mqttjs_54943d2f
+1701824650: Received PINGREQ from mqttjs_54943d2f
+1701824650: Sending PINGRESP to mqttjs_54943d2f
+1701824710: Received PINGREQ from mqttjs_54943d2f
+1701824710: Sending PINGRESP to mqttjs_54943d2f
+1701824770: Received PINGREQ from mqttjs_54943d2f
+1701824770: Sending PINGRESP to mqttjs_54943d2f
+1701824830: Received PINGREQ from mqttjs_54943d2f
+1701824830: Sending PINGRESP to mqttjs_54943d2f
+1701824890: Received PINGREQ from mqttjs_54943d2f
+1701824890: Sending PINGRESP to mqttjs_54943d2f
+1701824950: Received PINGREQ from mqttjs_54943d2f
+1701824950: Sending PINGRESP to mqttjs_54943d2f
+1701825010: Received PINGREQ from mqttjs_54943d2f
+1701825010: Sending PINGRESP to mqttjs_54943d2f
+1701825070: Received PINGREQ from mqttjs_54943d2f
+1701825070: Sending PINGRESP to mqttjs_54943d2f
+1701825130: Received PINGREQ from mqttjs_54943d2f
+1701825130: Sending PINGRESP to mqttjs_54943d2f
+1701825190: Received PINGREQ from mqttjs_54943d2f
+1701825190: Sending PINGRESP to mqttjs_54943d2f
+1701825250: Received PINGREQ from mqttjs_54943d2f
+1701825250: Sending PINGRESP to mqttjs_54943d2f
+1701825310: Received PINGREQ from mqttjs_54943d2f
+1701825310: Sending PINGRESP to mqttjs_54943d2f
+1701825370: Received PINGREQ from mqttjs_54943d2f
+1701825370: Sending PINGRESP to mqttjs_54943d2f
+1701825430: Received PINGREQ from mqttjs_54943d2f
+1701825430: Sending PINGRESP to mqttjs_54943d2f
+1701825490: Received PINGREQ from mqttjs_54943d2f
+1701825490: Sending PINGRESP to mqttjs_54943d2f
+1701825550: Received PINGREQ from mqttjs_54943d2f
+1701825550: Sending PINGRESP to mqttjs_54943d2f
+1701825610: Received PINGREQ from mqttjs_54943d2f
+1701825610: Sending PINGRESP to mqttjs_54943d2f
+1701825670: Received PINGREQ from mqttjs_54943d2f
+1701825670: Sending PINGRESP to mqttjs_54943d2f
+1701825730: Received PINGREQ from mqttjs_54943d2f
+1701825730: Sending PINGRESP to mqttjs_54943d2f
+1701825790: Received PINGREQ from mqttjs_54943d2f
+1701825790: Sending PINGRESP to mqttjs_54943d2f
+1701825850: Received PINGREQ from mqttjs_54943d2f
+1701825850: Sending PINGRESP to mqttjs_54943d2f
+1701825910: Received PINGREQ from mqttjs_54943d2f
+1701825910: Sending PINGRESP to mqttjs_54943d2f
+1701825970: Received PINGREQ from mqttjs_54943d2f
+1701825970: Sending PINGRESP to mqttjs_54943d2f
+1701826030: Received PINGREQ from mqttjs_54943d2f
+1701826030: Sending PINGRESP to mqttjs_54943d2f
+1701826090: Received PINGREQ from mqttjs_54943d2f
+1701826090: Sending PINGRESP to mqttjs_54943d2f
+1701826150: Received PINGREQ from mqttjs_54943d2f
+1701826150: Sending PINGRESP to mqttjs_54943d2f
+1701826210: Received PINGREQ from mqttjs_54943d2f
+1701826210: Sending PINGRESP to mqttjs_54943d2f
+1701826270: Received PINGREQ from mqttjs_54943d2f
+1701826270: Sending PINGRESP to mqttjs_54943d2f
+1701826330: Received PINGREQ from mqttjs_54943d2f
+1701826330: Sending PINGRESP to mqttjs_54943d2f
+1701826367: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1701826367: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1701826367: Error: No such file or directory.
+1701826390: Received PINGREQ from mqttjs_54943d2f
+1701826390: Sending PINGRESP to mqttjs_54943d2f
+1701826450: Received PINGREQ from mqttjs_54943d2f
+1701826450: Sending PINGRESP to mqttjs_54943d2f
+1701826510: Received PINGREQ from mqttjs_54943d2f
+1701826510: Sending PINGRESP to mqttjs_54943d2f
+1701826570: Received PINGREQ from mqttjs_54943d2f
+1701826570: Sending PINGRESP to mqttjs_54943d2f
+1701826630: Received PINGREQ from mqttjs_54943d2f
+1701826630: Sending PINGRESP to mqttjs_54943d2f
+1701826690: Received PINGREQ from mqttjs_54943d2f
+1701826690: Sending PINGRESP to mqttjs_54943d2f
+1701826750: Received PINGREQ from mqttjs_54943d2f
+1701826750: Sending PINGRESP to mqttjs_54943d2f
+1701826810: Received PINGREQ from mqttjs_54943d2f
+1701826810: Sending PINGRESP to mqttjs_54943d2f
+1701826870: Received PINGREQ from mqttjs_54943d2f
+1701826870: Sending PINGRESP to mqttjs_54943d2f
+1701826879: Client mqttjs_54943d2f closed its connection.
+1701826879: mosquitto version 2.0.15 terminating
+1701826879: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1701826879: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1701826879: Error: No such file or directory.
