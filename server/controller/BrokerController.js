@@ -73,13 +73,11 @@ function mqttHandler(host, email, password) {
         value: value,
         timestamp: new Date(timestamp*1000),//cambiar en un futuro
         createdOn: Date.now()
-        //createdOn: new Date(new Date().toLocaleString('sv-SE',_options).replace(/(\d{4})-(\d{2})-(\d{2})\s+(\d{2}):(\d{2}):(\d{2}),(\d+)\s+/,'$1-$2-$3T$4:$5:$6.$7').replace('GMT−', '-' ).replace('GMT+','+'))
       };
     
       dataBatches[deviceId].push(entry);
     });
 
-    console.log("DATA BATCHES: ",dataBatches[deviceId])
 
     if (dataBatches[deviceId].length >= batchInsertSize) {
       insertDataBatch(dataBatches[deviceId]);
