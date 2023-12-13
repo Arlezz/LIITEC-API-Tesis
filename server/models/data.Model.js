@@ -14,11 +14,14 @@ const dataSchema = new Schema(
       type: String,
       required: true,
     },
-    data: {
+    value: {
       type: Number,
       required: true,
     },
-
+    timestamp: {
+      type: Date,
+      required: true,
+    },
     createdOn: {
       type: Date,
       default: Date.now,
@@ -27,8 +30,8 @@ const dataSchema = new Schema(
   },
   {
     timeseries: {
-      timeField: "createdOn",
-      metaField: "data",
+      timeField: "timestamp",
+      metaField: "value",
       granularity: "seconds",
     },
   }

@@ -75,6 +75,7 @@ const DeviceController = {
                 unity: unity,
                 deviceId: identifier,
                 channelId: channel.channelId,
+                createdOn: Date.now(),
             });
 
             const user = await userSchema.findOne({ _id: id1 });

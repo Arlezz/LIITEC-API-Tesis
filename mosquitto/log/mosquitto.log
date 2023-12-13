@@ -265,3 +265,1128 @@
 1701826879: Saving in-memory database to /mosquitto/data//mosquitto.db.
 1701826879: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
 1701826879: Error: No such file or directory.
+1702174224: mosquitto version 2.0.15 starting
+1702174224: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1702174224: Loading plugin: /mosquitto/go-auth.so
+1702174224:  ├── Username/password checking enabled.
+1702174224:  ├── TLS-PSK checking enabled.
+1702174224:  └── Extended authentication not enabled.
+1702174224: Opening ipv4 listen socket on port 1883.
+1702174224: Opening ipv6 listen socket on port 1883.
+1702174224: Opening ipv4 listen socket on port 9001.
+1702174224: Opening ipv6 listen socket on port 9001.
+1702174224: mosquitto version 2.0.15 running
+1702174261: New connection from 172.18.0.3:40752 on port 1883.
+1702174261: New client connected from 172.18.0.3:40752 as mqttjs_2816f9cd (p2, c1, k60, u'liitec').
+1702174261: No will message specified.
+1702174261: Sending CONNACK to mqttjs_2816f9cd (0, 0)
+1702174262: Received SUBSCRIBE from mqttjs_2816f9cd
+1702174262: 	# (QoS 0)
+1702174262: mqttjs_2816f9cd 0 #
+1702174262: Sending SUBACK to mqttjs_2816f9cd
+1702174322: Received PINGREQ from mqttjs_2816f9cd
+1702174322: Sending PINGRESP to mqttjs_2816f9cd
+1702174382: Received PINGREQ from mqttjs_2816f9cd
+1702174382: Sending PINGRESP to mqttjs_2816f9cd
+1702174442: Received PINGREQ from mqttjs_2816f9cd
+1702174442: Sending PINGRESP to mqttjs_2816f9cd
+1702174502: Received PINGREQ from mqttjs_2816f9cd
+1702174502: Sending PINGRESP to mqttjs_2816f9cd
+1702174562: Received PINGREQ from mqttjs_2816f9cd
+1702174562: Sending PINGRESP to mqttjs_2816f9cd
+1702174622: Received PINGREQ from mqttjs_2816f9cd
+1702174622: Sending PINGRESP to mqttjs_2816f9cd
+1702174682: Received PINGREQ from mqttjs_2816f9cd
+1702174682: Sending PINGRESP to mqttjs_2816f9cd
+1702174742: Received PINGREQ from mqttjs_2816f9cd
+1702174742: Sending PINGRESP to mqttjs_2816f9cd
+1702174774: Client mqttjs_2816f9cd closed its connection.
+1702174789: New connection from 172.18.0.3:60660 on port 1883.
+1702174789: New client connected from 172.18.0.3:60660 as mqttjs_dabd0335 (p2, c1, k60, u'liitec').
+1702174789: No will message specified.
+1702174789: Sending CONNACK to mqttjs_dabd0335 (0, 0)
+1702174790: Received SUBSCRIBE from mqttjs_dabd0335
+1702174790: 	# (QoS 0)
+1702174790: mqttjs_dabd0335 0 #
+1702174790: Sending SUBACK to mqttjs_dabd0335
+1702174793: Client mqttjs_dabd0335 closed its connection.
+1702174807: New connection from 172.18.0.3:48396 on port 1883.
+1702174807: New client connected from 172.18.0.3:48396 as mqttjs_a78ee513 (p2, c1, k60, u'liitec').
+1702174807: No will message specified.
+1702174807: Sending CONNACK to mqttjs_a78ee513 (0, 0)
+1702174808: Received SUBSCRIBE from mqttjs_a78ee513
+1702174808: 	# (QoS 0)
+1702174808: mqttjs_a78ee513 0 #
+1702174808: Sending SUBACK to mqttjs_a78ee513
+1702174868: Received PINGREQ from mqttjs_a78ee513
+1702174868: Sending PINGRESP to mqttjs_a78ee513
+1702174928: Received PINGREQ from mqttjs_a78ee513
+1702174928: Sending PINGRESP to mqttjs_a78ee513
+1702174988: Received PINGREQ from mqttjs_a78ee513
+1702174988: Sending PINGRESP to mqttjs_a78ee513
+1702175048: Received PINGREQ from mqttjs_a78ee513
+1702176019: mosquitto version 2.0.15 starting
+1702176019: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1702176019: Loading plugin: /mosquitto/go-auth.so
+1702176019:  ├── Username/password checking enabled.
+1702176019:  ├── TLS-PSK checking enabled.
+1702176019:  └── Extended authentication not enabled.
+1702176019: Opening ipv4 listen socket on port 1883.
+1702176019: Opening ipv6 listen socket on port 1883.
+1702176019: Opening ipv4 listen socket on port 9001.
+1702176019: Opening ipv6 listen socket on port 9001.
+1702176019: mosquitto version 2.0.15 running
+1702176042: mosquitto version 2.0.15 terminating
+1702176042: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1702176042: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1702176042: Error: No such file or directory.
+1702176066: mosquitto version 2.0.15 starting
+1702176066: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1702176066: Loading plugin: /mosquitto/go-auth.so
+1702176066:  ├── Username/password checking enabled.
+1702176066:  ├── TLS-PSK checking enabled.
+1702176066:  └── Extended authentication not enabled.
+1702176066: Opening ipv4 listen socket on port 1883.
+1702176066: Opening ipv6 listen socket on port 1883.
+1702176066: Opening ipv4 listen socket on port 9001.
+1702176066: Opening ipv6 listen socket on port 9001.
+1702176066: mosquitto version 2.0.15 running
+1702176087: New connection from 172.18.0.3:46284 on port 1883.
+1702176087: New client connected from 172.18.0.3:46284 as mqttjs_5a686349 (p2, c1, k60, u'liitec').
+1702176087: No will message specified.
+1702176087: Sending CONNACK to mqttjs_5a686349 (0, 0)
+1702176087: Received SUBSCRIBE from mqttjs_5a686349
+1702176087: 	# (QoS 0)
+1702176087: mqttjs_5a686349 0 #
+1702176087: Sending SUBACK to mqttjs_5a686349
+1702176147: Received PINGREQ from mqttjs_5a686349
+1702176147: Sending PINGRESP to mqttjs_5a686349
+1702176207: Received PINGREQ from mqttjs_5a686349
+1702176207: Sending PINGRESP to mqttjs_5a686349
+1702176267: Received PINGREQ from mqttjs_5a686349
+1702176267: Sending PINGRESP to mqttjs_5a686349
+1702176327: Received PINGREQ from mqttjs_5a686349
+1702176327: Sending PINGRESP to mqttjs_5a686349
+1702176387: Received PINGREQ from mqttjs_5a686349
+1702176387: Sending PINGRESP to mqttjs_5a686349
+1702176447: Received PINGREQ from mqttjs_5a686349
+1702176447: Sending PINGRESP to mqttjs_5a686349
+1702176507: Received PINGREQ from mqttjs_5a686349
+1702176507: Sending PINGRESP to mqttjs_5a686349
+1702176567: Received PINGREQ from mqttjs_5a686349
+1702176567: Sending PINGRESP to mqttjs_5a686349
+1702176627: Received PINGREQ from mqttjs_5a686349
+1702176627: Sending PINGRESP to mqttjs_5a686349
+1702176635: Client mqttjs_5a686349 closed its connection.
+1702176656: New connection from 172.18.0.1:34550 on port 1883.
+1702176656: New client connected from 172.18.0.1:34550 as postman-mqtt-client-1702176656648 (p2, c1, k60, u'arlez').
+1702176656: No will message specified.
+1702176656: Sending CONNACK to postman-mqtt-client-1702176656648 (0, 0)
+1702176657: New connection from 172.18.0.3:50328 on port 1883.
+1702176657: New client connected from 172.18.0.3:50328 as mqttjs_0a3b951a (p2, c1, k60, u'liitec').
+1702176657: No will message specified.
+1702176657: Sending CONNACK to mqttjs_0a3b951a (0, 0)
+1702176657: Received SUBSCRIBE from mqttjs_0a3b951a
+1702176657: 	# (QoS 0)
+1702176657: mqttjs_0a3b951a 0 #
+1702176657: Sending SUBACK to mqttjs_0a3b951a
+1702176716: Received PINGREQ from postman-mqtt-client-1702176656648
+1702176716: Sending PINGRESP to postman-mqtt-client-1702176656648
+1702176717: Received PINGREQ from mqttjs_0a3b951a
+1702176717: Sending PINGRESP to mqttjs_0a3b951a
+1702176776: Received PINGREQ from postman-mqtt-client-1702176656648
+1702176776: Sending PINGRESP to postman-mqtt-client-1702176656648
+1702176777: Received PINGREQ from mqttjs_0a3b951a
+1702176777: Sending PINGRESP to mqttjs_0a3b951a
+1702176836: Received PINGREQ from postman-mqtt-client-1702176656648
+1702176836: Sending PINGRESP to postman-mqtt-client-1702176656648
+1702176837: Received PINGREQ from mqttjs_0a3b951a
+1702176837: Sending PINGRESP to mqttjs_0a3b951a
+1702176896: Received PINGREQ from postman-mqtt-client-1702176656648
+1702176896: Sending PINGRESP to postman-mqtt-client-1702176656648
+1702176897: Received PINGREQ from mqttjs_0a3b951a
+1702176897: Sending PINGRESP to mqttjs_0a3b951a
+1702176931: Received PUBLISH from postman-mqtt-client-1702176656648 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (83 bytes))
+1702176931: Sending PUBLISH to mqttjs_0a3b951a (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (83 bytes))
+1702176957: Received PINGREQ from mqttjs_0a3b951a
+1702176957: Sending PINGRESP to mqttjs_0a3b951a
+1702176965: Client mqttjs_0a3b951a closed its connection.
+1702176983: New connection from 172.18.0.3:58822 on port 1883.
+1702176983: New client connected from 172.18.0.3:58822 as mqttjs_9316b796 (p2, c1, k60, u'liitec').
+1702176983: No will message specified.
+1702176983: Sending CONNACK to mqttjs_9316b796 (0, 0)
+1702176983: Received SUBSCRIBE from mqttjs_9316b796
+1702176983: 	# (QoS 0)
+1702176983: mqttjs_9316b796 0 #
+1702176983: Sending SUBACK to mqttjs_9316b796
+1702176991: Received PINGREQ from postman-mqtt-client-1702176656648
+1702176991: Sending PINGRESP to postman-mqtt-client-1702176656648
+1702177043: Received PINGREQ from mqttjs_9316b796
+1702177043: Sending PINGRESP to mqttjs_9316b796
+1702177047: Received PUBLISH from postman-mqtt-client-1702176656648 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (83 bytes))
+1702177047: Sending PUBLISH to mqttjs_9316b796 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (83 bytes))
+1702177056: Received PUBLISH from postman-mqtt-client-1702176656648 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (83 bytes))
+1702177056: Sending PUBLISH to mqttjs_9316b796 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (83 bytes))
+1702177100: Client mqttjs_9316b796 closed its connection.
+1702177116: Received PINGREQ from postman-mqtt-client-1702176656648
+1702177116: Sending PINGRESP to postman-mqtt-client-1702176656648
+1702177117: New connection from 172.18.0.3:34386 on port 1883.
+1702177117: New client connected from 172.18.0.3:34386 as mqttjs_cb4d96a5 (p2, c1, k60, u'liitec').
+1702177117: No will message specified.
+1702177117: Sending CONNACK to mqttjs_cb4d96a5 (0, 0)
+1702177117: Received SUBSCRIBE from mqttjs_cb4d96a5
+1702177117: 	# (QoS 0)
+1702177117: mqttjs_cb4d96a5 0 #
+1702177117: Sending SUBACK to mqttjs_cb4d96a5
+1702177139: Received PUBLISH from postman-mqtt-client-1702176656648 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (83 bytes))
+1702177139: Sending PUBLISH to mqttjs_cb4d96a5 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (83 bytes))
+1702177177: Received PINGREQ from mqttjs_cb4d96a5
+1702177177: Sending PINGRESP to mqttjs_cb4d96a5
+1702177190: Client mqttjs_cb4d96a5 closed its connection.
+1702177199: Received PINGREQ from postman-mqtt-client-1702176656648
+1702177199: Sending PINGRESP to postman-mqtt-client-1702176656648
+1702177205: New connection from 172.18.0.3:53776 on port 1883.
+1702177205: New client connected from 172.18.0.3:53776 as mqttjs_7ee18f62 (p2, c1, k60, u'liitec').
+1702177205: No will message specified.
+1702177205: Sending CONNACK to mqttjs_7ee18f62 (0, 0)
+1702177205: Received SUBSCRIBE from mqttjs_7ee18f62
+1702177205: 	# (QoS 0)
+1702177205: mqttjs_7ee18f62 0 #
+1702177205: Sending SUBACK to mqttjs_7ee18f62
+1702177237: Received PUBLISH from postman-mqtt-client-1702176656648 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (83 bytes))
+1702177237: Sending PUBLISH to mqttjs_7ee18f62 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (83 bytes))
+1702177237: Client mqttjs_7ee18f62 closed its connection.
+1702177289: New connection from 172.18.0.3:60690 on port 1883.
+1702177289: New client connected from 172.18.0.3:60690 as mqttjs_547cfda5 (p2, c1, k60, u'liitec').
+1702177289: No will message specified.
+1702177289: Sending CONNACK to mqttjs_547cfda5 (0, 0)
+1702177289: Received SUBSCRIBE from mqttjs_547cfda5
+1702177289: 	# (QoS 0)
+1702177289: mqttjs_547cfda5 0 #
+1702177289: Sending SUBACK to mqttjs_547cfda5
+1702177297: Received PINGREQ from postman-mqtt-client-1702176656648
+1702177297: Sending PINGRESP to postman-mqtt-client-1702176656648
+1702177317: Received PUBLISH from postman-mqtt-client-1702176656648 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (85 bytes))
+1702177317: Sending PUBLISH to mqttjs_547cfda5 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (85 bytes))
+1702177349: Received PINGREQ from mqttjs_547cfda5
+1702177349: Sending PINGRESP to mqttjs_547cfda5
+1702177377: Received PINGREQ from postman-mqtt-client-1702176656648
+1702177377: Sending PINGRESP to postman-mqtt-client-1702176656648
+1702177409: Received PINGREQ from mqttjs_547cfda5
+1702177409: Sending PINGRESP to mqttjs_547cfda5
+1702177437: Received PINGREQ from postman-mqtt-client-1702176656648
+1702177437: Sending PINGRESP to postman-mqtt-client-1702176656648
+1702177469: Received PINGREQ from mqttjs_547cfda5
+1702177469: Sending PINGRESP to mqttjs_547cfda5
+1702177497: Received PINGREQ from postman-mqtt-client-1702176656648
+1702177497: Sending PINGRESP to postman-mqtt-client-1702176656648
+1702177529: Received PINGREQ from mqttjs_547cfda5
+1702177529: Sending PINGRESP to mqttjs_547cfda5
+1702177557: Received PINGREQ from postman-mqtt-client-1702176656648
+1702177557: Sending PINGRESP to postman-mqtt-client-1702176656648
+1702177589: Received PINGREQ from mqttjs_547cfda5
+1702177589: Sending PINGRESP to mqttjs_547cfda5
+1702177617: Received PINGREQ from postman-mqtt-client-1702176656648
+1702177617: Sending PINGRESP to postman-mqtt-client-1702176656648
+1702177649: Received PINGREQ from mqttjs_547cfda5
+1702177649: Sending PINGRESP to mqttjs_547cfda5
+1702177677: Received PINGREQ from postman-mqtt-client-1702176656648
+1702177677: Sending PINGRESP to postman-mqtt-client-1702176656648
+1702177709: Received PINGREQ from mqttjs_547cfda5
+1702177709: Sending PINGRESP to mqttjs_547cfda5
+1702177737: Received PINGREQ from postman-mqtt-client-1702176656648
+1702177737: Sending PINGRESP to postman-mqtt-client-1702176656648
+1702177769: Received PINGREQ from mqttjs_547cfda5
+1702177769: Sending PINGRESP to mqttjs_547cfda5
+1702177797: Received PINGREQ from postman-mqtt-client-1702176656648
+1702177797: Sending PINGRESP to postman-mqtt-client-1702176656648
+1702177829: Received PINGREQ from mqttjs_547cfda5
+1702177829: Sending PINGRESP to mqttjs_547cfda5
+1702177857: Received PINGREQ from postman-mqtt-client-1702176656648
+1702177857: Sending PINGRESP to postman-mqtt-client-1702176656648
+1702177866: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1702177866: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1702177866: Error: No such file or directory.
+1702177889: Received PINGREQ from mqttjs_547cfda5
+1702177889: Sending PINGRESP to mqttjs_547cfda5
+1702177917: Received PINGREQ from postman-mqtt-client-1702176656648
+1702177917: Sending PINGRESP to postman-mqtt-client-1702176656648
+1702177949: Received PINGREQ from mqttjs_547cfda5
+1702177949: Sending PINGRESP to mqttjs_547cfda5
+1702177977: Received PINGREQ from postman-mqtt-client-1702176656648
+1702177977: Sending PINGRESP to postman-mqtt-client-1702176656648
+1702178009: Received PINGREQ from mqttjs_547cfda5
+1702178009: Sending PINGRESP to mqttjs_547cfda5
+1702178034: Client mqttjs_547cfda5 closed its connection.
+1702178037: Received PINGREQ from postman-mqtt-client-1702176656648
+1702178037: Sending PINGRESP to postman-mqtt-client-1702176656648
+1702178050: New connection from 172.18.0.3:58140 on port 1883.
+1702178050: New client connected from 172.18.0.3:58140 as mqttjs_d5cfa525 (p2, c1, k60, u'liitec').
+1702178050: No will message specified.
+1702178050: Sending CONNACK to mqttjs_d5cfa525 (0, 0)
+1702178050: Received SUBSCRIBE from mqttjs_d5cfa525
+1702178050: 	# (QoS 0)
+1702178050: mqttjs_d5cfa525 0 #
+1702178050: Sending SUBACK to mqttjs_d5cfa525
+1702178097: Received PINGREQ from postman-mqtt-client-1702176656648
+1702178097: Sending PINGRESP to postman-mqtt-client-1702176656648
+1702178110: Received PINGREQ from mqttjs_d5cfa525
+1702178110: Sending PINGRESP to mqttjs_d5cfa525
+1702178114: Received PUBLISH from postman-mqtt-client-1702176656648 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (83 bytes))
+1702178114: Sending PUBLISH to mqttjs_d5cfa525 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (83 bytes))
+1702178122: Received PUBLISH from postman-mqtt-client-1702176656648 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (84 bytes))
+1702178122: Sending PUBLISH to mqttjs_d5cfa525 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (84 bytes))
+1702178158: Received PUBLISH from postman-mqtt-client-1702176656648 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (181 bytes))
+1702178158: Sending PUBLISH to mqttjs_d5cfa525 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (181 bytes))
+1702178170: Received PINGREQ from mqttjs_d5cfa525
+1702178170: Sending PINGRESP to mqttjs_d5cfa525
+1702178182: Received PUBLISH from postman-mqtt-client-1702176656648 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (121 bytes))
+1702178182: Sending PUBLISH to mqttjs_d5cfa525 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (121 bytes))
+1702178223: Received PUBLISH from postman-mqtt-client-1702176656648 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (49 bytes))
+1702178223: Sending PUBLISH to mqttjs_d5cfa525 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (49 bytes))
+1702178230: Received PINGREQ from mqttjs_d5cfa525
+1702178230: Sending PINGRESP to mqttjs_d5cfa525
+1702178283: Received PINGREQ from postman-mqtt-client-1702176656648
+1702178283: Sending PINGRESP to postman-mqtt-client-1702176656648
+1702178290: Received PINGREQ from mqttjs_d5cfa525
+1702178290: Sending PINGRESP to mqttjs_d5cfa525
+1702178337: Received PUBLISH from postman-mqtt-client-1702176656648 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (49 bytes))
+1702178337: Sending PUBLISH to mqttjs_d5cfa525 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (49 bytes))
+1702178345: Received PUBLISH from postman-mqtt-client-1702176656648 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (49 bytes))
+1702178345: Sending PUBLISH to mqttjs_d5cfa525 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (49 bytes))
+1702178350: Received PINGREQ from mqttjs_d5cfa525
+1702178350: Sending PINGRESP to mqttjs_d5cfa525
+1702178353: Client mqttjs_d5cfa525 closed its connection.
+1702178368: New connection from 172.18.0.3:59198 on port 1883.
+1702178368: New client connected from 172.18.0.3:59198 as mqttjs_3ddcc109 (p2, c1, k60, u'liitec').
+1702178368: No will message specified.
+1702178368: Sending CONNACK to mqttjs_3ddcc109 (0, 0)
+1702178368: Received SUBSCRIBE from mqttjs_3ddcc109
+1702178368: 	# (QoS 0)
+1702178368: mqttjs_3ddcc109 0 #
+1702178368: Sending SUBACK to mqttjs_3ddcc109
+1702178376: Received PUBLISH from postman-mqtt-client-1702176656648 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (49 bytes))
+1702178376: Sending PUBLISH to mqttjs_3ddcc109 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (49 bytes))
+1702178381: Received PUBLISH from postman-mqtt-client-1702176656648 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (49 bytes))
+1702178381: Sending PUBLISH to mqttjs_3ddcc109 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (49 bytes))
+1702178421: Received PUBLISH from postman-mqtt-client-1702176656648 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (109 bytes))
+1702178421: Sending PUBLISH to mqttjs_3ddcc109 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (109 bytes))
+1702178428: Received PINGREQ from mqttjs_3ddcc109
+1702178428: Sending PINGRESP to mqttjs_3ddcc109
+1702178481: Received PINGREQ from postman-mqtt-client-1702176656648
+1702178481: Sending PINGRESP to postman-mqtt-client-1702176656648
+1702178488: Received PINGREQ from mqttjs_3ddcc109
+1702178488: Sending PINGRESP to mqttjs_3ddcc109
+1702178531: Received PUBLISH from postman-mqtt-client-1702176656648 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (109 bytes))
+1702178531: Sending PUBLISH to mqttjs_3ddcc109 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (109 bytes))
+1702178548: Received PINGREQ from mqttjs_3ddcc109
+1702178548: Sending PINGRESP to mqttjs_3ddcc109
+1702178591: Received PINGREQ from postman-mqtt-client-1702176656648
+1702178591: Sending PINGRESP to postman-mqtt-client-1702176656648
+1702178608: Received PINGREQ from mqttjs_3ddcc109
+1702178608: Sending PINGRESP to mqttjs_3ddcc109
+1702178651: Received PINGREQ from postman-mqtt-client-1702176656648
+1702178651: Sending PINGRESP to postman-mqtt-client-1702176656648
+1702178668: Received PINGREQ from mqttjs_3ddcc109
+1702178668: Sending PINGRESP to mqttjs_3ddcc109
+1702178711: Received PINGREQ from postman-mqtt-client-1702176656648
+1702178711: Sending PINGRESP to postman-mqtt-client-1702176656648
+1702178728: Received PINGREQ from mqttjs_3ddcc109
+1702178728: Sending PINGRESP to mqttjs_3ddcc109
+1702178771: Received PINGREQ from postman-mqtt-client-1702176656648
+1702178771: Sending PINGRESP to postman-mqtt-client-1702176656648
+1702178788: Received PINGREQ from mqttjs_3ddcc109
+1702178788: Sending PINGRESP to mqttjs_3ddcc109
+1702178831: Received PINGREQ from postman-mqtt-client-1702176656648
+1702178831: Sending PINGRESP to postman-mqtt-client-1702176656648
+1702178848: Received PINGREQ from mqttjs_3ddcc109
+1702178848: Sending PINGRESP to mqttjs_3ddcc109
+1702178887: Received PUBLISH from postman-mqtt-client-1702176656648 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (28 bytes))
+1702178887: Sending PUBLISH to mqttjs_3ddcc109 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (28 bytes))
+1702178907: Received PUBLISH from postman-mqtt-client-1702176656648 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (47 bytes))
+1702178907: Sending PUBLISH to mqttjs_3ddcc109 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (47 bytes))
+1702178908: Received PINGREQ from mqttjs_3ddcc109
+1702178908: Sending PINGRESP to mqttjs_3ddcc109
+1702178967: Received PINGREQ from postman-mqtt-client-1702176656648
+1702178967: Sending PINGRESP to postman-mqtt-client-1702176656648
+1702178968: Received PINGREQ from mqttjs_3ddcc109
+1702178968: Sending PINGRESP to mqttjs_3ddcc109
+1702179027: Received PINGREQ from postman-mqtt-client-1702176656648
+1702179027: Sending PINGRESP to postman-mqtt-client-1702176656648
+1702179028: Received PINGREQ from mqttjs_3ddcc109
+1702179028: Sending PINGRESP to mqttjs_3ddcc109
+1702179087: Received PINGREQ from postman-mqtt-client-1702176656648
+1702179087: Sending PINGRESP to postman-mqtt-client-1702176656648
+1702179088: Received PINGREQ from mqttjs_3ddcc109
+1702179088: Sending PINGRESP to mqttjs_3ddcc109
+1702179147: Received PINGREQ from postman-mqtt-client-1702176656648
+1702179147: Sending PINGRESP to postman-mqtt-client-1702176656648
+1702179148: Received PINGREQ from mqttjs_3ddcc109
+1702179148: Sending PINGRESP to mqttjs_3ddcc109
+1702179207: Received PINGREQ from postman-mqtt-client-1702176656648
+1702179207: Sending PINGRESP to postman-mqtt-client-1702176656648
+1702179208: Received PINGREQ from mqttjs_3ddcc109
+1702179208: Sending PINGRESP to mqttjs_3ddcc109
+1702179267: Received PINGREQ from postman-mqtt-client-1702176656648
+1702179267: Sending PINGRESP to postman-mqtt-client-1702176656648
+1702179268: Received PINGREQ from mqttjs_3ddcc109
+1702179268: Sending PINGRESP to mqttjs_3ddcc109
+1702179321: Client mqttjs_3ddcc109 closed its connection.
+1702179327: Received PINGREQ from postman-mqtt-client-1702176656648
+1702179327: Sending PINGRESP to postman-mqtt-client-1702176656648
+1702179338: New connection from 172.18.0.3:44860 on port 1883.
+1702179338: New client connected from 172.18.0.3:44860 as mqttjs_6f07102e (p2, c1, k60, u'liitec').
+1702179338: No will message specified.
+1702179338: Sending CONNACK to mqttjs_6f07102e (0, 0)
+1702179338: Received SUBSCRIBE from mqttjs_6f07102e
+1702179338: 	# (QoS 0)
+1702179338: mqttjs_6f07102e 0 #
+1702179338: Sending SUBACK to mqttjs_6f07102e
+1702179358: Client mqttjs_6f07102e closed its connection.
+1702179375: New connection from 172.18.0.3:35182 on port 1883.
+1702179375: New client connected from 172.18.0.3:35182 as mqttjs_9ea6ce37 (p2, c1, k60, u'liitec').
+1702179375: No will message specified.
+1702179375: Sending CONNACK to mqttjs_9ea6ce37 (0, 0)
+1702179375: Received SUBSCRIBE from mqttjs_9ea6ce37
+1702179375: 	# (QoS 0)
+1702179375: mqttjs_9ea6ce37 0 #
+1702179375: Sending SUBACK to mqttjs_9ea6ce37
+1702179387: Received PINGREQ from postman-mqtt-client-1702176656648
+1702179387: Sending PINGRESP to postman-mqtt-client-1702176656648
+1702179415: Received PUBLISH from postman-mqtt-client-1702176656648 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (85 bytes))
+1702179415: Sending PUBLISH to mqttjs_9ea6ce37 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (85 bytes))
+1702179435: Received PINGREQ from mqttjs_9ea6ce37
+1702179435: Sending PINGRESP to mqttjs_9ea6ce37
+1702179470: Received PUBLISH from postman-mqtt-client-1702176656648 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (169 bytes))
+1702179470: Sending PUBLISH to mqttjs_9ea6ce37 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (169 bytes))
+1702179495: Received PINGREQ from mqttjs_9ea6ce37
+1702179495: Sending PINGRESP to mqttjs_9ea6ce37
+1702179530: Received PINGREQ from postman-mqtt-client-1702176656648
+1702179530: Sending PINGRESP to postman-mqtt-client-1702176656648
+1702179555: Received PINGREQ from mqttjs_9ea6ce37
+1702179555: Sending PINGRESP to mqttjs_9ea6ce37
+1702179559: Received PUBLISH from postman-mqtt-client-1702176656648 (d0, q0, r0, m0, '/devices/dv-58c67a2a-d412-430c-9eb8-20545963fd87', ... (169 bytes))
+1702179559: Sending PUBLISH to mqttjs_9ea6ce37 (d0, q0, r0, m0, '/devices/dv-58c67a2a-d412-430c-9eb8-20545963fd87', ... (169 bytes))
+1702179615: Received PINGREQ from mqttjs_9ea6ce37
+1702179615: Sending PINGRESP to mqttjs_9ea6ce37
+1702179617: Received PUBLISH from postman-mqtt-client-1702176656648 (d0, q0, r0, m0, '/devices/dv-58c67a2a-d412-430c-9eb8-20545963fd87', ... (169 bytes))
+1702179617: Sending PUBLISH to mqttjs_9ea6ce37 (d0, q0, r0, m0, '/devices/dv-58c67a2a-d412-430c-9eb8-20545963fd87', ... (169 bytes))
+1702179618: Received PUBLISH from postman-mqtt-client-1702176656648 (d0, q0, r0, m0, '/devices/dv-58c67a2a-d412-430c-9eb8-20545963fd87', ... (169 bytes))
+1702179618: Sending PUBLISH to mqttjs_9ea6ce37 (d0, q0, r0, m0, '/devices/dv-58c67a2a-d412-430c-9eb8-20545963fd87', ... (169 bytes))
+1702179619: Received PUBLISH from postman-mqtt-client-1702176656648 (d0, q0, r0, m0, '/devices/dv-58c67a2a-d412-430c-9eb8-20545963fd87', ... (169 bytes))
+1702179619: Sending PUBLISH to mqttjs_9ea6ce37 (d0, q0, r0, m0, '/devices/dv-58c67a2a-d412-430c-9eb8-20545963fd87', ... (169 bytes))
+1702179619: Received PUBLISH from postman-mqtt-client-1702176656648 (d0, q0, r0, m0, '/devices/dv-58c67a2a-d412-430c-9eb8-20545963fd87', ... (169 bytes))
+1702179619: Sending PUBLISH to mqttjs_9ea6ce37 (d0, q0, r0, m0, '/devices/dv-58c67a2a-d412-430c-9eb8-20545963fd87', ... (169 bytes))
+1702179620: Received PUBLISH from postman-mqtt-client-1702176656648 (d0, q0, r0, m0, '/devices/dv-58c67a2a-d412-430c-9eb8-20545963fd87', ... (169 bytes))
+1702179620: Sending PUBLISH to mqttjs_9ea6ce37 (d0, q0, r0, m0, '/devices/dv-58c67a2a-d412-430c-9eb8-20545963fd87', ... (169 bytes))
+1702179621: Received PUBLISH from postman-mqtt-client-1702176656648 (d0, q0, r0, m0, '/devices/dv-58c67a2a-d412-430c-9eb8-20545963fd87', ... (169 bytes))
+1702179621: Sending PUBLISH to mqttjs_9ea6ce37 (d0, q0, r0, m0, '/devices/dv-58c67a2a-d412-430c-9eb8-20545963fd87', ... (169 bytes))
+1702179622: Received PUBLISH from postman-mqtt-client-1702176656648 (d0, q0, r0, m0, '/devices/dv-58c67a2a-d412-430c-9eb8-20545963fd87', ... (169 bytes))
+1702179622: Sending PUBLISH to mqttjs_9ea6ce37 (d0, q0, r0, m0, '/devices/dv-58c67a2a-d412-430c-9eb8-20545963fd87', ... (169 bytes))
+1702179667: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1702179667: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1702179667: Error: No such file or directory.
+1702179675: Received PINGREQ from mqttjs_9ea6ce37
+1702179675: Sending PINGRESP to mqttjs_9ea6ce37
+1702179682: Received PINGREQ from postman-mqtt-client-1702176656648
+1702179682: Sending PINGRESP to postman-mqtt-client-1702176656648
+1702179735: Received PINGREQ from mqttjs_9ea6ce37
+1702179735: Sending PINGRESP to mqttjs_9ea6ce37
+1702179742: Received PINGREQ from postman-mqtt-client-1702176656648
+1702179742: Sending PINGRESP to postman-mqtt-client-1702176656648
+1702179795: Received PINGREQ from mqttjs_9ea6ce37
+1702179795: Sending PINGRESP to mqttjs_9ea6ce37
+1702179802: Received PINGREQ from postman-mqtt-client-1702176656648
+1702179802: Sending PINGRESP to postman-mqtt-client-1702176656648
+1702179855: Received PINGREQ from mqttjs_9ea6ce37
+1702179855: Sending PINGRESP to mqttjs_9ea6ce37
+1702179862: Received PINGREQ from postman-mqtt-client-1702176656648
+1702179862: Sending PINGRESP to postman-mqtt-client-1702176656648
+1702179915: Received PINGREQ from mqttjs_9ea6ce37
+1702179915: Sending PINGRESP to mqttjs_9ea6ce37
+1702179922: Received PINGREQ from postman-mqtt-client-1702176656648
+1702179922: Sending PINGRESP to postman-mqtt-client-1702176656648
+1702179975: Received PINGREQ from mqttjs_9ea6ce37
+1702179975: Sending PINGRESP to mqttjs_9ea6ce37
+1702179982: Received PINGREQ from postman-mqtt-client-1702176656648
+1702179982: Sending PINGRESP to postman-mqtt-client-1702176656648
+1702180035: Received PINGREQ from mqttjs_9ea6ce37
+1702180035: Sending PINGRESP to mqttjs_9ea6ce37
+1702180042: Received PINGREQ from postman-mqtt-client-1702176656648
+1702180042: Sending PINGRESP to postman-mqtt-client-1702176656648
+1702180095: Received PINGREQ from mqttjs_9ea6ce37
+1702180095: Sending PINGRESP to mqttjs_9ea6ce37
+1702180102: Received PINGREQ from postman-mqtt-client-1702176656648
+1702180102: Sending PINGRESP to postman-mqtt-client-1702176656648
+1702180155: Received PINGREQ from mqttjs_9ea6ce37
+1702180155: Sending PINGRESP to mqttjs_9ea6ce37
+1702180162: Received PINGREQ from postman-mqtt-client-1702176656648
+1702180162: Sending PINGRESP to postman-mqtt-client-1702176656648
+1702180215: Received PINGREQ from mqttjs_9ea6ce37
+1702180215: Sending PINGRESP to mqttjs_9ea6ce37
+1702180222: Received PINGREQ from postman-mqtt-client-1702176656648
+1702180222: Sending PINGRESP to postman-mqtt-client-1702176656648
+1702180257: Client mqttjs_9ea6ce37 closed its connection.
+1702180274: New connection from 172.18.0.3:53378 on port 1883.
+1702180274: New client connected from 172.18.0.3:53378 as mqttjs_94fed0a2 (p2, c1, k60, u'liitec').
+1702180274: No will message specified.
+1702180274: Sending CONNACK to mqttjs_94fed0a2 (0, 0)
+1702180274: Received SUBSCRIBE from mqttjs_94fed0a2
+1702180274: 	# (QoS 0)
+1702180274: mqttjs_94fed0a2 0 #
+1702180274: Sending SUBACK to mqttjs_94fed0a2
+1702180282: Received PINGREQ from postman-mqtt-client-1702176656648
+1702180282: Sending PINGRESP to postman-mqtt-client-1702176656648
+1702180334: Received PINGREQ from mqttjs_94fed0a2
+1702180334: Sending PINGRESP to mqttjs_94fed0a2
+1702180342: Received PINGREQ from postman-mqtt-client-1702176656648
+1702180342: Sending PINGRESP to postman-mqtt-client-1702176656648
+1702180394: Received PINGREQ from mqttjs_94fed0a2
+1702180394: Sending PINGRESP to mqttjs_94fed0a2
+1702180402: Received PINGREQ from postman-mqtt-client-1702176656648
+1702180402: Sending PINGRESP to postman-mqtt-client-1702176656648
+1702180452: Client mqttjs_94fed0a2 closed its connection.
+1702180462: Received PINGREQ from postman-mqtt-client-1702176656648
+1702180462: Sending PINGRESP to postman-mqtt-client-1702176656648
+1702180469: New connection from 172.18.0.3:41712 on port 1883.
+1702180469: New client connected from 172.18.0.3:41712 as mqttjs_0598fa6f (p2, c1, k60, u'liitec').
+1702180469: No will message specified.
+1702180469: Sending CONNACK to mqttjs_0598fa6f (0, 0)
+1702180469: Received SUBSCRIBE from mqttjs_0598fa6f
+1702180469: 	# (QoS 0)
+1702180469: mqttjs_0598fa6f 0 #
+1702180469: Sending SUBACK to mqttjs_0598fa6f
+1702180478: Client mqttjs_0598fa6f closed its connection.
+1702180496: New connection from 172.18.0.3:48892 on port 1883.
+1702180496: New client connected from 172.18.0.3:48892 as mqttjs_9c362bf1 (p2, c1, k60, u'liitec').
+1702180496: No will message specified.
+1702180496: Sending CONNACK to mqttjs_9c362bf1 (0, 0)
+1702180497: Received SUBSCRIBE from mqttjs_9c362bf1
+1702180497: 	# (QoS 0)
+1702180497: mqttjs_9c362bf1 0 #
+1702180497: Sending SUBACK to mqttjs_9c362bf1
+1702180522: Received PINGREQ from postman-mqtt-client-1702176656648
+1702180522: Sending PINGRESP to postman-mqtt-client-1702176656648
+1702180557: Received PINGREQ from mqttjs_9c362bf1
+1702180557: Sending PINGRESP to mqttjs_9c362bf1
+1702180581: Client mqttjs_9c362bf1 closed its connection.
+1702180582: Received PINGREQ from postman-mqtt-client-1702176656648
+1702180582: Sending PINGRESP to postman-mqtt-client-1702176656648
+1702180598: New connection from 172.18.0.3:47856 on port 1883.
+1702180598: New client connected from 172.18.0.3:47856 as mqttjs_9d22c35f (p2, c1, k60, u'liitec').
+1702180598: No will message specified.
+1702180598: Sending CONNACK to mqttjs_9d22c35f (0, 0)
+1702180598: Received SUBSCRIBE from mqttjs_9d22c35f
+1702180598: 	# (QoS 0)
+1702180598: mqttjs_9d22c35f 0 #
+1702180598: Sending SUBACK to mqttjs_9d22c35f
+1702180633: Received PUBLISH from postman-mqtt-client-1702176656648 (d0, q0, r0, m0, '/devices/dv-58c67a2a-d412-430c-9eb8-20545963fd87', ... (169 bytes))
+1702180633: Sending PUBLISH to mqttjs_9d22c35f (d0, q0, r0, m0, '/devices/dv-58c67a2a-d412-430c-9eb8-20545963fd87', ... (169 bytes))
+1702180658: Received PINGREQ from mqttjs_9d22c35f
+1702180658: Sending PINGRESP to mqttjs_9d22c35f
+1702180693: Received PINGREQ from postman-mqtt-client-1702176656648
+1702180693: Sending PINGRESP to postman-mqtt-client-1702176656648
+1702180718: Received PINGREQ from mqttjs_9d22c35f
+1702180718: Sending PINGRESP to mqttjs_9d22c35f
+1702180753: Received PINGREQ from postman-mqtt-client-1702176656648
+1702180753: Sending PINGRESP to postman-mqtt-client-1702176656648
+1702180778: Received PINGREQ from mqttjs_9d22c35f
+1702180778: Sending PINGRESP to mqttjs_9d22c35f
+1702180790: Client mqttjs_9d22c35f closed its connection.
+1702180808: New connection from 172.18.0.3:51138 on port 1883.
+1702180808: New client connected from 172.18.0.3:51138 as mqttjs_9293adf3 (p2, c1, k60, u'liitec').
+1702180808: No will message specified.
+1702180808: Sending CONNACK to mqttjs_9293adf3 (0, 0)
+1702180808: Received SUBSCRIBE from mqttjs_9293adf3
+1702180808: 	# (QoS 0)
+1702180808: mqttjs_9293adf3 0 #
+1702180808: Sending SUBACK to mqttjs_9293adf3
+1702180813: Received PINGREQ from postman-mqtt-client-1702176656648
+1702180813: Sending PINGRESP to postman-mqtt-client-1702176656648
+1702180818: Client postman-mqtt-client-1702176656648 closed its connection.
+1702180868: Received PINGREQ from mqttjs_9293adf3
+1702180868: Sending PINGRESP to mqttjs_9293adf3
+1702180876: Client mqttjs_9293adf3 closed its connection.
+1702180909: New connection from 172.18.0.3:38126 on port 1883.
+1702180909: New client connected from 172.18.0.3:38126 as mqttjs_4d2c880c (p2, c1, k60, u'liitec').
+1702180909: No will message specified.
+1702180909: Sending CONNACK to mqttjs_4d2c880c (0, 0)
+1702180909: Received SUBSCRIBE from mqttjs_4d2c880c
+1702180909: 	# (QoS 0)
+1702180909: mqttjs_4d2c880c 0 #
+1702180909: Sending SUBACK to mqttjs_4d2c880c
+1702180969: Received PINGREQ from mqttjs_4d2c880c
+1702180969: Sending PINGRESP to mqttjs_4d2c880c
+1702181022: New connection from 172.18.0.1:42036 on port 1883.
+1702181022: New client connected from 172.18.0.1:42036 as postman-mqtt-client-1702181022364 (p2, c1, k60, u'arlez').
+1702181022: No will message specified.
+1702181022: Sending CONNACK to postman-mqtt-client-1702181022364 (0, 0)
+1702181029: Received PINGREQ from mqttjs_4d2c880c
+1702181029: Sending PINGRESP to mqttjs_4d2c880c
+1702181082: Received PINGREQ from postman-mqtt-client-1702181022364
+1702181082: Sending PINGRESP to postman-mqtt-client-1702181022364
+1702181089: Received PINGREQ from mqttjs_4d2c880c
+1702181089: Sending PINGRESP to mqttjs_4d2c880c
+1702181105: Received PUBLISH from postman-mqtt-client-1702181022364 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702181105: Sending PUBLISH to mqttjs_4d2c880c (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702181109: Received PUBLISH from postman-mqtt-client-1702181022364 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702181109: Sending PUBLISH to mqttjs_4d2c880c (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702181111: Received PUBLISH from postman-mqtt-client-1702181022364 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702181111: Sending PUBLISH to mqttjs_4d2c880c (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702181113: Received PUBLISH from postman-mqtt-client-1702181022364 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702181113: Sending PUBLISH to mqttjs_4d2c880c (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702181114: Received PUBLISH from postman-mqtt-client-1702181022364 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702181114: Sending PUBLISH to mqttjs_4d2c880c (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702181149: Received PINGREQ from mqttjs_4d2c880c
+1702181149: Sending PINGRESP to mqttjs_4d2c880c
+1702181174: Received PINGREQ from postman-mqtt-client-1702181022364
+1702181174: Sending PINGRESP to postman-mqtt-client-1702181022364
+1702181209: Received PINGREQ from mqttjs_4d2c880c
+1702181209: Sending PINGRESP to mqttjs_4d2c880c
+1702181234: Received PINGREQ from postman-mqtt-client-1702181022364
+1702181234: Sending PINGRESP to postman-mqtt-client-1702181022364
+1702181262: Client mqttjs_4d2c880c closed its connection.
+1702181280: New connection from 172.18.0.3:37126 on port 1883.
+1702181280: New client connected from 172.18.0.3:37126 as mqttjs_3e047d69 (p2, c1, k60, u'liitec').
+1702181280: No will message specified.
+1702181280: Sending CONNACK to mqttjs_3e047d69 (0, 0)
+1702181280: Received SUBSCRIBE from mqttjs_3e047d69
+1702181280: 	# (QoS 0)
+1702181280: mqttjs_3e047d69 0 #
+1702181280: Sending SUBACK to mqttjs_3e047d69
+1702181294: Received PINGREQ from postman-mqtt-client-1702181022364
+1702181294: Sending PINGRESP to postman-mqtt-client-1702181022364
+1702181315: Received PUBLISH from postman-mqtt-client-1702181022364 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702181315: Sending PUBLISH to mqttjs_3e047d69 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702181316: Received PUBLISH from postman-mqtt-client-1702181022364 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702181316: Sending PUBLISH to mqttjs_3e047d69 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702181317: Received PUBLISH from postman-mqtt-client-1702181022364 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702181317: Sending PUBLISH to mqttjs_3e047d69 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702181317: Received PUBLISH from postman-mqtt-client-1702181022364 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702181317: Sending PUBLISH to mqttjs_3e047d69 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702181318: Received PUBLISH from postman-mqtt-client-1702181022364 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702181318: Sending PUBLISH to mqttjs_3e047d69 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702181340: Received PINGREQ from mqttjs_3e047d69
+1702181340: Sending PINGRESP to mqttjs_3e047d69
+1702181378: Received PINGREQ from postman-mqtt-client-1702181022364
+1702181378: Sending PINGRESP to postman-mqtt-client-1702181022364
+1702181400: Received PINGREQ from mqttjs_3e047d69
+1702181400: Sending PINGRESP to mqttjs_3e047d69
+1702181419: Client mqttjs_3e047d69 closed its connection.
+1702181436: New connection from 172.18.0.3:54610 on port 1883.
+1702181436: New client connected from 172.18.0.3:54610 as mqttjs_655a9411 (p2, c1, k60, u'liitec').
+1702181436: No will message specified.
+1702181436: Sending CONNACK to mqttjs_655a9411 (0, 0)
+1702181436: Received SUBSCRIBE from mqttjs_655a9411
+1702181436: 	# (QoS 0)
+1702181436: mqttjs_655a9411 0 #
+1702181436: Sending SUBACK to mqttjs_655a9411
+1702181438: Received PINGREQ from postman-mqtt-client-1702181022364
+1702181438: Sending PINGRESP to postman-mqtt-client-1702181022364
+1702181468: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1702181468: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1702181468: Error: No such file or directory.
+1702181486: Received PUBLISH from postman-mqtt-client-1702181022364 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702181486: Sending PUBLISH to mqttjs_655a9411 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702181496: Received PINGREQ from mqttjs_655a9411
+1702181496: Sending PINGRESP to mqttjs_655a9411
+1702181525: Received PUBLISH from postman-mqtt-client-1702181022364 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702181525: Sending PUBLISH to mqttjs_655a9411 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702181526: Received PUBLISH from postman-mqtt-client-1702181022364 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702181526: Sending PUBLISH to mqttjs_655a9411 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702181527: Received PUBLISH from postman-mqtt-client-1702181022364 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702181527: Sending PUBLISH to mqttjs_655a9411 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702181528: Received PUBLISH from postman-mqtt-client-1702181022364 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702181528: Sending PUBLISH to mqttjs_655a9411 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702181556: Received PINGREQ from mqttjs_655a9411
+1702181556: Sending PINGRESP to mqttjs_655a9411
+1702181581: Client mqttjs_655a9411 closed its connection.
+1702181588: Received PINGREQ from postman-mqtt-client-1702181022364
+1702181588: Sending PINGRESP to postman-mqtt-client-1702181022364
+1702181596: New connection from 172.18.0.3:52862 on port 1883.
+1702181596: New client connected from 172.18.0.3:52862 as mqttjs_52b469bc (p2, c1, k60, u'liitec').
+1702181596: No will message specified.
+1702181596: Sending CONNACK to mqttjs_52b469bc (0, 0)
+1702181597: Received SUBSCRIBE from mqttjs_52b469bc
+1702181597: 	# (QoS 0)
+1702181597: mqttjs_52b469bc 0 #
+1702181597: Sending SUBACK to mqttjs_52b469bc
+1702181616: Received PUBLISH from postman-mqtt-client-1702181022364 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702181616: Sending PUBLISH to mqttjs_52b469bc (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702181617: Received PUBLISH from postman-mqtt-client-1702181022364 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702181617: Sending PUBLISH to mqttjs_52b469bc (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702181617: Received PUBLISH from postman-mqtt-client-1702181022364 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702181617: Sending PUBLISH to mqttjs_52b469bc (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702181618: Received PUBLISH from postman-mqtt-client-1702181022364 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702181618: Sending PUBLISH to mqttjs_52b469bc (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702181619: Received PUBLISH from postman-mqtt-client-1702181022364 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702181619: Sending PUBLISH to mqttjs_52b469bc (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702181657: Received PINGREQ from mqttjs_52b469bc
+1702181657: Sending PINGRESP to mqttjs_52b469bc
+1702181679: Received PINGREQ from postman-mqtt-client-1702181022364
+1702181679: Sending PINGRESP to postman-mqtt-client-1702181022364
+1702181717: Received PINGREQ from mqttjs_52b469bc
+1702181717: Sending PINGRESP to mqttjs_52b469bc
+1702181739: Received PINGREQ from postman-mqtt-client-1702181022364
+1702181739: Sending PINGRESP to postman-mqtt-client-1702181022364
+1702181777: Received PINGREQ from mqttjs_52b469bc
+1702181777: Sending PINGRESP to mqttjs_52b469bc
+1702181799: Received PINGREQ from postman-mqtt-client-1702181022364
+1702181799: Sending PINGRESP to postman-mqtt-client-1702181022364
+1702181837: Received PINGREQ from mqttjs_52b469bc
+1702181837: Sending PINGRESP to mqttjs_52b469bc
+1702181859: Received PINGREQ from postman-mqtt-client-1702181022364
+1702181859: Sending PINGRESP to postman-mqtt-client-1702181022364
+1702181897: Received PINGREQ from mqttjs_52b469bc
+1702181897: Sending PINGRESP to mqttjs_52b469bc
+1702181919: Received PINGREQ from postman-mqtt-client-1702181022364
+1702181919: Sending PINGRESP to postman-mqtt-client-1702181022364
+1702181957: Received PINGREQ from mqttjs_52b469bc
+1702181957: Sending PINGRESP to mqttjs_52b469bc
+1702181979: Received PINGREQ from postman-mqtt-client-1702181022364
+1702181979: Sending PINGRESP to postman-mqtt-client-1702181022364
+1702182017: Received PINGREQ from mqttjs_52b469bc
+1702182017: Sending PINGRESP to mqttjs_52b469bc
+1702182039: Received PINGREQ from postman-mqtt-client-1702181022364
+1702182039: Sending PINGRESP to postman-mqtt-client-1702181022364
+1702182077: Received PINGREQ from mqttjs_52b469bc
+1702182077: Sending PINGRESP to mqttjs_52b469bc
+1702182099: Received PINGREQ from postman-mqtt-client-1702181022364
+1702182099: Sending PINGRESP to postman-mqtt-client-1702181022364
+1702182137: Received PINGREQ from mqttjs_52b469bc
+1702182137: Sending PINGRESP to mqttjs_52b469bc
+1702182159: Received PINGREQ from postman-mqtt-client-1702181022364
+1702182159: Sending PINGRESP to postman-mqtt-client-1702181022364
+1702182197: Received PINGREQ from mqttjs_52b469bc
+1702182197: Sending PINGRESP to mqttjs_52b469bc
+1702182219: Received PINGREQ from postman-mqtt-client-1702181022364
+1702182219: Sending PINGRESP to postman-mqtt-client-1702181022364
+1702182257: Received PINGREQ from mqttjs_52b469bc
+1702182257: Sending PINGRESP to mqttjs_52b469bc
+1702182279: Received PINGREQ from postman-mqtt-client-1702181022364
+1702182279: Sending PINGRESP to postman-mqtt-client-1702181022364
+1702182317: Received PINGREQ from mqttjs_52b469bc
+1702182317: Sending PINGRESP to mqttjs_52b469bc
+1702182339: Received PINGREQ from postman-mqtt-client-1702181022364
+1702182339: Sending PINGRESP to postman-mqtt-client-1702181022364
+1702182377: Received PINGREQ from mqttjs_52b469bc
+1702182377: Sending PINGRESP to mqttjs_52b469bc
+1702182399: Received PINGREQ from postman-mqtt-client-1702181022364
+1702182399: Sending PINGRESP to postman-mqtt-client-1702181022364
+1702182430: Client mqttjs_52b469bc closed its connection.
+1702182445: New connection from 172.18.0.3:46978 on port 1883.
+1702182445: New client connected from 172.18.0.3:46978 as mqttjs_60cc8abd (p2, c1, k60, u'liitec').
+1702182445: No will message specified.
+1702182445: Sending CONNACK to mqttjs_60cc8abd (0, 0)
+1702182446: Received SUBSCRIBE from mqttjs_60cc8abd
+1702182446: 	# (QoS 0)
+1702182446: mqttjs_60cc8abd 0 #
+1702182446: Sending SUBACK to mqttjs_60cc8abd
+1702182459: Received PINGREQ from postman-mqtt-client-1702181022364
+1702182459: Sending PINGRESP to postman-mqtt-client-1702181022364
+1702182506: Received PINGREQ from mqttjs_60cc8abd
+1702182506: Sending PINGRESP to mqttjs_60cc8abd
+1702182519: Received PINGREQ from postman-mqtt-client-1702181022364
+1702182519: Sending PINGRESP to postman-mqtt-client-1702181022364
+1702182566: Received PINGREQ from mqttjs_60cc8abd
+1702182566: Sending PINGRESP to mqttjs_60cc8abd
+1702182579: Received PINGREQ from postman-mqtt-client-1702181022364
+1702182579: Sending PINGRESP to postman-mqtt-client-1702181022364
+1702182626: Received PINGREQ from mqttjs_60cc8abd
+1702182626: Sending PINGRESP to mqttjs_60cc8abd
+1702182639: Received PINGREQ from postman-mqtt-client-1702181022364
+1702182639: Sending PINGRESP to postman-mqtt-client-1702181022364
+1702182686: Received PINGREQ from mqttjs_60cc8abd
+1702182686: Sending PINGRESP to mqttjs_60cc8abd
+1702182699: Received PINGREQ from postman-mqtt-client-1702181022364
+1702182699: Sending PINGRESP to postman-mqtt-client-1702181022364
+1702182746: Received PINGREQ from mqttjs_60cc8abd
+1702182746: Sending PINGRESP to mqttjs_60cc8abd
+1702182759: Received PINGREQ from postman-mqtt-client-1702181022364
+1702182759: Sending PINGRESP to postman-mqtt-client-1702181022364
+1702182806: Received PINGREQ from mqttjs_60cc8abd
+1702182806: Sending PINGRESP to mqttjs_60cc8abd
+1702182812: Client mqttjs_60cc8abd closed its connection.
+1702182819: Received PINGREQ from postman-mqtt-client-1702181022364
+1702182819: Sending PINGRESP to postman-mqtt-client-1702181022364
+1702182828: New connection from 172.18.0.3:51078 on port 1883.
+1702182828: New client connected from 172.18.0.3:51078 as mqttjs_0ec38e2a (p2, c1, k60, u'liitec').
+1702182828: No will message specified.
+1702182828: Sending CONNACK to mqttjs_0ec38e2a (0, 0)
+1702182828: Received SUBSCRIBE from mqttjs_0ec38e2a
+1702182828: 	# (QoS 0)
+1702182828: mqttjs_0ec38e2a 0 #
+1702182828: Sending SUBACK to mqttjs_0ec38e2a
+1702182836: Received PUBLISH from postman-mqtt-client-1702181022364 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702182836: Sending PUBLISH to mqttjs_0ec38e2a (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702182888: Received PINGREQ from mqttjs_0ec38e2a
+1702182888: Sending PINGRESP to mqttjs_0ec38e2a
+1702182896: Received PINGREQ from postman-mqtt-client-1702181022364
+1702182896: Sending PINGRESP to postman-mqtt-client-1702181022364
+1702182948: Received PINGREQ from mqttjs_0ec38e2a
+1702182948: Sending PINGRESP to mqttjs_0ec38e2a
+1702182956: Received PINGREQ from postman-mqtt-client-1702181022364
+1702182956: Sending PINGRESP to postman-mqtt-client-1702181022364
+1702183008: Received PINGREQ from mqttjs_0ec38e2a
+1702183008: Sending PINGRESP to mqttjs_0ec38e2a
+1702183016: Received PINGREQ from postman-mqtt-client-1702181022364
+1702183016: Sending PINGRESP to postman-mqtt-client-1702181022364
+1702183068: Received PINGREQ from mqttjs_0ec38e2a
+1702183068: Sending PINGRESP to mqttjs_0ec38e2a
+1702183076: Received PINGREQ from postman-mqtt-client-1702181022364
+1702183076: Sending PINGRESP to postman-mqtt-client-1702181022364
+1702183128: Received PINGREQ from mqttjs_0ec38e2a
+1702183128: Sending PINGRESP to mqttjs_0ec38e2a
+1702183136: Received PINGREQ from postman-mqtt-client-1702181022364
+1702183136: Sending PINGRESP to postman-mqtt-client-1702181022364
+1702183188: Received PINGREQ from mqttjs_0ec38e2a
+1702183188: Sending PINGRESP to mqttjs_0ec38e2a
+1702183196: Received PINGREQ from postman-mqtt-client-1702181022364
+1702183196: Sending PINGRESP to postman-mqtt-client-1702181022364
+1702183248: Received PINGREQ from mqttjs_0ec38e2a
+1702183248: Sending PINGRESP to mqttjs_0ec38e2a
+1702183256: Received PINGREQ from postman-mqtt-client-1702181022364
+1702183256: Sending PINGRESP to postman-mqtt-client-1702181022364
+1702183269: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1702183269: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1702183269: Error: No such file or directory.
+1702183308: Received PINGREQ from mqttjs_0ec38e2a
+1702183308: Sending PINGRESP to mqttjs_0ec38e2a
+1702183316: Received PINGREQ from postman-mqtt-client-1702181022364
+1702183316: Sending PINGRESP to postman-mqtt-client-1702181022364
+1702183368: Received PINGREQ from mqttjs_0ec38e2a
+1702183368: Sending PINGRESP to mqttjs_0ec38e2a
+1702183376: Received PINGREQ from postman-mqtt-client-1702181022364
+1702183376: Sending PINGRESP to postman-mqtt-client-1702181022364
+1702183428: Received PINGREQ from mqttjs_0ec38e2a
+1702183428: Sending PINGRESP to mqttjs_0ec38e2a
+1702183436: Received PINGREQ from postman-mqtt-client-1702181022364
+1702183436: Sending PINGRESP to postman-mqtt-client-1702181022364
+1702183488: Received PINGREQ from mqttjs_0ec38e2a
+1702183488: Sending PINGRESP to mqttjs_0ec38e2a
+1702183496: Received PINGREQ from postman-mqtt-client-1702181022364
+1702183496: Sending PINGRESP to postman-mqtt-client-1702181022364
+1702183548: Received PINGREQ from mqttjs_0ec38e2a
+1702183548: Sending PINGRESP to mqttjs_0ec38e2a
+1702183556: Received PINGREQ from postman-mqtt-client-1702181022364
+1702183556: Sending PINGRESP to postman-mqtt-client-1702181022364
+1702183570: Client mqttjs_0ec38e2a closed its connection.
+1702183585: New connection from 172.18.0.3:33688 on port 1883.
+1702183585: New client connected from 172.18.0.3:33688 as mqttjs_21cf28e5 (p2, c1, k60, u'liitec').
+1702183585: No will message specified.
+1702183585: Sending CONNACK to mqttjs_21cf28e5 (0, 0)
+1702183585: Received SUBSCRIBE from mqttjs_21cf28e5
+1702183585: 	# (QoS 0)
+1702183585: mqttjs_21cf28e5 0 #
+1702183585: Sending SUBACK to mqttjs_21cf28e5
+1702183591: Received PUBLISH from postman-mqtt-client-1702181022364 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702183591: Sending PUBLISH to mqttjs_21cf28e5 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702183613: Received PUBLISH from postman-mqtt-client-1702181022364 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702183613: Sending PUBLISH to mqttjs_21cf28e5 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702183614: Received PUBLISH from postman-mqtt-client-1702181022364 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702183614: Sending PUBLISH to mqttjs_21cf28e5 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702183645: Received PINGREQ from mqttjs_21cf28e5
+1702183645: Sending PINGRESP to mqttjs_21cf28e5
+1702183674: Received PINGREQ from postman-mqtt-client-1702181022364
+1702183674: Sending PINGRESP to postman-mqtt-client-1702181022364
+1702183691: Client mqttjs_21cf28e5 closed its connection.
+1702183707: New connection from 172.18.0.3:45860 on port 1883.
+1702183707: New client connected from 172.18.0.3:45860 as mqttjs_90c57267 (p2, c1, k60, u'liitec').
+1702183707: No will message specified.
+1702183707: Sending CONNACK to mqttjs_90c57267 (0, 0)
+1702183707: Received SUBSCRIBE from mqttjs_90c57267
+1702183707: 	# (QoS 0)
+1702183707: mqttjs_90c57267 0 #
+1702183707: Sending SUBACK to mqttjs_90c57267
+1702183710: Received PUBLISH from postman-mqtt-client-1702181022364 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702183710: Sending PUBLISH to mqttjs_90c57267 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702183767: Received PINGREQ from mqttjs_90c57267
+1702183767: Sending PINGRESP to mqttjs_90c57267
+1702183770: Received PINGREQ from postman-mqtt-client-1702181022364
+1702183770: Sending PINGRESP to postman-mqtt-client-1702181022364
+1702183827: Received PINGREQ from mqttjs_90c57267
+1702183827: Sending PINGRESP to mqttjs_90c57267
+1702183830: Received PINGREQ from postman-mqtt-client-1702181022364
+1702183830: Sending PINGRESP to postman-mqtt-client-1702181022364
+1702183870: Client mqttjs_90c57267 closed its connection.
+1702183887: New connection from 172.18.0.3:39038 on port 1883.
+1702183887: New client connected from 172.18.0.3:39038 as mqttjs_36a62199 (p2, c1, k60, u'liitec').
+1702183887: No will message specified.
+1702183887: Sending CONNACK to mqttjs_36a62199 (0, 0)
+1702183887: Received SUBSCRIBE from mqttjs_36a62199
+1702183887: 	# (QoS 0)
+1702183887: mqttjs_36a62199 0 #
+1702183887: Sending SUBACK to mqttjs_36a62199
+1702183890: Received PINGREQ from postman-mqtt-client-1702181022364
+1702183890: Sending PINGRESP to postman-mqtt-client-1702181022364
+1702183904: Received PUBLISH from postman-mqtt-client-1702181022364 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702183904: Sending PUBLISH to mqttjs_36a62199 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702183947: Received PINGREQ from mqttjs_36a62199
+1702183947: Sending PINGRESP to mqttjs_36a62199
+1702183964: Received PINGREQ from postman-mqtt-client-1702181022364
+1702183964: Sending PINGRESP to postman-mqtt-client-1702181022364
+1702184005: Client mqttjs_36a62199 closed its connection.
+1702184019: New connection from 172.18.0.3:49084 on port 1883.
+1702184019: New client connected from 172.18.0.3:49084 as mqttjs_89309929 (p2, c1, k60, u'liitec').
+1702184019: No will message specified.
+1702184019: Sending CONNACK to mqttjs_89309929 (0, 0)
+1702184020: Received SUBSCRIBE from mqttjs_89309929
+1702184020: 	# (QoS 0)
+1702184020: mqttjs_89309929 0 #
+1702184020: Sending SUBACK to mqttjs_89309929
+1702184024: Received PINGREQ from postman-mqtt-client-1702181022364
+1702184024: Sending PINGRESP to postman-mqtt-client-1702181022364
+1702184025: Received PUBLISH from postman-mqtt-client-1702181022364 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702184025: Sending PUBLISH to mqttjs_89309929 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702184080: Received PINGREQ from mqttjs_89309929
+1702184080: Sending PINGRESP to mqttjs_89309929
+1702184085: Received PINGREQ from postman-mqtt-client-1702181022364
+1702184085: Sending PINGRESP to postman-mqtt-client-1702181022364
+1702184140: Received PINGREQ from mqttjs_89309929
+1702184140: Sending PINGRESP to mqttjs_89309929
+1702184141: Client mqttjs_89309929 closed its connection.
+1702184145: Received PINGREQ from postman-mqtt-client-1702181022364
+1702184145: Sending PINGRESP to postman-mqtt-client-1702181022364
+1702184157: New connection from 172.18.0.3:46692 on port 1883.
+1702184157: New client connected from 172.18.0.3:46692 as mqttjs_a8b3fc4a (p2, c1, k60, u'liitec').
+1702184157: No will message specified.
+1702184157: Sending CONNACK to mqttjs_a8b3fc4a (0, 0)
+1702184157: Received SUBSCRIBE from mqttjs_a8b3fc4a
+1702184157: 	# (QoS 0)
+1702184157: mqttjs_a8b3fc4a 0 #
+1702184157: Sending SUBACK to mqttjs_a8b3fc4a
+1702184167: Received PUBLISH from postman-mqtt-client-1702181022364 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702184167: Sending PUBLISH to mqttjs_a8b3fc4a (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702184217: Received PINGREQ from mqttjs_a8b3fc4a
+1702184217: Sending PINGRESP to mqttjs_a8b3fc4a
+1702184227: Received PINGREQ from postman-mqtt-client-1702181022364
+1702184227: Sending PINGRESP to postman-mqtt-client-1702181022364
+1702184238: Received PUBLISH from postman-mqtt-client-1702181022364 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702184238: Sending PUBLISH to mqttjs_a8b3fc4a (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702184241: Received PUBLISH from postman-mqtt-client-1702181022364 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702184241: Sending PUBLISH to mqttjs_a8b3fc4a (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702184243: Received PUBLISH from postman-mqtt-client-1702181022364 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702184243: Sending PUBLISH to mqttjs_a8b3fc4a (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702184244: Received PUBLISH from postman-mqtt-client-1702181022364 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702184244: Sending PUBLISH to mqttjs_a8b3fc4a (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702184277: Received PINGREQ from mqttjs_a8b3fc4a
+1702184277: Sending PINGRESP to mqttjs_a8b3fc4a
+1702184304: Received PINGREQ from postman-mqtt-client-1702181022364
+1702184304: Sending PINGRESP to postman-mqtt-client-1702181022364
+1702184325: Client mqttjs_a8b3fc4a closed its connection.
+1702184340: New connection from 172.18.0.3:40206 on port 1883.
+1702184340: New client connected from 172.18.0.3:40206 as mqttjs_d27b6e93 (p2, c1, k60, u'liitec').
+1702184340: No will message specified.
+1702184340: Sending CONNACK to mqttjs_d27b6e93 (0, 0)
+1702184340: Received SUBSCRIBE from mqttjs_d27b6e93
+1702184340: 	# (QoS 0)
+1702184340: mqttjs_d27b6e93 0 #
+1702184340: Sending SUBACK to mqttjs_d27b6e93
+1702184362: Received PUBLISH from postman-mqtt-client-1702181022364 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702184362: Sending PUBLISH to mqttjs_d27b6e93 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702184400: Received PINGREQ from mqttjs_d27b6e93
+1702184400: Sending PINGRESP to mqttjs_d27b6e93
+1702184422: Received PINGREQ from postman-mqtt-client-1702181022364
+1702184422: Sending PINGRESP to postman-mqtt-client-1702181022364
+1702184423: Client mqttjs_d27b6e93 closed its connection.
+1702184467: New connection from 172.18.0.3:36546 on port 1883.
+1702184467: New client connected from 172.18.0.3:36546 as mqttjs_386b56b4 (p2, c1, k60, u'liitec').
+1702184467: No will message specified.
+1702184467: Sending CONNACK to mqttjs_386b56b4 (0, 0)
+1702184467: Received SUBSCRIBE from mqttjs_386b56b4
+1702184467: 	# (QoS 0)
+1702184467: mqttjs_386b56b4 0 #
+1702184467: Sending SUBACK to mqttjs_386b56b4
+1702184471: Received PUBLISH from postman-mqtt-client-1702181022364 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702184471: Sending PUBLISH to mqttjs_386b56b4 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702184527: Received PINGREQ from mqttjs_386b56b4
+1702184527: Sending PINGRESP to mqttjs_386b56b4
+1702184531: Received PINGREQ from postman-mqtt-client-1702181022364
+1702184531: Sending PINGRESP to postman-mqtt-client-1702181022364
+1702184534: Client mqttjs_386b56b4 closed its connection.
+1702184552: New connection from 172.18.0.3:36904 on port 1883.
+1702184552: New client connected from 172.18.0.3:36904 as mqttjs_89bc947c (p2, c1, k60, u'liitec').
+1702184552: No will message specified.
+1702184552: Sending CONNACK to mqttjs_89bc947c (0, 0)
+1702184552: Received SUBSCRIBE from mqttjs_89bc947c
+1702184552: 	# (QoS 0)
+1702184552: mqttjs_89bc947c 0 #
+1702184552: Sending SUBACK to mqttjs_89bc947c
+1702184576: Received PUBLISH from postman-mqtt-client-1702181022364 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702184576: Sending PUBLISH to mqttjs_89bc947c (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702184612: Received PINGREQ from mqttjs_89bc947c
+1702184612: Sending PINGRESP to mqttjs_89bc947c
+1702184636: Received PINGREQ from postman-mqtt-client-1702181022364
+1702184636: Sending PINGRESP to postman-mqtt-client-1702181022364
+1702184672: Received PINGREQ from mqttjs_89bc947c
+1702184672: Sending PINGRESP to mqttjs_89bc947c
+1702184688: Client mqttjs_89bc947c closed its connection.
+1702184696: Received PINGREQ from postman-mqtt-client-1702181022364
+1702184696: Sending PINGRESP to postman-mqtt-client-1702181022364
+1702184715: New connection from 172.18.0.3:52322 on port 1883.
+1702184715: New client connected from 172.18.0.3:52322 as mqttjs_747c9ab9 (p2, c1, k60, u'liitec').
+1702184715: No will message specified.
+1702184715: Sending CONNACK to mqttjs_747c9ab9 (0, 0)
+1702184716: Received SUBSCRIBE from mqttjs_747c9ab9
+1702184716: 	# (QoS 0)
+1702184716: mqttjs_747c9ab9 0 #
+1702184716: Sending SUBACK to mqttjs_747c9ab9
+1702184735: Received PUBLISH from postman-mqtt-client-1702181022364 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702184735: Sending PUBLISH to mqttjs_747c9ab9 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702184757: Client mqttjs_747c9ab9 closed its connection.
+1702184789: New connection from 172.18.0.3:49352 on port 1883.
+1702184789: New client connected from 172.18.0.3:49352 as mqttjs_33d952e0 (p2, c1, k60, u'liitec').
+1702184789: No will message specified.
+1702184789: Sending CONNACK to mqttjs_33d952e0 (0, 0)
+1702184789: Received SUBSCRIBE from mqttjs_33d952e0
+1702184789: 	# (QoS 0)
+1702184789: mqttjs_33d952e0 0 #
+1702184789: Sending SUBACK to mqttjs_33d952e0
+1702184795: Received PINGREQ from postman-mqtt-client-1702181022364
+1702184795: Sending PINGRESP to postman-mqtt-client-1702181022364
+1702184819: Received PUBLISH from postman-mqtt-client-1702181022364 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702184819: Sending PUBLISH to mqttjs_33d952e0 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702184820: Received PUBLISH from postman-mqtt-client-1702181022364 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702184820: Sending PUBLISH to mqttjs_33d952e0 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702184821: Received PUBLISH from postman-mqtt-client-1702181022364 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702184821: Sending PUBLISH to mqttjs_33d952e0 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702184822: Received PUBLISH from postman-mqtt-client-1702181022364 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702184822: Sending PUBLISH to mqttjs_33d952e0 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702184822: Received PUBLISH from postman-mqtt-client-1702181022364 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702184822: Sending PUBLISH to mqttjs_33d952e0 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702184849: Received PINGREQ from mqttjs_33d952e0
+1702184849: Sending PINGRESP to mqttjs_33d952e0
+1702184882: Received PINGREQ from postman-mqtt-client-1702181022364
+1702184882: Sending PINGRESP to postman-mqtt-client-1702181022364
+1702184890: Client mqttjs_33d952e0 closed its connection.
+1702184906: New connection from 172.18.0.3:48032 on port 1883.
+1702184906: New client connected from 172.18.0.3:48032 as mqttjs_a36803cd (p2, c1, k60, u'liitec').
+1702184906: No will message specified.
+1702184906: Sending CONNACK to mqttjs_a36803cd (0, 0)
+1702184907: Received SUBSCRIBE from mqttjs_a36803cd
+1702184907: 	# (QoS 0)
+1702184907: mqttjs_a36803cd 0 #
+1702184907: Sending SUBACK to mqttjs_a36803cd
+1702184920: Received PUBLISH from postman-mqtt-client-1702181022364 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702184920: Sending PUBLISH to mqttjs_a36803cd (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702184921: Received PUBLISH from postman-mqtt-client-1702181022364 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702184921: Sending PUBLISH to mqttjs_a36803cd (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702184922: Received PUBLISH from postman-mqtt-client-1702181022364 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702184922: Sending PUBLISH to mqttjs_a36803cd (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702184923: Received PUBLISH from postman-mqtt-client-1702181022364 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702184923: Sending PUBLISH to mqttjs_a36803cd (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702184923: Received PUBLISH from postman-mqtt-client-1702181022364 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702184923: Sending PUBLISH to mqttjs_a36803cd (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702184967: Received PINGREQ from mqttjs_a36803cd
+1702184967: Sending PINGRESP to mqttjs_a36803cd
+1702184977: Client mqttjs_a36803cd closed its connection.
+1702184983: Received PINGREQ from postman-mqtt-client-1702181022364
+1702184983: Sending PINGRESP to postman-mqtt-client-1702181022364
+1702185043: Received PINGREQ from postman-mqtt-client-1702181022364
+1702185043: Sending PINGRESP to postman-mqtt-client-1702181022364
+1702185056: New connection from 172.18.0.3:51194 on port 1883.
+1702185056: New client connected from 172.18.0.3:51194 as mqttjs_68129b11 (p2, c1, k60, u'liitec').
+1702185056: No will message specified.
+1702185056: Sending CONNACK to mqttjs_68129b11 (0, 0)
+1702185056: Received SUBSCRIBE from mqttjs_68129b11
+1702185056: 	# (QoS 0)
+1702185056: mqttjs_68129b11 0 #
+1702185056: Sending SUBACK to mqttjs_68129b11
+1702185069: Received PUBLISH from postman-mqtt-client-1702181022364 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702185069: Sending PUBLISH to mqttjs_68129b11 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702185070: Received PUBLISH from postman-mqtt-client-1702181022364 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702185070: Sending PUBLISH to mqttjs_68129b11 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702185070: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1702185070: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1702185070: Error: No such file or directory.
+1702185071: Received PUBLISH from postman-mqtt-client-1702181022364 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702185071: Sending PUBLISH to mqttjs_68129b11 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702185071: Received PUBLISH from postman-mqtt-client-1702181022364 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702185071: Sending PUBLISH to mqttjs_68129b11 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702185072: Received PUBLISH from postman-mqtt-client-1702181022364 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702185072: Sending PUBLISH to mqttjs_68129b11 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702185116: Received PINGREQ from mqttjs_68129b11
+1702185116: Sending PINGRESP to mqttjs_68129b11
+1702185132: Received PINGREQ from postman-mqtt-client-1702181022364
+1702185132: Sending PINGRESP to postman-mqtt-client-1702181022364
+1702185176: Received PINGREQ from mqttjs_68129b11
+1702185176: Sending PINGRESP to mqttjs_68129b11
+1702185192: Received PINGREQ from postman-mqtt-client-1702181022364
+1702185192: Sending PINGRESP to postman-mqtt-client-1702181022364
+1702185236: Received PINGREQ from mqttjs_68129b11
+1702185236: Sending PINGRESP to mqttjs_68129b11
+1702185252: Received PINGREQ from postman-mqtt-client-1702181022364
+1702185252: Sending PINGRESP to postman-mqtt-client-1702181022364
+1702185295: Client mqttjs_68129b11 closed its connection.
+1702185312: Received PINGREQ from postman-mqtt-client-1702181022364
+1702185312: Sending PINGRESP to postman-mqtt-client-1702181022364
+1702185318: New connection from 172.18.0.3:34854 on port 1883.
+1702185318: New client connected from 172.18.0.3:34854 as mqttjs_8f9d78fe (p2, c1, k60, u'liitec').
+1702185318: No will message specified.
+1702185318: Sending CONNACK to mqttjs_8f9d78fe (0, 0)
+1702185318: Received SUBSCRIBE from mqttjs_8f9d78fe
+1702185318: 	# (QoS 0)
+1702185318: mqttjs_8f9d78fe 0 #
+1702185318: Sending SUBACK to mqttjs_8f9d78fe
+1702185332: Client mqttjs_8f9d78fe closed its connection.
+1702185347: New connection from 172.18.0.3:56724 on port 1883.
+1702185347: New client connected from 172.18.0.3:56724 as mqttjs_eccf7dc5 (p2, c1, k60, u'liitec').
+1702185347: No will message specified.
+1702185347: Sending CONNACK to mqttjs_eccf7dc5 (0, 0)
+1702185347: Received SUBSCRIBE from mqttjs_eccf7dc5
+1702185347: 	# (QoS 0)
+1702185347: mqttjs_eccf7dc5 0 #
+1702185347: Sending SUBACK to mqttjs_eccf7dc5
+1702185353: Received PUBLISH from postman-mqtt-client-1702181022364 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702185353: Sending PUBLISH to mqttjs_eccf7dc5 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702185366: Received PUBLISH from postman-mqtt-client-1702181022364 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702185366: Sending PUBLISH to mqttjs_eccf7dc5 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702185367: Received PUBLISH from postman-mqtt-client-1702181022364 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702185367: Sending PUBLISH to mqttjs_eccf7dc5 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702185368: Received PUBLISH from postman-mqtt-client-1702181022364 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702185368: Sending PUBLISH to mqttjs_eccf7dc5 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702185368: Received PUBLISH from postman-mqtt-client-1702181022364 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702185368: Sending PUBLISH to mqttjs_eccf7dc5 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702185407: Received PINGREQ from mqttjs_eccf7dc5
+1702185407: Sending PINGRESP to mqttjs_eccf7dc5
+1702185414: Client mqttjs_eccf7dc5 closed its connection.
+1702185428: Received PINGREQ from postman-mqtt-client-1702181022364
+1702185428: Sending PINGRESP to postman-mqtt-client-1702181022364
+1702185429: New connection from 172.18.0.3:53856 on port 1883.
+1702185429: New client connected from 172.18.0.3:53856 as mqttjs_cbdca769 (p2, c1, k60, u'liitec').
+1702185429: No will message specified.
+1702185429: Sending CONNACK to mqttjs_cbdca769 (0, 0)
+1702185429: Received SUBSCRIBE from mqttjs_cbdca769
+1702185429: 	# (QoS 0)
+1702185429: mqttjs_cbdca769 0 #
+1702185429: Sending SUBACK to mqttjs_cbdca769
+1702185441: Received PUBLISH from postman-mqtt-client-1702181022364 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702185441: Sending PUBLISH to mqttjs_cbdca769 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702185446: Received PUBLISH from postman-mqtt-client-1702181022364 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702185446: Sending PUBLISH to mqttjs_cbdca769 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702185447: Received PUBLISH from postman-mqtt-client-1702181022364 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702185447: Sending PUBLISH to mqttjs_cbdca769 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702185447: Received PUBLISH from postman-mqtt-client-1702181022364 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702185447: Sending PUBLISH to mqttjs_cbdca769 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702185448: Received PUBLISH from postman-mqtt-client-1702181022364 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702185448: Sending PUBLISH to mqttjs_cbdca769 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702185464: Received PUBLISH from postman-mqtt-client-1702181022364 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702185464: Sending PUBLISH to mqttjs_cbdca769 (d0, q0, r0, m0, '/devices/dv-4a92ab44-7fd6-4073-bc6c-84b97310dabd', ... (222 bytes))
+1702185489: Received PINGREQ from mqttjs_cbdca769
+1702185489: Sending PINGRESP to mqttjs_cbdca769
+1702185513: Client mqttjs_cbdca769 closed its connection.
+1702185524: Received PINGREQ from postman-mqtt-client-1702181022364
+1702185524: Sending PINGRESP to postman-mqtt-client-1702181022364
+1702185530: New connection from 172.18.0.3:40518 on port 1883.
+1702185530: New client connected from 172.18.0.3:40518 as mqttjs_1e54a1fa (p2, c1, k60, u'liitec').
+1702185530: No will message specified.
+1702185530: Sending CONNACK to mqttjs_1e54a1fa (0, 0)
+1702185530: Received SUBSCRIBE from mqttjs_1e54a1fa
+1702185530: 	# (QoS 0)
+1702185530: mqttjs_1e54a1fa 0 #
+1702185530: Sending SUBACK to mqttjs_1e54a1fa
+1702185549: Client mqttjs_1e54a1fa closed its connection.
+1702185550: mosquitto version 2.0.15 terminating
+1702185550: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1702185550: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1702185550: Error: No such file or directory.

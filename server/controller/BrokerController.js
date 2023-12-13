@@ -3,6 +3,18 @@ const dataSchema = require("../models/data.Model");
 
 const batchInsertSize = 15; 
 let dataBatches = {};
+let tz = 'America/Santiago'
+let _options = {
+  timeZone:tz ,
+  timeZoneName:'longOffset',
+  year: 'numeric',
+  month: 'numeric',
+  day: 'numeric',
+  hour: 'numeric',
+  minute: 'numeric',
+  second: 'numeric',
+  fractionalSecondDigits: 3
+}
 
 function mqttHandler(host, email, password) {
   const options = {
@@ -52,17 +64,22 @@ function mqttHandler(host, email, password) {
     if (!dataBatches[deviceId]) {
       dataBatches[deviceId] = [];
     }
+    
 
-    Object.entries(payload).forEach(([measurement, data]) => {
+    Object.entries(payload).forEach(([measurement, { value, timestamp }]) => {
       const entry = {
         deviceId: deviceId,
         measurement: measurement,
-        data: data,
-        createdOn: Date.now(),
+        value: value,
+        timestamp: new Date(timestamp*1000),//cambiar en un futuro
+        createdOn: Date.now()
+        //createdOn: new Date(new Date().toLocaleString('sv-SE',_options).replace(/(\d{4})-(\d{2})-(\d{2})\s+(\d{2}):(\d{2}):(\d{2}),(\d+)\s+/,'$1-$2-$3T$4:$5:$6.$7').replace('GMT−', '-' ).replace('GMT+','+'))
       };
-
+    
       dataBatches[deviceId].push(entry);
     });
+
+    console.log("DATA BATCHES: ",dataBatches[deviceId])
 
     if (dataBatches[deviceId].length >= batchInsertSize) {
       insertDataBatch(dataBatches[deviceId]);

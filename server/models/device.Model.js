@@ -30,6 +30,11 @@ const deviceSchema = new Schema(
             type: [String],
             required: true,
         },
+        createdOn: {
+            type: Date,
+            default: Date.now,
+            required: true
+        }
     }
 );
 
