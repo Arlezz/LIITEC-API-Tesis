@@ -1,0 +1,26 @@
+{
+    "name": "LiitecConnector",
+    "version": "1.0.0",
+    "description": "Official library for connecting to Liitec API",
+    "keywords": "sensors, liitec, api, connector",
+    "repository":
+    {
+      "type": "git",
+      "url": ""
+    },
+    "authors":
+    [
+      {
+        "name": "Antony Rodriguez",
+        "email": "antonyrodriguezc.2001@gmail.com",
+        "url": "https://www.john-smith/contact"
+      }
+    ],
+    "license": "MIT",
+    "dependencies": {
+      "knolleary/PubSubClient": "^2.8",
+      "adafruit/DHT sensor library": "1.4.6"
+    },
+    "frameworks": "*",
+    "platforms": "*"
+  }
