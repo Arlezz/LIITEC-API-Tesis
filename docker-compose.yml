@@ -32,8 +32,6 @@ services:
       - ./mosquitto/log:/etc/mosquitto/log:rw
     networks:
       - mosquitto_ntw
-    extra_hosts:
-      - "host.docker.internal:host-gateway"
 
 
 networks:

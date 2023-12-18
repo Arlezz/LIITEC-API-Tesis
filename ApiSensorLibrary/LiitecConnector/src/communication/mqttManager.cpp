@@ -8,6 +8,7 @@ void MqttManager::setup()
 {
     connectWiFi();
     connectMQTT();
+    connectNTP(ntp_server);
 }
 
 void MqttManager::loop()
@@ -24,6 +25,20 @@ void MqttManager::loop()
     client.loop();
 }
 
+void MqttManager::publish(const char *topic, StaticJsonDocument<200> &doc)
+{
+    if (!isValidMqtt())
+    {
+        return;
+    }
+
+
+
+    char buffer[200];
+    serializeJson(doc, buffer);
+    client.publish(topic, buffer);
+}
+
 bool MqttManager::isValidWifi() {
     return wifi_enabled && wifi_ssid && wifi_password;
 }
@@ -32,30 +47,10 @@ bool MqttManager::isValidMqtt() {
     return isValidWifi() && mqtt_enabled && mqtt_server && mqtt_port;
 }
 
-
-void MqttManager::connectWiFi() {
-    if (!isValidWifi() || WiFi.status() == WL_CONNECTED)
-    {
-        return;
-    }
-
-    if (log_enabled)
-    {
-        Serial.println("Connecting to WiFi network: " + String(wifi_ssid) + " ...");
-    }
-
-    WiFi.begin(wifi_ssid, wifi_password);
-    WiFi.mode(WIFI_STA);
-    while (WiFi.status() != WL_CONNECTED)
-    {
-        delay(100);
-    }
-
-    if (log_enabled)
-    {
-        Serial.println("WiFi connected");
-    }
+bool MqttManager::isValidNtp() {
+    return isValidWifi() && (ntp_server != "" || ntp_server != NULL) && (ntp_server[0] != '\0');
 }
+
 
 void callback(char* topic, byte* message, unsigned int length) {
   Serial.print("Message arrived on topic: ");
@@ -96,6 +91,30 @@ void MqttManager::connectWiFi() {
     }
 }
 
+void MqttManager::connectNTP(const char *ntpServer) {
+
+    if (!isValidNtp())
+    {
+        ntpServer = "pool.ntp.org";
+    }
+
+    if (log_enabled)
+    {
+        Serial.println("Connecting to NTP server: " + String(ntpServer) + " ...");
+    }
+
+    configTime(0, 0, ntpServer);
+    while (time(nullptr) <= 100000)
+    {
+        delay(100);
+    }
+
+    if (log_enabled)
+    {
+        Serial.println("NTP connected");
+    }
+}
+
 void MqttManager::connectMQTT() {
     if (!isValidMqtt())
     {
@@ -114,7 +133,7 @@ void MqttManager::connectMQTT() {
 
     while (!client.connected())
     {
-        if (mqtt_user && !*mqtt_user && mqtt_password && !*mqtt_password)
+        if (mqtt_user  && mqtt_password )
         {
             if (client.connect(espId.c_str(), mqtt_user, mqtt_password))
             {
@@ -139,7 +158,6 @@ void MqttManager::connectMQTT() {
     if (client.connected())
     {
         String message = "device connected: " + espId;
-        client.subscribe("telegraf/http_listener_v2");
 
         if (log_enabled)
         {
@@ -196,7 +214,7 @@ void MqttManager::reconnect() {
 
     while (!client.connected())
     {
-        if (mqtt_user && !*mqtt_user && mqtt_password && !*mqtt_password)
+        if (mqtt_user && mqtt_password)
         {
             if (client.connect(espId.c_str(), mqtt_user, mqtt_password))
             {
@@ -221,7 +239,6 @@ void MqttManager::reconnect() {
     if (client.connected())
     {
         String message = "device connected: " + espId;
-        client.subscribe("telegraf/http_listener_v2");
 
         if (log_enabled)
         {

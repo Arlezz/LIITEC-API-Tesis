@@ -1,18 +1,40 @@
 #include <Arduino.h>
+#include <settings.h>
 
-// put function declarations here:
-int myFunction(int, int);
+#include <sensors/sensor_dht.h>
+#include <communication/mqttManager.h>
+
+MqttManager mqttManager;
+
+DHTSensor dhtSensor(mqttManager);
 
 void setup() {
-  // put your setup code here, to run once:
-  int result = myFunction(2, 3);
+  Serial.begin(115200);
+
+  if (log_enabled) {
+      Serial.println("-----------------------");
+      Serial.println("Starting...");
+  }
+
+  // mqtt configuration
+  mqttManager.setup();
+
+  // sensors configuration
+  dhtSensor.setup(dhtSensorPin, dhtSensorType);
+
+  if (log_enabled)
+  {
+      Serial.println("Started");
+      Serial.println("-----------------------");
+  }
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
+
+  // mqtt loop
+  mqttManager.loop();
+
+  // sensors loop
+  dhtSensor.loop();
 }
 
-// put function definitions here:
-int myFunction(int x, int y) {
-  return x + y;
-}

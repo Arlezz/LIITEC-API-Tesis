@@ -1,20 +1,20 @@
 const mqtt = require("mqtt");
 const dataSchema = require("../models/data.Model");
 
-const batchInsertSize = 15; 
+const batchInsertSize = 15;
 let dataBatches = {};
-let tz = 'America/Santiago'
+let tz = "America/Santiago";
 let _options = {
-  timeZone:tz ,
-  timeZoneName:'longOffset',
-  year: 'numeric',
-  month: 'numeric',
-  day: 'numeric',
-  hour: 'numeric',
-  minute: 'numeric',
-  second: 'numeric',
-  fractionalSecondDigits: 3
-}
+  timeZone: tz,
+  timeZoneName: "longOffset",
+  year: "numeric",
+  month: "numeric",
+  day: "numeric",
+  hour: "numeric",
+  minute: "numeric",
+  second: "numeric",
+  fractionalSecondDigits: 3,
+};
 
 function mqttHandler(host, email, password) {
   const options = {
@@ -23,7 +23,7 @@ function mqttHandler(host, email, password) {
     username: email,
     password: password,
   };
-  
+
   const mqttClient = mqtt.connect(options);
 
   //Modulo de conexion a Mosquitto
@@ -40,9 +40,7 @@ function mqttHandler(host, email, password) {
   mqttClient.on("close", () => {
     console.log("Mosquitto closed connection");
     Object.keys(dataBatches).forEach((deviceId) => {
-
       if (dataBatches[deviceId].length > 0) {
-
         console.log(`Processing pending data for device ${deviceId}`);
         insertDataBatch(dataBatches[deviceId]);
         dataBatches[deviceId] = [];
@@ -51,47 +49,67 @@ function mqttHandler(host, email, password) {
   });
 
   mqttClient.on("message", (topic, message) => {
-    const payload = JSON.parse(message.toString());
-    
-    if (!topic.startsWith("/devices/") || topic.split("/").length !== 3) {
-      console.error("Invalid topic format");
-      return;
-    }
-    console.log(`Message arrived on topic ${topic}`);
+    try {
+      const payload = JSON.parse(message.toString());
 
-    const deviceId = topic.split("/")[2];
+      if (!topic.startsWith("/devices/") || topic.split("/").length !== 3) {
+        throw new Error("Invalid topic format");
+      }
+      
+      console.log(`Message arrived on topic ${topic}`);
 
-    if (!dataBatches[deviceId]) {
-      dataBatches[deviceId] = [];
-    }
-    
+      const deviceId = topic.split("/")[2];
 
-    Object.entries(payload).forEach(([measurement, { value, timestamp }]) => {
-      const entry = {
-        deviceId: deviceId,
-        measurement: measurement,
-        value: value,
-        timestamp: new Date(timestamp*1000),//cambiar en un futuro
-        createdOn: Date.now()
-      };
-    
-      dataBatches[deviceId].push(entry);
-    });
+      if (!dataBatches[deviceId]) {
+        dataBatches[deviceId] = [];
+      }
 
+      if (!payload.data || !Array.isArray(payload.data)) {
+        throw new Error(
+          "Invalid payload format: 'data' field is missing or not an array"
+        );
+      }
 
-    if (dataBatches[deviceId].length >= batchInsertSize) {
-      insertDataBatch(dataBatches[deviceId]);
-      dataBatches[deviceId] = [];
+      payload.data.forEach((item) => {
+        if (!item.measurement || !item.value || !item.timestamp) {
+          throw new Error(
+            "Invalid item format: 'measurement', 'value', or 'timestamp' field is missing"
+          );
+        }
+        
+        const entry = {
+          deviceId: deviceId,
+          measurement: item.measurement,
+          value: item.value,
+          timestamp: (item.timestamp*1000),
+          createdOn: Date.now(),
+        };
+
+        dataBatches[deviceId].push(entry);
+      });
+
+      //console.log(dataBatches[deviceId]);
+
+      if (dataBatches[deviceId].length >= batchInsertSize) {
+        insertDataBatch(dataBatches[deviceId]);
+        dataBatches[deviceId] = [];
+      }
+    } catch (error) {
+      console.error("Error processing MQTT message:", error.message);
     }
   });
 
   async function insertDataBatch(batch) {
     try {
       await dataSchema.insertMany(batch);
+      console.log("Data batch successfully inserted");
     } catch (error) {
-      console.error("Insert error:", error);
+      console.error("Error inserting data batch:", error.message);
+      console.error("Original batch:", batch);
+      // Puedes agregar más información según tus necesidades, como el lote original.
     }
   }
+  
 
   return mqttClient;
 }

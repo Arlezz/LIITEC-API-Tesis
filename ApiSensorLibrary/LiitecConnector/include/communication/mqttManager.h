@@ -23,9 +23,11 @@ class MqttManager{
     private: 
         static bool isValidWifi();
         static bool isValidMqtt();
+        static bool isValidNtp();
         const char *getEspId();
         void connectWiFi();
         void connectMQTT();
+        void connectNTP(const char* ntpServer);
         void reconnect();
 };
 
