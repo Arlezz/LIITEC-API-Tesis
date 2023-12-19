@@ -81,7 +81,7 @@ CONFIGURACIÓN DEL SERVER NTP
         - Completa el campo con la url del servidor NTP.
         - Si deseas utilizar el servidor NTP por defecto ("pool.ntp.org"), dejar vacío el campo.
 **************************************************************/
-#define ntp_server ""                   // URL del servidor NTP
+#define ntp_server "2.cl.pool.ntp.org"                   // URL del servidor NTP
 
 /**************************************************************
 CONFIGURACIÓN DEL REGISTRO (LOGS)

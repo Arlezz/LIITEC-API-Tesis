@@ -18,7 +18,7 @@ class DHTSensor : public Sensor
         DHTSensor(MqttManager &manager);
         ~DHTSensor();
 
-        void setup(int pin = -1, int sensorType = DHT11, String name = "dht");
+        void setup(int pin = -1, int sensorType = DHT22, String name = "dht");
         void loop(unsigned int timeout = 2000U);
         void readSensorValue() override;
 

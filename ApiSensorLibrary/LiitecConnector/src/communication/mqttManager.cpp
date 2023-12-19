@@ -32,8 +32,6 @@ void MqttManager::publish(const char *topic, StaticJsonDocument<200> &doc)
         return;
     }
 
-
-
     char buffer[200];
     serializeJson(doc, buffer);
     client.publish(topic, buffer);
