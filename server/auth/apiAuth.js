@@ -55,8 +55,6 @@ const requireAPIKeyOfType = (minPermissionLevel) => {
 
       const userPermissionLevel = localUser.apiKey.type;
 
-      console.log("minPermissionLevel: " + minPermissionLevel);
-
       if (
         userPermissionLevel === "superUser" ||
         (userPermissionLevel === "advancedUser" &&
