@@ -43,16 +43,6 @@ const userSchema = new Schema(
             required: true,
             unique: true
         },
-        apiKey: {
-            key: {
-                type: String,
-                required: true
-            },
-            type: {
-                type: String,
-                required: true
-            }
-        },
         createdOn: {
             type: Date,
             default: Date.now,

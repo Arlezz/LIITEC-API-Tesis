@@ -1,6 +1,9 @@
 const channelSchema = require("../models/channel.Model");
+const userSchema = require("../models/user.Model");
+const keySchema = require("../models/keyModel");
 const { v4: uuidv4 } = require("uuid");
 const ObjectId = require("mongoose").Types.ObjectId;
+const authorization = require("../auth/apiAuth");
 
 const ChannelController = {
 
@@ -56,14 +59,30 @@ const ChannelController = {
         return res.status(404).json({ error: "Channel not found" });
       }
 
-      var id1 = new ObjectId(req.user._id);
-      var id2 = new ObjectId(channel.owner);
+      const user = req.user;
 
-      if (!id1.equals(id2)) {
-        return res.status(403).json({ error: "Access Forbidden" });
+      if (user.apiKey.type === "readUser") {
+
+        const key = await keySchema.findOne({ user: user._id, channelAccess: id });
+
+        if (!key) {
+          return res.status(403).json({ error: "Access Forbidden" });
+        }
+
+        if (key.expirationDate < Date.now()) {
+          return res.status(403).json({ error: "Access Forbidden" });
+        }
+      } else {
+        var id1 = new ObjectId(req.user._id);
+        var id2 = new ObjectId(channel.owner);
+        
+  
+        if (!id1.equals(id2)) {
+          return res.status(403).json({ error: "Access Forbidden" });
+        }
       }
-
       res.json(channel);
+      
     } catch (error) {
       res.status(500).json({ error: error.message || "Error Getting Channel" });
     }
@@ -144,7 +163,7 @@ const ChannelController = {
   updateChannel: async (req, res) => {
     try {
 
-      const { name, description, project, ubication } = req.body;
+      const { name, description, project, ubication, isActive, isPublic } = req.body;
 
       const { id } = req.params;
 
@@ -165,7 +184,9 @@ const ChannelController = {
         (name && channel.name !== name) ||
         (description && channel.description !== description) ||
         (project && channel.project !== project) ||
-        (ubication && (channel.ubication.latitude !== ubication.latitude || channel.ubication.longitude !== ubication.longitude))
+        (ubication && (channel.ubication.latitude !== ubication.latitude || channel.ubication.longitude !== ubication.longitude)) ||
+        (isActive && channel.isActive !== isActive) ||
+        (isPublic && channel.isPublic !== isPublic)
       );
 
       if (hasChanges) {
@@ -180,6 +201,12 @@ const ChannelController = {
         }
         if (ubication) {
           channel.ubication = ubication;
+        }
+        if (isActive) {
+          channel.isActive = isActive;
+        }
+        if (isPublic) {
+          channel.isPublic = isPublic;
         }
 
         await channel.save();
@@ -218,6 +245,56 @@ const ChannelController = {
       return res.status(500).json({ error: error.message || "Error deleting channel" });
     }
   },
+
+  giveUserAccessToChannel : async (req, res) => {
+    try {
+
+      const { id } = req.params;
+      const { userId, expiration } = req.body;
+
+      const channel = await channelSchema.findOne({ channelId: id });
+
+      if (!channel) {
+        return res.status(404).json({ error: "Channel not found" });
+      }
+
+      var id1 = new ObjectId(req.user._id);
+      var id2 = new ObjectId(channel.owner);
+
+      if (!id1.equals(id2)) {
+        return res.status(403).json({ error: "Access Forbidden" });
+      }
+
+      const user = await userSchema.find({ _id: userId });
+
+      if (!user) {
+        return res.status(404).json({ error: "User not found" });
+      }
+
+      const userKey = await keySchema.findOne({ user: userId, channelAccess: id });
+
+      if (userKey) {
+        return res.status(403).json({ error: "User already has access to this channel" });
+      }
+
+      const key = authorization.genAPIKey();
+        
+      const newKey = new keySchema({
+        key: key,
+        type: "readUser",
+        expirationDate: expiration,
+        user: userId,
+        channelAccess: id,
+      });
+
+      await newKey.save();
+
+      res.json({ message: "User access granted" });
+
+    } catch (error) {
+      return res.status(500).json({ error: error.message || "Error giving user access to channel" });
+    }
+  }
 };
 
 module.exports = ChannelController;

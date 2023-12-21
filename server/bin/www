@@ -6,10 +6,13 @@ var dotenv = require('dotenv');
 var mongoose = require('mongoose');
 var mqttHandler = require('../controller/BrokerController');
 
+let process = require('process');
+
 dotenv.config({path: '.env'});
+const { MONGODB_URI, MQTT_HOST, MQTT_USER, MQTT_PASSWORD } = process.env;
 
 
-mongoose.connect(process.env.MONGODB_URI, {
+mongoose.connect(MONGODB_URI, {
     useNewUrlParser: true, 
 }).then(() => {
     console.log('Connected to MongoDB');
@@ -19,9 +22,9 @@ mongoose.connect(process.env.MONGODB_URI, {
 });
 
 const mqttClient = new mqttHandler(
-    process.env.MQTT_HOST,
-    process.env.MQTT_USER,
-    process.env.MQTT_PASSWORD
+    MQTT_HOST,
+    MQTT_USER,
+    MQTT_PASSWORD
 );
 
 // Suscribirse a todos los tópicos usando el carácter comodín #
@@ -41,4 +44,27 @@ httpServer.listen(process.env.SERVER_PORT, function (err) {
         return;
     }
     console.log(`Listening on port ${process.env.SERVER_PORT}`);
+});
+
+process.once('SIGUSR2', function () {
+    console.log("Server restarting...");
+
+    // MQTT close connection
+    console.log("Closing MQTT connection...");
+    mqttClient.end();
+    console.log("MQTT connection closed");
+
+    // HTTP close connection
+    console.log("Closing HTTP server...");
+    httpServer.close();
+    console.log("HTTP server closed");
+
+    // MongoDB close connection    
+    console.log("Closing MongoDB connection...");
+    mongoose.connection.close();
+    console.log("MongoDB connection closed");
+
+    // Restart server
+    console.log("Server restarted");
+    process.kill(process.pid, 'SIGUSR2');
 });

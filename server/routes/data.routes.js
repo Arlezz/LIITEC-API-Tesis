@@ -1,5 +1,7 @@
 const {Router} = require('express');
 const router = Router();
+var dotenv = require('dotenv');
+dotenv.config({path: '.env'});
 const DataController = require('../controller/DataController');
 
 //User levels authorization

@@ -184,7 +184,7 @@ const DataController = {
         {
           $group: {
             _id: "$measurement",
-            [operation]: { ["$" + operation]: "$data" },
+            [operation]: { ["$" + operation]: "$value" },
             count: { $sum: 1 },
           },
         },
@@ -192,8 +192,6 @@ const DataController = {
           $project: projection,
         },
       ]);
-
-      console.log(data.length > 1 ? data : data[0]);
 
       if (!data || data.length === 0) {
         return res.status(404).json({ error: "No data found for this device" });

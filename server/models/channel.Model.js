@@ -15,6 +15,14 @@ const channelSchema = new Schema(
             type: String, 
             required: true 
         },
+        isActive: { 
+            type: Boolean, 
+            default: true 
+        },
+        isPublic: { 
+            type: Boolean, 
+            default: false 
+        },
         description: { 
             type: String, 
             required: true 

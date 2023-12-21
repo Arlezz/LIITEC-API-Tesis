@@ -1,4 +1,5 @@
 const User = require("../models/user.Model");
+const Key = require("../models/keyModel");
 
 //const MAX = 10; // max API calls per day
 
@@ -13,14 +14,48 @@ const requireAPIKeyOfType = (minPermissionLevel) => {
   return async (req, res, next) => {
     try {
       const apiKey = req.header("Authorization");
-      const user = await User.findOne({ "apiKey.key": apiKey });
-      req.user = user;
-      
-      if (!user) {
-        return res.status(401).json({ error: "Acceso no autorizado" });
+
+      if (!apiKey) {
+        return res.status(401).json({ error: "Access Forbiden" });
       }
 
-      const userPermissionLevel = user.apiKey.type;
+      const keyProjection = { _id: 0, __v: 0 };
+      
+      const key = await Key.findOne({ key: apiKey}, keyProjection);
+
+      if (!key) {
+        return res.status(401).json({ error: "Access Forbiden" });
+      }
+
+      const userProjection = { __v: 0, password: 0 };
+      
+      const user = await User.findById(key.user, userProjection);
+
+      if (!user) {
+        return res.status(401).json({ error: "Access Forbiden" });
+      }
+      
+      const localUser = {
+        _id: user._id,
+        username: user.username,
+        superuser: user.superuser,
+        name: user.name,
+        lastName: user.lastName,
+        email: user.email,
+        createdOn: user.createdOn,
+        acls: user.acls,
+        apiKey: key
+      };
+            
+      req.user = localUser;
+      
+      if (!user) {
+        return res.status(401).json({ error: "Access Forbiden" });
+      }
+
+      const userPermissionLevel = localUser.apiKey.type;
+
+      console.log("minPermissionLevel: " + minPermissionLevel);
 
       if (
         userPermissionLevel === "superUser" ||
@@ -39,5 +74,6 @@ const requireAPIKeyOfType = (minPermissionLevel) => {
     }
   };
 };
+
 
 module.exports = { genAPIKey, requireAPIKeyOfType };

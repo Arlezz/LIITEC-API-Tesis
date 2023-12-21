@@ -1,26 +1,19 @@
 const mqtt = require("mqtt");
 const dataSchema = require("../models/data.Model");
+var dotenv = require('dotenv');
+dotenv.config({path: '.env'});
+const { MQTT_PORT, MQTT_BATCH_SIZE, MQTT_TOPIC_PREFIX, MQTT_SEND_INTERVAL } = process.env;
 
-const batchInsertSize = 15;
-let dataBatches = {};
-let tz = "America/Santiago";
-let _options = {
-  timeZone: tz,
-  timeZoneName: "longOffset",
-  year: "numeric",
-  month: "numeric",
-  day: "numeric",
-  hour: "numeric",
-  minute: "numeric",
-  second: "numeric",
-  fractionalSecondDigits: 3,
-};
 
-function mqttHandler(host, email, password) {
+function mqttHandler(host, username, password) {
+
+  let dataBatches = {};
+  let sendTimer = null;
+
   const options = {
-    port: 1883,
+    port: MQTT_PORT,
     host: host,
-    username: email,
+    username: username,
     password: password,
   };
 
@@ -36,68 +29,55 @@ function mqttHandler(host, email, password) {
     console.error("Mosquitto connection error:", error);
   });
 
+  //Modulo de reconexion a Mosquitto
+  mqttClient.on("reconnect", () => {
+    console.log("Reconnecting to Mosquitto");
+  });
+
   //Modulo de cierre de conexion a Mosquitto
   mqttClient.on("close", () => {
     console.log("Mosquitto closed connection");
-    Object.keys(dataBatches).forEach((deviceId) => {
-      if (dataBatches[deviceId].length > 0) {
-        console.log(`Processing pending data for device ${deviceId}`);
-        insertDataBatch(dataBatches[deviceId]);
-        dataBatches[deviceId] = [];
-      }
-    });
+    sendPendingData();
   });
 
+  //Modulo de mensajes de Mosquitto
   mqttClient.on("message", (topic, message) => {
+    handleMqttMessage(topic, message);
+  });
+
+  async function handleMqttMessage(topic, message) {
     try {
       const payload = JSON.parse(message.toString());
 
-      if (!topic.startsWith("/devices/") || topic.split("/").length !== 3) {
-        throw new Error("Invalid topic format");
-      }
-      
+      validateTopicStructure(topic);
+
       console.log(`Message arrived on topic ${topic}`);
+      const deviceId = topic.split(MQTT_TOPIC_PREFIX)[1];
 
-      const deviceId = topic.split("/")[2];
-
-      if (!dataBatches[deviceId]) {
-        dataBatches[deviceId] = [];
-      }
-
-      if (!payload.data || !Array.isArray(payload.data)) {
-        throw new Error(
-          "Invalid payload format: 'data' field is missing or not an array"
-        );
-      }
+      dataBatches[deviceId] = dataBatches[deviceId] || [];
+      validatePayloadStructure(payload);
 
       payload.data.forEach((item) => {
-        if (!item.measurement || !item.value || !item.timestamp) {
-          throw new Error(
-            "Invalid item format: 'measurement', 'value', or 'timestamp' field is missing"
-          );
-        }
-        
+        validateItemStructure(item);
         const entry = {
-          deviceId: deviceId,
+          deviceId,
           measurement: item.measurement,
           value: item.value,
-          timestamp: (item.timestamp*1000),
+          timestamp: item.timestamp * 1000,
           createdOn: Date.now(),
         };
-
         dataBatches[deviceId].push(entry);
       });
 
-      //console.log(dataBatches[deviceId]);
-
-      if (dataBatches[deviceId].length >= batchInsertSize) {
-        insertDataBatch(dataBatches[deviceId]);
-        dataBatches[deviceId] = [];
+      if (dataBatches[deviceId].length >= MQTT_BATCH_SIZE) {
+        await sendPendingData();
+      } else {
+        restartSendTimer();
       }
     } catch (error) {
       console.error("Error processing MQTT message:", error.message);
     }
-  });
+  }
 
   async function insertDataBatch(batch) {
     try {
@@ -106,12 +86,54 @@ function mqttHandler(host, email, password) {
     } catch (error) {
       console.error("Error inserting data batch:", error.message);
       console.error("Original batch:", batch);
-      // Puedes agregar más información según tus necesidades, como el lote original.
+    }
+  }
+
+  async function sendPendingData() {
+    for (const deviceId of Object.keys(dataBatches)) {
+      if (dataBatches[deviceId].length > 0) {
+        console.log(`Sending pending data for the device ${deviceId}`);
+        await insertDataBatch(dataBatches[deviceId]);
+        dataBatches[deviceId] = [];
+      }
+    }
+  }
+
+  function validateTopicStructure(topic) {
+    if (!topic.startsWith(MQTT_TOPIC_PREFIX) || topic.split("/").length !== 3) {
+      throw new Error("Invalid topic format");
     }
   }
   
+  function validatePayloadStructure(payload) {
+    if (!payload.data || !Array.isArray(payload.data)) {
+      throw new Error("Invalid payload format: 'data' field missing or not an array");
+    }
+  }
+
+  function validateItemStructure(item) {
+    if (!item.measurement || !item.value || !item.timestamp) {
+      throw new Error(
+        "Invalid element format: missing field 'measurement', 'value' or 'timestamp'."
+      );
+    }
+  }
+
+  function restartSendTimer() {
+    // Reiniciar el temporizador si ya estaba activo
+    if (sendTimer) {
+      clearTimeout(sendTimer);
+    }
+
+    // Establece un nuevo temporizador para enviar datos después de MQTT_SEND_INTERVAL milisegundos
+    sendTimer = setTimeout(() => {
+      sendPendingData();
+      sendTimer = null; // Limpiar el temporizador después de enviar los datos
+    }, MQTT_SEND_INTERVAL);
+  }
 
   return mqttClient;
 }
+
 
 module.exports = mqttHandler;

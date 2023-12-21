@@ -1,4 +1,5 @@
 const userSchema = require("../models/user.Model");
+const keySchema = require("../models/keyModel");
 const authorization = require("../auth/apiAuth");
 const bcrypt = require("bcryptjs");
 const ObjectId = require("mongoose").Types.ObjectId;
@@ -21,7 +22,7 @@ const UserController = {
         return res.status(400).json({ message: "User data is required" });
       }
   
-      const { username, name, lastName, email, password, type } = req.body;
+      const { username, name, lastName, email, password, type, superuser } = req.body;
   
       // Verificar si el correo electrónico ya está en uso de manera asincrónica
       const existingUser = await userSchema.findOne({ email: email });
@@ -33,28 +34,45 @@ const UserController = {
       if (existingUsername) {
         return res.status(400).json({ error: "Username already in use" });
       }
+
+      const isStrongPassword = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/.test(password);
+
+      if (!isStrongPassword) {
+        return res.status(400).json({ error: "Weak password. Passwords must have at least 8 characters, including uppercase and lowercase letters, numbers, and special characters." });
+      }
   
       const saltRounds = 10;//MODIFICAR MAS ADELANTE
+      
   
       // Generar el salt y el hash del password de manera asincrónica
       const salt = await bcrypt.genSalt(saltRounds);
       const hash = await bcrypt.hash(password, salt);
-  
+
+
       const newUser = new userSchema({
         username: username,
         name: name,
         lastName: lastName,
         email: email,
         password: hash,
-        createdOn: Date.now(),
-        apiKey: {
-          key: authorization.genAPIKey(),
-          type: type,
-        },
+        superuser: superuser,
+        createdOn: Date.now()
       });
   
       // Guardar el nuevo usuario de manera asincrónica
       await newUser.save();
+
+      if (type !== "readUser") { //Si el usuario no es de solo lectura, se le asigna una API Key
+        const newKey = new keySchema({
+          key: authorization.genAPIKey(),
+          type: type,
+          user: newUser._id,
+          createdOn: Date.now()
+        });
+
+        await newKey.save();
+      }  
+
   
       // No devolver detalles específicos en caso de éxito
       res.json({ message: "User created successfully" });
@@ -80,7 +98,7 @@ const UserController = {
       var id2 = new ObjectId(req.user._id);
 
       if (!id1.equals(id2)) {
-        return res.status(403).json({ error: "Access Forbidden" });
+        return res.status(403).json({ error: "Access Forbiden" });
       }
 
       res.json(user);
@@ -109,7 +127,7 @@ const UserController = {
       var id2 = new ObjectId(req.user._id);
 
       if (!id1.equals(id2)) {
-        return res.status(403).json({ error: "Access Forbidden" });
+        return res.status(403).json({ error: "Access Forbiden" });
       }
       
       // Comprobar si hay cambios en los datos antes de actualizar

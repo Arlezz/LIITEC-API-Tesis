@@ -2,43 +2,51 @@
 ###
 GET http://localhost:8081/api/channels?page=1&page_size=1 HTTP/1.1
 Content-Type: application/json
-Authorization: r1uh2ra3jc1wnd4e5vds8xaa2gze6f
+Authorization: 68p7nyib281x9youicx9ra810uk4ve
 
 
 //get channel by channelId
 ###
 GET http://localhost:8081/api/channels/ch-32e48add-c489-425e-bd48-fd7ffbd7d8f7 HTTP/1.1
 Content-Type: application/json
-Authorization: r1uh2ra3jc1wnd4e5vds8xaa2gze6f
+Authorization: s7792wno1alqeq4gau3729dx3qgtje
 
 //get my channels
 ###
 GET http://localhost:8081/api/users/6553086014241c7f7371bd59/channels HTTP/1.1
 Content-Type: application/json
-Authorization: r1uh2ra3jc1wnd4e5vds8xaa2gze6f
+Authorization: 68p7nyib281x9youicx9ra810uk4ve
 
 //create channel
 ###
 POST http://localhost:8081/api/channels HTTP/1.1
 Content-Type: application/json
-Authorization: d6aptbtpbfj4r7b3efboywzrff0k8o
+Authorization: 68p7nyib281x9youicx9ra810uk4ve
 
 {
     "name": "Segundo canal",
     "description": "Es un canal de prueba para el broker",
     "project":"proyecto 2023",
-    "ubication":{
-        "latitude": 1.0,
-        "longitude": 1.0
-    },
-    "owner":"656a4eff1daa2f69aac1edd2"
+    "owner":"658355548398f5fa3b69e862"
 }
+
+// access granted to user
+###
+POST http://localhost:8081/api/channels/ch-59a6b920-01c6-47c8-8221-62ab4d48d869/access HTTP/1.1
+Content-Type: application/json
+Authorization: 68p7nyib281x9youicx9ra810uk4ve
+
+{
+    "userId":"65836b51cbacc4a4dd5073d6",
+    "expiration": "2023-12-22T00:00:00.000Z"
+}
+
 
 //update channel
 ###
 PUT http://localhost:8081/api/channels/ch-9dcdbaca-ee7b-4519-b17a-03b45c457a9e HTTP/1.1
 Content-Type: application/json
-Authorization: r1uh2ra3jc1wnd4e5vds8xaa2gze6f
+Authorization: 68p7nyib281x9youicx9ra810uk4ve
 
 {
     //"name": "channel 2",
@@ -54,4 +62,4 @@ Authorization: r1uh2ra3jc1wnd4e5vds8xaa2gze6f
 ###
 DELETE http://localhost:8081/api/channels/ch-802c3cba-2cad-4dfd-a206-e19d3702a8be HTTP/1.1
 Content-Type: application/json
-Authorization: 1jq7lc8yyhhrtg1kwu80s2hto7i4pj
+Authorization: 68p7nyib281x9youicx9ra810uk4ve
