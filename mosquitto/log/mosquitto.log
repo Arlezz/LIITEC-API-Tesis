@@ -19947,3 +19947,981 @@
 1703126119: Sending PINGRESP to mqttjs_46527efb
 1703126179: Received PINGREQ from mqttjs_46527efb
 1703126179: Sending PINGRESP to mqttjs_46527efb
+1703126831: mosquitto version 2.0.15 starting
+1703126831: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1703126831: Loading plugin: /mosquitto/go-auth.so
+1703126831:  ├── Username/password checking enabled.
+1703126831:  ├── TLS-PSK checking enabled.
+1703126831:  └── Extended authentication not enabled.
+1703126831: Opening ipv4 listen socket on port 1883.
+1703126831: Opening ipv6 listen socket on port 1883.
+1703126831: Opening ipv4 listen socket on port 9001.
+1703126831: Opening ipv6 listen socket on port 9001.
+1703126831: mosquitto version 2.0.15 running
+1703126934: mosquitto version 2.0.15 terminating
+1703126934: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1703126934: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1703126934: Error: No such file or directory.
+1703127015: mosquitto version 2.0.15 starting
+1703127015: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1703127015: Loading plugin: /mosquitto/go-auth.so
+1703127015:  ├── Username/password checking enabled.
+1703127015:  ├── TLS-PSK checking enabled.
+1703127015:  └── Extended authentication not enabled.
+1703127015: Opening ipv4 listen socket on port 1883.
+1703127015: Opening ipv6 listen socket on port 1883.
+1703127015: Opening ipv4 listen socket on port 9001.
+1703127015: Opening ipv6 listen socket on port 9001.
+1703127015: mosquitto version 2.0.15 running
+1703127063: mosquitto version 2.0.15 terminating
+1703127063: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1703127063: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1703127063: Error: No such file or directory.
+1703127359: mosquitto version 2.0.15 starting
+1703127359: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1703127359: Loading plugin: /mosquitto/go-auth.so
+1703127359:  ├── Username/password checking enabled.
+1703127359:  ├── TLS-PSK checking enabled.
+1703127359:  └── Extended authentication not enabled.
+1703127359: Opening ipv4 listen socket on port 1883.
+1703127359: Opening ipv6 listen socket on port 1883.
+1703127359: Opening ipv4 listen socket on port 9001.
+1703127359: Opening ipv6 listen socket on port 9001.
+1703127359: mosquitto version 2.0.15 running
+1703127494: mosquitto version 2.0.15 terminating
+1703127494: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1703127494: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1703127494: Error: No such file or directory.
+1703127516: mosquitto version 2.0.15 starting
+1703127516: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1703127516: Loading plugin: /mosquitto/go-auth.so
+1703127516:  ├── Username/password checking enabled.
+1703127516:  ├── TLS-PSK checking enabled.
+1703127516:  └── Extended authentication not enabled.
+1703127516: Opening ipv4 listen socket on port 1883.
+1703127516: Opening ipv6 listen socket on port 1883.
+1703127516: Opening ipv4 listen socket on port 9001.
+1703127516: Opening ipv6 listen socket on port 9001.
+1703127516: mosquitto version 2.0.15 running
+1703127601: mosquitto version 2.0.15 terminating
+1703127601: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1703127601: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1703127601: Error: No such file or directory.
+1703127684: mosquitto version 2.0.15 starting
+1703127684: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1703127684: Loading plugin: /mosquitto/go-auth.so
+1703127684:  ├── Username/password checking enabled.
+1703127684:  ├── TLS-PSK checking enabled.
+1703127684:  └── Extended authentication not enabled.
+1703127684: Opening ipv4 listen socket on port 1883.
+1703127684: Opening ipv6 listen socket on port 1883.
+1703127684: Opening ipv4 listen socket on port 9001.
+1703127684: Opening ipv6 listen socket on port 9001.
+1703127684: mosquitto version 2.0.15 running
+1703127806: mosquitto version 2.0.15 terminating
+1703127806: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1703127806: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1703127806: Error: No such file or directory.
+1703128091: mosquitto version 2.0.15 starting
+1703128091: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1703128091: Loading plugin: /mosquitto/go-auth.so
+1703128091:  ├── Username/password checking enabled.
+1703128091:  ├── TLS-PSK checking enabled.
+1703128091:  └── Extended authentication not enabled.
+1703128091: Opening ipv4 listen socket on port 1883.
+1703128091: Opening ipv6 listen socket on port 1883.
+1703128091: Opening ipv4 listen socket on port 9001.
+1703128091: Opening ipv6 listen socket on port 9001.
+1703128091: mosquitto version 2.0.15 running
+1703128163: New connection from 172.18.0.3:45510 on port 1883.
+1703128163: New client connected from 172.18.0.3:45510 as mqttjs_618b85d5 (p2, c1, k60, u'arodrig').
+1703128163: No will message specified.
+1703128163: Sending CONNACK to mqttjs_618b85d5 (0, 0)
+1703128164: Received SUBSCRIBE from mqttjs_618b85d5
+1703128164: 	# (QoS 0)
+1703128164: mqttjs_618b85d5 0 #
+1703128164: Sending SUBACK to mqttjs_618b85d5
+1703128224: Received PINGREQ from mqttjs_618b85d5
+1703128224: Sending PINGRESP to mqttjs_618b85d5
+1703128236: Client mqttjs_618b85d5 closed its connection.
+1703128237: mosquitto version 2.0.15 terminating
+1703128237: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1703128237: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1703128237: Error: No such file or directory.
+1703165160: mosquitto version 2.0.15 starting
+1703165160: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1703165160: Loading plugin: /mosquitto/go-auth.so
+1703165160:  ├── Username/password checking enabled.
+1703165160:  ├── TLS-PSK checking enabled.
+1703165160:  └── Extended authentication not enabled.
+1703165160: Opening ipv4 listen socket on port 1883.
+1703165160: Opening ipv6 listen socket on port 1883.
+1703165160: Opening ipv4 listen socket on port 9001.
+1703165160: Opening ipv6 listen socket on port 9001.
+1703165160: mosquitto version 2.0.15 running
+1703165202: New connection from 172.18.0.3:57480 on port 1883.
+1703165202: New client connected from 172.18.0.3:57480 as mqttjs_88bd837f (p2, c1, k60, u'arodrig').
+1703165202: No will message specified.
+1703165202: Sending CONNACK to mqttjs_88bd837f (0, 0)
+1703165203: Received SUBSCRIBE from mqttjs_88bd837f
+1703165203: 	# (QoS 0)
+1703165203: mqttjs_88bd837f 0 #
+1703165203: Sending SUBACK to mqttjs_88bd837f
+1703165231: Client mqttjs_88bd837f closed its connection.
+1703165267: New connection from 172.18.0.3:55826 on port 1883.
+1703165267: New client connected from 172.18.0.3:55826 as mqttjs_32856052 (p2, c1, k60, u'arodrig').
+1703165267: No will message specified.
+1703165267: Sending CONNACK to mqttjs_32856052 (0, 0)
+1703165267: Received SUBSCRIBE from mqttjs_32856052
+1703165267: 	# (QoS 0)
+1703165267: mqttjs_32856052 0 #
+1703165267: Sending SUBACK to mqttjs_32856052
+1703165306: Client mqttjs_32856052 closed its connection.
+1703165306: mosquitto version 2.0.15 terminating
+1703165306: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1703165306: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1703165306: Error: No such file or directory.
+1703165326: mosquitto version 2.0.15 starting
+1703165326: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1703165326: Loading plugin: /mosquitto/go-auth.so
+1703165326:  ├── Username/password checking enabled.
+1703165326:  ├── TLS-PSK checking enabled.
+1703165326:  └── Extended authentication not enabled.
+1703165326: Opening ipv4 listen socket on port 1883.
+1703165326: Opening ipv6 listen socket on port 1883.
+1703165326: Opening ipv4 listen socket on port 9001.
+1703165326: Opening ipv6 listen socket on port 9001.
+1703165326: mosquitto version 2.0.15 running
+1703165393: New connection from 172.19.0.3:52206 on port 1883.
+1703165393: New client connected from 172.19.0.3:52206 as mqttjs_c09e1a28 (p2, c1, k60, u'arodrig').
+1703165393: No will message specified.
+1703165393: Sending CONNACK to mqttjs_c09e1a28 (0, 0)
+1703165394: Received SUBSCRIBE from mqttjs_c09e1a28
+1703165394: 	# (QoS 0)
+1703165394: mqttjs_c09e1a28 0 #
+1703165394: Sending SUBACK to mqttjs_c09e1a28
+1703165441: Client mqttjs_c09e1a28 closed its connection.
+1703165473: New connection from 172.19.0.3:43710 on port 1883.
+1703165473: Bad socket read/write on client mqttjs_85240266: Unknown error.
+1703165482: New connection from 172.19.0.3:50726 on port 1883.
+1703165482: New client connected from 172.19.0.3:50726 as mqttjs_85240266 (p2, c1, k60, u'arodrig').
+1703165482: No will message specified.
+1703165482: Sending CONNACK to mqttjs_85240266 (0, 0)
+1703165488: Received SUBSCRIBE from mqttjs_85240266
+1703165488: 	# (QoS 0)
+1703165488: mqttjs_85240266 0 #
+1703165488: Sending SUBACK to mqttjs_85240266
+1703165581: mosquitto version 2.0.15 starting
+1703165581: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1703165581: Loading plugin: /mosquitto/go-auth.so
+1703165581:  ├── Username/password checking enabled.
+1703165581:  ├── TLS-PSK checking enabled.
+1703165581:  └── Extended authentication not enabled.
+1703165581: Opening ipv4 listen socket on port 1883.
+1703165581: Opening ipv6 listen socket on port 1883.
+1703165581: Opening ipv4 listen socket on port 9001.
+1703165581: Opening ipv6 listen socket on port 9001.
+1703165581: mosquitto version 2.0.15 running
+1703165620: mosquitto version 2.0.15 terminating
+1703165620: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1703165620: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1703165620: Error: No such file or directory.
+1703165654: mosquitto version 2.0.15 starting
+1703165654: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1703165654: Loading plugin: /mosquitto/go-auth.so
+1703165654:  ├── Username/password checking enabled.
+1703165654:  ├── TLS-PSK checking enabled.
+1703165654:  └── Extended authentication not enabled.
+1703165654: Opening ipv4 listen socket on port 1883.
+1703165654: Opening ipv6 listen socket on port 1883.
+1703165654: Opening ipv4 listen socket on port 9001.
+1703165654: Opening ipv6 listen socket on port 9001.
+1703165654: mosquitto version 2.0.15 running
+1703165686: New connection from 172.18.0.3:35376 on port 1883.
+1703165686: New client connected from 172.18.0.3:35376 as mqttjs_38a6cbf9 (p2, c1, k60, u'arodrig').
+1703165686: No will message specified.
+1703165686: Sending CONNACK to mqttjs_38a6cbf9 (0, 0)
+1703165687: Received SUBSCRIBE from mqttjs_38a6cbf9
+1703165687: 	# (QoS 0)
+1703165687: mqttjs_38a6cbf9 0 #
+1703165687: Sending SUBACK to mqttjs_38a6cbf9
+1703165747: Received PINGREQ from mqttjs_38a6cbf9
+1703165747: Sending PINGRESP to mqttjs_38a6cbf9
+1703165807: Received PINGREQ from mqttjs_38a6cbf9
+1703165807: Sending PINGRESP to mqttjs_38a6cbf9
+1703165867: Received PINGREQ from mqttjs_38a6cbf9
+1703165867: Sending PINGRESP to mqttjs_38a6cbf9
+1703165927: Received PINGREQ from mqttjs_38a6cbf9
+1703165927: Sending PINGRESP to mqttjs_38a6cbf9
+1703165987: Received PINGREQ from mqttjs_38a6cbf9
+1703165987: Sending PINGRESP to mqttjs_38a6cbf9
+1703166047: Received PINGREQ from mqttjs_38a6cbf9
+1703166047: Sending PINGRESP to mqttjs_38a6cbf9
+1703166107: Received PINGREQ from mqttjs_38a6cbf9
+1703166107: Sending PINGRESP to mqttjs_38a6cbf9
+1703166167: Received PINGREQ from mqttjs_38a6cbf9
+1703166167: Sending PINGRESP to mqttjs_38a6cbf9
+1703166227: Received PINGREQ from mqttjs_38a6cbf9
+1703166227: Sending PINGRESP to mqttjs_38a6cbf9
+1703166287: Received PINGREQ from mqttjs_38a6cbf9
+1703166287: Sending PINGRESP to mqttjs_38a6cbf9
+1703166347: Received PINGREQ from mqttjs_38a6cbf9
+1703166347: Sending PINGRESP to mqttjs_38a6cbf9
+1703166407: Received PINGREQ from mqttjs_38a6cbf9
+1703166407: Sending PINGRESP to mqttjs_38a6cbf9
+1703166467: Received PINGREQ from mqttjs_38a6cbf9
+1703166467: Sending PINGRESP to mqttjs_38a6cbf9
+1703166527: Received PINGREQ from mqttjs_38a6cbf9
+1703166527: Sending PINGRESP to mqttjs_38a6cbf9
+1703166587: Received PINGREQ from mqttjs_38a6cbf9
+1703166587: Sending PINGRESP to mqttjs_38a6cbf9
+1703166606: Client mqttjs_38a6cbf9 closed its connection.
+1703166654: New connection from 172.18.0.3:43026 on port 1883.
+1703166654: New client connected from 172.18.0.3:43026 as mqttjs_dc3e50b7 (p2, c1, k60, u'arodrig').
+1703166654: No will message specified.
+1703166654: Sending CONNACK to mqttjs_dc3e50b7 (0, 0)
+1703166654: Received SUBSCRIBE from mqttjs_dc3e50b7
+1703166654: 	# (QoS 0)
+1703166654: mqttjs_dc3e50b7 0 #
+1703166654: Sending SUBACK to mqttjs_dc3e50b7
+1703166714: Received PINGREQ from mqttjs_dc3e50b7
+1703166714: Sending PINGRESP to mqttjs_dc3e50b7
+1703166774: Received PINGREQ from mqttjs_dc3e50b7
+1703166774: Sending PINGRESP to mqttjs_dc3e50b7
+1703166834: Received PINGREQ from mqttjs_dc3e50b7
+1703166834: Sending PINGRESP to mqttjs_dc3e50b7
+1703166894: Received PINGREQ from mqttjs_dc3e50b7
+1703166894: Sending PINGRESP to mqttjs_dc3e50b7
+1703166954: Received PINGREQ from mqttjs_dc3e50b7
+1703166954: Sending PINGRESP to mqttjs_dc3e50b7
+1703167014: Received PINGREQ from mqttjs_dc3e50b7
+1703167014: Sending PINGRESP to mqttjs_dc3e50b7
+1703167074: Received PINGREQ from mqttjs_dc3e50b7
+1703167074: Sending PINGRESP to mqttjs_dc3e50b7
+1703167134: Received PINGREQ from mqttjs_dc3e50b7
+1703167134: Sending PINGRESP to mqttjs_dc3e50b7
+1703167194: Received PINGREQ from mqttjs_dc3e50b7
+1703167194: Sending PINGRESP to mqttjs_dc3e50b7
+1703167254: Received PINGREQ from mqttjs_dc3e50b7
+1703167254: Sending PINGRESP to mqttjs_dc3e50b7
+1703167314: Received PINGREQ from mqttjs_dc3e50b7
+1703167314: Sending PINGRESP to mqttjs_dc3e50b7
+1703167374: Received PINGREQ from mqttjs_dc3e50b7
+1703167374: Sending PINGRESP to mqttjs_dc3e50b7
+1703167434: Received PINGREQ from mqttjs_dc3e50b7
+1703167434: Sending PINGRESP to mqttjs_dc3e50b7
+1703167454: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1703167454: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1703167454: Error: No such file or directory.
+1703167494: Received PINGREQ from mqttjs_dc3e50b7
+1703167494: Sending PINGRESP to mqttjs_dc3e50b7
+1703167554: Received PINGREQ from mqttjs_dc3e50b7
+1703167554: Sending PINGRESP to mqttjs_dc3e50b7
+1703167602: Client mqttjs_dc3e50b7 closed its connection.
+1703167632: New connection from 172.18.0.3:51764 on port 1883.
+1703167632: New client connected from 172.18.0.3:51764 as mqttjs_81a85ef2 (p2, c1, k60, u'arodrig').
+1703167632: No will message specified.
+1703167632: Sending CONNACK to mqttjs_81a85ef2 (0, 0)
+1703167632: Received SUBSCRIBE from mqttjs_81a85ef2
+1703167632: 	# (QoS 0)
+1703167632: mqttjs_81a85ef2 0 #
+1703167632: Sending SUBACK to mqttjs_81a85ef2
+1703167692: Received PINGREQ from mqttjs_81a85ef2
+1703167692: Sending PINGRESP to mqttjs_81a85ef2
+1703167752: Received PINGREQ from mqttjs_81a85ef2
+1703167752: Sending PINGRESP to mqttjs_81a85ef2
+1703167812: Received PINGREQ from mqttjs_81a85ef2
+1703167812: Sending PINGRESP to mqttjs_81a85ef2
+1703167872: Received PINGREQ from mqttjs_81a85ef2
+1703167872: Sending PINGRESP to mqttjs_81a85ef2
+1703167932: Received PINGREQ from mqttjs_81a85ef2
+1703167932: Sending PINGRESP to mqttjs_81a85ef2
+1703167992: Received PINGREQ from mqttjs_81a85ef2
+1703167992: Sending PINGRESP to mqttjs_81a85ef2
+1703168052: Received PINGREQ from mqttjs_81a85ef2
+1703168052: Sending PINGRESP to mqttjs_81a85ef2
+1703168112: Received PINGREQ from mqttjs_81a85ef2
+1703168112: Sending PINGRESP to mqttjs_81a85ef2
+1703168172: Received PINGREQ from mqttjs_81a85ef2
+1703168172: Sending PINGRESP to mqttjs_81a85ef2
+1703168232: Received PINGREQ from mqttjs_81a85ef2
+1703168232: Sending PINGRESP to mqttjs_81a85ef2
+1703168292: Received PINGREQ from mqttjs_81a85ef2
+1703168292: Sending PINGRESP to mqttjs_81a85ef2
+1703168352: Received PINGREQ from mqttjs_81a85ef2
+1703168352: Sending PINGRESP to mqttjs_81a85ef2
+1703168412: Received PINGREQ from mqttjs_81a85ef2
+1703168412: Sending PINGRESP to mqttjs_81a85ef2
+1703168472: Received PINGREQ from mqttjs_81a85ef2
+1703168472: Sending PINGRESP to mqttjs_81a85ef2
+1703168532: Received PINGREQ from mqttjs_81a85ef2
+1703168532: Sending PINGRESP to mqttjs_81a85ef2
+1703168592: Received PINGREQ from mqttjs_81a85ef2
+1703168592: Sending PINGRESP to mqttjs_81a85ef2
+1703168652: Received PINGREQ from mqttjs_81a85ef2
+1703168652: Sending PINGRESP to mqttjs_81a85ef2
+1703168712: Received PINGREQ from mqttjs_81a85ef2
+1703168712: Sending PINGRESP to mqttjs_81a85ef2
+1703168772: Received PINGREQ from mqttjs_81a85ef2
+1703168772: Sending PINGRESP to mqttjs_81a85ef2
+1703168832: Received PINGREQ from mqttjs_81a85ef2
+1703168832: Sending PINGRESP to mqttjs_81a85ef2
+1703168892: Received PINGREQ from mqttjs_81a85ef2
+1703168892: Sending PINGRESP to mqttjs_81a85ef2
+1703168952: Received PINGREQ from mqttjs_81a85ef2
+1703168952: Sending PINGRESP to mqttjs_81a85ef2
+1703169012: Received PINGREQ from mqttjs_81a85ef2
+1703169012: Sending PINGRESP to mqttjs_81a85ef2
+1703169072: Received PINGREQ from mqttjs_81a85ef2
+1703169072: Sending PINGRESP to mqttjs_81a85ef2
+1703169132: Received PINGREQ from mqttjs_81a85ef2
+1703169132: Sending PINGRESP to mqttjs_81a85ef2
+1703169192: Received PINGREQ from mqttjs_81a85ef2
+1703169192: Sending PINGRESP to mqttjs_81a85ef2
+1703169252: Received PINGREQ from mqttjs_81a85ef2
+1703169252: Sending PINGRESP to mqttjs_81a85ef2
+1703169255: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1703169255: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1703169255: Error: No such file or directory.
+1703169312: Received PINGREQ from mqttjs_81a85ef2
+1703169312: Sending PINGRESP to mqttjs_81a85ef2
+1703169372: Received PINGREQ from mqttjs_81a85ef2
+1703169372: Sending PINGRESP to mqttjs_81a85ef2
+1703169432: Received PINGREQ from mqttjs_81a85ef2
+1703169432: Sending PINGRESP to mqttjs_81a85ef2
+1703169492: Received PINGREQ from mqttjs_81a85ef2
+1703169492: Sending PINGRESP to mqttjs_81a85ef2
+1703169552: Received PINGREQ from mqttjs_81a85ef2
+1703169552: Sending PINGRESP to mqttjs_81a85ef2
+1703169612: Received PINGREQ from mqttjs_81a85ef2
+1703169612: Sending PINGRESP to mqttjs_81a85ef2
+1703169672: Received PINGREQ from mqttjs_81a85ef2
+1703169672: Sending PINGRESP to mqttjs_81a85ef2
+1703169732: Received PINGREQ from mqttjs_81a85ef2
+1703169732: Sending PINGRESP to mqttjs_81a85ef2
+1703169792: Received PINGREQ from mqttjs_81a85ef2
+1703169792: Sending PINGRESP to mqttjs_81a85ef2
+1703169852: Received PINGREQ from mqttjs_81a85ef2
+1703169852: Sending PINGRESP to mqttjs_81a85ef2
+1703169912: Received PINGREQ from mqttjs_81a85ef2
+1703169912: Sending PINGRESP to mqttjs_81a85ef2
+1703169972: Received PINGREQ from mqttjs_81a85ef2
+1703169972: Sending PINGRESP to mqttjs_81a85ef2
+1703170032: Received PINGREQ from mqttjs_81a85ef2
+1703170032: Sending PINGRESP to mqttjs_81a85ef2
+1703170092: Received PINGREQ from mqttjs_81a85ef2
+1703170092: Sending PINGRESP to mqttjs_81a85ef2
+1703170152: Received PINGREQ from mqttjs_81a85ef2
+1703170152: Sending PINGRESP to mqttjs_81a85ef2
+1703170212: Received PINGREQ from mqttjs_81a85ef2
+1703170212: Sending PINGRESP to mqttjs_81a85ef2
+1703170272: Received PINGREQ from mqttjs_81a85ef2
+1703170272: Sending PINGRESP to mqttjs_81a85ef2
+1703170332: Received PINGREQ from mqttjs_81a85ef2
+1703170332: Sending PINGRESP to mqttjs_81a85ef2
+1703170392: Received PINGREQ from mqttjs_81a85ef2
+1703170392: Sending PINGRESP to mqttjs_81a85ef2
+1703170452: Received PINGREQ from mqttjs_81a85ef2
+1703170452: Sending PINGRESP to mqttjs_81a85ef2
+1703170512: Received PINGREQ from mqttjs_81a85ef2
+1703170512: Sending PINGRESP to mqttjs_81a85ef2
+1703170572: Received PINGREQ from mqttjs_81a85ef2
+1703170572: Sending PINGRESP to mqttjs_81a85ef2
+1703170632: Received PINGREQ from mqttjs_81a85ef2
+1703170632: Sending PINGRESP to mqttjs_81a85ef2
+1703170692: Received PINGREQ from mqttjs_81a85ef2
+1703170692: Sending PINGRESP to mqttjs_81a85ef2
+1703170752: Received PINGREQ from mqttjs_81a85ef2
+1703170752: Sending PINGRESP to mqttjs_81a85ef2
+1703170812: Received PINGREQ from mqttjs_81a85ef2
+1703170812: Sending PINGRESP to mqttjs_81a85ef2
+1703170872: Received PINGREQ from mqttjs_81a85ef2
+1703170872: Sending PINGRESP to mqttjs_81a85ef2
+1703170932: Received PINGREQ from mqttjs_81a85ef2
+1703170932: Sending PINGRESP to mqttjs_81a85ef2
+1703170992: Received PINGREQ from mqttjs_81a85ef2
+1703170992: Sending PINGRESP to mqttjs_81a85ef2
+1703171052: Received PINGREQ from mqttjs_81a85ef2
+1703171052: Sending PINGRESP to mqttjs_81a85ef2
+1703171056: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1703171056: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1703171056: Error: No such file or directory.
+1703171112: Received PINGREQ from mqttjs_81a85ef2
+1703171112: Sending PINGRESP to mqttjs_81a85ef2
+1703171172: Received PINGREQ from mqttjs_81a85ef2
+1703171172: Sending PINGRESP to mqttjs_81a85ef2
+1703171232: Received PINGREQ from mqttjs_81a85ef2
+1703171232: Sending PINGRESP to mqttjs_81a85ef2
+1703171292: Received PINGREQ from mqttjs_81a85ef2
+1703171292: Sending PINGRESP to mqttjs_81a85ef2
+1703171352: Received PINGREQ from mqttjs_81a85ef2
+1703171352: Sending PINGRESP to mqttjs_81a85ef2
+1703171412: Received PINGREQ from mqttjs_81a85ef2
+1703171412: Sending PINGRESP to mqttjs_81a85ef2
+1703171433: Client mqttjs_81a85ef2 closed its connection.
+1703171434: mosquitto version 2.0.15 terminating
+1703171434: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1703171434: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1703171434: Error: No such file or directory.
+1703171452: mosquitto version 2.0.15 starting
+1703171452: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1703171452: Loading plugin: /mosquitto/go-auth.so
+1703171452:  ├── Username/password checking enabled.
+1703171452:  ├── TLS-PSK checking enabled.
+1703171452:  └── Extended authentication not enabled.
+1703171452: Opening ipv4 listen socket on port 1883.
+1703171452: Opening ipv6 listen socket on port 1883.
+1703171452: Opening ipv4 listen socket on port 9001.
+1703171452: Opening ipv6 listen socket on port 9001.
+1703171452: mosquitto version 2.0.15 running
+1703171486: New connection from 172.19.0.3:50940 on port 1883.
+1703171486: New client connected from 172.19.0.3:50940 as mqttjs_704f18bd (p2, c1, k60, u'arodrig').
+1703171486: No will message specified.
+1703171486: Sending CONNACK to mqttjs_704f18bd (0, 0)
+1703171487: Received SUBSCRIBE from mqttjs_704f18bd
+1703171487: 	# (QoS 0)
+1703171487: mqttjs_704f18bd 0 #
+1703171487: Sending SUBACK to mqttjs_704f18bd
+1703171517: Client mqttjs_704f18bd closed its connection.
+1703171543: New connection from 172.19.0.3:48090 on port 1883.
+1703171543: New client connected from 172.19.0.3:48090 as mqttjs_40157a0a (p2, c1, k60, u'arodrig').
+1703171543: No will message specified.
+1703171543: Sending CONNACK to mqttjs_40157a0a (0, 0)
+1703171544: Received SUBSCRIBE from mqttjs_40157a0a
+1703171544: 	# (QoS 0)
+1703171544: mqttjs_40157a0a 0 #
+1703171544: Sending SUBACK to mqttjs_40157a0a
+1703171604: Received PINGREQ from mqttjs_40157a0a
+1703171604: Sending PINGRESP to mqttjs_40157a0a
+1703171664: Received PINGREQ from mqttjs_40157a0a
+1703171664: Sending PINGRESP to mqttjs_40157a0a
+1703171724: Received PINGREQ from mqttjs_40157a0a
+1703171724: Sending PINGRESP to mqttjs_40157a0a
+1703171784: Received PINGREQ from mqttjs_40157a0a
+1703171784: Sending PINGRESP to mqttjs_40157a0a
+1703171844: Received PINGREQ from mqttjs_40157a0a
+1703171844: Sending PINGRESP to mqttjs_40157a0a
+1703171883: Client mqttjs_40157a0a closed its connection.
+1703171884: mosquitto version 2.0.15 terminating
+1703171884: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1703171884: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1703171884: Error: No such file or directory.
+1703172098: mosquitto version 2.0.15 starting
+1703172098: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1703172098: Loading plugin: /mosquitto/go-auth.so
+1703172098:  ├── Username/password checking enabled.
+1703172098:  ├── TLS-PSK checking enabled.
+1703172098:  └── Extended authentication not enabled.
+1703172098: Opening ipv4 listen socket on port 1883.
+1703172098: Opening ipv6 listen socket on port 1883.
+1703172098: Opening ipv4 listen socket on port 9001.
+1703172098: Opening ipv6 listen socket on port 9001.
+1703172098: mosquitto version 2.0.15 running
+1703172134: New connection from 172.20.0.3:59384 on port 1883.
+1703172134: New client connected from 172.20.0.3:59384 as mqttjs_3b11e231 (p2, c1, k60, u'arodrig').
+1703172134: No will message specified.
+1703172134: Sending CONNACK to mqttjs_3b11e231 (0, 0)
+1703172135: Received SUBSCRIBE from mqttjs_3b11e231
+1703172135: 	# (QoS 0)
+1703172135: mqttjs_3b11e231 0 #
+1703172135: Sending SUBACK to mqttjs_3b11e231
+1703172195: Received PINGREQ from mqttjs_3b11e231
+1703172195: Sending PINGRESP to mqttjs_3b11e231
+1703172212: Client mqttjs_3b11e231 closed its connection.
+1703172234: New connection from 172.20.0.3:50110 on port 1883.
+1703172234: New client connected from 172.20.0.3:50110 as mqttjs_16de75d4 (p2, c1, k60, u'arodrig').
+1703172234: No will message specified.
+1703172234: Sending CONNACK to mqttjs_16de75d4 (0, 0)
+1703172235: Received SUBSCRIBE from mqttjs_16de75d4
+1703172235: 	# (QoS 0)
+1703172235: mqttjs_16de75d4 0 #
+1703172235: Sending SUBACK to mqttjs_16de75d4
+1703172282: Client mqttjs_16de75d4 closed its connection.
+1703172309: New connection from 172.20.0.3:43850 on port 1883.
+1703172309: New client connected from 172.20.0.3:43850 as mqttjs_e7a902df (p2, c1, k60, u'arodrig').
+1703172309: No will message specified.
+1703172309: Sending CONNACK to mqttjs_e7a902df (0, 0)
+1703172309: Received SUBSCRIBE from mqttjs_e7a902df
+1703172309: 	# (QoS 0)
+1703172309: mqttjs_e7a902df 0 #
+1703172309: Sending SUBACK to mqttjs_e7a902df
+1703172337: Client mqttjs_e7a902df closed its connection.
+1703172360: New connection from 172.20.0.3:59756 on port 1883.
+1703172360: New client connected from 172.20.0.3:59756 as mqttjs_58f74c0c (p2, c1, k60, u'arodrig').
+1703172360: No will message specified.
+1703172360: Sending CONNACK to mqttjs_58f74c0c (0, 0)
+1703172360: Received SUBSCRIBE from mqttjs_58f74c0c
+1703172360: 	# (QoS 0)
+1703172360: mqttjs_58f74c0c 0 #
+1703172360: Sending SUBACK to mqttjs_58f74c0c
+1703172401: Client mqttjs_58f74c0c closed its connection.
+1703172432: New connection from 172.20.0.3:47994 on port 1883.
+1703172432: New client connected from 172.20.0.3:47994 as mqttjs_a9cf5b0a (p2, c1, k60, u'arodrig').
+1703172432: No will message specified.
+1703172432: Sending CONNACK to mqttjs_a9cf5b0a (0, 0)
+1703172432: Received SUBSCRIBE from mqttjs_a9cf5b0a
+1703172432: 	# (QoS 0)
+1703172432: mqttjs_a9cf5b0a 0 #
+1703172432: Sending SUBACK to mqttjs_a9cf5b0a
+1703172492: Received PINGREQ from mqttjs_a9cf5b0a
+1703172492: Sending PINGRESP to mqttjs_a9cf5b0a
+1703172552: Received PINGREQ from mqttjs_a9cf5b0a
+1703172552: Sending PINGRESP to mqttjs_a9cf5b0a
+1703172609: Client mqttjs_a9cf5b0a closed its connection.
+1703172632: New connection from 172.20.0.3:44096 on port 1883.
+1703172632: New client connected from 172.20.0.3:44096 as mqttjs_875ba602 (p2, c1, k60, u'arodrig').
+1703172632: No will message specified.
+1703172632: Sending CONNACK to mqttjs_875ba602 (0, 0)
+1703172652: Received SUBSCRIBE from mqttjs_875ba602
+1703172652: 	# (QoS 0)
+1703172652: mqttjs_875ba602 0 #
+1703172652: Sending SUBACK to mqttjs_875ba602
+1703172712: Received PINGREQ from mqttjs_875ba602
+1703172712: Sending PINGRESP to mqttjs_875ba602
+1703172772: Received PINGREQ from mqttjs_875ba602
+1703172772: Sending PINGRESP to mqttjs_875ba602
+1703172832: Received PINGREQ from mqttjs_875ba602
+1703172832: Sending PINGRESP to mqttjs_875ba602
+1703172892: Received PINGREQ from mqttjs_875ba602
+1703172892: Sending PINGRESP to mqttjs_875ba602
+1703191672: mosquitto version 2.0.15 starting
+1703191672: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1703191672: Loading plugin: /mosquitto/go-auth.so
+1703191672:  ├── Username/password checking enabled.
+1703191672:  ├── TLS-PSK checking enabled.
+1703191672:  └── Extended authentication not enabled.
+1703191672: Opening ipv4 listen socket on port 1883.
+1703191672: Opening ipv6 listen socket on port 1883.
+1703191672: Opening ipv4 listen socket on port 9001.
+1703191672: Opening ipv6 listen socket on port 9001.
+1703191672: mosquitto version 2.0.15 running
+1703191696: mosquitto version 2.0.15 terminating
+1703191696: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1703191696: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1703191696: Error: No such file or directory.
+1703191751: mosquitto version 2.0.15 starting
+1703191751: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1703191751: Loading plugin: /mosquitto/go-auth.so
+1703191751:  ├── Username/password checking enabled.
+1703191751:  ├── TLS-PSK checking enabled.
+1703191751:  └── Extended authentication not enabled.
+1703191751: Opening ipv4 listen socket on port 1883.
+1703191751: Opening ipv6 listen socket on port 1883.
+1703191751: Opening ipv4 listen socket on port 9001.
+1703191751: Opening ipv6 listen socket on port 9001.
+1703191751: mosquitto version 2.0.15 running
+1703191835: New connection from 172.18.0.3:57002 on port 1883.
+1703191835: New client connected from 172.18.0.3:57002 as mqttjs_aab9dc63 (p2, c1, k60, u'arodrig').
+1703191835: No will message specified.
+1703191835: Sending CONNACK to mqttjs_aab9dc63 (0, 0)
+1703191837: Received SUBSCRIBE from mqttjs_aab9dc63
+1703191837: 	# (QoS 0)
+1703191837: mqttjs_aab9dc63 0 #
+1703191837: Sending SUBACK to mqttjs_aab9dc63
+1703191897: Received PINGREQ from mqttjs_aab9dc63
+1703191897: Sending PINGRESP to mqttjs_aab9dc63
+1703191957: Received PINGREQ from mqttjs_aab9dc63
+1703191957: Sending PINGRESP to mqttjs_aab9dc63
+1703192017: Received PINGREQ from mqttjs_aab9dc63
+1703192017: Sending PINGRESP to mqttjs_aab9dc63
+1703192077: Received PINGREQ from mqttjs_aab9dc63
+1703192077: Sending PINGRESP to mqttjs_aab9dc63
+1703192137: Received PINGREQ from mqttjs_aab9dc63
+1703192137: Sending PINGRESP to mqttjs_aab9dc63
+1703192197: Received PINGREQ from mqttjs_aab9dc63
+1703192197: Sending PINGRESP to mqttjs_aab9dc63
+1703192257: Received PINGREQ from mqttjs_aab9dc63
+1703192257: Sending PINGRESP to mqttjs_aab9dc63
+1703192317: Received PINGREQ from mqttjs_aab9dc63
+1703192317: Sending PINGRESP to mqttjs_aab9dc63
+1703192377: Received PINGREQ from mqttjs_aab9dc63
+1703192377: Sending PINGRESP to mqttjs_aab9dc63
+1703192437: Received PINGREQ from mqttjs_aab9dc63
+1703192437: Sending PINGRESP to mqttjs_aab9dc63
+1703192476: Client mqttjs_aab9dc63 closed its connection.
+1703192519: New connection from 172.18.0.3:56130 on port 1883.
+1703192519: New client connected from 172.18.0.3:56130 as mqttjs_04710d96 (p2, c1, k60, u'arodrig').
+1703192519: No will message specified.
+1703192519: Sending CONNACK to mqttjs_04710d96 (0, 0)
+1703192519: Received SUBSCRIBE from mqttjs_04710d96
+1703192519: 	# (QoS 0)
+1703192519: mqttjs_04710d96 0 #
+1703192519: Sending SUBACK to mqttjs_04710d96
+1703192579: Received PINGREQ from mqttjs_04710d96
+1703192579: Sending PINGRESP to mqttjs_04710d96
+1703192618: Client mqttjs_04710d96 closed its connection.
+1703192662: New connection from 172.18.0.3:41884 on port 1883.
+1703192662: New client connected from 172.18.0.3:41884 as mqttjs_c80c7794 (p2, c1, k60, u'arodrig').
+1703192662: No will message specified.
+1703192662: Sending CONNACK to mqttjs_c80c7794 (0, 0)
+1703192664: Received SUBSCRIBE from mqttjs_c80c7794
+1703192664: 	# (QoS 0)
+1703192664: mqttjs_c80c7794 0 #
+1703192664: Sending SUBACK to mqttjs_c80c7794
+1703192685: Client mqttjs_c80c7794 closed its connection.
+1703192725: New connection from 172.18.0.3:35172 on port 1883.
+1703192725: New client connected from 172.18.0.3:35172 as mqttjs_a38ae97b (p2, c1, k60, u'arodrig').
+1703192725: No will message specified.
+1703192725: Sending CONNACK to mqttjs_a38ae97b (0, 0)
+1703192727: Received SUBSCRIBE from mqttjs_a38ae97b
+1703192727: 	# (QoS 0)
+1703192727: mqttjs_a38ae97b 0 #
+1703192727: Sending SUBACK to mqttjs_a38ae97b
+1703192787: Received PINGREQ from mqttjs_a38ae97b
+1703192787: Sending PINGRESP to mqttjs_a38ae97b
+1703192847: Received PINGREQ from mqttjs_a38ae97b
+1703192847: Sending PINGRESP to mqttjs_a38ae97b
+1703192907: Received PINGREQ from mqttjs_a38ae97b
+1703192907: Sending PINGRESP to mqttjs_a38ae97b
+1703192967: Received PINGREQ from mqttjs_a38ae97b
+1703192967: Sending PINGRESP to mqttjs_a38ae97b
+1703192975: New connection from 172.18.0.1:56878 on port 1883.
+1703192975: New client connected from 172.18.0.1:56878 as auto-F00A046A-8695-C547-81E5-4C7018859002 (p2, c1, k15, u'arodrig').
+1703192975: No will message specified.
+1703192975: Sending CONNACK to auto-F00A046A-8695-C547-81E5-4C7018859002 (0, 0)
+1703192981: Received PUBLISH from auto-F00A046A-8695-C547-81E5-4C7018859002 (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (146 bytes))
+1703192981: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (146 bytes))
+1703192981: Received PUBLISH from auto-F00A046A-8695-C547-81E5-4C7018859002 (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703192981: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703192984: Received PUBLISH from auto-F00A046A-8695-C547-81E5-4C7018859002 (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703192984: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703192985: Received PUBLISH from auto-F00A046A-8695-C547-81E5-4C7018859002 (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703192985: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703192988: Received PUBLISH from auto-F00A046A-8695-C547-81E5-4C7018859002 (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (144 bytes))
+1703192988: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (144 bytes))
+1703192989: Received PUBLISH from auto-F00A046A-8695-C547-81E5-4C7018859002 (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703192989: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703192994: Received PINGREQ from auto-F00A046A-8695-C547-81E5-4C7018859002
+1703192994: Sending PINGRESP to auto-F00A046A-8695-C547-81E5-4C7018859002
+1703192994: Received PUBLISH from auto-F00A046A-8695-C547-81E5-4C7018859002 (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703192994: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703192995: Received PUBLISH from auto-F00A046A-8695-C547-81E5-4C7018859002 (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703192995: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703192996: Received PUBLISH from auto-F00A046A-8695-C547-81E5-4C7018859002 (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703192996: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703192997: Received PUBLISH from auto-F00A046A-8695-C547-81E5-4C7018859002 (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703192997: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193000: Received PUBLISH from auto-F00A046A-8695-C547-81E5-4C7018859002 (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193000: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193001: Received PUBLISH from auto-F00A046A-8695-C547-81E5-4C7018859002 (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (146 bytes))
+1703193001: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (146 bytes))
+1703193003: Received PUBLISH from auto-F00A046A-8695-C547-81E5-4C7018859002 (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (146 bytes))
+1703193003: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (146 bytes))
+1703193005: Received PUBLISH from auto-F00A046A-8695-C547-81E5-4C7018859002 (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (146 bytes))
+1703193005: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (146 bytes))
+1703193008: Received PUBLISH from auto-F00A046A-8695-C547-81E5-4C7018859002 (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193008: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193009: Received PINGREQ from auto-F00A046A-8695-C547-81E5-4C7018859002
+1703193009: Sending PINGRESP to auto-F00A046A-8695-C547-81E5-4C7018859002
+1703193009: Received PUBLISH from auto-F00A046A-8695-C547-81E5-4C7018859002 (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193009: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193013: Received PUBLISH from auto-F00A046A-8695-C547-81E5-4C7018859002 (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193013: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193014: Received PUBLISH from auto-F00A046A-8695-C547-81E5-4C7018859002 (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (144 bytes))
+1703193014: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (144 bytes))
+1703193015: Received PUBLISH from auto-F00A046A-8695-C547-81E5-4C7018859002 (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193015: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193018: Received PUBLISH from auto-F00A046A-8695-C547-81E5-4C7018859002 (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (144 bytes))
+1703193018: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (144 bytes))
+1703193020: Received PUBLISH from auto-F00A046A-8695-C547-81E5-4C7018859002 (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (144 bytes))
+1703193020: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (144 bytes))
+1703193025: Received PUBLISH from auto-F00A046A-8695-C547-81E5-4C7018859002 (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (137 bytes))
+1703193025: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (137 bytes))
+1703193026: Received PUBLISH from auto-F00A046A-8695-C547-81E5-4C7018859002 (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (137 bytes))
+1703193026: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (137 bytes))
+1703193027: Received PINGREQ from auto-F00A046A-8695-C547-81E5-4C7018859002
+1703193027: Sending PINGRESP to auto-F00A046A-8695-C547-81E5-4C7018859002
+1703193027: Received PINGREQ from mqttjs_a38ae97b
+1703193027: Sending PINGRESP to mqttjs_a38ae97b
+1703193027: Received PUBLISH from auto-F00A046A-8695-C547-81E5-4C7018859002 (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (144 bytes))
+1703193027: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (144 bytes))
+1703193027: Received PUBLISH from auto-F00A046A-8695-C547-81E5-4C7018859002 (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (137 bytes))
+1703193027: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (137 bytes))
+1703193029: Received PUBLISH from auto-F00A046A-8695-C547-81E5-4C7018859002 (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (137 bytes))
+1703193029: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (137 bytes))
+1703193031: Received PUBLISH from auto-F00A046A-8695-C547-81E5-4C7018859002 (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (144 bytes))
+1703193031: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (144 bytes))
+1703193043: Received PUBLISH from auto-F00A046A-8695-C547-81E5-4C7018859002 (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (135 bytes))
+1703193043: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (135 bytes))
+1703193044: Received PUBLISH from auto-F00A046A-8695-C547-81E5-4C7018859002 (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (144 bytes))
+1703193044: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (144 bytes))
+1703193044: Received PUBLISH from auto-F00A046A-8695-C547-81E5-4C7018859002 (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193044: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193044: Received PUBLISH from auto-F00A046A-8695-C547-81E5-4C7018859002 (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (144 bytes))
+1703193044: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (144 bytes))
+1703193044: Received PUBLISH from auto-F00A046A-8695-C547-81E5-4C7018859002 (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (144 bytes))
+1703193044: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (144 bytes))
+1703193045: Received PINGREQ from auto-F00A046A-8695-C547-81E5-4C7018859002
+1703193045: Sending PINGRESP to auto-F00A046A-8695-C547-81E5-4C7018859002
+1703193045: Received PUBLISH from auto-F00A046A-8695-C547-81E5-4C7018859002 (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193045: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193046: Received PUBLISH from auto-F00A046A-8695-C547-81E5-4C7018859002 (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193046: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193048: Received PUBLISH from auto-F00A046A-8695-C547-81E5-4C7018859002 (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193048: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193050: Received PUBLISH from auto-F00A046A-8695-C547-81E5-4C7018859002 (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193050: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193052: Received PUBLISH from auto-F00A046A-8695-C547-81E5-4C7018859002 (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193052: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193054: Received PUBLISH from auto-F00A046A-8695-C547-81E5-4C7018859002 (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193054: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193056: Received PUBLISH from auto-F00A046A-8695-C547-81E5-4C7018859002 (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193056: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193058: Received PUBLISH from auto-F00A046A-8695-C547-81E5-4C7018859002 (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193058: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193060: Received PUBLISH from auto-F00A046A-8695-C547-81E5-4C7018859002 (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193060: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193060: Received PINGREQ from auto-F00A046A-8695-C547-81E5-4C7018859002
+1703193060: Sending PINGRESP to auto-F00A046A-8695-C547-81E5-4C7018859002
+1703193062: Received PUBLISH from auto-F00A046A-8695-C547-81E5-4C7018859002 (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193062: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193064: Received PUBLISH from auto-F00A046A-8695-C547-81E5-4C7018859002 (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193064: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193066: Received PUBLISH from auto-F00A046A-8695-C547-81E5-4C7018859002 (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (146 bytes))
+1703193066: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (146 bytes))
+1703193068: Received PUBLISH from auto-F00A046A-8695-C547-81E5-4C7018859002 (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193068: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193070: Received PUBLISH from auto-F00A046A-8695-C547-81E5-4C7018859002 (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193070: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193072: Received PUBLISH from auto-F00A046A-8695-C547-81E5-4C7018859002 (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193072: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193074: Received PUBLISH from auto-F00A046A-8695-C547-81E5-4C7018859002 (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193074: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193075: Received PINGREQ from auto-F00A046A-8695-C547-81E5-4C7018859002
+1703193075: Sending PINGRESP to auto-F00A046A-8695-C547-81E5-4C7018859002
+1703193076: Received PUBLISH from auto-F00A046A-8695-C547-81E5-4C7018859002 (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193076: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193078: Received PUBLISH from auto-F00A046A-8695-C547-81E5-4C7018859002 (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193078: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193080: Received PUBLISH from auto-F00A046A-8695-C547-81E5-4C7018859002 (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193080: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193082: Received PUBLISH from auto-F00A046A-8695-C547-81E5-4C7018859002 (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193082: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193084: Received PUBLISH from auto-F00A046A-8695-C547-81E5-4C7018859002 (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193084: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193086: Received PUBLISH from auto-F00A046A-8695-C547-81E5-4C7018859002 (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193086: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193087: Received PINGREQ from mqttjs_a38ae97b
+1703193087: Sending PINGRESP to mqttjs_a38ae97b
+1703193088: Received PUBLISH from auto-F00A046A-8695-C547-81E5-4C7018859002 (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193088: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193090: Received PUBLISH from auto-F00A046A-8695-C547-81E5-4C7018859002 (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193090: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193090: Received PINGREQ from auto-F00A046A-8695-C547-81E5-4C7018859002
+1703193090: Sending PINGRESP to auto-F00A046A-8695-C547-81E5-4C7018859002
+1703193092: Received PUBLISH from auto-F00A046A-8695-C547-81E5-4C7018859002 (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193092: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193094: Received PUBLISH from auto-F00A046A-8695-C547-81E5-4C7018859002 (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193094: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193096: Received PUBLISH from auto-F00A046A-8695-C547-81E5-4C7018859002 (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (146 bytes))
+1703193096: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (146 bytes))
+1703193098: Received PUBLISH from auto-F00A046A-8695-C547-81E5-4C7018859002 (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193098: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193100: Received PUBLISH from auto-F00A046A-8695-C547-81E5-4C7018859002 (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193100: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193102: Received PUBLISH from auto-F00A046A-8695-C547-81E5-4C7018859002 (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (144 bytes))
+1703193102: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (144 bytes))
+1703193104: Received PUBLISH from auto-F00A046A-8695-C547-81E5-4C7018859002 (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (144 bytes))
+1703193104: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (144 bytes))
+1703193105: Received PINGREQ from auto-F00A046A-8695-C547-81E5-4C7018859002
+1703193105: Sending PINGRESP to auto-F00A046A-8695-C547-81E5-4C7018859002
+1703193106: Received PUBLISH from auto-F00A046A-8695-C547-81E5-4C7018859002 (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (144 bytes))
+1703193106: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (144 bytes))
+1703193108: Received PUBLISH from auto-F00A046A-8695-C547-81E5-4C7018859002 (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (144 bytes))
+1703193108: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (144 bytes))
+1703193110: Received PUBLISH from auto-F00A046A-8695-C547-81E5-4C7018859002 (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (144 bytes))
+1703193110: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (144 bytes))
+1703193112: Received PUBLISH from auto-F00A046A-8695-C547-81E5-4C7018859002 (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (144 bytes))
+1703193112: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (144 bytes))
+1703193114: Received PUBLISH from auto-F00A046A-8695-C547-81E5-4C7018859002 (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193114: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193116: Received PUBLISH from auto-F00A046A-8695-C547-81E5-4C7018859002 (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193116: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193118: Received PUBLISH from auto-F00A046A-8695-C547-81E5-4C7018859002 (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193118: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193120: Received PUBLISH from auto-F00A046A-8695-C547-81E5-4C7018859002 (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193120: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193121: Received PINGREQ from auto-F00A046A-8695-C547-81E5-4C7018859002
+1703193121: Sending PINGRESP to auto-F00A046A-8695-C547-81E5-4C7018859002
+1703193122: Received PUBLISH from auto-F00A046A-8695-C547-81E5-4C7018859002 (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193122: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193124: Received PUBLISH from auto-F00A046A-8695-C547-81E5-4C7018859002 (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (144 bytes))
+1703193124: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (144 bytes))
+1703193126: Received PUBLISH from auto-F00A046A-8695-C547-81E5-4C7018859002 (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (144 bytes))
+1703193126: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (144 bytes))
+1703193128: Received PUBLISH from auto-F00A046A-8695-C547-81E5-4C7018859002 (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (144 bytes))
+1703193128: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (144 bytes))
+1703193130: Received PUBLISH from auto-F00A046A-8695-C547-81E5-4C7018859002 (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (144 bytes))
+1703193130: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (144 bytes))
+1703193132: Received PUBLISH from auto-F00A046A-8695-C547-81E5-4C7018859002 (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (144 bytes))
+1703193132: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (144 bytes))
+1703193134: Received PUBLISH from auto-F00A046A-8695-C547-81E5-4C7018859002 (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193134: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193136: Received PINGREQ from auto-F00A046A-8695-C547-81E5-4C7018859002
+1703193136: Sending PINGRESP to auto-F00A046A-8695-C547-81E5-4C7018859002
+1703193136: Received PUBLISH from auto-F00A046A-8695-C547-81E5-4C7018859002 (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193136: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193138: Received PUBLISH from auto-F00A046A-8695-C547-81E5-4C7018859002 (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193138: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193140: Received PUBLISH from auto-F00A046A-8695-C547-81E5-4C7018859002 (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193140: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193142: Received PUBLISH from auto-F00A046A-8695-C547-81E5-4C7018859002 (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193142: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193144: Received PUBLISH from auto-F00A046A-8695-C547-81E5-4C7018859002 (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193144: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193146: Received PUBLISH from auto-F00A046A-8695-C547-81E5-4C7018859002 (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193146: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193147: Received PINGREQ from mqttjs_a38ae97b
+1703193147: Sending PINGRESP to mqttjs_a38ae97b
+1703193148: Received PUBLISH from auto-F00A046A-8695-C547-81E5-4C7018859002 (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193148: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193150: Received PUBLISH from auto-F00A046A-8695-C547-81E5-4C7018859002 (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (144 bytes))
+1703193150: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (144 bytes))
+1703193151: Received PINGREQ from auto-F00A046A-8695-C547-81E5-4C7018859002
+1703193151: Sending PINGRESP to auto-F00A046A-8695-C547-81E5-4C7018859002
+1703193152: Received PUBLISH from auto-F00A046A-8695-C547-81E5-4C7018859002 (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193152: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193154: Received PUBLISH from auto-F00A046A-8695-C547-81E5-4C7018859002 (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193154: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193156: Received PUBLISH from auto-F00A046A-8695-C547-81E5-4C7018859002 (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193156: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193158: Received PUBLISH from auto-F00A046A-8695-C547-81E5-4C7018859002 (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193158: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193160: Received PUBLISH from auto-F00A046A-8695-C547-81E5-4C7018859002 (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193160: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193162: Received PUBLISH from auto-F00A046A-8695-C547-81E5-4C7018859002 (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193162: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193164: Received PUBLISH from auto-F00A046A-8695-C547-81E5-4C7018859002 (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193164: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193166: Received PINGREQ from auto-F00A046A-8695-C547-81E5-4C7018859002
+1703193166: Sending PINGRESP to auto-F00A046A-8695-C547-81E5-4C7018859002
+1703193166: Received PUBLISH from auto-F00A046A-8695-C547-81E5-4C7018859002 (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193166: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193189: New connection from 172.18.0.1:42418 on port 1883.
+1703193189: New client connected from 172.18.0.1:42418 as auto-E3CAFD33-04B5-333E-40CB-188A60000F9E (p2, c1, k15, u'arodrig').
+1703193189: No will message specified.
+1703193189: Sending CONNACK to auto-E3CAFD33-04B5-333E-40CB-188A60000F9E (0, 0)
+1703193191: Client auto-F00A046A-8695-C547-81E5-4C7018859002 has exceeded timeout, disconnecting.
+1703193193: Received PUBLISH from auto-E3CAFD33-04B5-333E-40CB-188A60000F9E (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (144 bytes))
+1703193193: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (144 bytes))
+1703193195: Received PUBLISH from auto-E3CAFD33-04B5-333E-40CB-188A60000F9E (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (144 bytes))
+1703193195: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (144 bytes))
+1703193197: Received PUBLISH from auto-E3CAFD33-04B5-333E-40CB-188A60000F9E (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (144 bytes))
+1703193197: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (144 bytes))
+1703193199: Received PUBLISH from auto-E3CAFD33-04B5-333E-40CB-188A60000F9E (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (137 bytes))
+1703193199: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (137 bytes))
+1703193201: Received PUBLISH from auto-E3CAFD33-04B5-333E-40CB-188A60000F9E (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (137 bytes))
+1703193201: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (137 bytes))
+1703193203: Received PUBLISH from auto-E3CAFD33-04B5-333E-40CB-188A60000F9E (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (144 bytes))
+1703193203: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (144 bytes))
+1703193205: Received PINGREQ from auto-E3CAFD33-04B5-333E-40CB-188A60000F9E
+1703193205: Sending PINGRESP to auto-E3CAFD33-04B5-333E-40CB-188A60000F9E
+1703193205: Received PUBLISH from auto-E3CAFD33-04B5-333E-40CB-188A60000F9E (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (144 bytes))
+1703193205: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (144 bytes))
+1703193207: Received PUBLISH from auto-E3CAFD33-04B5-333E-40CB-188A60000F9E (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (144 bytes))
+1703193207: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (144 bytes))
+1703193207: Received PINGREQ from mqttjs_a38ae97b
+1703193207: Sending PINGRESP to mqttjs_a38ae97b
+1703193209: Received PUBLISH from auto-E3CAFD33-04B5-333E-40CB-188A60000F9E (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (137 bytes))
+1703193209: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (137 bytes))
+1703193211: Received PUBLISH from auto-E3CAFD33-04B5-333E-40CB-188A60000F9E (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (137 bytes))
+1703193211: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (137 bytes))
+1703193213: Received PUBLISH from auto-E3CAFD33-04B5-333E-40CB-188A60000F9E (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (137 bytes))
+1703193213: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (137 bytes))
+1703193216: Received PUBLISH from auto-E3CAFD33-04B5-333E-40CB-188A60000F9E (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (144 bytes))
+1703193216: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (144 bytes))
+1703193219: Received PUBLISH from auto-E3CAFD33-04B5-333E-40CB-188A60000F9E (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (137 bytes))
+1703193219: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (137 bytes))
+1703193220: Received PUBLISH from auto-E3CAFD33-04B5-333E-40CB-188A60000F9E (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (144 bytes))
+1703193220: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (144 bytes))
+1703193221: Received PINGREQ from auto-E3CAFD33-04B5-333E-40CB-188A60000F9E
+1703193221: Sending PINGRESP to auto-E3CAFD33-04B5-333E-40CB-188A60000F9E
+1703193222: Received PUBLISH from auto-E3CAFD33-04B5-333E-40CB-188A60000F9E (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (144 bytes))
+1703193222: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (144 bytes))
+1703193224: Received PUBLISH from auto-E3CAFD33-04B5-333E-40CB-188A60000F9E (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (144 bytes))
+1703193224: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (144 bytes))
+1703193227: Received PUBLISH from auto-E3CAFD33-04B5-333E-40CB-188A60000F9E (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (144 bytes))
+1703193227: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (144 bytes))
+1703193231: Received PUBLISH from auto-E3CAFD33-04B5-333E-40CB-188A60000F9E (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (144 bytes))
+1703193231: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (144 bytes))
+1703193232: Received PUBLISH from auto-E3CAFD33-04B5-333E-40CB-188A60000F9E (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (144 bytes))
+1703193232: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (144 bytes))
+1703193240: Received PUBLISH from auto-E3CAFD33-04B5-333E-40CB-188A60000F9E (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (144 bytes))
+1703193240: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (144 bytes))
+1703193242: Received PUBLISH from auto-E3CAFD33-04B5-333E-40CB-188A60000F9E (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (144 bytes))
+1703193242: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (144 bytes))
+1703193243: Received PUBLISH from auto-E3CAFD33-04B5-333E-40CB-188A60000F9E (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (144 bytes))
+1703193243: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (144 bytes))
+1703193244: Received PINGREQ from auto-E3CAFD33-04B5-333E-40CB-188A60000F9E
+1703193244: Sending PINGRESP to auto-E3CAFD33-04B5-333E-40CB-188A60000F9E
+1703193244: Received PUBLISH from auto-E3CAFD33-04B5-333E-40CB-188A60000F9E (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (137 bytes))
+1703193244: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (137 bytes))
+1703193245: Received PUBLISH from auto-E3CAFD33-04B5-333E-40CB-188A60000F9E (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (144 bytes))
+1703193245: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (144 bytes))
+1703193247: Received PUBLISH from auto-E3CAFD33-04B5-333E-40CB-188A60000F9E (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (144 bytes))
+1703193247: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (144 bytes))
+1703193248: Received PUBLISH from auto-E3CAFD33-04B5-333E-40CB-188A60000F9E (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (144 bytes))
+1703193248: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (144 bytes))
+1703193249: Received PUBLISH from auto-E3CAFD33-04B5-333E-40CB-188A60000F9E (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193249: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193250: Received PUBLISH from auto-E3CAFD33-04B5-333E-40CB-188A60000F9E (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193250: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193253: Received PUBLISH from auto-E3CAFD33-04B5-333E-40CB-188A60000F9E (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (144 bytes))
+1703193253: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (144 bytes))
+1703193255: Received PUBLISH from auto-E3CAFD33-04B5-333E-40CB-188A60000F9E (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (144 bytes))
+1703193255: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (144 bytes))
+1703193256: Received PUBLISH from auto-E3CAFD33-04B5-333E-40CB-188A60000F9E (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (144 bytes))
+1703193256: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (144 bytes))
+1703193257: Received PUBLISH from auto-E3CAFD33-04B5-333E-40CB-188A60000F9E (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193257: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193258: Received PUBLISH from auto-E3CAFD33-04B5-333E-40CB-188A60000F9E (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193258: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193259: Received PUBLISH from auto-E3CAFD33-04B5-333E-40CB-188A60000F9E (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (144 bytes))
+1703193259: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (144 bytes))
+1703193260: Received PINGREQ from auto-E3CAFD33-04B5-333E-40CB-188A60000F9E
+1703193260: Sending PINGRESP to auto-E3CAFD33-04B5-333E-40CB-188A60000F9E
+1703193261: Received PUBLISH from auto-E3CAFD33-04B5-333E-40CB-188A60000F9E (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193261: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193263: Received PUBLISH from auto-E3CAFD33-04B5-333E-40CB-188A60000F9E (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (144 bytes))
+1703193263: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (144 bytes))
+1703193265: Received PUBLISH from auto-E3CAFD33-04B5-333E-40CB-188A60000F9E (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (146 bytes))
+1703193265: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (146 bytes))
+1703193267: Received PINGREQ from mqttjs_a38ae97b
+1703193267: Sending PINGRESP to mqttjs_a38ae97b
+1703193267: Received PUBLISH from auto-E3CAFD33-04B5-333E-40CB-188A60000F9E (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193267: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193269: Received PUBLISH from auto-E3CAFD33-04B5-333E-40CB-188A60000F9E (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193269: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193271: Received PUBLISH from auto-E3CAFD33-04B5-333E-40CB-188A60000F9E (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193271: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193273: Received PUBLISH from auto-E3CAFD33-04B5-333E-40CB-188A60000F9E (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193273: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193275: Received PINGREQ from auto-E3CAFD33-04B5-333E-40CB-188A60000F9E
+1703193275: Sending PINGRESP to auto-E3CAFD33-04B5-333E-40CB-188A60000F9E
+1703193275: Received PUBLISH from auto-E3CAFD33-04B5-333E-40CB-188A60000F9E (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193275: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193278: Received PUBLISH from auto-E3CAFD33-04B5-333E-40CB-188A60000F9E (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193278: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193279: Received PUBLISH from auto-E3CAFD33-04B5-333E-40CB-188A60000F9E (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193279: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193281: Received PUBLISH from auto-E3CAFD33-04B5-333E-40CB-188A60000F9E (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193281: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193283: Received PUBLISH from auto-E3CAFD33-04B5-333E-40CB-188A60000F9E (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (146 bytes))
+1703193283: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (146 bytes))
+1703193285: Received PUBLISH from auto-E3CAFD33-04B5-333E-40CB-188A60000F9E (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193285: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193287: Received PUBLISH from auto-E3CAFD33-04B5-333E-40CB-188A60000F9E (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193287: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193290: Received PUBLISH from auto-E3CAFD33-04B5-333E-40CB-188A60000F9E (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (146 bytes))
+1703193290: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (146 bytes))
+1703193290: Received PINGREQ from auto-E3CAFD33-04B5-333E-40CB-188A60000F9E
+1703193290: Sending PINGRESP to auto-E3CAFD33-04B5-333E-40CB-188A60000F9E
+1703193292: Received PUBLISH from auto-E3CAFD33-04B5-333E-40CB-188A60000F9E (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193292: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (153 bytes))
+1703193293: Received PUBLISH from auto-E3CAFD33-04B5-333E-40CB-188A60000F9E (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (146 bytes))
+1703193293: Sending PUBLISH to mqttjs_a38ae97b (d0, q0, r0, m0, '/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2', ... (146 bytes))
+1703193320: Client auto-E3CAFD33-04B5-333E-40CB-188A60000F9E has exceeded timeout, disconnecting.
+1703193327: Received PINGREQ from mqttjs_a38ae97b
+1703193327: Sending PINGRESP to mqttjs_a38ae97b
+1703193387: Received PINGREQ from mqttjs_a38ae97b
+1703193387: Sending PINGRESP to mqttjs_a38ae97b

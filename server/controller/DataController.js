@@ -133,9 +133,6 @@ const DataController = {
       const start = req.query.start ? new Date(req.query.start) : null;
       const end = req.query.end ? new Date(req.query.end) : null;
 
-      console.log("start: ", start);
-      console.log("end: ", end);
-
       //verify if start or end are valid
       if (start && isNaN(start) && !end && !isNaN(end)) {
         return res.status(400).json({ error: "Empty end date" });

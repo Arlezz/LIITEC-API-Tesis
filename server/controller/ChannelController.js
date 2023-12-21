@@ -153,7 +153,7 @@ const ChannelController = {
       });
 
       const savedChannel = await newChannel.save();
-      res.json(savedChannel);
+      res.json(savedChannel);//MODIFICAR LUEGO
     } catch (error) {
       console.log(error);
       res.status(500).json({ error: error.message || "Error creating channel" });
