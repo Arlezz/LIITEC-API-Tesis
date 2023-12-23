@@ -1,7 +1,6 @@
 const mongoose = require('mongoose');
-
-
 const { Schema } = mongoose;
+
 
 const deviceSchema = new Schema(
     {
@@ -9,6 +8,12 @@ const deviceSchema = new Schema(
             type: String,
             ref: 'channel', 
             required: true
+        },
+        name: {
+            type: String
+        },
+        description : {
+            type: String
         },
         deviceId: {
             type: String,
@@ -22,15 +27,28 @@ const deviceSchema = new Schema(
             type: String,
             required: true
         },
-        measures: {
-            type: [String],
-            required: true,
-        },
-        unity: {
-            type: [String],
-            required: true,
+        measures: [
+            {
+                variable: {
+                    type: String,
+                    required: true
+                },
+                unit: {
+                    type: String,
+                    required: true
+                },
+            }
+        ],
+        isActive: {
+            type: Boolean,
+            default: true
         },
         createdOn: {
+            type: Date,
+            default: Date.now,
+            required: true
+        },
+        updatedOn: {
             type: Date,
             default: Date.now,
             required: true

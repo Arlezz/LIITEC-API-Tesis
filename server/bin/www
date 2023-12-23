@@ -4,7 +4,7 @@ var app = require('../app');
 var http = require('http');
 var dotenv = require('dotenv');
 var mongoose = require('mongoose');
-var mqttHandler = require('../controller/BrokerController');
+var MqttHandler = require('../controller/BrokerController');
 
 let process = require('process');
 
@@ -21,20 +21,14 @@ mongoose.connect(MONGODB_URI, {
     console.error(err);
 });
 
-const mqttClient = new mqttHandler(
+const mqttClient = new MqttHandler(
     MQTT_HOST,
     MQTT_USER,
     MQTT_PASSWORD
 );
 
 // Suscribirse a todos los tópicos usando el carácter comodín #
-mqttClient.subscribe('#', (err) => {
-    if (!err) {
-      console.log("Subscribed to all topics")
-    } else {
-      console.error("Error subscribing to topics: ", err);
-    }
-});
+mqttClient.subscribeToTopic("#");
 
 var httpServer = http.createServer(app);
 
@@ -46,12 +40,12 @@ httpServer.listen(process.env.SERVER_PORT, function (err) {
     console.log(`Listening on port ${process.env.SERVER_PORT}`);
 });
 
-process.once('SIGUSR2', function () {
+process.once('SIGUSR2', async function () {
     console.log("Server restarting...");
 
     // MQTT close connection
     console.log("Closing MQTT connection...");
-    mqttClient.end();
+    await mqttClient.closeConnection();
     console.log("MQTT connection closed");
 
     // HTTP close connection
@@ -66,5 +60,10 @@ process.once('SIGUSR2', function () {
 
     // Restart server
     console.log("Server restarted");
-    process.kill(process.pid, 'SIGUSR2');
+
+
+    setTimeout(() => {
+        console.log("Server restarted");
+        process.kill(process.pid, 'SIGUSR2');
+      }, 5000); // Espera 5 segundos antes de reiniciar
 });

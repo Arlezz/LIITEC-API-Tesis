@@ -22,9 +22,12 @@ const keySchema = new Schema(
         channelAccess: {
             type: String
         },
+        channelOwner: {
+            type: ObjectId,
+            ref: 'user'
+        },
         expirationDate: {
             type: Date,
-            default: null
         },
         createdOn: {
             type: Date,

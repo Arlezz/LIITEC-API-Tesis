@@ -1,6 +1,7 @@
 const deviceSchema = require("../models/device.Model");
 const channelSchema = require("../models/channel.Model");
 const userSchema = require("../models/user.Model");
+const keySchema = require("../models/keyModel");
 const ObjectId = require("mongoose").Types.ObjectId;
 const { v4: uuidv4 } = require("uuid");
 
@@ -21,7 +22,7 @@ const DeviceController = {
             // Calcular el índice de inicio para la paginación
             const startIndex = (page - 1) * page_size;
 
-            const projection = { _id: 0, __v: 0 };
+            const projection = { _id: 0, __v: 0, "measures._id": 0};
 
             // Obtener los dispositivos paginados
             const devices = await deviceSchema.find({},projection).skip(startIndex).limit(page_size);
@@ -53,7 +54,7 @@ const DeviceController = {
 
             const { channelId } = req.params;
 
-            const { type, model, measures, unity } = req.body;
+            const { name, description , type, model, measures } = req.body;
             
             const channel = await channelSchema.findOne({ channelId: channelId });
 
@@ -67,16 +68,26 @@ const DeviceController = {
             if (!id1.equals(id2)) {
                 return res.status(403).json({ error: "Access Forbidden" });
             }
-
+        
             const newDevice = new deviceSchema({
                 type: type,
                 model: model,
                 measures: measures,
-                unity: unity,
                 deviceId: identifier,
                 channelId: channel.channelId,
+                active: true,
                 createdOn: Date.now(),
+                updatedOn: Date.now(),
             });
+
+            // Comprobar si name y description no son nulos antes de asignarlos a newDevice
+            if (name !== null && name !== undefined) {
+                newDevice.name = name;
+            }
+
+            if (description !== null && description !== undefined) {
+                newDevice.description = description;
+            }
 
             const user = await userSchema.findOne({ _id: id1 });
 
@@ -111,12 +122,34 @@ const DeviceController = {
           if (!channel) {
             return res.status(404).json({ error: "Channel not found" });
           }
-      
-          const id1 = req.user._id;
-          const id2 = new ObjectId(channel.owner);
-      
-          if (!id1.equals(id2)) {
-            return res.status(403).json({ error: "Access Forbidden" });
+
+          const user = req.user;
+
+          if (user.apiKey.type === "readUser") {
+
+            console.log("readUser");
+
+            const key = await keySchema.findOne({ user: user._id, channelAccess: channelId });
+
+            if (!key) {
+              return res.status(403).json({ error: "Access Forbidden" });
+            }
+
+            const dateNow = new Date(Date.now());
+
+            if (key.expirationDate <  dateNow) {
+              return res.status(403).json({ error: "Access Forbidden" });
+            }
+
+          } else {
+
+            const id1 = user._id;
+            const id2 = new ObjectId(channel.owner);
+        
+            if (!id1.equals(id2)) {
+              return res.status(403).json({ error: "Access Forbidden" });
+            }
+
           }
       
           // Obtener el total de dispositivos
@@ -128,8 +161,10 @@ const DeviceController = {
           // Calcular el índice de inicio para la paginación
           const startIndex = (page - 1) * page_size;
       
+          const proyection = { _id: 0, __v: 0, "measures._id":0 };
+
           // Obtener los dispositivos paginados
-          const devices = await deviceSchema.find({ channelId }).skip(startIndex).limit(page_size);
+          const devices = await deviceSchema.find({ channelId },proyection).skip(startIndex).limit(page_size);
       
           if (!devices || devices.length === 0) {
             return res.status(404).json({ error: "Devices not found" });
@@ -161,8 +196,74 @@ const DeviceController = {
                 return res.status(404).json({ error: "Channel not found" });
             }
 
-            var id1 = req.user._id;
-            var id2 = new ObjectId(channel.owner);
+            const user = req.user;
+
+            if (user.apiKey.type === "readUser") {
+
+                const key = await keySchema.findOne({ user: user._id, channelAccess: channelId });
+
+                if (!key) {
+                    return res.status(403).json({ error: "Access Forbidden" });
+                }
+
+                const dateNow = new Date(Date.now());
+
+                if (key.expirationDate < dateNow) {
+                    return res.status(403).json({ error: "Access Forbidden" });
+                }
+            } else {
+
+                const id1 = user._id;
+                const id2 = new ObjectId(channel.owner);
+
+                if (!id1.equals(id2)) {
+                    return res.status(403).json({ error: "Access Forbidden" });
+                }
+            }
+
+            const proyection = { _id: 0, __v: 0 , "measures._id":0};
+
+            const device = await deviceSchema.findOne({ deviceId: deviceId }, proyection);
+
+            if (!device) {
+                return res.status(404).json({ error: "Device not found" });
+            }
+
+            if (device.channelId !== channelId) {
+                return res.status(403).json({ error: "Access Forbidden" });
+            }
+
+            res.json(device);
+        } catch (error) {
+            console.error(error);
+            res.status(500).json({ error: "Error getting device" });
+        }
+    },
+
+    updateDevice : async (req, res) => {
+
+        try {
+
+            const { channelId, deviceId } = req.params;
+
+            if (Object.keys(req.body).length === 0) {
+                return res.status(400).json({ error: "No fields to update" });
+            }
+
+            const { name, description, isActive } = req.body;
+
+            console.log("isActive req: ",isActive);
+
+            const channel = await channelSchema.findOne({ channelId: channelId });
+
+            if (!channel) {
+                return res.status(404).json({ error: "Channel not found" });
+            }
+
+            const user = req.user;
+            
+            const id1 = new ObjectId(user._id);
+            const id2 = new ObjectId(channel.owner);
 
             if (!id1.equals(id2)) {
                 return res.status(403).json({ error: "Access Forbidden" });
@@ -178,12 +279,40 @@ const DeviceController = {
                 return res.status(403).json({ error: "Access Forbidden" });
             }
 
+            const hasChanges = (
+                (name !== undefined && device.name !== name) ||
+                (description !== undefined && device.description !== description) ||
+                (isActive !== undefined && device.isActive !== isActive)
+            );
 
-            res.json(device);
+            if (!hasChanges) {
+                return res.status(400).json({ error: "No changes to update" });
+            }
+
+            if (name !== undefined) {
+                device.name = name;
+            }
+            
+            if (description !== undefined) {
+                device.description = description;
+            }
+
+            if (isActive !== undefined) {
+                device.isActive = isActive;
+            }
+
+            device.updatedOn = Date.now();
+
+            await device.save();
+
+            res.json({ message: "Device updated successfully" });
+
         } catch (error) {
             console.error(error);
-            res.status(500).json({ error: "Error getting device" });
+            res.status(500).json({ error: "Error updating device" });
         }
+
+
     },
 
     deleteDevice : async (req, res) => {

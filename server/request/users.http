@@ -19,12 +19,12 @@ Content-Type: application/json
 Authorization: 68p7nyib281x9youicx9ra810uk4ve
 
 {
-    "username":"reader",
-    "name":"Hector",
-    "lastName":"Lector",
-    "email":"hector.lector@userena.cl",
-    "password":"HectorLector2024!",
-    "type":"readUser",
+    "username":"avanzado",
+    "name":"Iluminado",
+    "lastName":"Amado",
+    "email":"iluminado.amado@userena.cl",
+    "password":"IluminadoAmado2024!",
+    "type":"advancedUser",
     "superuser":false
 }
 

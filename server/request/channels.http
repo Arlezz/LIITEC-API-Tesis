@@ -1,6 +1,6 @@
 //get all channels
 ###
-GET http://localhost:8081/api/channels?page=1&page_size=1 HTTP/1.1
+GET http://localhost:8081/api/channels?page=1 HTTP/1.1
 Content-Type: application/json
 Authorization: 68p7nyib281x9youicx9ra810uk4ve
 
@@ -9,11 +9,11 @@ Authorization: 68p7nyib281x9youicx9ra810uk4ve
 ###
 GET http://localhost:8081/api/channels/ch-32e48add-c489-425e-bd48-fd7ffbd7d8f7 HTTP/1.1
 Content-Type: application/json
-Authorization: s7792wno1alqeq4gau3729dx3qgtje
+Authorization: 68p7nyib281x9youicx9ra810uk4ve
 
 //get my channels
 ###
-GET http://localhost:8081/api/users/6553086014241c7f7371bd59/channels HTTP/1.1
+GET http://localhost:8081/api/users/658355548398f5fa3b69e862/channels HTTP/1.1
 Content-Type: application/json
 Authorization: 68p7nyib281x9youicx9ra810uk4ve
 
@@ -21,18 +21,18 @@ Authorization: 68p7nyib281x9youicx9ra810uk4ve
 ###
 POST http://localhost:8081/api/channels HTTP/1.1
 Content-Type: application/json
-Authorization: 68p7nyib281x9youicx9ra810uk4ve
+Authorization: ch032ywc7wbwqwjnkrx23rmfdknb5m
 
 {
-    "name": "Segundo canal",
-    "description": "Es un canal de prueba para el broker",
-    "project":"proyecto 2023",
-    "owner":"658355548398f5fa3b69e862"
+    "name": "Canal principal",
+    "description": "Canal de prueba para el broker",
+    "project":"proyecto 2024",
+    "owner":"6584db3ee679dadf7702a03a"
 }
 
 // access granted to user
 ###
-POST http://localhost:8081/api/channels/ch-59a6b920-01c6-47c8-8221-62ab4d48d869/access HTTP/1.1
+POST http://localhost:8081/api/channels/ch-32e48add-c489-425e-bd48-fd7ffbd7d8f7/access HTTP/1.1
 Content-Type: application/json
 Authorization: 68p7nyib281x9youicx9ra810uk4ve
 
@@ -44,18 +44,19 @@ Authorization: 68p7nyib281x9youicx9ra810uk4ve
 
 //update channel
 ###
-PUT http://localhost:8081/api/channels/ch-9dcdbaca-ee7b-4519-b17a-03b45c457a9e HTTP/1.1
+PUT http://localhost:8081/api/channels/ch-32e48add-c489-425e-bd48-fd7ffbd7d8f7 HTTP/1.1
 Content-Type: application/json
 Authorization: 68p7nyib281x9youicx9ra810uk4ve
 
 {
-    //"name": "channel 2",
+    "name": "Canal Principal",
     //"description": "Es un canal de prueba",
     //"project":"proyecto 2021",
     "ubication":{
         "latitude": 2.0,
         "longitude": 1.0
-    }
+    },
+    "isActive": true
 }
 
 //delete channel

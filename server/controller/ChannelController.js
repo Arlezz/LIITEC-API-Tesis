@@ -1,4 +1,5 @@
 const channelSchema = require("../models/channel.Model");
+const deviceSchema = require("../models/device.Model");
 const userSchema = require("../models/user.Model");
 const keySchema = require("../models/keyModel");
 const { v4: uuidv4 } = require("uuid");
@@ -16,10 +17,30 @@ const ChannelController = {
 
       const totalPages = Math.ceil(totalChannels / page_size);
 
-      const projection = { _id: 0, __v: 0 };
+      const channels = await channelSchema.aggregate([
+        {
+          $lookup: {
+            from: 'devices',
+            localField: 'channelId',
+            foreignField: 'channelId',
+            as: 'myDevices',
+          },
+        },
+        {
+          $addFields: {
+            deviceCount: { $size: '$myDevices' },
+            devices: { $concat: ['/api/channels/', '$channelId', '/devices'] },
 
-      const channels = await channelSchema
-        .find({}, projection)
+          },
+        },
+        {
+          $project: {
+            _id: 0,
+            __v: 0,
+            myDevices: 0
+          },
+        }
+      ])
         .limit(Number(page_size))
         .skip((Number(page) - 1) * Number(page_size));
 
@@ -51,14 +72,39 @@ const ChannelController = {
 
       const { id } = req.params;
 
-      const proyection = { _id: 0, __v: 0 };
+      const channel = await channelSchema.aggregate([
+        {
+          $match: { channelId: id },
+        },
+        {
+          $lookup: {
+            from: 'devices',
+            localField: 'channelId',
+            foreignField: 'channelId',
+            as: 'myDevices',
+          },
+        },
+        {
+          $addFields: {
+            deviceCount: { $size: '$myDevices' },
+            devices: { $concat: ['/api/channels/', '$channelId', '/devices'] },
 
-      const channel = await channelSchema.findOne({ channelId: id }, proyection);
+          },
+        },
+        {
+          $project: {
+            _id: 0,
+            __v: 0,
+            myDevices: 0
+          },
+        }
+      ]);
 
-      if (!channel) {
+
+      if (!channel[0] || channel[0].length === 0) {
         return res.status(404).json({ error: "Channel not found" });
       }
-
+      
       const user = req.user;
 
       if (user.apiKey.type === "readUser") {
@@ -73,15 +119,16 @@ const ChannelController = {
           return res.status(403).json({ error: "Access Forbidden" });
         }
       } else {
-        var id1 = new ObjectId(req.user._id);
-        var id2 = new ObjectId(channel.owner);
-        
+
+        var id1 = new ObjectId(user._id);
+        var id2 = new ObjectId(channel[0].owner);
   
         if (!id1.equals(id2)) {
           return res.status(403).json({ error: "Access Forbidden" });
         }
       }
-      res.json(channel);
+      
+      res.json(channel[0]);
       
     } catch (error) {
       res.status(500).json({ error: error.message || "Error Getting Channel" });
@@ -144,16 +191,28 @@ const ChannelController = {
 
       const newChannel = new channelSchema({
         channelId: identifier,
-        name: name,
-        description: description,
         owner: id2,
-        project: project,
         ubication: ubication,
         createdOn: Date.now(),
+        updatedOn: Date.now(),
       });
+      
+      if (name !== undefined && name !== null) {
+        newChannel.name = name;
+      }
 
-      const savedChannel = await newChannel.save();
-      res.json(savedChannel);//MODIFICAR LUEGO
+      if (description !== undefined && description !== null) {
+        newChannel.description = description;
+      }
+
+      if (project !== undefined && project !== null) {
+        newChannel.project = project;
+      }
+
+      await newChannel.save();
+      
+      res.json({ message: "Channel created successfully" });
+      
     } catch (error) {
       console.log(error);
       res.status(500).json({ error: error.message || "Error creating channel" });
@@ -163,9 +222,9 @@ const ChannelController = {
   updateChannel: async (req, res) => {
     try {
 
-      const { name, description, project, ubication, isActive, isPublic } = req.body;
-
       const { id } = req.params;
+      
+      const { name, description, project, ubication, isActive, isPublic } = req.body;
 
       const channel = await channelSchema.findOne({ channelId: id });
 
@@ -181,40 +240,62 @@ const ChannelController = {
       }
 
       const hasChanges = (
-        (name && channel.name !== name) ||
-        (description && channel.description !== description) ||
-        (project && channel.project !== project) ||
-        (ubication && (channel.ubication.latitude !== ubication.latitude || channel.ubication.longitude !== ubication.longitude)) ||
-        (isActive && channel.isActive !== isActive) ||
-        (isPublic && channel.isPublic !== isPublic)
+        (name !== undefined && channel.name !== name) ||
+        (description !== undefined && channel.description !== description) ||
+        (project !== undefined && channel.project !== project) ||
+        (ubication !== undefined && (
+          channel.ubication.latitude !== (ubication.latitude !== undefined ? ubication.latitude : channel.ubication.latitude) ||
+          channel.ubication.longitude !== (ubication.longitude !== undefined ? ubication.longitude : channel.ubication.longitude)
+        )) ||
+        (isActive !== undefined && channel.isActive !== isActive) ||
+        (isPublic !== undefined && channel.isPublic !== isPublic)
       );
 
-      if (hasChanges) {
-        if (name) {
-          channel.name = name;
-        }
-        if (description) {
-          channel.description = description;
-        }
-        if (project) {
-          channel.project = project;
-        }
-        if (ubication) {
-          channel.ubication = ubication;
-        }
-        if (isActive) {
-          channel.isActive = isActive;
-        }
-        if (isPublic) {
-          channel.isPublic = isPublic;
-        }
-
-        await channel.save();
-        res.json({ message: "Channel updated" });
-
-      } else {
-        res.json({ error: "No changes were made" });
+      console.log(hasChanges);
+      
+      if (!hasChanges) {
+        return res.status(400).json({ error: "No changes to update" });
       }
+
+      if (name !== undefined && name !== null) {
+        channel.name = name;
+      }
+      
+      if (description !== undefined) {
+        channel.description = description;
+      }
+
+      if (project !== undefined) {
+        channel.project = project;
+      }
+
+      if (ubication !== undefined) {
+        if (ubication.latitude !== undefined) {
+          channel.ubication.latitude = ubication.latitude;
+        }
+        if (ubication.longitude !== undefined) {
+          channel.ubication.longitude = ubication.longitude;
+        }
+      }
+
+      if (isActive !== undefined) {
+        channel.isActive = isActive;
+
+        if (!isActive) {
+          await deviceSchema.updateMany({ channelId: id }, { isActive: false });
+        }
+      }
+
+      if (isPublic !== undefined) {
+        channel.isPublic = isPublic;
+      }
+
+      channel.updatedOn = Date.now();
+
+      await channel.save();
+
+      res.json({ message: "Channel updated successfully" });
+      
     } catch (error) {
       return res.status(500).json({ error: error.message || "Error updating channel" });
     }
@@ -285,6 +366,7 @@ const ChannelController = {
         expirationDate: expiration,
         user: userId,
         channelAccess: id,
+        channelOwner: channel.owner,
       });
 
       await newKey.save();

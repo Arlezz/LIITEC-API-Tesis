@@ -13,7 +13,7 @@ const channelSchema = new Schema(
         },
         name: { 
             type: String, 
-            required: true 
+            //required: true 
         },
         isActive: { 
             type: Boolean, 
@@ -25,7 +25,7 @@ const channelSchema = new Schema(
         },
         description: { 
             type: String, 
-            required: true 
+            //required: true 
         },
         owner: {
             type: ObjectId,
@@ -34,7 +34,7 @@ const channelSchema = new Schema(
         },
         project: {
             type: String,
-            required: true
+            //required: true
         },
         ubication: {
             latitude: {
@@ -45,6 +45,11 @@ const channelSchema = new Schema(
             }
         },
         createdOn: {
+            type: Date,
+            default: Date.now,
+            required: true
+        },
+        updatedOn: {
             type: Date,
             default: Date.now,
             required: true

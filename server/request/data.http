@@ -7,9 +7,9 @@ Authorization: 68p7nyib281x9youicx9ra810uk4ve
 
 //Get data from a device
 ###
-GET http://localhost:8081/api/data/dv-089f98d5-25f4-4150-ab4e-18be2f098da2?page_size=100 HTTP/1.1
+GET http://localhost:8081/api/data/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4?page_size=100 HTTP/1.1
 Content-Type: application/json
-Authorization: 68p7nyib281x9youicx9ra810uk4ve
+Authorization: ch032ywc7wbwqwjnkrx23rmfdknb5m
 
 //Get specific variable datas from a device 
 ###
