@@ -334,6 +334,8 @@ const DeviceController = {
 
             const device = await deviceSchema.findOne({ deviceId: deviceId });
 
+            console.log("device: ",device);
+
             if (!device) {
                 return res.status(404).json({ error: "Device not found" });
             }
@@ -341,6 +343,11 @@ const DeviceController = {
             if (device.channelId !== channelId) {
                 return res.status(403).json({ error: "Access Forbidden" });
             }
+
+            await userSchema.updateMany(
+                { acls: { $elemMatch: { topic: "/devices/" + deviceId } } },
+                { $pull: { acls: { topic: "/devices/" + deviceId } } }
+            );
 
             await deviceSchema.deleteOne({ deviceId: deviceId });
             res.json({ message: "Device deleted successfully" });

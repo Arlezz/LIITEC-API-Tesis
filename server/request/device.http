@@ -54,6 +54,8 @@ Authorization: 68p7nyib281x9youicx9ra810uk4ve
  }
 
 ###
-DELETE http://localhost:8081/api/channels/ch-3bcfbea1-c8be-4443-8463-b71d4c83bacf/devices/dv-4344ccb1-9728-4571-ae25-f1b5764bc4c7 HTTP/1.1
+DELETE http://localhost:8081/api/channels/ch-2cf804f3-5290-412f-ace7-8df8bb8e74bb/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4 HTTP/1.1
 Content-Type: application/json
-Authorization: 68p7nyib281x9youicx9ra810uk4ve
+Authorization: ch032ywc7wbwqwjnkrx23rmfdknb5m
+
+

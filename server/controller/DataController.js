@@ -1,12 +1,14 @@
 const dataSchema = require("../models/data.Model");
 const deviceSchema = require("../models/device.Model");
 const channelSchema = require("../models/channel.Model");
+const keySchema = require("../models/keyModel");
+const fs = require('fs');
+const Papa = require('papaparse');
 
 const DataController = {
   getDatas: async (req, res) => {
     // Obtén todos los datos de la base de datos con paginacion
     try {
-      console.log("getDatas");
       const { page = 1, page_size = 10 } = req.query;
 
       const totalData = await dataSchema.countDocuments();
@@ -65,11 +67,28 @@ const DataController = {
         return res.status(404).json({ error: "Channel not found" });
       }
 
-      const id1 = req.user._id;
-      const id2 = channel.owner;
+      const user = req.user;
 
-      if (!id1.equals(id2)) {
-        return res.status(403).json({ error: "Access Forbidden" });
+      if (user.apiKey.type === "readUser") {
+
+        const key = await keySchema.findOne({ user: user._id, channelAccess: channelId });
+
+        if (!key) {
+          return res.status(403).json({ error: "Access Forbidden" });
+        }
+
+        const dateNow = new Date(Date.now());
+
+        if (key.expirationDate <  dateNow) {
+          return res.status(403).json({ error: "Access Forbidden" });
+        }
+      } else {
+          const id1 = user._id;
+          const id2 = channel.owner;
+  
+          if (!id1.equals(id2)) {
+            return res.status(403).json({ error: "Access Forbidden" });
+          } 
       }
 
       let query = { deviceId };
@@ -154,12 +173,31 @@ const DataController = {
         return res.status(404).json({ error: "Channel not found" });
       }
 
-      var id1 = req.user._id;
-      var id2 = channel.owner;
+      const user = req.user;
 
-      if (!id1.equals(id2)) {
-        return res.status(403).json({ error: "Access Forbidden" });
+      if (user.apiKey.type === "readUser") {
+          
+          const key = await keySchema.findOne({ user: user._id, channelAccess: channelId });
+  
+          if (!key) {
+            return res.status(403).json({ error: "Access Forbidden" });
+          }
+  
+          const dateNow = new Date(Date.now());
+  
+          if (key.expirationDate <  dateNow) {
+            return res.status(403).json({ error: "Access Forbidden" });
+          }
+
+      } else {
+          const id1 = user._id;
+          const id2 = channel.owner;
+
+          if (!id1.equals(id2)) {
+            return res.status(403).json({ error: "Access Forbidden" });
+          }
       }
+
 
       let query = { deviceId: deviceId };
 
@@ -219,12 +257,29 @@ const DataController = {
         return res.status(404).json({ error: "Channel not found" });
       }
 
-      // Verificar acceso
-      const id1 = req.user._id;
-      const id2 = channel.owner;
+      const user = req.user;
 
-      if (!id1.equals(id2)) {
-        return res.status(403).json({ error: "Access Forbidden" });
+      if (user.apiKey.type === "readUser") {
+            
+            const key = await keySchema.findOne({ user: user._id, channelAccess: channelId });
+    
+            if (!key) {
+              return res.status(403).json({ error: "Access Forbidden" });
+            }
+    
+            const dateNow = new Date(Date.now());
+    
+            if (key.expirationDate <  dateNow) {
+              return res.status(403).json({ error: "Access Forbidden" });
+            }
+  
+      } else {
+          const id1 = user._id;
+          const id2 = channel.owner;
+  
+          if (!id1.equals(id2)) {
+            return res.status(403).json({ error: "Access Forbidden" });
+          }
       }
 
       let query = { deviceId };
@@ -267,6 +322,68 @@ const DataController = {
       res.status(500).json({ error: error.message || "No Data Found" });
     }
   },
+
+  exportDataFromChannel: async (req, res) => {
+      //export historical data from a channel, json to csv
+    try {
+      const { channelId } = req.params;
+
+      const channel = await channelSchema.findOne({ channelId });
+
+      if (!channel) {
+        return res.status(404).json({ error: "Channel not found" });
+      }
+
+      const devices = await deviceSchema.find({ channelId });
+
+      if (!devices || devices.length === 0) {
+        return res.status(404).json({ error: "No devices found for this channel" });
+      }
+
+      const user = req.user;
+
+      const id1 = user._id;
+      const id2 = channel.owner;
+
+      if (!id1.equals(id2)) {
+        return res.status(403).json({ error: "Access Forbidden" });
+      }
+
+      const csvData = [];
+
+      for (const device of devices) {
+        const data = await dataSchema.find({ deviceId: device.deviceId });
+
+        if (data && data.length > 0) {
+          for (const item of data) {
+            csvData.push({
+              deviceId: item.deviceId,
+              measurement: item.measurement,
+              value: item.value,
+              timestamp: item.timestamp,
+            });
+          }
+        }
+      }
+
+      const csv = Papa.unparse(csvData, {
+        header: true
+      });
+
+      fs.writeFileSync(`${channelId}-data.csv`, csv);
+
+      res.download(`${channelId}-data.csv`, `${channelId}-data.csv`, (err) => {
+        if (err) {
+          return res.status(500).json({ error: "Error downloading file" });
+        }
+
+        fs.unlinkSync(`${channelId}-data.csv`);
+      });
+      
+    } catch (error) {
+      res.status(500).json({ error: error.message || "No Data Found" });
+    } 
+  }
 };
 
 module.exports = DataController;

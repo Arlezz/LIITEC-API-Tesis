@@ -40,13 +40,21 @@ httpServer.listen(process.env.SERVER_PORT, function (err) {
     console.log(`Listening on port ${process.env.SERVER_PORT}`);
 });
 
-process.once('SIGUSR2', async function () {
+
+
+
+process.once('SIGUSR2', function () {
+
     console.log("Server restarting...");
 
     // MQTT close connection
     console.log("Closing MQTT connection...");
-    await mqttClient.closeConnection();
-    console.log("MQTT connection closed");
+    mqttClient.closeConnection().then(() => {
+        console.log("MQTT connection closed");
+    }).catch((err) => {
+        console.error("Error closing MQTT connection");
+        console.error(err);
+    });
 
     // HTTP close connection
     console.log("Closing HTTP server...");
@@ -61,9 +69,6 @@ process.once('SIGUSR2', async function () {
     // Restart server
     console.log("Server restarted");
 
+    process.kill(process.pid, 'SIGUSR2');
 
-    setTimeout(() => {
-        console.log("Server restarted");
-        process.kill(process.pid, 'SIGUSR2');
-      }, 5000); // Espera 5 segundos antes de reiniciar
 });

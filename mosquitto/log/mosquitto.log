@@ -26091,3 +26091,1875 @@
 1703304635: Saving in-memory database to /mosquitto/data//mosquitto.db.
 1703304635: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
 1703304635: Error: No such file or directory.
+1703365942: mosquitto version 2.0.15 starting
+1703365942: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1703365942: Loading plugin: /mosquitto/go-auth.so
+1703365942:  ├── Username/password checking enabled.
+1703365942:  ├── TLS-PSK checking enabled.
+1703365942:  └── Extended authentication not enabled.
+1703365942: Opening ipv4 listen socket on port 1883.
+1703365942: Opening ipv6 listen socket on port 1883.
+1703365942: Opening ipv4 listen socket on port 9001.
+1703365942: Opening ipv6 listen socket on port 9001.
+1703365942: mosquitto version 2.0.15 running
+1703365969: New connection from 172.18.0.3:53530 on port 1883.
+1703365969: New client connected from 172.18.0.3:53530 as mqttjs_b89b7a5c (p2, c1, k60, u'arodrig').
+1703365969: No will message specified.
+1703365969: Sending CONNACK to mqttjs_b89b7a5c (0, 0)
+1703365969: Received SUBSCRIBE from mqttjs_b89b7a5c
+1703365969: 	# (QoS 0)
+1703365969: mqttjs_b89b7a5c 0 #
+1703365969: Sending SUBACK to mqttjs_b89b7a5c
+1703366029: Received PINGREQ from mqttjs_b89b7a5c
+1703366029: Sending PINGRESP to mqttjs_b89b7a5c
+1703366047: New connection from 172.18.0.1:36664 on port 1883.
+1703366047: New client connected from 172.18.0.1:36664 as auto-DB068B80-4E1C-B685-B87F-53FFA5E3ABD7 (p2, c1, k15, u'avanzado').
+1703366047: No will message specified.
+1703366047: Sending CONNACK to auto-DB068B80-4E1C-B685-B87F-53FFA5E3ABD7 (0, 0)
+1703366050: Received PUBLISH from auto-DB068B80-4E1C-B685-B87F-53FFA5E3ABD7 (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (153 bytes))
+1703366050: Sending PUBLISH to mqttjs_b89b7a5c (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (153 bytes))
+1703366052: Received PUBLISH from auto-DB068B80-4E1C-B685-B87F-53FFA5E3ABD7 (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (144 bytes))
+1703366052: Sending PUBLISH to mqttjs_b89b7a5c (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (144 bytes))
+1703366054: Received PUBLISH from auto-DB068B80-4E1C-B685-B87F-53FFA5E3ABD7 (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (135 bytes))
+1703366054: Sending PUBLISH to mqttjs_b89b7a5c (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (135 bytes))
+1703366056: Received DISCONNECT from mqttjs_b89b7a5c
+1703366056: Client mqttjs_b89b7a5c disconnected.
+1703366056: Received PUBLISH from auto-DB068B80-4E1C-B685-B87F-53FFA5E3ABD7 (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (144 bytes))
+1703366058: Received PUBLISH from auto-DB068B80-4E1C-B685-B87F-53FFA5E3ABD7 (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (144 bytes))
+1703366074: New connection from 172.18.0.3:49616 on port 1883.
+1703366074: New client connected from 172.18.0.3:49616 as mqttjs_74207d17 (p2, c1, k60, u'arodrig').
+1703366074: No will message specified.
+1703366074: Sending CONNACK to mqttjs_74207d17 (0, 0)
+1703366075: Received SUBSCRIBE from mqttjs_74207d17
+1703366075: 	# (QoS 0)
+1703366075: mqttjs_74207d17 0 #
+1703366075: Sending SUBACK to mqttjs_74207d17
+1703366086: Client auto-DB068B80-4E1C-B685-B87F-53FFA5E3ABD7 has exceeded timeout, disconnecting.
+1703366135: Received PINGREQ from mqttjs_74207d17
+1703366135: Sending PINGRESP to mqttjs_74207d17
+1703366195: Received PINGREQ from mqttjs_74207d17
+1703366195: Sending PINGRESP to mqttjs_74207d17
+1703366255: Received PINGREQ from mqttjs_74207d17
+1703366255: Sending PINGRESP to mqttjs_74207d17
+1703366315: Received PINGREQ from mqttjs_74207d17
+1703366315: Sending PINGRESP to mqttjs_74207d17
+1703366375: Received PINGREQ from mqttjs_74207d17
+1703366375: Sending PINGRESP to mqttjs_74207d17
+1703366435: Received PINGREQ from mqttjs_74207d17
+1703366435: Sending PINGRESP to mqttjs_74207d17
+1703366495: Received PINGREQ from mqttjs_74207d17
+1703366495: Sending PINGRESP to mqttjs_74207d17
+1703366532: Received DISCONNECT from mqttjs_74207d17
+1703366532: Client mqttjs_74207d17 disconnected.
+1703366556: New connection from 172.18.0.3:46462 on port 1883.
+1703366556: New client connected from 172.18.0.3:46462 as mqttjs_20edb9ff (p2, c1, k60, u'arodrig').
+1703366556: No will message specified.
+1703366556: Sending CONNACK to mqttjs_20edb9ff (0, 0)
+1703366556: Received SUBSCRIBE from mqttjs_20edb9ff
+1703366556: 	# (QoS 0)
+1703366556: mqttjs_20edb9ff 0 #
+1703366556: Sending SUBACK to mqttjs_20edb9ff
+1703366616: Received PINGREQ from mqttjs_20edb9ff
+1703366616: Sending PINGRESP to mqttjs_20edb9ff
+1703366639: Received DISCONNECT from mqttjs_20edb9ff
+1703366639: Client mqttjs_20edb9ff disconnected.
+1703366654: New connection from 172.18.0.3:48574 on port 1883.
+1703366654: New client connected from 172.18.0.3:48574 as mqttjs_ca80749a (p2, c1, k60, u'arodrig').
+1703366654: No will message specified.
+1703366654: Sending CONNACK to mqttjs_ca80749a (0, 0)
+1703366654: Received SUBSCRIBE from mqttjs_ca80749a
+1703366654: 	# (QoS 0)
+1703366654: mqttjs_ca80749a 0 #
+1703366654: Sending SUBACK to mqttjs_ca80749a
+1703366657: Received DISCONNECT from mqttjs_ca80749a
+1703366657: Client mqttjs_ca80749a disconnected.
+1703366677: New connection from 172.18.0.3:34098 on port 1883.
+1703366677: New client connected from 172.18.0.3:34098 as mqttjs_e6920623 (p2, c1, k60, u'arodrig').
+1703366677: No will message specified.
+1703366677: Sending CONNACK to mqttjs_e6920623 (0, 0)
+1703366677: Received SUBSCRIBE from mqttjs_e6920623
+1703366677: 	# (QoS 0)
+1703366677: mqttjs_e6920623 0 #
+1703366677: Sending SUBACK to mqttjs_e6920623
+1703366730: Received DISCONNECT from mqttjs_e6920623
+1703366730: Client mqttjs_e6920623 disconnected.
+1703366745: New connection from 172.18.0.3:45706 on port 1883.
+1703366745: New client connected from 172.18.0.3:45706 as mqttjs_e828203f (p2, c1, k60, u'arodrig').
+1703366745: No will message specified.
+1703366745: Sending CONNACK to mqttjs_e828203f (0, 0)
+1703366745: Received SUBSCRIBE from mqttjs_e828203f
+1703366745: 	# (QoS 0)
+1703366745: mqttjs_e828203f 0 #
+1703366745: Sending SUBACK to mqttjs_e828203f
+1703366749: Received DISCONNECT from mqttjs_e828203f
+1703366749: Client mqttjs_e828203f disconnected.
+1703366764: New connection from 172.18.0.3:53486 on port 1883.
+1703366764: New client connected from 172.18.0.3:53486 as mqttjs_20701c80 (p2, c1, k60, u'arodrig').
+1703366764: No will message specified.
+1703366764: Sending CONNACK to mqttjs_20701c80 (0, 0)
+1703366764: Received SUBSCRIBE from mqttjs_20701c80
+1703366764: 	# (QoS 0)
+1703366764: mqttjs_20701c80 0 #
+1703366764: Sending SUBACK to mqttjs_20701c80
+1703366775: Client mqttjs_20701c80 closed its connection.
+1703366775: mosquitto version 2.0.15 terminating
+1703366775: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1703366775: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1703366775: Error: No such file or directory.
+1703366779: mosquitto version 2.0.15 starting
+1703366779: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1703366779: Loading plugin: /mosquitto/go-auth.so
+1703366779:  ├── Username/password checking enabled.
+1703366779:  ├── TLS-PSK checking enabled.
+1703366779:  └── Extended authentication not enabled.
+1703366779: Opening ipv4 listen socket on port 1883.
+1703366779: Opening ipv6 listen socket on port 1883.
+1703366779: Opening ipv4 listen socket on port 9001.
+1703366779: Opening ipv6 listen socket on port 9001.
+1703366779: mosquitto version 2.0.15 running
+1703366799: New connection from 172.19.0.3:44898 on port 1883.
+1703366799: New client connected from 172.19.0.3:44898 as mqttjs_46b7842a (p2, c1, k60, u'arodrig').
+1703366799: No will message specified.
+1703366799: Sending CONNACK to mqttjs_46b7842a (0, 0)
+1703366800: Received SUBSCRIBE from mqttjs_46b7842a
+1703366800: 	# (QoS 0)
+1703366800: mqttjs_46b7842a 0 #
+1703366800: Sending SUBACK to mqttjs_46b7842a
+1703366804: Received DISCONNECT from mqttjs_46b7842a
+1703366804: Client mqttjs_46b7842a disconnected.
+1703366820: New connection from 172.19.0.3:49088 on port 1883.
+1703366820: New client connected from 172.19.0.3:49088 as mqttjs_45db3597 (p2, c1, k60, u'arodrig').
+1703366820: No will message specified.
+1703366820: Sending CONNACK to mqttjs_45db3597 (0, 0)
+1703366820: Received SUBSCRIBE from mqttjs_45db3597
+1703366820: 	# (QoS 0)
+1703366820: mqttjs_45db3597 0 #
+1703366820: Sending SUBACK to mqttjs_45db3597
+1703366827: Received DISCONNECT from mqttjs_45db3597
+1703366827: Client mqttjs_45db3597 disconnected.
+1703366856: mosquitto version 2.0.15 terminating
+1703366856: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1703366856: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1703366856: Error: No such file or directory.
+1703366863: mosquitto version 2.0.15 starting
+1703366863: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1703366863: Loading plugin: /mosquitto/go-auth.so
+1703366863:  ├── Username/password checking enabled.
+1703366863:  ├── TLS-PSK checking enabled.
+1703366863:  └── Extended authentication not enabled.
+1703366863: Opening ipv4 listen socket on port 1883.
+1703366863: Opening ipv6 listen socket on port 1883.
+1703366863: Opening ipv4 listen socket on port 9001.
+1703366863: Opening ipv6 listen socket on port 9001.
+1703366863: mosquitto version 2.0.15 running
+1703366885: New connection from 172.20.0.3:36966 on port 1883.
+1703366885: New client connected from 172.20.0.3:36966 as mqttjs_bbef7bfe (p2, c1, k60, u'arodrig').
+1703366885: No will message specified.
+1703366885: Sending CONNACK to mqttjs_bbef7bfe (0, 0)
+1703366886: Received SUBSCRIBE from mqttjs_bbef7bfe
+1703366886: 	# (QoS 0)
+1703366886: mqttjs_bbef7bfe 0 #
+1703366886: Sending SUBACK to mqttjs_bbef7bfe
+1703366895: Received DISCONNECT from mqttjs_bbef7bfe
+1703366895: Client mqttjs_bbef7bfe disconnected.
+1703366911: New connection from 172.20.0.3:54552 on port 1883.
+1703366911: New client connected from 172.20.0.3:54552 as mqttjs_1f295c7c (p2, c1, k60, u'arodrig').
+1703366911: No will message specified.
+1703366911: Sending CONNACK to mqttjs_1f295c7c (0, 0)
+1703366911: Received SUBSCRIBE from mqttjs_1f295c7c
+1703366911: 	# (QoS 0)
+1703366911: mqttjs_1f295c7c 0 #
+1703366911: Sending SUBACK to mqttjs_1f295c7c
+1703366971: Received PINGREQ from mqttjs_1f295c7c
+1703366971: Sending PINGRESP to mqttjs_1f295c7c
+1703367031: Received PINGREQ from mqttjs_1f295c7c
+1703367031: Sending PINGRESP to mqttjs_1f295c7c
+1703367091: Received PINGREQ from mqttjs_1f295c7c
+1703367091: Sending PINGRESP to mqttjs_1f295c7c
+1703367151: Received PINGREQ from mqttjs_1f295c7c
+1703367151: Sending PINGRESP to mqttjs_1f295c7c
+1703367211: Received PINGREQ from mqttjs_1f295c7c
+1703367211: Sending PINGRESP to mqttjs_1f295c7c
+1703367231: Received DISCONNECT from mqttjs_1f295c7c
+1703367231: Client mqttjs_1f295c7c disconnected.
+1703367251: New connection from 172.20.0.3:38112 on port 1883.
+1703367251: New client connected from 172.20.0.3:38112 as mqttjs_f948be37 (p2, c1, k60, u'arodrig').
+1703367251: No will message specified.
+1703367251: Sending CONNACK to mqttjs_f948be37 (0, 0)
+1703367251: Received SUBSCRIBE from mqttjs_f948be37
+1703367251: 	# (QoS 0)
+1703367251: mqttjs_f948be37 0 #
+1703367251: Sending SUBACK to mqttjs_f948be37
+1703367256: Client mqttjs_f948be37 closed its connection.
+1703367263: New connection from 172.20.0.3:36450 on port 1883.
+1703367263: New client connected from 172.20.0.3:36450 as mqttjs_a4ea1172 (p2, c1, k60, u'arodrig').
+1703367263: No will message specified.
+1703367263: Sending CONNACK to mqttjs_a4ea1172 (0, 0)
+1703367263: Received SUBSCRIBE from mqttjs_a4ea1172
+1703367263: 	# (QoS 0)
+1703367263: mqttjs_a4ea1172 0 #
+1703367263: Sending SUBACK to mqttjs_a4ea1172
+1703367265: Client mqttjs_a4ea1172 closed its connection.
+1703367272: New connection from 172.20.0.3:56502 on port 1883.
+1703367272: New client connected from 172.20.0.3:56502 as mqttjs_6bcde9d7 (p2, c1, k60, u'arodrig').
+1703367272: No will message specified.
+1703367272: Sending CONNACK to mqttjs_6bcde9d7 (0, 0)
+1703367272: Received SUBSCRIBE from mqttjs_6bcde9d7
+1703367272: 	# (QoS 0)
+1703367272: mqttjs_6bcde9d7 0 #
+1703367272: Sending SUBACK to mqttjs_6bcde9d7
+1703367292: Client mqttjs_6bcde9d7 closed its connection.
+1703367292: mosquitto version 2.0.15 terminating
+1703367292: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1703367292: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1703367292: Error: No such file or directory.
+1703367312: mosquitto version 2.0.15 starting
+1703367312: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1703367312: Loading plugin: /mosquitto/go-auth.so
+1703367312:  ├── Username/password checking enabled.
+1703367312:  ├── TLS-PSK checking enabled.
+1703367312:  └── Extended authentication not enabled.
+1703367312: Opening ipv4 listen socket on port 1883.
+1703367312: Opening ipv6 listen socket on port 1883.
+1703367312: Opening ipv4 listen socket on port 9001.
+1703367312: Opening ipv6 listen socket on port 9001.
+1703367312: mosquitto version 2.0.15 running
+1703367334: New connection from 172.21.0.3:51840 on port 1883.
+1703367334: New client connected from 172.21.0.3:51840 as mqttjs_616b95ed (p2, c1, k60, u'arodrig').
+1703367334: No will message specified.
+1703367334: Sending CONNACK to mqttjs_616b95ed (0, 0)
+1703367334: Received SUBSCRIBE from mqttjs_616b95ed
+1703367334: 	# (QoS 0)
+1703367334: mqttjs_616b95ed 0 #
+1703367334: Sending SUBACK to mqttjs_616b95ed
+1703367344: Client mqttjs_616b95ed closed its connection.
+1703367351: New connection from 172.21.0.3:48860 on port 1883.
+1703367351: New client connected from 172.21.0.3:48860 as mqttjs_6a45ee3e (p2, c1, k60, u'arodrig').
+1703367351: No will message specified.
+1703367351: Sending CONNACK to mqttjs_6a45ee3e (0, 0)
+1703367351: Received SUBSCRIBE from mqttjs_6a45ee3e
+1703367351: 	# (QoS 0)
+1703367351: mqttjs_6a45ee3e 0 #
+1703367351: Sending SUBACK to mqttjs_6a45ee3e
+1703367392: Client mqttjs_6a45ee3e closed its connection.
+1703367397: New connection from 172.21.0.3:51606 on port 1883.
+1703367397: New client connected from 172.21.0.3:51606 as mqttjs_bd8b1428 (p2, c1, k60, u'arodrig').
+1703367397: No will message specified.
+1703367397: Sending CONNACK to mqttjs_bd8b1428 (0, 0)
+1703367398: Received SUBSCRIBE from mqttjs_bd8b1428
+1703367398: 	# (QoS 0)
+1703367398: mqttjs_bd8b1428 0 #
+1703367398: Sending SUBACK to mqttjs_bd8b1428
+1703367403: Client mqttjs_bd8b1428 closed its connection.
+1703367409: New connection from 172.21.0.3:47298 on port 1883.
+1703367409: New client connected from 172.21.0.3:47298 as mqttjs_2f93fb75 (p2, c1, k60, u'arodrig').
+1703367409: No will message specified.
+1703367409: Sending CONNACK to mqttjs_2f93fb75 (0, 0)
+1703367409: Received SUBSCRIBE from mqttjs_2f93fb75
+1703367409: 	# (QoS 0)
+1703367409: mqttjs_2f93fb75 0 #
+1703367409: Sending SUBACK to mqttjs_2f93fb75
+1703367431: Client mqttjs_2f93fb75 closed its connection.
+1703367431: mosquitto version 2.0.15 terminating
+1703367431: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1703367431: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1703367431: Error: No such file or directory.
+1703367435: mosquitto version 2.0.15 starting
+1703367435: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1703367435: Loading plugin: /mosquitto/go-auth.so
+1703367435:  ├── Username/password checking enabled.
+1703367435:  ├── TLS-PSK checking enabled.
+1703367435:  └── Extended authentication not enabled.
+1703367435: Opening ipv4 listen socket on port 1883.
+1703367435: Opening ipv6 listen socket on port 1883.
+1703367435: Opening ipv4 listen socket on port 9001.
+1703367435: Opening ipv6 listen socket on port 9001.
+1703367435: mosquitto version 2.0.15 running
+1703367457: New connection from 172.22.0.3:54360 on port 1883.
+1703367457: New client connected from 172.22.0.3:54360 as mqttjs_6a510d98 (p2, c1, k60, u'arodrig').
+1703367457: No will message specified.
+1703367457: Sending CONNACK to mqttjs_6a510d98 (0, 0)
+1703367458: Received SUBSCRIBE from mqttjs_6a510d98
+1703367458: 	# (QoS 0)
+1703367458: mqttjs_6a510d98 0 #
+1703367458: Sending SUBACK to mqttjs_6a510d98
+1703367466: Client mqttjs_6a510d98 closed its connection.
+1703367472: New connection from 172.22.0.3:36634 on port 1883.
+1703367472: New client connected from 172.22.0.3:36634 as mqttjs_3c4485c4 (p2, c1, k60, u'arodrig').
+1703367472: No will message specified.
+1703367472: Sending CONNACK to mqttjs_3c4485c4 (0, 0)
+1703367472: Received SUBSCRIBE from mqttjs_3c4485c4
+1703367472: 	# (QoS 0)
+1703367472: mqttjs_3c4485c4 0 #
+1703367472: Sending SUBACK to mqttjs_3c4485c4
+1703367532: Received PINGREQ from mqttjs_3c4485c4
+1703367532: Sending PINGRESP to mqttjs_3c4485c4
+1703367592: Received PINGREQ from mqttjs_3c4485c4
+1703367592: Sending PINGRESP to mqttjs_3c4485c4
+1703367652: Received PINGREQ from mqttjs_3c4485c4
+1703367652: Sending PINGRESP to mqttjs_3c4485c4
+1703367712: Received PINGREQ from mqttjs_3c4485c4
+1703367712: Sending PINGRESP to mqttjs_3c4485c4
+1703367772: Received PINGREQ from mqttjs_3c4485c4
+1703367772: Sending PINGRESP to mqttjs_3c4485c4
+1703367826: Client mqttjs_3c4485c4 closed its connection.
+1703367826: mosquitto version 2.0.15 terminating
+1703367826: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1703367826: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1703367826: Error: No such file or directory.
+1703367849: mosquitto version 2.0.15 starting
+1703367849: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1703367849: Loading plugin: /mosquitto/go-auth.so
+1703367849:  ├── Username/password checking enabled.
+1703367849:  ├── TLS-PSK checking enabled.
+1703367849:  └── Extended authentication not enabled.
+1703367849: Opening ipv4 listen socket on port 1883.
+1703367849: Opening ipv6 listen socket on port 1883.
+1703367849: Opening ipv4 listen socket on port 9001.
+1703367849: Opening ipv6 listen socket on port 9001.
+1703367849: mosquitto version 2.0.15 running
+1703367869: New connection from 172.23.0.3:43824 on port 1883.
+1703367869: New client connected from 172.23.0.3:43824 as mqttjs_acfd6e61 (p2, c1, k60, u'arodrig').
+1703367869: No will message specified.
+1703367869: Sending CONNACK to mqttjs_acfd6e61 (0, 0)
+1703367870: Received SUBSCRIBE from mqttjs_acfd6e61
+1703367870: 	# (QoS 0)
+1703367870: mqttjs_acfd6e61 0 #
+1703367870: Sending SUBACK to mqttjs_acfd6e61
+1703367930: Received PINGREQ from mqttjs_acfd6e61
+1703367930: Sending PINGRESP to mqttjs_acfd6e61
+1703367990: Received PINGREQ from mqttjs_acfd6e61
+1703367990: Sending PINGRESP to mqttjs_acfd6e61
+1703368050: Received PINGREQ from mqttjs_acfd6e61
+1703368050: Sending PINGRESP to mqttjs_acfd6e61
+1703368110: Received PINGREQ from mqttjs_acfd6e61
+1703368110: Sending PINGRESP to mqttjs_acfd6e61
+1703368170: Received PINGREQ from mqttjs_acfd6e61
+1703368170: Sending PINGRESP to mqttjs_acfd6e61
+1703368177: Received DISCONNECT from mqttjs_acfd6e61
+1703368177: Client mqttjs_acfd6e61 disconnected.
+1703368193: New connection from 172.23.0.3:50094 on port 1883.
+1703368193: New client connected from 172.23.0.3:50094 as mqttjs_5c8286dd (p2, c1, k60, u'arodrig').
+1703368193: No will message specified.
+1703368193: Sending CONNACK to mqttjs_5c8286dd (0, 0)
+1703368193: Received SUBSCRIBE from mqttjs_5c8286dd
+1703368193: 	# (QoS 0)
+1703368193: mqttjs_5c8286dd 0 #
+1703368193: Sending SUBACK to mqttjs_5c8286dd
+1703368220: New connection from 172.23.0.1:32950 on port 1883.
+1703368220: New client connected from 172.23.0.1:32950 as auto-4B737BBE-B57D-733F-AD54-444F69D468F0 (p2, c1, k15, u'avanzado').
+1703368220: No will message specified.
+1703368220: Sending CONNACK to auto-4B737BBE-B57D-733F-AD54-444F69D468F0 (0, 0)
+1703368222: Received PUBLISH from auto-4B737BBE-B57D-733F-AD54-444F69D468F0 (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (146 bytes))
+1703368222: Sending PUBLISH to mqttjs_5c8286dd (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (146 bytes))
+1703368224: Received PUBLISH from auto-4B737BBE-B57D-733F-AD54-444F69D468F0 (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (146 bytes))
+1703368224: Sending PUBLISH to mqttjs_5c8286dd (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (146 bytes))
+1703368226: Received PUBLISH from auto-4B737BBE-B57D-733F-AD54-444F69D468F0 (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (139 bytes))
+1703368226: Sending PUBLISH to mqttjs_5c8286dd (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (139 bytes))
+1703368228: Received PUBLISH from auto-4B737BBE-B57D-733F-AD54-444F69D468F0 (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (139 bytes))
+1703368228: Sending PUBLISH to mqttjs_5c8286dd (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (139 bytes))
+1703368232: Received DISCONNECT from mqttjs_5c8286dd
+1703368232: Client mqttjs_5c8286dd disconnected.
+1703368247: New connection from 172.23.0.3:49990 on port 1883.
+1703368247: New client connected from 172.23.0.3:49990 as mqttjs_50e1fa1e (p2, c1, k60, u'arodrig').
+1703368247: No will message specified.
+1703368247: Sending CONNACK to mqttjs_50e1fa1e (0, 0)
+1703368248: Received SUBSCRIBE from mqttjs_50e1fa1e
+1703368248: 	# (QoS 0)
+1703368248: mqttjs_50e1fa1e 0 #
+1703368248: Sending SUBACK to mqttjs_50e1fa1e
+1703368250: Client auto-4B737BBE-B57D-733F-AD54-444F69D468F0 has exceeded timeout, disconnecting.
+1703368308: Received PINGREQ from mqttjs_50e1fa1e
+1703368308: Sending PINGRESP to mqttjs_50e1fa1e
+1703368368: Received PINGREQ from mqttjs_50e1fa1e
+1703368368: Sending PINGRESP to mqttjs_50e1fa1e
+1703368428: Received PINGREQ from mqttjs_50e1fa1e
+1703368428: Sending PINGRESP to mqttjs_50e1fa1e
+1703368488: Received PINGREQ from mqttjs_50e1fa1e
+1703368488: Sending PINGRESP to mqttjs_50e1fa1e
+1703368548: Received PINGREQ from mqttjs_50e1fa1e
+1703368548: Sending PINGRESP to mqttjs_50e1fa1e
+1703368608: Received PINGREQ from mqttjs_50e1fa1e
+1703368608: Sending PINGRESP to mqttjs_50e1fa1e
+1703368668: Received PINGREQ from mqttjs_50e1fa1e
+1703368668: Sending PINGRESP to mqttjs_50e1fa1e
+1703368728: Received PINGREQ from mqttjs_50e1fa1e
+1703368728: Sending PINGRESP to mqttjs_50e1fa1e
+1703368788: Received PINGREQ from mqttjs_50e1fa1e
+1703368788: Sending PINGRESP to mqttjs_50e1fa1e
+1703368848: Received PINGREQ from mqttjs_50e1fa1e
+1703368848: Sending PINGRESP to mqttjs_50e1fa1e
+1703368908: Received PINGREQ from mqttjs_50e1fa1e
+1703368908: Sending PINGRESP to mqttjs_50e1fa1e
+1703368968: Received PINGREQ from mqttjs_50e1fa1e
+1703368968: Sending PINGRESP to mqttjs_50e1fa1e
+1703369028: Received PINGREQ from mqttjs_50e1fa1e
+1703369028: Sending PINGRESP to mqttjs_50e1fa1e
+1703369088: Received PINGREQ from mqttjs_50e1fa1e
+1703369088: Sending PINGRESP to mqttjs_50e1fa1e
+1703369148: Received PINGREQ from mqttjs_50e1fa1e
+1703369148: Sending PINGRESP to mqttjs_50e1fa1e
+1703369208: Received PINGREQ from mqttjs_50e1fa1e
+1703369208: Sending PINGRESP to mqttjs_50e1fa1e
+1703369268: Received PINGREQ from mqttjs_50e1fa1e
+1703369268: Sending PINGRESP to mqttjs_50e1fa1e
+1703369328: Received PINGREQ from mqttjs_50e1fa1e
+1703369328: Sending PINGRESP to mqttjs_50e1fa1e
+1703369388: Received PINGREQ from mqttjs_50e1fa1e
+1703369388: Sending PINGRESP to mqttjs_50e1fa1e
+1703369448: Received PINGREQ from mqttjs_50e1fa1e
+1703369448: Sending PINGRESP to mqttjs_50e1fa1e
+1703369508: Received PINGREQ from mqttjs_50e1fa1e
+1703369508: Sending PINGRESP to mqttjs_50e1fa1e
+1703369568: Received PINGREQ from mqttjs_50e1fa1e
+1703369568: Sending PINGRESP to mqttjs_50e1fa1e
+1703369628: Received PINGREQ from mqttjs_50e1fa1e
+1703369628: Sending PINGRESP to mqttjs_50e1fa1e
+1703369649: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1703369649: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1703369649: Error: No such file or directory.
+1703369688: Received PINGREQ from mqttjs_50e1fa1e
+1703369688: Sending PINGRESP to mqttjs_50e1fa1e
+1703369748: Received PINGREQ from mqttjs_50e1fa1e
+1703369748: Sending PINGRESP to mqttjs_50e1fa1e
+1703369808: Received PINGREQ from mqttjs_50e1fa1e
+1703369808: Sending PINGRESP to mqttjs_50e1fa1e
+1703369868: Received PINGREQ from mqttjs_50e1fa1e
+1703369868: Sending PINGRESP to mqttjs_50e1fa1e
+1703369928: Received PINGREQ from mqttjs_50e1fa1e
+1703369928: Sending PINGRESP to mqttjs_50e1fa1e
+1703369988: Received PINGREQ from mqttjs_50e1fa1e
+1703369988: Sending PINGRESP to mqttjs_50e1fa1e
+1703370048: Received PINGREQ from mqttjs_50e1fa1e
+1703370048: Sending PINGRESP to mqttjs_50e1fa1e
+1703370108: Received PINGREQ from mqttjs_50e1fa1e
+1703370108: Sending PINGRESP to mqttjs_50e1fa1e
+1703370168: Received PINGREQ from mqttjs_50e1fa1e
+1703370168: Sending PINGRESP to mqttjs_50e1fa1e
+1703370228: Received PINGREQ from mqttjs_50e1fa1e
+1703370228: Sending PINGRESP to mqttjs_50e1fa1e
+1703370288: Received PINGREQ from mqttjs_50e1fa1e
+1703370288: Sending PINGRESP to mqttjs_50e1fa1e
+1703370348: Received PINGREQ from mqttjs_50e1fa1e
+1703370348: Sending PINGRESP to mqttjs_50e1fa1e
+1703370408: Received PINGREQ from mqttjs_50e1fa1e
+1703370408: Sending PINGRESP to mqttjs_50e1fa1e
+1703370468: Received PINGREQ from mqttjs_50e1fa1e
+1703370468: Sending PINGRESP to mqttjs_50e1fa1e
+1703370528: Received PINGREQ from mqttjs_50e1fa1e
+1703370528: Sending PINGRESP to mqttjs_50e1fa1e
+1703370588: Received PINGREQ from mqttjs_50e1fa1e
+1703370588: Sending PINGRESP to mqttjs_50e1fa1e
+1703370648: Received PINGREQ from mqttjs_50e1fa1e
+1703370648: Sending PINGRESP to mqttjs_50e1fa1e
+1703370708: Received PINGREQ from mqttjs_50e1fa1e
+1703370708: Sending PINGRESP to mqttjs_50e1fa1e
+1703370768: Received PINGREQ from mqttjs_50e1fa1e
+1703370768: Sending PINGRESP to mqttjs_50e1fa1e
+1703370828: Received PINGREQ from mqttjs_50e1fa1e
+1703370828: Sending PINGRESP to mqttjs_50e1fa1e
+1703370888: Received PINGREQ from mqttjs_50e1fa1e
+1703370888: Sending PINGRESP to mqttjs_50e1fa1e
+1703370948: Received PINGREQ from mqttjs_50e1fa1e
+1703370948: Sending PINGRESP to mqttjs_50e1fa1e
+1703371008: Received PINGREQ from mqttjs_50e1fa1e
+1703371008: Sending PINGRESP to mqttjs_50e1fa1e
+1703371068: Received PINGREQ from mqttjs_50e1fa1e
+1703371068: Sending PINGRESP to mqttjs_50e1fa1e
+1703371105: New connection from 172.23.0.1:56026 on port 1883.
+1703371105: New client connected from 172.23.0.1:56026 as auto-F6ADB427-51D0-08D0-B811-007B3498340D (p2, c1, k15, u'avanzado').
+1703371105: No will message specified.
+1703371105: Sending CONNACK to auto-F6ADB427-51D0-08D0-B811-007B3498340D (0, 0)
+1703371109: Received PUBLISH from auto-F6ADB427-51D0-08D0-B811-007B3498340D (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (153 bytes))
+1703371109: Sending PUBLISH to mqttjs_50e1fa1e (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (153 bytes))
+1703371111: Received PUBLISH from auto-F6ADB427-51D0-08D0-B811-007B3498340D (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (153 bytes))
+1703371111: Sending PUBLISH to mqttjs_50e1fa1e (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (153 bytes))
+1703371113: Received PUBLISH from auto-F6ADB427-51D0-08D0-B811-007B3498340D (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (153 bytes))
+1703371113: Sending PUBLISH to mqttjs_50e1fa1e (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (153 bytes))
+1703371115: Received PUBLISH from auto-F6ADB427-51D0-08D0-B811-007B3498340D (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (153 bytes))
+1703371115: Sending PUBLISH to mqttjs_50e1fa1e (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (153 bytes))
+1703371117: Received PUBLISH from auto-F6ADB427-51D0-08D0-B811-007B3498340D (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (144 bytes))
+1703371117: Sending PUBLISH to mqttjs_50e1fa1e (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (144 bytes))
+1703371119: Received PUBLISH from auto-F6ADB427-51D0-08D0-B811-007B3498340D (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (144 bytes))
+1703371119: Sending PUBLISH to mqttjs_50e1fa1e (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (144 bytes))
+1703371120: Received PINGREQ from auto-F6ADB427-51D0-08D0-B811-007B3498340D
+1703371120: Sending PINGRESP to auto-F6ADB427-51D0-08D0-B811-007B3498340D
+1703371121: Received PUBLISH from auto-F6ADB427-51D0-08D0-B811-007B3498340D (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (144 bytes))
+1703371121: Sending PUBLISH to mqttjs_50e1fa1e (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (144 bytes))
+1703371123: Received PUBLISH from auto-F6ADB427-51D0-08D0-B811-007B3498340D (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (144 bytes))
+1703371123: Sending PUBLISH to mqttjs_50e1fa1e (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (144 bytes))
+1703371125: Received PUBLISH from auto-F6ADB427-51D0-08D0-B811-007B3498340D (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (144 bytes))
+1703371125: Sending PUBLISH to mqttjs_50e1fa1e (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (144 bytes))
+1703371127: Received PUBLISH from auto-F6ADB427-51D0-08D0-B811-007B3498340D (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (144 bytes))
+1703371127: Sending PUBLISH to mqttjs_50e1fa1e (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (144 bytes))
+1703371128: Received PINGREQ from mqttjs_50e1fa1e
+1703371128: Sending PINGRESP to mqttjs_50e1fa1e
+1703371129: Received PUBLISH from auto-F6ADB427-51D0-08D0-B811-007B3498340D (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (144 bytes))
+1703371129: Sending PUBLISH to mqttjs_50e1fa1e (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (144 bytes))
+1703371131: Received PUBLISH from auto-F6ADB427-51D0-08D0-B811-007B3498340D (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (144 bytes))
+1703371131: Sending PUBLISH to mqttjs_50e1fa1e (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (144 bytes))
+1703371133: Received PUBLISH from auto-F6ADB427-51D0-08D0-B811-007B3498340D (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (153 bytes))
+1703371133: Sending PUBLISH to mqttjs_50e1fa1e (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (153 bytes))
+1703371135: Received PUBLISH from auto-F6ADB427-51D0-08D0-B811-007B3498340D (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (144 bytes))
+1703371135: Sending PUBLISH to mqttjs_50e1fa1e (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (144 bytes))
+1703371160: Client auto-F6ADB427-51D0-08D0-B811-007B3498340D has exceeded timeout, disconnecting.
+1703371162: New connection from 172.23.0.1:58056 on port 1883.
+1703371162: New client connected from 172.23.0.1:58056 as auto-BB906FC9-7AB8-3962-14F7-EF68BA6F6574 (p2, c1, k15, u'avanzado').
+1703371162: No will message specified.
+1703371162: Sending CONNACK to auto-BB906FC9-7AB8-3962-14F7-EF68BA6F6574 (0, 0)
+1703371165: Received PUBLISH from auto-BB906FC9-7AB8-3962-14F7-EF68BA6F6574 (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (146 bytes))
+1703371165: Sending PUBLISH to mqttjs_50e1fa1e (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (146 bytes))
+1703371167: Received PUBLISH from auto-BB906FC9-7AB8-3962-14F7-EF68BA6F6574 (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (153 bytes))
+1703371167: Sending PUBLISH to mqttjs_50e1fa1e (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (153 bytes))
+1703371172: Received DISCONNECT from mqttjs_50e1fa1e
+1703371172: Client mqttjs_50e1fa1e disconnected.
+1703371188: New connection from 172.23.0.3:33864 on port 1883.
+1703371188: New client connected from 172.23.0.3:33864 as mqttjs_f220ba8e (p2, c1, k60, u'arodrig').
+1703371188: No will message specified.
+1703371188: Sending CONNACK to mqttjs_f220ba8e (0, 0)
+1703371188: Received SUBSCRIBE from mqttjs_f220ba8e
+1703371188: 	# (QoS 0)
+1703371188: mqttjs_f220ba8e 0 #
+1703371188: Sending SUBACK to mqttjs_f220ba8e
+1703371190: Client auto-BB906FC9-7AB8-3962-14F7-EF68BA6F6574 has exceeded timeout, disconnecting.
+1703371248: Received PINGREQ from mqttjs_f220ba8e
+1703371248: Sending PINGRESP to mqttjs_f220ba8e
+1703371308: Received PINGREQ from mqttjs_f220ba8e
+1703371308: Sending PINGRESP to mqttjs_f220ba8e
+1703371368: Received PINGREQ from mqttjs_f220ba8e
+1703371368: Sending PINGRESP to mqttjs_f220ba8e
+1703371428: Received PINGREQ from mqttjs_f220ba8e
+1703371428: Sending PINGRESP to mqttjs_f220ba8e
+1703371450: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1703371450: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1703371450: Error: No such file or directory.
+1703371488: Received PINGREQ from mqttjs_f220ba8e
+1703371488: Sending PINGRESP to mqttjs_f220ba8e
+1703371494: Received DISCONNECT from mqttjs_f220ba8e
+1703371494: Client mqttjs_f220ba8e disconnected.
+1703371511: New connection from 172.23.0.3:33898 on port 1883.
+1703371511: New client connected from 172.23.0.3:33898 as mqttjs_be8c1c7e (p2, c1, k60, u'arodrig').
+1703371511: No will message specified.
+1703371511: Sending CONNACK to mqttjs_be8c1c7e (0, 0)
+1703371511: Received SUBSCRIBE from mqttjs_be8c1c7e
+1703371511: 	# (QoS 0)
+1703371511: mqttjs_be8c1c7e 0 #
+1703371511: Sending SUBACK to mqttjs_be8c1c7e
+1703371523: New connection from 172.23.0.1:45780 on port 1883.
+1703371523: New client connected from 172.23.0.1:45780 as auto-1F1F7F1F-8524-5DF8-A9BC-B3E9314923C3 (p2, c1, k15, u'avanzado').
+1703371523: No will message specified.
+1703371523: Sending CONNACK to auto-1F1F7F1F-8524-5DF8-A9BC-B3E9314923C3 (0, 0)
+1703371527: Received PUBLISH from auto-1F1F7F1F-8524-5DF8-A9BC-B3E9314923C3 (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (146 bytes))
+1703371527: Sending PUBLISH to mqttjs_be8c1c7e (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (146 bytes))
+1703371529: Received PUBLISH from auto-1F1F7F1F-8524-5DF8-A9BC-B3E9314923C3 (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (146 bytes))
+1703371529: Sending PUBLISH to mqttjs_be8c1c7e (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (146 bytes))
+1703371531: Received PUBLISH from auto-1F1F7F1F-8524-5DF8-A9BC-B3E9314923C3 (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (146 bytes))
+1703371531: Sending PUBLISH to mqttjs_be8c1c7e (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (146 bytes))
+1703371533: Received PUBLISH from auto-1F1F7F1F-8524-5DF8-A9BC-B3E9314923C3 (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (146 bytes))
+1703371533: Sending PUBLISH to mqttjs_be8c1c7e (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (146 bytes))
+1703371534: Received DISCONNECT from mqttjs_be8c1c7e
+1703371534: Client mqttjs_be8c1c7e disconnected.
+1703371535: Received PUBLISH from auto-1F1F7F1F-8524-5DF8-A9BC-B3E9314923C3 (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (146 bytes))
+1703371537: Received PUBLISH from auto-1F1F7F1F-8524-5DF8-A9BC-B3E9314923C3 (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (146 bytes))
+1703371562: Client auto-1F1F7F1F-8524-5DF8-A9BC-B3E9314923C3 has exceeded timeout, disconnecting.
+1703371574: New connection from 172.23.0.3:34274 on port 1883.
+1703371574: New client connected from 172.23.0.3:34274 as mqttjs_12ad6895 (p2, c1, k60, u'arodrig').
+1703371574: No will message specified.
+1703371574: Sending CONNACK to mqttjs_12ad6895 (0, 0)
+1703371575: Received SUBSCRIBE from mqttjs_12ad6895
+1703371575: 	# (QoS 0)
+1703371575: mqttjs_12ad6895 0 #
+1703371575: Sending SUBACK to mqttjs_12ad6895
+1703371598: Client mqttjs_12ad6895 closed its connection.
+1703371598: mosquitto version 2.0.15 terminating
+1703371598: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1703371598: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1703371598: Error: No such file or directory.
+1703371683: mosquitto version 2.0.15 starting
+1703371683: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1703371683: Loading plugin: /mosquitto/go-auth.so
+1703371683:  ├── Username/password checking enabled.
+1703371683:  ├── TLS-PSK checking enabled.
+1703371683:  └── Extended authentication not enabled.
+1703371683: Opening ipv4 listen socket on port 1883.
+1703371683: Opening ipv6 listen socket on port 1883.
+1703371683: Opening ipv4 listen socket on port 9001.
+1703371683: Opening ipv6 listen socket on port 9001.
+1703371683: mosquitto version 2.0.15 running
+1703371705: New connection from 172.24.0.3:36382 on port 1883.
+1703371705: New client connected from 172.24.0.3:36382 as mqttjs_90b49a10 (p2, c1, k60, u'arodrig').
+1703371705: No will message specified.
+1703371705: Sending CONNACK to mqttjs_90b49a10 (0, 0)
+1703371706: Received SUBSCRIBE from mqttjs_90b49a10
+1703371706: 	# (QoS 0)
+1703371706: mqttjs_90b49a10 0 #
+1703371706: Sending SUBACK to mqttjs_90b49a10
+1703371766: Received PINGREQ from mqttjs_90b49a10
+1703371766: Sending PINGRESP to mqttjs_90b49a10
+1703371807: New connection from 172.24.0.1:34570 on port 1883.
+1703371807: New client connected from 172.24.0.1:34570 as auto-49030B26-5074-41FD-8CCA-DF51E62EE576 (p2, c1, k15, u'avanzado').
+1703371807: No will message specified.
+1703371807: Sending CONNACK to auto-49030B26-5074-41FD-8CCA-DF51E62EE576 (0, 0)
+1703371808: Received PUBLISH from auto-49030B26-5074-41FD-8CCA-DF51E62EE576 (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (153 bytes))
+1703371808: Sending PUBLISH to mqttjs_90b49a10 (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (153 bytes))
+1703371810: Received PUBLISH from auto-49030B26-5074-41FD-8CCA-DF51E62EE576 (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (153 bytes))
+1703371810: Sending PUBLISH to mqttjs_90b49a10 (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (153 bytes))
+1703371812: Received PUBLISH from auto-49030B26-5074-41FD-8CCA-DF51E62EE576 (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (153 bytes))
+1703371812: Sending PUBLISH to mqttjs_90b49a10 (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (153 bytes))
+1703371816: Received DISCONNECT from mqttjs_90b49a10
+1703371816: Client mqttjs_90b49a10 disconnected.
+1703371839: Client auto-49030B26-5074-41FD-8CCA-DF51E62EE576 has exceeded timeout, disconnecting.
+1703371841: New connection from 172.24.0.3:42880 on port 1883.
+1703371841: New client connected from 172.24.0.3:42880 as mqttjs_5c5c4e31 (p2, c1, k60, u'arodrig').
+1703371841: No will message specified.
+1703371841: Sending CONNACK to mqttjs_5c5c4e31 (0, 0)
+1703371841: Received SUBSCRIBE from mqttjs_5c5c4e31
+1703371841: 	# (QoS 0)
+1703371841: mqttjs_5c5c4e31 0 #
+1703371841: Sending SUBACK to mqttjs_5c5c4e31
+1703371886: Client mqttjs_5c5c4e31 closed its connection.
+1703371887: mosquitto version 2.0.15 terminating
+1703371887: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1703371887: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1703371887: Error: No such file or directory.
+1703372073: mosquitto version 2.0.15 starting
+1703372073: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1703372073: Loading plugin: /mosquitto/go-auth.so
+1703372073:  ├── Username/password checking enabled.
+1703372073:  ├── TLS-PSK checking enabled.
+1703372073:  └── Extended authentication not enabled.
+1703372073: Opening ipv4 listen socket on port 1883.
+1703372073: Opening ipv6 listen socket on port 1883.
+1703372073: Opening ipv4 listen socket on port 9001.
+1703372073: Opening ipv6 listen socket on port 9001.
+1703372073: mosquitto version 2.0.15 running
+1703372093: New connection from 172.25.0.3:46390 on port 1883.
+1703372093: New client connected from 172.25.0.3:46390 as mqttjs_f7fb2a6e (p2, c1, k60, u'arodrig').
+1703372093: No will message specified.
+1703372093: Sending CONNACK to mqttjs_f7fb2a6e (0, 0)
+1703372093: Received SUBSCRIBE from mqttjs_f7fb2a6e
+1703372093: 	# (QoS 0)
+1703372093: mqttjs_f7fb2a6e 0 #
+1703372093: Sending SUBACK to mqttjs_f7fb2a6e
+1703372108: New connection from 172.25.0.1:40880 on port 1883.
+1703372108: New client connected from 172.25.0.1:40880 as auto-8D17A348-20C8-80DD-7838-86CE6E69096A (p2, c1, k15, u'avanzado').
+1703372108: No will message specified.
+1703372108: Sending CONNACK to auto-8D17A348-20C8-80DD-7838-86CE6E69096A (0, 0)
+1703372111: Received PUBLISH from auto-8D17A348-20C8-80DD-7838-86CE6E69096A (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (146 bytes))
+1703372111: Sending PUBLISH to mqttjs_f7fb2a6e (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (146 bytes))
+1703372113: Received PUBLISH from auto-8D17A348-20C8-80DD-7838-86CE6E69096A (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (146 bytes))
+1703372113: Sending PUBLISH to mqttjs_f7fb2a6e (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (146 bytes))
+1703372115: Received PUBLISH from auto-8D17A348-20C8-80DD-7838-86CE6E69096A (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (153 bytes))
+1703372115: Sending PUBLISH to mqttjs_f7fb2a6e (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (153 bytes))
+1703372120: Received DISCONNECT from mqttjs_f7fb2a6e
+1703372120: Client mqttjs_f7fb2a6e disconnected.
+1703372136: New connection from 172.25.0.3:52912 on port 1883.
+1703372136: New client connected from 172.25.0.3:52912 as mqttjs_ee02d265 (p2, c1, k60, u'arodrig').
+1703372136: No will message specified.
+1703372136: Sending CONNACK to mqttjs_ee02d265 (0, 0)
+1703372137: Received SUBSCRIBE from mqttjs_ee02d265
+1703372137: 	# (QoS 0)
+1703372137: mqttjs_ee02d265 0 #
+1703372137: Sending SUBACK to mqttjs_ee02d265
+1703372139: Client auto-8D17A348-20C8-80DD-7838-86CE6E69096A has exceeded timeout, disconnecting.
+1703372175: New connection from 172.25.0.1:57212 on port 1883.
+1703372175: New client connected from 172.25.0.1:57212 as auto-FAD7D3CC-28AA-DDD4-E398-080A9C20ED16 (p2, c1, k15, u'avanzado').
+1703372175: No will message specified.
+1703372175: Sending CONNACK to auto-FAD7D3CC-28AA-DDD4-E398-080A9C20ED16 (0, 0)
+1703372177: Received PUBLISH from auto-FAD7D3CC-28AA-DDD4-E398-080A9C20ED16 (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (153 bytes))
+1703372177: Sending PUBLISH to mqttjs_ee02d265 (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (153 bytes))
+1703372179: Received PUBLISH from auto-FAD7D3CC-28AA-DDD4-E398-080A9C20ED16 (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (153 bytes))
+1703372179: Sending PUBLISH to mqttjs_ee02d265 (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (153 bytes))
+1703372185: Received DISCONNECT from mqttjs_ee02d265
+1703372185: Client mqttjs_ee02d265 disconnected.
+1703372200: New connection from 172.25.0.3:34140 on port 1883.
+1703372200: New client connected from 172.25.0.3:34140 as mqttjs_eb2ac20c (p2, c1, k60, u'arodrig').
+1703372200: No will message specified.
+1703372200: Sending CONNACK to mqttjs_eb2ac20c (0, 0)
+1703372201: Received SUBSCRIBE from mqttjs_eb2ac20c
+1703372201: 	# (QoS 0)
+1703372201: mqttjs_eb2ac20c 0 #
+1703372201: Sending SUBACK to mqttjs_eb2ac20c
+1703372205: Client auto-FAD7D3CC-28AA-DDD4-E398-080A9C20ED16 has exceeded timeout, disconnecting.
+1703372230: New connection from 172.25.0.1:49762 on port 1883.
+1703372230: New client connected from 172.25.0.1:49762 as auto-677D2C55-3921-D14A-5E32-5AC904F46FC9 (p2, c1, k15, u'avanzado').
+1703372230: No will message specified.
+1703372230: Sending CONNACK to auto-677D2C55-3921-D14A-5E32-5AC904F46FC9 (0, 0)
+1703372230: Received PUBLISH from auto-677D2C55-3921-D14A-5E32-5AC904F46FC9 (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (153 bytes))
+1703372230: Sending PUBLISH to mqttjs_eb2ac20c (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (153 bytes))
+1703372232: Received PUBLISH from auto-677D2C55-3921-D14A-5E32-5AC904F46FC9 (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (144 bytes))
+1703372232: Sending PUBLISH to mqttjs_eb2ac20c (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (144 bytes))
+1703372240: Received DISCONNECT from mqttjs_eb2ac20c
+1703372240: Client mqttjs_eb2ac20c disconnected.
+1703372259: Client auto-677D2C55-3921-D14A-5E32-5AC904F46FC9 has exceeded timeout, disconnecting.
+1703372271: New connection from 172.25.0.3:51304 on port 1883.
+1703372271: New client connected from 172.25.0.3:51304 as mqttjs_8a735506 (p2, c1, k60, u'arodrig').
+1703372271: No will message specified.
+1703372271: Sending CONNACK to mqttjs_8a735506 (0, 0)
+1703372271: Received SUBSCRIBE from mqttjs_8a735506
+1703372271: 	# (QoS 0)
+1703372271: mqttjs_8a735506 0 #
+1703372271: Sending SUBACK to mqttjs_8a735506
+1703372331: Received PINGREQ from mqttjs_8a735506
+1703372331: Sending PINGRESP to mqttjs_8a735506
+1703372391: Received PINGREQ from mqttjs_8a735506
+1703372391: Sending PINGRESP to mqttjs_8a735506
+1703372451: Received PINGREQ from mqttjs_8a735506
+1703372451: Sending PINGRESP to mqttjs_8a735506
+1703372511: Received PINGREQ from mqttjs_8a735506
+1703372511: Sending PINGRESP to mqttjs_8a735506
+1703372571: Received PINGREQ from mqttjs_8a735506
+1703372571: Sending PINGRESP to mqttjs_8a735506
+1703372631: Received PINGREQ from mqttjs_8a735506
+1703372631: Sending PINGRESP to mqttjs_8a735506
+1703372691: Received PINGREQ from mqttjs_8a735506
+1703372691: Sending PINGRESP to mqttjs_8a735506
+1703372751: Received PINGREQ from mqttjs_8a735506
+1703372751: Sending PINGRESP to mqttjs_8a735506
+1703372795: Received DISCONNECT from mqttjs_8a735506
+1703372795: Client mqttjs_8a735506 disconnected.
+1703372826: New connection from 172.25.0.3:48240 on port 1883.
+1703372826: New client connected from 172.25.0.3:48240 as mqttjs_bd23bcb0 (p2, c1, k60, u'arodrig').
+1703372826: No will message specified.
+1703372826: Sending CONNACK to mqttjs_bd23bcb0 (0, 0)
+1703372826: Received SUBSCRIBE from mqttjs_bd23bcb0
+1703372826: 	# (QoS 0)
+1703372826: mqttjs_bd23bcb0 0 #
+1703372826: Sending SUBACK to mqttjs_bd23bcb0
+1703372856: New connection from 172.25.0.1:56804 on port 1883.
+1703372856: New client connected from 172.25.0.1:56804 as auto-7DF97C46-F947-AB6C-FAE2-88673EB965F5 (p2, c1, k15, u'avanzado').
+1703372856: No will message specified.
+1703372856: Sending CONNACK to auto-7DF97C46-F947-AB6C-FAE2-88673EB965F5 (0, 0)
+1703372859: Received PUBLISH from auto-7DF97C46-F947-AB6C-FAE2-88673EB965F5 (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (153 bytes))
+1703372859: Sending PUBLISH to mqttjs_bd23bcb0 (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (153 bytes))
+1703372861: Received PUBLISH from auto-7DF97C46-F947-AB6C-FAE2-88673EB965F5 (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (146 bytes))
+1703372861: Sending PUBLISH to mqttjs_bd23bcb0 (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (146 bytes))
+1703372866: Client mqttjs_bd23bcb0 closed its connection.
+1703372882: New connection from 172.25.0.3:45304 on port 1883.
+1703372882: New client connected from 172.25.0.3:45304 as mqttjs_1c562b96 (p2, c1, k60, u'arodrig').
+1703372882: No will message specified.
+1703372882: Sending CONNACK to mqttjs_1c562b96 (0, 0)
+1703372882: Received SUBSCRIBE from mqttjs_1c562b96
+1703372882: 	# (QoS 0)
+1703372882: mqttjs_1c562b96 0 #
+1703372882: Sending SUBACK to mqttjs_1c562b96
+1703372883: Client auto-7DF97C46-F947-AB6C-FAE2-88673EB965F5 has exceeded timeout, disconnecting.
+1703372942: Received PINGREQ from mqttjs_1c562b96
+1703372942: Sending PINGRESP to mqttjs_1c562b96
+1703373002: Received PINGREQ from mqttjs_1c562b96
+1703373002: Sending PINGRESP to mqttjs_1c562b96
+1703373039: Client mqttjs_1c562b96 closed its connection.
+1703373069: New connection from 172.25.0.3:60890 on port 1883.
+1703373069: New client connected from 172.25.0.3:60890 as mqttjs_63e1277d (p2, c1, k60, u'arodrig').
+1703373069: No will message specified.
+1703373069: Sending CONNACK to mqttjs_63e1277d (0, 0)
+1703373070: Received SUBSCRIBE from mqttjs_63e1277d
+1703373070: 	# (QoS 0)
+1703373070: mqttjs_63e1277d 0 #
+1703373070: Sending SUBACK to mqttjs_63e1277d
+1703373087: New connection from 172.25.0.1:51546 on port 1883.
+1703373087: New client connected from 172.25.0.1:51546 as auto-45A21FE3-A7EC-8C48-1636-7052C740DD4D (p2, c1, k15, u'avanzado').
+1703373087: No will message specified.
+1703373087: Sending CONNACK to auto-45A21FE3-A7EC-8C48-1636-7052C740DD4D (0, 0)
+1703373091: Received PUBLISH from auto-45A21FE3-A7EC-8C48-1636-7052C740DD4D (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (153 bytes))
+1703373091: Sending PUBLISH to mqttjs_63e1277d (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (153 bytes))
+1703373093: Received PUBLISH from auto-45A21FE3-A7EC-8C48-1636-7052C740DD4D (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (153 bytes))
+1703373093: Sending PUBLISH to mqttjs_63e1277d (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (153 bytes))
+1703373096: Received DISCONNECT from mqttjs_63e1277d
+1703373096: Client mqttjs_63e1277d disconnected.
+1703373111: New connection from 172.25.0.3:47520 on port 1883.
+1703373111: New client connected from 172.25.0.3:47520 as mqttjs_70b4f664 (p2, c1, k60, u'arodrig').
+1703373111: No will message specified.
+1703373111: Sending CONNACK to mqttjs_70b4f664 (0, 0)
+1703373111: Received SUBSCRIBE from mqttjs_70b4f664
+1703373111: 	# (QoS 0)
+1703373111: mqttjs_70b4f664 0 #
+1703373111: Sending SUBACK to mqttjs_70b4f664
+1703373116: Received DISCONNECT from mqttjs_70b4f664
+1703373116: Client mqttjs_70b4f664 disconnected.
+1703373117: Client auto-45A21FE3-A7EC-8C48-1636-7052C740DD4D has exceeded timeout, disconnecting.
+1703373133: New connection from 172.25.0.3:32778 on port 1883.
+1703373133: New client connected from 172.25.0.3:32778 as mqttjs_94d3c4d5 (p2, c1, k60, u'arodrig').
+1703373133: No will message specified.
+1703373133: Sending CONNACK to mqttjs_94d3c4d5 (0, 0)
+1703373133: Received SUBSCRIBE from mqttjs_94d3c4d5
+1703373133: 	# (QoS 0)
+1703373133: mqttjs_94d3c4d5 0 #
+1703373133: Sending SUBACK to mqttjs_94d3c4d5
+1703373150: New connection from 172.25.0.1:55654 on port 1883.
+1703373150: New client connected from 172.25.0.1:55654 as auto-342560F2-42B3-BD93-8605-C6FE51DAEEF9 (p2, c1, k15, u'avanzado').
+1703373150: No will message specified.
+1703373150: Sending CONNACK to auto-342560F2-42B3-BD93-8605-C6FE51DAEEF9 (0, 0)
+1703373155: Received PUBLISH from auto-342560F2-42B3-BD93-8605-C6FE51DAEEF9 (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (153 bytes))
+1703373155: Sending PUBLISH to mqttjs_94d3c4d5 (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (153 bytes))
+1703373157: Received PUBLISH from auto-342560F2-42B3-BD93-8605-C6FE51DAEEF9 (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (153 bytes))
+1703373157: Sending PUBLISH to mqttjs_94d3c4d5 (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (153 bytes))
+1703373159: Received PUBLISH from auto-342560F2-42B3-BD93-8605-C6FE51DAEEF9 (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (153 bytes))
+1703373159: Sending PUBLISH to mqttjs_94d3c4d5 (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (153 bytes))
+1703373165: Received DISCONNECT from mqttjs_94d3c4d5
+1703373165: Client mqttjs_94d3c4d5 disconnected.
+1703373181: New connection from 172.25.0.3:49824 on port 1883.
+1703373181: New client connected from 172.25.0.3:49824 as mqttjs_67693370 (p2, c1, k60, u'arodrig').
+1703373181: No will message specified.
+1703373181: Sending CONNACK to mqttjs_67693370 (0, 0)
+1703373181: Received SUBSCRIBE from mqttjs_67693370
+1703373181: 	# (QoS 0)
+1703373181: mqttjs_67693370 0 #
+1703373181: Sending SUBACK to mqttjs_67693370
+1703373183: Client auto-342560F2-42B3-BD93-8605-C6FE51DAEEF9 has exceeded timeout, disconnecting.
+1703373196: Received DISCONNECT from mqttjs_67693370
+1703373196: Client mqttjs_67693370 disconnected.
+1703373211: New connection from 172.25.0.3:35192 on port 1883.
+1703373211: New client connected from 172.25.0.3:35192 as mqttjs_cdc851f2 (p2, c1, k60, u'arodrig').
+1703373211: No will message specified.
+1703373211: Sending CONNACK to mqttjs_cdc851f2 (0, 0)
+1703373211: Received SUBSCRIBE from mqttjs_cdc851f2
+1703373211: 	# (QoS 0)
+1703373211: mqttjs_cdc851f2 0 #
+1703373211: Sending SUBACK to mqttjs_cdc851f2
+1703373217: New connection from 172.25.0.1:56434 on port 1883.
+1703373217: New client connected from 172.25.0.1:56434 as auto-F85AD3EA-30E7-D89F-F4E7-0B00C5443BB3 (p2, c1, k15, u'avanzado').
+1703373217: No will message specified.
+1703373217: Sending CONNACK to auto-F85AD3EA-30E7-D89F-F4E7-0B00C5443BB3 (0, 0)
+1703373220: Received PUBLISH from auto-F85AD3EA-30E7-D89F-F4E7-0B00C5443BB3 (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (153 bytes))
+1703373220: Sending PUBLISH to mqttjs_cdc851f2 (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (153 bytes))
+1703373222: Received PUBLISH from auto-F85AD3EA-30E7-D89F-F4E7-0B00C5443BB3 (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (146 bytes))
+1703373222: Sending PUBLISH to mqttjs_cdc851f2 (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (146 bytes))
+1703373228: Client mqttjs_cdc851f2 closed its connection.
+1703373244: New connection from 172.25.0.3:42298 on port 1883.
+1703373244: New client connected from 172.25.0.3:42298 as mqttjs_0121822c (p2, c1, k60, u'arodrig').
+1703373244: No will message specified.
+1703373244: Sending CONNACK to mqttjs_0121822c (0, 0)
+1703373244: Received SUBSCRIBE from mqttjs_0121822c
+1703373244: 	# (QoS 0)
+1703373244: mqttjs_0121822c 0 #
+1703373244: Sending SUBACK to mqttjs_0121822c
+1703373249: Client auto-F85AD3EA-30E7-D89F-F4E7-0B00C5443BB3 has exceeded timeout, disconnecting.
+1703373272: Client mqttjs_0121822c closed its connection.
+1703373287: New connection from 172.25.0.3:40208 on port 1883.
+1703373287: New client connected from 172.25.0.3:40208 as mqttjs_2dcf81ad (p2, c1, k60, u'arodrig').
+1703373287: No will message specified.
+1703373287: Sending CONNACK to mqttjs_2dcf81ad (0, 0)
+1703373287: Received SUBSCRIBE from mqttjs_2dcf81ad
+1703373287: 	# (QoS 0)
+1703373287: mqttjs_2dcf81ad 0 #
+1703373287: Sending SUBACK to mqttjs_2dcf81ad
+1703373304: Client mqttjs_2dcf81ad closed its connection.
+1703373319: New connection from 172.25.0.3:60700 on port 1883.
+1703373319: New client connected from 172.25.0.3:60700 as mqttjs_051e37cb (p2, c1, k60, u'arodrig').
+1703373319: No will message specified.
+1703373319: Sending CONNACK to mqttjs_051e37cb (0, 0)
+1703373319: Received SUBSCRIBE from mqttjs_051e37cb
+1703373319: 	# (QoS 0)
+1703373319: mqttjs_051e37cb 0 #
+1703373319: Sending SUBACK to mqttjs_051e37cb
+1703373326: New connection from 172.25.0.1:52650 on port 1883.
+1703373326: New client connected from 172.25.0.1:52650 as auto-7021A3DE-0EAF-DA08-C637-31A53EA756AB (p2, c1, k15, u'avanzado').
+1703373326: No will message specified.
+1703373326: Sending CONNACK to auto-7021A3DE-0EAF-DA08-C637-31A53EA756AB (0, 0)
+1703373330: Received PUBLISH from auto-7021A3DE-0EAF-DA08-C637-31A53EA756AB (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (153 bytes))
+1703373330: Sending PUBLISH to mqttjs_051e37cb (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (153 bytes))
+1703373332: Received PUBLISH from auto-7021A3DE-0EAF-DA08-C637-31A53EA756AB (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (153 bytes))
+1703373332: Sending PUBLISH to mqttjs_051e37cb (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (153 bytes))
+1703373336: Client mqttjs_051e37cb closed its connection.
+1703373351: New connection from 172.25.0.3:53930 on port 1883.
+1703373351: New client connected from 172.25.0.3:53930 as mqttjs_96b9aadd (p2, c1, k60, u'arodrig').
+1703373351: No will message specified.
+1703373351: Sending CONNACK to mqttjs_96b9aadd (0, 0)
+1703373351: Received SUBSCRIBE from mqttjs_96b9aadd
+1703373351: 	# (QoS 0)
+1703373351: mqttjs_96b9aadd 0 #
+1703373351: Sending SUBACK to mqttjs_96b9aadd
+1703373357: Client auto-7021A3DE-0EAF-DA08-C637-31A53EA756AB has exceeded timeout, disconnecting.
+1703373388: Client mqttjs_96b9aadd closed its connection.
+1703373403: New connection from 172.25.0.3:54662 on port 1883.
+1703373403: New client connected from 172.25.0.3:54662 as mqttjs_39803317 (p2, c1, k60, u'arodrig').
+1703373403: No will message specified.
+1703373403: Sending CONNACK to mqttjs_39803317 (0, 0)
+1703373403: Received SUBSCRIBE from mqttjs_39803317
+1703373403: 	# (QoS 0)
+1703373403: mqttjs_39803317 0 #
+1703373403: Sending SUBACK to mqttjs_39803317
+1703373411: New connection from 172.25.0.1:58802 on port 1883.
+1703373411: New client connected from 172.25.0.1:58802 as auto-EBB0F730-3F38-B403-7A20-FDD308940DA4 (p2, c1, k15, u'avanzado').
+1703373411: No will message specified.
+1703373411: Sending CONNACK to auto-EBB0F730-3F38-B403-7A20-FDD308940DA4 (0, 0)
+1703373414: Received PUBLISH from auto-EBB0F730-3F38-B403-7A20-FDD308940DA4 (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (153 bytes))
+1703373414: Sending PUBLISH to mqttjs_39803317 (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (153 bytes))
+1703373416: Received PUBLISH from auto-EBB0F730-3F38-B403-7A20-FDD308940DA4 (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (153 bytes))
+1703373416: Sending PUBLISH to mqttjs_39803317 (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (153 bytes))
+1703373422: Client mqttjs_39803317 closed its connection.
+1703373437: New connection from 172.25.0.3:59024 on port 1883.
+1703373437: New client connected from 172.25.0.3:59024 as mqttjs_2b52d12c (p2, c1, k60, u'arodrig').
+1703373437: No will message specified.
+1703373437: Sending CONNACK to mqttjs_2b52d12c (0, 0)
+1703373437: Received SUBSCRIBE from mqttjs_2b52d12c
+1703373437: 	# (QoS 0)
+1703373437: mqttjs_2b52d12c 0 #
+1703373437: Sending SUBACK to mqttjs_2b52d12c
+1703373441: Client auto-EBB0F730-3F38-B403-7A20-FDD308940DA4 has exceeded timeout, disconnecting.
+1703373457: Client mqttjs_2b52d12c closed its connection.
+1703373473: New connection from 172.25.0.3:44004 on port 1883.
+1703373473: New client connected from 172.25.0.3:44004 as mqttjs_0becfc73 (p2, c1, k60, u'arodrig').
+1703373473: No will message specified.
+1703373473: Sending CONNACK to mqttjs_0becfc73 (0, 0)
+1703373473: Received SUBSCRIBE from mqttjs_0becfc73
+1703373473: 	# (QoS 0)
+1703373473: mqttjs_0becfc73 0 #
+1703373473: Sending SUBACK to mqttjs_0becfc73
+1703373533: Received PINGREQ from mqttjs_0becfc73
+1703373533: Sending PINGRESP to mqttjs_0becfc73
+1703373593: Received PINGREQ from mqttjs_0becfc73
+1703373593: Sending PINGRESP to mqttjs_0becfc73
+1703373653: Received PINGREQ from mqttjs_0becfc73
+1703373653: Sending PINGRESP to mqttjs_0becfc73
+1703373707: Client mqttjs_0becfc73 closed its connection.
+1703373722: New connection from 172.25.0.3:35032 on port 1883.
+1703373722: New client connected from 172.25.0.3:35032 as mqttjs_6cd46d93 (p2, c1, k60, u'arodrig').
+1703373722: No will message specified.
+1703373722: Sending CONNACK to mqttjs_6cd46d93 (0, 0)
+1703373722: Received SUBSCRIBE from mqttjs_6cd46d93
+1703373722: 	# (QoS 0)
+1703373722: mqttjs_6cd46d93 0 #
+1703373722: Sending SUBACK to mqttjs_6cd46d93
+1703373741: Client mqttjs_6cd46d93 closed its connection.
+1703373756: New connection from 172.25.0.3:47356 on port 1883.
+1703373756: New client connected from 172.25.0.3:47356 as mqttjs_ffa78b79 (p2, c1, k60, u'arodrig').
+1703373756: No will message specified.
+1703373756: Sending CONNACK to mqttjs_ffa78b79 (0, 0)
+1703373756: Received SUBSCRIBE from mqttjs_ffa78b79
+1703373756: 	# (QoS 0)
+1703373756: mqttjs_ffa78b79 0 #
+1703373756: Sending SUBACK to mqttjs_ffa78b79
+1703373770: Client mqttjs_ffa78b79 closed its connection.
+1703373786: New connection from 172.25.0.3:57534 on port 1883.
+1703373786: New client connected from 172.25.0.3:57534 as mqttjs_f5b09fa1 (p2, c1, k60, u'arodrig').
+1703373786: No will message specified.
+1703373786: Sending CONNACK to mqttjs_f5b09fa1 (0, 0)
+1703373786: Received SUBSCRIBE from mqttjs_f5b09fa1
+1703373786: 	# (QoS 0)
+1703373786: mqttjs_f5b09fa1 0 #
+1703373786: Sending SUBACK to mqttjs_f5b09fa1
+1703373791: New connection from 172.25.0.1:60790 on port 1883.
+1703373791: New client connected from 172.25.0.1:60790 as auto-3E153DE8-FE49-4039-4BAF-21C814ECEB61 (p2, c1, k15, u'avanzado').
+1703373791: No will message specified.
+1703373791: Sending CONNACK to auto-3E153DE8-FE49-4039-4BAF-21C814ECEB61 (0, 0)
+1703373794: Received PUBLISH from auto-3E153DE8-FE49-4039-4BAF-21C814ECEB61 (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (146 bytes))
+1703373794: Sending PUBLISH to mqttjs_f5b09fa1 (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (146 bytes))
+1703373796: Received PUBLISH from auto-3E153DE8-FE49-4039-4BAF-21C814ECEB61 (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (146 bytes))
+1703373796: Sending PUBLISH to mqttjs_f5b09fa1 (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (146 bytes))
+1703373799: Client mqttjs_f5b09fa1 closed its connection.
+1703373819: Client auto-3E153DE8-FE49-4039-4BAF-21C814ECEB61 has exceeded timeout, disconnecting.
+1703373823: New connection from 172.25.0.3:56746 on port 1883.
+1703373823: New client connected from 172.25.0.3:56746 as mqttjs_7ea9905e (p2, c1, k60, u'arodrig').
+1703373823: No will message specified.
+1703373823: Sending CONNACK to mqttjs_7ea9905e (0, 0)
+1703373823: Received SUBSCRIBE from mqttjs_7ea9905e
+1703373823: 	# (QoS 0)
+1703373823: mqttjs_7ea9905e 0 #
+1703373823: Sending SUBACK to mqttjs_7ea9905e
+1703373833: Client mqttjs_7ea9905e closed its connection.
+1703373834: mosquitto version 2.0.15 terminating
+1703373834: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1703373834: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1703373834: Error: No such file or directory.
+1703373837: mosquitto version 2.0.15 starting
+1703373837: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1703373837: Loading plugin: /mosquitto/go-auth.so
+1703373837:  ├── Username/password checking enabled.
+1703373837:  ├── TLS-PSK checking enabled.
+1703373837:  └── Extended authentication not enabled.
+1703373837: Opening ipv4 listen socket on port 1883.
+1703373837: Opening ipv6 listen socket on port 1883.
+1703373837: Opening ipv4 listen socket on port 9001.
+1703373837: Opening ipv6 listen socket on port 9001.
+1703373837: mosquitto version 2.0.15 running
+1703373861: New connection from 172.26.0.3:53548 on port 1883.
+1703373861: New client connected from 172.26.0.3:53548 as mqttjs_e5258fa3 (p2, c1, k60, u'arodrig').
+1703373861: No will message specified.
+1703373861: Sending CONNACK to mqttjs_e5258fa3 (0, 0)
+1703373862: Received SUBSCRIBE from mqttjs_e5258fa3
+1703373862: 	# (QoS 0)
+1703373862: mqttjs_e5258fa3 0 #
+1703373862: Sending SUBACK to mqttjs_e5258fa3
+1703373877: New connection from 172.26.0.1:53186 on port 1883.
+1703373877: New client connected from 172.26.0.1:53186 as auto-F6B440A1-9D1D-C55E-4D46-A072AD491388 (p2, c1, k15, u'avanzado').
+1703373877: No will message specified.
+1703373877: Sending CONNACK to auto-F6B440A1-9D1D-C55E-4D46-A072AD491388 (0, 0)
+1703373883: Received PUBLISH from auto-F6B440A1-9D1D-C55E-4D46-A072AD491388 (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (153 bytes))
+1703373883: Sending PUBLISH to mqttjs_e5258fa3 (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (153 bytes))
+1703373885: Received PUBLISH from auto-F6B440A1-9D1D-C55E-4D46-A072AD491388 (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (139 bytes))
+1703373885: Sending PUBLISH to mqttjs_e5258fa3 (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (139 bytes))
+1703373890: Client mqttjs_e5258fa3 closed its connection.
+1703373897: New connection from 172.26.0.3:50172 on port 1883.
+1703373897: New client connected from 172.26.0.3:50172 as mqttjs_8f349cd2 (p2, c1, k60, u'arodrig').
+1703373897: No will message specified.
+1703373897: Sending CONNACK to mqttjs_8f349cd2 (0, 0)
+1703373897: Received SUBSCRIBE from mqttjs_8f349cd2
+1703373897: 	# (QoS 0)
+1703373897: mqttjs_8f349cd2 0 #
+1703373897: Sending SUBACK to mqttjs_8f349cd2
+1703373909: Client auto-F6B440A1-9D1D-C55E-4D46-A072AD491388 has exceeded timeout, disconnecting.
+1703373926: Client mqttjs_8f349cd2 closed its connection.
+1703373932: New connection from 172.26.0.3:51926 on port 1883.
+1703373932: New client connected from 172.26.0.3:51926 as mqttjs_8b1493f3 (p2, c1, k60, u'arodrig').
+1703373932: No will message specified.
+1703373932: Sending CONNACK to mqttjs_8b1493f3 (0, 0)
+1703373932: Received SUBSCRIBE from mqttjs_8b1493f3
+1703373932: 	# (QoS 0)
+1703373932: mqttjs_8b1493f3 0 #
+1703373932: Sending SUBACK to mqttjs_8b1493f3
+1703373968: Client mqttjs_8b1493f3 closed its connection.
+1703373976: New connection from 172.26.0.3:46402 on port 1883.
+1703373976: New client connected from 172.26.0.3:46402 as mqttjs_67cfb337 (p2, c1, k60, u'arodrig').
+1703373976: No will message specified.
+1703373976: Sending CONNACK to mqttjs_67cfb337 (0, 0)
+1703373976: Received SUBSCRIBE from mqttjs_67cfb337
+1703373976: 	# (QoS 0)
+1703373976: mqttjs_67cfb337 0 #
+1703373976: Sending SUBACK to mqttjs_67cfb337
+1703374001: Client mqttjs_67cfb337 closed its connection.
+1703374001: mosquitto version 2.0.15 terminating
+1703374001: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1703374001: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1703374001: Error: No such file or directory.
+1703374004: mosquitto version 2.0.15 starting
+1703374004: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1703374004: Loading plugin: /mosquitto/go-auth.so
+1703374004:  ├── Username/password checking enabled.
+1703374004:  ├── TLS-PSK checking enabled.
+1703374004:  └── Extended authentication not enabled.
+1703374004: Opening ipv4 listen socket on port 1883.
+1703374004: Opening ipv6 listen socket on port 1883.
+1703374004: Opening ipv4 listen socket on port 9001.
+1703374004: Opening ipv6 listen socket on port 9001.
+1703374004: mosquitto version 2.0.15 running
+1703374026: New connection from 172.27.0.3:42846 on port 1883.
+1703374026: New client connected from 172.27.0.3:42846 as mqttjs_d92375c9 (p2, c1, k60, u'arodrig').
+1703374026: No will message specified.
+1703374026: Sending CONNACK to mqttjs_d92375c9 (0, 0)
+1703374026: Received SUBSCRIBE from mqttjs_d92375c9
+1703374026: 	# (QoS 0)
+1703374026: mqttjs_d92375c9 0 #
+1703374026: Sending SUBACK to mqttjs_d92375c9
+1703374049: New connection from 172.27.0.1:43288 on port 1883.
+1703374049: New client connected from 172.27.0.1:43288 as auto-9CD3A2F6-E85A-5037-7989-1F85BC3E79D1 (p2, c1, k15, u'avanzado').
+1703374049: No will message specified.
+1703374049: Sending CONNACK to auto-9CD3A2F6-E85A-5037-7989-1F85BC3E79D1 (0, 0)
+1703374052: Received PUBLISH from auto-9CD3A2F6-E85A-5037-7989-1F85BC3E79D1 (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (146 bytes))
+1703374052: Sending PUBLISH to mqttjs_d92375c9 (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (146 bytes))
+1703374054: Received PUBLISH from auto-9CD3A2F6-E85A-5037-7989-1F85BC3E79D1 (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (139 bytes))
+1703374054: Sending PUBLISH to mqttjs_d92375c9 (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (139 bytes))
+1703374061: Client mqttjs_d92375c9 closed its connection.
+1703374068: New connection from 172.27.0.3:42048 on port 1883.
+1703374068: New connection from 172.27.0.3:42058 on port 1883.
+1703374068: New client connected from 172.27.0.3:42058 as mqttjs_94b18be7 (p2, c1, k60, u'arodrig').
+1703374068: No will message specified.
+1703374068: Sending CONNACK to mqttjs_94b18be7 (0, 0)
+1703374068: New client connected from 172.27.0.3:42048 as mqttjs_4a6cce1c (p2, c1, k60, u'arodrig').
+1703374068: No will message specified.
+1703374068: Sending CONNACK to mqttjs_4a6cce1c (0, 0)
+1703374068: Received SUBSCRIBE from mqttjs_94b18be7
+1703374068: 	# (QoS 0)
+1703374068: mqttjs_94b18be7 0 #
+1703374068: Sending SUBACK to mqttjs_94b18be7
+1703374068: Received SUBSCRIBE from mqttjs_4a6cce1c
+1703374068: 	# (QoS 0)
+1703374068: mqttjs_4a6cce1c 0 #
+1703374068: Sending SUBACK to mqttjs_4a6cce1c
+1703374068: Received DISCONNECT from mqttjs_4a6cce1c
+1703374068: Client mqttjs_4a6cce1c disconnected.
+1703374082: Client auto-9CD3A2F6-E85A-5037-7989-1F85BC3E79D1 has exceeded timeout, disconnecting.
+1703374128: Received PINGREQ from mqttjs_94b18be7
+1703374128: Sending PINGRESP to mqttjs_94b18be7
+1703374188: Received PINGREQ from mqttjs_94b18be7
+1703374188: Sending PINGRESP to mqttjs_94b18be7
+1703374248: Received PINGREQ from mqttjs_94b18be7
+1703374248: Sending PINGRESP to mqttjs_94b18be7
+1703374308: Received PINGREQ from mqttjs_94b18be7
+1703374308: Sending PINGRESP to mqttjs_94b18be7
+1703374322: Client mqttjs_94b18be7 closed its connection.
+1703374333: New connection from 172.27.0.3:49362 on port 1883.
+1703374333: New client connected from 172.27.0.3:49362 as mqttjs_ce0de3a0 (p2, c1, k60, u'arodrig').
+1703374333: No will message specified.
+1703374333: Sending CONNACK to mqttjs_ce0de3a0 (0, 0)
+1703374333: Received SUBSCRIBE from mqttjs_ce0de3a0
+1703374333: 	# (QoS 0)
+1703374333: mqttjs_ce0de3a0 0 #
+1703374333: Sending SUBACK to mqttjs_ce0de3a0
+1703374393: Received PINGREQ from mqttjs_ce0de3a0
+1703374393: Sending PINGRESP to mqttjs_ce0de3a0
+1703374453: Received PINGREQ from mqttjs_ce0de3a0
+1703374453: Sending PINGRESP to mqttjs_ce0de3a0
+1703374723: mosquitto version 2.0.15 starting
+1703374723: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1703374723: Loading plugin: /mosquitto/go-auth.so
+1703374723:  ├── Username/password checking enabled.
+1703374723:  ├── TLS-PSK checking enabled.
+1703374723:  └── Extended authentication not enabled.
+1703374723: Opening ipv4 listen socket on port 1883.
+1703374723: Opening ipv6 listen socket on port 1883.
+1703374723: Opening ipv4 listen socket on port 9001.
+1703374723: Opening ipv6 listen socket on port 9001.
+1703374723: mosquitto version 2.0.15 running
+1703374742: mosquitto version 2.0.15 terminating
+1703374742: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1703374742: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1703374742: Error: No such file or directory.
+1703374750: mosquitto version 2.0.15 starting
+1703374750: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1703374750: Loading plugin: /mosquitto/go-auth.so
+1703374750:  ├── Username/password checking enabled.
+1703374750:  ├── TLS-PSK checking enabled.
+1703374750:  └── Extended authentication not enabled.
+1703374750: Opening ipv4 listen socket on port 1883.
+1703374750: Opening ipv6 listen socket on port 1883.
+1703374750: Opening ipv4 listen socket on port 9001.
+1703374750: Opening ipv6 listen socket on port 9001.
+1703374750: mosquitto version 2.0.15 running
+1703374771: New connection from 172.18.0.3:41364 on port 1883.
+1703374771: New client connected from 172.18.0.3:41364 as mqttjs_7ad229fb (p2, c1, k60, u'arodrig').
+1703374771: No will message specified.
+1703374771: Sending CONNACK to mqttjs_7ad229fb (0, 0)
+1703374772: Received SUBSCRIBE from mqttjs_7ad229fb
+1703374772: 	# (QoS 0)
+1703374772: mqttjs_7ad229fb 0 #
+1703374772: Sending SUBACK to mqttjs_7ad229fb
+1703374807: New connection from 172.18.0.1:55470 on port 1883.
+1703374807: New client connected from 172.18.0.1:55470 as auto-7FA13200-8C61-FD21-EA3F-A2ED3848D690 (p2, c1, k15, u'avanzado').
+1703374807: No will message specified.
+1703374807: Sending CONNACK to auto-7FA13200-8C61-FD21-EA3F-A2ED3848D690 (0, 0)
+1703374809: Received PUBLISH from auto-7FA13200-8C61-FD21-EA3F-A2ED3848D690 (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (153 bytes))
+1703374809: Sending PUBLISH to mqttjs_7ad229fb (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (153 bytes))
+1703374811: Received PUBLISH from auto-7FA13200-8C61-FD21-EA3F-A2ED3848D690 (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (153 bytes))
+1703374811: Sending PUBLISH to mqttjs_7ad229fb (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (153 bytes))
+1703374818: Client mqttjs_7ad229fb closed its connection.
+1703374825: New connection from 172.18.0.3:60700 on port 1883.
+1703374825: New connection from 172.18.0.3:60716 on port 1883.
+1703374825: New client connected from 172.18.0.3:60716 as mqttjs_0f716fd0 (p2, c1, k60, u'arodrig').
+1703374825: No will message specified.
+1703374825: Sending CONNACK to mqttjs_0f716fd0 (0, 0)
+1703374825: New client connected from 172.18.0.3:60700 as mqttjs_ad1633b3 (p2, c1, k60, u'arodrig').
+1703374825: No will message specified.
+1703374825: Sending CONNACK to mqttjs_ad1633b3 (0, 0)
+1703374825: Received SUBSCRIBE from mqttjs_0f716fd0
+1703374825: 	# (QoS 0)
+1703374825: mqttjs_0f716fd0 0 #
+1703374825: Sending SUBACK to mqttjs_0f716fd0
+1703374826: Received SUBSCRIBE from mqttjs_ad1633b3
+1703374826: 	# (QoS 0)
+1703374826: mqttjs_ad1633b3 0 #
+1703374826: Sending SUBACK to mqttjs_ad1633b3
+1703374826: Received DISCONNECT from mqttjs_ad1633b3
+1703374826: Client mqttjs_ad1633b3 disconnected.
+1703374834: Client auto-7FA13200-8C61-FD21-EA3F-A2ED3848D690 has exceeded timeout, disconnecting.
+1703374857: Client mqttjs_0f716fd0 closed its connection.
+1703374864: New connection from 172.18.0.3:50880 on port 1883.
+1703374864: New client connected from 172.18.0.3:50880 as mqttjs_ed9b4e35 (p2, c1, k60, u'arodrig').
+1703374864: No will message specified.
+1703374864: Sending CONNACK to mqttjs_ed9b4e35 (0, 0)
+1703374865: Received SUBSCRIBE from mqttjs_ed9b4e35
+1703374865: 	# (QoS 0)
+1703374865: mqttjs_ed9b4e35 0 #
+1703374865: Sending SUBACK to mqttjs_ed9b4e35
+1703374874: Client mqttjs_ed9b4e35 closed its connection.
+1703374890: New connection from 172.18.0.3:51122 on port 1883.
+1703374890: New client connected from 172.18.0.3:51122 as mqttjs_1867e858 (p2, c1, k60, u'arodrig').
+1703374890: No will message specified.
+1703374890: Sending CONNACK to mqttjs_1867e858 (0, 0)
+1703374890: Received SUBSCRIBE from mqttjs_1867e858
+1703374890: 	# (QoS 0)
+1703374890: mqttjs_1867e858 0 #
+1703374890: Sending SUBACK to mqttjs_1867e858
+1703374892: Client mqttjs_1867e858 closed its connection.
+1703374921: New connection from 172.18.0.3:48648 on port 1883.
+1703374921: New client connected from 172.18.0.3:48648 as mqttjs_641ed5ec (p2, c1, k60, u'arodrig').
+1703374921: No will message specified.
+1703374921: Sending CONNACK to mqttjs_641ed5ec (0, 0)
+1703374921: Received SUBSCRIBE from mqttjs_641ed5ec
+1703374921: 	# (QoS 0)
+1703374921: mqttjs_641ed5ec 0 #
+1703374921: Sending SUBACK to mqttjs_641ed5ec
+1703374932: Client mqttjs_641ed5ec closed its connection.
+1703374948: New connection from 172.18.0.3:35990 on port 1883.
+1703374948: New client connected from 172.18.0.3:35990 as mqttjs_41e098dd (p2, c1, k60, u'arodrig').
+1703374948: No will message specified.
+1703374948: Sending CONNACK to mqttjs_41e098dd (0, 0)
+1703374948: Received SUBSCRIBE from mqttjs_41e098dd
+1703374948: 	# (QoS 0)
+1703374948: mqttjs_41e098dd 0 #
+1703374948: Sending SUBACK to mqttjs_41e098dd
+1703375008: Received PINGREQ from mqttjs_41e098dd
+1703375008: Sending PINGRESP to mqttjs_41e098dd
+1703375063: Client mqttjs_41e098dd closed its connection.
+1703375073: New connection from 172.18.0.3:57306 on port 1883.
+1703375073: New client connected from 172.18.0.3:57306 as mqttjs_ff9b8e88 (p2, c1, k60, u'arodrig').
+1703375073: No will message specified.
+1703375073: Sending CONNACK to mqttjs_ff9b8e88 (0, 0)
+1703375073: Received SUBSCRIBE from mqttjs_ff9b8e88
+1703375073: 	# (QoS 0)
+1703375073: mqttjs_ff9b8e88 0 #
+1703375073: Sending SUBACK to mqttjs_ff9b8e88
+1703375116: Client mqttjs_ff9b8e88 closed its connection.
+1703375117: mosquitto version 2.0.15 terminating
+1703375117: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1703375117: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1703375117: Error: No such file or directory.
+1703375348: mosquitto version 2.0.15 starting
+1703375348: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1703375348: Loading plugin: /mosquitto/go-auth.so
+1703375348:  ├── Username/password checking enabled.
+1703375348:  ├── TLS-PSK checking enabled.
+1703375348:  └── Extended authentication not enabled.
+1703375348: Opening ipv4 listen socket on port 1883.
+1703375348: Opening ipv6 listen socket on port 1883.
+1703375348: Opening ipv4 listen socket on port 9001.
+1703375348: Opening ipv6 listen socket on port 9001.
+1703375348: mosquitto version 2.0.15 running
+1703375367: New connection from 172.19.0.3:49014 on port 1883.
+1703375367: New client connected from 172.19.0.3:49014 as mqttjs_a9a736dc (p2, c1, k60, u'arodrig').
+1703375367: No will message specified.
+1703375367: Sending CONNACK to mqttjs_a9a736dc (0, 0)
+1703375368: Received SUBSCRIBE from mqttjs_a9a736dc
+1703375368: 	# (QoS 0)
+1703375368: mqttjs_a9a736dc 0 #
+1703375368: Sending SUBACK to mqttjs_a9a736dc
+1703375428: Received PINGREQ from mqttjs_a9a736dc
+1703375428: Sending PINGRESP to mqttjs_a9a736dc
+1703375446: New connection from 172.19.0.1:35366 on port 1883.
+1703375446: New client connected from 172.19.0.1:35366 as auto-054D7D9B-C75A-7DDD-8C02-EC9FB8B7C45E (p2, c1, k15, u'avanzado').
+1703375446: No will message specified.
+1703375446: Sending CONNACK to auto-054D7D9B-C75A-7DDD-8C02-EC9FB8B7C45E (0, 0)
+1703375447: Received PUBLISH from auto-054D7D9B-C75A-7DDD-8C02-EC9FB8B7C45E (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (153 bytes))
+1703375447: Sending PUBLISH to mqttjs_a9a736dc (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (153 bytes))
+1703375449: Received PUBLISH from auto-054D7D9B-C75A-7DDD-8C02-EC9FB8B7C45E (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (144 bytes))
+1703375449: Sending PUBLISH to mqttjs_a9a736dc (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (144 bytes))
+1703375452: Received DISCONNECT from mqttjs_a9a736dc
+1703375452: Client mqttjs_a9a736dc disconnected.
+1703375468: New connection from 172.19.0.3:53992 on port 1883.
+1703375468: New client connected from 172.19.0.3:53992 as mqttjs_a2776501 (p2, c1, k60, u'arodrig').
+1703375468: No will message specified.
+1703375468: Sending CONNACK to mqttjs_a2776501 (0, 0)
+1703375468: Received SUBSCRIBE from mqttjs_a2776501
+1703375468: 	# (QoS 0)
+1703375468: mqttjs_a2776501 0 #
+1703375468: Sending SUBACK to mqttjs_a2776501
+1703375474: Client auto-054D7D9B-C75A-7DDD-8C02-EC9FB8B7C45E has exceeded timeout, disconnecting.
+1703375528: Received PINGREQ from mqttjs_a2776501
+1703375528: Sending PINGRESP to mqttjs_a2776501
+1703375588: Received PINGREQ from mqttjs_a2776501
+1703375588: Sending PINGRESP to mqttjs_a2776501
+1703375648: Received PINGREQ from mqttjs_a2776501
+1703375648: Sending PINGRESP to mqttjs_a2776501
+1703375708: Received PINGREQ from mqttjs_a2776501
+1703375708: Sending PINGRESP to mqttjs_a2776501
+1703375712: Received DISCONNECT from mqttjs_a2776501
+1703375712: Client mqttjs_a2776501 disconnected.
+1703375727: New connection from 172.19.0.3:56258 on port 1883.
+1703375727: New client connected from 172.19.0.3:56258 as mqttjs_24a63c83 (p2, c1, k60, u'arodrig').
+1703375727: No will message specified.
+1703375727: Sending CONNACK to mqttjs_24a63c83 (0, 0)
+1703375727: Received SUBSCRIBE from mqttjs_24a63c83
+1703375727: 	# (QoS 0)
+1703375727: mqttjs_24a63c83 0 #
+1703375727: Sending SUBACK to mqttjs_24a63c83
+1703375739: New connection from 172.19.0.1:50714 on port 1883.
+1703375739: New client connected from 172.19.0.1:50714 as auto-8CDE88EF-E9C5-317A-D318-1B8303AB40E4 (p2, c1, k15, u'avanzado').
+1703375739: No will message specified.
+1703375739: Sending CONNACK to auto-8CDE88EF-E9C5-317A-D318-1B8303AB40E4 (0, 0)
+1703375741: Received PUBLISH from auto-8CDE88EF-E9C5-317A-D318-1B8303AB40E4 (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (144 bytes))
+1703375741: Sending PUBLISH to mqttjs_24a63c83 (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (144 bytes))
+1703375743: Received PUBLISH from auto-8CDE88EF-E9C5-317A-D318-1B8303AB40E4 (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (144 bytes))
+1703375743: Sending PUBLISH to mqttjs_24a63c83 (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (144 bytes))
+1703375745: Received PUBLISH from auto-8CDE88EF-E9C5-317A-D318-1B8303AB40E4 (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (153 bytes))
+1703375745: Sending PUBLISH to mqttjs_24a63c83 (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (153 bytes))
+1703375747: Received PUBLISH from auto-8CDE88EF-E9C5-317A-D318-1B8303AB40E4 (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (153 bytes))
+1703375747: Sending PUBLISH to mqttjs_24a63c83 (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (153 bytes))
+1703375749: Received PUBLISH from auto-8CDE88EF-E9C5-317A-D318-1B8303AB40E4 (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (153 bytes))
+1703375749: Sending PUBLISH to mqttjs_24a63c83 (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (153 bytes))
+1703375751: Received PUBLISH from auto-8CDE88EF-E9C5-317A-D318-1B8303AB40E4 (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (153 bytes))
+1703375751: Sending PUBLISH to mqttjs_24a63c83 (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (153 bytes))
+1703375756: Client mqttjs_24a63c83 closed its connection.
+1703375772: New connection from 172.19.0.3:39228 on port 1883.
+1703375772: New client connected from 172.19.0.3:39228 as mqttjs_ca8d53a1 (p2, c1, k60, u'arodrig').
+1703375772: No will message specified.
+1703375772: Sending CONNACK to mqttjs_ca8d53a1 (0, 0)
+1703375772: Received SUBSCRIBE from mqttjs_ca8d53a1
+1703375772: 	# (QoS 0)
+1703375772: mqttjs_ca8d53a1 0 #
+1703375772: Sending SUBACK to mqttjs_ca8d53a1
+1703375774: Client auto-8CDE88EF-E9C5-317A-D318-1B8303AB40E4 has exceeded timeout, disconnecting.
+1703375775: Client mqttjs_ca8d53a1 closed its connection.
+1703375791: New connection from 172.19.0.3:42150 on port 1883.
+1703375791: New client connected from 172.19.0.3:42150 as mqttjs_7b3f0e4f (p2, c1, k60, u'arodrig').
+1703375791: No will message specified.
+1703375791: Sending CONNACK to mqttjs_7b3f0e4f (0, 0)
+1703375791: Received SUBSCRIBE from mqttjs_7b3f0e4f
+1703375791: 	# (QoS 0)
+1703375791: mqttjs_7b3f0e4f 0 #
+1703375791: Sending SUBACK to mqttjs_7b3f0e4f
+1703375814: New connection from 172.19.0.1:50452 on port 1883.
+1703375814: New client connected from 172.19.0.1:50452 as auto-B6E0A710-0CE4-699E-918A-9127BA38052A (p2, c1, k15, u'avanzado').
+1703375814: No will message specified.
+1703375814: Sending CONNACK to auto-B6E0A710-0CE4-699E-918A-9127BA38052A (0, 0)
+1703375816: Received PUBLISH from auto-B6E0A710-0CE4-699E-918A-9127BA38052A (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (153 bytes))
+1703375816: Sending PUBLISH to mqttjs_7b3f0e4f (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (153 bytes))
+1703375818: Received PUBLISH from auto-B6E0A710-0CE4-699E-918A-9127BA38052A (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (153 bytes))
+1703375818: Sending PUBLISH to mqttjs_7b3f0e4f (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (153 bytes))
+1703375823: Client mqttjs_7b3f0e4f closed its connection.
+1703375838: New connection from 172.19.0.3:56458 on port 1883.
+1703375838: New client connected from 172.19.0.3:56458 as mqttjs_cf19e33e (p2, c1, k60, u'arodrig').
+1703375838: No will message specified.
+1703375838: Sending CONNACK to mqttjs_cf19e33e (0, 0)
+1703375838: Received SUBSCRIBE from mqttjs_cf19e33e
+1703375838: 	# (QoS 0)
+1703375838: mqttjs_cf19e33e 0 #
+1703375838: Sending SUBACK to mqttjs_cf19e33e
+1703375846: Client auto-B6E0A710-0CE4-699E-918A-9127BA38052A has exceeded timeout, disconnecting.
+1703375898: Received PINGREQ from mqttjs_cf19e33e
+1703375898: Sending PINGRESP to mqttjs_cf19e33e
+1703375957: Client mqttjs_cf19e33e closed its connection.
+1703375973: New connection from 172.19.0.3:54872 on port 1883.
+1703375973: New client connected from 172.19.0.3:54872 as mqttjs_def83cce (p2, c1, k60, u'arodrig').
+1703375973: No will message specified.
+1703375973: Sending CONNACK to mqttjs_def83cce (0, 0)
+1703375973: Received SUBSCRIBE from mqttjs_def83cce
+1703375973: 	# (QoS 0)
+1703375973: mqttjs_def83cce 0 #
+1703375973: Sending SUBACK to mqttjs_def83cce
+1703376014: Client mqttjs_def83cce closed its connection.
+1703376030: New connection from 172.19.0.3:53042 on port 1883.
+1703376030: New client connected from 172.19.0.3:53042 as mqttjs_93adb2be (p2, c1, k60, u'arodrig').
+1703376030: No will message specified.
+1703376030: Sending CONNACK to mqttjs_93adb2be (0, 0)
+1703376030: Received SUBSCRIBE from mqttjs_93adb2be
+1703376030: 	# (QoS 0)
+1703376030: mqttjs_93adb2be 0 #
+1703376030: Sending SUBACK to mqttjs_93adb2be
+1703376068: New connection from 172.19.0.1:39016 on port 1883.
+1703376068: New client connected from 172.19.0.1:39016 as auto-55E90DA7-0D5D-70A8-7A9C-01B40176BFD5 (p2, c1, k15, u'avanzado').
+1703376068: No will message specified.
+1703376068: Sending CONNACK to auto-55E90DA7-0D5D-70A8-7A9C-01B40176BFD5 (0, 0)
+1703376071: Received PUBLISH from auto-55E90DA7-0D5D-70A8-7A9C-01B40176BFD5 (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (153 bytes))
+1703376071: Sending PUBLISH to mqttjs_93adb2be (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (153 bytes))
+1703376073: Received PUBLISH from auto-55E90DA7-0D5D-70A8-7A9C-01B40176BFD5 (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (153 bytes))
+1703376073: Sending PUBLISH to mqttjs_93adb2be (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (153 bytes))
+1703376080: Client mqttjs_93adb2be closed its connection.
+1703376097: New connection from 172.19.0.3:50536 on port 1883.
+1703376097: New client connected from 172.19.0.3:50536 as mqttjs_e4ee051c (p2, c1, k60, u'arodrig').
+1703376097: No will message specified.
+1703376097: Sending CONNACK to mqttjs_e4ee051c (0, 0)
+1703376097: Received SUBSCRIBE from mqttjs_e4ee051c
+1703376097: 	# (QoS 0)
+1703376097: mqttjs_e4ee051c 0 #
+1703376097: Sending SUBACK to mqttjs_e4ee051c
+1703376098: Client auto-55E90DA7-0D5D-70A8-7A9C-01B40176BFD5 has exceeded timeout, disconnecting.
+1703376108: New connection from 172.19.0.1:47822 on port 1883.
+1703376108: New client connected from 172.19.0.1:47822 as auto-B9ADE875-9E79-5CDF-6914-117FA578F5AF (p2, c1, k15, u'avanzado').
+1703376108: No will message specified.
+1703376108: Sending CONNACK to auto-B9ADE875-9E79-5CDF-6914-117FA578F5AF (0, 0)
+1703376112: Received PUBLISH from auto-B9ADE875-9E79-5CDF-6914-117FA578F5AF (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (144 bytes))
+1703376112: Sending PUBLISH to mqttjs_e4ee051c (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (144 bytes))
+1703376114: Received PUBLISH from auto-B9ADE875-9E79-5CDF-6914-117FA578F5AF (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (153 bytes))
+1703376114: Sending PUBLISH to mqttjs_e4ee051c (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (153 bytes))
+1703376120: Client mqttjs_e4ee051c closed its connection.
+1703376136: New connection from 172.19.0.3:47124 on port 1883.
+1703376136: New client connected from 172.19.0.3:47124 as mqttjs_b8497a67 (p2, c1, k60, u'arodrig').
+1703376136: No will message specified.
+1703376136: Sending CONNACK to mqttjs_b8497a67 (0, 0)
+1703376136: Received SUBSCRIBE from mqttjs_b8497a67
+1703376136: 	# (QoS 0)
+1703376136: mqttjs_b8497a67 0 #
+1703376136: Sending SUBACK to mqttjs_b8497a67
+1703376140: Client auto-B9ADE875-9E79-5CDF-6914-117FA578F5AF has exceeded timeout, disconnecting.
+1703376144: New connection from 172.19.0.1:33862 on port 1883.
+1703376144: New client connected from 172.19.0.1:33862 as auto-57A0B7F3-F832-218E-3572-A6AF30836DE1 (p2, c1, k15, u'avanzado').
+1703376144: No will message specified.
+1703376144: Sending CONNACK to auto-57A0B7F3-F832-218E-3572-A6AF30836DE1 (0, 0)
+1703376145: Received PUBLISH from auto-57A0B7F3-F832-218E-3572-A6AF30836DE1 (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (153 bytes))
+1703376145: Sending PUBLISH to mqttjs_b8497a67 (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (153 bytes))
+1703376147: Received PUBLISH from auto-57A0B7F3-F832-218E-3572-A6AF30836DE1 (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (153 bytes))
+1703376147: Sending PUBLISH to mqttjs_b8497a67 (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (153 bytes))
+1703376156: Client mqttjs_b8497a67 closed its connection.
+1703376170: Client auto-57A0B7F3-F832-218E-3572-A6AF30836DE1 has exceeded timeout, disconnecting.
+1703376173: New connection from 172.19.0.3:39340 on port 1883.
+1703376173: New client connected from 172.19.0.3:39340 as mqttjs_06febf4c (p2, c1, k60, u'arodrig').
+1703376173: No will message specified.
+1703376173: Sending CONNACK to mqttjs_06febf4c (0, 0)
+1703376173: Received SUBSCRIBE from mqttjs_06febf4c
+1703376173: 	# (QoS 0)
+1703376173: mqttjs_06febf4c 0 #
+1703376173: Sending SUBACK to mqttjs_06febf4c
+1703376198: Client mqttjs_06febf4c closed its connection.
+1703376214: New connection from 172.19.0.3:38168 on port 1883.
+1703376214: New client connected from 172.19.0.3:38168 as mqttjs_00d90d9f (p2, c1, k60, u'arodrig').
+1703376214: No will message specified.
+1703376214: Sending CONNACK to mqttjs_00d90d9f (0, 0)
+1703376214: Received SUBSCRIBE from mqttjs_00d90d9f
+1703376214: 	# (QoS 0)
+1703376214: mqttjs_00d90d9f 0 #
+1703376214: Sending SUBACK to mqttjs_00d90d9f
+1703376221: New connection from 172.19.0.1:52252 on port 1883.
+1703376221: New client connected from 172.19.0.1:52252 as auto-1D473D4B-6F95-F09A-2DA4-69225CA97EA4 (p2, c1, k15, u'avanzado').
+1703376221: No will message specified.
+1703376221: Sending CONNACK to auto-1D473D4B-6F95-F09A-2DA4-69225CA97EA4 (0, 0)
+1703376225: Received PUBLISH from auto-1D473D4B-6F95-F09A-2DA4-69225CA97EA4 (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (153 bytes))
+1703376225: Sending PUBLISH to mqttjs_00d90d9f (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (153 bytes))
+1703376227: Received PUBLISH from auto-1D473D4B-6F95-F09A-2DA4-69225CA97EA4 (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (153 bytes))
+1703376227: Sending PUBLISH to mqttjs_00d90d9f (d0, q0, r0, m0, '/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4', ... (153 bytes))
+1703376229: Client mqttjs_00d90d9f closed its connection.
+1703376244: New connection from 172.19.0.3:50446 on port 1883.
+1703376244: New client connected from 172.19.0.3:50446 as mqttjs_76818d6e (p2, c1, k60, u'arodrig').
+1703376244: No will message specified.
+1703376244: Sending CONNACK to mqttjs_76818d6e (0, 0)
+1703376244: Received SUBSCRIBE from mqttjs_76818d6e
+1703376244: 	# (QoS 0)
+1703376244: mqttjs_76818d6e 0 #
+1703376244: Sending SUBACK to mqttjs_76818d6e
+1703376254: Client auto-1D473D4B-6F95-F09A-2DA4-69225CA97EA4 has exceeded timeout, disconnecting.
+1703376283: Client mqttjs_76818d6e closed its connection.
+1703376300: New connection from 172.19.0.3:46956 on port 1883.
+1703376300: New client connected from 172.19.0.3:46956 as mqttjs_ffb6a7b7 (p2, c1, k60, u'arodrig').
+1703376300: No will message specified.
+1703376300: Sending CONNACK to mqttjs_ffb6a7b7 (0, 0)
+1703376300: Received SUBSCRIBE from mqttjs_ffb6a7b7
+1703376300: 	# (QoS 0)
+1703376300: mqttjs_ffb6a7b7 0 #
+1703376300: Sending SUBACK to mqttjs_ffb6a7b7
+1703376360: Received PINGREQ from mqttjs_ffb6a7b7
+1703376360: Sending PINGRESP to mqttjs_ffb6a7b7
+1703376362: Client mqttjs_ffb6a7b7 closed its connection.
+1703376379: New connection from 172.19.0.3:44920 on port 1883.
+1703376379: New client connected from 172.19.0.3:44920 as mqttjs_f9a5e5ce (p2, c1, k60, u'arodrig').
+1703376379: No will message specified.
+1703376379: Sending CONNACK to mqttjs_f9a5e5ce (0, 0)
+1703376379: Received SUBSCRIBE from mqttjs_f9a5e5ce
+1703376379: 	# (QoS 0)
+1703376379: mqttjs_f9a5e5ce 0 #
+1703376379: Sending SUBACK to mqttjs_f9a5e5ce
+1703376439: Received PINGREQ from mqttjs_f9a5e5ce
+1703376439: Sending PINGRESP to mqttjs_f9a5e5ce
+1703376483: Client mqttjs_f9a5e5ce closed its connection.
+1703376498: New connection from 172.19.0.3:40672 on port 1883.
+1703376498: New client connected from 172.19.0.3:40672 as mqttjs_5c9a2591 (p2, c1, k60, u'arodrig').
+1703376498: No will message specified.
+1703376498: Sending CONNACK to mqttjs_5c9a2591 (0, 0)
+1703376498: Received SUBSCRIBE from mqttjs_5c9a2591
+1703376498: 	# (QoS 0)
+1703376498: mqttjs_5c9a2591 0 #
+1703376498: Sending SUBACK to mqttjs_5c9a2591
+1703376558: Received PINGREQ from mqttjs_5c9a2591
+1703376558: Sending PINGRESP to mqttjs_5c9a2591
+1703376618: Received PINGREQ from mqttjs_5c9a2591
+1703376618: Sending PINGRESP to mqttjs_5c9a2591
+1703376678: Received PINGREQ from mqttjs_5c9a2591
+1703376678: Sending PINGRESP to mqttjs_5c9a2591
+1703376738: Received PINGREQ from mqttjs_5c9a2591
+1703376738: Sending PINGRESP to mqttjs_5c9a2591
+1703376769: Client mqttjs_5c9a2591 closed its connection.
+1703376785: New connection from 172.19.0.3:50564 on port 1883.
+1703376786: New client connected from 172.19.0.3:50564 as mqttjs_e0530cfa (p2, c1, k60, u'arodrig').
+1703376786: No will message specified.
+1703376786: Sending CONNACK to mqttjs_e0530cfa (0, 0)
+1703376786: Received SUBSCRIBE from mqttjs_e0530cfa
+1703376786: 	# (QoS 0)
+1703376786: mqttjs_e0530cfa 0 #
+1703376786: Sending SUBACK to mqttjs_e0530cfa
+1703376842: Client mqttjs_e0530cfa closed its connection.
+1703376859: New connection from 172.19.0.3:56746 on port 1883.
+1703376859: New client connected from 172.19.0.3:56746 as mqttjs_df7678ff (p2, c1, k60, u'arodrig').
+1703376859: No will message specified.
+1703376859: Sending CONNACK to mqttjs_df7678ff (0, 0)
+1703376859: Received SUBSCRIBE from mqttjs_df7678ff
+1703376859: 	# (QoS 0)
+1703376859: mqttjs_df7678ff 0 #
+1703376859: Sending SUBACK to mqttjs_df7678ff
+1703376913: Client mqttjs_df7678ff closed its connection.
+1703376930: New connection from 172.19.0.3:60086 on port 1883.
+1703376930: New client connected from 172.19.0.3:60086 as mqttjs_a438a5e7 (p2, c1, k60, u'arodrig').
+1703376930: No will message specified.
+1703376930: Sending CONNACK to mqttjs_a438a5e7 (0, 0)
+1703376930: Received SUBSCRIBE from mqttjs_a438a5e7
+1703376930: 	# (QoS 0)
+1703376930: mqttjs_a438a5e7 0 #
+1703376930: Sending SUBACK to mqttjs_a438a5e7
+1703376935: Client mqttjs_a438a5e7 closed its connection.
+1703376952: New connection from 172.19.0.3:59164 on port 1883.
+1703376952: New client connected from 172.19.0.3:59164 as mqttjs_5812673d (p2, c1, k60, u'arodrig').
+1703376952: No will message specified.
+1703376952: Sending CONNACK to mqttjs_5812673d (0, 0)
+1703376952: Received SUBSCRIBE from mqttjs_5812673d
+1703376952: 	# (QoS 0)
+1703376952: mqttjs_5812673d 0 #
+1703376952: Sending SUBACK to mqttjs_5812673d
+1703376986: Client mqttjs_5812673d closed its connection.
+1703377002: New connection from 172.19.0.3:45488 on port 1883.
+1703377002: New client connected from 172.19.0.3:45488 as mqttjs_65feb852 (p2, c1, k60, u'arodrig').
+1703377002: No will message specified.
+1703377002: Sending CONNACK to mqttjs_65feb852 (0, 0)
+1703377002: Received SUBSCRIBE from mqttjs_65feb852
+1703377002: 	# (QoS 0)
+1703377002: mqttjs_65feb852 0 #
+1703377002: Sending SUBACK to mqttjs_65feb852
+1703377020: Client mqttjs_65feb852 closed its connection.
+1703377047: New connection from 172.19.0.3:37042 on port 1883.
+1703377047: New client connected from 172.19.0.3:37042 as mqttjs_1c094cca (p2, c1, k60, u'arodrig').
+1703377047: No will message specified.
+1703377047: Sending CONNACK to mqttjs_1c094cca (0, 0)
+1703377047: Received SUBSCRIBE from mqttjs_1c094cca
+1703377047: 	# (QoS 0)
+1703377047: mqttjs_1c094cca 0 #
+1703377047: Sending SUBACK to mqttjs_1c094cca
+1703377058: Client mqttjs_1c094cca closed its connection.
+1703377073: New connection from 172.19.0.3:41964 on port 1883.
+1703377073: New client connected from 172.19.0.3:41964 as mqttjs_79a13462 (p2, c1, k60, u'arodrig').
+1703377073: No will message specified.
+1703377073: Sending CONNACK to mqttjs_79a13462 (0, 0)
+1703377073: Received SUBSCRIBE from mqttjs_79a13462
+1703377073: 	# (QoS 0)
+1703377073: mqttjs_79a13462 0 #
+1703377073: Sending SUBACK to mqttjs_79a13462
+1703377133: Received PINGREQ from mqttjs_79a13462
+1703377133: Sending PINGRESP to mqttjs_79a13462
+1703377148: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1703377148: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1703377148: Error: No such file or directory.
+1703377193: Received PINGREQ from mqttjs_79a13462
+1703377193: Sending PINGRESP to mqttjs_79a13462
+1703377253: Received PINGREQ from mqttjs_79a13462
+1703377253: Sending PINGRESP to mqttjs_79a13462
+1703377313: Received PINGREQ from mqttjs_79a13462
+1703377313: Sending PINGRESP to mqttjs_79a13462
+1703377373: Received PINGREQ from mqttjs_79a13462
+1703377373: Sending PINGRESP to mqttjs_79a13462
+1703377433: Received PINGREQ from mqttjs_79a13462
+1703377433: Sending PINGRESP to mqttjs_79a13462
+1703377493: Received PINGREQ from mqttjs_79a13462
+1703377493: Sending PINGRESP to mqttjs_79a13462
+1703377549: Client mqttjs_79a13462 closed its connection.
+1703377565: New connection from 172.19.0.3:59078 on port 1883.
+1703377565: New client connected from 172.19.0.3:59078 as mqttjs_27c73866 (p2, c1, k60, u'arodrig').
+1703377565: No will message specified.
+1703377565: Sending CONNACK to mqttjs_27c73866 (0, 0)
+1703377565: Received SUBSCRIBE from mqttjs_27c73866
+1703377565: 	# (QoS 0)
+1703377565: mqttjs_27c73866 0 #
+1703377565: Sending SUBACK to mqttjs_27c73866
+1703377625: Received PINGREQ from mqttjs_27c73866
+1703377625: Sending PINGRESP to mqttjs_27c73866
+1703377685: Received PINGREQ from mqttjs_27c73866
+1703377685: Sending PINGRESP to mqttjs_27c73866
+1703377736: Client mqttjs_27c73866 closed its connection.
+1703377752: New connection from 172.19.0.3:52920 on port 1883.
+1703377752: New client connected from 172.19.0.3:52920 as mqttjs_66746540 (p2, c1, k60, u'arodrig').
+1703377752: No will message specified.
+1703377752: Sending CONNACK to mqttjs_66746540 (0, 0)
+1703377752: Received SUBSCRIBE from mqttjs_66746540
+1703377752: 	# (QoS 0)
+1703377752: mqttjs_66746540 0 #
+1703377752: Sending SUBACK to mqttjs_66746540
+1703377812: Received PINGREQ from mqttjs_66746540
+1703377812: Sending PINGRESP to mqttjs_66746540
+1703377872: Received PINGREQ from mqttjs_66746540
+1703377872: Sending PINGRESP to mqttjs_66746540
+1703377914: Client mqttjs_66746540 closed its connection.
+1703377929: New connection from 172.19.0.3:42366 on port 1883.
+1703377929: New client connected from 172.19.0.3:42366 as mqttjs_e777fb2d (p2, c1, k60, u'arodrig').
+1703377929: No will message specified.
+1703377929: Sending CONNACK to mqttjs_e777fb2d (0, 0)
+1703377929: Received SUBSCRIBE from mqttjs_e777fb2d
+1703377929: 	# (QoS 0)
+1703377929: mqttjs_e777fb2d 0 #
+1703377929: Sending SUBACK to mqttjs_e777fb2d
+1703377989: Received PINGREQ from mqttjs_e777fb2d
+1703377989: Sending PINGRESP to mqttjs_e777fb2d
+1703378049: Received PINGREQ from mqttjs_e777fb2d
+1703378049: Sending PINGRESP to mqttjs_e777fb2d
+1703378109: Received PINGREQ from mqttjs_e777fb2d
+1703378109: Sending PINGRESP to mqttjs_e777fb2d
+1703378169: Received PINGREQ from mqttjs_e777fb2d
+1703378169: Sending PINGRESP to mqttjs_e777fb2d
+1703378229: Received PINGREQ from mqttjs_e777fb2d
+1703378229: Sending PINGRESP to mqttjs_e777fb2d
+1703378289: Received PINGREQ from mqttjs_e777fb2d
+1703378289: Sending PINGRESP to mqttjs_e777fb2d
+1703378352: Received PINGREQ from mqttjs_e777fb2d
+1703378352: Sending PINGRESP to mqttjs_e777fb2d
+1703378412: Received PINGREQ from mqttjs_e777fb2d
+1703378412: Sending PINGRESP to mqttjs_e777fb2d
+1703378472: Received PINGREQ from mqttjs_e777fb2d
+1703378472: Sending PINGRESP to mqttjs_e777fb2d
+1703378532: Received PINGREQ from mqttjs_e777fb2d
+1703378532: Sending PINGRESP to mqttjs_e777fb2d
+1703378592: Received PINGREQ from mqttjs_e777fb2d
+1703378592: Sending PINGRESP to mqttjs_e777fb2d
+1703378652: Received PINGREQ from mqttjs_e777fb2d
+1703378652: Sending PINGRESP to mqttjs_e777fb2d
+1703378712: Received PINGREQ from mqttjs_e777fb2d
+1703378712: Sending PINGRESP to mqttjs_e777fb2d
+1703378772: Received PINGREQ from mqttjs_e777fb2d
+1703378772: Sending PINGRESP to mqttjs_e777fb2d
+1703378832: Received PINGREQ from mqttjs_e777fb2d
+1703378832: Sending PINGRESP to mqttjs_e777fb2d
+1703378892: Received PINGREQ from mqttjs_e777fb2d
+1703378892: Sending PINGRESP to mqttjs_e777fb2d
+1703378952: Received PINGREQ from mqttjs_e777fb2d
+1703378952: Sending PINGRESP to mqttjs_e777fb2d
+1703378952: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1703378952: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1703378952: Error: No such file or directory.
+1703379012: Received PINGREQ from mqttjs_e777fb2d
+1703379012: Sending PINGRESP to mqttjs_e777fb2d
+1703379072: Received PINGREQ from mqttjs_e777fb2d
+1703379072: Sending PINGRESP to mqttjs_e777fb2d
+1703379132: Received PINGREQ from mqttjs_e777fb2d
+1703379132: Sending PINGRESP to mqttjs_e777fb2d
+1703379192: Received PINGREQ from mqttjs_e777fb2d
+1703379192: Sending PINGRESP to mqttjs_e777fb2d
+1703379252: Received PINGREQ from mqttjs_e777fb2d
+1703379252: Sending PINGRESP to mqttjs_e777fb2d
+1703379312: Received PINGREQ from mqttjs_e777fb2d
+1703379312: Sending PINGRESP to mqttjs_e777fb2d
+1703379372: Received PINGREQ from mqttjs_e777fb2d
+1703379372: Sending PINGRESP to mqttjs_e777fb2d
+1703379432: Received PINGREQ from mqttjs_e777fb2d
+1703379432: Sending PINGRESP to mqttjs_e777fb2d
+1703379445: Client mqttjs_e777fb2d closed its connection.
+1703379471: New connection from 172.19.0.3:36828 on port 1883.
+1703379471: New client connected from 172.19.0.3:36828 as mqttjs_8a97538d (p2, c1, k60, u'arodrig').
+1703379471: No will message specified.
+1703379471: Sending CONNACK to mqttjs_8a97538d (0, 0)
+1703379471: Received SUBSCRIBE from mqttjs_8a97538d
+1703379471: 	# (QoS 0)
+1703379471: mqttjs_8a97538d 0 #
+1703379471: Sending SUBACK to mqttjs_8a97538d
+1703379531: Received PINGREQ from mqttjs_8a97538d
+1703379531: Sending PINGRESP to mqttjs_8a97538d
+1703379539: Client mqttjs_8a97538d closed its connection.
+1703379555: New connection from 172.19.0.3:38482 on port 1883.
+1703379555: New client connected from 172.19.0.3:38482 as mqttjs_a2bc192d (p2, c1, k60, u'arodrig').
+1703379555: No will message specified.
+1703379555: Sending CONNACK to mqttjs_a2bc192d (0, 0)
+1703379555: Received SUBSCRIBE from mqttjs_a2bc192d
+1703379555: 	# (QoS 0)
+1703379555: mqttjs_a2bc192d 0 #
+1703379555: Sending SUBACK to mqttjs_a2bc192d
+1703379615: Received PINGREQ from mqttjs_a2bc192d
+1703379615: Sending PINGRESP to mqttjs_a2bc192d
+1703379675: Received PINGREQ from mqttjs_a2bc192d
+1703379675: Sending PINGRESP to mqttjs_a2bc192d
+1703379735: Received PINGREQ from mqttjs_a2bc192d
+1703379735: Sending PINGRESP to mqttjs_a2bc192d
+1703379795: Received PINGREQ from mqttjs_a2bc192d
+1703379795: Sending PINGRESP to mqttjs_a2bc192d
+1703379855: Received PINGREQ from mqttjs_a2bc192d
+1703379855: Sending PINGRESP to mqttjs_a2bc192d
+1703379915: Received PINGREQ from mqttjs_a2bc192d
+1703379915: Sending PINGRESP to mqttjs_a2bc192d
+1703379975: Received PINGREQ from mqttjs_a2bc192d
+1703379975: Sending PINGRESP to mqttjs_a2bc192d
+1703380035: Received PINGREQ from mqttjs_a2bc192d
+1703380035: Sending PINGRESP to mqttjs_a2bc192d
+1703380095: Received PINGREQ from mqttjs_a2bc192d
+1703380095: Sending PINGRESP to mqttjs_a2bc192d
+1703380155: Received PINGREQ from mqttjs_a2bc192d
+1703380155: Sending PINGRESP to mqttjs_a2bc192d
+1703380215: Received PINGREQ from mqttjs_a2bc192d
+1703380215: Sending PINGRESP to mqttjs_a2bc192d
+1703380275: Received PINGREQ from mqttjs_a2bc192d
+1703380275: Sending PINGRESP to mqttjs_a2bc192d
+1703380335: Received PINGREQ from mqttjs_a2bc192d
+1703380335: Sending PINGRESP to mqttjs_a2bc192d
+1703380395: Received PINGREQ from mqttjs_a2bc192d
+1703380395: Sending PINGRESP to mqttjs_a2bc192d
+1703380455: Received PINGREQ from mqttjs_a2bc192d
+1703380455: Sending PINGRESP to mqttjs_a2bc192d
+1703380515: Received PINGREQ from mqttjs_a2bc192d
+1703380515: Sending PINGRESP to mqttjs_a2bc192d
+1703380575: Received PINGREQ from mqttjs_a2bc192d
+1703380575: Sending PINGRESP to mqttjs_a2bc192d
+1703380635: Received PINGREQ from mqttjs_a2bc192d
+1703380635: Sending PINGRESP to mqttjs_a2bc192d
+1703380695: Received PINGREQ from mqttjs_a2bc192d
+1703380695: Sending PINGRESP to mqttjs_a2bc192d
+1703380733: Client mqttjs_a2bc192d closed its connection.
+1703380753: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1703380753: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1703380753: Error: No such file or directory.
+1703381019: New connection from 172.19.0.3:42188 on port 1883.
+1703381019: New client connected from 172.19.0.3:42188 as mqttjs_f183c1a0 (p2, c1, k60, u'arodrig').
+1703381019: No will message specified.
+1703381019: Sending CONNACK to mqttjs_f183c1a0 (0, 0)
+1703381019: Received SUBSCRIBE from mqttjs_f183c1a0
+1703381019: 	# (QoS 0)
+1703381019: mqttjs_f183c1a0 0 #
+1703381019: Sending SUBACK to mqttjs_f183c1a0
+1703381079: Received PINGREQ from mqttjs_f183c1a0
+1703381079: Sending PINGRESP to mqttjs_f183c1a0
+1703381258: mosquitto version 2.0.15 starting
+1703381258: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1703381258: Loading plugin: /mosquitto/go-auth.so
+1703381258:  ├── Username/password checking enabled.
+1703381258:  ├── TLS-PSK checking enabled.
+1703381258:  └── Extended authentication not enabled.
+1703381258: Opening ipv4 listen socket on port 1883.
+1703381258: Opening ipv6 listen socket on port 1883.
+1703381258: Opening ipv4 listen socket on port 9001.
+1703381258: Opening ipv6 listen socket on port 9001.
+1703381258: mosquitto version 2.0.15 running
+1703381287: New connection from 172.19.0.3:46340 on port 1883.
+1703381287: New client connected from 172.19.0.3:46340 as mqttjs_68fa4c5b (p2, c1, k60, u'arodrig').
+1703381287: No will message specified.
+1703381287: Sending CONNACK to mqttjs_68fa4c5b (0, 0)
+1703381287: Received SUBSCRIBE from mqttjs_68fa4c5b
+1703381287: 	# (QoS 0)
+1703381287: mqttjs_68fa4c5b 0 #
+1703381287: Sending SUBACK to mqttjs_68fa4c5b
+1703381347: Received PINGREQ from mqttjs_68fa4c5b
+1703381347: Sending PINGRESP to mqttjs_68fa4c5b
+1703381407: Received PINGREQ from mqttjs_68fa4c5b
+1703381407: Sending PINGRESP to mqttjs_68fa4c5b
+1703381467: Received PINGREQ from mqttjs_68fa4c5b
+1703381467: Sending PINGRESP to mqttjs_68fa4c5b
+1703381527: Received PINGREQ from mqttjs_68fa4c5b
+1703381527: Sending PINGRESP to mqttjs_68fa4c5b
+1703381587: Received PINGREQ from mqttjs_68fa4c5b
+1703381587: Sending PINGRESP to mqttjs_68fa4c5b
+1703381647: Received PINGREQ from mqttjs_68fa4c5b
+1703381647: Sending PINGRESP to mqttjs_68fa4c5b
+1703381671: Client mqttjs_68fa4c5b closed its connection.
+1703381687: New connection from 172.19.0.3:35442 on port 1883.
+1703381687: New client connected from 172.19.0.3:35442 as mqttjs_6c142076 (p2, c1, k60, u'arodrig').
+1703381687: No will message specified.
+1703381687: Sending CONNACK to mqttjs_6c142076 (0, 0)
+1703381687: Received SUBSCRIBE from mqttjs_6c142076
+1703381687: 	# (QoS 0)
+1703381687: mqttjs_6c142076 0 #
+1703381687: Sending SUBACK to mqttjs_6c142076
+1703381747: Received PINGREQ from mqttjs_6c142076
+1703381747: Sending PINGRESP to mqttjs_6c142076
+1703381807: Received PINGREQ from mqttjs_6c142076
+1703381807: Sending PINGRESP to mqttjs_6c142076
+1703381867: Received PINGREQ from mqttjs_6c142076
+1703381867: Sending PINGRESP to mqttjs_6c142076
+1703381927: Received PINGREQ from mqttjs_6c142076
+1703381927: Sending PINGRESP to mqttjs_6c142076
+1703381981: Client mqttjs_6c142076 closed its connection.
+1703381998: New connection from 172.19.0.3:36390 on port 1883.
+1703381998: New client connected from 172.19.0.3:36390 as mqttjs_9fe5c199 (p2, c1, k60, u'arodrig').
+1703381998: No will message specified.
+1703381998: Sending CONNACK to mqttjs_9fe5c199 (0, 0)
+1703381998: Received SUBSCRIBE from mqttjs_9fe5c199
+1703381998: 	# (QoS 0)
+1703381998: mqttjs_9fe5c199 0 #
+1703381998: Sending SUBACK to mqttjs_9fe5c199
+1703382059: Received PINGREQ from mqttjs_9fe5c199
+1703382059: Sending PINGRESP to mqttjs_9fe5c199
+1703382119: Received PINGREQ from mqttjs_9fe5c199
+1703382119: Sending PINGRESP to mqttjs_9fe5c199
+1703382179: Received PINGREQ from mqttjs_9fe5c199
+1703382179: Sending PINGRESP to mqttjs_9fe5c199
+1703382239: Received PINGREQ from mqttjs_9fe5c199
+1703382239: Sending PINGRESP to mqttjs_9fe5c199
+1703382299: Received PINGREQ from mqttjs_9fe5c199
+1703382299: Sending PINGRESP to mqttjs_9fe5c199
+1703382359: Received PINGREQ from mqttjs_9fe5c199
+1703382359: Sending PINGRESP to mqttjs_9fe5c199
+1703382419: Received PINGREQ from mqttjs_9fe5c199
+1703382419: Sending PINGRESP to mqttjs_9fe5c199
+1703382479: Received PINGREQ from mqttjs_9fe5c199
+1703382479: Sending PINGRESP to mqttjs_9fe5c199
+1703382539: Received PINGREQ from mqttjs_9fe5c199
+1703382539: Sending PINGRESP to mqttjs_9fe5c199
+1703382551: Client mqttjs_9fe5c199 closed its connection.
+1703382568: mosquitto version 2.0.15 terminating
+1703382568: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1703382568: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1703382568: Error: No such file or directory.
+1703382591: mosquitto version 2.0.15 starting
+1703382591: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1703382591: Loading plugin: /mosquitto/go-auth.so
+1703382591:  ├── Username/password checking enabled.
+1703382591:  ├── TLS-PSK checking enabled.
+1703382591:  └── Extended authentication not enabled.
+1703382591: Opening ipv4 listen socket on port 1883.
+1703382591: Opening ipv6 listen socket on port 1883.
+1703382591: Opening ipv4 listen socket on port 9001.
+1703382591: Opening ipv6 listen socket on port 9001.
+1703382591: mosquitto version 2.0.15 running
+1703382608: New connection from 172.18.0.3:45942 on port 1883.
+1703382608: New client connected from 172.18.0.3:45942 as mqttjs_59a41053 (p2, c1, k60, u'arodrig').
+1703382608: No will message specified.
+1703382608: Sending CONNACK to mqttjs_59a41053 (0, 0)
+1703382609: Received SUBSCRIBE from mqttjs_59a41053
+1703382609: 	# (QoS 0)
+1703382609: mqttjs_59a41053 0 #
+1703382609: Sending SUBACK to mqttjs_59a41053
+1703382631: Client mqttjs_59a41053 closed its connection.
+1703383326: mosquitto version 2.0.15 terminating
+1703383326: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1703383326: Error saving in-memory database, unable to open /mosquitto/data//mosquitto.db.new for writing.
+1703383326: Error: No such file or directory.
+1703383514: mosquitto version 2.0.15 starting
+1703383514: Config loaded from /etc/mosquitto/config/mosquitto.conf.
+1703383514: Loading plugin: /mosquitto/go-auth.so
+1703383514:  ├── Username/password checking enabled.
+1703383514:  ├── TLS-PSK checking enabled.
+1703383514:  └── Extended authentication not enabled.
+1703383514: Opening ipv4 listen socket on port 1883.
+1703383514: Opening ipv6 listen socket on port 1883.
+1703383514: Opening ipv4 listen socket on port 9001.
+1703383514: Opening ipv6 listen socket on port 9001.
+1703383514: mosquitto version 2.0.15 running
+1703383533: New connection from 172.19.0.3:36896 on port 1883.
+1703383533: New client connected from 172.19.0.3:36896 as mqttjs_c6944d40 (p2, c1, k60, u'arodrig').
+1703383533: No will message specified.
+1703383533: Sending CONNACK to mqttjs_c6944d40 (0, 0)
+1703383534: Received SUBSCRIBE from mqttjs_c6944d40
+1703383534: 	# (QoS 0)
+1703383534: mqttjs_c6944d40 0 #
+1703383534: Sending SUBACK to mqttjs_c6944d40
+1703383594: Received PINGREQ from mqttjs_c6944d40
+1703383594: Sending PINGRESP to mqttjs_c6944d40
+1703383654: Received PINGREQ from mqttjs_c6944d40
+1703383654: Sending PINGRESP to mqttjs_c6944d40
+1703383714: Received PINGREQ from mqttjs_c6944d40
+1703383714: Sending PINGRESP to mqttjs_c6944d40
+1703383772: Client mqttjs_c6944d40 closed its connection.
+1703383789: New connection from 172.19.0.3:45454 on port 1883.
+1703383789: New client connected from 172.19.0.3:45454 as mqttjs_6693cc9e (p2, c1, k60, u'arodrig').
+1703383789: No will message specified.
+1703383789: Sending CONNACK to mqttjs_6693cc9e (0, 0)
+1703383789: Received SUBSCRIBE from mqttjs_6693cc9e
+1703383789: 	# (QoS 0)
+1703383789: mqttjs_6693cc9e 0 #
+1703383789: Sending SUBACK to mqttjs_6693cc9e
+1703383849: Received PINGREQ from mqttjs_6693cc9e
+1703383849: Sending PINGRESP to mqttjs_6693cc9e
+1703383877: Client mqttjs_6693cc9e closed its connection.
+1703383893: New connection from 172.19.0.3:55584 on port 1883.
+1703383893: New client connected from 172.19.0.3:55584 as mqttjs_87944af3 (p2, c1, k60, u'arodrig').
+1703383893: No will message specified.
+1703383893: Sending CONNACK to mqttjs_87944af3 (0, 0)
+1703383894: Received SUBSCRIBE from mqttjs_87944af3
+1703383894: 	# (QoS 0)
+1703383894: mqttjs_87944af3 0 #
+1703383894: Sending SUBACK to mqttjs_87944af3
+1703383954: Received PINGREQ from mqttjs_87944af3
+1703383954: Sending PINGRESP to mqttjs_87944af3
+1703384014: Received PINGREQ from mqttjs_87944af3
+1703384014: Sending PINGRESP to mqttjs_87944af3
+1703384074: Received PINGREQ from mqttjs_87944af3
+1703384074: Sending PINGRESP to mqttjs_87944af3
+1703384134: Received PINGREQ from mqttjs_87944af3
+1703384134: Sending PINGRESP to mqttjs_87944af3
+1703384194: Received PINGREQ from mqttjs_87944af3
+1703384194: Sending PINGRESP to mqttjs_87944af3
+1703384254: Received PINGREQ from mqttjs_87944af3
+1703384254: Sending PINGRESP to mqttjs_87944af3
+1703384314: Received PINGREQ from mqttjs_87944af3
+1703384314: Sending PINGRESP to mqttjs_87944af3
+1703384374: Received PINGREQ from mqttjs_87944af3
+1703384374: Sending PINGRESP to mqttjs_87944af3
+1703384434: Received PINGREQ from mqttjs_87944af3
+1703384434: Sending PINGRESP to mqttjs_87944af3

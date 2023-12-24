@@ -43,7 +43,6 @@ const UserController = {
   
       const saltRounds = 10;//MODIFICAR MAS ADELANTE
       
-  
       // Generar el salt y el hash del password de manera asincrónica
       const salt = await bcrypt.genSalt(saltRounds);
       const hash = await bcrypt.hash(password, salt);
