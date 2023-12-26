@@ -1,7 +1,7 @@
-const dataSchema = require("../models/data.Model");
-const deviceSchema = require("../models/device.Model");
-const channelSchema = require("../models/channel.Model");
-const keySchema = require("../models/keyModel");
+const dataSchema = require("../models/data.model");
+const deviceSchema = require("../models/device.model");
+const channelSchema = require("../models/channel.model");
+const keySchema = require("../models/key.model");
 const fs = require('fs');
 const Papa = require('papaparse');
 

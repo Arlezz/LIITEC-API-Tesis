@@ -4,7 +4,7 @@ var app = require('../app');
 var http = require('http');
 var dotenv = require('dotenv');
 var mongoose = require('mongoose');
-var MqttHandler = require('../controller/BrokerController');
+var MqttHandler = require('../controller/broker.controller');
 
 let process = require('process');
 

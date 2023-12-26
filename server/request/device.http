@@ -14,19 +14,15 @@ Content-Type: application/json
 Authorization: ch032ywc7wbwqwjnkrx23rmfdknb5m
 
 {
-    "name":"Sensor de temperatura",
+    "name":"Sensor de intensidad UV",
     "description":"Sensor de la estacion meteorologica",
-    "model":"DHT22",
-    "type":"digital",
+    "model":"GYML8511",
+    "type":"analogic",
     "measures":[
        {
-        "variable":"temperature",
-        "unit":"C"
-       },
-         {
-          "variable":"humidity",
-          "unit":"%"
-         }
+        "variable":"uv",
+        "unit":"mW/cm2"
+       }
     ]
 }
 

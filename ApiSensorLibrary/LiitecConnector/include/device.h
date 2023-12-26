@@ -2,16 +2,18 @@
 #define DEVICE_H
 
 #include <Arduino.h>
+#include <map>
 
 class Device
 {
     private:
         bool enabled = false;
-        bool validPins = true;
+        //bool validPins = true;
+        std::map<String, bool> validPins;
         String deviceName = "";
 
     public:
-        void setValidPins(bool validPins)
+        /*void setValidPins(bool validPins)
         {
             this->validPins = validPins;
         }
@@ -19,7 +21,27 @@ class Device
         bool isValidPins()
         {
             return this->validPins;
+        }*/
+
+        void setValidPins(String type, bool validPins)
+        {
+            this->validPins[type] = validPins;
         }
+
+        bool isValidPins()
+        {
+            bool valid = true;
+            for (auto const& x : this->validPins)
+            {
+                valid = valid && x.second;
+            }
+            
+            if (valid)
+                this->enable();
+
+            return valid;
+        }
+    
 
         void enable()
         {

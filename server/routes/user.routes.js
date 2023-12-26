@@ -2,7 +2,7 @@ const {Router} = require('express');
 const router = Router();
 var dotenv = require('dotenv');
 dotenv.config({path: '.env'});
-const UserController = require('../controller/UserController');
+const UserController = require('../controller/user.controller');
 
 //User levels authorization
 const { USER_LEVEL_0, USER_LEVEL_1, USER_LEVEL_2 } = process.env;

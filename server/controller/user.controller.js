@@ -1,5 +1,5 @@
-const userSchema = require("../models/user.Model");
-const keySchema = require("../models/keyModel");
+const userSchema = require("../models/user.model");
+const keySchema = require("../models/key.model");
 const authorization = require("../auth/apiAuth");
 const bcrypt = require("bcryptjs");
 const ObjectId = require("mongoose").Types.ObjectId;

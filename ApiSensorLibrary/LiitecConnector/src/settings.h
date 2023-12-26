@@ -17,6 +17,8 @@ CONFIGURACIÓN DE LOS SENSORES
 
 #define dhtSensorPin 22         // Pin utilizado para el sensor de humedad y temperatura DHT
 #define dhtSensorType DHT22     // Tipo de sensor DHT (DHT11 o DHT22)
+#define gyml8511SensorPin 34    // Pin utilizado para el sensor de radiación UV GYML8511
+#define gyml8511VoltagePin 33    // Voltaje de referencia del sensor GYML8511
 
 /**
 OPCIONAL
@@ -72,7 +74,8 @@ CONFIGURACIÓN DE LOS TOPICS MQTT
 //#define mqtt_topic_turbidity "sensor/turbidity"                                          // Topic MQTT para el sensor de turbidez
 //#define mqtt_topic_water_temperature "sensor/water_temperature"                          // Topic MQTT para el sensor de temperatura del agua
 //#define mqtt_topic_tds "sensor/tds"                                                      // Topic MQTT para el sensor de TDS (Total Dissolved Solids)
-#define mqtt_topic_dht "/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4"                // Topic MQTT para el sensor de DHT (temperatura ambiente)
+#define mqtt_topic_dht "/devices/dv-7a9b4d6c-6755-441f-81aa-ffdcd9147d81"                // Topic MQTT para el sensor de DHT (temperatura ambiente)
+#define mqtt_topic_gyml8511 "/devices/dv-f0c54c00-5811-4402-9bee-84576517f571"           // Topic MQTT para el sensor de radiación UV GYML8511
 
 /**************************************************************
 CONFIGURACIÓN DEL SERVER NTP

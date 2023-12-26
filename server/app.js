@@ -1,11 +1,13 @@
 const express = require('express');
 const app = express();
 const morgan = require('morgan');
+const cors = require('cors');
+
 const channelRoutes = require('./routes/channels.routes');
 const userRoutes = require('./routes/user.routes');
 const deviceRoutes = require('./routes/device.routes');
-
 const dataRoutes = require('./routes/data.routes');
+
 
 
 //settings
@@ -13,6 +15,7 @@ app.set('json spaces', 2);
 
 //middleware
 //handle json body request
+app.use(cors());
 app.use(express.json());
 app.use(morgan('dev'));
 app.use(express.json());

@@ -1,5 +1,5 @@
 const mqtt = require("mqtt");
-const dataSchema = require("../models/data.Model");
+const dataSchema = require("../models/data.model");
 const mongoose = require('mongoose');
 var dotenv = require('dotenv');
 dotenv.config({path: '.env'});

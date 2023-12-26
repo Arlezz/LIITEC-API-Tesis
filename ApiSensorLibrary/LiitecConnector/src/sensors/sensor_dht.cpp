@@ -1,5 +1,4 @@
 #include <sensors/sensor_dht.h>
-#include <chrono>
 
 
 DHTSensor::DHTSensor(MqttManager &manager) : mqttManager(manager), Sensor()
@@ -13,7 +12,7 @@ DHTSensor::~DHTSensor()
 
 void DHTSensor::setup(int pin, int sensorType, String name)
 {
-    setPin(pin);
+    setPin("out",pin);
     setSensorType(sensorType);
     setDeviceName(name);
     if (!isValidPins() || !isEnabled())
@@ -26,7 +25,7 @@ void DHTSensor::setup(int pin, int sensorType, String name)
         return;
     }
 
-    dht = new DHT(this->getPin(), this->getSensorType());
+    dht = new DHT(this->getPin("out"), this->getSensorType());
     dht->begin();
     this->setStatus(SensorStatus::OkSetup);
 }
@@ -99,8 +98,6 @@ void DHTSensor::readSensorValue()
     float humidity = dht->readHumidity();
     float temperature = dht->readTemperature();    
     unsigned long timestamp = getTime();
-
-    //int timestamp = std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::system_clock::now().time_since_epoch()).count();
 
     if (isnan(humidity) || isnan(temperature))
     {

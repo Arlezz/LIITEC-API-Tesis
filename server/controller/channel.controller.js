@@ -1,7 +1,7 @@
-const channelSchema = require("../models/channel.Model");
-const deviceSchema = require("../models/device.Model");
-const userSchema = require("../models/user.Model");
-const keySchema = require("../models/keyModel");
+const channelSchema = require("../models/channel.model");
+const deviceSchema = require("../models/device.model");
+const userSchema = require("../models/user.model");
+const keySchema = require("../models/key.model");
 const { v4: uuidv4 } = require("uuid");
 const ObjectId = require("mongoose").Types.ObjectId;
 const authorization = require("../auth/apiAuth");

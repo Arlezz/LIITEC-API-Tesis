@@ -10,8 +10,10 @@
 class Sensor : public Device
 {
     private:
-        int pin;
+        //int pin;
+        int reference;
         std::map<String, float> values;
+        std::map<String, int> pin;
         unsigned long timestamp;
         SensorStatus status = SensorStatus::InProgress;
         int sensorType = 0;
@@ -67,7 +69,7 @@ class Sensor : public Device
             return sensorStatusMap[this->status];
         }
 
-        int getPin()
+        /*int getPin()
         {
             return this->pin;
         }
@@ -79,6 +81,37 @@ class Sensor : public Device
             if (pin > -1) {
                 enable();
             }
+        }*/
+
+        int getPin(String type)
+        {
+            if (pin.count(type) > 0)
+            {
+                return pin[type];
+            }
+            else
+            {
+                return -1;
+            }
+        }
+
+        void setPin(String type, int pin)
+        {
+            this->pin[type] = pin;
+            setValidPins(type, pin > -1);
+            /*if (pin > -1) {
+                enable();
+            }*/
+        }
+
+        int getReference()
+        {
+            return this->reference;
+        }
+
+        void setReference(int reference)
+        {
+            this->reference = reference;
         }
 
         void setSensorType(int type)

@@ -1,5 +1,5 @@
-const User = require("../models/user.Model");
-const Key = require("../models/keyModel");
+const User = require("../models/user.model");
+const Key = require("../models/key.model");
 
 //const MAX = 10; // max API calls per day
 
