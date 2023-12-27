@@ -14,14 +14,14 @@ Content-Type: application/json
 Authorization: ch032ywc7wbwqwjnkrx23rmfdknb5m
 
 {
-    "name":"Sensor de intensidad UV",
+    "name":"Sensor de intensidad de gases",
     "description":"Sensor de la estacion meteorologica",
-    "model":"GYML8511",
-    "type":"analogic",
+    "model":"MQ-135",
+    "type":"both",
     "measures":[
        {
-        "variable":"uv",
-        "unit":"mW/cm2"
+        "variable":"gas instensity",
+        "unit":"ppm"
        }
     ]
 }

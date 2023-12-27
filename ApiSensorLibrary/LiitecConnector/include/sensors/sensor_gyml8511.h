@@ -16,7 +16,7 @@ class GYML8511Sensor : public Sensor
         GYML8511Sensor(MqttManager &manager);
         ~GYML8511Sensor();
 
-        void setup(int pin = -1, int reference = -1, String name = "gyml8511");
+        void setup(int pin = -1, int reference = -1, const char* topic = "/device/gyml8511", String name = "gyml8511");
         void loop(unsigned int timeout = 2000U);
         void readSensorValue() override;
         int averageAnalogRead(int pinToRead);

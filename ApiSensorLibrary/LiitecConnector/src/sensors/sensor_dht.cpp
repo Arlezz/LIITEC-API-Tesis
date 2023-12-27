@@ -10,11 +10,12 @@ DHTSensor::~DHTSensor()
     delete dht;
 }
 
-void DHTSensor::setup(int pin, int sensorType, String name)
+void DHTSensor::setup(int pin, int sensorType, const char* topic, String name)
 {
     setPin("out",pin);
     setSensorType(sensorType);
     setDeviceName(name);
+    setTopic(topic);
     if (!isValidPins() || !isEnabled())
     {
         if (isEnabled() && log_enabled)
@@ -80,7 +81,7 @@ void DHTSensor::publish()
     humObject["value"] = humidity;
     humObject["timestamp"] = timestamp;
 
-    mqttManager.publish(mqtt_topic_dht, doc);
+    mqttManager.publish(getTopic(), doc);
 }
 
 void DHTSensor::readSensorValue()
@@ -112,6 +113,11 @@ void DHTSensor::readSensorValue()
 
     if (log_enabled)
     {
+
+        Serial.println("-----------------------");
+        Serial.print("Device: ");
+        Serial.println(getDeviceName());
+
         Serial.print("Humidity = ");
         Serial.print(humidity);
         Serial.println(" %");
@@ -120,6 +126,8 @@ void DHTSensor::readSensorValue()
         Serial.println(" °C");
         Serial.print("Timestamp = ");
         Serial.println(timestamp);
+
+        Serial.println("-----------------------");
     }
 
     setValue("humidity", humidity);

@@ -63,6 +63,7 @@ class MqttHandler {
       const deviceId = topic.split(MQTT_TOPIC_PREFIX)[1];
 
       this.dataBatches[deviceId] = this.dataBatches[deviceId] || [];
+
       this.validatePayloadStructure(payload);
 
       payload.data.forEach((item) => {
@@ -78,7 +79,9 @@ class MqttHandler {
       });
 
       if (this.dataBatches[deviceId].length >= MQTT_BATCH_SIZE) {
-        await this.sendPendingData();
+        console.log("Sending data batch for device", deviceId);
+        await this.insertDataBatch(this.dataBatches[deviceId]);
+        this.dataBatches[deviceId] = [];
       } else {
         this.restartSendTimer();
       }
@@ -107,6 +110,8 @@ class MqttHandler {
 
         await this.insertDataBatch(this.dataBatches[deviceId]);
         this.dataBatches[deviceId] = [];
+      } else {
+        console.log("No pending data for the device", deviceId);
       }
     }
   }
@@ -132,15 +137,13 @@ class MqttHandler {
   }
 
   restartSendTimer() {
-    // Reiniciar el temporizador si ya estaba activo
     if (this.sendTimer) {
       clearTimeout(this.sendTimer);
     }
 
-    // Establece un nuevo temporizador para enviar datos después de MQTT_SEND_INTERVAL milisegundos
     this.sendTimer = setTimeout(() => {
       this.sendPendingData();
-      this.sendTimer = null; // Limpiar el temporizador después de enviar los datos
+      this.sendTimer = null;
     }, MQTT_SEND_INTERVAL);
   }
 
@@ -148,7 +151,6 @@ class MqttHandler {
     if (this.mqttClient) {
       this.mqttClient.end();
 
-      // Envía los datos pendientes antes de cerrar la conexión
       await this.sendPendingData();
     }
   }

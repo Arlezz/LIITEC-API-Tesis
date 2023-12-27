@@ -8,21 +8,10 @@ class Device
 {
     private:
         bool enabled = false;
-        //bool validPins = true;
         std::map<String, bool> validPins;
         String deviceName = "";
 
     public:
-        /*void setValidPins(bool validPins)
-        {
-            this->validPins = validPins;
-        }
-
-        bool isValidPins()
-        {
-            return this->validPins;
-        }*/
-
         void setValidPins(String type, bool validPins)
         {
             this->validPins[type] = validPins;
@@ -42,7 +31,6 @@ class Device
             return valid;
         }
     
-
         void enable()
         {
             this->enabled = true;
