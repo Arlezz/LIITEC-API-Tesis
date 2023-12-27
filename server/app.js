@@ -22,6 +22,11 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 //routes
+app.get('/', (req, res) => {
+  res.json({
+    message: 'Welcome to LiitecApi'
+  });
+});
 app.use('/api',userRoutes);
 app.use('/api',channelRoutes);
 app.use('/api',dataRoutes);
