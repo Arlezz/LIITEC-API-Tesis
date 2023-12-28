@@ -3,10 +3,10 @@ const app = express();
 const morgan = require('morgan');
 const cors = require('cors');
 
-const channelRoutes = require('./routes/channels.routes');
-const userRoutes = require('./routes/user.routes');
-const deviceRoutes = require('./routes/device.routes');
-const dataRoutes = require('./routes/data.routes');
+const channelRoutes = require('./v1/routes/channels.routes');
+const dataRoutes = require('./v1/routes/data.routes');  
+const deviceRoutes = require('./v1/routes/device.routes');
+const userRoutes = require('./v1/routes/user.routes');
 
 
 
@@ -22,15 +22,10 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 //routes
-app.get('/', (req, res) => {
-  res.json({
-    message: 'Welcome to LiitecApi'
-  });
-});
-app.use('/api',userRoutes);
-app.use('/api',channelRoutes);
-app.use('/api',dataRoutes);
-app.use('/api',deviceRoutes);
+app.use('/api/v1',userRoutes);
+app.use('/api/v1',channelRoutes);
+app.use('/api/v1',dataRoutes);
+app.use('/api/v1',deviceRoutes);
 
 
 var createError = require('http-errors');

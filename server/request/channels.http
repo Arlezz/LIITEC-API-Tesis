@@ -1,25 +1,25 @@
 //get all channels
 ###
-GET http://localhost:8081/api/channels?page=1 HTTP/1.1
+GET http://localhost:8081/api/v1/channels?page=1 HTTP/1.1
 Content-Type: application/json
 Authorization: 68p7nyib281x9youicx9ra810uk4ve
 
 
 //get channel by channelId
 ###
-GET http://localhost:8081/api/channels/ch-32e48add-c489-425e-bd48-fd7ffbd7d8f7 HTTP/1.1
+GET http://localhost:8081/api/v1/channels/ch-32e48add-c489-425e-bd48-fd7ffbd7d8f7 HTTP/1.1
 Content-Type: application/json
 Authorization: mzk7g6nmig3ug315akon0s2qb81bfc
 
 //get my channels
 ###
-GET http://localhost:8081/api/users/658355548398f5fa3b69e862/channels HTTP/1.1
+GET http://localhost:8081/api/v1/users/658355548398f5fa3b69e862/channels HTTP/1.1
 Content-Type: application/json
 Authorization: 68p7nyib281x9youicx9ra810uk4ve
 
 //create channel
 ###
-POST http://localhost:8081/api/channels HTTP/1.1
+POST http://localhost:8081/api/v1/channels HTTP/1.1
 Content-Type: application/json
 Authorization: ch032ywc7wbwqwjnkrx23rmfdknb5m
 
@@ -32,7 +32,7 @@ Authorization: ch032ywc7wbwqwjnkrx23rmfdknb5m
 
 // access granted to user
 ###
-POST http://localhost:8081/api/channels/ch-32e48add-c489-425e-bd48-fd7ffbd7d8f7/access HTTP/1.1
+POST http://localhost:8081/api/v1/channels/ch-32e48add-c489-425e-bd48-fd7ffbd7d8f7/access HTTP/1.1
 Content-Type: application/json
 Authorization: 68p7nyib281x9youicx9ra810uk4ve
 
@@ -44,7 +44,7 @@ Authorization: 68p7nyib281x9youicx9ra810uk4ve
 
 //update channel
 ###
-PUT http://localhost:8081/api/channels/ch-32e48add-c489-425e-bd48-fd7ffbd7d8f7 HTTP/1.1
+PUT http://localhost:8081/api/v1/channels/ch-32e48add-c489-425e-bd48-fd7ffbd7d8f7 HTTP/1.1
 Content-Type: application/json
 Authorization: 68p7nyib281x9youicx9ra810uk4ve
 
@@ -61,6 +61,6 @@ Authorization: 68p7nyib281x9youicx9ra810uk4ve
 
 //delete channel
 ###
-DELETE http://localhost:8081/api/channels/ch-802c3cba-2cad-4dfd-a206-e19d3702a8be HTTP/1.1
+DELETE http://localhost:8081/api/v1/channels/ch-802c3cba-2cad-4dfd-a206-e19d3702a8be HTTP/1.1
 Content-Type: application/json
 Authorization: 68p7nyib281x9youicx9ra810uk4ve
