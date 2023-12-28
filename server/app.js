@@ -1,5 +1,4 @@
 const express = require('express');
-const app = express();
 const morgan = require('morgan');
 const cors = require('cors');
 
@@ -7,8 +6,13 @@ const channelRoutes = require('./v1/routes/channels.routes');
 const dataRoutes = require('./v1/routes/data.routes');  
 const deviceRoutes = require('./v1/routes/device.routes');
 const userRoutes = require('./v1/routes/user.routes');
+var { swaggerDocs: V1SwaggerDocs } = require('./v1/swagger');
 
 
+const app = express();
+
+// Middleware para Swagger
+V1SwaggerDocs(app, 8081);
 
 //settings
 app.set('json spaces', 2);
@@ -26,6 +30,7 @@ app.use('/api/v1',userRoutes);
 app.use('/api/v1',channelRoutes);
 app.use('/api/v1',dataRoutes);
 app.use('/api/v1',deviceRoutes);
+
 
 
 var createError = require('http-errors');
