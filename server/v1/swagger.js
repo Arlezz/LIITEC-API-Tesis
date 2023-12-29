@@ -36,7 +36,7 @@ const options = {
                 description: 'Local server'
             },
             {
-                url: 'https://18.228.38.251:8081/api/v1',
+                url: 'http://18.228.38.251:8081/api/v1',
                 description: 'Live server'
             }
         ],
