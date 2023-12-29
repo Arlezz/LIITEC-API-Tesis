@@ -11,8 +11,7 @@ var { swaggerDocs: V1SwaggerDocs } = require('./v1/swagger');
 
 const app = express();
 
-// Middleware para Swagger
-V1SwaggerDocs(app, 8081);
+
 
 //settings
 app.set('json spaces', 2);
@@ -31,7 +30,8 @@ app.use('/api/v1',channelRoutes);
 app.use('/api/v1',dataRoutes);
 app.use('/api/v1',deviceRoutes);
 
-
+// Middleware para Swagger
+V1SwaggerDocs(app, 8081);
 
 var createError = require('http-errors');
 

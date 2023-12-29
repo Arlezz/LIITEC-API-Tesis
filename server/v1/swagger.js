@@ -15,18 +15,34 @@ const options = {
                 url: 'https://github.com/Arlezz'
             }
         },
+        components: {
+            securitySchemes: {
+                ApiKeyAuth: {  
+                    type: 'apiKey',
+                    in: 'header',
+                    name: 'Authorization',
+                    description: 'Bearer token for authorization'
+                }
+            }
+        },
+        security: [
+            {
+                ApiKeyAuth: []  
+            }
+        ],
         servers: [
             {
                 url: 'http://localhost:8081/api/v1',
                 description: 'Local server'
             },
             {
-                url: 'https://ec2-18-228-38-251.sa-east-1.compute.amazonaws.com:8081/api/v1',
+                url: 'https://18.228.38.251:8081/api/v1',
                 description: 'Live server'
             }
         ],
+        
     },
-    apis: ['./server/v1/routes/*.js']
+    apis: ['./v1/routes/*.routes.js', './models/*.model.js']
 };
 
 //Docs en JSON format
