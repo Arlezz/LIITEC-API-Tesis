@@ -6,12 +6,9 @@ const channelRoutes = require('./v1/routes/channels.routes');
 const dataRoutes = require('./v1/routes/data.routes');  
 const deviceRoutes = require('./v1/routes/device.routes');
 const userRoutes = require('./v1/routes/user.routes');
-var { swaggerDocs: V1SwaggerDocs } = require('./v1/swagger');
-
+const { swaggerDocs: V1SwaggerDocs } = require('./v1/swagger');
 
 const app = express();
-
-
 
 //settings
 app.set('json spaces', 2);
@@ -19,6 +16,8 @@ app.set('json spaces', 2);
 //middleware
 //handle json body request
 app.use(cors());
+
+
 app.use(express.json());
 app.use(morgan('dev'));
 app.use(express.json());

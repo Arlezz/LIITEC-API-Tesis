@@ -1,12 +1,12 @@
 #!/usr/bin/env node
 
-var app = require('../app');
-var http = require('http');
-var dotenv = require('dotenv');
-var mongoose = require('mongoose');
-var MqttHandler = require('../controller/broker.controller');
+const app = require('../app');
+const http = require('http');
+const dotenv = require('dotenv');
+const mongoose = require('mongoose');
+const MqttHandler = require('../controller/broker.controller');
 
-let process = require('process');
+const process = require('process');
 
 dotenv.config({path: '.env'});
 const { MONGODB_URI, MQTT_HOST, MQTT_USER, MQTT_PASSWORD } = process.env;
@@ -30,7 +30,7 @@ const mqttClient = new MqttHandler(
 // Suscribirse a todos los tópicos usando el carácter comodín #
 mqttClient.subscribeToTopic("#");
 
-var httpServer = http.createServer(app);
+const httpServer = http.createServer(app);
 
 httpServer.listen(process.env.SERVER_PORT, function (err) {
     if (err) {

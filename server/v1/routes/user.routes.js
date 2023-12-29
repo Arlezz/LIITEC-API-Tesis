@@ -171,9 +171,6 @@ const authorization = require('../../auth/apiAuth');
  *                   example: Invalid user data
  */
 
-
-
-
 /**
  * @openapi
  * /users/{id}:
@@ -261,6 +258,8 @@ const authorization = require('../../auth/apiAuth');
  *                   type: string
  *                   example: User not found
  */
+
+
 
 //Get all users
 router.get("/users", authorization.requireAPIKeyOfType(USER_LEVEL_2),UserController.getUsers);
