@@ -16,7 +16,7 @@ const requireAPIKeyOfType = (minPermissionLevel) => {
       const apiKey = req.header("Authorization");
 
       if (!apiKey) {
-        return res.status(401).json({ error: "Access Forbiden" });
+        return res.status(401).json({ error: "Access Forbbiden" });
       }
 
       const keyProjection = { _id: 0, __v: 0 };
@@ -24,7 +24,7 @@ const requireAPIKeyOfType = (minPermissionLevel) => {
       const key = await Key.findOne({ key: apiKey}, keyProjection);
 
       if (!key) {
-        return res.status(401).json({ error: "Access Forbiden" });
+        return res.status(401).json({ error: "Access Forbbiden" });
       }
 
       const userProjection = { __v: 0, password: 0 };
@@ -32,7 +32,7 @@ const requireAPIKeyOfType = (minPermissionLevel) => {
       const user = await User.findById(key.user, userProjection);
 
       if (!user) {
-        return res.status(401).json({ error: "Access Forbiden" });
+        return res.status(401).json({ error: "Access Forbbiden" });
       }
       
       const localUser = {
@@ -50,7 +50,7 @@ const requireAPIKeyOfType = (minPermissionLevel) => {
       req.user = localUser;
       
       if (!user) {
-        return res.status(401).json({ error: "Access Forbiden" });
+        return res.status(401).json({ error: "Access Forbbiden" });
       }
 
       const userPermissionLevel = localUser.apiKey.type;
@@ -64,7 +64,7 @@ const requireAPIKeyOfType = (minPermissionLevel) => {
       ) {
         next();
       } else {
-        return res.status(403).json({ error: "Access Forbiden" });
+        return res.status(401).json({ error: "Access Forbbiden" });
       }
     } catch (error) {
       console.error(error);

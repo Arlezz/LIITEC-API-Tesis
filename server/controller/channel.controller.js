@@ -19,30 +19,45 @@ const ChannelController = {
 
       const channels = await channelSchema.aggregate([
         {
-          $lookup: {
-            from: 'devices',
-            localField: 'channelId',
-            foreignField: 'channelId',
-            as: 'myDevices',
+          $facet: {
+            data: [
+              {
+                $lookup: {
+                  from: 'devices',
+                  localField: 'channelId',
+                  foreignField: 'channelId',
+                  as: 'myDevices',
+                },
+              },
+              {
+                $addFields: {
+                  deviceCount: { $size: '$myDevices' },
+                  devices: { $concat: ['/api/channels/', '$channelId', '/devices'] },
+                },
+              },
+              {
+                $project: {
+                  _id: 0,
+                  __v: 0,
+                  myDevices: 0,
+                },
+              },
+              {
+                $skip: (Number(page) - 1) * Number(page_size),
+              },
+              {
+                $limit: Number(page_size),
+              },
+            ],
           },
         },
         {
-          $addFields: {
-            deviceCount: { $size: '$myDevices' },
-            devices: { $concat: ['/api/channels/', '$channelId', '/devices'] },
-
-          },
+          $unwind: '$data',
         },
         {
-          $project: {
-            _id: 0,
-            __v: 0,
-            myDevices: 0
-          },
-        }
-      ])
-        .limit(Number(page_size))
-        .skip((Number(page) - 1) * Number(page_size));
+          $replaceRoot: { newRoot: '$data' },
+        },
+      ]);
 
       if (!channels || channels.length === 0) {
         return res.status(404).json({ error: "Channels not found" });
@@ -53,10 +68,12 @@ const ChannelController = {
         totalPages: totalPages,
         next:
           page < totalPages
-            ? `/api/channels?page=${page + 1}&page_size=${page_size}`
+            ? `/api/channels?page=${parseInt(page, 10) + 1}&page_size=${page_size}`
             : null,
         previous:
-          page > 1 ? `/api/channels?page=${page - 1}&page_size=${page_size}` : null,
+          page > 1
+            ? `/api/channels?page=${parseInt(page, 10) - 1}&page_size=${page_size}`
+            : null,
         results: channels,
       };
 
@@ -112,11 +129,11 @@ const ChannelController = {
         const key = await keySchema.findOne({ user: user._id, channelAccess: id });
 
         if (!key) {
-          return res.status(403).json({ error: "Access Forbidden" });
+          return res.status(401).json({ error: "Access Forbidden" });
         }
 
         if (key.expirationDate < Date.now()) {
-          return res.status(403).json({ error: "Access Forbidden" });
+          return res.status(401).json({ error: "Access Forbidden" });
         }
       } else {
 
@@ -124,7 +141,7 @@ const ChannelController = {
         var id2 = new ObjectId(channel[0].owner);
   
         if (!id1.equals(id2)) {
-          return res.status(403).json({ error: "Access Forbidden" });
+          return res.status(401).json({ error: "Access Forbidden" });
         }
       }
       
@@ -145,7 +162,7 @@ const ChannelController = {
       const id2 = userId;
   
       if (!id1.equals(id2)) {
-        return res.status(403).json({ error: "Access Forbidden" });
+        return res.status(401).json({ error: "Access Forbidden" });
       }
   
       const totalChannels = await channelSchema.countDocuments({ owner: id2 });
@@ -186,7 +203,7 @@ const ChannelController = {
       var id2 = new ObjectId(owner);
 
       if (!id1.equals(id2)) {
-        return res.status(403).json({ error: "Access Forbidden" });
+        return res.status(401).json({ error: "Access Forbidden" });
       }
 
       const newChannel = new channelSchema({
@@ -236,7 +253,7 @@ const ChannelController = {
       var id2 = new ObjectId(channel.owner);
 
       if (!id1.equals(id2)) {
-        return res.status(403).json({ error: "Access Forbidden" });
+        return res.status(401).json({ error: "Access Forbidden" });
       }
 
       const hasChanges = (
@@ -254,7 +271,7 @@ const ChannelController = {
       console.log(hasChanges);
       
       if (!hasChanges) {
-        return res.status(400).json({ error: "No changes to update" });
+        return res.status(304).json({ error: "No changes to detected" });
       }
 
       if (name !== undefined && name !== null) {
@@ -315,7 +332,7 @@ const ChannelController = {
       var id2 = new ObjectId(channel.owner);
 
       if (!id1.equals(id2)) {
-        return res.status(403).json({ error: "Access Forbidden" });
+        return res.status(401).json({ error: "Access Forbidden" });
       }
 
       await channelSchema.deleteOne({ channelId: id });
@@ -343,7 +360,7 @@ const ChannelController = {
       var id2 = new ObjectId(channel.owner);
 
       if (!id1.equals(id2)) {
-        return res.status(403).json({ error: "Access Forbidden" });
+        return res.status(401).json({ error: "Access Forbidden" });
       }
 
       const user = await userSchema.find({ _id: userId });

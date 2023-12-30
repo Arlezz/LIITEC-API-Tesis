@@ -118,6 +118,11 @@ const userSchema = new Schema({
     default: Date.now,
     required: true,
   },
+  updatedOn: {
+    type: Date,
+    default: Date.now,
+    required: true,
+  }
 });
 
 module.exports = mongoose.model("user", userSchema);

@@ -33,6 +33,10 @@ const keySchema = new Schema(
             type: Date,
             default: Date.now,
             required: true
+        },
+        updatedOn: {
+            type: Date,
+            default: Date.now,
         }
     }
 );
