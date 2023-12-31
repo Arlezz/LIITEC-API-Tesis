@@ -21,7 +21,7 @@ const authorization = require('../../auth/apiAuth');
  *       - ApiKeyAuth: []
  *     responses:
  *       200:
- *         description: |
+ *         description: 
  *           This path returns all existing users in the system.
  *           Requires level 2 authentication.
  *         content:
@@ -78,9 +78,6 @@ const authorization = require('../../auth/apiAuth');
  *             schema:
  *               type: object
  *               properties:
- *                 status:
- *                   type: string
- *                   example: OK
  *                 data:
  *                   $ref: '#/components/schemas/User'
  *       401:
@@ -225,9 +222,6 @@ const authorization = require('../../auth/apiAuth');
  *             schema:
  *               type: object
  *               properties:
- *                 status:
- *                   type: string
- *                   example: OK
  *                 data:
  *                   $ref: '#/components/schemas/User'
  *       304:
@@ -330,7 +324,7 @@ const authorization = require('../../auth/apiAuth');
  *                   type: string
  *                   example: User not found
  *       500:
- *         description: The requested user was not found on the server.
+ *         description: The request could not be processed. The user was not deleted. This may be because there are no users currently registered.
  *         content:
  *           application/json:
  *             schema:

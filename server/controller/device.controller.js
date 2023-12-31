@@ -66,7 +66,7 @@ const DeviceController = {
             var id2 = new ObjectId(channel.owner);
 
             if (!id1.equals(id2)) {
-                return res.status(403).json({ error: "Access Forbidden" });
+                return res.status(401).json({ error: "Access Forbidden" });
             }
         
             const newDevice = new deviceSchema({
@@ -132,13 +132,13 @@ const DeviceController = {
             const key = await keySchema.findOne({ user: user._id, channelAccess: channelId });
 
             if (!key) {
-              return res.status(403).json({ error: "Access Forbidden" });
+              return res.status(401).json({ error: "Access Forbidden" });
             }
 
             const dateNow = new Date(Date.now());
 
             if (key.expirationDate <  dateNow) {
-              return res.status(403).json({ error: "Access Forbidden" });
+              return res.status(401).json({ error: "Access Forbidden" });
             }
 
           } else {
@@ -147,9 +147,8 @@ const DeviceController = {
             const id2 = new ObjectId(channel.owner);
         
             if (!id1.equals(id2)) {
-              return res.status(403).json({ error: "Access Forbidden" });
+              return res.status(401).json({ error: "Access Forbidden" });
             }
-
           }
       
           // Obtener el total de dispositivos
@@ -203,13 +202,13 @@ const DeviceController = {
                 const key = await keySchema.findOne({ user: user._id, channelAccess: channelId });
 
                 if (!key) {
-                    return res.status(403).json({ error: "Access Forbidden" });
+                    return res.status(401).json({ error: "Access Forbidden" });
                 }
 
                 const dateNow = new Date(Date.now());
 
                 if (key.expirationDate < dateNow) {
-                    return res.status(403).json({ error: "Access Forbidden" });
+                    return res.status(401).json({ error: "Access Forbidden" });
                 }
             } else {
 
@@ -217,7 +216,7 @@ const DeviceController = {
                 const id2 = new ObjectId(channel.owner);
 
                 if (!id1.equals(id2)) {
-                    return res.status(403).json({ error: "Access Forbidden" });
+                    return res.status(401).json({ error: "Access Forbidden" });
                 }
             }
 
@@ -230,7 +229,7 @@ const DeviceController = {
             }
 
             if (device.channelId !== channelId) {
-                return res.status(403).json({ error: "Access Forbidden" });
+                return res.status(401).json({ error: "Access Forbidden" });
             }
 
             res.json(device);
@@ -266,7 +265,7 @@ const DeviceController = {
             const id2 = new ObjectId(channel.owner);
 
             if (!id1.equals(id2)) {
-                return res.status(403).json({ error: "Access Forbidden" });
+                return res.status(401).json({ error: "Access Forbidden" });
             }
 
             const device = await deviceSchema.findOne({ deviceId: deviceId });
@@ -276,7 +275,7 @@ const DeviceController = {
             }
 
             if (device.channelId !== channelId) {
-                return res.status(403).json({ error: "Access Forbidden" });
+                return res.status(401).json({ error: "Access Forbidden" });
             }
 
             const hasChanges = (
@@ -286,7 +285,7 @@ const DeviceController = {
             );
 
             if (!hasChanges) {
-                return res.status(400).json({ error: "No changes to update" });
+                return res.status(400).json({ error: "No changes to detected" });
             }
 
             if (name !== undefined) {
@@ -305,7 +304,7 @@ const DeviceController = {
 
             await device.save();
 
-            res.json({ message: "Device updated successfully" });
+            res.json({ message: "Device successfully updated" });
 
         } catch (error) {
             console.error(error);
@@ -329,7 +328,7 @@ const DeviceController = {
             var id2 = new ObjectId(channel.owner);
 
             if (!id1.equals(id2)) {
-                return res.status(403).json({ error: "Access Forbidden" });
+                return res.status(401).json({ error: "Access Forbidden" });
             }
 
             const device = await deviceSchema.findOne({ deviceId: deviceId });
@@ -341,7 +340,7 @@ const DeviceController = {
             }
 
             if (device.channelId !== channelId) {
-                return res.status(403).json({ error: "Access Forbidden" });
+                return res.status(401).json({ error: "Access Forbidden" });
             }
 
             await userSchema.updateMany(
