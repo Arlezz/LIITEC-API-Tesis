@@ -1,6 +1,6 @@
 //get all datas
 ###
-GET http://localhost:8081/api/v1/data?page=1&page_size=1 HTTP/1.1
+GET http://localhost:8081/api/v1/data?page=1&page_size=20&variable=uv&order=asc HTTP/1.1
 Content-Type: application/json
 Authorization: 68p7nyib281x9youicx9ra810uk4ve
 
@@ -9,7 +9,7 @@ Authorization: 68p7nyib281x9youicx9ra810uk4ve
 ###
 GET http://localhost:8081/api/v1/data/dv-089f98d5-25f4-4150-ab4e-18be2f098da2?page_size=100 HTTP/1.1
 Content-Type: application/json
-Authorization: mzk7g6nmig3ug315akon0s2qb81bfc
+Authorization: 68p7nyib281x9youicx9ra810uk4ve
 
 //Get specific variable datas from a device 
 ###
@@ -19,15 +19,15 @@ Authorization: mzk7g6nmig3ug315akon0s2qb81bfc
 
 //Get specific variable datas from a device with a aggregation operation
 ###
-GET http://localhost:8081/api/v1/data/dv-089f98d5-25f4-4150-ab4e-18be2f098da2/agregate?operation=sum HTTP/1.1
+GET http://localhost:8081/api/v1/data/dv-089f98d5-25f4-4150-ab4e-18be2f098da2/agregate?operation=avg HTTP/1.1
 Content-Type: application/json
-Authorization: mzk7g6nmig3ug315akon0s2qb81bfc
+Authorization: 68p7nyib281x9youicx9ra810uk4ve
 
 //Get last data from a device
 ###
 GET http://localhost:8081/api/v1/data/dv-089f98d5-25f4-4150-ab4e-18be2f098da2/last HTTP/1.1
 Content-Type: application/json
-Authorization: mzk7g6nmig3ug315akon0s2qb81bfc
+Authorization: 68p7nyib281x9youicx9ra810uk4ve
 //68p7nyib281x9youicx9ra810uk4ve
 
 //Export data from a channel

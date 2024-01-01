@@ -68,11 +68,11 @@ const ChannelController = {
         totalPages: totalPages,
         next:
           page < totalPages
-            ? `/api/channels?page=${parseInt(page, 10) + 1}&page_size=${page_size}`
+            ? `/api/v1/channels?page=${parseInt(page, 10) + 1}&page_size=${page_size}`
             : null,
         previous:
           page > 1
-            ? `/api/channels?page=${parseInt(page, 10) - 1}&page_size=${page_size}`
+            ? `/api/v1/channels?page=${parseInt(page, 10) - 1}&page_size=${page_size}`
             : null,
         results: channels,
       };
@@ -184,8 +184,8 @@ const ChannelController = {
       res.status(200).json({
         count: channels.length,
         total_pages: total_pages,
-        next: page < total_pages ? `/api/users/${userId}/channels?page=${page + 1}&page_size=${page_size}` : null,
-        previous: page > 1 ? `/api/users/${userId}/channels?page=${page - 1}&page_size=${page_size}` : null,
+        next: page < total_pages ? `/api/v1/users/${userId}/channels?page=${parseInt(page, 10) + 1}&page_size=${page_size}` : null,
+        previous: page > 1 ? `/api/v1/users/${userId}/channels?page=${parseInt(page, 10) - 1}&page_size=${page_size}` : null,
         results: channels,
       });
     } catch (error) {

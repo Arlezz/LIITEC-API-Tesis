@@ -173,8 +173,8 @@ const DeviceController = {
           const response = {
             count: totalDevices,
             totalPages: totalPages,
-            next: page < totalPages ? `/api/devices/${channelId}?page=${page + 1}&page_size=${page_size}` : null,
-            previous: page > 1 ? `/api/devices/${channelId}?page=${page - 1}&page_size=${page_size}` : null,
+            next: page < totalPages ? `/api/v1/channels/${channelId}/devices?page=${page + 1}&page_size=${page_size}` : null,
+            previous: page > 1 ? `/api/v1/channels/${channelId}/devices?page=${page - 1}&page_size=${page_size}` : null,
             results: devices,
           };
       

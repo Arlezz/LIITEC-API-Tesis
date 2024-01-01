@@ -9,15 +9,20 @@ const DataController = {
   getDatas: async (req, res) => {
     // Obtén todos los datos de la base de datos con paginacion
     try {
-      const { page = 1, page_size = 10 } = req.query;
+      const { page = 1, page_size = 10, order, variable } = req.query;
 
-      const totalData = await dataSchema.countDocuments();
-      const totalPages = Math.ceil(totalData / page_size);
+      const projection = { _id: 0, __v: 0 };
 
-      const projection = { _id: 0, deviceId: 0, __v: 0 };
+      let query = {};
+
+      if (variable) {
+        // Si se especifica una o varias variables, buscar por ellas
+        query.measurement = variable;
+      }
 
       const data = await dataSchema
-        .find({}, projection)
+        .find(query, projection)
+        .sort({ createdOn: order === "asc" ? 1 : order === "desc" ? -1 : -1 })
         .limit(Number(page_size))
         .skip((Number(page) - 1) * Number(page_size));
 
@@ -25,16 +30,20 @@ const DataController = {
         return res.status(404).json({ error: "Data not found" });
       }
 
+      const totalData = await dataSchema.countDocuments(query);
+      const totalPages = Math.ceil(totalData / page_size);
+
+
       // Construir la respuesta de paginación
       const response = {
         count: totalData,
         totalPages: totalPages,
         next:
           page < totalPages
-            ? `/api/data?page=${page + 1}&page_size=${page_size}`
+            ? `/api/v1/data?page=${parseInt(page, 10) + 1}&page_size=${page_size}`
             : null,
         previous:
-          page > 1 ? `/api/data?page=${page - 1}&page_size=${page_size}` : null,
+          page > 1 ? `/api/v1/data?page=${parseInt(page, 10) - 1}&page_size=${page_size}` : null,
         results: data,
       };
 
@@ -74,20 +83,20 @@ const DataController = {
         const key = await keySchema.findOne({ user: user._id, channelAccess: channelId });
 
         if (!key) {
-          return res.status(403).json({ error: "Access Forbidden" });
+          return res.status(401).json({ error: "Access Forbidden" });
         }
 
         const dateNow = new Date(Date.now());
 
         if (key.expirationDate <  dateNow) {
-          return res.status(403).json({ error: "Access Forbidden" });
+          return res.status(401).json({ error: "Access Forbidden" });
         }
       } else {
           const id1 = user._id;
           const id2 = channel.owner;
   
           if (!id1.equals(id2)) {
-            return res.status(403).json({ error: "Access Forbidden" });
+            return res.status(401).json({ error: "Access Forbidden" });
           } 
       }
 
@@ -127,17 +136,17 @@ const DataController = {
         total_pages: totalPages,
         next:
           data.length === page_size
-            ? `/api/data/${deviceId}?page=${page + 1}&page_size=${page_size}`
+            ? `/api/v1/data/${deviceId}?page=${parseInt(page, 10) + 1}&page_size=${page_size}`
             : null,
         previous:
           page > 1
-            ? `/api/data/${deviceId}?page=${page - 1}&page_size=${page_size}`
+            ? `/api/v1/data/${deviceId}?page=${parseInt(page, 10) - 1}&page_size=${page_size}`
             : null,
         results: data,
       });
     } catch (error) {
       console.error(error);
-      res.status(500).json({ error: error.message || "No Data Found" });
+      res.status(500).json({ error: error.message || "Error getting data" });
     }
   },
 
@@ -180,13 +189,13 @@ const DataController = {
           const key = await keySchema.findOne({ user: user._id, channelAccess: channelId });
   
           if (!key) {
-            return res.status(403).json({ error: "Access Forbidden" });
+            return res.status(401).json({ error: "Access Forbidden" });
           }
   
           const dateNow = new Date(Date.now());
   
           if (key.expirationDate <  dateNow) {
-            return res.status(403).json({ error: "Access Forbidden" });
+            return res.status(401).json({ error: "Access Forbidden" });
           }
 
       } else {
@@ -194,7 +203,7 @@ const DataController = {
           const id2 = channel.owner;
 
           if (!id1.equals(id2)) {
-            return res.status(403).json({ error: "Access Forbidden" });
+            return res.status(401).json({ error: "Access Forbidden" });
           }
       }
 
@@ -234,7 +243,7 @@ const DataController = {
 
       res.json(data.length > 1 ? data : data[0]);
     } catch (error) {
-      res.status(500).json({ error: error.message || "No Data Found" });
+      res.status(500).json({ error: error.message || "Error getting data" });
     }
   },
 
@@ -264,13 +273,13 @@ const DataController = {
             const key = await keySchema.findOne({ user: user._id, channelAccess: channelId });
     
             if (!key) {
-              return res.status(403).json({ error: "Access Forbidden" });
+              return res.status(401).json({ error: "Access Forbidden" });
             }
     
             const dateNow = new Date(Date.now());
     
             if (key.expirationDate <  dateNow) {
-              return res.status(403).json({ error: "Access Forbidden" });
+              return res.status(401).json({ error: "Access Forbidden" });
             }
   
       } else {
@@ -278,7 +287,7 @@ const DataController = {
           const id2 = channel.owner;
   
           if (!id1.equals(id2)) {
-            return res.status(403).json({ error: "Access Forbidden" });
+            return res.status(401).json({ error: "Access Forbidden" });
           }
       }
 
@@ -319,7 +328,7 @@ const DataController = {
 
       res.json(latestData.map((item) => item.latestMeasurement));
     } catch (error) {
-      res.status(500).json({ error: error.message || "No Data Found" });
+      res.status(500).json({ error: error.message || "Error getting data" });
     }
   },
 
@@ -346,7 +355,7 @@ const DataController = {
       const id2 = channel.owner;
 
       if (!id1.equals(id2)) {
-        return res.status(403).json({ error: "Access Forbidden" });
+        return res.status(401).json({ error: "Access Forbidden" });
       }
 
       const csvData = [];
@@ -366,6 +375,10 @@ const DataController = {
         }
       }
 
+      if (!csvData || csvData.length === 0) {
+        return res.status(404).json({ error: "No data found for this channel" });
+      }
+
       const csv = Papa.unparse(csvData, {
         header: true
       });
@@ -381,7 +394,7 @@ const DataController = {
       });
       
     } catch (error) {
-      res.status(500).json({ error: error.message || "No Data Found" });
+      res.status(500).json({ error: error.message || "Error getting data" });
     } 
   }
 };

@@ -69,16 +69,42 @@ const authorization = require("../../auth/apiAuth");
  *           example: ch-32e48add-c489-425e-bd48-fd7ffbd7d8f7
  *         description: ID of the channel from which devices are returned 
  *         required: true
+ *       - in: query
+ *         name: page
+ *         schema:
+ *           type: integer
+ *           example: 1
+ *         description: Page number for pagination (default 1)
+ *       - in: query
+ *         name: page_size
+ *         schema:
+ *           type: integer
+ *           example: 10
+ *         description: Number of items per page (default 10)
  *     responses:
  *       200:
- *         description: 
- *           This path returns all existing devices in the channel.
+ *         description: Returns a list of devices from the channel
  *         content:
  *           application/json:
  *             schema:
- *               type: array
- *               items:
- *                 $ref: '#/components/schemas/Device'
+ *               type: object
+ *               properties:
+ *                 count:
+ *                   type: integer
+ *                   example: 1
+ *                 totalPages:
+ *                   type: integer
+ *                   example: 2
+ *                 next:
+ *                   type: string
+ *                   example: "/api/v1/channels/ch-32e48add-c489-425e-bd48-fd7ffbd7d8f7/devices?page=2&page_size=10"
+ *                 previous:
+ *                   type: string
+ *                   example: null
+ *                 results:
+ *                   type: array
+ *                   items:
+ *                     $ref: '#/components/schemas/Device'
  *       401:
  *         description: You do not have the necessary permissions to access this route.
  *         content:

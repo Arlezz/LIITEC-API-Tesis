@@ -28,13 +28,13 @@ const authorization = require("../../auth/apiAuth");
  *         schema:
  *           type: integer
  *           example: 1
- *         description: Page number for pagination
+ *         description: Page number for pagination (default 1)
  *       - in: query
  *         name: page_size
  *         schema:
  *           type: integer
  *           example: 10
- *         description: Number of items per page
+ *         description: Number of items per page (default 10)
  *     responses:
  *       200:
  *         description: Returns a list of all channels.
@@ -381,15 +381,39 @@ const authorization = require("../../auth/apiAuth");
  *           example: 5f8d0f7a3f8d7a0f7d8a0f7d
  *         description: ID of the user to get the channels
  *         required: true
+ *       - in: query
+ *         name: page
+ *         schema:
+ *           type: integer
+ *           example: 1
+ *         description: Page number for pagination (default 1)
+ *       - in: query
+ *         name: page_size
+ *         schema:
+ *           type: integer
+ *           example: 10
+ *         description: Number of items per page (default 10)
  *     responses:
  *       200:
- *         description: 
+ *         description: Returns a list of all channels of a user.
  *         content:
  *           application/json:
  *             schema:
  *               type: object
  *               properties:
- *                 data:
+ *                 count:
+ *                   type: integer
+ *                   example: 1
+ *                 totalPages:
+ *                   type: integer
+ *                   example: 1
+ *                 next:
+ *                   type: string
+ *                   example: "/api/users/5f8d0f7a3f8d7a0f7d8a0f7d/channels?page=2&page_size=10"
+ *                 previous:
+ *                   type: string
+ *                   example: null
+ *                 results:
  *                   type: array
  *                   items:
  *                     $ref: '#/components/schemas/Channel'
