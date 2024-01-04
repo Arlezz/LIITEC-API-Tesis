@@ -19,6 +19,19 @@ const authorization = require("../../auth/apiAuth");
  *       - Devices
  *     security:
  *       - ApiKeyAuth: []
+ *     parameters:
+ *       - in: query
+ *         name: page
+ *         schema:
+ *           type: integer
+ *           example: 1
+ *         description: Page number for pagination (default 1, optional)
+ *       - in: query
+ *         name: page_size
+ *         schema:
+ *           type: integer
+ *           example: 10
+ *         description: Number of items per page (default 10, optional)
  *     responses:
  *       200:
  *         description: 
@@ -27,9 +40,24 @@ const authorization = require("../../auth/apiAuth");
  *         content:
  *           application/json:
  *             schema:
- *               type: array
- *               items:
- *                 $ref: '#/components/schemas/Device'
+ *               type: object
+ *               properties:
+ *                 count:
+ *                   type: integer
+ *                   example: 1
+ *                 totalPages:
+ *                   type: integer
+ *                   example: 1
+ *                 next:
+ *                   type: string
+ *                   example: "/api/v1/devices?page=1&page_size=10"
+ *                 previous:
+ *                   type: string
+ *                   example: null
+ *                 results:
+ *                   type: array
+ *                   items:
+ *                     $ref: '#/components/schemas/Data'
  *       404:
  *         description: The requested devices were not found on the server.
  *         content:

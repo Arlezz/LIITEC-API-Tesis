@@ -6,6 +6,7 @@ const channelRoutes = require('./v1/routes/channels.routes');
 const dataRoutes = require('./v1/routes/data.routes');  
 const deviceRoutes = require('./v1/routes/device.routes');
 const userRoutes = require('./v1/routes/user.routes');
+const keyRoutes = require('./v1/routes/key.routes');
 const { swaggerDocs: V1SwaggerDocs } = require('./v1/swagger');
 
 const app = express();
@@ -25,6 +26,7 @@ app.use(express.urlencoded({ extended: true }));
 
 //routes
 app.use('/api/v1',userRoutes);
+app.use('/api/v1',keyRoutes);
 app.use('/api/v1',channelRoutes);
 app.use('/api/v1',dataRoutes);
 app.use('/api/v1',deviceRoutes);

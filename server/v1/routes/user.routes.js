@@ -19,6 +19,19 @@ const authorization = require('../../auth/apiAuth');
  *       - Users
  *     security:
  *       - ApiKeyAuth: []
+ *     parameters:
+ *       - in: query
+ *         name: page
+ *         schema:
+ *           type: integer
+ *           example: 1
+ *         description: Page number for pagination (default 1)
+ *       - in: query
+ *         name: page_size
+ *         schema:
+ *           type: integer
+ *           example: 10
+ *         description: Number of items per page (default 10)
  *     responses:
  *       200:
  *         description: 
@@ -27,9 +40,24 @@ const authorization = require('../../auth/apiAuth');
  *         content:
  *           application/json:
  *             schema:
- *               type: array
- *               items:
- *                 $ref: '#/components/schemas/User'
+ *               type: object
+ *               properties:
+ *                 count:
+ *                   type: integer
+ *                   example: 1
+ *                 totalPages:
+ *                   type: integer
+ *                   example: 2
+ *                 next:
+ *                   type: string
+ *                   example: "/api/v1/users?page=1&page_size=10"
+ *                 previous:
+ *                   type: string
+ *                   example: null
+ *                 results:
+ *                   type: array
+ *                   items:
+ *                     $ref: '#/components/schemas/User'
  *
  *       401:
  *         description: You do not have the necessary permissions to access this route.

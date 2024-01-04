@@ -8,8 +8,36 @@ const ObjectId = require("mongoose").Types.ObjectId;
 const UserController = {
   getUsers: async (req, res) => {
     try {
-      const result = await userSchema.find({}, { password: 0, __v: 0, "acls._id": 0 });
-      res.status(200).json(result); // Cambiado a 200 OK
+
+      const page = parseInt(req.query.page) || 1;
+      const page_size = parseInt(req.query.page_size) || 10; // Puedes ajustar el límite según tus necesidades
+
+      const totalUsers = await userSchema.countDocuments();
+
+      const totalPages = Math.ceil(totalUsers / page_size);
+
+      const startIndex = (page - 1) * page_size;
+
+      const projection = { password: 0, __v: 0, "acls._id": 0 };
+
+
+      const users = await userSchema.find({}, projection)
+        .skip(startIndex)
+        .limit(page_size)
+
+      if (!users) {
+        return res.status(404).json({ error: "Users not found" });
+      }
+
+      const response = {
+        count: totalUsers,
+        totalPages: totalPages,
+        next: page < totalPages ? `/api/v1/users?page=${page + 1}&page_size=${page_size}` : null,
+        previous: page > 1 ? `/api/v1/users?page=${page - 1}&page_size=${page_size}` : null,
+        results: users
+      };
+
+      res.status(200).json(response);
     } catch (error) {
       console.error(error);
       res.status(500).json({ error: "Error getting users" }); // Cambiado a 500 Internal Server Error
