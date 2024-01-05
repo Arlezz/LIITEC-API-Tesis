@@ -337,6 +337,8 @@ const ChannelController = {
 
       await channelSchema.deleteOne({ channelId: id });
 
+      await deviceSchema.deleteMany({ channelId: id });
+
       res.json({ message: "Channel deleted" });    
     
     } catch (error) {

@@ -1,5 +1,7 @@
 const userSchema = require("../models/user.model");
 const keySchema = require("../models/key.model");
+const channelSchema = require("../models/channel.model");
+const deviceSchema = require("../models/device.model");
 const authorization = require("../auth/apiAuth");
 const bcrypt = require("bcryptjs");
 const ObjectId = require("mongoose").Types.ObjectId;
@@ -218,13 +220,30 @@ const UserController = {
     try {
       const { id } = req.params;
 
-      const user = await userSchema.findById(id);
-
+      // Buscar y eliminar al usuario
+      const user = await userSchema.findByIdAndDelete(id);
+      
       if (!user) {
         return res.status(404).json({ error: "User not found" });
       }
 
-      await userSchema.findByIdAndDelete(id);
+      await keySchema.deleteMany({ 
+        $or: [
+            { user: user._id }, // Documentos con campo "user" igual a userId
+            { channelOwner: user._id } // Documentos con campo "channelOwner" igual a userId
+        ]
+      });
+
+      // Buscar los canales asociados al usuario
+      const channelIds = await channelSchema.find({ owner: user._id }, { _id: 1 });
+
+      // Eliminar los canales asociados al usuario
+      await channelSchema.deleteMany({ owner: user._id });
+
+      for (const channelId of channelIds) {
+        // Eliminar los dispositivos asociados a los canales
+        await deviceSchema.deleteMany({ channelId: channelId._id });
+      }
       
       res.status(200).json({ message: "User deleted" });
     } catch (error) {

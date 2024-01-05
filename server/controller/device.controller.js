@@ -2,6 +2,7 @@ const deviceSchema = require("../models/device.model");
 const channelSchema = require("../models/channel.model");
 const userSchema = require("../models/user.model");
 const keySchema = require("../models/key.model");
+const mqttClient = require("../bin/www");
 const ObjectId = require("mongoose").Types.ObjectId;
 const { v4: uuidv4 } = require("uuid");
 
@@ -298,6 +299,17 @@ const DeviceController = {
 
             if (isActive !== undefined) {
                 device.isActive = isActive;
+
+                const topic = "/devices/" + deviceId;
+
+                const active = isActive ? "true" : "false";
+
+                const payload = {
+                    active: active
+                }
+                
+                mqttClient.publishMessage(topic, payload);
+
             }
 
             device.updatedOn = Date.now();

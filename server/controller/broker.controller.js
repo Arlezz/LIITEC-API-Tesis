@@ -53,6 +53,21 @@ class MqttHandler {
     }
   }
 
+  publishMessage(topic, payload) {
+
+    const message = JSON.stringify(payload);
+
+    if (this.mqttClient) {
+      this.mqttClient.publish(topic, message, (err) => {
+        if (err) {
+          console.error(`Error publishing message on topic ${topic}: ${err}`);
+        } else {
+          console.log(`Message published on topic ${topic}`);
+        }
+      });
+    }
+  }
+
   async handleMqttMessage(topic, message) {
     try {
       const payload = JSON.parse(message.toString());

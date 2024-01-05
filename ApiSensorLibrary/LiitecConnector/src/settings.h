@@ -39,6 +39,7 @@ CONFIGURACIÓN DEL WIFI
 //#define wifi_ssid "Antony"          // SSID (nombre) de tu red WiFi
 //#define wifi_password "antony12345"  // Contraseña de tu red WiFi
 
+
 /**************************************************************
 CONFIGURACIÓN DEL BROKER MQTT
     Aviso:
@@ -55,6 +56,7 @@ CONFIGURACIÓN DEL BROKER MQTT
 #define mqtt_port 1883                      // Puerto del broker MQTT
 #define mqtt_user "avanzado"          // Nombre de usuario para la autenticación en el broker MQTT
 #define mqtt_password "IluminadoAmado2024!"  // Contraseña para la autenticación en el broker MQTT
+
 
 /**************************************************************
 CONFIGURACIÓN DE LOS TOPICS MQTT
