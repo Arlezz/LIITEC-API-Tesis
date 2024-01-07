@@ -19,6 +19,7 @@ class MQSensor : public Sensor
 
         void setup(int pin = -1, int type = MQ135, const char* topic = "/device/mq", String name = "mq");
         void loop(unsigned int timeout = 2000U);
+        void update(StaticJsonDocument<200> doc) override;
         void readSensorValue() override;
 
     private:

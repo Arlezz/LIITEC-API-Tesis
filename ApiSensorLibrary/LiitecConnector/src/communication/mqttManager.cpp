@@ -1,7 +1,10 @@
 #include <communication/mqttManager.h>
+#include <sensors/sensor_dht.h>
+#include <sensors/sensor_mq.h>
+#include <sensors/sensor_gyml8511.h>
 
 MqttManager::MqttManager() : client(wifiClient) {
-
+    espId = getEspId();
 }
 
 void MqttManager::setup()
@@ -37,6 +40,33 @@ void MqttManager::publish(const char *topic, StaticJsonDocument<200> &doc)
     client.publish(topic, buffer);
 }
 
+void MqttManager::report(const char *topic, StaticJsonDocument<200> &doc)
+{
+    if (!isValidMqtt())
+    {
+        return;
+    }
+
+    /*if (doc.containsKey("sensor"))
+    {
+        JsonObject obj = doc["sensor"];
+        obj["device_id"] = espId;
+    }
+    else if (doc.containsKey("actuator"))
+    {
+        JsonObject obj = doc["actuator"];
+        obj["device_id"] = espId;
+    }
+    else
+    {
+        return;
+    }*/
+
+    char buffer[200];
+    serializeJson(doc, buffer);
+    client.publish(topic, buffer);
+}
+
 bool MqttManager::isValidWifi() {
     return wifi_enabled && wifi_ssid && wifi_password;
 }
@@ -47,22 +77,6 @@ bool MqttManager::isValidMqtt() {
 
 bool MqttManager::isValidNtp() {
     return isValidWifi() && (ntp_server != "" || ntp_server != NULL) && (ntp_server[0] != '\0');
-}
-
-
-void callback(char* topic, byte* message, unsigned int length) {
-  Serial.print("Message arrived on topic: ");
-  Serial.print(topic);
-  Serial.print(". Message: ");
-  String messageTemp;
-  
-  for (int i = 0; i < length; i++) {
-    Serial.print((char)message[i]);
-    messageTemp += (char)message[i];
-  }
-  Serial.println();
-
-  // Feel free to add more if statements to control more GPIOs with MQTT
 }
 
 void MqttManager::connectWiFi() {
@@ -156,6 +170,9 @@ void MqttManager::connectMQTT() {
     if (client.connected())
     {
         String message = "device connected: " + espId;
+        
+        client.subscribe("/device/control/#");
+
 
         if (log_enabled)
         {
@@ -166,6 +183,8 @@ void MqttManager::connectMQTT() {
 }
 
 void MqttManager::notify(char *topic, byte *payload, unsigned int length) {
+    
+    
     if (!isValidMqtt())
     {
         return;
@@ -177,6 +196,9 @@ void MqttManager::notify(char *topic, byte *payload, unsigned int length) {
         message[i] = (char)payload[i];
     }
     message[length] = '\0';
+
+
+
 
     StaticJsonDocument<200> doc;
     DeserializationError error = deserializeJson(doc, message);
@@ -195,6 +217,24 @@ void MqttManager::notify(char *topic, byte *payload, unsigned int length) {
 
         Serial.println("-----------------------");
     }
+
+    String topicString = String(topic);
+    int index = topicString.lastIndexOf("/");
+    String deviceName = topicString.substring(index + 1);
+
+    Device *device = getDevice(deviceName);
+
+    if (device == nullptr)
+    {
+        if (log_enabled)
+        {
+            Serial.println("Device not found: " + deviceName);
+        }
+        return;
+    }
+
+    device->update(doc);
+
 }
 
 void MqttManager::reconnect() {
@@ -237,6 +277,7 @@ void MqttManager::reconnect() {
     if (client.connected())
     {
         String message = "device connected: " + espId;
+        client.subscribe("/device/control/#");
 
         if (log_enabled)
         {
@@ -257,4 +298,42 @@ const char *MqttManager::getEspId() {
         snprintf(id, sizeof(id), "esp_%012X", ESP.getEfuseMac());
     }
     return id;
+}
+
+void MqttManager::attach(Device *observer)
+{
+    observers.push_back(observer);
+}
+
+void MqttManager::detach(Device *observer)
+{
+    auto it = std::find(observers.begin(), observers.end(), observer);
+    if (it != observers.end())
+    {
+        observers.erase(it);
+    }
+}
+
+Device* MqttManager::getDevice(const String &deviceName)
+{
+    for (Device *observer : observers)
+    {
+        if (observer->getDeviceName() == deviceName)
+        {
+            if (DHTSensor *sensor = (DHTSensor *)(observer))
+            {
+                return sensor;
+            }
+            else if (MQSensor *sensor = (MQSensor *)(observer))
+            {
+                return sensor;
+            }
+            else if (GYML8511Sensor *sensor = (GYML8511Sensor *)(observer))
+            {
+                return sensor;
+            }
+        }
+    }
+
+    return nullptr;
 }

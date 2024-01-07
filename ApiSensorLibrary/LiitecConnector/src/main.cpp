@@ -24,12 +24,16 @@ void setup() {
   // mqtt configuration
   mqttManager.setup();
 
+  // mqtt observers configuration
+  mqttManager.attach(&dhtSensor);
+  mqttManager.attach(&gyml8511Sensor);
+  mqttManager.attach(&mqSensor);
+
   // sensors configuration
   dhtSensor.setup(dhtSensorPin, dhtSensorType, mqtt_topic_dht);
   gyml8511Sensor.setup(gyml8511SensorPin, gyml8511VoltagePin, mqtt_topic_gyml8511);
   mqSensor.setup(mqSensorPin, mqSensorType, mqtt_topic_mq135);
   
-
 
   if (log_enabled)
   {

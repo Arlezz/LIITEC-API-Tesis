@@ -20,5 +20,4 @@ static const uint8_t MQ135 = (unsigned char)135U;
 static const uint8_t MQ136 = (unsigned char)136U;
 
 
-
 #endif // MQ_TYPES_H

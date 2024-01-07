@@ -14,12 +14,12 @@ Authorization: 68p7nyib281x9youicx9ra810uk4ve
 
 //create user
 ###
-POST http://localhost:8081/api/users HTTP/1.1
+POST http://localhost:8081/api/v1/users HTTP/1.1
 Content-Type: application/json
 Authorization: 68p7nyib281x9youicx9ra810uk4ve
 
 {
-    "username":"avanzado",
+    "username":"elemejor",
     "name":"Iluminado",
     "lastName":"Amado",
     "email":"iluminado.amado@userena.cl",

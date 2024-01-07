@@ -4,12 +4,14 @@ const app = require('../app');
 const http = require('http');
 const dotenv = require('dotenv');
 const mongoose = require('mongoose');
-const MqttHandler = require('../controller/broker.controller');
+//const MqttHandler = require('../controller/broker.controller');
+const mqttClient = require('../utils/mqttHandler'); // Cambiar la importación
+
 
 const process = require('process');
 
 dotenv.config({path: '.env'});
-const { MONGODB_URI, MQTT_HOST, MQTT_USER, MQTT_PASSWORD } = process.env;
+const { MONGODB_URI } = process.env;
 
 
 mongoose.connect(MONGODB_URI, {
@@ -21,14 +23,14 @@ mongoose.connect(MONGODB_URI, {
     console.error(err);
 });
 
-const mqttClient = new MqttHandler(
+/*const mqttClient = new MqttHandler(
     MQTT_HOST,
     MQTT_USER,
     MQTT_PASSWORD
-);
+);*/
 
 // Suscribirse a todos los tópicos usando el carácter comodín #
-mqttClient.subscribeToTopic("#");
+mqttClient.subscribeToTopic("/devices/#");
 
 const httpServer = http.createServer(app);
 
@@ -72,9 +74,6 @@ process.once('SIGUSR2', function () {
     process.kill(process.pid, 'SIGUSR2');
 
 });
-
-
-module.exports = mqttClient;
 
 
 

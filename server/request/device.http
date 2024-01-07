@@ -14,14 +14,18 @@ Content-Type: application/json
 Authorization: ch032ywc7wbwqwjnkrx23rmfdknb5m
 
 {
-    "name":"Sensor de intensidad de gases",
-    "description":"Sensor de la estacion meteorologica",
-    "model":"MQ-135",
-    "type":"both",
+    "name":"Sensor de temperatura",
+    "description":"Sensor de la estacion meteorologica 2",
+    "model":"DHT22",
+    "type":"digital",
     "measures":[
        {
-        "variable":"gas instensity",
-        "unit":"ppm"
+        "variable":"temperature",
+        "unit":"C"
+       },
+       {
+        "variable":"humidity",
+        "unit":"%"
        }
     ]
 }
@@ -41,9 +45,9 @@ Authorization: 68p7nyib281x9youicx9ra810uk4ve
 
 //Actualizar un dispositivo de un canal
 ###
-PUT http://localhost:8081/api/v1/channels/ch-32e48add-c489-425e-bd48-fd7ffbd7d8f7/devices/dv-089f98d5-25f4-4150-ab4e-18be2f098da2 HTTP/1.1
+PUT http://localhost:8081/api/v1/channels/ch-2cf804f3-5290-412f-ace7-8df8bb8e74bb/devices/dv-7a9b4d6c-6755-441f-81aa-ffdcd9147d81 HTTP/1.1
 Content-Type: application/json
-Authorization: 68p7nyib281x9youicx9ra810uk4ve
+Authorization: ch032ywc7wbwqwjnkrx23rmfdknb5m
  
  {
     "isActive":true

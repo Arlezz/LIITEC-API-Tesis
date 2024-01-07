@@ -3,8 +3,9 @@
 
 #include <Arduino.h>
 #include <map>
+#include <observer/observer.h>
 
-class Device
+class Device : public MqttObserver
 {
     private:
         bool enabled = false;

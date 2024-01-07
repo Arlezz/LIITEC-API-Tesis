@@ -50,9 +50,9 @@ CONFIGURACIÓN DEL BROKER MQTT
         Completa los campos con los datos de tu broker MQTT.
 **************************************************************/
 #define mqtt_enabled true                   // Activa o desactiva la conexión con el broker MQTT (true o false)
-//#define mqtt_server "172.20.10.14"   // Dirección IP o nombre de dominio del broker MQTT
-//#define mqtt_server "192.168.1.105"   // Dirección IP o nombre de dominio del broker MQTT
-#define mqtt_server "18.228.38.251"   // Dirección IP o nombre de dominio del broker MQTT
+//#define mqtt_server "172.24.96.1"   // Dirección IP o nombre de dominio del broker MQTT
+#define mqtt_server "192.168.1.105"   // Dirección IP o nombre de dominio del broker MQTT
+//#define mqtt_server "18.228.38.251"   // Dirección IP o nombre de dominio del broker MQTT
 #define mqtt_port 1883                      // Puerto del broker MQTT
 #define mqtt_user "avanzado"          // Nombre de usuario para la autenticación en el broker MQTT
 #define mqtt_password "IluminadoAmado2024!"  // Contraseña para la autenticación en el broker MQTT

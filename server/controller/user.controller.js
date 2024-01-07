@@ -101,6 +101,15 @@ const UserController = {
         });
   
         await newKey.save();
+
+        const acls = {
+          topic: "device/control/#",
+          acc: 3
+        };
+
+        newUser.acls.push(acls);
+
+        await newUser.save();
       }
   
       // No devolver detalles específicos en caso de éxito

@@ -54,8 +54,9 @@ class MqttHandler {
   }
 
   publishMessage(topic, payload) {
-
     const message = JSON.stringify(payload);
+
+    console.log("message: ",message);
 
     if (this.mqttClient) {
       this.mqttClient.publish(topic, message, (err) => {

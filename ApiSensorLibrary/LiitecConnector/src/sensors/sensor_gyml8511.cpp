@@ -14,8 +14,15 @@ void GYML8511Sensor::setup(int pin, int reference, const char* topic, String nam
 {
     setPin("out",pin);
     setPin("ref",reference);
-    setDeviceName(name);
+
+    String topicString = String(topic);
+    int index = topicString.indexOf("/", 1);
+    String deviceName = topicString.substring(index + 1);
+    
+    setDeviceName(deviceName);
+
     setTopic(topic);
+
     if (!isValidPins() || !isEnabled())
     {
         if (isEnabled() && log_enabled)
@@ -129,6 +136,8 @@ void GYML8511Sensor::readSensorValue()
         Serial.print("Device: ");
         Serial.println(getDeviceName());
 
+        Serial.println("Model: GYML8511");
+
         Serial.print("UV Intensity: ");
         Serial.print(uvIntensity);
         Serial.println(" mW/cm^2");
@@ -160,4 +169,77 @@ int GYML8511Sensor::averageAnalogRead(int pinToRead)
 float GYML8511Sensor::mapFloat(float x, float in_min, float in_max, float out_min, float out_max)
 {
     return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
+}
+
+void GYML8511Sensor::update(StaticJsonDocument<200> value)
+{
+    /*if (!value.containsKey("command"))
+    {
+        if (log_enabled)
+            Serial.println("No command in message");
+        return;
+    }*/
+
+    Serial.println("Estoy en update de GYML8511Sensor");
+
+    Serial.println(value.as<String>());
+
+    Serial.println("Updated");
+
+    /*const char *command = value["command"];
+
+    if (strcmp(command, "enable") == 0)
+    {
+        this->enable();
+    }
+    else if (strcmp(command, "disable") == 0)
+    {
+        this->disable();
+    }*/
+
+    /*else if (strcmp(command, "set_pin") == 0)
+    {
+        int pin = value["pin"];
+        this->setPin(pin);
+        // TODO: check if pin wont be used by other sensor
+
+        if (!isValidPins())
+        {
+            if (log_enabled)
+                Serial.println("Invalid pins");
+            this->setStatus(SensorStatus::InvalidPins);
+            return;
+        }
+
+        if (dht != nullptr)
+            delete dht;
+
+        dht = new DHT(this->getPin(), this->getSensorType());
+        dht->begin();
+    }*/
+
+    /*else if (strcmp(command, "set_name") == 0)
+    {
+        const char *topic = value["new_name"];
+        this->setDeviceName(topic);
+    }
+    else if (strcmp(command, "get_status") == 0)
+    {
+        StaticJsonDocument<200> doc;*/
+        /*JsonObject obj = doc.createNestedObject("sensor");
+        obj["name"] = this->getDeviceName();
+        obj["dht_humidity"] = getValue("humidity");
+        obj["dht_temperature"] = getValue("temperature");
+        obj["status"] = this->getStatus();
+        obj["pin"] = this->getPin();
+        obj["type"] = this->getSensorType();
+        obj["enabled"] = this->isEnabled();*/
+
+    /*    mqttManager.publish(mqtt_topic_gyml8511, doc);
+    }
+    else if (log_enabled)
+    {
+        Serial.println("Invalid command " + String(command));
+    }*/
+    // TODO: add other commands
 }

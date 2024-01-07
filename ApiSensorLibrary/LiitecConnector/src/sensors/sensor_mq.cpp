@@ -14,8 +14,15 @@ void MQSensor::setup(int pin, int sensorType, const char* topic, String name)
 {
     setPin("out",pin);
     setSensorType(sensorType);
-    setDeviceName(name);
+
+    String topicString = String(topic);
+    int index = topicString.indexOf("/", 1);
+    String deviceName = topicString.substring(index + 1);
+    
+    setDeviceName(deviceName);
+
     setTopic(topic);
+
     if (!isValidPins() || !isEnabled())
     {
         if (isEnabled() && log_enabled)
@@ -94,6 +101,8 @@ void MQSensor::readSensorValue()
 
     float gasIntensity = analogRead(this->getPin("out"));
 
+    unsigned long timestamp = getTime();
+
     if (isnan(gasIntensity))
     {
         if (log_enabled){
@@ -113,18 +122,90 @@ void MQSensor::readSensorValue()
         Serial.println("-----------------------");
         
         Serial.print("Device: ");
-        Serial.print("MQ");
+        Serial.println(getDeviceName());
+
+        Serial.print("Model: MQ");
         Serial.println(getSensorType());
         
         Serial.print("Gas intensity: ");
         Serial.print(gasIntensity);
         Serial.println(" ppm");
 
+        Serial.print("Timestamp: ");
+        Serial.println(timestamp);
+
         Serial.println("-----------------------");
 
     }
 
     setValue("out", gasIntensity);
-    setTimestamp(getTime());
+    setTimestamp(timestamp);
     this->setStatus(SensorStatus::OkRead);
+}
+
+
+void MQSensor::update(StaticJsonDocument<200> value)
+{
+
+
+    Serial.println("Esto es un update de MQ");
+
+    Serial.println(value.as<String>());
+  
+    Serial.println("updated");
+
+
+    /*if (!value.containsKey("command"))
+    {
+        if (log_enabled)
+            Serial.println("No command in message");
+        return;
+    }
+
+
+
+    const char *command = value["command"];
+
+    if (strcmp(command, "enable") == 0)
+    {
+        this->enable();
+    }
+    else if (strcmp(command, "disable") == 0)
+    {
+        this->disable();
+    }*/
+    /*else if (strcmp(command, "set_pin") == 0)
+    {
+        int pin = value["pin"];
+        this->setPin(pin);
+        //TODO: check if pin wont be used by other sensor
+
+        if (!isValidPins()){
+            if (log_enabled)
+                Serial.println("Invalid pins");
+            return;
+        }
+
+        pinMode(this->getPin(), INPUT);
+    }*/
+    /*else if (strcmp(command, "set_name") == 0)
+    {
+        const char *topic = value["new_name"];
+        this->setDeviceName(topic);
+    }
+    else if (strcmp(command, "get_status") == 0)
+    {
+        StaticJsonDocument<200> doc;
+        JsonObject obj = doc.createNestedObject("sensor");
+
+        obj["name"] = this->getDeviceName();
+        obj["tds"] = getValue("tds");
+        obj["status"] = this->getStatus();
+        obj["pin"] = this->getPin();
+        obj["type"] = this->getSensorType();
+        obj["enabled"] = this->isEnabled();
+
+        mqttManager.publish(getTopic(), doc);
+    }*/
+    //TODO: add other commands
 }

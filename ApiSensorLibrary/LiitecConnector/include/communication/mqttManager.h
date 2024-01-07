@@ -5,12 +5,16 @@
 #include <PubSubClient.h>
 #include <ArduinoJson.h>
 #include <settings.h>
+#include <device.h>
+#include <observer/subject.h>
 
-class MqttManager{
+class MqttManager : public Subject { 
     private: 
         WiFiClient wifiClient;
         PubSubClient client;
         String espId;
+        std::vector<Device *> observers;
+
 
     public:
         MqttManager();
@@ -18,7 +22,10 @@ class MqttManager{
         void setup();
         void loop();
         void publish(const char *topic, StaticJsonDocument<200> &message);
-        void notify(char *topic, byte *payload, unsigned int length);
+        void report(const char *topic, StaticJsonDocument<200> &message);
+        void attach(Device *device) override;
+        void detach(Device *device) override;
+        void notify(char *topic, byte *payload, unsigned int length) override;
 
     private: 
         static bool isValidWifi();
@@ -29,6 +36,7 @@ class MqttManager{
         void connectMQTT();
         void connectNTP(const char* ntpServer);
         void reconnect();
+        Device *getDevice(const String &deviceName);
 };
 
 #endif

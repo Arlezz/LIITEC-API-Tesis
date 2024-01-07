@@ -14,8 +14,15 @@ void DHTSensor::setup(int pin, int sensorType, const char* topic, String name)
 {
     setPin("out",pin);
     setSensorType(sensorType);
-    setDeviceName(name);
+
+    String topicString = String(topic);
+    int index = topicString.indexOf("/", 1);
+    String deviceName = topicString.substring(index + 1);
+
+    setDeviceName(deviceName);
+
     setTopic(topic);
+
     if (!isValidPins() || !isEnabled())
     {
         if (isEnabled() && log_enabled)
@@ -118,6 +125,9 @@ void DHTSensor::readSensorValue()
         Serial.print("Device: ");
         Serial.println(getDeviceName());
 
+        Serial.print("Model: DHT");
+        Serial.println(getSensorType());
+
         Serial.print("Humidity = ");
         Serial.print(humidity);
         Serial.println(" %");
@@ -134,4 +144,75 @@ void DHTSensor::readSensorValue()
     setValue("temperature", temperature);
     setTimestamp(timestamp);
     this->setStatus(SensorStatus::OkRead);
+}
+
+void DHTSensor::update(StaticJsonDocument<200> value)
+{
+    /*if (!value.containsKey("command"))
+    {
+        if (log_enabled)
+            Serial.println("No command in message");
+        return;
+    }*/
+
+    Serial.println("Estoy en update de DHTSensor"); 
+
+    Serial.println(value.as<String>());
+
+    Serial.println("Updated");
+
+    /*const char *command = value["command"];
+
+    if (strcmp(command, "enable") == 0)
+    {
+        this->enable();
+    }
+    else if (strcmp(command, "disable") == 0)
+    {
+        this->disable();
+    }
+    else if (strcmp(command, "set_pin") == 0)
+    {
+        int pin = value["pin"];
+        this->setPin("out",pin);
+        // TODO: check if pin wont be used by other sensor
+
+        if (!isValidPins())
+        {
+            if (log_enabled)
+                Serial.println("Invalid pins");
+            this->setStatus(SensorStatus::InvalidPins);
+            return;
+        }
+
+        if (dht != nullptr)
+            delete dht;
+
+        dht = new DHT(this->getPin("out"), this->getSensorType());
+        dht->begin();
+    }
+    else if (strcmp(command, "set_name") == 0)
+    {
+        const char *topic = value["new_name"];
+        this->setDeviceName(topic);
+    }
+    else if (strcmp(command, "get_status") == 0)
+    {
+        StaticJsonDocument<200> doc;
+        JsonObject obj = doc.createNestedObject("sensor");
+        obj["name"] = this->getDeviceName();
+        obj["dht_humidity"] = getValue("humidity");
+        obj["dht_temperature"] = getValue("temperature");
+        obj["status"] = this->getStatus();
+        obj["pin"] = this->getPin("out");
+        obj["type"] = this->getSensorType();
+        obj["enabled"] = this->isEnabled();
+
+        mqttManager.publish(mqtt_topic_dht, doc);
+    }
+    else if (log_enabled)
+    {
+        Serial.println("Invalid command " + String(command));
+    }*/
+    // TODO: add other commands
 }

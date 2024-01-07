@@ -20,6 +20,7 @@ class DHTSensor : public Sensor
 
         void setup(int pin = -1, int sensorType = DHT22, const char* topic = "/device/dht", String name = "dht");
         void loop(unsigned int timeout = 2000U);
+        void update(StaticJsonDocument<200> doc) override;
         void readSensorValue() override;
 
     private:
