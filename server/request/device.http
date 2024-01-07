@@ -49,9 +49,9 @@ PUT http://localhost:8081/api/v1/channels/ch-2cf804f3-5290-412f-ace7-8df8bb8e74b
 Content-Type: application/json
 Authorization: ch032ywc7wbwqwjnkrx23rmfdknb5m
  
- {
-    "isActive":true
- }
+{
+   "isActive":false
+}
 
 ###
 DELETE http://localhost:8081/api/v1/channels/ch-2cf804f3-5290-412f-ace7-8df8bb8e74bb/devices/dv-1781932c-f09b-4f25-bd34-3eeaddcbace4 HTTP/1.1
