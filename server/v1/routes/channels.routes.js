@@ -51,7 +51,7 @@ const authorization = require("../../auth/api.middleware");
  *                   example: 1
  *                 next:
  *                   type: string
- *                   example: "/api/channels?page=2&page_size=10"
+ *                   example: "/api/v1/channels?page=2&page_size=10"
  *                 previous:
  *                   type: string
  *                   example: null
@@ -64,7 +64,7 @@ const authorization = require("../../auth/api.middleware");
  *                   example: 2
  *                 devices:
  *                   type: string
- *                   example: "/api/channels/ch-32e48add-c489-425e-bd48-fd7ffbd7d8f7/devices"
+ *                   example: "/api/v1/channels/ch-32e48add-c489-425e-bd48-fd7ffbd7d8f7/devices"
  *       401:
  *         description: You do not have the necessary permissions to access this route.
  *         content:
@@ -129,7 +129,7 @@ const authorization = require("../../auth/api.middleware");
  *                   example: 2
  *                 devices:
  *                   type: string
- *                   example: "/api/channels/ch-32e48add-c489-425e-bd48-fd7ffbd7d8f7/devices"
+ *                   example: "/api/v1/channels/ch-32e48add-c489-425e-bd48-fd7ffbd7d8f7/devices"
  *       401:
  *         description: You do not have the necessary permissions to access this route.
  *         content:
@@ -406,7 +406,7 @@ const authorization = require("../../auth/api.middleware");
  *                   example: 1
  *                 next:
  *                   type: string
- *                   example: "/api/users/5f8d0f7a3f8d7a0f7d8a0f7d/channels?page=2&page_size=10"
+ *                   example: "/api/v1/users/5f8d0f7a3f8d7a0f7d8a0f7d/channels?page=2&page_size=10"
  *                 previous:
  *                   type: string
  *                   example: null

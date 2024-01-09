@@ -14,8 +14,6 @@ const AuthController = {
 
             const { credential, password } = req.body;
 
-            //search user by username or email
-
             const user = await userSchema.findOne({ $or: [{ username: credential }, { email: credential }] });
 
             if (!user) {

@@ -32,7 +32,7 @@ const ChannelController = {
               {
                 $addFields: {
                   deviceCount: { $size: '$myDevices' },
-                  devices: { $concat: ['/api/channels/', '$channelId', '/devices'] },
+                  devices: { $concat: ['/api/v1/channels/', '$channelId', '/devices'] },
                 },
               },
               {
@@ -104,7 +104,7 @@ const ChannelController = {
         {
           $addFields: {
             deviceCount: { $size: '$myDevices' },
-            devices: { $concat: ['/api/channels/', '$channelId', '/devices'] },
+            devices: { $concat: ['/api/v1/channels/', '$channelId', '/devices'] },
 
           },
         },
