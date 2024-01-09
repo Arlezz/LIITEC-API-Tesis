@@ -1,0 +1,8 @@
+###
+POST http://localhost:8081/api/v1/login HTTP/1.1
+Content-Type: application/json
+
+{
+    "credential": "estresado.avanzado@userena.cl",
+    "password": "IluminadoAmado2024!"
+}

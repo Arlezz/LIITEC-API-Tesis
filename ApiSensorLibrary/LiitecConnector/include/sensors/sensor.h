@@ -94,6 +94,11 @@ class Sensor : public Device
         {
             this->pin[type] = pin;
             setValidPins(type, pin > -1);
+
+            if (pin > -1)
+            {
+                enable();
+            }
         }
 
         void setSensorType(int type)

@@ -45,12 +45,12 @@ Authorization: 68p7nyib281x9youicx9ra810uk4ve
 
 //Actualizar un dispositivo de un canal
 ###
-PUT http://localhost:8081/api/v1/channels/ch-2cf804f3-5290-412f-ace7-8df8bb8e74bb/devices/dv-7a9b4d6c-6755-441f-81aa-ffdcd9147d81 HTTP/1.1
+PUT http://localhost:8081/api/v1/channels/ch-2cf804f3-5290-412f-ace7-8df8bb8e74bb/devices/dv-17938483-b706-47c3-9249-cc9377505acf HTTP/1.1
 Content-Type: application/json
 Authorization: ch032ywc7wbwqwjnkrx23rmfdknb5m
  
 {
-   "isActive":false
+   "isActive":true
 }
 
 ###

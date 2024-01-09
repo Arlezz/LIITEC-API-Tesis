@@ -12,15 +12,15 @@ MQSensor::~MQSensor()
 
 void MQSensor::setup(int pin, int sensorType, const char* topic, String name)
 {
-    setPin("out",pin);
-    setSensorType(sensorType);
-
     String topicString = String(topic);
     int index = topicString.indexOf("/", 1);
     String deviceName = topicString.substring(index + 1);
-    
-    setDeviceName(deviceName);
 
+    
+
+    setPin("out",pin);
+    setSensorType(sensorType);
+    setDeviceName(deviceName);
     setTopic(topic);
 
     if (!isValidPins() || !isEnabled())
@@ -36,6 +36,15 @@ void MQSensor::setup(int pin, int sensorType, const char* topic, String name)
     pinMode(this->getPin("out"), INPUT);
 
     this->setStatus(SensorStatus::OkSetup);
+
+    if(mqttManager.isEnabledSensor(deviceName.c_str())){
+        Serial.println("MQ enabled");  
+        enable();
+    } else{
+        Serial.println("MQ disabled");
+        disable();
+        this->setStatus(SensorStatus::FailSetup);
+    }
 }
 
 void MQSensor::loop(unsigned int timeout)
@@ -147,22 +156,12 @@ void MQSensor::readSensorValue()
 void MQSensor::update(StaticJsonDocument<200> value)
 {
 
-
-    Serial.println("Esto es un update de MQ");
-
-    Serial.println(value.as<String>());
-  
-    Serial.println("updated");
-
-
-    /*if (!value.containsKey("command"))
+    if (!value.containsKey("command"))
     {
         if (log_enabled)
             Serial.println("No command in message");
         return;
     }
-
-
 
     const char *command = value["command"];
 
@@ -173,7 +172,12 @@ void MQSensor::update(StaticJsonDocument<200> value)
     else if (strcmp(command, "disable") == 0)
     {
         this->disable();
-    }*/
+    }
+    else if (log_enabled)
+    {
+        Serial.println("Invalid command " + String(command));
+    }
+
     /*else if (strcmp(command, "set_pin") == 0)
     {
         int pin = value["pin"];
@@ -188,11 +192,7 @@ void MQSensor::update(StaticJsonDocument<200> value)
 
         pinMode(this->getPin(), INPUT);
     }*/
-    /*else if (strcmp(command, "set_name") == 0)
-    {
-        const char *topic = value["new_name"];
-        this->setDeviceName(topic);
-    }
+    /*
     else if (strcmp(command, "get_status") == 0)
     {
         StaticJsonDocument<200> doc;

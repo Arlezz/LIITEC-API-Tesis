@@ -26,8 +26,8 @@ class Device : public MqttObserver
                 valid = valid && x.second;
             }
             
-            if (valid)
-                this->enable();
+            //if (valid)
+            //    this->enable();
 
             return valid;
         }

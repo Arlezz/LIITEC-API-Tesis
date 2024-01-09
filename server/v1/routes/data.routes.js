@@ -8,7 +8,7 @@ const DataController = require('../../controller/data.controller');
 const { USER_LEVEL_0, USER_LEVEL_1, USER_LEVEL_2 } = process.env;
 
 //Middleware
-const authorization = require('../../auth/apiAuth');
+const authorization = require('../../auth/api.middleware');
 
 
 /**
@@ -202,7 +202,6 @@ const authorization = require('../../auth/apiAuth');
  *                   example: Error getting data
  */
 
-
 /**
  * @openapi
  * /data/{deviceId}/agregate:
@@ -296,7 +295,6 @@ const authorization = require('../../auth/apiAuth');
  *                   type: string
  *                   example: Error getting data
  */
-
 
 /**
  * @openapi
@@ -435,9 +433,6 @@ const authorization = require('../../auth/apiAuth');
  *                   type: string
  *                   example: Error getting data
  */
-
-
-
 
 
 

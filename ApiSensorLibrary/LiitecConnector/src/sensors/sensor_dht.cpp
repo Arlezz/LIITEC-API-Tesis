@@ -12,15 +12,14 @@ DHTSensor::~DHTSensor()
 
 void DHTSensor::setup(int pin, int sensorType, const char* topic, String name)
 {
-    setPin("out",pin);
-    setSensorType(sensorType);
 
     String topicString = String(topic);
     int index = topicString.indexOf("/", 1);
     String deviceName = topicString.substring(index + 1);
 
+    setPin("out",pin);
+    setSensorType(sensorType);
     setDeviceName(deviceName);
-
     setTopic(topic);
 
     if (!isValidPins() || !isEnabled())
@@ -36,10 +35,23 @@ void DHTSensor::setup(int pin, int sensorType, const char* topic, String name)
     dht = new DHT(this->getPin("out"), this->getSensorType());
     dht->begin();
     this->setStatus(SensorStatus::OkSetup);
+
+
+    if(mqttManager.isEnabledSensor(deviceName.c_str())){
+        Serial.println("DHT enabled");
+        enable();
+    } else{
+        Serial.println("DHT disabled");
+        disable();
+        this->setStatus(SensorStatus::FailSetup);
+    }
 }
 
 void DHTSensor::loop(unsigned int timeout)
 {
+
+    
+
     if (millis() - timepoint > timeout)
     {
         if (!isValidPins() || !isEnabled())
@@ -148,20 +160,14 @@ void DHTSensor::readSensorValue()
 
 void DHTSensor::update(StaticJsonDocument<200> value)
 {
-    /*if (!value.containsKey("command"))
+    if (!value.containsKey("command"))
     {
         if (log_enabled)
             Serial.println("No command in message");
         return;
-    }*/
+    }
 
-    Serial.println("Estoy en update de DHTSensor"); 
-
-    Serial.println(value.as<String>());
-
-    Serial.println("Updated");
-
-    /*const char *command = value["command"];
+    const char *command = value["command"];
 
     if (strcmp(command, "enable") == 0)
     {
@@ -171,6 +177,12 @@ void DHTSensor::update(StaticJsonDocument<200> value)
     {
         this->disable();
     }
+    else if (log_enabled)
+    {
+        Serial.println("Invalid command " + String(command));
+    }
+
+    /*
     else if (strcmp(command, "set_pin") == 0)
     {
         int pin = value["pin"];
@@ -191,11 +203,6 @@ void DHTSensor::update(StaticJsonDocument<200> value)
         dht = new DHT(this->getPin("out"), this->getSensorType());
         dht->begin();
     }
-    else if (strcmp(command, "set_name") == 0)
-    {
-        const char *topic = value["new_name"];
-        this->setDeviceName(topic);
-    }
     else if (strcmp(command, "get_status") == 0)
     {
         StaticJsonDocument<200> doc;
@@ -210,9 +217,6 @@ void DHTSensor::update(StaticJsonDocument<200> value)
 
         mqttManager.publish(mqtt_topic_dht, doc);
     }
-    else if (log_enabled)
-    {
-        Serial.println("Invalid command " + String(command));
-    }*/
+    */
     // TODO: add other commands
 }

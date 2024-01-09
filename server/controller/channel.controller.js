@@ -4,7 +4,7 @@ const userSchema = require("../models/user.model");
 const keySchema = require("../models/key.model");
 const { v4: uuidv4 } = require("uuid");
 const ObjectId = require("mongoose").Types.ObjectId;
-const authorization = require("../auth/apiAuth");
+const authorization = require("../utils/key.handler");
 
 const ChannelController = {
 

@@ -5,7 +5,7 @@ const http = require('http');
 const dotenv = require('dotenv');
 const mongoose = require('mongoose');
 //const MqttHandler = require('../controller/broker.controller');
-const mqttClient = require('../utils/mqttHandler'); // Cambiar la importación
+const mqttClient = require('../utils/mqtt.handler'); // Cambiar la importación
 
 
 const process = require('process');

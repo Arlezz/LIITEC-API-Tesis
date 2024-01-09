@@ -2,7 +2,7 @@ const userSchema = require("../models/user.model");
 const keySchema = require("../models/key.model");
 const channelSchema = require("../models/channel.model");
 const deviceSchema = require("../models/device.model");
-const authorization = require("../auth/apiAuth");
+const authorization = require("../utils/key.handler");
 const bcrypt = require("bcryptjs");
 const ObjectId = require("mongoose").Types.ObjectId;
 

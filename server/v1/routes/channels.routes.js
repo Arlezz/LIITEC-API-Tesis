@@ -8,7 +8,7 @@ const ChannelController = require("../../controller/channel.controller");
 const { USER_LEVEL_0, USER_LEVEL_1, USER_LEVEL_2 } = process.env;
 
 //Middleware
-const authorization = require("../../auth/apiAuth");
+const authorization = require("../../auth/api.middleware");
 
 
 
@@ -97,7 +97,6 @@ const authorization = require("../../auth/apiAuth");
  *                   example: Error getting channels
  */
 
-
 /**
  * @openapi
  * /channels/{id}:
@@ -162,8 +161,6 @@ const authorization = require("../../auth/apiAuth");
  *                   type: string
  *                   example: Error getting channel
  */
-
-
 
 /**
  * @openapi

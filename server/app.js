@@ -2,6 +2,7 @@ const express = require('express');
 const morgan = require('morgan');
 const cors = require('cors');
 
+const authRoutes = require('./v1/routes/auth.routes');
 const channelRoutes = require('./v1/routes/channels.routes');
 const dataRoutes = require('./v1/routes/data.routes');  
 const deviceRoutes = require('./v1/routes/device.routes');
@@ -25,6 +26,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 //routes
+app.use('/api/v1',authRoutes);
 app.use('/api/v1',userRoutes);
 app.use('/api/v1',keyRoutes);
 app.use('/api/v1',channelRoutes);

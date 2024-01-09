@@ -12,15 +12,13 @@ GYML8511Sensor::~GYML8511Sensor()
 
 void GYML8511Sensor::setup(int pin, int reference, const char* topic, String name)
 {
-    setPin("out",pin);
-    setPin("ref",reference);
-
     String topicString = String(topic);
     int index = topicString.indexOf("/", 1);
     String deviceName = topicString.substring(index + 1);
-    
-    setDeviceName(deviceName);
 
+    setPin("out",pin);
+    setPin("ref",reference);
+    setDeviceName(deviceName);
     setTopic(topic);
 
     if (!isValidPins() || !isEnabled())
@@ -37,6 +35,15 @@ void GYML8511Sensor::setup(int pin, int reference, const char* topic, String nam
     pinMode(this->getPin("ref"), INPUT);
 
     this->setStatus(SensorStatus::OkSetup);
+
+    if(mqttManager.isEnabledSensor(deviceName.c_str())){
+        Serial.println("GYML enabled");
+        enable();
+    } else{
+        Serial.println("GYML disabled");
+        disable();
+        this->setStatus(SensorStatus::FailSetup);
+    }
 }
 
 void GYML8511Sensor::loop(unsigned int timeout)
@@ -173,20 +180,14 @@ float GYML8511Sensor::mapFloat(float x, float in_min, float in_max, float out_mi
 
 void GYML8511Sensor::update(StaticJsonDocument<200> value)
 {
-    /*if (!value.containsKey("command"))
+    if (!value.containsKey("command"))
     {
         if (log_enabled)
             Serial.println("No command in message");
         return;
-    }*/
+    }
 
-    Serial.println("Estoy en update de GYML8511Sensor");
-
-    Serial.println(value.as<String>());
-
-    Serial.println("Updated");
-
-    /*const char *command = value["command"];
+    const char *command = value["command"];
 
     if (strcmp(command, "enable") == 0)
     {
@@ -195,7 +196,11 @@ void GYML8511Sensor::update(StaticJsonDocument<200> value)
     else if (strcmp(command, "disable") == 0)
     {
         this->disable();
-    }*/
+    }
+    else if (log_enabled)
+    {
+        Serial.println("Invalid command " + String(command));
+    }
 
     /*else if (strcmp(command, "set_pin") == 0)
     {
@@ -218,11 +223,7 @@ void GYML8511Sensor::update(StaticJsonDocument<200> value)
         dht->begin();
     }*/
 
-    /*else if (strcmp(command, "set_name") == 0)
-    {
-        const char *topic = value["new_name"];
-        this->setDeviceName(topic);
-    }
+    /*
     else if (strcmp(command, "get_status") == 0)
     {
         StaticJsonDocument<200> doc;*/
@@ -237,9 +238,6 @@ void GYML8511Sensor::update(StaticJsonDocument<200> value)
 
     /*    mqttManager.publish(mqtt_topic_gyml8511, doc);
     }
-    else if (log_enabled)
-    {
-        Serial.println("Invalid command " + String(command));
-    }*/
+    */
     // TODO: add other commands
 }

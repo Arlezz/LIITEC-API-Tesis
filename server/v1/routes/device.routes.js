@@ -8,7 +8,7 @@ const DeviceController = require("../../controller/device.controller");
 const { USER_LEVEL_0, USER_LEVEL_1, USER_LEVEL_2 } = process.env;
 
 //Middleware
-const authorization = require("../../auth/apiAuth");
+const authorization = require("../../auth/api.middleware");
 
 /**
  * @openapi
