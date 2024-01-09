@@ -38,10 +38,20 @@ void DHTSensor::setup(int pin, int sensorType, const char* topic, String name)
 
 
     if(mqttManager.isEnabledSensor(deviceName.c_str())){
-        Serial.println("DHT enabled");
+
+        if (log_enabled)
+        {
+            Serial.println("DHT enabled");
+        }
+        
         enable();
     } else{
-        Serial.println("DHT disabled");
+
+        if (log_enabled)
+        {
+            Serial.println("DHT disabled");
+        }
+
         disable();
         this->setStatus(SensorStatus::FailSetup);
     }

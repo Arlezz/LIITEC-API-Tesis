@@ -73,7 +73,21 @@ CONFIGURACIÓN DE LOS TOPICS MQTT
 #define mqtt_topic_gyml8511 "/devices/dv-f0c54c00-5811-4402-9bee-84576517f571"           // Topic MQTT para el sensor de radiación UV GYML8511
 #define mqtt_topic_mq135 "/devices/dv-17938483-b706-47c3-9249-cc9377505acf"                                                             // Topic MQTT para el sensor de gas MQ135
 
-//#define channel_devices "ch-7a9b4d6c-6755-441f-81aa-ffdcd9147d81"                // Topic MQTT para el sensor de DHT (temperatura ambiente)
+
+
+
+/***************************************************************
+CONFIGURACION DEL CANAL ASOCIADO A LOS TOPICS MQTT
+    Aviso:
+        Esto es esencial para comprobar que los sensores estan habilitados en la plataforma.
+    Descripción:
+        Este bloque de código permite configurar el canal asociado a de los dispositivos en la plataforma.
+    Instrucciones:
+        Completa los campos con los datos correspondientes a tu broker MQTT.
+
+****************************************************************/                        
+#define channel_asigned "ch-2cf804f3-5290-412f-ace7-8df8bb8e74bb" // Canal asociado al que pertenecen los sensores
+
 
 
 /**************************************************************

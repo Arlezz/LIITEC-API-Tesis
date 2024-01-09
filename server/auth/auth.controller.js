@@ -44,7 +44,7 @@ const AuthController = {
                 lastName: user.lastName,
                 email: user.email,
                 createdOn: user.createdOn,
-                acls: user.acls,
+                //acls: user.acls,
                 apiKey: key
             };
 

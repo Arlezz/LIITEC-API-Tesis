@@ -14,7 +14,7 @@ void MqttManager::setup()
     connectMQTT();
     connectNTP(ntp_server);
     connectServer();
-    getUserChannels();
+    //getUserChannels();
 }
 
 void MqttManager::loop()
@@ -67,131 +67,62 @@ bool MqttManager::isValidNtp() {
     return isValidWifi() && (ntp_server != "" || ntp_server != NULL) && (ntp_server[0] != '\0');
 }
 
-bool MqttManager::isEnabledSensor(const char* name){
+bool MqttManager::isEnabledSensor(const char* sensorName){
 
-    Serial.println("Sensor: " + String(name));
+    if (log_enabled){
+        Serial.println();
+        Serial.println("Sensor: " + String(sensorName));
+    }
 
     HTTPClient http;
-
-    JsonArray channels = getChannels()["channelId"].as<JsonArray>();
 
     String key = getUser()["apiKey"]["key"];
 
+    String url = "http://"+ String(mqtt_server) +":8081/api/v1/channels/"+String(channel_asigned) +"/devices/"+ sensorName;
 
-    // Itera sobre los canales
-    for (const char* channel : channels) {
-
-        // Construir la URL con el identificador
-        String url = "http://"+ String(mqtt_server) +":8081/api/v1/channels/"+ channel +"/devices/"+ name;
-
-        // Inicializar la solicitud HTTP
-        http.begin(url);
-        http.addHeader("Authorization", key);
-
-        // Realizar la solicitud GET y verificar el código de respuesta
-        int httpCode = http.GET();
-        if (httpCode == HTTP_CODE_OK) {
-            // Obtener el cuerpo de la respuesta
-            String payload = http.getString();
-
-            // Imprimir el cuerpo de la respuesta
-
-            StaticJsonDocument<1024> jsonDocument;
-            DeserializationError jsonError = deserializeJson(jsonDocument, payload);
-
-            if (jsonError) {
-                Serial.print("Error al deserializar JSON: ");
-                Serial.println(jsonError.c_str());
-            } else {
-
-                // Acceder al valor de 'enabled' en el JSON
-                bool enabled = jsonDocument["isActive"]; 
-
-                // Ahora puedes utilizar 'enabled' según tus necesidades
-                return enabled;
-            }
-
-            
-        } else {
-            // Hubo un error en la solicitud HTTP
-            Serial.println("Error en la solicitud HTTP");
-            return false;
-        }
-
-        // Cerrar la conexión HTTP
-        http.end();
-    }
-
-    // Si llegamos aquí, significa que no se encontró una coincidencia en ningún canal
-    return false;
-}
-
-
-void MqttManager::getUserChannels() {
-    HTTPClient http;
-
-    // Obtener el ID del usuario como char array
-    const char* userId = getUser()["_id"];
-
-    // Construir la URL con el identificador
-    char url[100];
-
-    snprintf(url, sizeof(url), "http://%s:8081/api/v1/users/%s/channels", mqtt_server, userId);
-
-    // Inicializar la solicitud HTTP
     http.begin(url);
-
-    // Obtener la clave de la API directamente como const char*
-    const char* key = getUser()["apiKey"]["key"];
-
     http.addHeader("Authorization", key);
 
-    // Realizar la solicitud GET y verificar el código de respuesta
     int httpCode = http.GET();
-
     if (httpCode == HTTP_CODE_OK) {
-        // Obtener el cuerpo de la respuesta
 
         String payload = http.getString();
 
         StaticJsonDocument<1024> jsonDocument;
         DeserializationError jsonError = deserializeJson(jsonDocument, payload);
 
-
         if (jsonError) {
-            Serial.print("Error al deserializar JSON: ");
-            Serial.println(jsonError.c_str());
-        } else {
-            // Acceder al array 'results' en el JSON
-            JsonArray results = jsonDocument["results"].as<JsonArray>();
 
-            // Crear un objeto para almacenar los channelId
-            StaticJsonDocument<1024> channelIdDocument;
-            JsonArray channelIdArray = channelIdDocument.createNestedArray("channelId");
-
-
-            // Iterar sobre los resultados y agregar los channelId al array
-            for (const auto& result : results) {
-                const char* channelId = result["channelId"];
-                Serial.println(channelId);
-
-                // Agregar el channelId al array channelIdArray
-                channelIdArray.add(channelId);
+            if (log_enabled)
+            {
+                Serial.print("Error al deserializar JSON: ");
+                Serial.println(jsonError.c_str());
             }
 
-            // Ahora puedes utilizar 'channelIdDocument' según tus necesidades
+        } else {
 
-            setChannels(channelIdDocument); // Ejemplo de cómo podrías utilizarlo en tu función setChannels
+            bool enabled = jsonDocument["isActive"]; 
+
+            return enabled;
         }
 
+        
     } else {
-        // Hubo un error en la solicitud HTTP
-        Serial.println("Error en la solicitud HTTP");
+
+        if (log_enabled)
+        {
+            Serial.println("Error en la solicitud HTTP");
+        }
+
+        return false;
     }
 
-    // Cerrar la conexión HTTP
     http.end();
+
+    return false;
 }
+
+
 
 
 void MqttManager::connectWiFi() {
@@ -324,8 +255,11 @@ void MqttManager::connectServer() {
         DeserializationError jsonError = deserializeJson(jsonDocumentResponse, payload);
 
         if (jsonError) {
-            Serial.print("Error al deserializar JSON: ");
-            Serial.println(jsonError.c_str());
+            if (log_enabled)
+            {
+                Serial.print("Error al deserializar JSON: ");
+                Serial.println(jsonError.c_str());
+            }
         } else {
             // Extraer el valor de "_id" del JSON de respuesta
             const char* idValue = jsonDocumentResponse["_id"];
@@ -333,9 +267,12 @@ void MqttManager::connectServer() {
             // Convertir el valor de "_id" a una cadena String
             String idString = String(idValue);
 
-            // Imprimir la cadena String
-            Serial.print("Valor de '_id' como String: ");
-            Serial.println(idString);
+            if (log_enabled)
+            {
+                // Imprimir la cadena String
+                Serial.print("User logged in: ");
+                Serial.println(idString);
+            }
 
             // Ahora puedes utilizar 'idString' según tus necesidades
             setUser(jsonDocumentResponse); // Ejemplo de cómo podrías utilizarlo en tu función setUser
@@ -345,8 +282,10 @@ void MqttManager::connectServer() {
 
     } else {
 
-        Serial.println("Error en la solicitud HTTP");
-
+        if (log_enabled)
+        {
+            Serial.println("Error en la solicitud HTTP");
+        }
         http.end();
         
         return;

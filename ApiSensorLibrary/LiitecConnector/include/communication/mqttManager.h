@@ -15,8 +15,6 @@ class MqttManager : public Subject {
         String espId;
         std::vector<Device *> observers;
         StaticJsonDocument<1024> user;
-        StaticJsonDocument<1024> channels;//CAMBIAR TAMAÑO
-        
 
     public:
         MqttManager();
@@ -40,18 +38,9 @@ class MqttManager : public Subject {
         void connectMQTT();
         void connectNTP(const char* ntpServer);
         void connectServer();
-        void getUserChannels();
         void reconnect();
 
         Device *getDevice(const String &deviceName);
-
-        void setChannels(StaticJsonDocument<2048> channels){
-            this->channels = channels;
-        }
-
-        StaticJsonDocument<2048> getChannels(){
-            return this->channels;
-        }
 
         void setUser(StaticJsonDocument<1024> user){
             this->user = user;
