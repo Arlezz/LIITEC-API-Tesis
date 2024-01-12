@@ -7,6 +7,8 @@ const requireAPIKeyOfType = (minPermissionLevel) => {
     try {
       const apiKey = req.header("Authorization");
 
+      //decodificar el token y buscar key en la base de datos
+
       if (!apiKey) {
         return res.status(401).json({ error: "Access Forbbiden" });
       }

@@ -10,6 +10,9 @@ const nextConfig = {
       },
     ],
   },
+  env: {
+    BASE_URL: process.env.NEXT_APP_API_URL,
+  }
 };
 
 module.exports = nextConfig;

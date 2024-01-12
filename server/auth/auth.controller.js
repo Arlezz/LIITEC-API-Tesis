@@ -2,7 +2,6 @@ const userSchema = require("../models/user.model");
 const keySchema = require("../models/key.model");
 const bcrypt = require("bcryptjs");
 
-
 const AuthController = {
 
     login: async (req, res) => {
@@ -17,7 +16,7 @@ const AuthController = {
             const user = await userSchema.findOne({ $or: [{ username: credential }, { email: credential }] });
 
             if (!user) {
-                return res.status(404).json({ error: "User not found" });
+                return res.status(404).json({ error: "Username or email not found" });
             }
 
             const validPassword = await bcrypt.compare(password, user.password);
