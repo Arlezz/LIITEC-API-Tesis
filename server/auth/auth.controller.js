@@ -8,7 +8,7 @@ const AuthController = {
 
         try {
             if (!req.body) {
-                return res.status(400).json({ message: "User data is required" });
+                return res.status(400).json({ error: "User data is required" });
             }
 
             const { credential, password } = req.body;

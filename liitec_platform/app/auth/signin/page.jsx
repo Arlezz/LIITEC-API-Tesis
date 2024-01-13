@@ -2,9 +2,9 @@
 
 import Image from "next/image";
 import { Formik, Form, Field, ErrorMessage } from "formik";
-import AuthService from "@/services/auth.service";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
+import { signIn } from "next-auth/react"
 
 export default function SigninPage() {
 
@@ -12,20 +12,21 @@ export default function SigninPage() {
 
     const router = useRouter();
 
-    const handleLogin = (values) => {
-        AuthService.login(values.email_or_username, values.password).then(
-            (data) => {
-                console.log(data);
-                console.log("Login successful");
-                router.push("/dashboard");
-            }
-        ).catch(
-            (error) => {
-                const errorMessage = error.response.data.error;
-                console.log(errorMessage);
-                setError(errorMessage);
-            }
-        );
+    const handleLogin = async (values) => {
+
+        const res = await signIn("credentials", {
+            username_or_email: values.username_or_email,
+            password: values.password,
+            redirect: false
+        });
+
+        if (res.error) {
+            setError(res.error);
+        } else {
+            router.push("/dashboard");
+        }
+
+        console.log(res.error);
     };
 
   return (
@@ -47,23 +48,23 @@ export default function SigninPage() {
             <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
                 <Formik
                     initialValues={{
-                        email_or_username: "",
+                        username_or_email: "",
                         password: "",
                     }}
                     validate={(values) => {
                         const errors = {};
 
-                        if (!values.email_or_username) {
-                            errors.email_or_username = "Username or email is required";
-                        } else if (/\@/.test(values.email_or_username)) {
+                        if (!values.username_or_email) {
+                            errors.username_or_email = "Username or email is required";
+                        } else if (/\@/.test(values.username_or_email)) {
                             // Validate email address
-                            if (!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(values.email_or_username))) {
-                                errors.email_or_username = "Invalid email address";
+                            if (!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(values.username_or_email))) {
+                                errors.username_or_email = "Invalid email address";
                             }
                         } else {
                             // Validate username
-                            if (!(/^[a-zA-Z0-9]+$/.test(values.email_or_username))) {
-                                errors.email_or_username = "Invalid username";
+                            if (!(/^[a-zA-Z0-9]+$/.test(values.username_or_email))) {
+                                errors.username_or_email = "Invalid username";
                             } 
                         }
 
@@ -91,14 +92,14 @@ export default function SigninPage() {
                                 </label>
                                 <div className="mt-2">
                                     <Field
-                                        id="email_or_username"
-                                        name="email_or_username"
+                                        id="username_or_email"
+                                        name="username_or_email"
                                         type="text"
                                         placeholder="john@doe.com"
                                         //autoComplete="email"
                                         className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-sky-600 sm:text-sm sm:leading-6"
                                     />
-                                    <ErrorMessage name="email_or_username" component="div" className="text-red-500 text-sm font-semibold mt-1" />
+                                    <ErrorMessage name="username_or_email" component="div" className="text-red-500 text-sm font-semibold mt-1" />
                                 </div>
                             </div>
 

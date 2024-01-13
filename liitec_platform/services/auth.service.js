@@ -1,4 +1,5 @@
 import { post } from '../utils/httpClient';
+import { NextResponse } from 'next/server';
 
 
 
@@ -8,19 +9,23 @@ const login = (credential, password) => {
             password
         })
         .then((response) => {
-            localStorage.setItem("user", JSON.stringify(response));
+            //localStorage.setItem("user", JSON.stringify(response));
             return response;
         });
 };
 
-const register = (email, name, role) => {
-    return post("/signup", {
-            email,
+const register = (username, name, lastName, email, password, type, superuser) => {
+    return post("/users", {
+            username,
             name,
-            role
+            lastName,
+            email,
+            password,
+            type,
+            superuser
         })
         .then((response) => {
-            return response;
+            return NextResponse.json(response);
         });
 };
 
