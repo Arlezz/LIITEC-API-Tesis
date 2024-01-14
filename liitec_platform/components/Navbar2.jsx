@@ -6,7 +6,7 @@ import { signIn, signOut, useSession } from "next-auth/react";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 
-export default function Navbar() {
+export default function Navbar2() {
   const path = usePathname();
 
   const [menuOpen, setMenuOpen] = useState(false);
@@ -153,7 +153,8 @@ export default function Navbar() {
                     </svg>
                   </button>
 
-                  <div className={` ${!dropdownOpen? "hidden ":"opacity-100"} text-base transition-[opacity,margin] duration-[0.1ms] sm:duration-[150ms] opacity-0 sm:w-48 z-10 bg-white sm:shadow-md rounded-lg p-2 before:absolute top-full sm:border before:-top-5 before:start-0 before:w-full before:h-5`}>
+                  <div className={` ${!dropdownOpen? "hidden ":"opacity-100"}
+                   text-base transition-[opacity,margin] duration-[0.1ms] sm:duration-[150ms] opacity-0 sm:w-48 z-10 bg-white sm:shadow-md rounded-lg p-2 before:absolute top-full sm:border before:-top-5 before:start-0 before:w-full before:h-5`}>
                     <Link
                       className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-sky-600"
                       href="/profile"
