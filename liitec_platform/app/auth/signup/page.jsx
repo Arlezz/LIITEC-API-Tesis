@@ -1,15 +1,12 @@
 "use client";
 
-import Image from "next/image";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import AuthService from "@/services/auth.service";
-import { useRouter } from "next/navigation";
 import { useState } from "react";
 
 export default function SignupPage() {
   const [error, setError] = useState(null);
 
-  const router = useRouter();
 
   const handleRegister = (values) => {
     console.log(values);
@@ -21,7 +18,7 @@ export default function SignupPage() {
             console.log(error.response.data.error);
             setError(error.response.data.error);
         }
-        );
+    );
     
   };
 

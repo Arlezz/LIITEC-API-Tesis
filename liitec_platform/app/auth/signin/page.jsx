@@ -23,10 +23,9 @@ export default function SigninPage() {
         if (res.error) {
             setError(res.error);
         } else {
-            router.push("/dashboard");
+            router.push("/");
+            router.refresh();
         }
-
-        console.log(res.error);
     };
 
   return (
@@ -96,36 +95,39 @@ export default function SigninPage() {
                                         name="username_or_email"
                                         type="text"
                                         placeholder="john@doe.com"
-                                        //autoComplete="email"
                                         className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-sky-600 sm:text-sm sm:leading-6"
                                     />
                                     <ErrorMessage name="username_or_email" component="div" className="text-red-500 text-sm font-semibold mt-1" />
                                 </div>
                             </div>
 
+  
                             <div>
                                 <div className="flex items-center justify-between">
                                     <label className="block text-sm font-medium leading-6 text-gray-900">
                                         Password
                                     </label>
-                                    {/* <div className="text-sm">
-                                        <a
-                                            href="#"
-                                            className="font-semibold text-indigo-600 hover:text-indigo-500"
-                                        >
-                                            Forgot password?
-                                        </a>
-                                    </div> */}
                                 </div>
-                                <div className="mt-2">
-                                    <Field
-                                        id="password"
+                                <div className="mt-2 relative">
+                                    <Field 
+                                        id="hs-toggle-password" 
+                                        type="password" 
                                         name="password"
-                                        type="password"
-                                        placeholder="********"
-                                        //autoComplete="current-password"
                                         className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-sky-600 sm:text-sm sm:leading-6"
+                                        placeholder="Enter password" 
                                     />
+                                    <button type="button" data-hs-toggle-password='{
+                                        "target": "#hs-toggle-password"
+                                    }' className="absolute top-0 end-0 p-3 rounded-e-md">
+                                    <svg className="flex-shrink-0 w-3.5 h-3.5 text-gray-400" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                        <path className="hs-password-active:hidden" d="M9.88 9.88a3 3 0 1 0 4.24 4.24"/>
+                                        <path className="hs-password-active:hidden" d="M10.73 5.08A10.43 10.43 0 0 1 12 5c7 0 10 7 10 7a13.16 13.16 0 0 1-1.67 2.68"/>
+                                        <path className="hs-password-active:hidden" d="M6.61 6.61A13.526 13.526 0 0 0 2 12s3 7 10 7a9.74 9.74 0 0 0 5.39-1.61"/>
+                                        <line className="hs-password-active:hidden" x1="2" x2="22" y1="2" y2="22"/>
+                                        <path className="hidden hs-password-active:block" d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/>
+                                        <circle className="hidden hs-password-active:block" cx="12" cy="12" r="3"/>
+                                    </svg>
+                                    </button>
                                     <ErrorMessage name="password" component="div" className="text-red-500 text-sm font-semibold mt-1" />
                                 </div>
                             </div>

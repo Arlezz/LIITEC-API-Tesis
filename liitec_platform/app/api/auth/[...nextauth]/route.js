@@ -3,7 +3,7 @@ import CredentialsProvider from 'next-auth/providers/credentials'
 import AuthService from "@/services/auth.service";
 
 
-const authOptions = {
+export const authOptions = {
     providers: [
         CredentialsProvider({
             name: 'Credentials',
@@ -12,12 +12,10 @@ const authOptions = {
                 password: { label: "Password", type: "password" }
             },
             async authorize (credentials, req) {
-                console.log(credentials);
-
                 try {
-                    const response = await AuthService.login(credentials.username_or_email, credentials.password);
-                    if (response) {
-                        return Promise.resolve(response);
+                    const user = await AuthService.login(credentials.username_or_email, credentials.password);
+                    if (user) {
+                        return user;
                     } 
                 } catch (error) {
                     const err = error.response.data.error;
@@ -31,7 +29,18 @@ const authOptions = {
     pages: {
         signIn: '/auth/signin',
     },
-    
+    callbacks: {
+        async jwt({ token, user }) {
+            if (user) {
+                token = user;
+            }
+            return token;
+        },
+        async session({ session, token }) {
+          session.user = token;
+          return session;
+        },
+    },
 }
 
 const handler = NextAuth(authOptions);
