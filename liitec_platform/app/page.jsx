@@ -1,12 +1,17 @@
+"use client"
 
-import Image from "next/image";
-
+import { useRouter } from "next/navigation";
+import { useEffect } from "react";
 
 
 export default function Page() {
-  return (
-    <>
-      <h1>pagina principal</h1>
-    </>
-  );
+
+  const router = useRouter();
+
+  useEffect(() => {
+    router.push("/dashboard");
+  }, []);
+
+
+  return null;
 }

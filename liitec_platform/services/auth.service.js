@@ -1,3 +1,4 @@
+
 import { post } from '../utils/httpClient';
 import { NextResponse } from 'next/server';
 
@@ -9,7 +10,6 @@ const login = (credential, password) => {
             password
         })
         .then((response) => {
-            //localStorage.setItem("user", JSON.stringify(response));
             return response;
         });
 };
@@ -29,14 +29,10 @@ const register = (username, name, lastName, email, password, type, superuser) =>
         });
 };
 
-const logout = () => {
-    localStorage.removeItem("user");
-};
 
 const AuthService = {
     register,
     login,
-    logout,
 };
 
 export default AuthService;

@@ -33,19 +33,14 @@ const AuthController = {
                 return res.status(404).json({ error: "Key not found" });
             }
 
-            const localUser = {
+            const basicUser = {
                 _id: user._id,
                 username: user.username,
-                superuser: user.superuser,
-                name: user.name,
-                lastName: user.lastName,
                 email: user.email,
-                createdOn: user.createdOn,
-                //acls: user.acls,
                 apiKey: key
             };
 
-            res.status(200).json(localUser);
+            res.status(200).json(basicUser);
 
         } catch (error) {
             console.error(error);

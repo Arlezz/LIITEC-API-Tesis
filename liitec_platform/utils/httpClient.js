@@ -1,33 +1,38 @@
+
 import axios from 'axios';
 
-function authHeader() {
-    /*const user = JSON.parse(localStorage.getItem('user'));
+import { getSession } from 'next-auth/react';
 
-    if (user?.accessToken) {
-        return { 'authorization': "Bearer "+user.apiKey.key };
+
+async function authHeader() {
+
+    const session = await getSession();
+
+    if (session?.user?.apiKey?.key) {
+        return { 'Authorization': session.user.apiKey.key };
     } else {
-        return { 'authorization': "68p7nyib281x9youicx9ra810uk4ve"};
-    }*/
+        return {};
+    }
 }
 
 const API = process.env.BASE_URL;
 
-export function get(url) {
-    return axios.get(API + url, { headers: authHeader() })
+export async function get(url) {
+    return axios.get(API + url, { headers: await authHeader() })
         .then(response => response.data);
 }
 
-export function post(url, data) {
-    return axios.post(API + url, data, { headers: authHeader() })
+export async function post(url, data) {
+    return axios.post(API + url, data, { headers: await authHeader() })
         .then(response => response.data);
 }
 
-export function put(url, data) {
-    return axios.put(API + url, data, { headers: authHeader() })
+export async function put(url, data) {
+    return axios.put(API + url, data, { headers: await authHeader() })
         .then(response => response.data);
 }
 
-export function del(url) {
-    return axios.delete(API + url, { headers: authHeader() })
+export async function del(url) {
+    return axios.delete(API + url, { headers: await authHeader() })
         .then(response => response.data);
 }

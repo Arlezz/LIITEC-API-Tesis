@@ -2,25 +2,21 @@ import Navbar from "@/components/Navbar";
 import { montserrat, roboto, inter } from "./ui/fonts";
 import "./ui/globals.css";
 import SessionAuthProvider from "@/context/SessionAuthProvider";
-
+import Footer from "@/components/Footer";
 
 export const metadata = {
   title: "Liitec Platform",
   description: "Official website for Liitec Platform",
 };
 
-export default function RootLayout({ children }) {    
+export default function RootLayout({ children }) {
   return (
     <html lang="en" className="h-full bg-white">
-      <body className={`${roboto.className} antialiased h-full`}>
+      <body className={`${roboto.className} antialiased h-full bg-gray-50`}>
         <SessionAuthProvider>
-          <Navbar />
-          {/* <div className="max-w-[85rem] w-full mx-auto p-4 sm:flex sm:items-center sm:justify-between">
-            
-          </div> */}
-          {children}
+            {children}
         </SessionAuthProvider>
-        {/* <PrelineScript /> */}
+        {/* <Footer /> */}
       </body>
     </html>
   );

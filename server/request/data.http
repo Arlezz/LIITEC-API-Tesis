@@ -35,3 +35,10 @@ Authorization: 68p7nyib281x9youicx9ra810uk4ve
 GET http://localhost:8081/api/v1/data/ch-2cf804f3-5290-412f-ace7-8df8bb8e74bb/export HTTP/1.1
 Content-Type: application/json
 Authorization: ch032ywc7wbwqwjnkrx23rmfdknb5m
+
+
+//Get variables from a channel
+###
+GET http://localhost:8081/api/v1/data/ch-2cf804f3-5290-412f-ace7-8df8bb8e74bb/variables HTTP/1.1
+Content-Type: application/json
+Authorization: ch032ywc7wbwqwjnkrx23rmfdknb5m

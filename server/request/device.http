@@ -14,7 +14,7 @@ X-Auth-Header : BBUS-jtLcerAIPDsYEe0aTJ7s0IO31NpqJ1
 
 //Crear un dispositivo en un canal
 ###
-POST http://localhost:8081/api/v1/channels/ch-2cf804f3-5290-412f-ace7-8df8bb8e74bb/devices HTTP/1.1
+POST http://localhost:8081/api/v1/channels/ch-8654f2e4-01d6-42f1-bf54-0f6fd9f8bdda/devices HTTP/1.1
 Content-Type: application/json
 Authorization: ch032ywc7wbwqwjnkrx23rmfdknb5m
 

@@ -396,6 +396,52 @@ const DataController = {
     } catch (error) {
       res.status(500).json({ error: error.message || "Error getting data" });
     } 
+  },
+  getVariablesFromChannel: async (req, res) => {
+    
+    try {
+      const { channelId } = req.params;
+
+      const channel = await channelSchema.findOne({ channelId });
+
+      if (!channel) {
+        return res.status(404).json({ error: "Channel not found" });
+      }
+
+      const variables = await deviceSchema.aggregate([
+        {
+          $match: {
+            channelId: channelId
+          }
+        },
+        {
+          $unwind: '$measures'
+        },
+        {
+          $group: {
+            _id: null,
+            variables: { $push: '$measures.variable' }
+          }
+        },
+        {
+          $project: {
+            _id: 0,
+            variables: 1
+          }
+        }
+      ]);
+
+      if (!variables || variables.length === 0) {
+        return res.status(404).json({ error: "No data found for this channel" });
+      }
+
+      res.json(variables[0]);
+
+
+
+    } catch (error) {
+      res.status(500).json({ error: error.message || "Error getting data" });
+    }
   }
 };
 

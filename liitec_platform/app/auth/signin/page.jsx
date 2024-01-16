@@ -21,7 +21,7 @@ export default function SigninPage() {
     if (res.error) {
       setError(res.error);
     } else {
-      router.push("/");
+      router.push("/dashboard");
       router.refresh();
     }
   };
