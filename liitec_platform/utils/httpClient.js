@@ -1,12 +1,12 @@
-
 import axios from 'axios';
 
-import { getSession } from 'next-auth/react';
-
+//import { getSession } from 'next-auth/react';
+import { authOptions } from '@/app/api/auth/[...nextauth]/route';
+import { getServerSession } from 'next-auth';
 
 async function authHeader() {
 
-    const session = await getSession();
+    const session = await getServerSession(authOptions)
 
     if (session?.user?.apiKey?.key) {
         return { 'Authorization': session.user.apiKey.key };

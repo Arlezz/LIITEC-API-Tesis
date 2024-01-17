@@ -27,7 +27,7 @@ const UserController = {
         .skip(startIndex)
         .limit(page_size)
 
-      if (!users) {
+      if (!users || users.length === 0) {
         return res.status(404).json({ error: "Users not found" });
       }
 

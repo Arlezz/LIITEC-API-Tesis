@@ -21,7 +21,7 @@ const KeyController = {
                 .skip(startIndex)
                 .limit(page_size)
 
-            if (!keys) {
+            if (!keys || keys.length === 0) {
                 return res.status(404).json({ error: "Keys not found" });
             }
 

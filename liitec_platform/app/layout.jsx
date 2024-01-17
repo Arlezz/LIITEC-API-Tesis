@@ -11,8 +11,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className="h-full bg-white">
-      <body className={`${roboto.className} antialiased h-full bg-gray-50`}>
+    <html lang="en" className=" bg-gray-50">
+      <body className={`${roboto.className} antialiased bg-gray-50`}>
         <SessionAuthProvider>
             {children}
         </SessionAuthProvider>
