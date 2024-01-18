@@ -216,7 +216,7 @@ const UserController = {
         await user.save();
         res.status(200).json({ message: "User updated" });
       } else {
-        res.status(304).json({ message: "No changes detected" });
+        res.status(400).json({ message: "No changes detected" });
       }
     } catch (error) {
       console.error(error);

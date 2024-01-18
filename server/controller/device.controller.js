@@ -284,6 +284,7 @@ const DeviceController = {
                 (description !== undefined && device.description !== description) ||
                 (isActive !== undefined && device.isActive !== isActive)
             );
+            
 
             if (!hasChanges) {
                 return res.status(400).json({ error: "No changes to detected" });

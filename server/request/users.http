@@ -30,9 +30,9 @@ Authorization: 68p7nyib281x9youicx9ra810uk4ve
 
 
 ###
-PUT http://localhost:8081/api/v1/users/658e3ae9638ee5284cf59247 HTTP/1.1
+PUT http://localhost:8081/api/v1/users/6584db3ee679dadf7702a03a HTTP/1.1
 Content-Type: application/json
-Authorization: tefcrh7fsbqjxksqfrlothepz7weq9
+Authorization: ch032ywc7wbwqwjnkrx23rmfdknb5m
 
 {
     "lastName":"RodriguezXD"

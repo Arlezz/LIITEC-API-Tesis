@@ -268,51 +268,51 @@ const ChannelController = {
         (isPublic !== undefined && channel.isPublic !== isPublic)
       );
 
-      console.log(hasChanges);
+      console.log("hubo cambios? ",hasChanges);
       
-      if (!hasChanges) {
-        return res.status(304).json({ error: "No changes to detected" });
-      }
-
-      if (name !== undefined && name !== null) {
-        channel.name = name;
-      }
-      
-      if (description !== undefined) {
-        channel.description = description;
-      }
-
-      if (project !== undefined) {
-        channel.project = project;
-      }
-
-      if (ubication !== undefined) {
-        if (ubication.latitude !== undefined) {
-          channel.ubication.latitude = ubication.latitude;
+      if (hasChanges) {
+        if (name !== undefined && name !== null) {
+          channel.name = name;
         }
-        if (ubication.longitude !== undefined) {
-          channel.ubication.longitude = ubication.longitude;
+        
+        if (description !== undefined) {
+          channel.description = description;
         }
-      }
-
-      if (isActive !== undefined) {
-        channel.isActive = isActive;
-
-        if (!isActive) {
-          await deviceSchema.updateMany({ channelId: id }, { isActive: false });
+  
+        if (project !== undefined) {
+          channel.project = project;
         }
+  
+        if (ubication !== undefined) {
+          if (ubication.latitude !== undefined) {
+            channel.ubication.latitude = ubication.latitude;
+          }
+          if (ubication.longitude !== undefined) {
+            channel.ubication.longitude = ubication.longitude;
+          }
+        }
+  
+        if (isActive !== undefined) {
+          channel.isActive = isActive;
+  
+          if (!isActive) {
+            await deviceSchema.updateMany({ channelId: id }, { isActive: false });
+          }
+        }
+  
+        if (isPublic !== undefined) {
+          channel.isPublic = isPublic;
+        }
+  
+        channel.updatedOn = Date.now();
+  
+        await channel.save();
+  
+        res.status(200).json({ message: "Channel updated successfully" });
+      } else {
+        console.log("no hubo cambios");
+        res.status(400).json({ message: "No changes detected" });
       }
-
-      if (isPublic !== undefined) {
-        channel.isPublic = isPublic;
-      }
-
-      channel.updatedOn = Date.now();
-
-      await channel.save();
-
-      res.json({ message: "Channel updated successfully" });
-      
     } catch (error) {
       return res.status(500).json({ error: error.message || "Error updating channel" });
     }

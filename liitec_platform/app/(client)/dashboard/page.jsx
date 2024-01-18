@@ -9,12 +9,18 @@ import Map from "@/components/Map";
 export default async function DashboardPage() {
   const session = await getServerSession(authOptions);
 
-  var users = null;
-  var keys = null;
+  const role = session?.user?.apiKey?.type;
 
-  if (session?.user?.apiKey?.type === "superUser") {
-    users = await UserService.getUsers();
+  var usersPlatform = null;
+  var keys = null;
+  var channelsPlatform = null;
+  var devicesPlatform = null;
+
+  if (role === "superUser") {
+    usersPlatform = await AuthService.getUsersPlatform();
     keys = await AuthService.getKeys();
+    channelsPlatform = await AuthService.getChannelsPlatform();
+    devicesPlatform = await AuthService.getDevicesPlatform();
   }
 
   const user = await UserService.getUser(session.user._id);
@@ -22,13 +28,9 @@ export default async function DashboardPage() {
   const guests = await GeneralService.getGuests(user._id);
 
   const channels = await GeneralService.getChannels(user._id);
+  
 
-  const devicesPromises = channels.map(async (channel) => {
-    const devices = await GeneralService.getDevices(channel.channelId);
-    return devices;
-  });
-
-  const devices = (await Promise.all(devicesPromises)).flat();
+  const devices = (await Promise.all(channels.map(async (channel) => await GeneralService.getDevices(channel.channelId)))).flat();
 
   var variables = [];
 
@@ -58,9 +60,27 @@ export default async function DashboardPage() {
               <>
                 <div className="flex flex-col items-center justify-center bg-white rounded-lg shadow-lg p-8 text-center cursor-pointer hover:bg-gray-100 transition duration-300 ease-in-out">
                   <span className="text-4xl font-bold">
-                    {users?.length > 0 ? <>{users.length}</> : 0}
+                    {usersPlatform?.length > 0 ? <>{usersPlatform.length}</> : 0}
                   </span>
                   <span className="text-xl">Users</span>
+                  <span className="text-gray-400 text-md font-medium">
+                    In the platform
+                  </span>
+                </div>
+                <div className="flex flex-col items-center justify-center bg-white rounded-lg shadow-lg p-8 text-center cursor-pointer hover:bg-gray-100 transition duration-300 ease-in-out">
+                  <span className="text-4xl font-bold">
+                    {channelsPlatform?.length > 0 ? <>{channelsPlatform.length}</> : 0}
+                  </span>
+                  <span className="text-xl">Channels</span>
+                  <span className="text-gray-400 text-md font-medium">
+                    In the platform
+                  </span>
+                </div>
+                <div className="flex flex-col items-center justify-center bg-white rounded-lg shadow-lg p-8 text-center cursor-pointer hover:bg-gray-100 transition duration-300 ease-in-out">
+                  <span className="text-4xl font-bold">
+                    {devicesPlatform?.length > 0 ? <>{devicesPlatform.length}</> : 0}
+                  </span>
+                  <span className="text-xl">Devices</span>
                   <span className="text-gray-400 text-md font-medium">
                     In the platform
                   </span>
@@ -81,34 +101,31 @@ export default async function DashboardPage() {
               <span className="text-4xl font-bold">
                 {channels?.length > 0 ? <>{channels.length}</> : 0}
               </span>
-              <span className="text-xl">Channels</span>
+              <span className="text-xl">My Channels</span>
             </div>
             <div className="flex flex-col items-center justify-center bg-white rounded-lg shadow-lg p-8 text-center cursor-pointer hover:bg-gray-100 transition duration-300 ease-in-out">
               <span className="text-4xl font-bold">
                 {devices?.length > 0 ? <>{devices.length}</> : 0}
               </span>
-              <span className="text-xl">Devices</span>
+              <span className="text-xl">My Devices</span>
             </div>
             <div className="flex flex-col items-center justify-center bg-white rounded-lg shadow-lg p-8 text-center cursor-pointer hover:bg-gray-100 transition duration-300 ease-in-out">
               <span className="text-4xl font-bold">
                 {variables?.length > 0 ? <>{variables.length}</> : 0}
               </span>
-              <span className="text-xl">Variables</span>
+              <span className="text-xl">My Variables</span>
             </div>
             <div className="flex flex-col items-center justify-center bg-white rounded-lg shadow-lg p-8 text-center cursor-pointer hover:bg-gray-100 transition duration-300 ease-in-out">
               <span className="text-4xl font-bold">
                 {user?.acls ? <>{user.acls.length}</> : 0}
               </span>
-              <span className="text-xl">Topics</span>
+              <span className="text-xl">My Topics</span>
             </div>
             <div className="flex flex-col items-center justify-center bg-white rounded-lg shadow-lg p-8 text-center cursor-pointer hover:bg-gray-100 transition duration-300 ease-in-out">
               <span className="text-4xl font-bold">
                 {guests?.length > 0 ? <>{guests.length}</> : 0}
               </span>
               <span className="text-xl">Guests</span>
-            </div>
-            <div className="flex flex-col w-200 h-200 items-center justify-center bg-white rounded-lg shadow-lg p-0 text-center cursor-pointer hover:bg-gray-100 transition duration-300 ease-in-out">
-              {/* <Map /> */}
             </div>
           </div>
         </section>
@@ -121,9 +138,9 @@ export default async function DashboardPage() {
               Channel Ubications
             </h2>
           </section>
-          <div className="flex justify-center bg-white rounded-lg shadow-lg p-4 md:p-8 text-center cursor-pointer hover:bg-gray-100 transition duration-300 ease-in-out">
-            <div className="w-full h-[40vh] md:h-[70vh] bg-sky-100">
-              <Map />
+          <div className="flex justify-center bg-white rounded-lg shadow-lg p-2 text-center cursor-pointer hover:bg-gray-100 transition duration-300 ease-in-out">
+            <div className="w-full h-[40vh] md:h-[700px] bg-sky-100">
+              <Map channels={role === "superUser"? channelsPlatform : channels}/>
             </div>
           </div>
         </div>

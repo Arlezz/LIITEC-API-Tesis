@@ -11,32 +11,7 @@ import { get, del, put } from '../utils/httpClient';
 //     }
 // }
 
-const getUsers = async (startPage = 1, endPage = Infinity, pageSize = 10) => {
-    let allUsers = [];
-  
-    for (let page = startPage; page <= endPage; page++) {
-      try {
-        const data = await get(`/users?page=${page}&page_size=${pageSize}`);
-  
-        if (!data.results || data.results.length === 0) {
-          break;
-        }
-  
-        // Agrega los usuarios de la página actual al arreglo total
-        allUsers.push(...data.results);
-      } catch (error) {
-        
-        if (error.response && error.response.status === 404) {
-            break;
-        }
 
-        console.error('Error al obtener usuarios:', error);
-        break;
-      }
-    }
-  
-    return allUsers;
-};
 
 const getUser = async (id) => {
     try {
@@ -78,7 +53,7 @@ const deleteUser = (email) => {
 // Resto de las funciones con async/await
 
 const UserService = {
-    getUsers,
+    //getUsers,
     getUser,
     //updateUserName,
     //updateUserPassword,
