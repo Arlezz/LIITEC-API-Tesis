@@ -25,12 +25,12 @@ export default async function DashboardPage() {
 
   const user = await UserService.getUser(session.user._id);
 
-  const guests = await GeneralService.getGuests(user._id);
+  const guests = await GeneralService.getGuestsDashboard(user._id);
 
-  const channels = await GeneralService.getChannels(user._id);
+  const channels = await GeneralService.getMyChannelsDasboard(user._id);
   
 
-  const devices = (await Promise.all(channels.map(async (channel) => await GeneralService.getDevices(channel.channelId)))).flat();
+  const devices = (await Promise.all(channels.map(async (channel) => await GeneralService.getMyDevicesDashboard(channel.channelId)))).flat();
 
   var variables = [];
 

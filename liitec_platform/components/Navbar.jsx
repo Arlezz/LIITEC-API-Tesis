@@ -18,8 +18,7 @@ export default function Navbar() {
 
   const letterUsername =
     session?.user?.username?.charAt(0).toUpperCase() || "U";
-  const usernameUpperCase =
-    letterUsername + session?.user?.username?.slice(1) || "Usuario";
+
   const roleMappings = {
     readUser: "Read Only",
     advancedUser: "Advanced User",
@@ -234,8 +233,8 @@ export default function Navbar() {
             label="Dropdown"
             placement="bottom"
             renderTrigger={() => (
-              <span className="bg-sky-700 rounded-full text-white flex items-center py-2 px-4 text-gray-900 rounded">
-                {session?.user ? <>{usernameUpperCase}</> : <>{"Usuario"}</>}
+              <span className="bg-sky-700 rounded-full capitalize text-white flex items-center py-2 px-4 text-gray-900 rounded">
+                {session?.user ? <>{session.user.username}</> : <>{"Usuario"}</>}
                 <svg
                   className="w-2.5 h-2.5 ms-2.5"
                   aria-hidden="true"

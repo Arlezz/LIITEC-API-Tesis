@@ -167,7 +167,7 @@ const ChannelController = {
   
       const totalChannels = await channelSchema.countDocuments({ owner: id2 });
   
-      const total_pages = Math.ceil(totalChannels / page_size);
+      const totalPages = Math.ceil(totalChannels / page_size);
   
       const skip = (page - 1) * page_size;
 
@@ -183,8 +183,8 @@ const ChannelController = {
   
       res.status(200).json({
         count: channels.length,
-        total_pages: total_pages,
-        next: page < total_pages ? `/api/v1/users/${userId}/channels?page=${parseInt(page, 10) + 1}&page_size=${page_size}` : null,
+        totalPages: totalPages,
+        next: page < totalPages ? `/api/v1/users/${userId}/channels?page=${parseInt(page, 10) + 1}&page_size=${page_size}` : null,
         previous: page > 1 ? `/api/v1/users/${userId}/channels?page=${parseInt(page, 10) - 1}&page_size=${page_size}` : null,
         results: channels,
       });

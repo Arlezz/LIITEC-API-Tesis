@@ -1,76 +1,85 @@
 import { get, del, put } from '../utils/httpClient';
-//import { cache } from 'react';
 
-// const getChannels = (userId) => { //first page
-//     return get(`/users/${userId}/channels`)
-//     .then((response) => {
-//         return response;
-//     });
-// }
 
-const getChannels = async (userId, startPage = 1, endPage = Infinity, pageSize = 10) => {
-    let allChannels = [];
-  
-    for (let page = startPage; page <= endPage; page++) {
-      try {
-        const data = await get(`/users/${userId}/channels?page=${page}&page_size=${pageSize}`);
-  
-        if (!data.results || data.results.length === 0) {
-          break;
-        }
-  
-        allChannels.push(...data.results);
-      } catch (error) {
-        // Evitar imprimir el error en la consola si es un error 404
-        if (error.response && error.response.status === 404) {
-          break;
-        }
-  
-        console.error('Error al obtener canales:', error.response);
+
+const getUserChannels = async (userId, page = 1, pageSize = 10) => {
+  try {
+    const data = await get(`/users/${userId}/channels?page=${page}&page_size=${pageSize}`);
+
+    if (!data.results || data.results.length === 0) {
+      console.error(`La página ${page} no tiene resultados.`);
+      return [];
+    }
+
+    return data;
+  } catch (error) {
+    console.error(`Error al obtener la página ${page} de canales para el usuario ${userId}:`, error);
+    return [];
+  }
+};
+
+const getMyChannelsDasboard = async (userId) => {
+  let allChannels = [];
+  let currentPage = 1;
+
+  try {
+    while (true) {
+      const data = await get(`/users/${userId}/channels?page=${currentPage}&page_size=10`);
+
+      if (!data.results || data.results.length === 0) {
+        // No hay más resultados, salimos del bucle
         break;
       }
+
+      allChannels.push(...data.results);
+      
+      // Verificar si hay más páginas
+      if (currentPage >= data.totalPages) {
+        break;
+      }
+
+      currentPage++;
     }
-  
-    return allChannels;
+  } catch (error) {
+    console.error('Error al obtener canales:', error);
+  }
+
+  return allChannels;
 };
 
 
-const getGuests = async (userId, startPage = 1, endPage = Infinity, pageSize = 10) => {
+const getGuestsDashboard = async (userId) => {
     let allKeys = [];
-  
-    for (let page = startPage; page <= endPage; page++) {
-      try {
-        const data = await get(`/keys/${userId}?page=${page}&page_size=${pageSize}`);
-  
+    let currentPage = 1;
+
+    try {
+      while (true) {
+        const data = await get(`/keys/${userId}?page=${currentPage}&page_size=10`);
+
         if (!data.results || data.results.length === 0) {
+          // No hay más resultados, salimos del bucle
           break;
         }
-  
-        // Filtra las claves que tienen el campo channelAccess
-        const keysWithChannelAccess = data.results.filter(key => key.channelAccess);
-  
-        // Agrega las claves filtradas al arreglo total
-        allKeys.push(...keysWithChannelAccess);
-      } catch (error) {
 
-        if (error.response && error.response.status === 404) {
-            break;
+        const keysWithChannelAccess = data.results.filter(key => key.channelAccess);
+
+
+        allKeys.push(...keysWithChannelAccess);
+        
+        // Verificar si hay más páginas
+        if (currentPage >= data.totalPages) {
+          break;
         }
 
-        console.error('Error al obtener claves:', error);
-        break;
+        currentPage++;
       }
+    } catch (error) {
+      console.error('Error al obtener invitados:', error);
     }
   
     return allKeys;
 };
 
-// const getDevices = (channelId) => {
-//     return get(`/channels/${channelId}/devices`)
-//     .then((response) => {
-//         return response;
-//     });
-// }
 
 const getDevices = async (channelId, startPage = 1, endPage = Infinity, pageSize = 10) => {
     let allDevices = [];
@@ -97,6 +106,43 @@ const getDevices = async (channelId, startPage = 1, endPage = Infinity, pageSize
   
     return allDevices;
 };
+
+const getMyDevicesDashboard = async (channelId) => {
+  let allDevices = [];
+  let currentPage = 1;
+
+  try {
+    while (true) {
+      const data = await get(`/channels/${channelId}/devices?page=${currentPage}&page_size=10`);
+
+      if (!data.results || data.results.length === 0) {
+        // No hay más resultados, salimos del bucle
+        break;
+      }
+
+      allDevices.push(...data.results);
+
+      // Verificar si hay más páginas
+      if (currentPage >= data.totalPages) {
+        break;
+      }
+
+      currentPage++;
+    }
+  } catch (error) {
+    // Manejar el error específico 404
+    if (error.response && error.response.status === 404) {
+      console.error(`No se encontraron dispositivos para el canal ${channelId}.`);
+    } else {
+      console.error('Error al obtener dispositivos:', error);
+    }
+  }
+
+  return allDevices;
+};
+
+
+
 
 
 const getUser = (id) => {
@@ -134,9 +180,11 @@ const deleteUser = (email) => {
 
 
 const GeneralService = {
-    getChannels,
-    getDevices,
-    getGuests,
+    
+    getMyChannelsDasboard,
+    getMyDevicesDashboard,
+    getGuestsDashboard,
+    getUserChannels,
 };
 
 export default GeneralService;

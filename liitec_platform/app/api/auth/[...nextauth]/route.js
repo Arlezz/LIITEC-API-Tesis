@@ -3,6 +3,7 @@ import CredentialsProvider from 'next-auth/providers/credentials'
 import AuthService from "@/services/auth.service";
 
 
+
 export const authOptions = {
     providers: [
         CredentialsProvider({

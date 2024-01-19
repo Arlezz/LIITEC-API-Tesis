@@ -29,106 +29,117 @@ const register = (username, name, lastName, email, password, type, superuser) =>
         });
 };
 
-const getKeys = async (startPage = 1, endPage = Infinity, pageSize = 10) => {
+const getKeys = async () => {
     let allKeys = [];
-  
-    for (let page = startPage; page <= endPage; page++) {
-      try {
-        const data = await get(`/keys?page=${page}&page_size=${pageSize}`);
+    let currentPage = 1;
+
+    try {
+      while (true) {
+        const data = await get(`/keys?page=${currentPage}&page_size=10`);
   
         if (!data.results || data.results.length === 0) {
+          // No hay más resultados, salimos del bucle
           break;
         }
   
         allKeys.push(...data.results);
-      } catch (error) {
         
-        if (error.response && error.response.status === 404) {
-            break;
+        // Verificar si hay más páginas
+        if (currentPage >= data.totalPages) {
+          break;
         }
-
-        console.error('Error al obtener keys:', error);
-        break;
+  
+        currentPage++;
       }
+    } catch (error) {
+      console.error('Error al obtener keys:', error);
     }
   
     return allKeys;
 };
 
-const getChannelsPlatform = async (startPage = 1, endPage = Infinity, pageSize = 10) => {
+const getChannelsPlatform = async () => {
   let allChannels = [];
+  let currentPage = 1;
 
-  for (let page = startPage; page <= endPage; page++) {
-    try {
-      const data = await get(`/channels?page=${page}&page_size=${pageSize}`);
+  try {
+    while (true) {
+      const data = await get(`/channels?page=${currentPage}&page_size=10`);
 
       if (!data.results || data.results.length === 0) {
+        // No hay más resultados, salimos del bucle
         break;
       }
 
       allChannels.push(...data.results);
-    } catch (error) {
-      // Evitar imprimir el error en la consola si es un error 404
-      if (error.response && error.response.status === 404) {
+      
+      // Verificar si hay más páginas
+      if (currentPage >= data.totalPages) {
         break;
       }
 
-      console.error('Error al obtener canales:', error.response);
-      break;
+      currentPage++;
     }
+  } catch (error) {
+    console.error('Error al obtener canales:', error);
   }
 
   return allChannels;
 };
 
-const getDevicesPlatform = async (startPage = 1, endPage = Infinity, pageSize = 10) => {
+const getDevicesPlatform = async () => {
   let allDevices = [];
+  let currentPage = 1;
 
-  for (let page = startPage; page <= endPage; page++) {
-    try {
-      const data = await get(`/devices?page=${page}&page_size=${pageSize}`);
+  try {
+    while (true) {
+      const data = await get(`/devices?page=${currentPage}&page_size=10`);
 
       if (!data.results || data.results.length === 0) {
+        // No hay más resultados, salimos del bucle
         break;
       }
 
       allDevices.push(...data.results);
-    } catch (error) {
-      // Evitar imprimir el error en la consola si es un error 404
-      if (error.response && error.response.status === 404) {
+      
+      // Verificar si hay más páginas
+      if (currentPage >= data.totalPages) {
         break;
       }
 
-      console.error('Error al obtener dispositivos:', error.response);
-      break;
-    }      
+      currentPage++;
+    }
+  } catch (error) {
+    console.error('Error al obtener dispositivos:', error);
   }
 
   return allDevices;
 };
 
-const getUsersPlatform = async (startPage = 1, endPage = Infinity, pageSize = 10) => {
+const getUsersPlatform = async () => {
   let allUsers = [];
+  let currentPage = 1;
 
-  for (let page = startPage; page <= endPage; page++) {
-    try {
-      const data = await get(`/users?page=${page}&page_size=${pageSize}`);
+  try {
+    while (true) {
+      const data = await get(`/users?page=${currentPage}&page_size=10`);
 
       if (!data.results || data.results.length === 0) {
+        // No hay más resultados, salimos del bucle
         break;
       }
 
-      // Agrega los usuarios de la página actual al arreglo total
       allUsers.push(...data.results);
-    } catch (error) {
       
-      if (error.response && error.response.status === 404) {
-          break;
+      // Verificar si hay más páginas
+      if (currentPage >= data.totalPages) {
+        break;
       }
 
-      console.error('Error al obtener usuarios:', error);
-      break;
+      currentPage++;
     }
+  } catch (error) {
+    console.error('Error al obtener usuarios:', error);
   }
 
   return allUsers;

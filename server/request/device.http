@@ -6,12 +6,6 @@ Content-Type: application/json
 Authorization: 68p7nyib281x9youicx9ra810uk4ve
 
 
-###
-GET https://industrial.api.ubidots.com/api/v2.0/devices/65a06ba3b05bce000e15dd18/ HTTP/1.1
-Content-Type: application/json
-X-Auth-Header : BBUS-jtLcerAIPDsYEe0aTJ7s0IO31NpqJ1
-
-
 //Crear un dispositivo en un canal
 ###
 POST http://localhost:8081/api/v1/channels/ch-8654f2e4-01d6-42f1-bf54-0f6fd9f8bdda/devices HTTP/1.1
@@ -37,7 +31,7 @@ Authorization: ch032ywc7wbwqwjnkrx23rmfdknb5m
 
 //Obtener todos los dispositivos de un canal
 ###
-GET http://localhost:8081/api/v1/channels/ch-2cf804f3-5290-412f-ace7-8df8bb8e74bb/devices?page=2&page_size=1 HTTP/1.1
+GET http://localhost:8081/api/v1/channels/ch-07305bbb-e51b-4af4-9f9a-12c12286eaf4/devices?page=2&page_size=1 HTTP/1.1
 Content-Type: application/json
 Authorization: ch032ywc7wbwqwjnkrx23rmfdknb5m
 

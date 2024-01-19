@@ -133,7 +133,7 @@ const DataController = {
 
       res.json({
         count: data.length,
-        total_pages: totalPages,
+        totalPages: totalPages,
         next:
           data.length === page_size
             ? `/api/v1/data/${deviceId}?page=${parseInt(page, 10) + 1}&page_size=${page_size}`
