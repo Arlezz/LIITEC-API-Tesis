@@ -124,31 +124,28 @@ const DeviceController = {
             return res.status(404).json({ error: "Channel not found" });
           }
 
-          const user = req.user;
+          if (!channel.isPublic) {
 
-          if (user.apiKey.type === "readUser") {
+            const user = req.user;
 
-            console.log("readUser");
+            if (user.apiKey.type === "readUser") {
 
-            const key = await keySchema.findOne({ user: user._id, channelAccess: channelId });
+                console.log("readUser");
 
-            if (!key) {
-              return res.status(401).json({ error: "Access Forbidden" });
-            }
+                const key = await keySchema.findOne({ user: user._id, channelAccess: channelId });
 
-            const dateNow = new Date(Date.now());
+                if (!key || key.expirationDate < new Date(Date.now())) {
+                    return res.status(401).json({ error: "Access Forbidden" });
+                }
 
-            if (key.expirationDate <  dateNow) {
-              return res.status(401).json({ error: "Access Forbidden" });
-            }
+            } else {
 
-          } else {
-
-            const id1 = user._id;
-            const id2 = new ObjectId(channel.owner);
-        
-            if (!id1.equals(id2)) {
-              return res.status(401).json({ error: "Access Forbidden" });
+                const id1 = user._id;
+                const id2 = new ObjectId(channel.owner);
+            
+                if (!id1.equals(id2)) {
+                return res.status(401).json({ error: "Access Forbidden" });
+                }
             }
           }
       
@@ -196,28 +193,25 @@ const DeviceController = {
                 return res.status(404).json({ error: "Channel not found" });
             }
 
-            const user = req.user;
+            if (!channel.isPublic) {
+                const user = req.user;
 
-            if (user.apiKey.type === "readUser") {
+                if (user.apiKey.type === "readUser") {
 
-                const key = await keySchema.findOne({ user: user._id, channelAccess: channelId });
+                    const key = await keySchema.findOne({ user: user._id, channelAccess: channelId });
 
-                if (!key) {
-                    return res.status(401).json({ error: "Access Forbidden" });
-                }
+                    if (!key || key.expirationDate < new Date(Date.now())) {
+                        return res.status(401).json({ error: "Access Forbidden" });
+                    }
 
-                const dateNow = new Date(Date.now());
+                } else {
 
-                if (key.expirationDate < dateNow) {
-                    return res.status(401).json({ error: "Access Forbidden" });
-                }
-            } else {
+                    const id1 = user._id;
+                    const id2 = new ObjectId(channel.owner);
 
-                const id1 = user._id;
-                const id2 = new ObjectId(channel.owner);
-
-                if (!id1.equals(id2)) {
-                    return res.status(401).json({ error: "Access Forbidden" });
+                    if (!id1.equals(id2)) {
+                        return res.status(401).json({ error: "Access Forbidden" });
+                    }
                 }
             }
 

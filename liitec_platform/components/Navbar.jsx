@@ -180,7 +180,7 @@ export default function Navbar() {
             </li>
             <li>
               <Link
-                href="channels"
+                href="/channels"
                 className={`
                 ${
                   path === "/channels"
@@ -194,7 +194,7 @@ export default function Navbar() {
             </li>
             <li>
               <Link
-                href="support"
+                href="/support"
                 className={`
                 ${
                   path === "/support"
@@ -209,7 +209,7 @@ export default function Navbar() {
             {userRole === "Super User" ? (
               <li>
                 <Link
-                  href="admin"
+                  href="/admin"
                   className={`
                 ${
                   path === "/admin"

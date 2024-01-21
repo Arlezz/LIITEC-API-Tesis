@@ -33,7 +33,6 @@ const DataController = {
       const totalData = await dataSchema.countDocuments(query);
       const totalPages = Math.ceil(totalData / page_size);
 
-
       // Construir la respuesta de paginación
       const response = {
         count: totalData,
@@ -76,28 +75,24 @@ const DataController = {
         return res.status(404).json({ error: "Channel not found" });
       }
 
-      const user = req.user;
+      if (!channel.isPublic) {
+        const user = req.user;
 
-      if (user.apiKey.type === "readUser") {
-
-        const key = await keySchema.findOne({ user: user._id, channelAccess: channelId });
-
-        if (!key) {
-          return res.status(401).json({ error: "Access Forbidden" });
-        }
-
-        const dateNow = new Date(Date.now());
-
-        if (key.expirationDate <  dateNow) {
-          return res.status(401).json({ error: "Access Forbidden" });
-        }
-      } else {
-          const id1 = user._id;
-          const id2 = channel.owner;
+        if (user.apiKey.type === "readUser") {
   
-          if (!id1.equals(id2)) {
+          const key = await keySchema.findOne({ user: user._id, channelAccess: channelId });
+  
+          if (!key || key.expirationDate < new Date(Date.now())) {
             return res.status(401).json({ error: "Access Forbidden" });
-          } 
+          }
+        } else {
+            const id1 = user._id;
+            const id2 = channel.owner;
+    
+            if (!id1.equals(id2)) {
+              return res.status(401).json({ error: "Access Forbidden" });
+            } 
+        }
       }
 
       let query = { deviceId };
@@ -182,31 +177,26 @@ const DataController = {
         return res.status(404).json({ error: "Channel not found" });
       }
 
-      const user = req.user;
+      if (!channel.isPublic) {
+        const user = req.user;
 
-      if (user.apiKey.type === "readUser") {
-          
-          const key = await keySchema.findOne({ user: user._id, channelAccess: channelId });
-  
-          if (!key) {
-            return res.status(401).json({ error: "Access Forbidden" });
-          }
-  
-          const dateNow = new Date(Date.now());
-  
-          if (key.expirationDate <  dateNow) {
-            return res.status(401).json({ error: "Access Forbidden" });
-          }
+        if (user.apiKey.type === "readUser") {
+            
+            const key = await keySchema.findOne({ user: user._id, channelAccess: channelId });
+    
+            if (!key || key.expirationDate < new Date(Date.now())) {
+              return res.status(401).json({ error: "Access Forbidden" });
+            }
 
-      } else {
-          const id1 = user._id;
-          const id2 = channel.owner;
+        } else {
+            const id1 = user._id;
+            const id2 = channel.owner;
 
-          if (!id1.equals(id2)) {
-            return res.status(401).json({ error: "Access Forbidden" });
-          }
+            if (!id1.equals(id2)) {
+              return res.status(401).json({ error: "Access Forbidden" });
+            }
+        }
       }
-
 
       let query = { deviceId: deviceId };
 
@@ -266,29 +256,25 @@ const DataController = {
         return res.status(404).json({ error: "Channel not found" });
       }
 
-      const user = req.user;
+      if (!channel.isPublic) {
+        const user = req.user;
 
-      if (user.apiKey.type === "readUser") {
-            
-            const key = await keySchema.findOne({ user: user._id, channelAccess: channelId });
+        if (user.apiKey.type === "readUser") {
+              
+              const key = await keySchema.findOne({ user: user._id, channelAccess: channelId });
+      
+              if (!key || key.expirationDate < new Date(Date.now())) {
+                return res.status(401).json({ error: "Access Forbidden" });
+              }
     
-            if (!key) {
+        } else {
+            const id1 = user._id;
+            const id2 = channel.owner;
+    
+            if (!id1.equals(id2)) {
               return res.status(401).json({ error: "Access Forbidden" });
             }
-    
-            const dateNow = new Date(Date.now());
-    
-            if (key.expirationDate <  dateNow) {
-              return res.status(401).json({ error: "Access Forbidden" });
-            }
-  
-      } else {
-          const id1 = user._id;
-          const id2 = channel.owner;
-  
-          if (!id1.equals(id2)) {
-            return res.status(401).json({ error: "Access Forbidden" });
-          }
+        }
       }
 
       let query = { deviceId };
@@ -349,13 +335,25 @@ const DataController = {
         return res.status(404).json({ error: "No devices found for this channel" });
       }
 
-      const user = req.user;
+      if (!channel.isPublic) {
+        const user = req.user;
 
-      const id1 = user._id;
-      const id2 = channel.owner;
-
-      if (!id1.equals(id2)) {
-        return res.status(401).json({ error: "Access Forbidden" });
+        if (user.apiKey.type === "readUser") {
+              
+              const key = await keySchema.findOne({ user: user._id, channelAccess: channelId });
+      
+              if (!key || key.expirationDate < new Date(Date.now())) {
+                return res.status(401).json({ error: "Access Forbidden" });
+              }
+    
+        } else {
+            const id1 = user._id;
+            const id2 = channel.owner;
+    
+            if (!id1.equals(id2)) {
+              return res.status(401).json({ error: "Access Forbidden" });
+            }
+        }
       }
 
       const csvData = [];
@@ -406,6 +404,27 @@ const DataController = {
 
       if (!channel) {
         return res.status(404).json({ error: "Channel not found" });
+      }
+
+      if (!channel.isPublic) {
+        const user = req.user;
+
+        if (user.apiKey.type === "readUser") {
+              
+              const key = await keySchema.findOne({ user: user._id, channelAccess: channelId });
+      
+              if (!key || key.expirationDate < new Date(Date.now())) {
+                return res.status(401).json({ error: "Access Forbidden" });
+              }
+    
+        } else {
+            const id1 = user._id;
+            const id2 = channel.owner;
+    
+            if (!id1.equals(id2)) {
+              return res.status(401).json({ error: "Access Forbidden" });
+            }
+        }
       }
 
       const variables = await deviceSchema.aggregate([

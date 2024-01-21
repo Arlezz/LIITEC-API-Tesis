@@ -3,13 +3,19 @@ import UserService from "@/services/user.services";
 import { authOptions } from "@/app/api/auth/[...nextauth]/route";
 import { getServerSession } from "next-auth";
 import AuthService from "@/services/auth.service";
-import ChannelTable from "@/components/ChannelTable";
 import Link from "next/link";
 
-import { Pagination, Button, ButtonGroup } from "@nextui-org/react";
 import TablePagination from "@/components/TablePagination";
+import GenericTable from "@/components/GenericTable";
+import { 
+  ChannelTableRenderCell,
+  ChannelTableColumns,
+  ChannelTableInitialColumns,
+  ChannelTableStatusOptions
+} from "@/config/ChannelConfig";
 
 export default async function ChannelPage({ searchParams }) {
+  
   const session = await getServerSession(authOptions);
 
   const page = Number(searchParams.page) || 1;
@@ -27,7 +33,14 @@ export default async function ChannelPage({ searchParams }) {
             My Channels
           </h1>
         </section>
-        <ChannelTable channels={channels.results} />
+        <GenericTable
+          data={channels.results}
+          columns={ChannelTableColumns}
+          renderCell={ChannelTableRenderCell}
+          idField={"channelId"}
+          statusOptions={ChannelTableStatusOptions}
+          initialColumns={ChannelTableInitialColumns}
+        />
         <div className="py-8 px-2 flex justify-center items-center">
           <TablePagination
             page={page}
@@ -39,3 +52,4 @@ export default async function ChannelPage({ searchParams }) {
     </div>
   );
 }
+

@@ -31,9 +31,9 @@ Authorization: ch032ywc7wbwqwjnkrx23rmfdknb5m
 
 //Obtener todos los dispositivos de un canal
 ###
-GET http://localhost:8081/api/v1/channels/ch-07305bbb-e51b-4af4-9f9a-12c12286eaf4/devices?page=2&page_size=1 HTTP/1.1
+GET http://localhost:8081/api/v1/channels/ch-32e48add-c489-425e-bd48-fd7ffbd7d8f7/devices?page=2&page_size=1 HTTP/1.1
 Content-Type: application/json
-Authorization: ch032ywc7wbwqwjnkrx23rmfdknb5m
+Authorization: 68p7nyib281x9youicx9ra810uk4ve
 
 
 //Obtener un dispositivo de un canal

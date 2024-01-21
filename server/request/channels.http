@@ -4,6 +4,12 @@ GET http://localhost:8081/api/v1/channels?page=1&page_size=1 HTTP/1.1
 Content-Type: application/json
 Authorization: 68p7nyib281x9youicx9ra810uk4ve
 
+//get all public channels
+###
+GET http://localhost:8081/api/v1/channels/public?page=1&page_size=10 HTTP/1.1
+Content-Type: application/json
+Authorization: 68p7nyib281x9youicx9ra810uk4ve
+
 
 //get channel by channelId
 ###

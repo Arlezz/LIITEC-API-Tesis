@@ -449,9 +449,9 @@ router.get("/data/:deviceId/agregate", authorization.requireAPIKeyOfType(USER_LE
 router.get("/data/:deviceId/last", authorization.requireAPIKeyOfType(USER_LEVEL_0),DataController.getLastDataFromDevice);
 
 //Export data from a channel
-router.get("/data/:channelId/export", authorization.requireAPIKeyOfType(USER_LEVEL_1),DataController.exportDataFromChannel);
+router.get("/data/:channelId/export", authorization.requireAPIKeyOfType(USER_LEVEL_0),DataController.exportDataFromChannel);
 
 //get nariables from a channel
-router.get("/data/:channelId/variables", authorization.requireAPIKeyOfType(USER_LEVEL_1),DataController.getVariablesFromChannel);
+router.get("/data/:channelId/variables", authorization.requireAPIKeyOfType(USER_LEVEL_0),DataController.getVariablesFromChannel);
 
 module.exports = router;

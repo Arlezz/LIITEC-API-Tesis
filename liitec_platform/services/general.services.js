@@ -18,6 +18,23 @@ const getUserChannels = async (userId, page = 1, pageSize = 10) => {
   }
 };
 
+const getChannel = async (channelId) => {
+  try {
+    const data = await get(`/channels/${channelId}`);
+
+    if (!data) {
+      console.error(`No se encontró el canal ${channelId}.`);
+      return [];
+    }
+
+    return data;
+  } catch (error) {
+    console.error(`Error al obtener el canal ${channelId}:`, error);
+    return [];
+  }
+
+}
+
 const getMyChannelsDasboard = async (userId) => {
   let allChannels = [];
   let currentPage = 1;
@@ -185,6 +202,7 @@ const GeneralService = {
     getMyDevicesDashboard,
     getGuestsDashboard,
     getUserChannels,
+    getChannel,
 };
 
 export default GeneralService;

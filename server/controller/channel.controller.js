@@ -84,6 +84,86 @@ const ChannelController = {
     }
   },
 
+  getPublicChannels: async (req, res) => {
+
+    try {
+      const { page = 1, page_size = 10 } = req.query;
+
+      const totalChannels = await channelSchema.countDocuments({ isPublic: true });
+
+      const totalPages = Math.ceil(totalChannels / page_size);
+
+      const channels = await channelSchema.aggregate([
+        {
+          $match: { isPublic: true },
+        },
+        {
+          $facet: {
+            data: [
+              {
+                $lookup: {
+                  from: 'devices',
+                  localField: 'channelId',
+                  foreignField: 'channelId',
+                  as: 'myDevices',
+                },
+              },
+              {
+                $addFields: {
+                  deviceCount: { $size: '$myDevices' },
+                  devices: { $concat: ['/api/v1/channels/', '$channelId', '/devices'] },
+                },
+              },
+              {
+                $project: {
+                  _id: 0,
+                  __v: 0,
+                  myDevices: 0,
+                },
+              },
+              {
+                $skip: (Number(page) - 1) * Number(page_size),
+              },
+              {
+                $limit: Number(page_size),
+              },
+            ],
+          },
+        },
+        {
+          $unwind: '$data',
+        },
+        {
+          $replaceRoot: { newRoot: '$data' },
+        },
+      ]);
+
+      if (!channels || channels.length === 0) {
+        return res.status(404).json({ error: "Channels not found" });
+      }
+
+      const response = {
+        count: totalChannels,
+        totalPages: totalPages,
+        next:
+          page < totalPages
+            ? `/api/v1/channels/public?page=${parseInt(page, 10) + 1}&page_size=${page_size}`
+            : null,
+        previous:
+          page > 1
+            ? `/api/v1/channels/public?page=${parseInt(page, 10) - 1}&page_size=${page_size}`
+            : null,
+        results: channels,
+      };
+
+      res.json(response);
+    } catch (error) {
+      console.error(error);
+      res.status(500).json({ error: "Error getting channels" });
+    }
+
+  },
+
   getChannelById: async (req, res) => {
     try {
 
@@ -120,6 +200,10 @@ const ChannelController = {
 
       if (!channel[0] || channel[0].length === 0) {
         return res.status(404).json({ error: "Channel not found" });
+      }
+
+      if (channel[0].isPublic) {
+        return res.status(200).json(channel[0]);      
       }
       
       const user = req.user;
