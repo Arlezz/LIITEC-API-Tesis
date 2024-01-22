@@ -172,7 +172,7 @@ export default function GenericTable ({ data, columns, renderCell, idField, stat
                             ))}
                         </DropdownMenu>
                     </Dropdown>
-                    <Button color="primary" endContent={<PlusIcon />}>
+                    <Button className="bg-sky-600 text-white" endContent={<PlusIcon />}>
                         Add New
                     </Button>
                 </div>
@@ -220,7 +220,7 @@ export default function GenericTable ({ data, columns, renderCell, idField, stat
             wrapper: "max-h-[382px]",
             }}
             selectedKeys={selectedKeys}
-            selectionMode="multiple"
+            //selectionMode="multiple"
             sortDescriptor={sortDescriptor}
             topContent={topContent}
             topContentPlacement="outside"
@@ -246,6 +246,7 @@ export default function GenericTable ({ data, columns, renderCell, idField, stat
             >
                 {(item) => (
                     <TableRow key={item[idField]}>
+                        
                         {(columnKey) => (
                             <TableCell>
                                 {renderCell(item, columnKey)}

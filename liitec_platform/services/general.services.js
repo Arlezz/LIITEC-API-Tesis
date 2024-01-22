@@ -18,6 +18,23 @@ const getUserChannels = async (userId, page = 1, pageSize = 10) => {
   }
 };
 
+const getChannelDevices = async (channelId, page = 1, pageSize = 10) => {
+  try {
+    const data = await get(`/channels/${channelId}/devices?page=${page}&page_size=${pageSize}`);
+
+    if (!data.results || data.results.length === 0) {
+      console.error(`La página ${page} no tiene resultados.`);
+      return [];
+    }
+
+    return data;
+  } catch (error) {
+    console.error(`Error al obtener la página ${page} de dispositivos para el canal ${channelId}:`, error);
+    return [];
+  }
+
+}
+
 const getChannel = async (channelId) => {
   try {
     const data = await get(`/channels/${channelId}`);
@@ -32,7 +49,6 @@ const getChannel = async (channelId) => {
     console.error(`Error al obtener el canal ${channelId}:`, error);
     return [];
   }
-
 }
 
 const getMyChannelsDasboard = async (userId) => {
@@ -202,6 +218,7 @@ const GeneralService = {
     getMyDevicesDashboard,
     getGuestsDashboard,
     getUserChannels,
+    getChannelDevices,
     getChannel,
 };
 

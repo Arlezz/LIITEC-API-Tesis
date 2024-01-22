@@ -212,13 +212,10 @@ const ChannelController = {
 
         const key = await keySchema.findOne({ user: user._id, channelAccess: id });
 
-        if (!key) {
+        if (!key || key.expirationDate < new Date(Date.now())) {
           return res.status(401).json({ error: "Access Forbidden" });
         }
 
-        if (key.expirationDate < Date.now()) {
-          return res.status(401).json({ error: "Access Forbidden" });
-        }
       } else {
 
         var id1 = new ObjectId(user._id);

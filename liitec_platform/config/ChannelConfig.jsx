@@ -17,6 +17,9 @@ import Link from "next/link";
 const ChannelTableRenderCell = (channel, columnKey) => {
   const cellValue = channel[columnKey];
 
+  console.log("channel: ", channel);
+  console.log("columnKey: ", columnKey);
+
   switch (columnKey) {
     case "name":
       return <>{channel.name}</>;
@@ -31,6 +34,9 @@ const ChannelTableRenderCell = (channel, columnKey) => {
           {cellValue ? "Public" : "Private"}
         </Chip>
       );
+    case "deviceCount":
+      console.log("deviceCount: ", channel.deviceCount);
+      return <>{channel.deviceCount}</>;
     case "createdOn":
     case "updatedOn":
       return (
@@ -75,6 +81,7 @@ const ChannelTableStatusColorMap = {
 const ChannelTableColumns = [
   { name: "Channel Name", uid: "name", sortable: true },
   { name: "Visibility", uid: "isPublic" },
+  { name: "Devices", uid: "deviceCount", sortable: true },
   { name: "Created", uid: "createdOn", sortable: true },
   { name: "Updated", uid: "updatedOn", sortable: true },
   { name: "Action", uid: "actions" },
@@ -88,9 +95,17 @@ const ChannelTableStatusOptions = [
 const ChannelTableInitialColumns = [
   "name",
   "isPublic",
+  "deviceCount",
   "createdOn",
   "updatedOn",
   "actions",
+];
+
+const ChannelLinks = [
+  { label: "Devices", href: "/channels/[id]/devices" },
+  { label: "General View", href: "/channels/[id]/general-view" },
+  { label: "Settings", href: "/channels/[id]/settings" },
+  { label: "Export Data", href: "/channels/[id]/export-data" },
 ];
 
 export {
@@ -98,4 +113,5 @@ export {
   ChannelTableColumns,
   ChannelTableStatusOptions,
   ChannelTableInitialColumns,
+  ChannelLinks
 };

@@ -6,5 +6,5 @@ export default withAuth({
 
 
 export const config = {
-    matcher: ['/channels','/public-channels','/support','/profile','/','/dashboard']
+    matcher: ['/channels','/channels/:path*','/public-channels','/support','/profile','/','/dashboard']
 };

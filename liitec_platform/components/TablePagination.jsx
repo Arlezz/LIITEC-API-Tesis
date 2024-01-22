@@ -39,7 +39,7 @@ export default function TablePagination(props) {
           
           key={p}
           size="sm"
-          color={p === currentPage ? "primary" : "default"}
+          className={p === currentPage ? "bg-sky-600 text-white" : "bg-[#d3d3d7]"}
         >
           <Link href={`?page=${p}`}>{p}</Link>
         </Button>
