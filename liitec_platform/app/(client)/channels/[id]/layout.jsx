@@ -10,7 +10,7 @@ export default async function Layout({ children, params }) {
 
   const channel = await GeneralService.getChannel(channelId);
 
-  console.log(channel);
+  //console.log(channel);
 
   return (
     <div className="max-w-[85rem] w-full mx-auto p-4 sm:flex sm:items-center sm:justify-between">

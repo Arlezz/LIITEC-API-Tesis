@@ -24,6 +24,20 @@ module.exports = {
   plugins: [
     require('@tailwindcss/forms'),
     require("flowbite/plugin"),
-    nextui(),
+    nextui({
+      themes: {
+        light: {
+          colors: {
+            primary: {
+              DEFAULT: "#0284c7",
+              foreground: "#ffffff",
+            },
+            focus: "#0284c7",
+          },
+        },
+        dark: {},
+      },
+      addCommonColors: true,
+    }),
   ],
 }

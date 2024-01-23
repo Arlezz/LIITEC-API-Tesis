@@ -233,11 +233,52 @@ const ChannelController = {
     }
   },
 
-  getMyChannels : async (req, res) => {
+  // getMyChannels : async (req, res) => {
+  //   try {
+  //     const { userId } = req.params;
+  //     const page = parseInt(req.query.page) || 1;
+  //     const page_size = parseInt(req.query.page_size) || 10; // Ahora se usa page_size en lugar de limit
+  
+  //     const id1 = req.user._id;
+  //     const id2 = userId;
+  
+  //     if (!id1.equals(id2)) {
+  //       return res.status(401).json({ error: "Access Forbidden" });
+  //     }
+  
+  //     const totalChannels = await channelSchema.countDocuments({ owner: id2 });
+  
+  //     const totalPages = Math.ceil(totalChannels / page_size);
+  
+  //     const skip = (page - 1) * page_size;
+
+  //     const projection = { _id: 0, __v: 0 };
+  
+  //     const channels = await channelSchema.find({ owner: id2 },projection).skip(skip).limit(page_size);
+  
+  //     if (!channels || channels.length === 0) {
+  //       return res.status(404).json({
+  //         error: "No channels found for this user",
+  //       });
+  //     }
+  
+  //     res.status(200).json({
+  //       count: channels.length,
+  //       totalPages: totalPages,
+  //       next: page < totalPages ? `/api/v1/users/${userId}/channels?page=${parseInt(page, 10) + 1}&page_size=${page_size}` : null,
+  //       previous: page > 1 ? `/api/v1/users/${userId}/channels?page=${parseInt(page, 10) - 1}&page_size=${page_size}` : null,
+  //       results: channels,
+  //     });
+  //   } catch (error) {
+  //     console.error(error);
+  //     res.status(500).json({ error: "Error Getting Channels" });
+  //   }
+  // },
+  getMyChannels: async (req, res) => {
     try {
       const { userId } = req.params;
       const page = parseInt(req.query.page) || 1;
-      const page_size = parseInt(req.query.page_size) || 10; // Ahora se usa page_size en lugar de limit
+      const page_size = parseInt(req.query.page_size) || 10;
   
       const id1 = req.user._id;
       const id2 = userId;
@@ -245,16 +286,39 @@ const ChannelController = {
       if (!id1.equals(id2)) {
         return res.status(401).json({ error: "Access Forbidden" });
       }
-  
-      const totalChannels = await channelSchema.countDocuments({ owner: id2 });
-  
-      const totalPages = Math.ceil(totalChannels / page_size);
-  
-      const skip = (page - 1) * page_size;
 
-      const projection = { _id: 0, __v: 0 };
+      const totalChannels = await channelSchema.countDocuments({ owner: id2 });
+      const totalPages = Math.ceil(totalChannels / page_size);
+      const skip = (page - 1) * page_size;
   
-      const channels = await channelSchema.find({ owner: id2 },projection).skip(skip).limit(page_size);
+      const channels = await channelSchema.aggregate([
+        {
+          $match: { owner: new ObjectId(id2) },
+        },
+        {
+          $lookup: {
+            from: "devices",
+            localField: "channelId",
+            foreignField: "channelId",
+            as: "myDevices",
+          },
+        },
+        {
+          $addFields: {
+            devicesCount: { $size: "$myDevices" },
+            devices: { $concat: ["/api/v1/channels/", "$channelId", "/devices"] },
+          },
+        },
+        {
+          $project: {
+            _id: 0,
+            __v: 0,
+            myDevices: 0,
+          },
+        },
+        { $skip: skip },
+        { $limit: page_size },
+      ]);
   
       if (!channels || channels.length === 0) {
         return res.status(404).json({
@@ -274,7 +338,7 @@ const ChannelController = {
       res.status(500).json({ error: "Error Getting Channels" });
     }
   },
-
+  
   createChannel: async (req, res) => {
     try {
       const identifier = "ch-" + uuidv4();
