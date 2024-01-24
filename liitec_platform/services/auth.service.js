@@ -10,6 +10,9 @@ const login = (credential, password) => {
             password
         })
         .then((response) => {
+
+            console.log("LA RESPUESTA: ",response);
+
             return response;
         });
 };

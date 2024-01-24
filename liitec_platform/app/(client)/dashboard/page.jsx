@@ -3,6 +3,9 @@ import UserService from "@/services/user.services";
 import { authOptions } from "@/app/api/auth/[...nextauth]/route";
 import { getServerSession } from "next-auth";
 import AuthService from "@/services/auth.service";
+import { getUser } from "@/lib/user.actions";
+import { getMyChannelsDasboard, getMyDevicesDashboard, getGuestsDashboard } from "@/lib/general.actions";
+import { getUsersPlatform, getKeys, getChannelsPlatform, getDevicesPlatform } from "@/lib/auth.actions";
 
 import Map from "@/components/Map";
 
@@ -17,20 +20,20 @@ export default async function DashboardPage() {
   var devicesPlatform = null;
 
   if (role === "superUser") {
-    usersPlatform = await AuthService.getUsersPlatform();
-    keys = await AuthService.getKeys();
-    channelsPlatform = await AuthService.getChannelsPlatform();
-    devicesPlatform = await AuthService.getDevicesPlatform();
+    usersPlatform = await getUsersPlatform();
+    keys = await getKeys();
+    channelsPlatform = await getChannelsPlatform();
+    devicesPlatform = await getDevicesPlatform();
   }
 
-  const user = await UserService.getUser(session.user._id);
+  const user = await getUser(session.user._id);
 
-  const guests = await GeneralService.getGuestsDashboard(user._id);
+  const guests = await getGuestsDashboard(user._id);
 
-  const channels = await GeneralService.getMyChannelsDasboard(user._id);
+  const channels = await getMyChannelsDasboard(user._id);
   
 
-  const devices = (await Promise.all(channels.map(async (channel) => await GeneralService.getMyDevicesDashboard(channel.channelId)))).flat();
+  const devices = (await Promise.all(channels.map(async (channel) => await getMyDevicesDashboard(channel.channelId)))).flat();
 
   var variables = [];
 

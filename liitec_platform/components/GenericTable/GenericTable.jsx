@@ -229,7 +229,7 @@ export default function GenericTable ({ data, columns, renderCell, idField, stat
             onSelectionChange={setSelectedKeys}
             onSortChange={setSortDescriptor}
         >
-            <TableHeader columns={headerColumns}>
+            <TableHeader  columns={headerColumns}>
                 {(column) => (
                     <TableColumn
                         key={column.uid}

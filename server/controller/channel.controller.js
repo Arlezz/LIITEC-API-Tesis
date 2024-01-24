@@ -385,7 +385,7 @@ const ChannelController = {
     try {
 
       const { id } = req.params;
-      
+
       const { name, description, project, ubication, isActive, isPublic } = req.body;
 
       const channel = await channelSchema.findOne({ channelId: id });
@@ -413,8 +413,6 @@ const ChannelController = {
         (isPublic !== undefined && channel.isPublic !== isPublic)
       );
 
-      console.log("hubo cambios? ",hasChanges);
-      
       if (hasChanges) {
         if (name !== undefined && name !== null) {
           channel.name = name;
@@ -456,7 +454,7 @@ const ChannelController = {
         res.status(200).json({ message: "Channel updated successfully" });
       } else {
         console.log("no hubo cambios");
-        res.status(400).json({ message: "No changes detected" });
+        return res.status(400).json({ message: "No changes detected" });
       }
     } catch (error) {
       return res.status(500).json({ error: error.message || "Error updating channel" });

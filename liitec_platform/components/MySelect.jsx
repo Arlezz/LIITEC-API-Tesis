@@ -10,13 +10,15 @@ export const MySelect = ({
   form: { touched, errors },
   ...props
 }) => (
+  // console.log("MySelect", datas),
+  // console.log("Valueee", value),
   <>
     <Select
       {...field}
       {...props}
       color="primary"
       classNames={{
-        label: "text-black",
+        label: "text-black font-medium",
         trigger: [ "focus:ring-0","text-black"],
         value: ["text-black"],
       }}
@@ -24,11 +26,9 @@ export const MySelect = ({
       id={id}
       variant="bordered"
       labelPlacement="outside"
-      //startContent={<PetIcon />}
       defaultSelectedKeys={[
-        value === true ? "Active" : "Inactive",
+        value === true ? "true" : "false"
       ]}
-      
     >
       {datas.map((data) => (
         <SelectItem key={data.value} value={data.value}>

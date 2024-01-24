@@ -25,7 +25,7 @@ export default async function DevicesPage({ searchParams, params }) {
   return (
     <>
       <section className="flex flex-col pb-8">
-          <h2 className="text-2xl  md:text-4xl text-gray-700 font-medium">
+          <h2 className="text-2xl  md:text-3xl text-gray-700 font-medium">
             My Devices
           </h2>
       </section>

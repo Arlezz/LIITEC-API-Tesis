@@ -1,8 +1,7 @@
 import React from "react";
 import GeneralService from "@/services/general.services";
 import { ChannelLinks } from "@/config/ChannelConfig";
-
-import { Chip } from "@nextui-org/react";
+import { Chip, Divider } from "@nextui-org/react";
 import Tabs from "@/components/Tabs";
 
 export default async function Layout({ children, params }) {
@@ -10,7 +9,6 @@ export default async function Layout({ children, params }) {
 
   const channel = await GeneralService.getChannel(channelId);
 
-  //console.log(channel);
 
   return (
     <div className="max-w-[85rem] w-full mx-auto p-4 sm:flex sm:items-center sm:justify-between">
@@ -47,7 +45,7 @@ export default async function Layout({ children, params }) {
             </ul>
           </div>
           <div className=" md:flex gap-4">
-            <div className="w-full h-[1px] md:w-[1px] md:h-full my-2 md:my-0 bg-gray-400"></div>
+            <Divider orientation="vertical" className="hidden md:block"/>
             <ul className="list-none">
               {channel?.project && <li>Project: {channel.project ?? "N/A"}</li>}
 
