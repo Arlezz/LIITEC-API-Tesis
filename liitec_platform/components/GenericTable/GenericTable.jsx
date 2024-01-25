@@ -1,6 +1,7 @@
 "use client"
 
 import { useState, useMemo, useCallback } from "react";
+import { Link } from "@nextui-org/react";
 
 import {
     Table,
@@ -22,7 +23,7 @@ import { PlusIcon } from "@/components/PlusIcon";
 import { SearchIcon } from "@/components/SearchIcon";
 import { ChevronDownIcon } from "@/components/ChevronDownIcon";
   
-export default function GenericTable ({ data, columns, renderCell, idField, statusOptions, initialColumns }) {
+export default function GenericTable ({ data, columns, renderCell, idField, statusOptions, initialColumns, createLink }) {
 
     const myDatas = data || [];
 
@@ -172,7 +173,7 @@ export default function GenericTable ({ data, columns, renderCell, idField, stat
                             ))}
                         </DropdownMenu>
                     </Dropdown>
-                    <Button className="bg-sky-600 text-white" endContent={<PlusIcon />}>
+                    <Button as={Link} href={createLink} className="bg-sky-600 text-white" endContent={<PlusIcon />}>
                         Add New
                     </Button>
                 </div>

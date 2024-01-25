@@ -40,6 +40,7 @@ export default async function ChannelPage({ searchParams }) {
           idField={"channelId"}
           statusOptions={ChannelTableStatusOptions}
           initialColumns={ChannelTableInitialColumns}
+          createLink={"/channels/create"}
         />
         <div className="py-8 px-2 flex justify-center items-center">
           <TablePagination
