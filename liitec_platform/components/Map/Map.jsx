@@ -8,16 +8,24 @@ import "leaflet/dist/leaflet.css";
 
 export default function Map({ channels }) {
 
-  //console.log(channels);
-  // Obtener las latitudes y longitudes
-  const canalesConUbicacion = channels.filter(channel => channel.ubication);
 
+  // Obtener las latitudes y longitudes
+  const canalesConUbicacion = channels.filter(channel => 
+    channel.ubication &&
+    channel.ubication.latitude !== null &&
+    channel.ubication.longitude !== null
+  );
+  
+  console.log(canalesConUbicacion);
+  
   // Obtener las latitudes y longitudes
   const latitudes = canalesConUbicacion.map(channel => channel.ubication.latitude);
   const longitudes = canalesConUbicacion.map(channel => channel.ubication.longitude);
-
+  
+  // Calcular el punto medio
   var medioLatitud = -29.914810;
   var medioLongitud = -71.241930;
+  
 
   if (latitudes.length > 0 && longitudes.length > 0) {
     // Calcular el punto medio si hay canales con "ubication"

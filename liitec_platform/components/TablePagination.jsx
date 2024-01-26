@@ -28,31 +28,39 @@ export default function TablePagination(props) {
 
   return (
     <ButtonGroup variant="shadow">
-      <Button  isDisabled={currentPage === 1} size="sm" >
-        <Link href={`?page=${currentPage > 1 ? currentPage - 1 : 1}`}>
-          Previous
-        </Link>
+      <Button
+        as={Link}
+        href={`?page=${currentPage > 1 ? currentPage - 1 : 1}`}
+        isDisabled={currentPage === 1}
+        size="sm"
+      >
+        Previous
       </Button>
       {pages.map((p, i) => (
         <Button
+          disabled={p === currentPage}
           isIconOnly
-          
+          as={Link}
           key={p}
+          href={`?page=${p}`}
           size="sm"
-          className={p === currentPage ? "bg-sky-600 text-white" : "bg-[#d3d3d7]"}
+          className={
+            p === currentPage ? "bg-sky-600 text-white" : "bg-[#d3d3d7]"
+          }
         >
-          <Link href={`?page=${p}`}>{p}</Link>
+          {p}
         </Button>
       ))}
 
-      <Button isDisabled={!hasNextPage} size="sm" >
-        <Link
-          href={`?page=${
-            currentPage < totalPages ? currentPage + 1 : totalPages
-          }`}
-        >
-          Next
-        </Link>
+      <Button
+        as={Link}
+        href={`?page=${
+          currentPage < totalPages ? currentPage + 1 : totalPages
+        }`}
+        isDisabled={!hasNextPage}
+        size="sm"
+      >
+        Next
       </Button>
     </ButtonGroup>
   );

@@ -9,7 +9,6 @@ const authorization = require("../utils/key.handler");
 const ChannelController = {
 
   getChannels: async (req, res) => {
-    //get all channels with pagination
     try {
       const { page = 1, page_size = 10 } = req.query;
 
@@ -161,7 +160,6 @@ const ChannelController = {
       console.error(error);
       res.status(500).json({ error: "Error getting channels" });
     }
-
   },
 
   getChannelById: async (req, res) => {
@@ -233,47 +231,6 @@ const ChannelController = {
     }
   },
 
-  // getMyChannels : async (req, res) => {
-  //   try {
-  //     const { userId } = req.params;
-  //     const page = parseInt(req.query.page) || 1;
-  //     const page_size = parseInt(req.query.page_size) || 10; // Ahora se usa page_size en lugar de limit
-  
-  //     const id1 = req.user._id;
-  //     const id2 = userId;
-  
-  //     if (!id1.equals(id2)) {
-  //       return res.status(401).json({ error: "Access Forbidden" });
-  //     }
-  
-  //     const totalChannels = await channelSchema.countDocuments({ owner: id2 });
-  
-  //     const totalPages = Math.ceil(totalChannels / page_size);
-  
-  //     const skip = (page - 1) * page_size;
-
-  //     const projection = { _id: 0, __v: 0 };
-  
-  //     const channels = await channelSchema.find({ owner: id2 },projection).skip(skip).limit(page_size);
-  
-  //     if (!channels || channels.length === 0) {
-  //       return res.status(404).json({
-  //         error: "No channels found for this user",
-  //       });
-  //     }
-  
-  //     res.status(200).json({
-  //       count: channels.length,
-  //       totalPages: totalPages,
-  //       next: page < totalPages ? `/api/v1/users/${userId}/channels?page=${parseInt(page, 10) + 1}&page_size=${page_size}` : null,
-  //       previous: page > 1 ? `/api/v1/users/${userId}/channels?page=${parseInt(page, 10) - 1}&page_size=${page_size}` : null,
-  //       results: channels,
-  //     });
-  //   } catch (error) {
-  //     console.error(error);
-  //     res.status(500).json({ error: "Error Getting Channels" });
-  //   }
-  // },
   getMyChannels: async (req, res) => {
     try {
       const { userId } = req.params;

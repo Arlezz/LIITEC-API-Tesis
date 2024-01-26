@@ -11,15 +11,20 @@ import { EyeIcon } from "@/components/EyeIcon";
 
 import { getFormattedDate } from "@/utils/dateFormatter";
 import Link from "next/link";
+import MyModal from "@/components/MyModal";
+import { useDisclosure } from "@nextui-org/react";
 
 
 
-const ChannelTableRenderCell = (channel, columnKey) => {
+const ChannelTableRenderCell = (channel, columnKey, onOpen) => {
+
+  console.log("channel: ", channel);
+
   const cellValue = channel[columnKey];
 
   switch (columnKey) {
     case "name":
-      return <>{channel.name}</>;
+      return <>{channel.name || channel.channelId}</>;
     case "isPublic":
       return (
         <Chip
@@ -57,7 +62,7 @@ const ChannelTableRenderCell = (channel, columnKey) => {
           </Tooltip>
           <Tooltip color="danger" content="Delete Channel">
             <span
-              onClick={() => console.log("channel: ", channel.name)}
+              onClick={() => onOpen()}
               className="text-lg text-danger cursor-pointer active:opacity-50"
             >
               <DeleteIcon />

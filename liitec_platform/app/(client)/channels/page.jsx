@@ -2,6 +2,7 @@ import GeneralService from "@/services/general.services";
 import UserService from "@/services/user.services";
 import { authOptions } from "@/app/api/auth/[...nextauth]/route";
 import { getServerSession } from "next-auth";
+import { deleteChannel } from "@/lib/general.actions";
 import AuthService from "@/services/auth.service";
 import Link from "next/link";
 
@@ -41,6 +42,7 @@ export default async function ChannelPage({ searchParams }) {
           statusOptions={ChannelTableStatusOptions}
           initialColumns={ChannelTableInitialColumns}
           createLink={"/channels/create"}
+          handleDelete={deleteChannel}
         />
         <div className="py-8 px-2 flex justify-center items-center">
           <TablePagination

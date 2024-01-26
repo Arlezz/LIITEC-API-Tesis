@@ -1,6 +1,6 @@
 "use server";
 
-import { get, del, put } from "../utils/httpClient";
+import { get, del, put, post } from "../utils/httpClient";
 import { revalidatePath } from "next/cache";
 
 
@@ -199,6 +199,61 @@ export async function getMyDevicesDashboard (channelId) {
 
   return allDevices;
 };
+
+export async function getDevice (channelId, deviceId) {
+  try {
+    const data = await get(`/channels/${channelId}/devices/${deviceId}`);
+
+    if (!data) {
+      console.error(`No se encontró el dispositivo ${deviceId}.`);
+      return [];
+    }
+
+    return data;
+  } catch (error) {
+    console.error(`Error al obtener el dispositivo ${deviceId}:`, error);
+    return [];
+  }
+}
+
+
+export async function deleteChannel (channelId) {
+  try{
+    const data = await del(`/channels/${channelId}`);
+    revalidatePath(`/channels`);
+    return data;
+  } catch (error) {
+    console.error(`Error al eliminar el canal ${channelId}:`, error);
+    //throw new Error(error.response.data.message);
+  }
+}
+
+export async function createChannel (userId, channelData) {
+  try {
+
+    console.log("userId", userId);
+    console.log("channelData", channelData);
+
+    const data = await post("/channels", {
+      name: channelData.name,
+      description: channelData.description,
+      project: channelData.project,
+      ubication: {
+        latitude: channelData.latitude,
+        longitude: channelData.longitude,
+      },
+      isActive: channelData.status,
+      isPublic: channelData.visibility,
+      owner: userId,
+    });
+
+    revalidatePath(`/channels`);
+
+    return data;
+  } catch (error) {
+    throw new Error(error.response.data.message);
+  }
+}
 
 export async function updateChannel(channelId, channelData) {
   try {

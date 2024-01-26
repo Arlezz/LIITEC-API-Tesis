@@ -30,9 +30,9 @@ Content-Type: application/json
 Authorization: ch032ywc7wbwqwjnkrx23rmfdknb5m
 
 {
-    "name": "Canal PAGINA",
-    "description": "Canal de prueba para el broker dos",
-    "project":"proyecto 2024",
+    //"name": "Canal PAGINA",
+    //"description": "Canal de prueba para el broker dos",
+    //"project":"proyecto 2024",
     "owner":"6584db3ee679dadf7702a03a"
 }
 

@@ -57,7 +57,7 @@ const DeviceTableRenderCell = (device, columnKey) => {
         <div className="relative flex items-center gap-2">
           <Tooltip content="Details">
             <Link className="text-lg text-default-400 cursor-pointer active:opacity-50"
-             href={`/channels/${device.channelId}`}>
+             href={`/channels/${device.channelId}/devices/${device.deviceId}`}>
               <EyeIcon />
             </Link>
           </Tooltip>

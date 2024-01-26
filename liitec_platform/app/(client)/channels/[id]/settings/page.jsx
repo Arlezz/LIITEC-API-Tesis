@@ -1,7 +1,7 @@
 //import { authOptions } from "@/app/api/auth/[...nextauth]/route";
 //import { getServerSession } from "next-auth";
 import GeneralService from "@/services/general.services";
-import ChannelForm from "@/components/Channels/ChannelForm";
+import ChannelSettingsForm from "@/components/Channels/ChannelSettingsForm";
 import { Divider, Button } from "@nextui-org/react";
 
 export default async function ChannelSettingsPage({ params }) {
@@ -15,7 +15,7 @@ export default async function ChannelSettingsPage({ params }) {
         <h2 className="text-2xl pb-8 md:text-3xl text-gray-700 font-medium">
           Channel Settings
         </h2>
-        <ChannelForm channel={channel} />
+        <ChannelSettingsForm channel={channel} />
       </section>
       <Divider orientation="horizontal" className="my-8" />
       <section className="grid grid-cols-1 md:grid-cols-2 pb-8">
