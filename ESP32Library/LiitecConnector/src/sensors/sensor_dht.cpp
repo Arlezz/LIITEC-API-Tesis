@@ -60,8 +60,6 @@ void DHTSensor::setup(int pin, int sensorType, const char* topic, String name)
 void DHTSensor::loop(unsigned int timeout)
 {
 
-    
-
     if (millis() - timepoint > timeout)
     {
         if (!isValidPins() || !isEnabled())

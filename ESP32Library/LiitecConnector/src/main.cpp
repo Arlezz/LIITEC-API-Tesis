@@ -48,8 +48,8 @@ void loop() {
   mqttManager.loop();
 
   // sensors loop
-  dhtSensor.loop(5000U);
-  gyml8511Sensor.loop(5000U);
-  mqSensor.loop(5000U);
+  dhtSensor.loop(30000U);
+  gyml8511Sensor.loop(30000U);
+  mqSensor.loop(30000U);
 }
 

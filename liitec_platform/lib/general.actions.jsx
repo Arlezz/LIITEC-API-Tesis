@@ -63,7 +63,7 @@ export async function getChannel (channelId) {
   }
 };
 
-export async function getMyChannelsDasboard (userId) {
+export async function getMyChannels (userId) {
   let allChannels = [];
   let currentPage = 1;
 
@@ -94,7 +94,7 @@ export async function getMyChannelsDasboard (userId) {
   return allChannels;
 };
 
-export async function getGuestsDashboard (userId) {
+export async function getGuests (userId) {
   let allKeys = [];
   let currentPage = 1;
 
@@ -162,7 +162,7 @@ export async function getDevices (
   return allDevices;
 };
 
-export async function getMyDevicesDashboard (channelId) {
+export async function getMyDevices (channelId) {
   let allDevices = [];
   let currentPage = 1;
 
@@ -212,6 +212,27 @@ export async function getDevice (channelId, deviceId) {
     return data;
   } catch (error) {
     console.error(`Error al obtener el dispositivo ${deviceId}:`, error);
+    return [];
+  }
+}
+
+export async function getDeviceData(deviceId, variable, page = 1, pageSize = 10) {
+  try {
+    const data = await get(
+      `/data/${deviceId}?page=${page}&page_size=${pageSize}&variable=${variable}`
+    );
+
+    if (!data.results || data.results.length === 0) {
+      console.error(`La página ${page} no tiene resultados.`);
+      return [];
+    }
+
+    return data;
+  } catch (error) {
+    console.error(
+      `Error al obtener la página ${page} de datos para el dispositivo ${deviceId}:`,
+      error
+    );
     return [];
   }
 }

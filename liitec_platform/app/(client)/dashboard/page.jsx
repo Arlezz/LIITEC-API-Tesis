@@ -4,7 +4,7 @@ import { authOptions } from "@/app/api/auth/[...nextauth]/route";
 import { getServerSession } from "next-auth";
 import AuthService from "@/services/auth.service";
 import { getUser } from "@/lib/user.actions";
-import { getMyChannelsDasboard, getMyDevicesDashboard, getGuestsDashboard } from "@/lib/general.actions";
+import { getMyChannels, getMyDevices, getGuests } from "@/lib/general.actions";
 import { getUsersPlatform, getKeys, getChannelsPlatform, getDevicesPlatform } from "@/lib/auth.actions";
 
 import Map from "@/components/Map";
@@ -28,12 +28,12 @@ export default async function DashboardPage() {
 
   const user = await getUser(session.user._id);
 
-  const guests = await getGuestsDashboard(user._id);
+  const guests = await getGuests(user._id);
 
-  const channels = await getMyChannelsDasboard(user._id);
+  const channels = await getMyChannels(user._id);
   
 
-  const devices = (await Promise.all(channels.map(async (channel) => await getMyDevicesDashboard(channel.channelId)))).flat();
+  const devices = (await Promise.all(channels.map(async (channel) => await getMyDevices(channel.channelId)))).flat();
 
   var variables = [];
 

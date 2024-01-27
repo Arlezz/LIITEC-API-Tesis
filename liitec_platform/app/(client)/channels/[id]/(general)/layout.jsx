@@ -4,7 +4,7 @@ import { ChannelLinks } from "@/config/ChannelConfig";
 import { Chip, Divider } from "@nextui-org/react";
 import Tabs from "@/components/Tabs";
 import { getFormattedDate } from "@/utils/dateFormatter";
-
+import MyBreacrumbs from "@/components/MyBreacrumbs";
 
 export default async function Layout({ children, params }) {
   const channelId = params.id;
@@ -12,18 +12,21 @@ export default async function Layout({ children, params }) {
   const channel = await GeneralService.getChannel(channelId);
   console.log(channel);
 
-  
-
   return (
     <div className="max-w-[85rem] w-full mx-auto p-4 sm:flex sm:items-center sm:justify-between">
       <div className="w-full">
-        <section className="flex flex-row pb-8 items-center gap-2">
-          <h1 className="text-3xl md:text-4xl text-gray-700 font-medium">
-            {channel?.name != null && channel.name !== ""
-              ? channel.name
-              : "Channel " + channel.channelId}
-          </h1>
-          <Chip size="sm" variant="flat" radius="md">Channel</Chip>
+        <section className="flex flex-col pb-8 items-start gap-2">
+          <MyBreacrumbs/>
+          <div className="flex flex-row items-center gap-2 pt-4">
+            <h1 className="text-3xl md:text-4xl text-gray-700 font-medium">
+              {channel?.name != null && channel.name !== ""
+                ? channel.name
+                : "Channel " + channel.channelId}
+            </h1>
+            <Chip size="sm" variant="flat" radius="md">
+              Channel
+            </Chip>
+          </div>
         </section>
         <section className="grid grid-cols-1 md:grid-cols-2 pb-6">
           <div className="">

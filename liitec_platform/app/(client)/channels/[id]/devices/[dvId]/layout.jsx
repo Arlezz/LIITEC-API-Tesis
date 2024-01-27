@@ -1,26 +1,30 @@
 import { getDevice } from "@/lib/general.actions";
-import { Chip, Divider } from "@nextui-org/react";
+import { Button, Chip, Divider } from "@nextui-org/react";
 import { DeviceLinks } from "@/config/DevicesConfig";
 import Tabs from "@/components/Tabs";
 import { getFormattedDate } from "@/utils/dateFormatter";
-
+import { LeftArrowIcon } from "@/components/LeftArrowIcon";
+import { faArrowLeftLong } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import MyBreacrumbs from "@/components/MyBreacrumbs";
 
 export default async function Layout({ params, children }) {
-  console.log("params", params);
-
   const device = await getDevice(params.id, params.dvId);
-
-  console.log("device", device);
 
   return (
     <>
-      <section className="flex flex-row pb-8 items-center gap-2">
-        <h2 className="text-2xl  md:text-4xl text-gray-700 font-medium">
-          {device?.name != null && device.name !== ""
-            ? device.name
-            : "Device " + device.channelId}
-        </h2>
-        <Chip size="sm" variant="flat" radius="md">Device</Chip>
+      <section className="flex flex-col pb-8 items-start gap-2">
+        <MyBreacrumbs/>
+        <div className="flex flex-row items-center">
+          <h2 className="text-2xl md:text-4xl  text-gray-700 font-medium">
+            {device?.name != null && device.name !== ""
+              ? device.name
+              : "Device " + device.channelId}
+          </h2>
+          <Chip size="sm" variant="flat" radius="md">
+            Device
+          </Chip>
+        </div>
       </section>
       <section className="grid grid-cols-1 md:grid-cols-2 pb-4">
         <div className="">
@@ -94,7 +98,7 @@ export default async function Layout({ params, children }) {
               </li>
             )}
             {device?.description != null && (
-                <li>Description: {device.description ?? "N/A"}</li>
+              <li>Description: {device.description ?? "N/A"}</li>
             )}
           </ul>
         </div>
@@ -109,13 +113,13 @@ export default async function Layout({ params, children }) {
         ))}
       </section>
       <section className="pb-8">
-          <span className="list-disc">Created: </span>
-          <span className="font-medium">
-            {device?.createdOn != null
-              ? getFormattedDate(device.createdOn)
-              : "N/A"}
-          </span>
-        </section>
+        <span className="list-disc">Created: </span>
+        <span className="font-medium">
+          {device?.createdOn != null
+            ? getFormattedDate(device.createdOn)
+            : "N/A"}
+        </span>
+      </section>
       <Tabs links={DeviceLinks} ids={[params.id, params.dvId]} />
 
       {children}
