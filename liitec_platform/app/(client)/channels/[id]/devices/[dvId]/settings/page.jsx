@@ -1,0 +1,22 @@
+import { getDevice } from "@/lib/general.actions";
+import DeviceSettingsForm from "@/components/Devices/DeviceSettingsForm";
+import { Divider } from "@nextui-org/react";
+
+export default async function DevicesPage({ params }) {
+  const device = await getDevice(params.id, params.dvId);
+
+  console.log("EL device", device);
+
+  return (
+    <>
+      <section className="flex flex-col">
+        <h2 className="text-2xl pb-8 md:text-3xl text-gray-700 font-medium">
+          Device Settings
+        </h2>
+        <DeviceSettingsForm device={device} channel={params.id}/>
+      </section>
+      <Divider orientation="horizontal" className="my-8" />
+      {/* <ChannelDeleteSection channelId={channelId} /> */}
+    </>
+  );
+}

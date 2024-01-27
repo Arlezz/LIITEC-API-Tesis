@@ -216,6 +216,23 @@ export async function getDevice (channelId, deviceId) {
   }
 }
 
+export async function updateDevice(channelId, deviceId, deviceData){
+  try {
+    const data = await put(`/channels/${channelId}/devices/${deviceId}`, {
+      name: deviceData.name,
+      description: deviceData.description,
+      isActive: deviceData.status,
+    });
+    
+    revalidatePath(`/channels/${channelId}/devices/${deviceId}`);
+    
+    return data;
+    
+  } catch (error) {
+    throw new Error(error.response.data.message);
+  }
+}
+
 
 export async function deleteChannel (channelId) {
   try{

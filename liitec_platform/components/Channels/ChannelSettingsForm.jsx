@@ -8,8 +8,11 @@ import { updateChannel } from "@/lib/general.actions";
 import { useState, useEffect } from "react";
 import { redirect } from "next/navigation";
 import { useRouter } from "next/navigation";
+import MyModal from "../MyModal";
+
 
 export default function ChannelSettingsForm({ channel }) {
+
   const channelId = channel?.channelId ?? "";
   const [error, setError] = useState(null);
   const router = useRouter();

@@ -1,9 +1,6 @@
-"use client"
+"use client";
 
-import {
-  Chip,
-  Tooltip
-} from "@nextui-org/react"; // Asegúrate de importar estos componentes correctamente
+import { Chip, Tooltip } from "@nextui-org/react"; // Asegúrate de importar estos componentes correctamente
 
 import { EditIcon } from "@/components/EditIcon";
 import { DeleteIcon } from "@/components/DeleteIcon";
@@ -11,8 +8,6 @@ import { EyeIcon } from "@/components/EyeIcon";
 
 import { getFormattedDate } from "@/utils/dateFormatter";
 import Link from "next/link";
-
-
 
 const DeviceTableRenderCell = (device, columnKey) => {
   const cellValue = device[columnKey];
@@ -24,23 +19,23 @@ const DeviceTableRenderCell = (device, columnKey) => {
       return <>{device.description}</>;
 
     case "measures":
-        return (
-            <>
-            {device.measures.map((measure, index) => (
-                <li className="list-none" key={index}>
-                <span className="font-bold">{measure.variable}</span>
-                <span className="text-gray-500"> ({measure.unit})</span>
-                </li>
-            ))}
-            </>
-        );
+      return (
+        <>
+          {device.measures.map((measure, index) => (
+            <li className="list-none" key={index}>
+              <span className="font-bold">{measure.variable}</span>
+              <span className="text-gray-500"> ({measure.unit})</span>
+            </li>
+          ))}
+        </>
+      );
     case "isActive":
       return (
         <Chip
           className="capitalize"
           color={DeviceTableStatusColorMap[device.isActive]}
           size="sm"
-          variant="flat"
+          variant="dot"
         >
           {cellValue ? "Active" : "Inactive"}
         </Chip>
@@ -56,15 +51,20 @@ const DeviceTableRenderCell = (device, columnKey) => {
       return (
         <div className="relative flex items-center gap-2">
           <Tooltip content="Details">
-            <Link className="text-lg text-default-400 cursor-pointer active:opacity-50"
-             href={`/channels/${device.channelId}/devices/${device.deviceId}`}>
+            <Link
+              className="text-lg text-default-400 cursor-pointer active:opacity-50"
+              href={`/channels/${device.channelId}/devices/${device.deviceId}`}
+            >
               <EyeIcon />
             </Link>
           </Tooltip>
           <Tooltip content="Edit Channel">
-            <span className="text-lg text-warning cursor-pointer active:opacity-50">
+            <Link
+              className="text-lg text-warning cursor-pointer active:opacity-50"
+              href={`/channels/${device.channelId}/devices/${device.deviceId}/settings`}
+            >
               <EditIcon />
-            </span>
+            </Link>
           </Tooltip>
           <Tooltip color="danger" content="Delete Channel">
             <span
@@ -112,10 +112,8 @@ const DeviceTableInitialColumns = [
 ];
 
 const DeviceLinks = [
-  { label: "Devices", href: "/channels/[id]/devices" },
-  { label: "General View", href: "/channels/[id]/general-view" },
-  { label: "Settings", href: "/channels/[id]/settings" },
-  { label: "Export Data", href: "/channels/[id]/export-data" },
+  { label: "General View", href: "/channels/[id1]/devices/[id2]" },
+  { label: "Settings", href: "/channels/[id1]/devices/[id2]/settings" },
 ];
 
 export {
@@ -123,5 +121,5 @@ export {
   DeviceTableColumns,
   DeviceTableStatusOptions,
   DeviceTableInitialColumns,
-  DeviceLinks
+  DeviceLinks,
 };

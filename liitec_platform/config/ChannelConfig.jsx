@@ -11,8 +11,6 @@ import { EyeIcon } from "@/components/EyeIcon";
 
 import { getFormattedDate } from "@/utils/dateFormatter";
 import Link from "next/link";
-import MyModal from "@/components/MyModal";
-import { useDisclosure } from "@nextui-org/react";
 
 
 
@@ -56,9 +54,10 @@ const ChannelTableRenderCell = (channel, columnKey, onOpen) => {
             </Link>
           </Tooltip>
           <Tooltip content="Edit Channel">
-            <span className="text-lg text-warning cursor-pointer active:opacity-50">
+          <Link className="text-lg text-default-400 text-warning cursor-pointer active:opacity-50"
+             href={`/channels/${channel.channelId}/settings`}>
               <EditIcon />
-            </span>
+            </Link>
           </Tooltip>
           <Tooltip color="danger" content="Delete Channel">
             <span
@@ -104,10 +103,10 @@ const ChannelTableInitialColumns = [
 ];
 
 const ChannelLinks = [
-  { label: "Devices", href: "/channels/[id]" },
-  { label: "General View", href: "/channels/[id]/general-view" },
-  { label: "Channel Settings", href: "/channels/[id]/settings" },
-  { label: "Export Data", href: "/channels/[id]/export-data" },
+  { label: "Devices", href: "/channels/[id1]" },
+  { label: "General View", href: "/channels/[id1]/general-view" },
+  { label: "Channel Settings", href: "/channels/[id1]/settings" },
+  { label: "Export Data", href: "/channels/[id1]/export-data" },
 ];
 
 export {

@@ -246,8 +246,6 @@ const DeviceController = {
 
             const { name, description, isActive } = req.body;
 
-            console.log("isActive req: ",isActive);
-
             const channel = await channelSchema.findOne({ channelId: channelId });
 
             if (!channel) {
