@@ -279,6 +279,7 @@ const DeviceController = {
             
 
             if (!hasChanges) {
+                console.log("No changes to detected");
                 return res.status(400).json({ error: "No changes to detected" });
             }
 
@@ -295,7 +296,7 @@ const DeviceController = {
 
                 const topic = "/device/control/" + deviceId;
 
-                const command = isActive ? "enable" : "disable";
+                const command = (isActive === "true" || isActive === true) ? "enable" : "disable";
 
                 const payload = {
                     command: command

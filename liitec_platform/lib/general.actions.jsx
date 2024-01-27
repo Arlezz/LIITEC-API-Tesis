@@ -229,7 +229,18 @@ export async function updateDevice(channelId, deviceId, deviceData){
     return data;
     
   } catch (error) {
-    throw new Error(error.response.data.message);
+    throw new Error(error.response.data.error);
+  }
+}
+
+export async function deleteDevice (channelId, deviceId) {
+  try{
+    const data = await del(`/channels/${channelId}/devices/${deviceId}`);
+    revalidatePath(`/channels/${channelId}/devices`);
+    return data;
+  } catch (error) {
+    console.error(`Error al eliminar el dispositivo ${deviceId}:`, error);
+    //throw new Error(error.response.data.message);
   }
 }
 
@@ -291,6 +302,6 @@ export async function updateChannel(channelId, channelData) {
     return data;
     
   } catch (error) {
-    throw new Error(error.response.data.message);
+    throw new Error(error.response.data.error);
   }
 }

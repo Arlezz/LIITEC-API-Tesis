@@ -23,7 +23,7 @@ export default function DeviceSettingsForm({ device, channel }) {
         router.push(`/channels/${channelId}/devices/${deviceId}`);
       })
       .catch((error) => {
-        console.log("Error al actualizar el dispositivo:", error);
+        console.log("Error al actualizar el dispositivo:", error.message);
         setError(error.message);
       });
   }
@@ -126,8 +126,8 @@ export default function DeviceSettingsForm({ device, channel }) {
                   onChange={handleChange}
                   onBlur={handleBlur}
                   datas={[
-                    { value: "true", label: "Active" },
-                    { value: "false", label: "Inactive" },
+                    { value: true, label: "Active" },
+                    { value: false, label: "Inactive" },
                   ]}
                 />
                 <ErrorMessage

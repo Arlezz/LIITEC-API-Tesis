@@ -13,6 +13,8 @@ import { useRouter } from "next/navigation";
 export default function MyModal({ title, content, isOpen, onClose, handleDelete, item}) {
   //const { isOpen, onOpen, onClose } = useDisclosure();
 
+  console.log("item", item);
+
   const router = useRouter();
 
   function onConfirm() {

@@ -411,7 +411,7 @@ const ChannelController = {
         res.status(200).json({ message: "Channel updated successfully" });
       } else {
         console.log("no hubo cambios");
-        return res.status(400).json({ message: "No changes detected" });
+        return res.status(400).json({ error: "No changes detected" });
       }
     } catch (error) {
       return res.status(500).json({ error: error.message || "Error updating channel" });

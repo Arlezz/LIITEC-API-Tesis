@@ -1,6 +1,7 @@
 import { getDevice } from "@/lib/general.actions";
 import DeviceSettingsForm from "@/components/Devices/DeviceSettingsForm";
 import { Divider } from "@nextui-org/react";
+import DeviceDeleteSection from "@/components/Devices/DeviceDeleteSection";
 
 export default async function DevicesPage({ params }) {
   const device = await getDevice(params.id, params.dvId);
@@ -16,7 +17,7 @@ export default async function DevicesPage({ params }) {
         <DeviceSettingsForm device={device} channel={params.id}/>
       </section>
       <Divider orientation="horizontal" className="my-8" />
-      {/* <ChannelDeleteSection channelId={channelId} /> */}
+      <DeviceDeleteSection channelId={params.id} deviceId={params.dvId}/>
     </>
   );
 }
