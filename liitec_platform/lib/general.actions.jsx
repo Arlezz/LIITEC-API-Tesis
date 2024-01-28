@@ -230,8 +230,7 @@ export async function getDeviceData(deviceId, variable, page = 1, pageSize = 10)
     return data;
   } catch (error) {
     console.error(
-      `Error al obtener la página ${page} de datos para el dispositivo ${deviceId}:`,
-      error
+      error.response.data.error+`"${deviceId}"`+` in variable: "${variable}"`
     );
     return [];
   }
@@ -280,9 +279,6 @@ export async function deleteChannel (channelId) {
 export async function createChannel (userId, channelData) {
   try {
 
-    console.log("userId", userId);
-    console.log("channelData", channelData);
-
     const data = await post("/channels", {
       name: channelData.name,
       description: channelData.description,
@@ -297,6 +293,19 @@ export async function createChannel (userId, channelData) {
     });
 
     revalidatePath(`/channels`);
+
+    return data;
+  } catch (error) {
+    throw new Error(error.response.data.message);
+  }
+}
+
+export async function createDevice (channelId, deviceData) {
+  try {
+
+    const data = await post(`/channels/${channelId}/devices`, deviceData);
+
+    revalidatePath(`/channels/${channelId}/devices`);
 
     return data;
   } catch (error) {

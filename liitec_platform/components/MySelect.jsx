@@ -26,9 +26,6 @@ export const MySelect = ({
       id={id}
       variant="bordered"
       labelPlacement="outside"
-      defaultSelectedKeys={[
-        value === true ? "true" : "false"
-      ]}
     >
       {datas.map((data) => (
         <SelectItem key={data.value} value={data.value}>

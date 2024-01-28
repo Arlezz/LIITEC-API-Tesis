@@ -32,10 +32,10 @@ export default function RealtimeLineChart({
     (
       <Card className="p-2">
         <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
-          <h4 className="font-bold text-large mb-2">
+          <h3 className="font-bold text-large mb-2">
             Graph of the {capitalizeText(variable.variable)} variable
-          </h4>
-          <h5 className="text-default-500 text-xs mb-1 text-ellipsis ">
+          </h3>
+          <h4 className="text-default-500 text-xs mb-1 text-ellipsis ">
             Device:{" "}
             {props.channels ? (
               <Link
@@ -47,7 +47,7 @@ export default function RealtimeLineChart({
             ) : (
               device
             )}
-          </h5>
+          </h4>
 
           {data && data.length > 0 && (
             <>

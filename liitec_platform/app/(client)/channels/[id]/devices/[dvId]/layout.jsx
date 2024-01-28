@@ -15,7 +15,7 @@ export default async function Layout({ params, children }) {
     <>
       <section className="flex flex-col pb-8 items-start gap-2">
         <MyBreacrumbs/>
-        <div className="flex flex-row items-center">
+        <div className="flex flex-col items-start pt-4">
           <h2 className="text-2xl md:text-4xl  text-gray-700 font-medium">
             {device?.name != null && device.name !== ""
               ? device.name
@@ -26,20 +26,21 @@ export default async function Layout({ params, children }) {
           </Chip>
         </div>
       </section>
-      <section className="grid grid-cols-1 md:grid-cols-2 pb-4">
+      <section className="grid grid-cols-1 md:grid-cols-2 mb-2 md:mb-4">
         <div className="">
           <ul className="list-none">
-            <li>
-              Device Id:{" "}
-              <span className="font-bold">{device?.deviceId ?? "N/A"}</span>
+            <li className="mb-2 md:mb-0">
+              <span className="font-bold">Device Id:{" "}</span>
+              <span className="font-medium">{device?.deviceId ?? "N/A"}</span>
             </li>
 
-            <li>
-              Channel:{" "}
+            <li className="mb-2 md:mb-0">
+              <span className="font-bold">Channel :{" "}</span>
               {device?.channelId !== undefined ? device.channelId : "N/A"}
             </li>
-            <li className="flex flex-center items-center gap-1">
-              State:{" "}
+            <li className="flex flex-center items-center gap-1 mb-2 md:mb-0">
+            <span className="font-bold">State :{" "}</span>
+              
               <Chip
                 //startContent={<CheckIcon size={18} />}
                 className="capitalize"
@@ -57,15 +58,15 @@ export default async function Layout({ params, children }) {
 
           <ul className="list-none">
             {device?.model != null && (
-              <li>
-                Model:{" "}
+              <li className="mb-2 md:mb-0">
+                <span className="font-bold">Model :{" "}</span>
                 <span className="font-bold">{device?.model ?? "N/A"}</span>
               </li>
             )}
 
             {device?.type != null && (
-              <li className="capitalize flex gap-1">
-                Type:{" "}
+              <li className="capitalize flex gap-1 mb-2 md:mb-0">
+                <span className="font-bold">Type :{" "}</span>
                 {device.type === "both" ? (
                   <span className="flex flex-row gap-1">
                     <Chip
@@ -98,22 +99,26 @@ export default async function Layout({ params, children }) {
               </li>
             )}
             {device?.description != null && (
-              <li>Description: {device.description ?? "N/A"}</li>
+              
+              <li className="list-none">
+                                <span className="font-bold">Description :{" "}</span>
+
+                {device.description ?? "N/A"}</li>
             )}
           </ul>
         </div>
       </section>
-      <section className="pb-6">
-        <span className="list-disc">Measures:</span>
+      <section className="mb-2 md:mb-6">
+        <span className="list-disc font-bold">Measures:</span>
         {device.measures.map((measure, index) => (
           <li className="capitalize" key={index}>
-            <span className="font-bold">{measure.variable}</span>
+            <span className="font-medium">{measure.variable}</span>
             <span className="text-gray-500"> ({measure.unit})</span>
           </li>
         ))}
       </section>
       <section className="pb-8">
-        <span className="list-disc">Created: </span>
+        <span className="list-disc font-bold">Created: </span>
         <span className="font-medium">
           {device?.createdOn != null
             ? getFormattedDate(device.createdOn)

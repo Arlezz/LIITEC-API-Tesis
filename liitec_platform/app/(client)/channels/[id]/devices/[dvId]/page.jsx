@@ -21,7 +21,7 @@ export default async function DevicePage({ params }) {
               15
             );
             return (
-              <div className="p-4">
+              <div className="p-0 md:p-4">
                 <RealtimeLineChart
                     channels={params.id}
                     key={variable.variable}

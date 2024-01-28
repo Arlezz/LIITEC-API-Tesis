@@ -28,19 +28,21 @@ export default async function Layout({ children, params }) {
             </Chip>
           </div>
         </section>
-        <section className="grid grid-cols-1 md:grid-cols-2 pb-6">
+        <section className="grid grid-cols-1 md:grid-cols-2 mb-1 md:pb-6">
           <div className="">
             <ul className="list-none">
-              <li>
-                Channel Id:{" "}
-                <span className="font-bold">{channel?.channelId ?? "N/A"}</span>
+              <li className="mb-2 md:mb-0">
+                <span className="font-bold">Channel Id:{" "}</span>
+                <span className="font-medium">{channel?.channelId ?? "N/A"}</span>
               </li>
 
-              <li>
-                Owner: {channel?.owner !== undefined ? channel.owner : "N/A"}
+              <li className="mb-2 md:mb-0">
+              <span className="font-bold">Owner:{" "}</span>
+                 {channel?.owner !== undefined ? channel.owner : "N/A"}
               </li>
-              <li>
-                Access:{" "}
+              <li className="mb-2 md:mb-0">
+              <span className="font-bold">Access:{" "}</span>
+                
                 <Chip
                   className="capitalize"
                   color={channel?.isPublic ? "success" : "danger"}
@@ -56,17 +58,29 @@ export default async function Layout({ children, params }) {
             <Divider orientation="vertical" className="hidden md:block" />
             <ul className="list-none">
               {channel?.project != null && (
-                <li>Project: {channel.project ?? "N/A"}</li>
+                <li
+                className="mb-2 md:mb-0"
+                >
+                  <span className="font-bold">Project:{" "}</span>
+                   {channel.project ?? "N/A"}</li>
               )}
 
               {channel?.description != null && (
-                <li>Description: {channel.description ?? "N/A"}</li>
+                <li
+                className="mb-2 md:mb-0"
+                >
+                  
+                  <span className="font-bold">Description:{" "}</span>
+                  {channel.description ?? "N/A"}</li>
               )}
 
               {channel?.ubication?.latitude != null &&
                 channel?.ubication?.longitude != null && (
-                  <li>
-                    Ubication:{" "}
+                  <li
+                  className="mb-2 md:mb-0"
+                  >
+                    <span className="font-bold">Ubication:{" "}</span>
+                
                     <span className="text-blue-600">
                       {channel.ubication.latitude},{" "}
                       {channel.ubication.longitude}
@@ -77,7 +91,7 @@ export default async function Layout({ children, params }) {
           </div>
         </section>
         <section className="pb-8">
-          <span className="list-disc">Created: </span>
+          <span className="list-disc font-bold">Created: </span>
           <span className="font-medium">
             {channel?.createdOn != null
               ? getFormattedDate(channel.createdOn)

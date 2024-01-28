@@ -60,7 +60,7 @@ export default function LineChart({ variable, data }) {
   const myOptions = {
     type: "line",
     responsive: true,
-    aspectRatio: 1.2,
+    aspectRatio: 1.5,
     scales: {
         x: {
             reverse: true,

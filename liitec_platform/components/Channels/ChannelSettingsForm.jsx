@@ -233,6 +233,9 @@ export default function ChannelSettingsForm({ channel }) {
                   label="Status"
                   placeholder="Status of the channel"
                   component={MySelect}
+                  defaultSelectedKeys={[
+                    values.status === true ? "true" : "false"
+                  ]}
                   value={values.status}
                   onChange={handleChange}
                   onBlur={handleBlur}
@@ -255,6 +258,9 @@ export default function ChannelSettingsForm({ channel }) {
                   label="Visibility"
                   placeholder="Visibility of the channel"
                   component={MySelect}
+                  defaultSelectedKeys={[
+                    values.visibility === true ? "true" : "false"
+                  ]}
                   value={values.visibility}
                   onChange={handleChange}
                   onBlur={handleBlur}
