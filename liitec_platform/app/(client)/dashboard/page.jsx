@@ -8,6 +8,7 @@ import { getMyChannels, getMyDevices, getGuests } from "@/lib/general.actions";
 import { getUsersPlatform, getKeys, getChannelsPlatform, getDevicesPlatform } from "@/lib/auth.actions";
 
 import Map from "@/components/Map";
+import { Link } from "@nextui-org/react";
 
 export default async function DashboardPage() {
   const session = await getServerSession(authOptions);
@@ -100,35 +101,35 @@ export default async function DashboardPage() {
               </>
             ) : null}
 
-            <div className="flex flex-col items-center justify-center bg-white rounded-lg shadow-lg p-8 text-center cursor-pointer hover:bg-gray-100 transition duration-300 ease-in-out">
+            <Link href="/channels" className="text-black flex flex-col items-center justify-center bg-white rounded-lg shadow-lg p-8 text-center cursor-pointer hover:bg-gray-100 transition duration-300 ease-in-out">
               <span className="text-4xl font-bold">
                 {channels?.length > 0 ? <>{channels.length}</> : 0}
               </span>
               <span className="text-xl">My Channels</span>
-            </div>
-            <div className="flex flex-col items-center justify-center bg-white rounded-lg shadow-lg p-8 text-center cursor-pointer hover:bg-gray-100 transition duration-300 ease-in-out">
+            </Link>
+            <div className="flex flex-col items-center justify-center bg-white rounded-lg shadow-lg p-8 text-center  hover:bg-gray-100 transition duration-300 ease-in-out">
               <span className="text-4xl font-bold">
                 {devices?.length > 0 ? <>{devices.length}</> : 0}
               </span>
               <span className="text-xl">My Devices</span>
             </div>
-            <div className="flex flex-col items-center justify-center bg-white rounded-lg shadow-lg p-8 text-center cursor-pointer hover:bg-gray-100 transition duration-300 ease-in-out">
+            <div className="flex flex-col items-center justify-center bg-white rounded-lg shadow-lg p-8 text-center  hover:bg-gray-100 transition duration-300 ease-in-out">
               <span className="text-4xl font-bold">
                 {variables?.length > 0 ? <>{variables.length}</> : 0}
               </span>
               <span className="text-xl">My Variables</span>
             </div>
-            <div className="flex flex-col items-center justify-center bg-white rounded-lg shadow-lg p-8 text-center cursor-pointer hover:bg-gray-100 transition duration-300 ease-in-out">
+            <div className="flex flex-col items-center justify-center bg-white rounded-lg shadow-lg p-8 text-center  hover:bg-gray-100 transition duration-300 ease-in-out">
               <span className="text-4xl font-bold">
                 {user?.acls ? <>{user.acls.length}</> : 0}
               </span>
               <span className="text-xl">My Topics</span>
             </div>
-            <div className="flex flex-col items-center justify-center bg-white rounded-lg shadow-lg p-8 text-center cursor-pointer hover:bg-gray-100 transition duration-300 ease-in-out">
+            <div className="flex flex-col items-center justify-center bg-white rounded-lg shadow-lg p-8 text-center  hover:bg-gray-100 transition duration-300 ease-in-out">
               <span className="text-4xl font-bold">
                 {guests?.length > 0 ? <>{guests.length}</> : 0}
               </span>
-              <span className="text-xl">Guests</span>
+              <span className="text-xl">My Guests</span>
             </div>
           </div>
         </section>

@@ -209,7 +209,6 @@ export default function GenericTable({
     <MyModal title={"Confirmation"} content={`Are you sure to delete the channel?`} isOpen={isOpen} onClose={onClose} handleDelete={handleDelete} item={currentItem} />
       <Table
         aria-label="Table with custom cells, pagination and sorting"
-        //isHeaderSticky
         bottomContentPlacement="outside"
         classNames={{
           wrapper: "min-h-[400px]",

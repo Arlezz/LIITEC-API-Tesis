@@ -106,6 +106,7 @@ const ChannelLinks = [
   { label: "Devices", href: "/channels/[id1]" },
   { label: "General View", href: "/channels/[id1]/general-view" },
   { label: "Channel Settings", href: "/channels/[id1]/settings" },
+  { label: "Guests", href: "/channels/[id1]/guests" },
   { label: "Export Data", href: "/channels/[id1]/export-data" },
 ];
 

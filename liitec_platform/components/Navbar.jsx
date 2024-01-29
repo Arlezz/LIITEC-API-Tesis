@@ -169,7 +169,7 @@ export default function Navbar() {
                 href="/public-channels"
                 className={`
                 ${
-                  path === "/public-channels"
+                  path.startsWith("/public-channels")
                     ? "bg-sky-100 md:bg-transparent md:border-b-2 md:border-sky-600 md:text-sky-600"
                     : ""
                 }

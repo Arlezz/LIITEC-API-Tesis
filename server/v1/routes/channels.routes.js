@@ -541,6 +541,7 @@ router.delete("/channels/:id", authorization.requireAPIKeyOfType(USER_LEVEL_1), 
 router.get("/users/:userId/channels", authorization.requireAPIKeyOfType(USER_LEVEL_1), ChannelController.getMyChannels);
 
 // Access to Channel Resource
-router.post("/channels/:id/access", authorization.requireAPIKeyOfType(USER_LEVEL_1), ChannelController.giveUserAccessToChannel);
+router.get("/channels/:id/guests", authorization.requireAPIKeyOfType(USER_LEVEL_1), ChannelController.getGuestsChannel);
+router.post("/channels/:id/guests", authorization.requireAPIKeyOfType(USER_LEVEL_1), ChannelController.createGuestChannel);
 
 module.exports = router;

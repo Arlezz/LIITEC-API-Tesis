@@ -23,6 +23,7 @@ export default async function ChannelPage({ searchParams }) {
 
   const channels = await GeneralService.getUserChannels(session.user._id, page);
 
+
   const pages = channels.totalPages || 1;
 
 

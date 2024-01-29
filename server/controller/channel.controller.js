@@ -1,3 +1,4 @@
+const mongoose = require('mongoose');
 const channelSchema = require("../models/channel.model");
 const deviceSchema = require("../models/device.model");
 const userSchema = require("../models/user.model");
@@ -109,7 +110,7 @@ const ChannelController = {
               },
               {
                 $addFields: {
-                  deviceCount: { $size: '$myDevices' },
+                  devicesCount: { $size: '$myDevices' },
                   devices: { $concat: ['/api/v1/channels/', '$channelId', '/devices'] },
                 },
               },
@@ -446,7 +447,7 @@ const ChannelController = {
     }
   },
 
-  giveUserAccessToChannel : async (req, res) => {
+  createGuestChannel : async (req, res) => {
     try {
 
       const { id } = req.params;
@@ -457,7 +458,7 @@ const ChannelController = {
       if (!channel) {
         return res.status(404).json({ error: "Channel not found" });
       }
-
+      
       var id1 = new ObjectId(req.user._id);
       var id2 = new ObjectId(channel.owner);
 
@@ -465,7 +466,15 @@ const ChannelController = {
         return res.status(401).json({ error: "Access Forbidden" });
       }
 
-      const user = await userSchema.find({ _id: userId });
+      if (!mongoose.Types.ObjectId.isValid(userId)) {
+        return res.status(400).json({ error: "Invalid User Id format" });
+      }
+
+      if (userId === req.user._id) {
+        return res.status(403).json({ error: "Cannot grant access to yourself" });
+      }
+
+      const user = await userSchema.findOne({ _id: userId });
 
       if (!user) {
         return res.status(404).json({ error: "User not found" });
@@ -474,7 +483,14 @@ const ChannelController = {
       const userKey = await keySchema.findOne({ user: userId, channelAccess: id });
 
       if (userKey) {
-        return res.status(403).json({ error: "User already has access to this channel" });
+
+        if (new Date(userKey.expirationDate) < new Date()) {
+
+          await keySchema.findByIdAndDelete(userKey._id);
+        } else {
+
+          return res.status(403).json({ error: "User already has access to this channel" });
+        }
       }
 
       const key = authorization.genAPIKey();
@@ -495,7 +511,95 @@ const ChannelController = {
     } catch (error) {
       return res.status(500).json({ error: error.message || "Error giving user access to channel" });
     }
+  },
+
+  getGuestsChannel : async (req, res) => {
+    try {
+      const { id } = req.params;
+      const page = parseInt(req.query.page) || 1;
+      const page_size = parseInt(req.query.page_size) || 10;
+
+      const channel = await channelSchema.findOne({ channelId: id });
+
+      if (!channel) {
+        return res.status(404).json({ error: "Channel not found" });
+      }
+
+      var id1 = new ObjectId(req.user._id);
+      var id2 = new ObjectId(channel.owner);
+
+      if (!id1.equals(id2)) {
+        return res.status(401).json({ error: "Access Forbidden" });
+      }
+
+      const totalGuests = await keySchema.countDocuments({ channelAccess: id });
+      const totalPages = Math.ceil(totalGuests / page_size);
+
+      const guests = await keySchema.aggregate([
+        {
+          $match: { channelAccess: id },
+        },
+        {
+          $lookup: {
+            from: "users",
+            localField: "user",
+            foreignField: "_id",
+            as: "user",
+          },
+        },
+        {
+          $addFields: {
+            user: { $arrayElemAt: ["$user", 0] },
+            role: "$type", // Agrega un nuevo campo "role" con el valor de "type"
+          },
+        },
+        {
+          $project: {
+            //_id: 0,
+            __v: 0,
+            key: 0,
+            type: 0,
+            channelOwner: 0,
+            user: {
+              _id: 0,
+              __v: 0,
+              password: 0,
+              acls: 0,
+              createdOn: 0,
+              updatedOn: 0,
+              superuser: 0,
+            },
+          },
+        },
+        {
+          $replaceRoot: { newRoot: { $mergeObjects: ["$$ROOT", "$user"] } },
+        },
+        { $unset: "user" }, // Elimina el campo "user" que ya no se necesita
+        { $skip: (page - 1) * page_size },
+        { $limit: page_size },
+      ]);
+      
+      
+
+      if (!guests || guests.length === 0) {
+        return res.status(404).json({
+          error: "No guests found for this channel",
+        });
+      }
+
+      res.status(200).json({
+        count: guests.length,
+        totalPages: totalPages,
+        next: page < totalPages ? `/api/v1/channels/${id}/guests?page=${parseInt(page, 10) + 1}&page_size=${page_size}` : null,
+        previous: page > 1 ? `/api/v1/channels/${id}/guests?page=${parseInt(page, 10) - 1}&page_size=${page_size}` : null,
+        results: guests,
+      });
+
+    } catch (error) {
+      return res.status(500).json({ error: error.message || "Error getting channel guests" });
+    }
   }
+
 };
 
 module.exports = ChannelController;

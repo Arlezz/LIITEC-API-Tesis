@@ -45,21 +45,6 @@ export default function DeviceCreationForm({ channelId }) {
 
   }
 
-  // function handleSubmit(userId, values) {
-
-  //   console.log("values", values);
-
-  //   createChannel(userId, values)
-  //     .then((response) => {
-  //       console.log("Éxito al crear el canal:", response);
-  //       router.push(`/channels`);
-  //     })
-  //     .catch((error) => {
-  //       console.log("Error al crear el canal:", error.message);
-  //       setError(error.message);
-  //     });
-  // }
-
   useEffect(() => {
     let timeout;
 

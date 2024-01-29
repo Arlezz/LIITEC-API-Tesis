@@ -1,8 +1,4 @@
-import React from "react";
-import { authOptions } from "@/app/api/auth/[...nextauth]/route";
-import { getServerSession } from "next-auth";
-import GeneralService from "@/services/general.services";
-import { ChannelLinks } from "@/config/ChannelConfig";
+import { getChannelDevices } from "@/lib/general.actions";
 import GenericTable from "@/components/GenericTable";
 import TablePagination from "@/components/TablePagination";
 
@@ -18,7 +14,7 @@ export default async function DevicesPage({ searchParams, params }) {
 
   const page = Number(searchParams.page) || 1;
 
-  const devices = await GeneralService.getChannelDevices(params.id, page);
+  const devices = await getChannelDevices(params.id, page);
 
   const pages = devices.totalPages || 1;
 

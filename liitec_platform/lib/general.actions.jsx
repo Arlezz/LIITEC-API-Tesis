@@ -129,6 +129,53 @@ export async function getGuests (userId) {
   return allKeys;
 };
 
+export async function getGuest (channelId, page = 1, pageSize = 10) {
+  try {
+    const data = await get(
+      `/channels/${channelId}/guests?page=${page}&page_size=${pageSize}`
+    );
+
+    if (!data.results || data.results.length === 0) {
+      console.error(`La página ${page} no tiene resultados.`);
+      return [];
+    }
+
+    return data;
+  } catch (error) {
+    // Evitar imprimir el error en la consola si es un error 404
+    if (error.response && error.response.status === 404) {
+      console.error(
+        `No se encontraron invitados para el canal ${channelId}.`
+      );
+
+      return [];
+    }
+
+    console.error(
+      `Error al obtener la página ${page} de invitados para el canal ${channelId}:`,
+      error
+    );
+    
+    return [];
+  }
+}
+
+export async function createGuest (channelId, guestData) {
+  try {
+      
+      const data = await post(`/channels/${channelId}/guests`, guestData);
+  
+      revalidatePath(`/channels/${channelId}/keys`);
+  
+      return data;
+  }
+  catch (error) {
+    //console.error(`Error al crear el invitado ${guestData.userId}:`, error);
+    throw new Error(error.response.data.error);
+  }
+
+}
+
 export async function getDevices (
   channelId,
   startPage = 1,
@@ -299,6 +346,24 @@ export async function createChannel (userId, channelData) {
     throw new Error(error.response.data.message);
   }
 }
+
+export async function getPublicChannels (page = 1, pageSize = 10) {
+  try {
+
+    const data = await get(`/channels/public?page=${page}&page_size=${pageSize}`);
+
+    if (!data.results || data.results.length === 0) {
+      console.error(`La página ${page} no tiene resultados.`);
+      return [];
+    }
+
+    return data;
+
+  } catch (error) {
+    throw new Error(error.response.data.message);
+  }
+}
+
 
 export async function createDevice (channelId, deviceData) {
   try {
