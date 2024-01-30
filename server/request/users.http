@@ -32,10 +32,20 @@ Authorization: 68p7nyib281x9youicx9ra810uk4ve
 ###
 PUT http://localhost:8081/api/v1/users/6584db3ee679dadf7702a03a HTTP/1.1
 Content-Type: application/json
-Authorization: ch032ywc7wbwqwjnkrx23rmfdknb5m
+Authorization: byghzz8ywi83lh1qkpw1e23h669szb
 
 {
-    "lastName":"RodriguezXD"
+
+    "regenerateApiKey":true
+}
+
+###
+POST http://localhost:8081/api/v1/login HTTP/1.1
+Content-Type: application/json
+
+{
+    "credential":"avanzado",
+    "password":"IluminadoAmado2024!"
 }
 
 

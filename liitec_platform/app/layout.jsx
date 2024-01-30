@@ -1,8 +1,8 @@
-import Navbar from "@/components/Navbar";
+
 import { montserrat, roboto, inter } from "./ui/fonts";
 import "./ui/globals.css";
 import SessionAuthProvider from "@/context/SessionAuthProvider";
-import Footer from "@/components/Footer";
+
 import { Providers } from "./providers";
 
 export const metadata = {
@@ -19,7 +19,6 @@ export default function RootLayout({ children }) {
             {children}
           </Providers>
         </SessionAuthProvider>
-        {/* <Footer /> */}
       </body>
     </html>
   );

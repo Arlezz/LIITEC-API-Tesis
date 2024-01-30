@@ -17,9 +17,9 @@ export const MyInput = ({
       label: "text-black font-medium z-0",
       input: ["border-0", "focus:ring-0", "p-0"],
     }}
+    
     label={label}
     id={id}
-    type="text"
     variant="bordered"
     labelPlacement="outside"
   />

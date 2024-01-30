@@ -10,7 +10,7 @@ export default function Tabs({ links, ids }) {
 
   return (
     <div className="mb-6">
-      <ul className="w-full list-none text-base flex flex-row gap-6 border-b-1 border-[#d6d7d8] overflow-x-auto md:overflow-hidden">
+      <ul className="w-full list-none text-base flex flex-row gap-6 border-b-1 border-[#71717a] overflow-x-auto md:overflow-hidden">
         {links.map((link, index) => (
           <li
             key={index}
@@ -25,6 +25,7 @@ export default function Tabs({ links, ids }) {
               text-[#71717a] hover:text-[#b4b4b9] text-nowrap whitespace-nowrap`}
           >
             <Button
+              startContent={link.icon? link.icon : null}
               radius="none"
               variant="ligth"
               className="text-base"
@@ -41,12 +42,26 @@ export default function Tabs({ links, ids }) {
 }
 
 function generateDynamicPath(path, ids) {
+  // Si no hay IDs, devolver el path original
+  if (!ids || ids.length === 0) {
+    return path;
+  }
+
   let dynamicPath = path;
 
   // Replace each dynamic segment in the path with the corresponding id
   ids.forEach((id, index) => {
-    dynamicPath = dynamicPath.replace(`[id${index + 1}]`, id);
+    const placeholder = `[id${index + 1}]`;
+
+    // Verificar si el placeholder está presente antes de realizar la sustitución
+    if (dynamicPath.includes(placeholder)) {
+      dynamicPath = dynamicPath.replace(placeholder, id);
+    } else {
+      // Puedes manejar esta situación de alguna manera, como imprimir un mensaje de error
+      console.error(`Placeholder "${placeholder}" not found in the path: ${path}`);
+    }
   });
 
   return dynamicPath;
 }
+

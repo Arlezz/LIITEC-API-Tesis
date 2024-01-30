@@ -1,7 +1,9 @@
 "use server";
 
-import { get, post } from '../utils/httpClient';
+import { get, post, put } from '../utils/httpClient';
 import { NextResponse } from 'next/server';
+import { revalidatePath } from 'next/cache';
+
 
 export async function login (credential, password) {
     return post("/login", {
@@ -9,9 +11,6 @@ export async function login (credential, password) {
             password
         })
         .then((response) => {
-
-            console.log("LA RESPUESTA: ",response);
-
             return response;
         });
 };
@@ -146,3 +145,16 @@ export async function getUsersPlatform () {
 
   return allUsers;
 };
+
+export async function updateKey (id, isUpdate) {
+  try {
+      const response = await put(`/users/${id}`, isUpdate);
+
+      revalidatePath(`/profile/api-credentials`);
+
+      return response;
+  } catch (error) {
+      console.error('Error updating key:', error);
+      throw new Error(error.response.data.message);
+  }
+}

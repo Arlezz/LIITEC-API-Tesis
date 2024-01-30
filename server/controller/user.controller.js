@@ -150,79 +150,79 @@ const UserController = {
 
 
   updateUser: async (req, res) => {
-    const { name, lastName, password, regenerateApiKey } = req.body;
-    const { id } = req.params;
-  
-    try {
-      const newKey = authorization.genAPIKey();
-  
-      const user = await userSchema.findById(id);
-  
-      if (!user) {
-        return res.status(404).json({ error: "User not found" });
-      }
+      const { name, lastName, password, regenerateApiKey } = req.body;
+      const { id } = req.params;
 
-      var id1 = new ObjectId(user._id);
-      var id2 = new ObjectId(req.user._id);
+      try {
+          const newKey = authorization.genAPIKey();
 
-      if (!id1.equals(id2)) {
-        return res.status(401).json({ error: "Access Forbidden" });
-      }
+          const user = await userSchema.findById(id);
 
-      // Verificar si el usuario es de solo lectura
-      if (user.type === "readUser" && regenerateApiKey) {
-        return res.status(406).json({ error: "Cannot regenerate API key for read-only user" });
-      }
-      
-      // Comprobar si hay cambios en los datos antes de actualizar
-      const hasChanges = (
-        (name && user.name !== name) ||
-        (lastName && user.lastName !== lastName) ||
-        (password && !(await bcrypt.compare(password, user.password))) ||
-        (regenerateApiKey === true)
-      );
-  
-      if (hasChanges) {
-        if (name) {
-          user.name = name;
-        }
-  
-        if (lastName) {
-          user.lastName = lastName;
-        }
-  
-        if (password) {
-          const saltRounds = 10;
-          const salt = await bcrypt.genSalt(saltRounds);
-          const hash = await bcrypt.hash(password, salt);
-          user.password = hash;
-        }
-  
-        if (regenerateApiKey === true) {
-          // Verificar el tipo de usuario antes de regenerar la API key
-          if (user.type !== "readUser") {
-            const useKey = await keySchema.findOne({ user: user._id });
-            useKey.key = newKey;
-            useKey.updatedOne = Date.now();
-
-            await useKey.save();
-          } else {
-            return res.status(406).json({ error: "Cannot regenerate API key for read-only user" });
+          if (!user) {
+              return res.status(404).json({ error: "User not found" });
           }
-        }
 
-        user.updatedOn = Date.now();
-  
-        await user.save();
-        res.status(200).json({ message: "User updated" });
-      } else {
-        res.status(400).json({ message: "No changes detected" });
+          var id1 = new ObjectId(user._id);
+          var id2 = new ObjectId(req.user._id);
+
+          if (!id1.equals(id2)) {
+              return res.status(401).json({ error: "Access Forbidden" });
+          }
+
+          // Verificar si el usuario es de solo lectura
+          if (user.type === "readUser" && regenerateApiKey) {
+              return res.status(406).json({ error: "Cannot regenerate API key for read-only user" });
+          }
+
+          // Crear un objeto para almacenar los campos actualizados y sus valores
+          const updatedFields = {};
+
+          // Comprobar si hay cambios en los datos antes de actualizar
+          if (name && user.name !== name) {
+              user.name = name;
+              updatedFields.name = name;
+          }
+
+          if (lastName && user.lastName !== lastName) {
+              user.lastName = lastName;
+              updatedFields.lastName = lastName;
+          }
+
+          if (password && !(await bcrypt.compare(password, user.password))) {
+              const saltRounds = 10;
+              const salt = await bcrypt.genSalt(saltRounds);
+              const hash = await bcrypt.hash(password, salt);
+              user.password = hash;
+              // No incluir el campo "password" en los campos actualizados
+          }
+
+          if (regenerateApiKey === true) {
+              // Verificar el tipo de usuario antes de regenerar la API key
+              if (user.type !== "readUser") {
+                  const useKey = await keySchema.findOne({ user: user._id });
+                  useKey.key = newKey;
+                  useKey.updatedOne = Date.now();
+
+                  await useKey.save();
+                  updatedFields.key = newKey;
+              } else {
+                  return res.status(406).json({ error: "Cannot regenerate API key for read-only user" });
+              }
+          }
+
+          if (Object.keys(updatedFields).length > 0) {
+              user.updatedOn = Date.now();
+              await user.save();
+              res.status(200).json({ message: "User updated", updatedFields });
+          } else {
+              res.status(400).json({ message: "No changes detected" });
+          }
+      } catch (error) {
+          console.error(error);
+          res.status(500).json({ error: "Error editing user" });
       }
-    } catch (error) {
-      console.error(error);
-      res.status(500).json({ error: "Error editing user" });
-    }
   },
+
  
 
   deleteUser: async (req, res) => {

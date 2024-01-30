@@ -22,9 +22,15 @@ const PublicChannelTableRenderCell = (channel, columnKey, onOpen) => {
 
   switch (columnKey) {
     case "owner":
-      return <>{channel.owner}</>;
+      return <div className="text-ellipsis">
+      {channel.owner}
+      </div>;
     case "name":
       return <>{channel.name || channel.channelId}</>;
+    case "description":
+      return <>{
+        channel.description ? channel.description : "-----"
+      }</>;
     case "isPublic":
       return (
         <Chip
@@ -82,8 +88,9 @@ const PublicChannelTableStatusColorMap = {
 };
 
 const PublicChannelTableColumns = [
-  { name: "Owner", uid: "owner" },
+  { name: "Author", uid: "owner" },
   { name: "Channel Name", uid: "name", sortable: true },
+  { name: "Description", uid: "description" },
   { name: "Visibility", uid: "isPublic" },
   { name: "Devices", uid: "devicesCount", sortable: true },
   { name: "Created", uid: "createdOn", sortable: true },
@@ -99,6 +106,7 @@ const PublicChannelTableStatusOptions = [
 const PublicChannelTableInitialColumns = [
   "owner",
   "name",
+  "description",
   "isPublic",
   "devicesCount",
   "createdOn",

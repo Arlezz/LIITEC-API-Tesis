@@ -234,7 +234,7 @@ export default function GenericTable({
           )}
         </TableHeader>
         <TableBody
-          emptyContent={`No ${columns[0].name.toLowerCase()} found`}
+          emptyContent={`No data found`}
           items={sortedItems}
         >
           {(item) => (
