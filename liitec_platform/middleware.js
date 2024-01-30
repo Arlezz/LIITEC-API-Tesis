@@ -4,7 +4,16 @@ export default withAuth({
   secret: process.env.SECRET,
 });
 
-
 export const config = {
-    matcher: ['/channels','/channels/:path*','/public-channels','/support','/profile','/profile/:path*' ,'/','/dashboard']
+  matcher: [
+    "/channels",
+    "/channels/:path*",
+    "/public-channels",
+    "/support",
+    "/profile",
+    "/profile/:path*",
+    "/",
+    "/dashboard",
+    "/admin",
+  ],
 };
