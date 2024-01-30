@@ -12,7 +12,9 @@ import { useSession } from "next-auth/react";
 export default function UserUpdatePassForm() {
   const { data: session, update } = useSession();
 
-  const userId = session?._id ?? "";
+  console.log("session", session);
+
+  const userId = session?.user._id ?? "";
   const [error, setError] = useState(null);
   const router = useRouter();
   const [isVisible, setIsVisible] = useState(false);

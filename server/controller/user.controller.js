@@ -176,6 +176,7 @@ const UserController = {
 
           // Crear un objeto para almacenar los campos actualizados y sus valores
           const updatedFields = {};
+          let passwordUpdated = false;
 
           // Comprobar si hay cambios en los datos antes de actualizar
           if (name && user.name !== name) {
@@ -193,7 +194,7 @@ const UserController = {
               const salt = await bcrypt.genSalt(saltRounds);
               const hash = await bcrypt.hash(password, salt);
               user.password = hash;
-              // No incluir el campo "password" en los campos actualizados
+              passwordUpdated = true;
           }
 
           if (regenerateApiKey === true) {
@@ -210,10 +211,16 @@ const UserController = {
               }
           }
 
-          if (Object.keys(updatedFields).length > 0) {
+          if (Object.keys(updatedFields).length > 0 || passwordUpdated) {
               user.updatedOn = Date.now();
               await user.save();
-              res.status(200).json({ message: "User updated", updatedFields });
+              
+              // Construir la respuesta final sin incluir la contraseña si ha sido actualizada
+              const response = { message: "User updated", updatedFields };
+              if (passwordUpdated) {
+                  response.message += " (Password updated)";
+              }
+              res.status(200).json(response);
           } else {
               res.status(400).json({ message: "No changes detected" });
           }
