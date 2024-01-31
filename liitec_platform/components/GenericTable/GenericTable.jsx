@@ -34,8 +34,14 @@ export default function GenericTable({
   initialColumns,
   handleDelete,
   createLink,
+  modalTitle,
+  modalDescription,
+  redirectPostDelete,
+  isStriped,
+  filterField = "name",
 }) {
   const { isOpen, onOpen, onClose } = useDisclosure();
+  //const { isOpen: isOpen2, onOpen: onOpen2, onClose: onClose2 } = useDisclosure();
 
   const myDatas = data || [];
 
@@ -63,24 +69,25 @@ export default function GenericTable({
   }, [visibleColumns]);
 
   const filteredItems = useMemo(() => {
-    let filteredUsers = [...myDatas];
+    let filteredData = [...myDatas];
 
     if (hasSearchFilter) {
-      filteredUsers = filteredUsers.filter((user) =>
-        user.name.toLowerCase().includes(filterValue.toLowerCase())
+      filteredData = filteredData.filter((item) =>
+        item[filterField].toLowerCase().includes(filterValue.toLowerCase())
       );
     }
+
     if (
       statusFilter !== "all" &&
       Array.from(statusFilter).length !== statusOptions.length
     ) {
-      filteredUsers = filteredUsers.filter((user) =>
-        Array.from(statusFilter).includes(user.status)
+      filteredData = filteredData.filter((item) =>
+        Array.from(statusFilter).includes(item.status)
       );
     }
 
-    return filteredUsers;
-  }, [myDatas, filterValue, statusFilter]);
+    return filteredData;
+  }, [myDatas, filterValue, statusFilter, hasSearchFilter, filterField]);
 
   const items = useMemo(() => {
     const start = (page - 1) * rowsPerPage;
@@ -100,8 +107,7 @@ export default function GenericTable({
   }, [sortDescriptor, items]);
 
   const onSearchChange = useCallback((value) => {
-    console.log("value: ", value);
-
+    //console.log("value: ", value);
     if (value) {
       setFilterValue(value);
       setPage(1);
@@ -121,7 +127,7 @@ export default function GenericTable({
             <input
               type="text"
               id="input-group-1"
-              placeholder="Search by name..."
+              placeholder={"Search by " + filterField + "..."}
               value={filterValue}
               className="bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-gray-400 focus:border-gray-400 block w-full ps-10 p-2"
               onChange={(e) => onSearchChange(e.target.value)}
@@ -204,10 +210,32 @@ export default function GenericTable({
     hasSearchFilter,
   ]);
 
+  const onOpenModal = useCallback(
+    (item) => {
+      console.log("item: ", item);
+      setCurrentItem(item);
+      onOpen();
+    },
+    [onOpen]
+  );
+
   return (
     <>
-    <MyModal title={"Confirmation"} content={`Are you sure to delete the channel?`} isOpen={isOpen} onClose={onClose} handleDelete={handleDelete} item={currentItem} />
+      <MyModal
+        title={modalTitle ? modalTitle : "Confirmation"}
+        content={
+          modalDescription
+            ? modalDescription
+            : "Are you sure you want to delete this item?"
+        }
+        isOpen={isOpen}
+        onClose={onClose}
+        handleDelete={handleDelete}
+        item={currentItem}
+        redirect={redirectPostDelete ? redirectPostDelete : "/dashboard"}
+      />
       <Table
+        isStriped={isStriped}
         aria-label="Table with custom cells, pagination and sorting"
         bottomContentPlacement="outside"
         classNames={{
@@ -233,14 +261,11 @@ export default function GenericTable({
             </TableColumn>
           )}
         </TableHeader>
-        <TableBody
-          emptyContent={`No data found`}
-          items={sortedItems}
-        >
+        <TableBody emptyContent={`No data found`} items={sortedItems}>
           {(item) => (
             <TableRow key={item[idField]}>
               {(columnKey) => (
-                <TableCell>{renderCell(item, columnKey, onOpen)}</TableCell>
+                <TableCell>{renderCell(item, columnKey, () => onOpenModal(item))}</TableCell>
               )}
             </TableRow>
           )}

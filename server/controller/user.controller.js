@@ -10,41 +10,58 @@ const ObjectId = require("mongoose").Types.ObjectId;
 const UserController = {
   getUsers: async (req, res) => {
     try {
+        const page = parseInt(req.query.page) || 1;
+        const page_size = parseInt(req.query.page_size) || 10;
 
-      const page = parseInt(req.query.page) || 1;
-      const page_size = parseInt(req.query.page_size) || 10; // Puedes ajustar el límite según tus necesidades
+        const totalUsers = await userSchema.countDocuments();
+        const totalPages = Math.ceil(totalUsers / page_size);
+        const startIndex = (page - 1) * page_size;
 
-      const totalUsers = await userSchema.countDocuments();
+        const projection = { password: 0, __v: 0, "acls._id": 0 };
 
-      const totalPages = Math.ceil(totalUsers / page_size);
+        const users = await userSchema.aggregate([
+            { $skip: startIndex },
+            { $limit: page_size },
+            {
+                $lookup: {
+                    from: "keys",
+                    localField: "_id",
+                    foreignField: "user",
+                    as: "userKey"
+                }
+            },
+            {
+                $addFields: {
+                    role: { $arrayElemAt: ["$userKey.type", 0] }
+                }
+            },
+            {
+                $project: {
+                    userKey: 0
+                }
+            },
+            { $unset: ["password", "__v", "acls._id"] }
+        ]);
 
-      const startIndex = (page - 1) * page_size;
+        if (!users || users.length === 0) {
+            return res.status(404).json({ error: "Users not found" });
+        }
 
-      const projection = { password: 0, __v: 0, "acls._id": 0 };
+        const response = {
+            count: totalUsers,
+            totalPages: totalPages,
+            next: page < totalPages ? `/api/v1/users?page=${page + 1}&page_size=${page_size}` : null,
+            previous: page > 1 ? `/api/v1/users?page=${page - 1}&page_size=${page_size}` : null,
+            results: users
+        };
 
-
-      const users = await userSchema.find({}, projection)
-        .skip(startIndex)
-        .limit(page_size)
-
-      if (!users || users.length === 0) {
-        return res.status(404).json({ error: "Users not found" });
-      }
-
-      const response = {
-        count: totalUsers,
-        totalPages: totalPages,
-        next: page < totalPages ? `/api/v1/users?page=${page + 1}&page_size=${page_size}` : null,
-        previous: page > 1 ? `/api/v1/users?page=${page - 1}&page_size=${page_size}` : null,
-        results: users
-      };
-
-      res.status(200).json(response);
+        res.status(200).json(response);
     } catch (error) {
-      console.error(error);
-      res.status(500).json({ error: "Error getting users" }); // Cambiado a 500 Internal Server Error
+        console.error(error);
+        res.status(500).json({ error: "Error getting users" });
     }
-  },
+},
+
   
 
   createUser: async (req, res) => {
@@ -54,7 +71,14 @@ const UserController = {
       }
   
       const { username, name, lastName, email, password, type, superuser } = req.body;
+
+      // Verificar campos requeridos
+      if (!username || !name || !lastName || !email || !password || !type) {
+        return res.status(400).json({ error: "All required fields must be provided" });
+     }
   
+     console.log(req.body);
+
       // Verificar si el correo electrónico ya está en uso de manera asincrónica
       const existingUser = await userSchema.findOne({ email: email });
       if (existingUser) {
@@ -91,8 +115,9 @@ const UserController = {
       // Guardar el nuevo usuario de manera asincrónica
       await newUser.save();
   
-      if (type !== "readUser") {
+      //if (type !== "readUser") {
         // Si el usuario no es de solo lectura, se le asigna una API Key
+        // Al usuario de lectura se le asigna key al momento de asignarle un canal
         const newKey = new keySchema({
           key: authorization.genAPIKey(),
           type: type,
@@ -101,16 +126,19 @@ const UserController = {
         });
   
         await newKey.save();
+        if (type !== "readUser") {
+          const acls = {
+            topic: "device/control/#",
+            acc: 3
+          };
 
-        const acls = {
-          topic: "device/control/#",
-          acc: 3
-        };
+          newUser.acls.push(acls);
+        }
 
-        newUser.acls.push(acls);
+        
 
         await newUser.save();
-      }
+      //}
   
       // No devolver detalles específicos en caso de éxito
       res.status(200).json({ message: "User created successfully" }); // Cambiado a 201 Created
@@ -125,32 +153,68 @@ const UserController = {
 
   getUser: async (req, res) => {
     try {
-      const { id } = req.params;
-  
-      const user = await userSchema.findById(id, { password: 0, __v: 0, "acls._id" : 0 });
-  
-      if (!user) {
-        return res.status(404).json({ error: "User not found" });
-      }
-  
-      var id1 = new ObjectId(user._id);
-      var id2 = new ObjectId(req.user._id);
-  
-      if (!id1.equals(id2)) {
-        return res.status(401).json({ error: "Access Forbidden" });
-      }
-  
-      res.json(user);
-  
+        const { id } = req.params;
+
+        const user = await userSchema.findById(id, { password: 0, __v: 0, "acls._id": 0 });
+
+        if (!user) {
+            return res.status(404).json({ error: "User not found" });
+        }
+
+        const middleWareUser = req.user;
+
+        if (middleWareUser.apiKey.type !== "superUser") {
+          var id1 = new ObjectId(user._id);
+          var id2 = new ObjectId(middleWareUser._id);
+
+          if (!id1.equals(id2)) {
+              return res.status(401).json({ error: "Access Forbidden" });
+          }
+        }
+
+        // Utilizar agregación para obtener el rol del usuario desde el esquema Keys
+        const userWithRole = await userSchema.aggregate([
+            {
+                $match: { _id: user._id }
+            },
+            {
+                $lookup: {
+                    from: "keys",
+                    localField: "_id",
+                    foreignField: "user",
+                    as: "userKey"
+                }
+            },
+            {
+                $addFields: {
+                    role: { $arrayElemAt: ["$userKey.type", 0] }
+                }
+            },
+            {
+                $project: {
+                    userKey: 0, // Opcional: Excluir el campo userKey del resultado
+                    __v: 0
+                }
+            }
+        ]);
+
+        // Si el usuario no tiene información en el esquema Keys, asignar null al rol
+        if (!userWithRole || !userWithRole[0].role) {
+            userWithRole[0].role = null;
+        }
+
+        res.json(userWithRole[0]);
+
     } catch (error) {
-      console.error(error);
-      res.status(500).json({ error: "Error getting user" });
+        console.error(error);
+        res.status(500).json({ error: "Error getting user" });
     }
-  },  
+},
+
 
 
   updateUser: async (req, res) => {
-      const { name, lastName, password, regenerateApiKey } = req.body;
+      const { name, lastName, password, regenerateApiKey, type } = req.body;
       const { id } = req.params;
 
       try {
@@ -162,12 +226,18 @@ const UserController = {
               return res.status(404).json({ error: "User not found" });
           }
 
-          var id1 = new ObjectId(user._id);
-          var id2 = new ObjectId(req.user._id);
+          const middleWareUser = req.user;
 
-          if (!id1.equals(id2)) {
-              return res.status(401).json({ error: "Access Forbidden" });
-          }
+          console.log(middleWareUser);
+
+          if (middleWareUser.apiKey.type !== "superUser") {
+            var id1 = new ObjectId(user._id);
+            var id2 = new ObjectId(middleWareUser._id);
+
+            if (!id1.equals(id2)) {
+                return res.status(401).json({ error: "Access Forbidden" });
+            }
+          } 
 
           // Verificar si el usuario es de solo lectura
           if (user.type === "readUser" && regenerateApiKey) {
@@ -197,7 +267,7 @@ const UserController = {
               passwordUpdated = true;
           }
 
-          if (regenerateApiKey === true) {
+          if (regenerateApiKey) {
               // Verificar el tipo de usuario antes de regenerar la API key
               if (user.type !== "readUser") {
                   const useKey = await keySchema.findOne({ user: user._id });
@@ -210,6 +280,22 @@ const UserController = {
                   return res.status(406).json({ error: "Cannot regenerate API key for read-only user" });
               }
           }
+
+          if ( middleWareUser.apiKey.type === "superUser") {
+              const key = await keySchema.findOne({ user: user._id });
+
+              if (!key) {
+                return res.status(404).json({ error: "Key not found" });
+              } 
+
+              if (type && key.type !== type) {
+                key.type = type;
+                key.updatedOne = Date.now();
+                await key.save();
+                updatedFields.type = type;
+              }
+          } 
+
 
           if (Object.keys(updatedFields).length > 0 || passwordUpdated) {
               user.updatedOn = Date.now();

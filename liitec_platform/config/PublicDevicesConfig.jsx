@@ -6,6 +6,8 @@ import { EditIcon } from "@/components/EditIcon";
 import { DeleteIcon } from "@/components/DeleteIcon";
 import { EyeIcon } from "@/components/EyeIcon";
 
+import { BarChart3 } from "lucide-react";
+
 import { getFormattedDate } from "@/utils/dateFormatter";
 import Link from "next/link";
 
@@ -112,8 +114,7 @@ const PublicDeviceTableInitialColumns = [
 ];
 
 const PublicDeviceLinks = [
-  { label: "General View", href: "/public-channels/[id1]/devices/[id2]" },
-  //{ label: "Settings", href: "/channels/[id1]/devices/[id2]/settings" },
+  { label: "General View", href: "/public-channels/[id1]/devices/[id2]", icon: <BarChart3 />},
 ];
 
 export {

@@ -10,13 +10,13 @@ import {
 
 import { useRouter } from "next/navigation";
 
-export default function MyModal({ title, content, isOpen, onClose, handleDelete, item}) {
+export default function MyModal({ title, content, isOpen, onClose, handleDelete, item, redirect}) {
 
   const router = useRouter();
 
   function onConfirm() {
     handleDelete(item);
-    router.push(`/channels`);
+    router.push(redirect);
     onClose();
   }
 

@@ -85,13 +85,13 @@ const DataController = {
           if (!key || key.expirationDate < new Date(Date.now())) {
             return res.status(401).json({ error: "Access Forbidden" });
           }
-        } else {
-            const id1 = user._id;
-            const id2 = channel.owner;
+        } else if (user.apiKey.type !== "superUser") {
+            var id1 = user._id;
+            var id2 = new ObjectId(channel.owner);
     
             if (!id1.equals(id2)) {
-              return res.status(401).json({ error: "Access Forbidden" });
-            } 
+                return res.status(401).json({ error: "Access Forbidden" });
+            }
         }
       }
 
@@ -188,12 +188,12 @@ const DataController = {
               return res.status(401).json({ error: "Access Forbidden" });
             }
 
-        } else {
-            const id1 = user._id;
-            const id2 = channel.owner;
-
+        } else if (user.apiKey.type !== "superUser") {
+            var id1 = user._id;
+            var id2 = new ObjectId(channel.owner);
+    
             if (!id1.equals(id2)) {
-              return res.status(401).json({ error: "Access Forbidden" });
+                return res.status(401).json({ error: "Access Forbidden" });
             }
         }
       }
@@ -267,12 +267,12 @@ const DataController = {
                 return res.status(401).json({ error: "Access Forbidden" });
               }
     
-        } else {
-            const id1 = user._id;
-            const id2 = channel.owner;
+        } else if (user.apiKey.type !== "superUser") {
+            var id1 = user._id;
+            var id2 = new ObjectId(channel.owner);
     
             if (!id1.equals(id2)) {
-              return res.status(401).json({ error: "Access Forbidden" });
+                return res.status(401).json({ error: "Access Forbidden" });
             }
         }
       }
@@ -346,12 +346,12 @@ const DataController = {
                 return res.status(401).json({ error: "Access Forbidden" });
               }
     
-        } else {
-            const id1 = user._id;
-            const id2 = channel.owner;
+        } else if (user.apiKey.type !== "superUser") {
+            var id1 = user._id;
+            var id2 = new ObjectId(channel.owner);
     
             if (!id1.equals(id2)) {
-              return res.status(401).json({ error: "Access Forbidden" });
+                return res.status(401).json({ error: "Access Forbidden" });
             }
         }
       }
@@ -417,12 +417,12 @@ const DataController = {
                 return res.status(401).json({ error: "Access Forbidden" });
               }
     
-        } else {
-            const id1 = user._id;
-            const id2 = channel.owner;
+        } else if (user.apiKey.type !== "superUser") {
+            var id1 = user._id;
+            var id2 = new ObjectId(channel.owner);
     
             if (!id1.equals(id2)) {
-              return res.status(401).json({ error: "Access Forbidden" });
+                return res.status(401).json({ error: "Access Forbidden" });
             }
         }
       }

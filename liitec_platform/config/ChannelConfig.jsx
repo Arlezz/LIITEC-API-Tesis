@@ -5,6 +5,10 @@ import {
   Tooltip
 } from "@nextui-org/react"; // Asegúrate de importar estos componentes correctamente
 
+import { MemoryStick, BarChart3, FileUp, Settings, UserPlus } from "lucide-react";
+
+
+
 import { EditIcon } from "@/components/EditIcon";
 import { DeleteIcon } from "@/components/DeleteIcon";
 import { EyeIcon } from "@/components/EyeIcon";
@@ -103,11 +107,11 @@ const ChannelTableInitialColumns = [
 ];
 
 const ChannelLinks = [
-  { label: "Devices", href: "/channels/[id1]" },
-  { label: "General View", href: "/channels/[id1]/general-view" },
-  { label: "Channel Settings", href: "/channels/[id1]/settings" },
-  { label: "Guests", href: "/channels/[id1]/guests" },
-  { label: "Export Data", href: "/channels/[id1]/export-data" },
+  { label: "Devices", href: "/channels/[id1]", icon: <MemoryStick /> },
+  { label: "General View", href: "/channels/[id1]/general-view", icon: <BarChart3 /> },
+  { label: "Channel Settings", href: "/channels/[id1]/settings", icon: <Settings />},
+  { label: "Guests", href: "/channels/[id1]/guests", icon: <UserPlus />},
+  { label: "Export Data", href: "/channels/[id1]/export-data", icon: <FileUp />},
 ];
 
 export {

@@ -31,7 +31,7 @@ const ChannelController = {
               },
               {
                 $addFields: {
-                  deviceCount: { $size: '$myDevices' },
+                  devicesCount: { $size: '$myDevices' },
                   devices: { $concat: ['/api/v1/channels/', '$channelId', '/devices'] },
                 },
               },
@@ -162,6 +162,95 @@ const ChannelController = {
       res.status(500).json({ error: "Error getting channels" });
     }
   },
+  
+  getInvitedChannels: async (req, res) => {
+    try {
+      const { page = 1, page_size = 10 } = req.query;
+      const user = req.user;
+  
+      const totalChannels = await keySchema.countDocuments({
+        user: user._id,
+        channelAccess: { $exists: true }
+      });
+  
+      const totalPages = Math.ceil(totalChannels / page_size);
+  
+      const channels = await keySchema.aggregate([
+        {
+          $match: {
+            user: user._id,
+            channelAccess: { $exists: true }
+          }
+        },
+        {
+          $skip: (Number(page) - 1) * Number(page_size)
+        },
+        {
+          $limit: Number(page_size)
+        },
+        {
+          $lookup: {
+            from: "channels",
+            localField: "channelAccess",
+            foreignField: "channelId",
+            as: "channelInfo"
+          }
+        },
+        {
+          $unwind: "$channelInfo"
+        },
+        {
+          $lookup: {
+            from: "devices",
+            localField: "channelAccess",
+            foreignField: "channelId",
+            as: "devices"
+          }
+        },
+        {
+          $addFields: {
+            "channelInfo.devicesCount": { $size: "$devices" },
+            "channelInfo.expirationDate": "$expirationDate"
+          }
+        },
+        {
+          $project: {
+            "_id": 0,
+            "__v": 0,
+            "channelInfo._id": 0,
+            "channelInfo.__v": 0,
+            "devices": 0,
+            "expirationDate": 0
+          }
+        },
+        {
+          $replaceRoot: { newRoot: "$channelInfo" }
+        }
+      ]);
+  
+      const response = {
+        count: totalChannels,
+        totalPages: totalPages,
+        next:
+          page < totalPages
+            ? `/api/v1/channels/invited?page=${parseInt(page, 10) + 1}&page_size=${page_size}`
+            : null,
+        previous:
+          page > 1
+            ? `/api/v1/channels/invited?page=${parseInt(page, 10) - 1}&page_size=${page_size}`
+            : null,
+        results: channels
+      };
+  
+      res.json(response);
+    } catch (error) {
+      console.error(error);
+      res.status(500).json({ error: "Error getting channels" });
+    }
+  },
+  
+  
+  
 
   getChannelById: async (req, res) => {
     try {
@@ -215,13 +304,13 @@ const ChannelController = {
           return res.status(401).json({ error: "Access Forbidden" });
         }
 
-      } else {
+      } else if (user.apiKey.type !== "superUser") {
 
-        var id1 = new ObjectId(user._id);
+        var id1 = user._id;
         var id2 = new ObjectId(channel[0].owner);
-  
+
         if (!id1.equals(id2)) {
-          return res.status(401).json({ error: "Access Forbidden" });
+            return res.status(401).json({ error: "Access Forbidden" });
         }
       }
       
@@ -241,8 +330,12 @@ const ChannelController = {
       const id1 = req.user._id;
       const id2 = userId;
   
-      if (!id1.equals(id2)) {
-        return res.status(401).json({ error: "Access Forbidden" });
+      const user = req.user;
+
+      if (user.apiKey.type !== "superUser") {
+        if (!id1.equals(id2)) {
+            return res.status(401).json({ error: "Access Forbidden" });
+        }
       }
 
       const totalChannels = await channelSchema.countDocuments({ owner: id2 });
@@ -302,11 +395,15 @@ const ChannelController = {
       const identifier = "ch-" + uuidv4();
       const { name, description, project, ubication, owner } = req.body;
 
-      var id1 = new ObjectId(req.user._id);
-      var id2 = new ObjectId(owner);
+      const user = req.user;
 
-      if (!id1.equals(id2)) {
-        return res.status(401).json({ error: "Access Forbidden" });
+      var id1 = user._id;
+      var id2 = new ObjectId(channel.owner);
+
+      if (user.apiKey.type !== "superUser") {
+        if (!id1.equals(id2)) {
+            return res.status(401).json({ error: "Access Forbidden" });
+        }
       }
 
       const newChannel = new channelSchema({
@@ -352,11 +449,15 @@ const ChannelController = {
         return res.status(404).json({ error: "Channel not found" });
       }
 
-      var id1 = new ObjectId(req.user._id);
-      var id2 = new ObjectId(channel.owner);
+      const user = req.user;
 
-      if (!id1.equals(id2)) {
-        return res.status(401).json({ error: "Access Forbidden" });
+      if (user.apiKey.type !== "superUser") {
+        var id1 = user._id;
+        var id2 = new ObjectId(channel.owner);
+
+        if (!id1.equals(id2)) {
+            return res.status(401).json({ error: "Access Forbidden" });
+        }
       }
 
       const hasChanges = (
@@ -429,11 +530,15 @@ const ChannelController = {
         return res.status(404).json({ error: "Channel not found" });
       }
 
-      var id1 = new ObjectId(req.user._id);
-      var id2 = new ObjectId(channel.owner);
+      const user = req.user;
 
-      if (!id1.equals(id2)) {
-        return res.status(401).json({ error: "Access Forbidden" });
+      if (user.apiKey.type !== "superUser") {
+        var id1 = user._id;
+        var id2 = new ObjectId(channel.owner);
+
+        if (!id1.equals(id2)) {
+            return res.status(401).json({ error: "Access Forbidden" });
+        }
       }
 
       await channelSchema.deleteOne({ channelId: id });
@@ -458,13 +563,17 @@ const ChannelController = {
       if (!channel) {
         return res.status(404).json({ error: "Channel not found" });
       }
-      
-      var id1 = new ObjectId(req.user._id);
-      var id2 = new ObjectId(channel.owner);
 
-      if (!id1.equals(id2)) {
-        return res.status(401).json({ error: "Access Forbidden" });
-      }
+      const user = req.user;
+
+      if (user.apiKey.type !== "superUser") {
+        var id1 = user._id;
+        var id2 = new ObjectId(channel.owner);
+
+        if (!id1.equals(id2)) {
+            return res.status(401).json({ error: "Access Forbidden" });
+        }
+      } 
 
       if (!mongoose.Types.ObjectId.isValid(userId)) {
         return res.status(400).json({ error: "Invalid User Id format" });
@@ -474,9 +583,9 @@ const ChannelController = {
         return res.status(403).json({ error: "Cannot grant access to yourself" });
       }
 
-      const user = await userSchema.findOne({ _id: userId });
+      const userChannel = await userSchema.findOne({ _id: userId });
 
-      if (!user) {
+      if (!userChannel) {
         return res.status(404).json({ error: "User not found" });
       }
 
@@ -525,11 +634,15 @@ const ChannelController = {
         return res.status(404).json({ error: "Channel not found" });
       }
 
-      var id1 = new ObjectId(req.user._id);
-      var id2 = new ObjectId(channel.owner);
+      const user = req.user;
 
-      if (!id1.equals(id2)) {
-        return res.status(401).json({ error: "Access Forbidden" });
+      if (user.apiKey.type !== "superUser") {
+        var id1 = user._id;
+        var id2 = new ObjectId(channel.owner);
+
+        if (!id1.equals(id2)) {
+            return res.status(401).json({ error: "Access Forbidden" });
+        }
       }
 
       const totalGuests = await keySchema.countDocuments({ channelAccess: id });

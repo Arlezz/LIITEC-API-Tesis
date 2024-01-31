@@ -1,31 +1,27 @@
-import GeneralService from "@/services/general.services";
-import UserService from "@/services/user.services";
 import { authOptions } from "@/app/api/auth/[...nextauth]/route";
 import { getServerSession } from "next-auth";
 import { deleteChannel } from "@/lib/general.actions";
-import AuthService from "@/services/auth.service";
-import Link from "next/link";
+
+import { getUserChannels } from "@/lib/general.actions";
 
 import TablePagination from "@/components/TablePagination";
 import GenericTable from "@/components/GenericTable";
-import { 
+import {
   ChannelTableRenderCell,
   ChannelTableColumns,
   ChannelTableInitialColumns,
-  ChannelTableStatusOptions
+  ChannelTableStatusOptions,
 } from "@/config/ChannelConfig";
 
 export default async function ChannelPage({ searchParams }) {
-  
   const session = await getServerSession(authOptions);
 
   const page = Number(searchParams.page) || 1;
 
-  const channels = await GeneralService.getUserChannels(session.user._id, page);
-
+  const channels = await getUserChannels(session.user._id, page);
 
   const pages = channels.totalPages || 1;
-
+  
 
   return (
     <div className="max-w-[85rem] w-full mx-auto p-4 sm:flex sm:items-center sm:justify-between">
@@ -44,6 +40,9 @@ export default async function ChannelPage({ searchParams }) {
           initialColumns={ChannelTableInitialColumns}
           createLink={"/channels/create"}
           handleDelete={deleteChannel}
+          modalTitle={"Delete Channel"}
+          modalDescription={"Are you sure you want to delete this channel?"}
+          redirectPostDelete={"/channels"}
         />
         <div className="py-8 px-2 flex justify-center items-center">
           <TablePagination
@@ -56,4 +55,3 @@ export default async function ChannelPage({ searchParams }) {
     </div>
   );
 }
-

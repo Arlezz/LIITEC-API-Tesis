@@ -94,26 +94,25 @@ export async function getMyChannels (userId) {
   return allChannels;
 };
 
-export async function getGuests (userId) {
+export async function getGuests(userId) {
   let allKeys = [];
   let currentPage = 1;
 
   try {
     while (true) {
-      const data = await get(
-        `/keys/${userId}?page=${currentPage}&page_size=10`
-      );
+      const data = await get(`/keys/${userId}?page=${currentPage}&page_size=10`);
 
       if (!data.results || data.results.length === 0) {
         // No hay más resultados, salimos del bucle
         break;
       }
 
-      const keysWithChannelAccess = data.results.filter(
-        (key) => key.channelAccess
+      // Filtrar las keys que tienen un channelAccess y cuyo channelOwner es igual a userId
+      const keysWithChannelAccessAndMatchingOwner = data.results.filter(
+        (key) => key.channelAccess && key.channelOwner === userId
       );
 
-      allKeys.push(...keysWithChannelAccess);
+      allKeys.push(...keysWithChannelAccessAndMatchingOwner);
 
       // Verificar si hay más páginas
       if (currentPage >= data.totalPages) {
@@ -127,7 +126,55 @@ export async function getGuests (userId) {
   }
 
   return allKeys;
-};
+}
+
+export async function getChannelsInvited() {
+  let allKeys = [];
+  let currentPage = 1;
+
+  try {
+    while (true) {
+      const data = await get(`/channels/invited?page=${currentPage}&page_size=10`);
+
+      if (!data.results || data.results.length === 0) {
+        // No hay más resultados, salimos del bucle
+        break;
+      }
+
+      allKeys.push(...data.results);
+
+      // Verificar si hay más páginas
+      if (currentPage >= data.totalPages) {
+        break;
+      }
+
+      currentPage++;
+    }
+  } catch (error) {
+    console.error("Error al obtener invitados y propietarios:", error);
+  }
+
+  return allKeys;
+}
+
+export async function getChannelsInvitedPaginate(page = 1, pageSize = 10) {
+
+  try {
+    const data = await get(`/channels/invited?page=${page}&page_size=${pageSize}`);
+
+    if (!data.results || data.results.length === 0) {
+      console.error(`La página ${page} no tiene resultados.`);
+      return [];
+    }
+
+    return data;
+
+  } catch (error) {
+    throw new Error(error.response.data.message);
+  }
+
+}
+
 
 export async function getGuest (channelId, page = 1, pageSize = 10) {
   try {
@@ -300,9 +347,9 @@ export async function updateDevice(channelId, deviceId, deviceData){
   }
 }
 
-export async function deleteDevice (channelId, deviceId) {
+export async function deleteDevice (item) {
   try{
-    const data = await del(`/channels/${channelId}/devices/${deviceId}`);
+    const data = await del(`/channels/${item.channelId}/devices/${item.deviceId}`);
     revalidatePath(`/channels/${channelId}/devices`);
     return data;
   } catch (error) {
@@ -312,9 +359,12 @@ export async function deleteDevice (channelId, deviceId) {
 }
 
 
-export async function deleteChannel (channelId) {
+export async function deleteChannel (item) {
   try{
-    const data = await del(`/channels/${channelId}`);
+
+
+
+    const data = await del(`/channels/${item.channelId}`);
     revalidatePath(`/channels`);
     return data;
   } catch (error) {

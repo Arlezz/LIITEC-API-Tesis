@@ -5,6 +5,8 @@ import {
   Tooltip
 } from "@nextui-org/react"; // Asegúrate de importar estos componentes correctamente
 
+import { Cpu, BarChart3, FileUp } from "lucide-react";
+
 import { EditIcon } from "@/components/EditIcon";
 import { DeleteIcon } from "@/components/DeleteIcon";
 import { EyeIcon } from "@/components/EyeIcon";
@@ -115,11 +117,9 @@ const PublicChannelTableInitialColumns = [
 ];
 
 const PublicChannelLinks = [
-  { label: "Devices", href: "/public-channels/[id1]" },
-  { label: "General View", href: "/public-channels/[id1]/general-view" },
-  //{ label: "Channel Settings", href: "/public- channels/[id1]/settings" },
-  //{ label: "Guests", href: "/channels/[id1]/guests" },
-  { label: "Export Data", href: "/public-channels/[id1]/export-data" },
+  { label: "Devices", href: "/public-channels/[id1]", icon: <Cpu />},
+  { label: "General View", href: "/public-channels/[id1]/general-view", icon: <BarChart3 />},
+  { label: "Export Data", href: "/public-channels/[id1]/export-data", icon: <FileUp />},
 ];
 
 export {

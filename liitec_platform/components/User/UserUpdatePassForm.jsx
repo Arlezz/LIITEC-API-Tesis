@@ -61,24 +61,31 @@ export default function UserUpdatePassForm() {
 
           if (!values.password) {
             errors.password = "Password is required";
-          } else if (values.password.length < 8) {
-            errors.password = "Password must be at least 8 characters long";
+          } else if (
+            !(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/.test(
+              values.password
+            ))
+          ) {
+            errors.password =
+              "Password must contain at least 8 characters, one uppercase, one lowercase, one number and one special case character";
           } else if (values.password.length > 50) {
             errors.password = "Password must be at most 50 characters long";
-          } else if (!/^[a-zA-Z0-9]*$/.test(values.password)) {
-            errors.password = "Password must only contain letters and numbers";
           }
 
           if (!values.repeatPassword) {
             errors.repeatPassword = "Repeat password is required";
           } else if (values.repeatPassword !== values.password) {
             errors.repeatPassword = "Passwords must match";
+          } else if (!(
+            /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/.test(
+              values.repeatPassword
+            ))
+          ) {
+            errors.repeatPassword =
+              "Password must contain at least 8 characters, one uppercase, one lowercase, one number and one special case character";
           } else if (values.repeatPassword.length > 50) {
             errors.repeatPassword =
               "Password must be at most 50 characters long";
-          } else if (!/^[a-zA-Z0-9]*$/.test(values.repeatPassword)) {
-            errors.repeatPassword =
-              "Password must only contain letters and numbers";
           }
 
           return errors;
@@ -109,7 +116,11 @@ export default function UserUpdatePassForm() {
                       type="button"
                       onClick={toggleVisibility}
                     >
-                      {isVisible ? <EyeOff className="text-default-400" size={18}/>  :  <Eye className="text-default-400" size={18} /> }
+                      {isVisible ? (
+                        <EyeOff className="text-default-400" size={18} />
+                      ) : (
+                        <Eye className="text-default-400" size={18} />
+                      )}
                     </button>
                   }
                   value={values.password}
@@ -136,7 +147,11 @@ export default function UserUpdatePassForm() {
                       type="button"
                       onClick={toggleVisibility2}
                     >
-                      {isVisible2 ? <EyeOff className="text-default-400" size={18}/>  :  <Eye className="text-default-400" size={18} /> }
+                      {isVisible2 ? (
+                        <EyeOff className="text-default-400" size={18} />
+                      ) : (
+                        <Eye className="text-default-400" size={18} />
+                      )}
                     </button>
                   }
                   value={values.repeatPassword}

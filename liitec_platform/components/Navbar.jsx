@@ -24,7 +24,10 @@ export default function Navbar() {
     advancedUser: "Advanced User",
     superUser: "Super User",
   };
-  const userRole = roleMappings[session?.user?.apiKey?.type] || "Read Only";
+
+  const role = session?.user?.apiKey?.type || "readUser";
+
+  const userRole = roleMappings[role] || "Read Only";
   const userEmail = session?.user?.email || "user@dom.com";
 
   return (
@@ -178,20 +181,53 @@ export default function Navbar() {
                 Public Channels
               </Link>
             </li>
-            <li>
-              <Link
-                href="/channels"
-                className={`
+            {role === "readUser" ? (
+              <li>
+                <Link
+                  href="/invited-channels"
+                  className={`
+            ${
+              path.startsWith("/invited-channels")
+                ? "bg-sky-100 md:bg-transparent md:border-b-2 md:border-sky-600 md:text-sky-600"
+                : ""
+            }
+            block py-2 px-2 rounded-md md:rounded-none text-gray-900 md:hover:bg-transparent md:border-0 md:hover:text-sky-600 md:hover:border-b-2 md:hover:border-b-sky-600 md:p-0`}
+                >
+                  Invited Channels
+                </Link>
+              </li>
+            ) : (
+              <>
+                <li>
+                  <Link
+                    href="/invited-channels"
+                    className={`
+                ${
+                  path.startsWith("/invited-channels")
+                    ? "bg-sky-100 md:bg-transparent md:border-b-2 md:border-sky-600 md:text-sky-600"
+                    : ""
+                }
+                block py-2 px-2 rounded-md md:rounded-none text-gray-900 md:hover:bg-transparent md:border-0 md:hover:text-sky-600 md:hover:border-b-2 md:hover:border-b-sky-600 md:p-0`}
+                  >
+                    Invited Channels
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/channels"
+                    className={`
                 ${
                   path.startsWith("/channels")
                     ? "bg-sky-100 md:bg-transparent md:border-b-2 md:border-sky-600 md:text-sky-600"
                     : ""
                 }
                 block py-2 px-2 rounded-md md:rounded-none text-gray-900 md:hover:bg-transparent md:border-0 md:hover:text-sky-600 md:hover:border-b-2 md:hover:border-b-sky-600 md:p-0`}
-              >
-                My Channels
-              </Link>
-            </li>
+                  >
+                    My Channels
+                  </Link>
+                </li>
+              </>
+            )}
             <li>
               <Link
                 href="/support"
@@ -234,7 +270,11 @@ export default function Navbar() {
             placement="bottom"
             renderTrigger={() => (
               <span className="bg-sky-700 rounded-full capitalize text-white flex items-center py-2 px-4 text-gray-900 rounded">
-                {session?.user ? <>{session.user.username}</> : <>{"Usuario"}</>}
+                {session?.user ? (
+                  <>{session.user.username}</>
+                ) : (
+                  <>{"Usuario"}</>
+                )}
                 <svg
                   className="w-2.5 h-2.5 ms-2.5"
                   aria-hidden="true"

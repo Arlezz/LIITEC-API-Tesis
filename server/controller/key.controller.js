@@ -48,12 +48,17 @@ const KeyController = {
             const page = parseInt(req.query.page) || 1;
             const page_size = parseInt(req.query.page_size) || 10;
 
-            var id1 = new ObjectId(userId);
-            var id2 = new ObjectId(req.user._id);
+            const user = req.user;
 
-            if (!id1.equals(id2)) {
-                return res.status(401).json({ error: "Access Forbidden" });
+            if ( user.apiKey.type !== "superUser") {
+                var id1 = new ObjectId(user._id);
+                var id2 = new ObjectId(userId);
+    
+                if (!id1.equals(id2)) {
+                    return res.status(401).json({ error: "Access Forbidden" });
+                }
             }
+
 
             const totalKeys = await keySchema.countDocuments({
                 $or: [

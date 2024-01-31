@@ -63,12 +63,20 @@ const DeviceController = {
                 return res.status(404).json({ error: "Channel not found" });
             }
 
-            var id1 = req.user._id;
+            const user = req.user;
+            
+            var id1 = user._id;
             var id2 = new ObjectId(channel.owner);
 
-            if (!id1.equals(id2)) {
-                return res.status(401).json({ error: "Access Forbidden" });
+            if (user.apiKey.type !== "superUser") {
+
+                if (!id1.equals(id2)) {
+                    return res.status(401).json({ error: "Access Forbidden" });
+                }
+            } else {
+                id1 = channel.owner;
             }
+
         
             const newDevice = new deviceSchema({
                 type: type,
@@ -89,19 +97,20 @@ const DeviceController = {
             if (description !== null && description !== undefined) {
                 newDevice.description = description;
             }
+            
 
-            const user = await userSchema.findOne({ _id: id1 });
+            const userChannel = await userSchema.findOne({ _id: id1 });
 
-            if (!user) {
+            if (!userChannel) {
                 return res.status(404).json({ error: "User not found" });
             }
             
-            user.acls.push({
+            userChannel.acls.push({
                 topic: "/devices/" + identifier,
                 acc: 2,
             });
 
-            await user.save();
+            await userChannel.save();
             
 
             await newDevice.save();
@@ -130,7 +139,6 @@ const DeviceController = {
 
             if (user.apiKey.type === "readUser") {
 
-                console.log("readUser");
 
                 const key = await keySchema.findOne({ user: user._id, channelAccess: channelId });
 
@@ -138,15 +146,15 @@ const DeviceController = {
                     return res.status(401).json({ error: "Access Forbidden" });
                 }
 
-            } else {
+            } else if (user.apiKey.type !== "superUser") {
 
-                const id1 = user._id;
-                const id2 = new ObjectId(channel.owner);
-            
+                var id1 = user._id;
+                var id2 = new ObjectId(channel.owner);
+
                 if (!id1.equals(id2)) {
-                return res.status(401).json({ error: "Access Forbidden" });
+                    return res.status(401).json({ error: "Access Forbidden" });
                 }
-            }
+            } 
           }
       
           // Obtener el total de dispositivos
@@ -204,15 +212,15 @@ const DeviceController = {
                         return res.status(401).json({ error: "Access Forbidden" });
                     }
 
-                } else {
+                } else if (user.apiKey.type !== "superUser") {
 
-                    const id1 = user._id;
-                    const id2 = new ObjectId(channel.owner);
-
+                    var id1 = user._id;
+                    var id2 = new ObjectId(channel.owner);
+    
                     if (!id1.equals(id2)) {
                         return res.status(401).json({ error: "Access Forbidden" });
                     }
-                }
+                }              
             }
 
             const proyection = { _id: 0, __v: 0 , "measures._id":0};
@@ -254,11 +262,13 @@ const DeviceController = {
 
             const user = req.user;
             
-            const id1 = new ObjectId(user._id);
-            const id2 = new ObjectId(channel.owner);
+            if (user.apiKey.type !== "superUser") {
+                var id1 = user._id;
+                var id2 = new ObjectId(channel.owner);
 
-            if (!id1.equals(id2)) {
-                return res.status(401).json({ error: "Access Forbidden" });
+                if (!id1.equals(id2)) {
+                    return res.status(401).json({ error: "Access Forbidden" });
+                }
             }
 
             const device = await deviceSchema.findOne({ deviceId: deviceId });
@@ -329,17 +339,19 @@ const DeviceController = {
             if (!channel) {
                 return res.status(404).json({ error: "Channel not found" });
             }
+            
+            const user = req.user;
 
-            var id1 = req.user._id;
-            var id2 = new ObjectId(channel.owner);
+            if (user.apiKey.type !== "superUser") {
+                var id1 = user._id;
+                var id2 = new ObjectId(channel.owner);
 
-            if (!id1.equals(id2)) {
-                return res.status(401).json({ error: "Access Forbidden" });
+                if (!id1.equals(id2)) {
+                    return res.status(401).json({ error: "Access Forbidden" });
+                }
             }
 
             const device = await deviceSchema.findOne({ deviceId: deviceId });
-
-            console.log("device: ",device);
 
             if (!device) {
                 return res.status(404).json({ error: "Device not found" });

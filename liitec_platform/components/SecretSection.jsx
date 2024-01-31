@@ -24,10 +24,10 @@ export default function SecretSection({ id, secret, label, herf }) {
       regenerateApiKey: true,
     };
     updateKey(id, value)
-      .then((response) => {
+      .then(async (response) => {
         console.log("Éxito al actualizar el usuario:", response.message);
         const newKey = response.updatedFields.key;
-        update(
+        await update(
           {
             ...session,
             user: {
@@ -39,8 +39,9 @@ export default function SecretSection({ id, secret, label, herf }) {
             },
           }
         );
+        
+        router.push("/profile/api-credentials");
         router.refresh();
-        //router.push("/profile/api-credentials")
       })
       .catch((error) => {
         console.log("Error al actualizar el usuario:", error);

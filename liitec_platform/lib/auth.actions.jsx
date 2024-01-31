@@ -1,6 +1,6 @@
 "use server";
 
-import { get, post, put } from '../utils/httpClient';
+import { get, post, put, del } from '../utils/httpClient';
 import { NextResponse } from 'next/server';
 import { revalidatePath } from 'next/cache';
 
@@ -15,20 +15,37 @@ export async function login (credential, password) {
         });
 };
 
-export async function register (username, name, lastName, email, password, type, superuser) {
-    return post("/users", {
-            username,
-            name,
-            lastName,
-            email,
-            password,
-            type,
-            superuser
-        })
-        .then((response) => {
-            return NextResponse.json(response);
-        });
+export async function register (userData) {
+
+  try {
+
+      console.log("userData: ", userData);
+
+      const response = await post("/users",userData);
+
+      revalidatePath(`/admin/users`);
+
+      return response;
+  } catch (error) {
+      console.error('Error creating user:', error.response.data.error);
+      throw new Error(error.response.data.error);
+  }    
 };
+
+export async function deleteUser (item) {
+
+  try {
+
+      const response = await del(`/users/${item._id}`);
+
+      revalidatePath(`/admin/users`);
+
+      return response;
+  } catch (error) {
+      console.error('Error deleting user:', error.response.data.error);
+      throw new Error(error.response.data.error);
+  }    
+}
 
 export async function getKeys () {
     let allKeys = [];
@@ -146,11 +163,88 @@ export async function getUsersPlatform () {
   return allUsers;
 };
 
+export async function getUsersAdmin (page) {
+
+  try {
+    const data = await get(`/users?page=${page}&page_size=10`);
+
+    return data;
+  } catch (error) {
+    console.error('Error al obtener usuarios:', error);
+    throw new Error(error.response.data.message);
+  }
+};
+
+export async function getDevicesAdmin (page) {
+
+  try {
+    const data = await get(`/devices?page=${page}&page_size=10`);
+
+    return data;
+  } catch (error) {
+    console.error('Error al obtener dispositivos:', error);
+    throw new Error(error.response.data.message);
+  }
+};
+
+export async function getChannelsAdmin (page) {
+  
+    try {
+      const data = await get(`/channels?page=${page}&page_size=10`);
+  
+      return data;
+    } catch (error) {
+      console.error('Error al obtener canales:', error);
+      throw new Error(error.response.data.message);
+    }
+};
+
+export async function getKeysAdmin (page) {
+    
+    try {
+      const data = await get(`/keys?page=${page}&page_size=10`);
+  
+      return data;
+    } catch (error) {
+      console.error('Error al obtener keys:', error);
+      throw new Error(error.response.data.message);
+    }
+  
+}
+
+export async function deleteDevice (item) {
+    try {
+        const response = await del(`/channels/${item.channelId}/devices/${item.deviceId}`);
+  
+        revalidatePath(`/admin/devices`);
+  
+        return response;
+    } catch (error) {
+        console.error('Error deleting device:', error.response.data.error);
+        throw new Error(error.response.data.error);
+    }    
+}
+
+export async function deleteChannel (item) {
+  try {
+      const response = await del(`/channels/${item.channelId}`);
+      
+      revalidatePath(`/admin/channels`);
+
+      return response;
+  } catch (error) {
+      console.error('Error deleting channel:', error.response.data.error);
+      throw new Error(error.response.data.error);
+  }    
+}
+
 export async function updateKey (id, isUpdate) {
   try {
       const response = await put(`/users/${id}`, isUpdate);
 
-      revalidatePath(`/profile/api-credentials`);
+      //revalidatePath(`/profile/api-credentials`);
+
+      
 
       return response;
   } catch (error) {

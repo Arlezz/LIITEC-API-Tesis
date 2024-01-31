@@ -530,6 +530,7 @@ const authorization = require("../../auth/api.middleware");
 // Channels Resource
 router.get("/channels", authorization.requireAPIKeyOfType(USER_LEVEL_2), ChannelController.getChannels);
 router.get("/channels/public", authorization.requireAPIKeyOfType(USER_LEVEL_0), ChannelController.getPublicChannels);
+router.get("/channels/invited", authorization.requireAPIKeyOfType(USER_LEVEL_0), ChannelController.getInvitedChannels);
 router.post("/channels", authorization.requireAPIKeyOfType(USER_LEVEL_1), ChannelController.createChannel);
 
 // Individual Channel Resource
