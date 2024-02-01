@@ -198,6 +198,11 @@ export default async function DashboardPage() {
         <div className="flex justify-center bg-white rounded-lg shadow-lg p-2 text-center cursor-pointer hover:bg-gray-100 transition duration-300 ease-in-out">
           <div className="w-full h-[40vh] md:h-[700px] bg-sky-100">
             <Map
+              // channels={
+              //   (role === "superUser" || role === "advancedUser")
+              //     ? channels
+              //     : channelsInvited
+              // }
               channels={
                 role === "superUser"
                   ? channelsPlatform

@@ -10,7 +10,7 @@ export default async function DevicePage({ params }) {
       <h1 className="text-2xl md:text-3xl text-gray-700 font-medium mb-8">
         Plotted Data
       </h1>
-      <section className="grid grid-cols-1 md:grid-cols-2">
+      <section className="grid grid-cols-1 md:grid-cols-2 ga-6 md:gap-0">
         {device &&
           device.measures &&
           (async () => {

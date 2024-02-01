@@ -12,8 +12,7 @@ export default async function Layout({ children, params }) {
   const channel = await getChannel(channelId);
 
   return (
-    <div className="max-w-[85rem] w-full mx-auto p-4 sm:flex sm:items-center sm:justify-between">
-      <div className="w-full">
+    <>
         <section className="flex flex-col pb-8 items-start gap-2">
           <MyBreacrumbs/>
           <div className="flex flex-col items-start pt-4">
@@ -99,7 +98,6 @@ export default async function Layout({ children, params }) {
         </section>
         <Tabs links={ChannelLinks} ids={[params.id]} />
         {children}
-      </div>
-    </div>
+    </>
   );
 }
