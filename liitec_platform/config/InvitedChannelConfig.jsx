@@ -1,6 +1,6 @@
 "use client";
 
-import { Chip, Tooltip } from "@nextui-org/react"; // Asegúrate de importar estos componentes correctamente
+import { Chip, Tooltip, Button } from "@nextui-org/react"; // Asegúrate de importar estos componentes correctamente
 
 import { Cpu, BarChart3, FileUp, Ban } from "lucide-react";
 
@@ -36,24 +36,30 @@ const InvitedChannelTableRenderCell = (channel, columnKey, onOpen) => {
       );
     case "expirationDate":
       return (
-        <div>
-          <p
-            className={
-              new Date(channel.expirationDate) > new Date()
-                ? "text-green-500"
-                : "text-red-500"
-            }
-          >
-            {channel.expirationDate ? channel.expirationDate : "N/A"}
-          </p>
-          <Chip
-            variant="dot"
-            className="capitalize"
-            color={new Date(channel.expirationDate) > Date.now() ? "success" : "danger"}
-          >
-            {new Date (channel.expirationDate) > Date.now() ? "Active" : "Expired"}
-          </Chip>
-        </div>
+        <p
+          className={
+            new Date(channel.expirationDate) > new Date()
+              ? "text-green-500"
+              : "text-red-500"
+          }
+        >
+          {channel.expirationDate
+            ? getFormattedDate(channel.expirationDate)
+            : "N/A"}
+        </p>
+      );
+    case "status":
+      return (
+        <Chip
+          variant="dot"
+          size="sm"
+          className="capitalize"
+          color={
+            new Date(channel.expirationDate) > Date.now() ? "success" : "danger"
+          }
+        >
+          {new Date(channel.expirationDate) > Date.now() ? "Active" : "Expired"}
+        </Chip>
       );
     case "devicesCount":
       return <>{channel.devicesCount}</>;
@@ -67,21 +73,28 @@ const InvitedChannelTableRenderCell = (channel, columnKey, onOpen) => {
     case "actions":
       return (
         <>
-          {new Date(channel.expirationDate) > Date.now() || channel.isPublic? (
+          {new Date(channel.expirationDate) > Date.now() || channel.isPublic ? (
             <div className="flex items-center gap-2">
               <Tooltip content="Details">
-                <Link
+                <Button
+                  isIconOnly
+                  as={Link}
+                  variant="light"
+                  size="sm"
                   className="text-lg text-default-400 cursor-pointer active:opacity-50"
                   href={`/invited-channels/${channel.channelId}`}
                 >
                   <EyeIcon />
-                </Link>
+                </Button>
               </Tooltip>
             </div>
           ) : (
             <div className="flex items-center gap-2">
               <Tooltip content="Forbidden">
-                  <Ban className="text-red-500 hover:cursor-not-allowed" size={18}/>
+                <Ban
+                  className="text-red-500 hover:cursor-not-allowed"
+                  size={18}
+                />
               </Tooltip>
             </div>
           )}
@@ -106,6 +119,7 @@ const InvitedChannelTableColumns = [
   { name: "Created", uid: "createdOn", sortable: true },
   { name: "Updated", uid: "updatedOn", sortable: true },
   { name: "Deadline", uid: "expirationDate", sortable: true },
+  { name: "Status", uid: "status" },
   { name: "Action", uid: "actions" },
 ];
 
@@ -123,6 +137,7 @@ const InvitedChannelTableInitialColumns = [
   "createdOn",
   "updatedOn",
   "expirationDate",
+  "status",
   "actions",
 ];
 

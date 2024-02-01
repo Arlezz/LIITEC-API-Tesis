@@ -2,7 +2,8 @@
 
 import {
   Chip,
-  Tooltip
+  Tooltip,
+  Button,
 } from "@nextui-org/react"; // Asegúrate de importar estos componentes correctamente
 
 import { Cpu, BarChart3, FileUp } from "lucide-react";
@@ -16,7 +17,7 @@ import Link from "next/link";
 
 
 
-const PublicChannelTableRenderCell = (channel, columnKey, onOpen) => {
+const PublicChannelTableRenderCell = (channel, columnKey) => {
 
   console.log("channel: ", channel);
 
@@ -58,25 +59,17 @@ const PublicChannelTableRenderCell = (channel, columnKey, onOpen) => {
       return (
         <div className="relative flex items-center gap-2">
           <Tooltip content="Details">
-            <Link className="text-lg text-default-400 cursor-pointer active:opacity-50"
-             href={`/public-channels/${channel.channelId}`}>
-              <EyeIcon />
-            </Link>
-          </Tooltip>
-          {/* <Tooltip content="Edit Channel">
-          <Link className="text-lg text-default-400 text-warning cursor-pointer active:opacity-50"
-             href={`/channels/${channel.channelId}/settings`}>
-              <EditIcon />
-            </Link>
-          </Tooltip>
-          <Tooltip color="danger" content="Delete Channel">
-            <span
-              onClick={() => onOpen()}
-              className="text-lg text-danger cursor-pointer active:opacity-50"
+            <Button
+              isIconOnly
+              as={Link}
+              variant="light"
+              size="sm"
+              className="text-lg text-default-400 cursor-pointer active:opacity-50"
+              href={`/public-channels/${channel.channelId}`}
             >
-              <DeleteIcon />
-            </span>
-          </Tooltip> */}
+              <EyeIcon />
+            </Button>
+          </Tooltip>
         </div>
       );
     default:

@@ -33,8 +33,6 @@ export default async function Page({ searchParams }) {
         idField={"channelId"}
         statusOptions={PublicChannelTableStatusOptions}
         initialColumns={PublicChannelTableInitialColumns}
-        //createLink={"/channels/create"}
-        //handleDelete={deleteChannel}
       />
       <div className="py-8 px-2 flex justify-center items-center">
         <TablePagination

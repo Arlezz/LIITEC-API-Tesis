@@ -1,6 +1,6 @@
 "use client";
 
-import { Chip, Tooltip } from "@nextui-org/react"; // Asegúrate de importar estos componentes correctamente
+import { Chip, Tooltip, Button } from "@nextui-org/react"; // Asegúrate de importar estos componentes correctamente
 
 import { EditIcon } from "@/components/EditIcon";
 import { DeleteIcon } from "@/components/DeleteIcon";
@@ -9,7 +9,13 @@ import { EyeIcon } from "@/components/EyeIcon";
 import { getFormattedDate } from "@/utils/dateFormatter";
 import Link from "next/link";
 
-const DeviceTableRenderCell = (device, columnKey) => {
+const DeviceTableRenderCell = (
+  device,
+  columnKey,
+  onOpenView,
+  onOpenEdit,
+  onOpenDelete
+) => {
   const cellValue = device[columnKey];
 
   switch (columnKey) {
@@ -17,7 +23,8 @@ const DeviceTableRenderCell = (device, columnKey) => {
       return <>{device.name}</>;
     case "Description":
       return <>{device.description}</>;
-
+    case "model":
+      return <span className="font-bold text-gray-700">{device.model}</span>;
     case "measures":
       return (
         <>
@@ -49,30 +56,43 @@ const DeviceTableRenderCell = (device, columnKey) => {
       );
     case "actions":
       return (
-        <div className="relative flex items-center gap-2">
+        <div className="flex items-center gap-1">
           <Tooltip content="Details">
-            <Link
+            <Button
+              isIconOnly
+              as={Link}
+              variant="light"
+              size="sm"
               className="text-lg text-default-400 cursor-pointer active:opacity-50"
               href={`/channels/${device.channelId}/devices/${device.deviceId}`}
             >
               <EyeIcon />
-            </Link>
+            </Button>
           </Tooltip>
           <Tooltip content="Edit Channel">
-            <Link
-              className="text-lg text-warning cursor-pointer active:opacity-50"
+            <Button
+              isIconOnly
+              as={Link}
+              variant="light"
+              color="warning"
+              size="sm"
+              className="text-lg cursor-pointer active:opacity-50"
               href={`/channels/${device.channelId}/devices/${device.deviceId}/settings`}
             >
               <EditIcon />
-            </Link>
+            </Button>
           </Tooltip>
           <Tooltip color="danger" content="Delete Channel">
-            <span
-              //onClick={() => console.log("Device: ", device.name)}
-              className="text-lg text-danger cursor-pointer active:opacity-50"
+            <Button
+              isIconOnly
+              variant="light"
+              size="sm"
+              color="danger"
+              onClick={() => onOpenDelete()}
+              className="text-lg cursor-pointer active:opacity-50"
             >
               <DeleteIcon />
-            </span>
+            </Button>
           </Tooltip>
         </div>
       );
@@ -89,6 +109,7 @@ const DeviceTableStatusColorMap = {
 const DeviceTableColumns = [
   { name: "Device Name", uid: "name", sortable: true },
   { name: "Description", uid: "description" },
+  { name: "Model", uid: "model" },
   { name: "Measures", uid: "measures" },
   { name: "State", uid: "isActive" },
   { name: "Created", uid: "createdOn", sortable: true },
@@ -104,6 +125,7 @@ const DeviceTableStatusOptions = [
 const DeviceTableInitialColumns = [
   "name",
   "description",
+  "model",
   "measures",
   "isActive",
   "createdOn",

@@ -14,7 +14,7 @@ export default async function Layout({ params, children }) {
   return (
     <>
       <section className="flex flex-col pb-8 items-start gap-2">
-        <MyBreacrumbs/>
+        <MyBreacrumbs />
         <div className="flex flex-col items-start pt-4">
           <h2 className="text-2xl md:text-4xl  text-gray-700 font-medium">
             {device?.name != null && device.name !== ""
@@ -30,17 +30,17 @@ export default async function Layout({ params, children }) {
         <div className="">
           <ul className="list-none">
             <li className="mb-2 md:mb-0">
-              <span className="font-bold">Device Id:{" "}</span>
+              <span className="font-bold">Device Id: </span>
               <span className="font-medium">{device?.deviceId ?? "N/A"}</span>
             </li>
 
             <li className="mb-2 md:mb-0">
-              <span className="font-bold">Channel :{" "}</span>
+              <span className="font-bold">Channel : </span>
               {device?.channelId !== undefined ? device.channelId : "N/A"}
             </li>
             <li className="flex flex-center items-center gap-1 mb-2 md:mb-0">
-            <span className="font-bold">State :{" "}</span>
-              
+              <span className="font-bold">State : </span>
+
               <Chip
                 //startContent={<CheckIcon size={18} />}
                 className="capitalize"
@@ -59,14 +59,14 @@ export default async function Layout({ params, children }) {
           <ul className="list-none">
             {device?.model != null && (
               <li className="mb-2 md:mb-0">
-                <span className="font-bold">Model :{" "}</span>
+                <span className="font-bold">Model : </span>
                 <span className="font-bold">{device?.model ?? "N/A"}</span>
               </li>
             )}
 
             {device?.type != null && (
               <li className="capitalize flex gap-1 mb-2 md:mb-0">
-                <span className="font-bold">Type :{" "}</span>
+                <span className="font-bold">Type : </span>
                 {device.type === "both" ? (
                   <span className="flex flex-row gap-1">
                     <Chip
@@ -99,11 +99,11 @@ export default async function Layout({ params, children }) {
               </li>
             )}
             {device?.description != null && (
-              
               <li className="list-none">
-                                <span className="font-bold">Description :{" "}</span>
+                <span className="font-bold">Description : </span>
 
-                {device.description ?? "N/A"}</li>
+                {device.description ?? "N/A"}
+              </li>
             )}
           </ul>
         </div>

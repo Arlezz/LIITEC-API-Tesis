@@ -22,7 +22,7 @@ export default async function ProfileSettingsPage() {
         </h2>
         <UserSettingsForm user={user} />
       </section>
-      <Divider className="my-10"/>
+      <Divider className="my-10 w-full md:w-1/2"/>
       <section className="flex flex-col">
         <h2 className="text-2xl pb-8 md:text-3xl text-gray-700 font-medium">
           Reset Password

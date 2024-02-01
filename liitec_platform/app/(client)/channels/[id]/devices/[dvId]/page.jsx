@@ -32,15 +32,6 @@ export default async function DevicePage({ params }) {
               </div>
             );
           })}
-
-        {/* {variables.map(async (variable) => {
-          const data = await getDeviceData(params.dvId, variable.variable,1,15);
-          return (
-            <div key={variable.variable} className="p-4">
-              <LineChart variable={variable} data={data.results} />
-            </div>
-          );
-        })} */}
       </section>
     </>
   );

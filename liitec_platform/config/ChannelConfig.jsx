@@ -1,13 +1,14 @@
-"use client"
+"use client";
+
+import { Chip, Tooltip, Button } from "@nextui-org/react"; // Asegúrate de importar estos componentes correctamente
 
 import {
-  Chip,
-  Tooltip
-} from "@nextui-org/react"; // Asegúrate de importar estos componentes correctamente
-
-import { MemoryStick, BarChart3, FileUp, Settings, UserPlus } from "lucide-react";
-
-
+  MemoryStick,
+  BarChart3,
+  FileUp,
+  Settings,
+  UserPlus,
+} from "lucide-react";
 
 import { EditIcon } from "@/components/EditIcon";
 import { DeleteIcon } from "@/components/DeleteIcon";
@@ -16,10 +17,13 @@ import { EyeIcon } from "@/components/EyeIcon";
 import { getFormattedDate } from "@/utils/dateFormatter";
 import Link from "next/link";
 
-
-
-const ChannelTableRenderCell = (channel, columnKey, onOpen) => {
-
+const ChannelTableRenderCell = (
+  channel,
+  columnKey,
+  onOpenView,
+  onOpenEdit,
+  onOpenDelete
+) => {
   console.log("channel: ", channel);
 
   const cellValue = channel[columnKey];
@@ -50,28 +54,47 @@ const ChannelTableRenderCell = (channel, columnKey, onOpen) => {
       );
     case "actions":
       return (
-        <div className="relative flex items-center gap-2">
-          <Tooltip content="Details">
-            <Link className="text-lg text-default-400 cursor-pointer active:opacity-50"
-             href={`/channels/${channel.channelId}`}>
-              <EyeIcon />
-            </Link>
-          </Tooltip>
-          <Tooltip content="Edit Channel">
-          <Link className="text-lg text-default-400 text-warning cursor-pointer active:opacity-50"
-             href={`/channels/${channel.channelId}/settings`}>
-              <EditIcon />
-            </Link>
-          </Tooltip>
-          <Tooltip color="danger" content="Delete Channel">
-            <span
-              onClick={() => onOpen()}
-              className="text-lg text-danger cursor-pointer active:opacity-50"
-            >
-              <DeleteIcon />
-            </span>
-          </Tooltip>
-        </div>
+        <>
+          <div className="flex items-center gap-1">
+            <Tooltip content="Details">
+              <Button
+                isIconOnly
+                as={Link}
+                variant="light"
+                size="sm"
+                className="text-lg text-default-400 cursor-pointer active:opacity-50"
+                href={`/channels/${channel.channelId}`}
+              >
+                <EyeIcon />
+              </Button>
+            </Tooltip>
+            <Tooltip content="Edit Channel">
+              <Button
+                isIconOnly
+                as={Link}
+                variant="light"
+                color="warning"
+                size="sm"
+                className="text-lg cursor-pointer active:opacity-50"
+                href={`/channels/${channel.channelId}/settings`}
+              >
+                <EditIcon />
+              </Button>
+            </Tooltip>
+            <Tooltip color="danger" content="Delete Channel">
+              <Button
+                isIconOnly
+                variant="light"
+                size="sm"
+                color="danger"
+                onClick={() => onOpenDelete()}
+                className="text-lg cursor-pointer active:opacity-50"
+              >
+                <DeleteIcon />
+              </Button>
+            </Tooltip>
+          </div>
+        </>
       );
     default:
       return cellValue;
@@ -108,10 +131,22 @@ const ChannelTableInitialColumns = [
 
 const ChannelLinks = [
   { label: "Devices", href: "/channels/[id1]", icon: <MemoryStick /> },
-  { label: "General View", href: "/channels/[id1]/general-view", icon: <BarChart3 /> },
-  { label: "Channel Settings", href: "/channels/[id1]/settings", icon: <Settings />},
-  { label: "Guests", href: "/channels/[id1]/guests", icon: <UserPlus />},
-  { label: "Export Data", href: "/channels/[id1]/export-data", icon: <FileUp />},
+  {
+    label: "General View",
+    href: "/channels/[id1]/general-view",
+    icon: <BarChart3 />,
+  },
+  {
+    label: "Channel Settings",
+    href: "/channels/[id1]/settings",
+    icon: <Settings />,
+  },
+  { label: "Guests", href: "/channels/[id1]/guests", icon: <UserPlus /> },
+  {
+    label: "Export Data",
+    href: "/channels/[id1]/export-data",
+    icon: <FileUp />,
+  },
 ];
 
 export {
@@ -119,5 +154,5 @@ export {
   ChannelTableColumns,
   ChannelTableStatusOptions,
   ChannelTableInitialColumns,
-  ChannelLinks
+  ChannelLinks,
 };

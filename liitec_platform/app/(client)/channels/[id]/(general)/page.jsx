@@ -1,6 +1,7 @@
 import { getChannelDevices } from "@/lib/general.actions";
 import GenericTable from "@/components/GenericTable";
 import TablePagination from "@/components/TablePagination";
+import { deleteDevice } from "@/lib/general.actions";
 
 
 import {
@@ -30,6 +31,8 @@ export default async function DevicesPage({ searchParams, params }) {
         columns={DeviceTableColumns}
         renderCell={DeviceTableRenderCell}
         idField={"deviceId"}
+        handleDelete={deleteDevice}
+        redirectPostDelete={`/channels/${params.id}`}
         statusOptions={DeviceTableStatusOptions}
         initialColumns={DeviceTableInitialColumns}
         createLink={`/channels/${params.id}/devices/create`}

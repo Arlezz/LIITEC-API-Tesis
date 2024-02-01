@@ -398,7 +398,7 @@ const ChannelController = {
       const user = req.user;
 
       var id1 = user._id;
-      var id2 = new ObjectId(channel.owner);
+      var id2 = new ObjectId(owner);
 
       if (user.apiKey.type !== "superUser") {
         if (!id1.equals(id2)) {

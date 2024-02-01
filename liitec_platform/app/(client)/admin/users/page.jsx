@@ -39,6 +39,8 @@ export default async function UsersAdmPage({ searchParams }) {
         modalTitle={"Delete User"}
         modalDescription={"Are you sure you want to delete this user?"}
         redirectPostDelete={"/admin/users"}
+        redirectPostEdit={"/admin/users"}
+        filterField="_id"
       />
       <div className="py-8 px-2 flex justify-center items-center">
         <TablePagination

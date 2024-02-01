@@ -23,7 +23,9 @@ import { PlusIcon } from "@/components/PlusIcon";
 import { SearchIcon } from "@/components/SearchIcon";
 import { ChevronDownIcon } from "@/components/ChevronDownIcon";
 import { useDisclosure } from "@nextui-org/react";
-import MyModal from "../MyModal";
+import MyGenericModal from "../MyGenericModal";
+import MyViewModal from "../MyViewModal";
+import MyEditModal from "../MyEditModal";
 
 export default function GenericTable({
   data,
@@ -37,11 +39,16 @@ export default function GenericTable({
   modalTitle,
   modalDescription,
   redirectPostDelete,
+  redirectPostEdit,
   isStriped,
   filterField = "name",
 }) {
-  const { isOpen, onOpen, onClose } = useDisclosure();
-  //const { isOpen: isOpen2, onOpen: onOpen2, onClose: onClose2 } = useDisclosure();
+  //const { isOpen, onOpen, onClose } = useDisclosure();
+
+
+  const { isOpen: isOpenView, onOpen: onOpenView, onClose: onCloseView } = useDisclosure();
+  const { isOpen: isOpenEdit, onOpen: onOpenEdit, onClose: onCloseEdit } = useDisclosure();
+  const { isOpen: isOpenDelete, onOpen: onOpenDelete, onClose: onCloseDelete } = useDisclosure();
 
   const myDatas = data || [];
 
@@ -107,7 +114,6 @@ export default function GenericTable({
   }, [sortDescriptor, items]);
 
   const onSearchChange = useCallback((value) => {
-    //console.log("value: ", value);
     if (value) {
       setFilterValue(value);
       setPage(1);
@@ -211,29 +217,48 @@ export default function GenericTable({
   ]);
 
   const onOpenModal = useCallback(
-    (item) => {
-      console.log("item: ", item);
+    (item, action) => {
       setCurrentItem(item);
-      onOpen();
+      switch (action) {
+        case "view":
+          onOpenView();
+          break;
+        case "edit":
+          onOpenEdit();
+          break;
+        case "delete":
+          console.log("Delete: ", item);
+          onOpenDelete();
+          break;
+        // Agrega casos adicionales según sea necesario
+        default:
+          break;
+      }
     },
-    [onOpen]
+    [onOpenView, onOpenEdit, onOpenDelete]
   );
 
   return (
     <>
-      <MyModal
+      <MyEditModal isOpen={isOpenEdit} onClose={onCloseEdit} item={currentItem} redirectPostEdit={redirectPostEdit} />
+
+      <MyViewModal isOpen={isOpenView} onClose={onCloseView} item={currentItem} />
+
+      <MyGenericModal
         title={modalTitle ? modalTitle : "Confirmation"}
-        content={
-          modalDescription
-            ? modalDescription
-            : "Are you sure you want to delete this item?"
-        }
-        isOpen={isOpen}
-        onClose={onClose}
-        handleDelete={handleDelete}
+        isOpen={isOpenDelete}
+        onClose={onCloseDelete}
+        handleAction={handleDelete}
         item={currentItem}
         redirect={redirectPostDelete ? redirectPostDelete : "/dashboard"}
-      />
+      >
+        <p>
+          {modalDescription
+            ? modalDescription
+            : "Are you sure you want to delete this item?"}
+        </p>
+      </MyGenericModal>
+
       <Table
         isStriped={isStriped}
         aria-label="Table with custom cells, pagination and sorting"
@@ -265,7 +290,15 @@ export default function GenericTable({
           {(item) => (
             <TableRow key={item[idField]}>
               {(columnKey) => (
-                <TableCell>{renderCell(item, columnKey, () => onOpenModal(item))}</TableCell>
+                <TableCell>
+                  {renderCell(
+                    item,
+                    columnKey,
+                    () => onOpenModal(item, "view"),
+                    () => onOpenModal(item, "edit"),
+                    () => onOpenModal(item, "delete"),
+                  )}
+                </TableCell>
               )}
             </TableRow>
           )}

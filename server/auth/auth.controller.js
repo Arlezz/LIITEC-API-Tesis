@@ -27,7 +27,15 @@ const AuthController = {
 
             const keyProjection = { user: 0, _id: 0, __v: 0, createdOn: 0, updatedOn: 0 };
 
-            const key = await keySchema.findOne({ user: user._id }, keyProjection);
+            const key = await keySchema.findOne(
+                {
+                    user: user._id,
+                    channelAccess: { $exists: false },
+                    channelOwner: { $exists: false },
+                    expirationDate: { $exists: false },
+                },
+                keyProjection
+            );
 
             if (!key) {
                 return res.status(404).json({ error: "Key not found" });

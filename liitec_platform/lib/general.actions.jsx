@@ -350,11 +350,11 @@ export async function updateDevice(channelId, deviceId, deviceData){
 export async function deleteDevice (item) {
   try{
     const data = await del(`/channels/${item.channelId}/devices/${item.deviceId}`);
-    revalidatePath(`/channels/${channelId}/devices`);
+    revalidatePath(`/channels/${item.channelId}`);
     return data;
   } catch (error) {
-    console.error(`Error al eliminar el dispositivo ${deviceId}:`, error);
-    //throw new Error(error.response.data.message);
+    console.error(`Error al eliminar el dispositivo ${item.deviceId}:`, error);
+    throw new Error(error.response.data.message);
   }
 }
 

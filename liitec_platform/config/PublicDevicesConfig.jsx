@@ -1,9 +1,7 @@
 "use client";
 
-import { Chip, Tooltip } from "@nextui-org/react"; // Asegúrate de importar estos componentes correctamente
+import { Chip, Tooltip, Button } from "@nextui-org/react"; // Asegúrate de importar estos componentes correctamente
 
-import { EditIcon } from "@/components/EditIcon";
-import { DeleteIcon } from "@/components/DeleteIcon";
 import { EyeIcon } from "@/components/EyeIcon";
 
 import { BarChart3 } from "lucide-react";
@@ -53,29 +51,17 @@ const PublicDeviceTableRenderCell = (device, columnKey) => {
       return (
         <div className="relative flex items-center gap-2">
           <Tooltip content="Details">
-            <Link
+            <Button
+              isIconOnly
+              as={Link}
+              variant="light"
+              size="sm"
               className="text-lg text-default-400 cursor-pointer active:opacity-50"
               href={`/public-channels/${device.channelId}/devices/${device.deviceId}`}
             >
               <EyeIcon />
-            </Link>
+            </Button>
           </Tooltip>
-          {/* <Tooltip content="Edit Channel">
-            <Link
-              className="text-lg text-warning cursor-pointer active:opacity-50"
-              href={`/channels/${device.channelId}/devices/${device.deviceId}/settings`}
-            >
-              <EditIcon />
-            </Link>
-          </Tooltip>
-          <Tooltip color="danger" content="Delete Channel">
-            <span
-              //onClick={() => console.log("Device: ", device.name)}
-              className="text-lg text-danger cursor-pointer active:opacity-50"
-            >
-              <DeleteIcon />
-            </span>
-          </Tooltip> */}
         </div>
       );
     default:

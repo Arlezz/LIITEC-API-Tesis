@@ -1,9 +1,6 @@
-"use client"
+"use client";
 
-import {
-  Chip,
-  Tooltip
-} from "@nextui-org/react"; // Asegúrate de importar estos componentes correctamente
+import { Chip, Tooltip, Button } from "@nextui-org/react"; // Asegúrate de importar estos componentes correctamente
 
 import { EditIcon } from "@/components/EditIcon";
 import { DeleteIcon } from "@/components/DeleteIcon";
@@ -12,10 +9,13 @@ import { EyeIcon } from "@/components/EyeIcon";
 import { getFormattedDate } from "@/utils/dateFormatter";
 import Link from "next/link";
 
-
-
-const ChannelsAdminTableRenderCell = (channel, columnKey, onOpen) => {
-
+const ChannelsAdminTableRenderCell = (
+  channel,
+  columnKey,
+  onOpenView,
+  onOpenEdit,
+  onOpenDelete
+) => {
   console.log("channel: ", channel);
 
   const cellValue = channel[columnKey];
@@ -50,26 +50,42 @@ const ChannelsAdminTableRenderCell = (channel, columnKey, onOpen) => {
       );
     case "actions":
       return (
-        <div className="relative flex items-center gap-2">
+        <div className=" flex items-center gap-1">
           <Tooltip content="Details">
-            <Link className="text-lg text-default-400 cursor-pointer active:opacity-50"
-             href={`/channels/${channel.channelId}`}>
+            <Button
+              isIconOnly
+              size="sm"
+              variant="light"
+              color="default"
+              onClick={() => onOpenView()}
+              className="text-lg text-default-400 cursor-pointer active:opacity-50"
+            >
               <EyeIcon />
-            </Link>
+            </Button>
           </Tooltip>
           <Tooltip content="Edit Channel">
-          <Link className="text-lg text-default-400 text-warning cursor-pointer active:opacity-50"
-             href={`/channels/${channel.channelId}/settings`}>
+            <Button
+              isIconOnly
+              size="sm"
+              variant="light"
+              color="warning"
+              onClick={() => onOpenEdit()}
+              className="text-lg text-default-400 text-warning cursor-pointer active:opacity-50"
+            >
               <EditIcon />
-            </Link>
+            </Button>
           </Tooltip>
           <Tooltip color="danger" content="Delete Channel">
-            <span
-              onClick={() => onOpen()}
+            <Button
+              isIconOnly
+              size="sm"
+              variant="light"
+              color="danger"
+              onClick={() => onOpenDelete()}
               className="text-lg text-danger cursor-pointer active:opacity-50"
             >
               <DeleteIcon />
-            </span>
+            </Button>
           </Tooltip>
         </div>
       );
@@ -123,5 +139,5 @@ export {
   ChannelsAdminTableColumns,
   ChannelsAdminTableStatusOptions,
   ChannelsAdminTableInitialColumns,
-  ChannelsAdminLinks
+  ChannelsAdminLinks,
 };

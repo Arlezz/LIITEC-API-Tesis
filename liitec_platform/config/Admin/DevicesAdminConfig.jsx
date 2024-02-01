@@ -1,6 +1,6 @@
 "use client";
 
-import { Chip, Tooltip } from "@nextui-org/react"; // Asegúrate de importar estos componentes correctamente
+import { Chip, Tooltip, Button } from "@nextui-org/react"; // Asegúrate de importar estos componentes correctamente
 
 import { EditIcon } from "@/components/EditIcon";
 import { DeleteIcon } from "@/components/DeleteIcon";
@@ -9,7 +9,13 @@ import { EyeIcon } from "@/components/EyeIcon";
 import { getFormattedDate } from "@/utils/dateFormatter";
 import Link from "next/link";
 
-const DevicesAdminTableRenderCell = (device, columnKey, onOpen) => {
+const DevicesAdminTableRenderCell = (
+  device,
+  columnKey,
+  onOpenView,
+  onOpenEdit,
+  onOpenDelete
+) => {
   const cellValue = device[columnKey];
 
   switch (columnKey) {
@@ -54,30 +60,42 @@ const DevicesAdminTableRenderCell = (device, columnKey, onOpen) => {
       );
     case "actions":
       return (
-        <div className="relative flex items-center gap-2">
+        <div className=" flex items-center gap-1">
           <Tooltip content="Details">
-            <Link
+            <Button
+              isIconOnly
+              size="sm"
+              variant="light"
+              color="default"
+              onClick={() => onOpenView()}
               className="text-lg text-default-400 cursor-pointer active:opacity-50"
-              href={"#"}
             >
               <EyeIcon />
-            </Link>
+            </Button>
           </Tooltip>
           <Tooltip content="Edit Device">
-            <Link
-              className="text-lg text-warning cursor-pointer active:opacity-50"
-              href={"#"}
+            <Button
+              isIconOnly
+              size="sm"
+              variant="light"
+              color="warning"
+              onClick={() => onOpenEdit()}
+              className="text-lg text-default-400 text-warning cursor-pointer active:opacity-50"
             >
               <EditIcon />
-            </Link>
+            </Button>
           </Tooltip>
           <Tooltip color="danger" content="Delete Device">
-            <span
-              onClick={() => onOpen()}
+            <Button
+              isIconOnly
+              size="sm"
+              variant="light"
+              color="danger"
+              onClick={() => onOpenDelete()}
               className="text-lg text-danger cursor-pointer active:opacity-50"
             >
               <DeleteIcon />
-            </span>
+            </Button>
           </Tooltip>
         </div>
       );
