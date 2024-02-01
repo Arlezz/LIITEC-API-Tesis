@@ -9,9 +9,10 @@ import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 
 
-export default function DeviceSettingsForm({ device, channel }) {
+export default function DeviceSettingsForm({ device }) {
 
   const deviceId = device?.deviceId ?? "";
+  const channelId = device?.channelId ?? "";
 
   const [error, setError] = useState(null);
   const router = useRouter();
@@ -69,7 +70,7 @@ export default function DeviceSettingsForm({ device, channel }) {
           return errors;
         }}
         onSubmit={(values) => {
-          handleSubmit(channel, deviceId, values);
+          handleSubmit(channelId, deviceId, values);
         }}
       >
         {({ values, handleChange, handleBlur }) => (
@@ -122,6 +123,9 @@ export default function DeviceSettingsForm({ device, channel }) {
                   label="Status"
                   placeholder="Status of the device"
                   component={MySelect}
+                  defaultSelectedKeys={[
+                    values.status === true ? "true" : "false",
+                  ]}
                   value={values.status}
                   onChange={handleChange}
                   onBlur={handleBlur}

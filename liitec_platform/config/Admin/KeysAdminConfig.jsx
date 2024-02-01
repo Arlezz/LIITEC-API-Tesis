@@ -22,7 +22,28 @@ const KeysAdminTableRenderCell = (
     case "key":
       return <>{key.key}</>;
     case "type":
-      return <>{key.type}</>;
+      return (
+        <>
+          <Chip
+            className="capitalize"
+            color={
+              key.type === "readUser"
+                ? "success"
+                : key.type === "advancedUser"
+                ? "warning"
+                : "secondary"
+            }
+            size="sm"
+            variant="flat"
+          >
+            {key.type === "readUser"
+              ? "read user"
+              : key.type === "advancedUser"
+              ? "advanced user"
+              : "admin"}
+          </Chip>
+        </>
+      );
     case "user":
       return <>{key.user}</>;
     case "deadline":
@@ -32,11 +53,13 @@ const KeysAdminTableRenderCell = (
         ${
           new Date(key.expirationDate) < Date.now()
             ? "text-red-500"
-            : new Date(key.expirationDate) > Date.now() ? "text-green-500" : ""
+            : new Date(key.expirationDate) > Date.now()
+            ? "text-green-500"
+            : ""
         }
         `}
         >
-          {key.expirationDate? getFormattedDate(key.expirationDate) : "N/A"}
+          {key.expirationDate ? getFormattedDate(key.expirationDate) : "N/A"}
         </span>
       );
     case "state":
@@ -91,22 +114,20 @@ const KeysAdminTableRenderCell = (
               <EyeIcon />
             </Button>
           </Tooltip>
-          {
-            !key.expirationDate ? (
-              <Tooltip content="Edit">
-                <Button
-                  isIconOnly
-                  size="sm"
-                  variant="light"
-                  color="warning"
-                  onClick={() => onOpenEdit()}
-                  className="text-lg cursor-pointer active:opacity-50"
-                >
-                  <EditIcon />
-                </Button>
-              </Tooltip>
-            ) : null
-          }
+          {!key.expirationDate ? (
+            <Tooltip content="Edit">
+              <Button
+                isIconOnly
+                size="sm"
+                variant="light"
+                color="warning"
+                onClick={() => onOpenEdit()}
+                className="text-lg cursor-pointer active:opacity-50"
+              >
+                <EditIcon />
+              </Button>
+            </Tooltip>
+          ) : null}
         </div>
       );
     default:

@@ -17,13 +17,13 @@ export default async function Layout({ children, params }) {
       <div className="w-full">
         <section className="flex flex-col pb-8 items-start gap-2">
           <MyBreacrumbs/>
-          <div className="flex flex-row items-center gap-2 pt-4">
+          <div className="flex flex-col items-start pt-4">
             <h1 className="text-3xl md:text-4xl text-gray-700 font-medium">
               {channel?.name != null && channel.name !== ""
                 ? channel.name
                 : "Channel " + channel.channelId}
             </h1>
-            <Chip size="sm" variant="flat" radius="md">
+            <Chip size="sm" color="primary" variant="flat" radius="md">
               Channel
             </Chip>
           </div>

@@ -228,12 +228,12 @@ export default function Navbar() {
                 </li>
               </>
             )}
-            <li>
+            {/* <li>
               <Link
                 href="/support"
                 className={`
                 ${
-                  path === "/support"
+                  path.startsWith("/support")
                     ? "bg-sky-100 md:bg-transparent md:border-b-2 md:border-sky-600 md:text-sky-600"
                     : ""
                 }
@@ -241,14 +241,14 @@ export default function Navbar() {
               >
                 Support
               </Link>
-            </li>
+            </li> */}
             {userRole === "Super User" ? (
               <li>
                 <Link
                   href="/admin"
                   className={`
                 ${
-                  path === "/admin"
+                  path.startsWith("/admin")
                     ? "bg-sky-100 md:bg-transparent md:border-b-2 md:border-sky-600 md:text-sky-600"
                     : ""
                 }

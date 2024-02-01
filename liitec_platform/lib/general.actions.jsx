@@ -47,6 +47,22 @@ export async function getChannelDevices (channelId, page = 1, pageSize = 10) {
   }
 };
 
+export async function exportChannelData (channelId) {
+  try {
+    const data = await get(`/data/${channelId}/export`);
+
+    if (!data) {
+      console.error(`No se encontró el canal ${channelId}.`);
+      return [];
+    }
+
+    return data;
+  } catch (error) {
+    console.error(`Error al obtener el canal ${channelId}:`, error);
+    return [];
+  }
+}
+
 export async function getChannel (channelId) {
   try {
     const data = await get(`/channels/${channelId}`);

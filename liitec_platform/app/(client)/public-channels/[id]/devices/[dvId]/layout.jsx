@@ -16,12 +16,12 @@ export default async function Layout({ params, children }) {
       <section className="flex flex-col pb-8 items-start gap-2">
         <MyBreacrumbs/>
         <div className="flex flex-col items-start pt-4">
-          <h2 className="text-2xl md:text-4xl  text-gray-700 font-medium">
+          <h1 className="text-2xl md:text-4xl text-gray-700 font-medium">
             {device?.name != null && device.name !== ""
               ? device.name
               : "Device " + device.channelId}
-          </h2>
-          <Chip size="sm" variant="flat" radius="md">
+          </h1>
+          <Chip size="sm" color="secondary" variant="flat" radius="md">
             Device
           </Chip>
         </div>

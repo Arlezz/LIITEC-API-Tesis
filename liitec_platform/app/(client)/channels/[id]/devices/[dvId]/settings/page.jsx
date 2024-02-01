@@ -14,7 +14,7 @@ export default async function DevicesPage({ params }) {
         <h2 className="text-2xl pb-8 md:text-3xl text-gray-700 font-medium">
           Device Settings
         </h2>
-        <DeviceSettingsForm device={device} channel={params.id}/>
+        <DeviceSettingsForm device={device}/>
       </section>
       <Divider orientation="horizontal" className="my-8" />
       <DeviceDeleteSection channelId={params.id} deviceId={params.dvId}/>

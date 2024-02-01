@@ -6,6 +6,8 @@ import { getFormattedDate } from "@/utils/dateFormatter";
 import MyCopyButton from "./MyCopyButton";
 import UserSettingsAdmForm from "./admin/UserSettingsAdmForm";
 import ChannelSettingsAdmForm from "./admin/ChannelSettingsAdmForm";
+import DeviceSettingsAdmForm from "./admin/DeviceSettingsAdmForm";
+import KeySettingsAdmForm from "./admin/KeySettingsAdmForm";
 
 import { useState } from "react";
 
@@ -30,10 +32,11 @@ const MyEditModal = ({
       return <ChannelSettingsAdmForm channel={item} onClose={onClose} />;
     } else if (item.deviceId && item.channelId) {
       // Es un dispositivo
-      return <></>;
+      return <DeviceSettingsAdmForm device={item} onClose={onClose}/>;
     } else if (item.key) {
       // Es una clave
-      return <></>;
+      console.log("ITEEEEEEEM: ", item);
+      return <KeySettingsAdmForm keyItem={item} onClose={onClose} />;
     } else {
       // Tipo de objeto no reconocido
       return <p>Objeto no reconocido</p>;

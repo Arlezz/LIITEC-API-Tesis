@@ -71,14 +71,6 @@ export default function SecretSection({ id, secret, label, herf }) {
       // Remueve el elemento del DOM
       document.body.removeChild(textArea);
 
-      // Muestra el tooltip después de copiar
-      setIsTooltipVisible(true);
-
-      // Oculta el tooltip después de un tiempo (por ejemplo, 2 segundos)
-      setTimeout(() => {
-        setIsTooltipVisible(false);
-      }, 2000);
-
     } catch (error) {
       console.error(error.message);
     }

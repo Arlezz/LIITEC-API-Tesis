@@ -40,7 +40,7 @@ export default async function DashboardPage() {
 
   let channels, devices, variables;
 
-  if (role === "advancedUser") {
+  if (role === "advancedUser" || role === "superUser") {
     channels = await getMyChannels(user._id);
     devices = await Promise.all(
       channels.map(async (channel) => await getMyDevices(channel.channelId))

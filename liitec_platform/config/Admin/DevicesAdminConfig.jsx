@@ -28,18 +28,7 @@ const DevicesAdminTableRenderCell = (
     case "Description":
       return <>{device.description}</>;
     case "model":
-      return <>{device.model}</>;
-    // case "measures":
-    //   return (
-    //     <>
-    //       {device.measures.map((measure, index) => (
-    //         <li className="list-none" key={index}>
-    //           <span className="font-bold">{measure.variable}</span>
-    //           <span className="text-gray-500"> ({measure.unit})</span>
-    //         </li>
-    //       ))}
-    //     </>
-    //   );
+      return <span className="font-bold">{device.model}</span>;
     case "isActive":
       return (
         <Chip
