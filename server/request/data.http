@@ -7,38 +7,38 @@ Authorization: 68p7nyib281x9youicx9ra810uk4ve
 
 //Get data from a device
 ###
-GET http://localhost:8081/api/v1/data/dv-7a9b4d6c-6755-441f-81aa-ffdcd9147d81?page_size=10&variable=temperature HTTP/1.1
+GET http://localhost:8081/api/v1/data/dv-7a9b4d6c-6755-441f-81aa-ffdcd9147d81?page=1&page_size=15&variable=humidity HTTP/1.1
 Content-Type: application/json
-Authorization: ch032ywc7wbwqwjnkrx23rmfdknb5m
+Authorization: 43cwshm958rqc5tncjxqwfuoukhn2m
 
 //Get specific variable datas from a device 
 ###
 GET http://localhost:8081/api/v1/data/dv-089f98d5-25f4-4150-ab4e-18be2f098da2 HTTP/1.1
 Content-Type: application/json
-Authorization: mzk7g6nmig3ug315akon0s2qb81bfc
+Authorization: 43cwshm958rqc5tncjxqwfuoukhn2m
 
 //Get specific variable datas from a device with a aggregation operation
 ###
 GET http://localhost:8081/api/v1/data/dv-089f98d5-25f4-4150-ab4e-18be2f098da2/agregate?operation=avg HTTP/1.1
 Content-Type: application/json
-Authorization: 68p7nyib281x9youicx9ra810uk4ve
+Authorization: 43cwshm958rqc5tncjxqwfuoukhn2m
 
 //Get last data from a device
 ###
 GET http://localhost:8081/api/v1/data/dv-089f98d5-25f4-4150-ab4e-18be2f098da2/last HTTP/1.1
 Content-Type: application/json
-Authorization: 68p7nyib281x9youicx9ra810uk4ve
+Authorization: 43cwshm958rqc5tncjxqwfuoukhn2m
 //68p7nyib281x9youicx9ra810uk4ve
 
 //Export data from a channel
 ###
 GET http://localhost:8081/api/v1/data/ch-2cf804f3-5290-412f-ace7-8df8bb8e74bb/export HTTP/1.1
 Content-Type: application/json
-Authorization: ch032ywc7wbwqwjnkrx23rmfdknb5m
+Authorization: 43cwshm958rqc5tncjxqwfuoukhn2m
 
 
 //Get variables from a channel
 ###
 GET http://localhost:8081/api/v1/data/ch-2cf804f3-5290-412f-ace7-8df8bb8e74bb/variables HTTP/1.1
 Content-Type: application/json
-Authorization: ch032ywc7wbwqwjnkrx23rmfdknb5m
+Authorization: 43cwshm958rqc5tncjxqwfuoukhn2m
