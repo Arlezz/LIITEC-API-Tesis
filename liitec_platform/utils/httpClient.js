@@ -10,8 +10,6 @@ async function authHeader() {
 
     const session = await getServerSession(authOptions)
 
-    //console.log('LA session', session)
-
     if (session?.user?.apiKey?.key) {
         return { 'Authorization': session.user.apiKey.key };
     } else {

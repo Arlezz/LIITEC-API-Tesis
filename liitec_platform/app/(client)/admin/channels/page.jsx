@@ -15,8 +15,6 @@ export default async function ChannesAdmPage({ searchParams }) {
   const page = Number(searchParams.page) || 1;
 
   const channels = await getChannelsAdmin(page);
-  console.log("channels: ", channels);
-
 
   const pages = channels.totalPages || 1;
 

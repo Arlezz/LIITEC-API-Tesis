@@ -15,8 +15,6 @@ export default async function Page({ searchParams }) {
 
   const channelsInvited = await getChannelsInvitedPaginate(page);
 
-  console.log("INVITADOS: ", channelsInvited);
-
   const pages = channelsInvited.totalPages || 1;
 
   return (

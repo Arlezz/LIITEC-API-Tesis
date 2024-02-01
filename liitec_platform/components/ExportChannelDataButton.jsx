@@ -9,7 +9,6 @@ export default function ExportChannelDataButton({ channelId }) {
 
     exportChannelData(channelId)
       .then((response) => {
-        console.log("Éxito al exportar los datos:", response);
 
         const blob = new Blob([response], { type: "text/csv" });
         const url = window.URL.createObjectURL(blob);

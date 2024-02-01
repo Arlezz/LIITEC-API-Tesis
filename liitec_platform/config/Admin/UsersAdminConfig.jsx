@@ -16,7 +16,6 @@ const UsersAdminTableRenderCell = (
   onOpenEdit,
   onOpenDelete,
 ) => {
-  console.log("USUARIO: ", user);
 
   const cellValue = user[columnKey];
 

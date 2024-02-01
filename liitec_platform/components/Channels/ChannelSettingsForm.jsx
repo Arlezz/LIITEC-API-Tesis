@@ -20,7 +20,6 @@ export default function ChannelSettingsForm({ channel }) {
   function handleSubmit(channelId, values) {
     updateChannel(channelId, values)
       .then((response) => {
-        console.log("Éxito al actualizar el canal:", response);
         router.push(`/channels/${channelId}`);
         //redirect(`/channels`);
       })

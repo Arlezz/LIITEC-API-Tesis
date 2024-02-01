@@ -19,8 +19,6 @@ export async function register (userData) {
 
   try {
 
-      console.log("userData: ", userData);
-
       const response = await post("/users",userData);
 
       revalidatePath(`/admin/users`);

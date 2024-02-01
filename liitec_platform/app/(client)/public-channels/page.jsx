@@ -13,7 +13,6 @@ export default async function Page({ searchParams }) {
 
   const publicChannels = await getPublicChannels(page);
 
-  console.log("publicChannels", publicChannels);
 
   const pages = publicChannels.totalPages || 1;
 

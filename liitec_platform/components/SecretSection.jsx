@@ -12,7 +12,6 @@ export default function SecretSection({ id, secret, label, herf }) {
 
   const { data : session, update } = useSession();
 
-  console.log("LA session: ", session);
 
   const [showKey, setShowKey] = useState(false);
   const handleShowKey = () => {
@@ -25,7 +24,6 @@ export default function SecretSection({ id, secret, label, herf }) {
     };
     updateKey(id, value)
       .then(async (response) => {
-        console.log("Éxito al actualizar el usuario:", response.message);
         const newKey = response.updatedFields.key;
         await update(
           {
@@ -45,7 +43,6 @@ export default function SecretSection({ id, secret, label, herf }) {
       })
       .catch((error) => {
         console.log("Error al actualizar el usuario:", error);
-        //setError(error.message);
       });
   };
 

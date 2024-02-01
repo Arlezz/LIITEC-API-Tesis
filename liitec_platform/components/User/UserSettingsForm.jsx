@@ -16,7 +16,6 @@ export default function UserSettingsForm({ user }) {
   function handleSubmit(userId, values) {
     updateUser(userId, values)
       .then((response) => {
-        console.log("Éxito al actualizar el usuario:", response);
         router.push(`/profile`);
         //redirect(`/channels`);
       })

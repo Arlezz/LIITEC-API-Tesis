@@ -18,7 +18,6 @@ export default function DeviceSettingsAdmForm({ device, onClose }) {
   function handleSubmit(channelId, deviceId, values) {
     updateDevice(channelId, deviceId, values)
       .then((response) => {
-        console.log("Éxito al actualizar el dispositivo:", response);
         router.push(`/admin/devices`);
         onClose();
       })

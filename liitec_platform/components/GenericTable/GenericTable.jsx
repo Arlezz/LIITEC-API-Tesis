@@ -230,7 +230,6 @@ export default function GenericTable({
           onOpenEdit();
           break;
         case "delete":
-          console.log("Delete: ", item);
           onOpenDelete();
           break;
         // Agrega casos adicionales según sea necesario

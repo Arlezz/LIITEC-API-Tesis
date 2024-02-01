@@ -35,7 +35,6 @@ const MyEditModal = ({
       return <DeviceSettingsAdmForm device={item} onClose={onClose}/>;
     } else if (item.key) {
       // Es una clave
-      console.log("ITEEEEEEEM: ", item);
       return <KeySettingsAdmForm keyItem={item} onClose={onClose} />;
     } else {
       // Tipo de objeto no reconocido
@@ -43,7 +42,6 @@ const MyEditModal = ({
     }
   };
 
-  //console.log("editedValues: ", editedValues);
 
   return (
     <MyGenericModal

@@ -10,7 +10,6 @@ import { Divider } from "@nextui-org/react";
 export default async function ProfileSettingsPage() {
   const session = await getServerSession(authOptions);
 
-  console.log("session: ", session);
 
   const user = await getUser(session.user._id);
 

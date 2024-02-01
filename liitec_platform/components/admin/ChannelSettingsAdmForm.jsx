@@ -16,7 +16,6 @@ export default function ChannelSettingsAdmForm({ channel, onClose }) {
   function handleSubmit(channelId, values) {
     updateChannel(channelId, values)
       .then((response) => {
-        console.log("Éxito al actualizar el canal:", response);
         router.push(`/admin/channels`);
         onClose();
       })

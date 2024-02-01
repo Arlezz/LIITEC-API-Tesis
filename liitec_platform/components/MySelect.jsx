@@ -10,8 +10,7 @@ export const MySelect = ({
   form: { touched, errors },
   ...props
 }) => (
-  // console.log("MySelect", datas),
-  // console.log("Valueee", value),
+
   <>
     <Select
       {...field}

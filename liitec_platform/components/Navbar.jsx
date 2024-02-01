@@ -24,7 +24,6 @@ export default function Navbar() {
 
   const { data: session } = useSession();
 
-  console.log("la session NAVBAR : ", session);
 
   const letterUsername =
     session?.user?.username?.charAt(0).toUpperCase() || "U";

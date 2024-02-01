@@ -15,8 +15,6 @@ export default async function DevicesAdmPage({ searchParams }) {
   const page = Number(searchParams.page) || 1;
 
   const keys = await getKeysAdmin(page);
-  console.log("keys: ", keys);
-
 
   const pages = keys.totalPages || 1;
 

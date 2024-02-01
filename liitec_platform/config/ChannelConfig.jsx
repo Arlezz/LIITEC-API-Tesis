@@ -24,7 +24,6 @@ const ChannelTableRenderCell = (
   onOpenEdit,
   onOpenDelete
 ) => {
-  console.log("channel: ", channel);
 
   const cellValue = channel[columnKey];
 

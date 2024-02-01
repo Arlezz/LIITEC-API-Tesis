@@ -12,7 +12,6 @@ import { getFormattedDate } from "@/utils/dateFormatter";
 import Link from "next/link";
 
 const InvitedChannelTableRenderCell = (channel, columnKey, onOpen) => {
-  //console.log("channel: ", channel);
 
   const cellValue = channel[columnKey];
 

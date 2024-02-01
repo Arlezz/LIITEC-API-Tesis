@@ -12,9 +12,6 @@ export default async function ProfilePage() {
 
   const user = await getUser(session.user._id);
 
-  console.log(user);
-
-  console.log("role: ", role);
 
   return (
     <>

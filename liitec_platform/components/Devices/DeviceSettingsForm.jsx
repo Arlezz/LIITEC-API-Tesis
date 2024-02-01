@@ -20,7 +20,6 @@ export default function DeviceSettingsForm({ device }) {
   function handleSubmit(channelId, deviceId, values) {
     updateDevice(channelId, deviceId, values)
       .then((response) => {
-        console.log("Éxito al actualizar el dispositivo:", response);
         router.push(`/channels/${channelId}/devices/${deviceId}`);
       })
       .catch((error) => {

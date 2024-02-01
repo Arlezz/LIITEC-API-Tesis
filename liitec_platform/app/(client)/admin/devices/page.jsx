@@ -15,8 +15,6 @@ export default async function DevicesAdmPage({ searchParams }) {
   const page = Number(searchParams.page) || 1;
 
   const devices = await getDevicesAdmin(page);
-  console.log("devices: ", devices);
-
 
   const pages = devices.totalPages || 1;
 

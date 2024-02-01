@@ -16,7 +16,6 @@ const ChannelsAdminTableRenderCell = (
   onOpenEdit,
   onOpenDelete
 ) => {
-  console.log("channel: ", channel);
 
   const cellValue = channel[columnKey];
 
@@ -39,7 +38,6 @@ const ChannelsAdminTableRenderCell = (
         </Chip>
       );
     case "devicesCount":
-      console.log("devicesCount: ", channel.devicesCount);
       return <>{channel.devicesCount}</>;
     case "createdOn":
     case "updatedOn":

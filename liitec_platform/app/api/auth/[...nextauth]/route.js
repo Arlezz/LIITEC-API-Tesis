@@ -1,6 +1,6 @@
 import NextAuth from 'next-auth'
 import CredentialsProvider from 'next-auth/providers/credentials'
-import AuthService from "@/services/auth.service";
+import { login } from '@/lib/auth.actions';
 
 
 
@@ -14,7 +14,7 @@ export const authOptions = {
             },
             async authorize (credentials, req) {
                 try {
-                    const user = await AuthService.login(credentials.username_or_email, credentials.password);
+                    const user = await login(credentials.username_or_email, credentials.password);
                     if (user) {
                         return user;
                     } 

@@ -26,7 +26,6 @@ export default function KeySettingsAdmForm({ keyItem, onClose }) {
     };
     updateKey(userId, value)
       .then(async (response) => {
-        console.log("Éxito al actualizar el usuario:", response.message);
 
         if (sessionKey === secret) {
           const newKey = response.updatedFields.key;

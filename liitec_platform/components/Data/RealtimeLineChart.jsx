@@ -27,7 +27,6 @@ export default function RealtimeLineChart({
   }, [device, variable]);
 
   return (
-    console.log("data", data),
     (
       <Card className="p-2">
         <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">

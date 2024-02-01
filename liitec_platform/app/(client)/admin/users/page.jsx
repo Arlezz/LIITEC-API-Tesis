@@ -13,7 +13,6 @@ export default async function UsersAdmPage({ searchParams }) {
   const page = Number(searchParams.page) || 1;
 
   const users = await getUsersAdmin(page);
-  console.log("Users: ", users);
 
   const pages = users.totalPages || 1;
 

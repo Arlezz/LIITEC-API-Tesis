@@ -1,16 +1,15 @@
 import React from "react";
-import GeneralService from "@/services/general.services";
 import { InvitedChannelLinks } from "@/config/InvitedChannelConfig";
 import { Chip, Divider } from "@nextui-org/react";
 import Tabs from "@/components/Tabs";
 import { getFormattedDate } from "@/utils/dateFormatter";
 import MyBreacrumbs from "@/components/MyBreacrumbs";
+import { getChannel } from "@/lib/general.actions";
 
 export default async function Layout({ children, params }) {
   const channelId = params.id;
 
-  const channel = await GeneralService.getChannel(channelId);
-  console.log(channel);
+  const channel = await getChannel(channelId);
 
   return (
     <div className="max-w-[85rem] w-full mx-auto p-4 sm:flex sm:items-center sm:justify-between">

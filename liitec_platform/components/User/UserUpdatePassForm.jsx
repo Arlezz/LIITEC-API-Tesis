@@ -12,7 +12,6 @@ import { useSession } from "next-auth/react";
 export default function UserUpdatePassForm() {
   const { data: session, update } = useSession();
 
-  console.log("session", session);
 
   const userId = session?.user._id ?? "";
   const [error, setError] = useState(null);
@@ -25,7 +24,6 @@ export default function UserUpdatePassForm() {
   function handleSubmit(userId, values) {
     updateUser(userId, values)
       .then((response) => {
-        console.log("Éxito al actualizar el usuario:", response);
         router.push(`/profile`);
         //redirect(`/channels`);
       })

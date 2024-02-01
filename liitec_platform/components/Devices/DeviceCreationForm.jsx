@@ -11,14 +11,12 @@ import { deviceTypes } from "@/utils/deviceTypes";
 
 export default function DeviceCreationForm({ channelId }) {
 
-  //console.log("user", session.user._id);
 
   const [error, setError] = useState(null);
   const router = useRouter();
 
 
   function handleSubmit(channelId, values) {
-    //console.log("values", values);
 
     
     const mappedDevice = deviceTypes.find(device => device.value === values.type);
@@ -31,11 +29,9 @@ export default function DeviceCreationForm({ channelId }) {
       measures: mappedDevice.measures
     }
 
-    console.log("Device", device);
 
     createDevice(channelId, device)
       .then((response) => {
-        console.log("Éxito al crear el canal:", response);
         router.push(`/channels/${channelId}`);
       })
       .catch((error) => {

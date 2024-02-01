@@ -16,7 +16,6 @@ export default function Map({ channels }) {
     channel.ubication.longitude !== null
   );
   
-  console.log("el canal con ubicacion ", canalesConUbicacion);
   
   // Obtener las latitudes y longitudes
   const latitudes = canalesConUbicacion.map(channel => channel.ubication.latitude);

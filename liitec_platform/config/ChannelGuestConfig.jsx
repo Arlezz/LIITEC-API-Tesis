@@ -5,7 +5,6 @@ import { Chip, Tooltip } from "@nextui-org/react";
 import { getFormattedDate } from "@/utils/dateFormatter";
 
 const ChannelGuestTableRenderCell = (guest, columnKey) => {
-  console.log("guest: ", guest);
 
   const cellValue = guest[columnKey];
 

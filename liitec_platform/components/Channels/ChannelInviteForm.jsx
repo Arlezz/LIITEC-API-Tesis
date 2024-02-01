@@ -13,7 +13,6 @@ export default function ChannelInviteForm({ channel }) {
   const router = useRouter();
 
   function handleSubmit(channelId, values) {
-    console.log("LOS VALORES: ", values);
 
     createGuest(channelId, values)
       .then(() => {

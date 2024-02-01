@@ -20,7 +20,6 @@ export default function UserSettingsAdmForm({ user, onClose }) {
   const router = useRouter();
 
   const handleSubmit = (userId, values) => {
-    console.log("values: ", values);
 
     //if password and repeatPassword is empty, remove it from the object
     if (!values.password && !values.repeatPassword) {
@@ -30,7 +29,6 @@ export default function UserSettingsAdmForm({ user, onClose }) {
 
     updateUser(userId, values)
       .then((response) => {
-        console.log("Éxito al actualizar el usuario:", response);
         router.push(`/admin/users`);
         onClose();
         //redirect(`/channels`);

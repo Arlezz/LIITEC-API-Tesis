@@ -9,7 +9,6 @@ import { useRouter } from "next/navigation";
 
 export default function ChannelCreationForm({ session }) {
 
-  //console.log("user", session.user._id);
 
   const [error, setError] = useState(null);
   const router = useRouter();
@@ -17,7 +16,6 @@ export default function ChannelCreationForm({ session }) {
   function handleSubmit(userId, values) {
     createChannel(userId, values)
       .then((response) => {
-        console.log("Éxito al crear el canal:", response);
         router.push(`/channels`);
       })
       .catch((error) => {

@@ -6,7 +6,6 @@ import { usePathname } from "next/navigation";
 export default function Tabs({ links, ids }) {
   const pathname = usePathname();
 
-  console.log("pathname", pathname);
 
   return (
     <div className="mb-6">

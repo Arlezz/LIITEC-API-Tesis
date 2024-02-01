@@ -6,8 +6,6 @@ import DeviceDeleteSection from "@/components/Devices/DeviceDeleteSection";
 export default async function DevicesPage({ params }) {
   const device = await getDevice(params.id, params.dvId);
 
-  console.log("EL device", device);
-
   return (
     <>
       <section className="flex flex-col">

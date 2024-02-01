@@ -1,15 +1,14 @@
-//import { authOptions } from "@/app/api/auth/[...nextauth]/route";
-//import { getServerSession } from "next-auth";
-import GeneralService from "@/services/general.services";
+
 import ChannelSettingsForm from "@/components/Channels/ChannelSettingsForm";
-import { Divider, Button, useDisclosure } from "@nextui-org/react";
+import { Divider } from "@nextui-org/react";
 import ChannelDeleteSection from "@/components/Channels/ChannelDeleteSection";
+import { getChannel } from "@/lib/general.actions";
 
 export default async function ChannelSettingsPage({ params }) {
   const channelId = params.id;
   
   
-  const channel = (await GeneralService.getChannel(channelId)) || {};
+  const channel = (await getChannel(channelId)) || {};
 
   return (
     <>
