@@ -5,7 +5,6 @@ import {
   getMyChannels,
   getMyDevices,
   getGuests,
-  getChannel,
   getChannelsInvited,
 } from "@/lib/general.actions";
 import {
@@ -53,132 +52,115 @@ export default async function DashboardPage() {
 
   const channelsInvited = await getChannelsInvited();
 
-
   return (
-    <div className="max-w-[85rem] w-full mx-auto p-4 sm:flex sm:items-center sm:justify-between">
-      <div className="w-full">
-        {/* Title section */}
-        <section className="flex flex-col pb-6">
-          <span className="text-md md:text-xl text-gray-700 font-medium">
-            Dashboard
-          </span>
-          <h1 className="text-2xl  md:text-4xl text-gray-700 font-medium">
-            {session?.user?.apiKey?.type === "superUser" ? "Platform " : null}
-            Overview
-          </h1>
-        </section>
-        <div className="flex flex-col gap-4">
-          {session?.user?.apiKey?.type === "superUser" ? (
-            <>
-              <section className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-                <div className="flex flex-col items-center justify-center bg-white rounded-lg shadow-lg p-8 text-center cursor-pointer hover:bg-gray-100 transition duration-300 ease-in-out">
-                  <span className="text-4xl font-bold">
-                    {usersPlatform?.length > 0 ? (
-                      <>{usersPlatform.length}</>
-                    ) : (
-                      0
-                    )}
-                  </span>
-                  <span className="text-xl">Users</span>
-                  <span className="text-gray-400 text-md font-medium">
-                    In the platform
-                  </span>
-                </div>
-                <div className="flex flex-col items-center justify-center bg-white rounded-lg shadow-lg p-8 text-center cursor-pointer hover:bg-gray-100 transition duration-300 ease-in-out">
-                  <span className="text-4xl font-bold">
-                    {channelsPlatform?.length > 0 ? (
-                      <>{channelsPlatform.length}</>
-                    ) : (
-                      0
-                    )}
-                  </span>
-                  <span className="text-xl">Channels</span>
-                  <span className="text-gray-400 text-md font-medium">
-                    In the platform
-                  </span>
-                </div>
-                <div className="flex flex-col items-center justify-center bg-white rounded-lg shadow-lg p-8 text-center cursor-pointer hover:bg-gray-100 transition duration-300 ease-in-out">
-                  <span className="text-4xl font-bold">
-                    {devicesPlatform?.length > 0 ? (
-                      <>{devicesPlatform.length}</>
-                    ) : (
-                      0
-                    )}
-                  </span>
-                  <span className="text-xl">Devices</span>
-                  <span className="text-gray-400 text-md font-medium">
-                    In the platform
-                  </span>
-                </div>
-                <div className="flex flex-col items-center justify-center bg-white rounded-lg shadow-lg p-8 text-center cursor-pointer hover:bg-gray-100 transition duration-300 ease-in-out">
-                  <span className="text-4xl font-bold">
-                    {keys?.length > 0 ? <>{keys.length}</> : 0}
-                  </span>
-                  <span className="text-xl">Keys</span>
-                  <span className="text-gray-400 text-md font-medium">
-                    In the platform
-                  </span>
-                </div>
-              </section>
-              <section className="flex flex-col pb-6 pt-10">
-                <span className="text-md md:text-xl text-gray-700 font-medium">
-                  Dashboard
+    <>
+      {/* Title section */}
+      <section className="flex flex-col pb-6">
+        <span className="text-md md:text-xl text-gray-700 font-medium">
+          Dashboard
+        </span>
+        <h1 className="text-2xl  md:text-4xl text-gray-700 font-medium">
+          {session?.user?.apiKey?.type === "superUser" ? "Platform " : null}
+          Overview
+        </h1>
+      </section>
+      <div className="flex flex-col gap-4">
+        {session?.user?.apiKey?.type === "superUser" ? (
+          <>
+            <section className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+              <div className="flex flex-col items-center justify-center bg-white rounded-lg shadow-lg p-8 text-center cursor-pointer hover:bg-gray-100 transition duration-300 ease-in-out">
+                <span className="text-4xl font-bold">
+                  {usersPlatform?.length > 0 ? <>{usersPlatform.length}</> : 0}
                 </span>
-                <h1 className="text-2xl  md:text-4xl text-gray-700 font-medium">
-                  My Overview
-                </h1>
-              </section>
-            </>
-          ) : null}
+                <span className="text-xl">Users</span>
+                <span className="text-gray-400 text-md font-medium">
+                  In the platform
+                </span>
+              </div>
+              <div className="flex flex-col items-center justify-center bg-white rounded-lg shadow-lg p-8 text-center cursor-pointer hover:bg-gray-100 transition duration-300 ease-in-out">
+                <span className="text-4xl font-bold">
+                  {channelsPlatform?.length > 0 ? (
+                    <>{channelsPlatform.length}</>
+                  ) : (
+                    0
+                  )}
+                </span>
+                <span className="text-xl">Channels</span>
+                <span className="text-gray-400 text-md font-medium">
+                  In the platform
+                </span>
+              </div>
+              <div className="flex flex-col items-center justify-center bg-white rounded-lg shadow-lg p-8 text-center cursor-pointer hover:bg-gray-100 transition duration-300 ease-in-out">
+                <span className="text-4xl font-bold">
+                  {devicesPlatform?.length > 0 ? (
+                    <>{devicesPlatform.length}</>
+                  ) : (
+                    0
+                  )}
+                </span>
+                <span className="text-xl">Devices</span>
+                <span className="text-gray-400 text-md font-medium">
+                  In the platform
+                </span>
+              </div>
+              <div className="flex flex-col items-center justify-center bg-white rounded-lg shadow-lg p-8 text-center cursor-pointer hover:bg-gray-100 transition duration-300 ease-in-out">
+                <span className="text-4xl font-bold">
+                  {keys?.length > 0 ? <>{keys.length}</> : 0}
+                </span>
+                <span className="text-xl">Keys</span>
+                <span className="text-gray-400 text-md font-medium">
+                  In the platform
+                </span>
+              </div>
+            </section>
+            <section className="flex flex-col pb-6 pt-10">
+              <span className="text-md md:text-xl text-gray-700 font-medium">
+                Dashboard
+              </span>
+              <h1 className="text-2xl  md:text-4xl text-gray-700 font-medium">
+                My Overview
+              </h1>
+            </section>
+          </>
+        ) : null}
 
-          <section className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {session?.user?.apiKey?.type === "advancedUser" || session?.user.apiKey?.type === "superUser" ? (
-              <>
-                <Link
-                  href="/channels"
-                  className="text-black flex flex-col items-center justify-center bg-white rounded-lg shadow-lg p-8 text-center cursor-pointer hover:bg-gray-100 transition duration-300 ease-in-out"
-                >
-                  <span className="text-4xl font-bold">
-                    {channels?.length > 0 ? <>{channels.length}</> : 0}
-                  </span>
-                  <span className="text-xl">My Channels</span>
-                </Link>
-                <div className="flex flex-col items-center justify-center bg-white rounded-lg shadow-lg p-8 text-center  hover:bg-gray-100 transition duration-300 ease-in-out">
-                  <span className="text-4xl font-bold">
-                    {devices?.length > 0 ? <>{devices.length}</> : 0}
-                  </span>
-                  <span className="text-xl">My Devices</span>
-                </div>
-                <div className="flex flex-col items-center justify-center bg-white rounded-lg shadow-lg p-8 text-center  hover:bg-gray-100 transition duration-300 ease-in-out">
-                  <span className="text-4xl font-bold">
-                    {variables?.length > 0 ? <>{variables.length}</> : 0}
-                  </span>
-                  <span className="text-xl">My Variables</span>
-                </div>
-                <div className="flex flex-col items-center justify-center bg-white rounded-lg shadow-lg p-8 text-center  hover:bg-gray-100 transition duration-300 ease-in-out">
-                  <span className="text-4xl font-bold">
-                    {user?.acls ? <>{user.acls.length}</> : 0}
-                  </span>
-                  <span className="text-xl">My Topics</span>
-                </div>
-                <div className="flex flex-col items-center justify-center bg-white rounded-lg shadow-lg p-8 text-center  hover:bg-gray-100 transition duration-300 ease-in-out">
-                  <span className="text-4xl font-bold">
-                    {guests?.length > 0 ? <>{guests.length}</> : 0}
-                  </span>
-                  <span className="text-xl">My Guests</span>
-                </div>
-                <div className="flex flex-col items-center justify-center bg-white rounded-lg shadow-lg p-8 text-center  hover:bg-gray-100 transition duration-300 ease-in-out">
-                  <span className="text-4xl font-bold">
-                    {channelsInvited?.length > 0 ? (
-                      <>{channelsInvited.length}</>
-                    ) : (
-                      0
-                    )}
-                  </span>
-                  <span className="text-xl">Invited Channels</span>
-                </div>
-              </>
-            ) : (
+        <section className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+          {session?.user?.apiKey?.type === "advancedUser" ||
+          session?.user.apiKey?.type === "superUser" ? (
+            <>
+              <Link
+                href="/channels"
+                className="text-black flex flex-col items-center justify-center bg-white rounded-lg shadow-lg p-8 text-center cursor-pointer hover:bg-gray-100 transition duration-300 ease-in-out"
+              >
+                <span className="text-4xl font-bold">
+                  {channels?.length > 0 ? <>{channels.length}</> : 0}
+                </span>
+                <span className="text-xl">My Channels</span>
+              </Link>
+              <div className="flex flex-col items-center justify-center bg-white rounded-lg shadow-lg p-8 text-center  hover:bg-gray-100 transition duration-300 ease-in-out">
+                <span className="text-4xl font-bold">
+                  {devices?.length > 0 ? <>{devices.length}</> : 0}
+                </span>
+                <span className="text-xl">My Devices</span>
+              </div>
+              <div className="flex flex-col items-center justify-center bg-white rounded-lg shadow-lg p-8 text-center  hover:bg-gray-100 transition duration-300 ease-in-out">
+                <span className="text-4xl font-bold">
+                  {variables?.length > 0 ? <>{variables.length}</> : 0}
+                </span>
+                <span className="text-xl">My Variables</span>
+              </div>
+              <div className="flex flex-col items-center justify-center bg-white rounded-lg shadow-lg p-8 text-center  hover:bg-gray-100 transition duration-300 ease-in-out">
+                <span className="text-4xl font-bold">
+                  {user?.acls ? <>{user.acls.length}</> : 0}
+                </span>
+                <span className="text-xl">My Topics</span>
+              </div>
+              <div className="flex flex-col items-center justify-center bg-white rounded-lg shadow-lg p-8 text-center  hover:bg-gray-100 transition duration-300 ease-in-out">
+                <span className="text-4xl font-bold">
+                  {guests?.length > 0 ? <>{guests.length}</> : 0}
+                </span>
+                <span className="text-xl">My Guests</span>
+              </div>
               <div className="flex flex-col items-center justify-center bg-white rounded-lg shadow-lg p-8 text-center  hover:bg-gray-100 transition duration-300 ease-in-out">
                 <span className="text-4xl font-bold">
                   {channelsInvited?.length > 0 ? (
@@ -189,33 +171,44 @@ export default async function DashboardPage() {
                 </span>
                 <span className="text-xl">Invited Channels</span>
               </div>
-            )}
-          </section>
-        </div>
-        <div className="pb-8 pt-4">
-          <section className="flex flex-col pb-6 pt-10">
-            <span className="text-md md:text-xl text-gray-700 font-medium">
-              Map
-            </span>
-            <h2 className="text-2xl  md:text-4xl text-gray-700 font-medium">
-              Channel Ubications
-            </h2>
-          </section>
-          <div className="flex justify-center bg-white rounded-lg shadow-lg p-2 text-center cursor-pointer hover:bg-gray-100 transition duration-300 ease-in-out">
-            <div className="w-full h-[40vh] md:h-[700px] bg-sky-100">
-              <Map
-                channels={
-                  role === "superUser"
-                    ? channelsPlatform
-                    : role === "advancedUser"
-                    ? channels
-                    : channelsInvited
-                }
-              />
+            </>
+          ) : (
+            <div className="flex flex-col items-center justify-center bg-white rounded-lg shadow-lg p-8 text-center  hover:bg-gray-100 transition duration-300 ease-in-out">
+              <span className="text-4xl font-bold">
+                {channelsInvited?.length > 0 ? (
+                  <>{channelsInvited.length}</>
+                ) : (
+                  0
+                )}
+              </span>
+              <span className="text-xl">Invited Channels</span>
             </div>
+          )}
+        </section>
+      </div>
+      <div className="pb-8 pt-4">
+        <section className="flex flex-col pb-6 pt-10">
+          <span className="text-md md:text-xl text-gray-700 font-medium">
+            Map
+          </span>
+          <h2 className="text-2xl  md:text-4xl text-gray-700 font-medium">
+            Channel Ubications
+          </h2>
+        </section>
+        <div className="flex justify-center bg-white rounded-lg shadow-lg p-2 text-center cursor-pointer hover:bg-gray-100 transition duration-300 ease-in-out">
+          <div className="w-full h-[40vh] md:h-[700px] bg-sky-100">
+            <Map
+              channels={
+                role === "superUser"
+                  ? channelsPlatform
+                  : role === "advancedUser"
+                  ? channels
+                  : channelsInvited
+              }
+            />
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }

@@ -4,7 +4,17 @@ import Link from "next/link";
 import { signIn, signOut, useSession } from "next-auth/react";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-import { Dropdown } from "flowbite-react";
+import { ChevronDown, LogOut, User } from "lucide-react";
+//import { Dropdown } from "flowbite-react";
+import {
+  Dropdown,
+  DropdownTrigger,
+  DropdownMenu,
+  DropdownSection,
+  DropdownItem,
+  Button,
+  cn,
+} from "@nextui-org/react";
 import Image from "next/image";
 
 export default function Navbar() {
@@ -14,7 +24,7 @@ export default function Navbar() {
 
   const { data: session } = useSession();
 
-  //console.log("la session NAVBAR : ",session);
+  console.log("la session NAVBAR : ", session);
 
   const letterUsername =
     session?.user?.username?.charAt(0).toUpperCase() || "U";
@@ -22,7 +32,7 @@ export default function Navbar() {
   const roleMappings = {
     readUser: "Read Only",
     advancedUser: "Advanced User",
-    superUser: "Super User",
+    superUser: "Admin",
   };
 
   const role = session?.user?.apiKey?.type || "readUser";
@@ -91,57 +101,54 @@ export default function Navbar() {
               <path d="m6 6 12 12" />
             </svg>
           </button>
-          <div>
-            <Dropdown
-              label="Dropdown"
-              placement="bottom"
-              renderTrigger={() => (
-                <span className="bg-sky-700 rounded-full text-white flex items-center py-2 px-4 text-gray-900 rounded md:hidden md:bg-transparent md:text-blue-700 md:p-0">
+          <div className="md:hidden  md:bg-transparent">
+            <Dropdown >
+              <DropdownTrigger className="">
+                <Button
+                  isIconOnly
+                  className="rounded-full capitalize"
+                  color="primary"
+                >
                   {session?.user ? (
                     <>{letterUsername}</>
                   ) : (
                     <>{letterUsername}</>
                   )}
-                  <svg
-                    className=" hidden sm:block w-2.5 h-2.5 ms-2.5"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 10 6"
-                  >
-                    <path
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="m1 1 4 4 4-4"
-                    />
-                  </svg>
-                </span>
-              )}
-            >
-              <Dropdown.Header>
-                <span className="block text-sm">{userRole}</span>
-                <span className="block truncate text-sm font-medium">
-                  {userEmail}
-                </span>
-              </Dropdown.Header>
-              <Dropdown.Item>
-                <Link
-                  href="/profile"
-                  className="block w-full flex rounded  md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
-                >
-                  Profile
-                </Link>
-              </Dropdown.Item>
-              <Dropdown.Divider />
-              <Dropdown.Item
-                onClick={() => {
-                  signOut();
-                }}
+                </Button>
+              </DropdownTrigger>
+              <DropdownMenu
+                variant="faded"
+                disabledKeys={["description"]}
+                aria-label="Dropdown menu with description"
               >
-                Sign out
-              </Dropdown.Item>
+                <DropdownSection showDivider>
+                  <DropdownItem
+                    isReadOnly
+                    key="description"
+                    description={userEmail}
+                    className="h-14 gap-2 opacity-100"
+                  >
+                    <span className="block text-sm">{userRole}</span>
+                  </DropdownItem>
+                </DropdownSection>
+
+                <DropdownItem key="profile" startContent={<User size={20} />}>
+                  <Link
+                    href="/profile"
+                    className="block w-full h-full flex text-gray-900 rounded hover:bg-transparent border-0 :p-0"
+                  >
+                    Profile
+                  </Link>
+                </DropdownItem>
+                <DropdownItem
+                  key="dignOut"
+                  color="danger"
+                  startContent={<LogOut size={20} />}
+                  onClick={() => signOut()}
+                >
+                  Sign out
+                </DropdownItem>
+              </DropdownMenu>
             </Dropdown>
           </div>
         </div>
@@ -242,7 +249,7 @@ export default function Navbar() {
                 Support
               </Link>
             </li> */}
-            {userRole === "Super User" ? (
+            {role === "superUser" ? (
               <li>
                 <Link
                   href="/admin"
@@ -260,55 +267,55 @@ export default function Navbar() {
             ) : null}
           </ul>
         </div>
-        <div
-          className={`
-            hidden md:block
-        `}
-        >
-          <Dropdown
-            label="Dropdown"
-            placement="bottom"
-            renderTrigger={() => (
-              <span className="bg-sky-700 rounded-full capitalize text-white flex items-center py-2 px-4 text-gray-900 rounded">
+
+        <div className="hidden md:block">
+          <Dropdown>
+            <DropdownTrigger className="">
+              <Button
+                className="rounded-full capitalize"
+                endContent={<ChevronDown size={20} />}
+                color="primary"
+              >
                 {session?.user ? (
                   <>{session.user.username}</>
                 ) : (
                   <>{"Usuario"}</>
                 )}
-                <svg
-                  className="w-2.5 h-2.5 ms-2.5"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 10 6"
+              </Button>
+            </DropdownTrigger>
+            <DropdownMenu
+              variant="faded"
+              disabledKeys={["description"]}
+              aria-label="Dropdown menu with description"
+            >
+              <DropdownSection showDivider>
+                <DropdownItem
+                  isReadOnly
+                  key="description"
+                  description={userEmail}
+                  className="h-14 gap-2 opacity-100"
                 >
-                  <path
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="m1 1 4 4 4-4"
-                  />
-                </svg>
-              </span>
-            )}
-          >
-            <Dropdown.Header>
-              <span className="block text-sm">{userRole}</span>
-              <span className="block truncate text-sm font-medium ">
-                {userEmail}
-              </span>
-            </Dropdown.Header>
-            <Dropdown.Item>
-              <Link
-                href="/profile"
-                className="block w-full flex py-2 px-3 text-gray-900 rounded  md:hover:bg-transparent md:border-0 md:hover:text-sky-600 md:p-0"
+                  <span className="block text-sm">{userRole}</span>
+                </DropdownItem>
+              </DropdownSection>
+
+              <DropdownItem key="profile" startContent={<User size={20} />}>
+                <Link
+                  href="/profile"
+                  className="block w-full h-full flex rounded  md:hover:bg-transparent md:border-0 md:p-0"
+                >
+                  Profile
+                </Link>
+              </DropdownItem>
+              <DropdownItem
+                key="dignOut"
+                color="danger"
+                startContent={<LogOut size={20} />}
+                onClick={() => signOut()}
               >
-                Profile
-              </Link>
-            </Dropdown.Item>
-            <Dropdown.Divider />
-            <Dropdown.Item onClick={() => signOut()}>Sign out</Dropdown.Item>
+                Sign out
+              </DropdownItem>
+            </DropdownMenu>
           </Dropdown>
         </div>
       </div>

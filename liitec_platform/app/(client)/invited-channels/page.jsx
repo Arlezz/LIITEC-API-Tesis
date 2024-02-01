@@ -1,30 +1,28 @@
-import {  getChannelsInvitedPaginate } from "@/lib/general.actions";
+import { getChannelsInvitedPaginate } from "@/lib/general.actions";
 import TablePagination from "@/components/TablePagination";
 import GenericTable from "@/components/GenericTable";
-import { 
+import {
   InvitedChannelTableRenderCell,
   InvitedChannelTableColumns,
   InvitedChannelTableInitialColumns,
-  InvitedChannelTableStatusOptions
+  InvitedChannelTableStatusOptions,
 } from "@/config/InvitedChannelConfig";
 import { authOptions } from "@/app/api/auth/[...nextauth]/route";
 import { getServerSession } from "next-auth";
 
-
 export default async function Page({ searchParams }) {
- 
   const page = Number(searchParams.page) || 1;
 
   const channelsInvited = await getChannelsInvitedPaginate(page);
 
-  console.log("INVITADOS: ",channelsInvited);
+  console.log("INVITADOS: ", channelsInvited);
 
   const pages = channelsInvited.totalPages || 1;
 
   return (
-    <div className="w-full">
+    <>
       <section className="flex flex-col pb-8">
-        <h1 className="text-2xl  md:text-4xl text-gray-700 font-medium">
+        <h1 className="text-2xl md:text-4xl text-gray-700 font-medium">
           Invited Channels
         </h1>
       </section>
@@ -42,7 +40,7 @@ export default async function Page({ searchParams }) {
           totalPages={pages}
           hasNextPage={page < pages}
         />
-      </div> 
-    </div>
+      </div>
+    </>
   );
 }

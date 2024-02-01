@@ -39,7 +39,7 @@ const UsersAdminTableRenderCell = (
             ? "read user"
             : user.role === "advancedUser"
             ? "advanced user"
-            : "super user"}
+            : "admin"}
         </Chip>
       );
     case "createdOn":

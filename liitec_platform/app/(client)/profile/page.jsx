@@ -1,7 +1,7 @@
 import { authOptions } from "@/app/api/auth/[...nextauth]/route";
 import { getServerSession } from "next-auth";
 import { getUser } from "@/lib/user.actions";
-import { Chip } from "@nextui-org/react";
+import { Chip, Snippet } from "@nextui-org/react";
 import { getFormattedDate } from "@/utils/dateFormatter";
 import MyCopyButton from "@/components/MyCopyButton";
 
@@ -33,6 +33,7 @@ export default async function ProfilePage() {
               <dt className=" font-bold leading-6 text-gray-900">User Id</dt>
               <dd className="mt-1  leading-6  text-gray-700 sm:col-span-2 sm:mt-0">
                 <MyCopyButton label={user._id} herf={user._id} />
+                {/* <Snippet symbol="" >{user._id}</Snippet> */}
               </dd>
             </div>
             <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">

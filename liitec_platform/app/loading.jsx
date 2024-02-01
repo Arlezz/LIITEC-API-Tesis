@@ -1,7 +1,8 @@
+import MySpinner from "@/components/MySpinner";
 
 export default function Loading() {
+  return (
+      <MySpinner />
 
-    return <>
-        <h1>Loading...</h1>
-    </>
+  );
 }

@@ -1,16 +1,14 @@
 import { getPublicChannels } from "@/lib/general.actions";
 import TablePagination from "@/components/TablePagination";
 import GenericTable from "@/components/GenericTable";
-import { 
+import {
   PublicChannelTableRenderCell,
   PublicChannelTableColumns,
   PublicChannelTableInitialColumns,
-  PublicChannelTableStatusOptions
+  PublicChannelTableStatusOptions,
 } from "@/config/PublicChannelConfig";
 
-
 export default async function Page({ searchParams }) {
-
   const page = Number(searchParams.page) || 1;
 
   const publicChannels = await getPublicChannels(page);
@@ -20,7 +18,7 @@ export default async function Page({ searchParams }) {
   const pages = publicChannels.totalPages || 1;
 
   return (
-    <div className="w-full">
+    <>
       <section className="flex flex-col pb-8">
         <h1 className="text-2xl  md:text-4xl text-gray-700 font-medium">
           Public Channels
@@ -40,7 +38,7 @@ export default async function Page({ searchParams }) {
           totalPages={pages}
           hasNextPage={page < pages}
         />
-      </div> 
-    </div>
+      </div>
+    </>
   );
 }
