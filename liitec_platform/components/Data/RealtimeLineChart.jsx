@@ -14,7 +14,6 @@ export default function RealtimeLineChart({
 }) {
   const [data, setData] = useState(initialData);
 
-  console.log("device", device);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -25,7 +24,7 @@ export default function RealtimeLineChart({
     const intervalId = setInterval(fetchData, 60000);
 
     return () => clearInterval(intervalId);
-  }, [variable]);
+  }, [device, variable]);
 
   return (
     console.log("data", data),

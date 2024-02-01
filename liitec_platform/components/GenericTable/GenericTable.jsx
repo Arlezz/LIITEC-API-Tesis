@@ -50,7 +50,7 @@ export default function GenericTable({
   const { isOpen: isOpenEdit, onOpen: onOpenEdit, onClose: onCloseEdit } = useDisclosure();
   const { isOpen: isOpenDelete, onOpen: onOpenDelete, onClose: onCloseDelete } = useDisclosure();
 
-  const myDatas = data || [];
+  const myDatas = useMemo(() => data || [], [data]);
 
   const [page, setPage] = useState(1);
   const [currentItem, setCurrentItem] = useState(null);
@@ -73,7 +73,7 @@ export default function GenericTable({
     return columns.filter((column) =>
       Array.from(visibleColumns).includes(column.uid)
     );
-  }, [visibleColumns]);
+  }, [visibleColumns, columns]);
 
   const filteredItems = useMemo(() => {
     let filteredData = [...myDatas];
@@ -94,7 +94,7 @@ export default function GenericTable({
     }
 
     return filteredData;
-  }, [myDatas, filterValue, statusFilter, hasSearchFilter, filterField]);
+  }, [myDatas, filterValue, statusFilter, hasSearchFilter, filterField, statusOptions.length]);
 
   const items = useMemo(() => {
     const start = (page - 1) * rowsPerPage;
@@ -208,12 +208,15 @@ export default function GenericTable({
       </div>
     );
   }, [
+    columns,
+    createLink,
+    filterField,
+    statusOptions,
     filterValue,
     statusFilter,
     visibleColumns,
     myDatas.length,
     onSearchChange,
-    hasSearchFilter,
   ]);
 
   const onOpenModal = useCallback(

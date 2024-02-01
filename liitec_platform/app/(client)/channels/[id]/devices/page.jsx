@@ -8,7 +8,7 @@ export default function DevicesPage({ params }) {
 
     useEffect(() => {
         router.push(`/channels/${params.id}`);
-    }, []);
+    }, [router, params.id]);
 
     return null;
 }

@@ -10,7 +10,7 @@ export default function Page() {
 
   useEffect(() => {
     router.push("/dashboard");
-  }, []);
+  }, [router]);
 
 
   return null;

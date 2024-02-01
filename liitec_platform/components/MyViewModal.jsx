@@ -108,9 +108,9 @@ const MyViewModal = ({ isOpen, onClose, item }) => {
                 <ul className="flex flex-col gap-3 mt-2 text-gray-900 sm:col-span-2 sm:mt-0 overflow-x-auto">
                   {item.acls.length > 0 ? (
                     item.acls.map((acl, index) => (
-                      <li>
+                      <li key={index}>
                         <Code
-                          key={index}
+                          key={index} // Add a unique key here
                           className="capitalize"
                           color="default"
                           size="sm"
@@ -120,7 +120,7 @@ const MyViewModal = ({ isOpen, onClose, item }) => {
                       </li>
                     ))
                   ) : (
-                    <li>
+                    <li key="no-acls">
                       <Code color="error" size="sm" variant="flat">
                         N/A
                       </Code>

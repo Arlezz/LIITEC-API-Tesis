@@ -3,7 +3,6 @@ import LineChart from "@/components/LineChart";
 import RealtimeLineChart from "@/components/Data/RealtimeLineChart";
 
 export default async function DevicePage({ params }) {
-
   const device = await getDevice(params.id, params.dvId);
 
   return (
@@ -13,7 +12,7 @@ export default async function DevicePage({ params }) {
       </h1>
       <section className="grid grid-cols-1 md:grid-cols-2">
         {device &&
-          device.measures.map(async (variable) => {
+          device.measures.map(async (variable, index) => {
             const data = await getDeviceData(
               params.dvId,
               variable.variable,
@@ -21,14 +20,14 @@ export default async function DevicePage({ params }) {
               15
             );
             return (
-              <div className="p-0 md:p-4">
+              <div className="p-0 md:p-4" key={index}>
                 <RealtimeLineChart
-                    channels={params.id}
-                    key={variable.variable}
-                    device={params.dvId}
-                    variable={variable}
-                    initialData={data.results}
-                  />
+                  channels={params.id}
+                  key={variable.variable}
+                  device={params.dvId}
+                  variable={variable}
+                  initialData={data.results}
+                />
               </div>
             );
           })}

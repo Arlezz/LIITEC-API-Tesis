@@ -8,13 +8,7 @@ export default function AdminPage() {
 
   useEffect(() => {
     router.push(`/admin/users`);
-  }, []);
+  }, [router]); // Agrega 'router' al array de dependencias
 
   return null;
-
-  // return (
-  //   <div className="max-w-[85rem] w-full mx-auto p-4 sm:flex sm:items-center sm:justify-between">
-  //       <h1>Admin page</h1>
-  //   </div>
-  // );
 }
