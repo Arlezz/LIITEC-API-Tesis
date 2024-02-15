@@ -26,15 +26,15 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 
-app.use('/api/v1',authRoutes);
-
-
 //routes
 app.use('/api/v1',dataRoutes);
 app.use('/api/v1',deviceRoutes);
 app.use('/api/v1',channelRoutes);
 app.use('/api/v1',userRoutes);
 app.use('/api/v1',keyRoutes);
+
+app.use('/api/v1',authRoutes);
+
 
 // Middleware para Swagger
 V1SwaggerDocs(app, 8081);
