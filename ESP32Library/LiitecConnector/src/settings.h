@@ -12,7 +12,7 @@ CONFIGURACIÓN DE LOS SENSORES
 #define dhtSensorPin 22         // Pin utilizado para el sensor de humedad y temperatura DHT
 #define dhtSensorType DHT22     // Tipo de sensor DHT (DHT11 o DHT22)
 #define gyml8511SensorPin 34    // Pin utilizado para el sensor de radiación UV GYML8511
-#define gyml8511VoltagePin 33    // Voltaje de referencia del sensor GYML8511
+#define gyml8511VoltagePin 33   // Voltaje de referencia del sensor GYML8511
 #define mqSensorPin 32          // Pin utilizado para el sensor de gas MQ135
 #define mqSensorType MQ135      // Tipo de sensor MQ (MQ135 o MQ7)
 
@@ -71,7 +71,7 @@ CONFIGURACIÓN DE LOS TOPICS MQTT
 // los topicos de sensores deben comensar con "devices/", los de actuadores con "actuators/" y los de logs con "logs/"
 #define mqtt_topic_dht "/devices/dv-7a9b4d6c-6755-441f-81aa-ffdcd9147d81"                // Topic MQTT para el sensor de DHT (temperatura ambiente)
 #define mqtt_topic_gyml8511 "/devices/dv-f0c54c00-5811-4402-9bee-84576517f571"           // Topic MQTT para el sensor de radiación UV GYML8511
-#define mqtt_topic_mq135 "/devices/dv-17938483-b706-47c3-9249-cc9377505acf"                                                             // Topic MQTT para el sensor de gas MQ135
+#define mqtt_topic_mq135 "/devices/dv-17938483-b706-47c3-9249-cc9377505acf"              // Topic MQTT para el sensor de gas MQ135
 
 
 
