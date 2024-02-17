@@ -34,10 +34,10 @@ CONFIGURACIÓN DEL WIFI
         Completa los campos con los datos correspondientes a tu red WiFi.
 **************************************************************/
 #define wifi_enabled true                   // Activa o desactiva la conexión WiFi (true o false)
-#define wifi_ssid "CasaExt"          // SSID (nombre) de tu red WiFi
-#define wifi_password "Um7uwD6JA7q"  // Contraseña de tu red WiFi
-//#define wifi_ssid "Antony"          // SSID (nombre) de tu red WiFi
-//#define wifi_password "antony12345"  // Contraseña de tu red WiFi
+#define wifi_ssid "CasaExt"                 // SSID (nombre) de tu red WiFi
+#define wifi_password "Um7uwD6JA7q"         // Contraseña de tu red WiFi
+//#define wifi_ssid "Antony"                // SSID (nombre) de tu red WiFi
+//#define wifi_password "antony12345"       // Contraseña de tu red WiFi
 
 
 /**************************************************************
@@ -50,11 +50,11 @@ CONFIGURACIÓN DEL BROKER MQTT
         Completa los campos con los datos de tu broker MQTT.
 **************************************************************/
 #define mqtt_enabled true                   // Activa o desactiva la conexión con el broker MQTT (true o false)
-//#define mqtt_server "172.24.96.1"   // Dirección IP o nombre de dominio del broker MQTT
-//#define mqtt_server "192.168.1.105"   // Dirección IP o nombre de dominio del broker MQTT
-#define mqtt_server "18.228.38.251"   // Dirección IP o nombre de dominio del broker MQTT
+//#define mqtt_server "172.24.96.1"         // Dirección IP o nombre de dominio del broker MQTT
+//#define mqtt_server "192.168.1.105"       // Dirección IP o nombre de dominio del broker MQTT
+#define mqtt_server "18.228.38.251"         // Dirección IP o nombre de dominio del broker MQTT
 #define mqtt_port 1883                      // Puerto del broker MQTT
-#define mqtt_user "avanzado"          // Nombre de usuario para la autenticación en el broker MQTT
+#define mqtt_user "avanzado"                // Nombre de usuario para la autenticación en el broker MQTT
 #define mqtt_password "IluminadoAmado2024!"  // Contraseña para la autenticación en el broker MQTT
 
 
@@ -95,7 +95,7 @@ CONFIGURACIÓN DEL SERVER NTP
 
     Descripción:
         Este bloque de código permite configurar el servidor NTP para obtener
-        la fecha exacta en que los sensores capturaron el dato.
+        la fecha exacta en que los sensores capturaron los datos.
     Instrucciones:
         - Completa el campo con la url del servidor NTP.
         - Si deseas utilizar el servidor NTP por defecto ("pool.ntp.org"), dejar vacío el campo.
