@@ -2,6 +2,17 @@ import { authOptions } from "@/app/api/auth/[...nextauth]/route";
 import { getServerSession } from "next-auth";
 import { getUser } from "@/lib/user.actions";
 import {
+  Users,
+  Cpu,
+  MemoryStick,
+  KeyRound,
+  CloudSun,
+  Unplug,
+  UserRoundCheck,
+  MailCheck,
+  Mail,
+} from "lucide-react";
+import {
   getMyChannels,
   getMyDevices,
   getGuests,
@@ -68,16 +79,26 @@ export default async function DashboardPage() {
         {session?.user?.apiKey?.type === "superUser" ? (
           <>
             <section className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-              <div className="flex flex-col items-center justify-center bg-white rounded-lg shadow-lg p-8 text-center cursor-pointer hover:bg-gray-100 transition duration-300 ease-in-out">
+              <Link
+                href="/admin/users"
+                className="text-black flex flex-col items-center justify-center bg-white rounded-lg shadow-lg p-8 text-center cursor-pointer hover:bg-gray-100 transition duration-300 ease-in-out"
+              >
                 <span className="text-4xl font-bold">
                   {usersPlatform?.length > 0 ? <>{usersPlatform.length}</> : 0}
                 </span>
-                <span className="text-xl">Users</span>
+
+                <div className="flex gap-1 items-center">
+                  <span className="text-xl">Users </span>
+                  <Users size={25} />
+                </div>
                 <span className="text-gray-400 text-md font-medium">
                   In the platform
                 </span>
-              </div>
-              <div className="flex flex-col items-center justify-center bg-white rounded-lg shadow-lg p-8 text-center cursor-pointer hover:bg-gray-100 transition duration-300 ease-in-out">
+              </Link>
+              <Link
+                href="/admin/channels"
+                className="text-black flex flex-col items-center justify-center bg-white rounded-lg shadow-lg p-8 text-center cursor-pointer hover:bg-gray-100 transition duration-300 ease-in-out"
+              >
                 <span className="text-4xl font-bold">
                   {channelsPlatform?.length > 0 ? (
                     <>{channelsPlatform.length}</>
@@ -85,12 +106,18 @@ export default async function DashboardPage() {
                     0
                   )}
                 </span>
-                <span className="text-xl">Channels</span>
+                <div className="flex gap-1 items-center">
+                  <span className="text-xl">Channels </span>
+                  <Cpu size={25} />
+                </div>
                 <span className="text-gray-400 text-md font-medium">
                   In the platform
                 </span>
-              </div>
-              <div className="flex flex-col items-center justify-center bg-white rounded-lg shadow-lg p-8 text-center cursor-pointer hover:bg-gray-100 transition duration-300 ease-in-out">
+              </Link>
+              <Link
+                href="/admin/devices"
+                className="text-black flex flex-col items-center justify-center bg-white rounded-lg shadow-lg p-8 text-center cursor-pointer hover:bg-gray-100 transition duration-300 ease-in-out"
+              >
                 <span className="text-4xl font-bold">
                   {devicesPlatform?.length > 0 ? (
                     <>{devicesPlatform.length}</>
@@ -98,20 +125,29 @@ export default async function DashboardPage() {
                     0
                   )}
                 </span>
-                <span className="text-xl">Devices</span>
+                <div className="flex gap-1 items-center">
+                  <span className="text-xl">Devices </span>
+                  <MemoryStick size={25} />
+                </div>
                 <span className="text-gray-400 text-md font-medium">
                   In the platform
                 </span>
-              </div>
-              <div className="flex flex-col items-center justify-center bg-white rounded-lg shadow-lg p-8 text-center cursor-pointer hover:bg-gray-100 transition duration-300 ease-in-out">
+              </Link>
+              <Link
+                href="/admin/keys"
+                className="text-black flex flex-col items-center justify-center bg-white rounded-lg shadow-lg p-8 text-center cursor-pointer hover:bg-gray-100 transition duration-300 ease-in-out"
+              >
                 <span className="text-4xl font-bold">
                   {keys?.length > 0 ? <>{keys.length}</> : 0}
                 </span>
-                <span className="text-xl">Keys</span>
+                <div className="flex gap-1 items-center">
+                  <span className="text-xl">Keys </span>
+                  <KeyRound size={25} />
+                </div>
                 <span className="text-gray-400 text-md font-medium">
                   In the platform
                 </span>
-              </div>
+              </Link>
             </section>
             <section className="flex flex-col pb-6 pt-10">
               <span className="text-md md:text-xl text-gray-700 font-medium">
@@ -135,31 +171,46 @@ export default async function DashboardPage() {
                 <span className="text-4xl font-bold">
                   {channels?.length > 0 ? <>{channels.length}</> : 0}
                 </span>
-                <span className="text-xl">My Channels</span>
+                <div className="flex gap-1 items-center">
+                  <span className="text-xl">My Channels</span>
+                  <Cpu size={25} />
+                </div>
               </Link>
               <div className="flex flex-col items-center justify-center bg-white rounded-lg shadow-lg p-8 text-center  hover:bg-gray-100 transition duration-300 ease-in-out">
                 <span className="text-4xl font-bold">
                   {devices?.length > 0 ? <>{devices.length}</> : 0}
                 </span>
-                <span className="text-xl">My Devices</span>
+                <div className="flex gap-1 items-center">
+                  <span className="text-xl">My Devices</span>
+                  <MemoryStick size={25} />
+                </div>
               </div>
               <div className="flex flex-col items-center justify-center bg-white rounded-lg shadow-lg p-8 text-center  hover:bg-gray-100 transition duration-300 ease-in-out">
                 <span className="text-4xl font-bold">
                   {variables?.length > 0 ? <>{variables.length}</> : 0}
                 </span>
-                <span className="text-xl">My Variables</span>
+                <div className="flex gap-1 items-center">
+                  <span className="text-xl">My Variables</span>
+                  <CloudSun size={25} />
+                </div>
               </div>
               <div className="flex flex-col items-center justify-center bg-white rounded-lg shadow-lg p-8 text-center  hover:bg-gray-100 transition duration-300 ease-in-out">
                 <span className="text-4xl font-bold">
                   {user?.acls ? <>{user.acls.length}</> : 0}
                 </span>
-                <span className="text-xl">My Topics</span>
+                <div className="flex gap-1 items-center">
+                  <span className="text-xl">My Topics</span>
+                  <Unplug size={25} />
+                </div>
               </div>
               <div className="flex flex-col items-center justify-center bg-white rounded-lg shadow-lg p-8 text-center  hover:bg-gray-100 transition duration-300 ease-in-out">
                 <span className="text-4xl font-bold">
                   {guests?.length > 0 ? <>{guests.length}</> : 0}
                 </span>
-                <span className="text-xl">My Guests</span>
+                <div className="flex gap-1 items-center">
+                  <span className="text-xl">My Guests</span>
+                  <UserRoundCheck size={25} />
+                </div>
               </div>
               <div className="flex flex-col items-center justify-center bg-white rounded-lg shadow-lg p-8 text-center  hover:bg-gray-100 transition duration-300 ease-in-out">
                 <span className="text-4xl font-bold">
@@ -169,7 +220,10 @@ export default async function DashboardPage() {
                     0
                   )}
                 </span>
-                <span className="text-xl">Invited Channels</span>
+                <div className="flex gap-1 items-center">
+                  <span className="text-xl">Invited Channels</span>
+                  <MailCheck size={25} />
+                </div>
               </div>
             </>
           ) : (
@@ -181,7 +235,10 @@ export default async function DashboardPage() {
                   0
                 )}
               </span>
-              <span className="text-xl">Invited Channels</span>
+              <div className="flex gap-1 items-center">
+                <span className="text-xl">Invited Channels</span>
+                <MailCheck size={25} />
+              </div>{" "}
             </div>
           )}
         </section>

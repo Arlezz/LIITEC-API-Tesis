@@ -111,7 +111,7 @@ const MyViewModal = ({ isOpen, onClose, item }) => {
                       <li key={index}>
                         <Code
                           key={index} // Add a unique key here
-                          className="capitalize"
+                          //className="capitalize"
                           color="default"
                           size="sm"
                         >
