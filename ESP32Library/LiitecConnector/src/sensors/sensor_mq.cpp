@@ -25,10 +25,22 @@ void MQSensor::setup(int pin, int sensorType, const char* topic, String name)
 
     if (!isValidPins() || !isEnabled())
     {
-        if (isEnabled() && log_enabled)
+        if (!isEnabled() && log_enabled)
         {
+            Serial.println("-----------------------");
+        
+            Serial.print("Device: ");
+            Serial.println(getDeviceName());
+
+            Serial.print("Model: MQ");
+            Serial.println(getSensorType());
+                
+
             Serial.println("Invalid pins");
+            Serial.println("-----------------------");
             this->setStatus(SensorStatus::InvalidPins);
+            
+
         }
         return;
     }

@@ -23,9 +23,15 @@ void GYML8511Sensor::setup(int pin, int reference, const char* topic, String nam
 
     if (!isValidPins() || !isEnabled())
     {
-        if (isEnabled() && log_enabled)
+        if (!isEnabled() && log_enabled)
         {
+            Serial.println("-----------------------");
+            Serial.println("Device: " + getDeviceName());
+
+            Serial.println("Model: GYML8511");
+            
             Serial.println("Invalid pins");
+            Serial.println("-----------------------");
             this->setStatus(SensorStatus::InvalidPins);
         }
         return;

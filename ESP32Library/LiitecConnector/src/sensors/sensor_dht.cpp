@@ -22,11 +22,20 @@ void DHTSensor::setup(int pin, int sensorType, const char* topic, String name)
     setDeviceName(deviceName);
     setTopic(topic);
 
+
+
     if (!isValidPins() || !isEnabled())
     {
-        if (isEnabled() && log_enabled)
+        if (!isEnabled() && log_enabled)
         {
+            Serial.println("-----------------------");
+            Serial.println("Device: " + getDeviceName());
+
+            Serial.print("Model: DHT");
+            Serial.println(getSensorType());
+            
             Serial.println("Invalid pins");
+            Serial.println("-----------------------");
             this->setStatus(SensorStatus::InvalidPins);
         }
         return;
