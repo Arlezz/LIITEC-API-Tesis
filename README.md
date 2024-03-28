@@ -56,12 +56,12 @@ Asegúrate de tener [Node.js](https://nodejs.org/) instalado en tu entorno. Lueg
     npm run dev
     ```
     
-### Uso de la Librería C++ (ESP32Library) 📧
+### Uso de la Librería C++ (ESP32Library) 
 
 1. Descarga la librería `ESP32Library` desde el repositorio.
 2. Importa la librería en tus proyectos de Arduino.
 3. Utiliza las funciones proporcionadas por la librería para conectar tus sensores a la API de LIITEC.
 
-## Contacto
+## Contacto 📧
 
 Para cualquier duda o sugerencia, puedes contactarme a través de mi correo electrónico: antonyrodriguezc.2001@gmail.com
