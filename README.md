@@ -1,7 +1,6 @@
 # Proyecto LIITEC API: Sistema para Recolección y Procesamiento de Datos de Sensores Ambientales 🌱📊
 
-Este proyecto consiste en una API construida con Express para la gestión de datos medidos por sensores IoT. Proporciona endpoints que permiten la manipulación de usuarios, dispositivos y canales, con autenticación basada en claves API de diferentes tipos de usuario.
-
+El proyecto es una API desarrollada con Express que maneja datos recopilados por sensores IoT, específicamente enfocados en monitorear variables ambientales. Proporciona una serie de endpoints que permiten gestionar usuarios, dispositivos y canales, además de autenticar a los diferentes tipos de usuarios mediante claves API. Esta API está diseñada para ofrecer un manejo eficiente y seguro de los datos ambientales, facilitando la integración y el control de sensores ambientales en diversas aplicaciones y sistemas.
 ## Descripción del Proyecto 📝
 
 El proyecto tiene como objetivo principal desarrollar un sistema integral para la recolección y gestión de datos ambientales. Esto incluye la implementación de una API personalizada, una aplicación web para la visualización de datos y la documentación detallada del sistema.
